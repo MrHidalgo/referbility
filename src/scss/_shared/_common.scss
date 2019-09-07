@@ -7,6 +7,16 @@
     letter-spacing: 0.5px;
     text-align: center;
     color: rgba(#ffffff, 0.7);
+
+    a {
+      color: rgba(#ffffff, 0.7);
+      @include transition(color);
+
+      &:hover {
+        color: rgba(#ffffff, 1);
+        @include transition(color);
+      }
+    }
   }
 }
 //  .copyright :: end

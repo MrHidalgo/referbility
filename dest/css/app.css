@@ -299,6 +299,28 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* line 11, src/scss/_shared/_common.scss */
+.copyright__text a {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 15, src/scss/_shared/_common.scss */
+.copyright__text a:hover {
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_shared/_iconSVG.scss */
+.icon-svg {
+  display: inline-block;
+  fill: currentColor;
+}
+
 /* line 4, src/scss/_macros/_logotype.scss */
 .logo--footer {
   padding-bottom: 29px;
@@ -602,9 +624,20 @@ picture {
   font-size: 18px;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 157, src/scss/_components/_footer.scss */
+/* line 156, src/scss/_components/_footer.scss */
+.footer__nav-link:hover {
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 163, src/scss/_components/_footer.scss */
 .footer__desc {
   width: 100%;
   max-width: 300px;
@@ -614,18 +647,178 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 165, src/scss/_components/_footer.scss */
+/* line 171, src/scss/_components/_footer.scss */
 .footer__desc-1 {
   padding-bottom: 30px;
 }
 
+/* line 3, src/scss/_components/homepage/_audience.scss */
+.audience {
+  padding-bottom: 55px;
+}
+
+/* line 6, src/scss/_components/homepage/_audience.scss */
+.audience__wrapper {
+  width: 100%;
+  max-width: 1490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 73px;
+}
+
+/* line 14, src/scss/_components/homepage/_audience.scss */
+.audience__title {
+  padding-bottom: 50px;
+}
+
+/* line 18, src/scss/_components/homepage/_audience.scss */
+.audience__line {
+  width: 100%;
+  max-width: 1420px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(192, 182, 242, 0.4);
+}
+
+/* line 27, src/scss/_components/homepage/_audience.scss */
+.audience__block {
+  position: relative;
+  height: 100%;
+}
+
+/* line 31, src/scss/_components/homepage/_audience.scss */
+.audience__block-bg {
+  z-index: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100% - (30px + 142px));
+  height: calc(100% - (30px + 142px));
+  background-color: #ecebf6;
+}
+
+/* line 40, src/scss/_components/homepage/_audience.scss */
+.audience__block-bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #c5c5ff;
+}
+
+/* line 51, src/scss/_components/homepage/_audience.scss */
+.audience__block-cover {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+}
+
+/* line 57, src/scss/_components/homepage/_audience.scss */
+.audience__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 61, src/scss/_components/homepage/_audience.scss */
+.audience__block-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 50px) / 6);
+  max-width: calc((100% - 50px) / 6);
+  min-height: 100%;
+}
+
+/* line 68, src/scss/_components/homepage/_audience.scss */
+.audience__block-head {
+  padding-bottom: 16px;
+}
+
+/* line 72, src/scss/_components/homepage/_audience.scss */
+.audience__block-body {
+  height: -webkit-calc(100% - (55px + 16px + 142px));
+  height: calc(100% - (55px + 16px + 142px));
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 78, src/scss/_components/homepage/_audience.scss */
+.audience__block-body p {
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 25px;
+  text-align: left;
+  color: #344563;
+}
+
+/* line 85, src/scss/_components/homepage/_audience.scss */
+.audience__block-body p span {
+  font-weight: bold;
+}
+
+/* line 91, src/scss/_components/homepage/_audience.scss */
+.audience__block-footer {
+  height: 142px;
+}
+
+/* line 94, src/scss/_components/homepage/_audience.scss */
+.audience__block-footer svg {
+  position: relative;
+  top: -50px;
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 104, src/scss/_components/homepage/_audience.scss */
+.audience__block-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #c5c5ff;
+}
+
+/* line 115, src/scss/_components/homepage/_audience.scss */
+.audience__block-circle span {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+  color: #091e42;
+}
+
 /* line 3, src/scss/_components/homepage/_advantages.scss */
 .advantages {
+  position: relative;
   padding-top: 75px;
   padding-bottom: 80px;
 }
 
-/* line 7, src/scss/_components/homepage/_advantages.scss */
+/* line 8, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg {
   z-index: 0;
   top: 0;
@@ -634,12 +827,12 @@ picture {
   height: 100%;
 }
 
-/* line 14, src/scss/_components/homepage/_advantages.scss */
+/* line 15, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg, .advantages__bg-path {
   position: absolute;
 }
 
-/* line 19, src/scss/_components/homepage/_advantages.scss */
+/* line 20, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg-path {
   top: 16px;
   right: -370px;
@@ -650,7 +843,7 @@ picture {
   border: solid 130px #eae6ff67;
 }
 
-/* line 29, src/scss/_components/homepage/_advantages.scss */
+/* line 30, src/scss/_components/homepage/_advantages.scss */
 .advantages__wrapper {
   z-index: 2;
   position: relative;
@@ -661,12 +854,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 38, src/scss/_components/homepage/_advantages.scss */
+/* line 39, src/scss/_components/homepage/_advantages.scss */
 .advantages__title {
   padding-bottom: 80px;
 }
 
-/* line 42, src/scss/_components/homepage/_advantages.scss */
+/* line 43, src/scss/_components/homepage/_advantages.scss */
 .advantages__block {
   cursor: pointer;
   width: 100%;
@@ -687,13 +880,13 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 54, src/scss/_components/homepage/_advantages.scss */
+/* line 55, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover {
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-box-shadow: 0 25px 40px 0 rgba(153, 141, 217, 0.05);
-          box-shadow: 0 25px 40px 0 rgba(153, 141, 217, 0.05);
+  -webkit-box-shadow: 0 25px 40px 0 rgba(153, 141, 217, 0.1);
+          box-shadow: 0 25px 40px 0 rgba(153, 141, 217, 0.1);
   -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -701,21 +894,39 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 60, src/scss/_components/homepage/_advantages.scss */
+/* line 61, src/scss/_components/homepage/_advantages.scss */
+.advantages__block:hover .advantages__block-img svg {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 68, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-head {
   padding-bottom: 11px;
 }
 
-/* line 66, src/scss/_components/homepage/_advantages.scss */
+/* line 72, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img {
+  position: relative;
   width: 100px;
   height: 100px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #c5c5ff;
 }
 
-/* line 73, src/scss/_components/homepage/_advantages.scss */
+/* line 77, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-img svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 87, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-title {
   padding-bottom: 15px;
   font-size: 24px;
@@ -724,7 +935,7 @@ picture {
   color: #091e42;
 }
 
-/* line 81, src/scss/_components/homepage/_advantages.scss */
+/* line 95, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-desc {
   font-size: 18px;
   font-weight: 500;
@@ -733,7 +944,7 @@ picture {
   color: #6c798f;
 }
 
-/* line 89, src/scss/_components/homepage/_advantages.scss */
+/* line 103, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -745,24 +956,24 @@ picture {
           justify-content: space-between;
 }
 
-/* line 94, src/scss/_components/homepage/_advantages.scss */
+/* line 108, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col {
   width: 100%;
   max-width: -webkit-calc((100% - 120px) / 4);
   max-width: calc((100% - 120px) / 4);
 }
 
-/* line 98, src/scss/_components/homepage/_advantages.scss */
+/* line 112, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-1 {
   padding-top: 128px;
 }
 
-/* line 102, src/scss/_components/homepage/_advantages.scss */
+/* line 116, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-3 {
   padding-top: 68px;
 }
 
-/* line 106, src/scss/_components/homepage/_advantages.scss */
+/* line 120, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-4 {
   padding-top: 228px;
 }

@@ -151,6 +151,12 @@
       font-size: 18px;
       letter-spacing: 0.5px;
       color: rgba(#ffffff, 0.7);
+      @include transition(color);
+
+      &:hover {
+        color: rgba(#ffffff, 1);
+        @include transition(color);
+      }
     }
   }
 
