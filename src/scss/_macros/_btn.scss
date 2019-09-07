@@ -4,16 +4,16 @@
 // ==================================================
 // ==================================================
 
-$bth-width: 250px;
-$bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
+$bth-width: unset;
+$bth-height: 59px;
+$btn-border-width: 2px;
+$btn-border-color: rgba(#020d60, 1);
+$bth-border-radius: 29px;
 $bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
+$bth-background-color: rgba(#020d60, 1);
 $bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
+$bth-font-size: 15px;
+$bth-font-weight: 500;
 
 $btn-color--border: rgba(#000, 1);
 
@@ -27,7 +27,7 @@ $btn-color--border: rgba(#000, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: auto;
   max-width: $bth-width;
   height: $bth-height;
   border: $btn-border-width solid $btn-border-color;
@@ -37,6 +37,12 @@ $btn-color--border: rgba(#000, 1);
   font-size: $bth-font-size;
   font-weight: $bth-font-weight;
 
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+
   &--border {
     background-color: transparent;
     color: $btn-color--border;
@@ -44,14 +50,23 @@ $btn-color--border: rgba(#000, 1);
 
   &--bg {
     background-color: $bth-background-color;
-  }
+    will-change: border-color, background-color;
 
-  &__text {
-    &-wrap {}
-  }
+    &,
+    &:hover,
+    &:active {
+      @include transition(border-color, background-color);
+    }
 
-  &__icon {
-    &-wrap {}
+    &:hover {
+      border-color: rgba($bth-background-color, 0.75);
+      background-color: rgba($bth-background-color, 0.75);
+    }
+
+    &:active {
+      border-color: rgba($bth-background-color, 1);
+      background-color: rgba($bth-background-color, 1);
+    }
   }
 }
 

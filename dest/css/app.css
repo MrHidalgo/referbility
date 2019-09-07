@@ -323,18 +323,97 @@ picture {
   height: 39px;
 }
 
+/* line 3, src/scss/_macros/_title.scss */
+.c-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #091e42;
+}
+
+/* line 9, src/scss/_macros/_title.scss */
+.c-title--white {
+  color: #fff;
+}
+
+/* line 24, src/scss/_macros/_btn.scss */
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  max-width: unset;
+  height: 59px;
+  border: 2px solid #020d60;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 29px;
+          border-radius: 29px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* line 46, src/scss/_macros/_btn.scss */
+.c-btn--border {
+  background-color: transparent;
+  color: black;
+}
+
+/* line 51, src/scss/_macros/_btn.scss */
+.c-btn--bg {
+  background-color: #020d60;
+  will-change: border-color, background-color;
+}
+
+/* line 55, src/scss/_macros/_btn.scss */
+.c-btn--bg, .c-btn--bg:hover, .c-btn--bg:active {
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 61, src/scss/_macros/_btn.scss */
+.c-btn--bg:hover {
+  border-color: rgba(2, 13, 96, 0.75);
+  background-color: rgba(2, 13, 96, 0.75);
+}
+
+/* line 66, src/scss/_macros/_btn.scss */
+.c-btn--bg:active {
+  border-color: #020d60;
+  background-color: #020d60;
+}
+
 /* line 3, src/scss/_components/_footer.scss */
 .footer {
   position: relative;
+  padding-top: 75px;
   padding-bottom: 70px;
 }
 
-/* line 7, src/scss/_components/_footer.scss */
+/* line 8, src/scss/_components/_footer.scss */
 .footer__bg {
   height: 100%;
 }
 
-/* line 10, src/scss/_components/_footer.scss */
+/* line 11, src/scss/_components/_footer.scss */
 .footer__bg, .footer__bg-top, .footer__bg-bottom {
   z-index: 0;
   position: absolute;
@@ -343,12 +422,12 @@ picture {
   width: 100%;
 }
 
-/* line 20, src/scss/_components/_footer.scss */
+/* line 21, src/scss/_components/_footer.scss */
 .footer__bg-top {
   height: 303px;
 }
 
-/* line 24, src/scss/_components/_footer.scss */
+/* line 25, src/scss/_components/_footer.scss */
 .footer__bg-bottom {
   top: 303px;
   height: -webkit-calc(100% - 303px);
@@ -356,23 +435,23 @@ picture {
   background-color: #020d60;
 }
 
-/* line 31, src/scss/_components/_footer.scss */
+/* line 32, src/scss/_components/_footer.scss */
 .footer__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 35, src/scss/_components/_footer.scss */
+/* line 36, src/scss/_components/_footer.scss */
 .footer__wrapper-2 {
   padding-top: 140px;
 }
 
-/* line 39, src/scss/_components/_footer.scss */
+/* line 40, src/scss/_components/_footer.scss */
 .footer__wrapper-3 {
   padding-top: 117px;
 }
 
-/* line 44, src/scss/_components/_footer.scss */
+/* line 45, src/scss/_components/_footer.scss */
 .footer__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -380,23 +459,23 @@ picture {
   display: flex;
 }
 
-/* line 48, src/scss/_components/_footer.scss */
+/* line 49, src/scss/_components/_footer.scss */
 .footer__col {
   width: 100%;
 }
 
-/* line 51, src/scss/_components/_footer.scss */
+/* line 52, src/scss/_components/_footer.scss */
 .footer__col-1 {
   max-width: 700px;
 }
 
-/* line 55, src/scss/_components/_footer.scss */
+/* line 56, src/scss/_components/_footer.scss */
 .footer__col-2, .footer__col-3 {
   max-width: -webkit-calc((100% - 700px) / 2);
   max-width: calc((100% - 700px) / 2);
 }
 
-/* line 61, src/scss/_components/_footer.scss */
+/* line 62, src/scss/_components/_footer.scss */
 .footer__started {
   z-index: 2;
   position: relative;
@@ -406,7 +485,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 69, src/scss/_components/_footer.scss */
+/* line 70, src/scss/_components/_footer.scss */
 .footer__started-wrapper {
   overflow: hidden;
   position: relative;
@@ -438,7 +517,7 @@ picture {
   background-image: linear-gradient(203deg, #8181ff, #5153dc);
 }
 
-/* line 86, src/scss/_components/_footer.scss */
+/* line 87, src/scss/_components/_footer.scss */
 .footer__started-bg {
   z-index: 0;
   position: absolute;
@@ -448,7 +527,7 @@ picture {
   height: 100%;
 }
 
-/* line 94, src/scss/_components/_footer.scss */
+/* line 95, src/scss/_components/_footer.scss */
 .footer__started-bg-path {
   position: absolute;
   width: 410px;
@@ -458,29 +537,25 @@ picture {
   border: solid 150px #a9abfe4c;
 }
 
-/* line 101, src/scss/_components/_footer.scss */
+/* line 102, src/scss/_components/_footer.scss */
 .footer__started-bg-path-1 {
   top: -154px;
   left: 70px;
 }
 
-/* line 106, src/scss/_components/_footer.scss */
+/* line 107, src/scss/_components/_footer.scss */
 .footer__started-bg-path-2 {
   right: -280px;
   bottom: -130px;
 }
 
-/* line 113, src/scss/_components/_footer.scss */
+/* line 114, src/scss/_components/_footer.scss */
 .footer__started-title {
   padding-bottom: 30px;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: bold;
   letter-spacing: 1px;
-  text-align: center;
 }
 
-/* line 122, src/scss/_components/_footer.scss */
+/* line 119, src/scss/_components/_footer.scss */
 .footer__started-desc {
   padding-bottom: 40px;
   color: rgba(255, 255, 255, 0.85);
@@ -491,60 +566,19 @@ picture {
   text-align: center;
 }
 
-/* line 132, src/scss/_components/_footer.scss */
-.footer__started-btn {
+/* line 130, src/scss/_components/_footer.scss */
+.footer__started-btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  max-width: 220px;
-  height: 59px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-border-radius: 29px;
-          border-radius: 29px;
-  border: 2px solid #020d60;
-  background-color: #020d60;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  will-change: border-color, background-color;
-  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 153, src/scss/_components/_footer.scss */
-.footer__started-btn:hover {
-  border-color: rgba(2, 13, 96, 0.85);
-  background-color: rgba(2, 13, 96, 0.85);
-  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-/* line 159, src/scss/_components/_footer.scss */
-.footer__started-btn:active {
-  border-color: #020d60;
-  background-color: #020d60;
-  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-/* line 167, src/scss/_components/_footer.scss */
+/* line 137, src/scss/_components/_footer.scss */
 .footer__title {
   padding-bottom: 30px;
   font-size: 16px;
@@ -554,7 +588,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 177, src/scss/_components/_footer.scss */
+/* line 147, src/scss/_components/_footer.scss */
 .footer__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -570,7 +604,7 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 187, src/scss/_components/_footer.scss */
+/* line 157, src/scss/_components/_footer.scss */
 .footer__desc {
   width: 100%;
   max-width: 300px;
@@ -580,9 +614,157 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 195, src/scss/_components/_footer.scss */
+/* line 165, src/scss/_components/_footer.scss */
 .footer__desc-1 {
   padding-bottom: 30px;
+}
+
+/* line 3, src/scss/_components/homepage/_advantages.scss */
+.advantages {
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+
+/* line 7, src/scss/_components/homepage/_advantages.scss */
+.advantages__bg {
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, src/scss/_components/homepage/_advantages.scss */
+.advantages__bg, .advantages__bg-path {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/homepage/_advantages.scss */
+.advantages__bg-path {
+  top: 16px;
+  right: -370px;
+  width: 920px;
+  height: 920px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: solid 130px #eae6ff67;
+}
+
+/* line 29, src/scss/_components/homepage/_advantages.scss */
+.advantages__wrapper {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc((290px * 4) + 120px);
+  max-width: calc((290px * 4) + 120px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 38, src/scss/_components/homepage/_advantages.scss */
+.advantages__title {
+  padding-bottom: 80px;
+}
+
+/* line 42, src/scss/_components/homepage/_advantages.scss */
+.advantages__block {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 30px 25px 60px 35px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 50px 80px 0 rgba(153, 141, 217, 0.1);
+          box-shadow: 0 50px 80px 0 rgba(153, 141, 217, 0.1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: transform, box-shadow;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 54, src/scss/_components/homepage/_advantages.scss */
+.advantages__block:hover {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 25px 40px 0 rgba(153, 141, 217, 0.05);
+          box-shadow: 0 25px 40px 0 rgba(153, 141, 217, 0.05);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 60, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-head {
+  padding-bottom: 11px;
+}
+
+/* line 66, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #c5c5ff;
+}
+
+/* line 73, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-title {
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 81, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-desc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #6c798f;
+}
+
+/* line 89, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 94, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-col {
+  width: 100%;
+  max-width: -webkit-calc((100% - 120px) / 4);
+  max-width: calc((100% - 120px) / 4);
+}
+
+/* line 98, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-col-1 {
+  padding-top: 128px;
+}
+
+/* line 102, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-col-3 {
+  padding-top: 68px;
+}
+
+/* line 106, src/scss/_components/homepage/_advantages.scss */
+.advantages__block-col-4 {
+  padding-top: 228px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
