@@ -748,6 +748,98 @@ picture {
   padding-bottom: 30px;
 }
 
+/* line 3, src/scss/_components/homepage/_talent.scss */
+.talent {
+  padding-top: 82px;
+  padding-bottom: 50px;
+}
+
+/* line 7, src/scss/_components/homepage/_talent.scss */
+.talent__wrapper {
+  position: relative;
+  padding-top: 155px;
+  padding-bottom: 175px;
+  margin-bottom: 100px;
+}
+
+/* line 13, src/scss/_components/homepage/_talent.scss */
+.talent__wrapper-bg {
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: -webkit-calc(100% - 120px);
+  width: calc(100% - 120px);
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8181ff), to(#5153dc));
+  background: -webkit-linear-gradient(#8181ff 0%, #5153dc 100%);
+  background: -o-linear-gradient(#8181ff 0%, #5153dc 100%);
+  background: linear-gradient(#8181ff 0%, #5153dc 100%);
+  -webkit-border-bottom-left-radius: 10em;
+          border-bottom-left-radius: 10em;
+  -webkit-box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
+          box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
+}
+
+/* line 25, src/scss/_components/homepage/_talent.scss */
+.talent__wrapper-bg-path {
+  position: absolute;
+}
+
+/* line 28, src/scss/_components/homepage/_talent.scss */
+.talent__wrapper-bg-path-1 {
+  left: -50px;
+  top: -154px;
+  width: 410px;
+  height: 410px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 150px solid rgba(169, 171, 254, 0.3);
+}
+
+/* line 37, src/scss/_components/homepage/_talent.scss */
+.talent__wrapper-bg-path-2 {
+  right: -70px;
+  bottom: -105px;
+  width: 410px;
+  height: 410px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 130px solid rgba(169, 171, 254, 0.2);
+}
+
+/* line 49, src/scss/_components/homepage/_talent.scss */
+.talent__line {
+  width: 100%;
+  max-width: 1420px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(192, 182, 242, 0.4);
+}
+
+/* line 58, src/scss/_components/homepage/_talent.scss */
+.talent__subtitle, .talent__title {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 64, src/scss/_components/homepage/_talent.scss */
+.talent__subtitle {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: 0.02em;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
 /* line 3, src/scss/_components/homepage/_how.scss */
 .how {
   position: relative;

@@ -1,0 +1,79 @@
+// SECTION talent :: START
+
+.talent {
+  padding-top: 82px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    position: relative;
+    padding-top: 155px;
+    padding-bottom: 175px;
+    margin-bottom: 100px;
+
+    &-bg {
+      z-index: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 120px;
+      width: calc(100% - 120px);
+      height: 100%;
+      background: linear-gradient(#8181ff 0%, #5153dc 100%);
+      border-bottom-left-radius: 10em;
+      box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
+
+      &-path {
+        position: absolute;
+
+        &-1 {
+          left: -(410px - 360px);
+          top: -(410px - 256px);
+          width: 410px;
+          height: 410px;
+          border-radius: 50%;
+          border: 150px solid rgba(169, 171, 254, 0.3);
+        }
+
+        &-2 {
+          right: -(410px - 340px);
+          bottom: -(410px - 305px);
+          width: 410px;
+          height: 410px;
+          border-radius: 50%;
+          border: 130px solid rgba(169, 171, 254, 0.2);
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 100%;
+    max-width: 1420px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(192, 182, 242, 0.4);
+  }
+
+  &__subtitle,
+  &__title {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__subtitle {
+    width: 100%;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 35px;
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 0.02em;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+// SECTION talent :: END
