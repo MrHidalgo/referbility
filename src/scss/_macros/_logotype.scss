@@ -1,5 +1,20 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+  &--footer {
+    padding-bottom: 29px;
+
+    .logo {
+      display: flex;
+      align-items: flex-start;
+
+      &__img {
+        display: block;
+        width: 195px;
+        height: 39px;
+      }
+    }
+  }
+}
 
 // LOGOTYPE :: END

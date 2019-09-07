@@ -65,9 +65,9 @@
 /// ===============
 //@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
-@include mixinFontFace("Airbnb Cereal App", "-Light", "../fonts/", 300, otf eot woff2 woff ttf svg);
-@include mixinFontFace("Airbnb Cereal App", "-Black", "../fonts/", 900, otf eot woff2 woff ttf svg);
-@include mixinFontFace("Airbnb Cereal App", "-Medium", "../fonts/", 500, otf eot woff2 woff ttf svg);
-@include mixinFontFace("Airbnb Cereal App", "-Book", "../fonts/", normal, otf eot woff2 woff ttf svg);
-@include mixinFontFace("Airbnb Cereal App", "-Bold", "../fonts/", bold, otf eot woff2 woff ttf svg);
-@include mixinFontFace("Airbnb Cereal App", "-ExtraBold", "../fonts/", 800, otf eot woff2 woff ttf svg);
+@include mixinFontFace("AirbnbCerealApp", "-Light", "../fonts/", 300, woff2 woff ttf);
+@include mixinFontFace("AirbnbCerealApp", "-Black", "../fonts/", 900, woff2 woff ttf);
+@include mixinFontFace("AirbnbCerealApp", "-Medium", "../fonts/", 500, woff2 woff ttf);
+@include mixinFontFace("AirbnbCerealApp", "-Book", "../fonts/", normal, woff2 woff ttf);
+@include mixinFontFace("AirbnbCerealApp", "-Bold", "../fonts/", bold, woff2 woff ttf);
+@include mixinFontFace("AirbnbCerealApp", "-ExtraBold", "../fonts/", 800, woff2 woff ttf);
