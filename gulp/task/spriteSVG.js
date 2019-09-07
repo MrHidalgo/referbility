@@ -23,7 +23,7 @@ const srcPath = {
     configPath.src.icon + '/*.svg'
   ],
   "sprite" : "../sprite.svg",
-  "destSpriteSCSS" : "../../generated/scss/_generated/_spriteSVG.scss",
+  "destSpriteSCSS" : "../../assets/scss/_spriteSVG.scss",
   "templateSCSS" : "./src/scss/_generated/_spriteSVG_template.scss"
 };
 
