@@ -1251,7 +1251,7 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_talent.scss */
 .talent {
-  padding-top: 82px;
+  padding-top: 102px;
   padding-bottom: 50px;
 }
 
@@ -1259,7 +1259,7 @@ picture {
 .talent__wrapper {
   position: relative;
   padding-top: 155px;
-  padding-bottom: 175px;
+  padding-bottom: 168px;
   margin-bottom: 100px;
 }
 
@@ -1277,8 +1277,8 @@ picture {
   background: -webkit-linear-gradient(#8181ff 0%, #5153dc 100%);
   background: -o-linear-gradient(#8181ff 0%, #5153dc 100%);
   background: linear-gradient(#8181ff 0%, #5153dc 100%);
-  -webkit-border-bottom-left-radius: 10em;
-          border-bottom-left-radius: 10em;
+  -webkit-border-bottom-left-radius: 160px;
+          border-bottom-left-radius: 160px;
   -webkit-box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
           box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
 }
@@ -1291,7 +1291,7 @@ picture {
 /* line 28, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path-1 {
   left: -50px;
-  top: -154px;
+  top: -145px;
   width: 410px;
   height: 410px;
   -webkit-border-radius: 50%;
@@ -1310,7 +1310,13 @@ picture {
   border: 130px solid rgba(169, 171, 254, 0.2);
 }
 
-/* line 49, src/scss/_components/homepage/_talent.scss */
+/* line 48, src/scss/_components/homepage/_talent.scss */
+.talent__wrapper-row {
+  position: relative;
+  top: -5px;
+}
+
+/* line 54, src/scss/_components/homepage/_talent.scss */
 .talent__line {
   width: 100%;
   max-width: 1420px;
@@ -1320,14 +1326,23 @@ picture {
   background-color: rgba(192, 182, 242, 0.4);
 }
 
-/* line 58, src/scss/_components/homepage/_talent.scss */
+/* line 63, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle, .talent__title {
   z-index: 2;
   position: relative;
 }
 
-/* line 64, src/scss/_components/homepage/_talent.scss */
+/* line 69, src/scss/_components/homepage/_talent.scss */
+.talent__title {
+  position: relative;
+  top: 3px;
+  letter-spacing: 1px;
+}
+
+/* line 75, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle {
+  position: relative;
+  left: 14px;
   width: 100%;
   max-width: 780px;
   margin-left: auto;
