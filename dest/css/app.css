@@ -1746,8 +1746,8 @@ picture {
 /* line 3, src/scss/_components/homepage/_advantages.scss */
 .advantages {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 80px;
+  padding-top: 93px;
+  padding-bottom: 43px;
 }
 
 /* line 8, src/scss/_components/homepage/_advantages.scss */
@@ -1766,7 +1766,7 @@ picture {
 
 /* line 20, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg-path {
-  top: 16px;
+  top: 36px;
   right: -370px;
   width: 920px;
   height: 920px;
@@ -1788,7 +1788,7 @@ picture {
 
 /* line 39, src/scss/_components/homepage/_advantages.scss */
 .advantages__title {
-  padding-bottom: 80px;
+  padding-bottom: 77px;
 }
 
 /* line 43, src/scss/_components/homepage/_advantages.scss */
@@ -1836,7 +1836,7 @@ picture {
 
 /* line 68, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-head {
-  padding-bottom: 11px;
+  padding-bottom: 9px;
 }
 
 /* line 72, src/scss/_components/homepage/_advantages.scss */
@@ -1860,7 +1860,7 @@ picture {
 
 /* line 87, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-title {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.5px;

@@ -2,8 +2,8 @@
 
 .advantages {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 80px;
+  padding-top: 93px;
+  padding-bottom: 43px;
 
   &__bg {
     z-index: 0;
@@ -18,7 +18,7 @@
     }
 
     &-path {
-      top: 16px;
+      top: 36px;
       right: -(920px - 550px);
       width: 920px;
       height: 920px;
@@ -37,7 +37,7 @@
   }
 
   &__title {
-    padding-bottom: 80px;
+    padding-bottom: 77px;
   }
 
   &__block {
@@ -66,7 +66,7 @@
     }
 
     &-head {
-      padding-bottom: 11px;
+      padding-bottom: 9px;
     }
 
     &-img {
@@ -85,7 +85,7 @@
     }
 
     &-title {
-      padding-bottom: 15px;
+      padding-bottom: 14px;
       font-size: 24px;
       font-weight: 500;
       letter-spacing: 0.5px;
