@@ -1359,8 +1359,8 @@ picture {
 /* line 3, src/scss/_components/homepage/_how.scss */
 .how {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: 98px;
+  padding-bottom: 148px;
 }
 
 /* line 8, src/scss/_components/homepage/_how.scss */
@@ -1392,7 +1392,7 @@ picture {
 .how__wrapper {
   z-index: 2;
   position: relative;
-  padding-bottom: 78px;
+  padding-bottom: 70px;
 }
 
 /* line 36, src/scss/_components/homepage/_how.scss */
@@ -1407,7 +1407,7 @@ picture {
 
 /* line 45, src/scss/_components/homepage/_how.scss */
 .how__title {
-  padding-bottom: 80px;
+  padding-bottom: 77px;
 }
 
 /* line 49, src/scss/_components/homepage/_how.scss */
@@ -1449,6 +1449,8 @@ picture {
 
 /* line 80, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper {
+  position: relative;
+  left: 26px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1464,27 +1466,27 @@ picture {
   padding-bottom: 80px;
 }
 
-/* line 89, src/scss/_components/homepage/_how.scss */
+/* line 91, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 5);
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 93, src/scss/_components/homepage/_how.scss */
+/* line 95, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div:nth-of-type(even) {
   padding-top: 50px;
 }
 
-/* line 99, src/scss/_components/homepage/_how.scss */
+/* line 101, src/scss/_components/homepage/_how.scss */
 .how__block-num {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   font-weight: bold;
   font-size: 24px;
   color: #fff;
 }
 
-/* line 106, src/scss/_components/homepage/_how.scss */
+/* line 108, src/scss/_components/homepage/_how.scss */
 .how__block-desc {
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -1492,28 +1494,28 @@ picture {
   color: #fff;
 }
 
-/* line 112, src/scss/_components/homepage/_how.scss */
+/* line 114, src/scss/_components/homepage/_how.scss */
 .how__block-desc span {
   font-weight: bold;
 }
 
-/* line 117, src/scss/_components/homepage/_how.scss */
+/* line 119, src/scss/_components/homepage/_how.scss */
 .how__block-icon {
   position: absolute;
-  bottom: -75px;
+  bottom: -72px;
   left: 0;
   width: 100%;
-  padding-right: 45px;
+  padding-right: 50px;
 }
 
-/* line 124, src/scss/_components/homepage/_how.scss */
+/* line 126, src/scss/_components/homepage/_how.scss */
 .how__block-icon svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 132, src/scss/_components/homepage/_how.scss */
+/* line 134, src/scss/_components/homepage/_how.scss */
 .how__arrow {
   position: relative;
   display: -webkit-box;
@@ -1525,7 +1527,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 139, src/scss/_components/homepage/_how.scss */
+/* line 141, src/scss/_components/homepage/_how.scss */
 .how__arrow > div {
   position: relative;
   width: 100%;
@@ -1533,11 +1535,11 @@ picture {
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 145, src/scss/_components/homepage/_how.scss */
+/* line 147, src/scss/_components/homepage/_how.scss */
 .how__arrow img {
   position: absolute;
   top: 0;
-  left: 110px;
+  left: 132px;
 }
 
 /* line 3, src/scss/_components/homepage/_audience.scss */

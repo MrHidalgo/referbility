@@ -2,8 +2,8 @@
 
 .how {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: 98px;
+  padding-bottom: 148px;
 
   &__bg {
     z-index: 0;
@@ -30,7 +30,7 @@
   &__wrapper {
     z-index: 2;
     position: relative;
-    padding-bottom: 78px;
+    padding-bottom: 70px;
   }
 
   &__line {
@@ -43,7 +43,7 @@
   }
 
   &__title {
-    padding-bottom: 80px;
+    padding-bottom: 77px;
   }
 
   &__block {
@@ -78,6 +78,8 @@
     }
 
     &-wrapper {
+      position: relative;
+      left: 26px;
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -97,7 +99,7 @@
     }
 
     &-num {
-      padding-bottom: 10px;
+      padding-bottom: 7px;
       font-weight: bold;
       font-size: 24px;
       color: #fff;
@@ -116,10 +118,10 @@
 
     &-icon {
       position: absolute;
-      bottom: -75px;
+      bottom: -72px;
       left: 0;
       width: 100%;
-      padding-right: 45px;
+      padding-right: 50px;
 
       svg {
         display: block;
@@ -145,7 +147,7 @@
     img {
       position: absolute;
       top: 0;
-      left: 110px;
+      left: 132px;
     }
   }
 }
