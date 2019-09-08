@@ -1553,12 +1553,12 @@ picture {
   max-width: 1490px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 73px;
+  padding-bottom: 74px;
 }
 
 /* line 14, src/scss/_components/homepage/_audience.scss */
 .audience__title {
-  padding-bottom: 50px;
+  padding-bottom: 47px;
 }
 
 /* line 18, src/scss/_components/homepage/_audience.scss */
@@ -1577,7 +1577,49 @@ picture {
   height: 100%;
 }
 
-/* line 31, src/scss/_components/homepage/_audience.scss */
+/* line 33, src/scss/_components/homepage/_audience.scss */
+.audience__block-1 .audience__block-footer svg {
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+/* line 40, src/scss/_components/homepage/_audience.scss */
+.audience__block-2 .audience__block-footer svg {
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+/* line 47, src/scss/_components/homepage/_audience.scss */
+.audience__block-3 .audience__block-footer svg {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+/* line 54, src/scss/_components/homepage/_audience.scss */
+.audience__block-4 .audience__block-footer svg {
+  -webkit-transform: translateY(-19px);
+      -ms-transform: translateY(-19px);
+          transform: translateY(-19px);
+}
+
+/* line 61, src/scss/_components/homepage/_audience.scss */
+.audience__block-5 .audience__block-footer svg {
+  -webkit-transform: translateY(25px);
+      -ms-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+/* line 68, src/scss/_components/homepage/_audience.scss */
+.audience__block-6 .audience__block-footer svg {
+  -webkit-transform: translateY(-13px);
+      -ms-transform: translateY(-13px);
+          transform: translateY(-13px);
+}
+
+/* line 74, src/scss/_components/homepage/_audience.scss */
 .audience__block-bg {
   z-index: 0;
   position: absolute;
@@ -1589,7 +1631,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 40, src/scss/_components/homepage/_audience.scss */
+/* line 83, src/scss/_components/homepage/_audience.scss */
 .audience__block-bg:before {
   content: '';
   position: absolute;
@@ -1600,14 +1642,14 @@ picture {
   background-color: #c5c5ff;
 }
 
-/* line 51, src/scss/_components/homepage/_audience.scss */
+/* line 94, src/scss/_components/homepage/_audience.scss */
 .audience__block-cover {
   z-index: 2;
   position: relative;
   height: 100%;
 }
 
-/* line 57, src/scss/_components/homepage/_audience.scss */
+/* line 100, src/scss/_components/homepage/_audience.scss */
 .audience__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1619,7 +1661,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 61, src/scss/_components/homepage/_audience.scss */
+/* line 104, src/scss/_components/homepage/_audience.scss */
 .audience__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 50px) / 6);
@@ -1627,21 +1669,21 @@ picture {
   min-height: 100%;
 }
 
-/* line 68, src/scss/_components/homepage/_audience.scss */
+/* line 111, src/scss/_components/homepage/_audience.scss */
 .audience__block-head {
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
 
-/* line 72, src/scss/_components/homepage/_audience.scss */
+/* line 115, src/scss/_components/homepage/_audience.scss */
 .audience__block-body {
   height: -webkit-calc(100% - (55px + 16px + 142px));
   height: calc(100% - (55px + 16px + 142px));
-  padding-left: 25px;
+  padding-left: 28px;
   padding-right: 25px;
   padding-bottom: 25px;
 }
 
-/* line 78, src/scss/_components/homepage/_audience.scss */
+/* line 121, src/scss/_components/homepage/_audience.scss */
 .audience__block-body p {
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -1650,17 +1692,17 @@ picture {
   color: #344563;
 }
 
-/* line 85, src/scss/_components/homepage/_audience.scss */
+/* line 128, src/scss/_components/homepage/_audience.scss */
 .audience__block-body p span {
   font-weight: bold;
 }
 
-/* line 91, src/scss/_components/homepage/_audience.scss */
+/* line 134, src/scss/_components/homepage/_audience.scss */
 .audience__block-footer {
   height: 142px;
 }
 
-/* line 94, src/scss/_components/homepage/_audience.scss */
+/* line 137, src/scss/_components/homepage/_audience.scss */
 .audience__block-footer svg {
   position: relative;
   top: -50px;
@@ -1670,7 +1712,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 104, src/scss/_components/homepage/_audience.scss */
+/* line 147, src/scss/_components/homepage/_audience.scss */
 .audience__block-circle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1693,7 +1735,7 @@ picture {
   background-color: #c5c5ff;
 }
 
-/* line 115, src/scss/_components/homepage/_audience.scss */
+/* line 158, src/scss/_components/homepage/_audience.scss */
 .audience__block-circle span {
   font-weight: bold;
   font-size: 21px;
