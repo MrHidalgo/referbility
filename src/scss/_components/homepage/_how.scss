@@ -50,6 +50,13 @@
     position: relative;
     min-height: 300px;
 
+    &-5 {
+      .how__block-bg {
+        width: calc(100% - 50px);
+        background-image: url('../img/how-bg-woArrow.svg');
+      }
+    }
+
     &-bg {
       z-index: 0;
       position: absolute;
