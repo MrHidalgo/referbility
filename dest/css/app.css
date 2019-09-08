@@ -622,11 +622,18 @@ picture {
 
 /* line 56, src/scss/_components/_footer.scss */
 .footer__col-2, .footer__col-3 {
+  position: relative;
+  top: 30px;
   max-width: -webkit-calc((100% - 700px) / 2);
   max-width: calc((100% - 700px) / 2);
 }
 
-/* line 62, src/scss/_components/_footer.scss */
+/* line 63, src/scss/_components/_footer.scss */
+.footer__col-3 {
+  left: 65px;
+}
+
+/* line 68, src/scss/_components/_footer.scss */
 .footer__started {
   z-index: 2;
   position: relative;
@@ -636,7 +643,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 70, src/scss/_components/_footer.scss */
+/* line 76, src/scss/_components/_footer.scss */
 .footer__started-wrapper {
   overflow: hidden;
   position: relative;
@@ -657,10 +664,10 @@ picture {
   height: 505px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-border-top-right-radius: 10em;
-          border-top-right-radius: 10em;
-  -webkit-border-bottom-left-radius: 10em;
-          border-bottom-left-radius: 10em;
+  -webkit-border-top-right-radius: 160px;
+          border-top-right-radius: 160px;
+  -webkit-border-bottom-left-radius: 160px;
+          border-bottom-left-radius: 160px;
   -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
           box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
   background-image: -webkit-linear-gradient(247deg, #8181ff, #5153dc);
@@ -668,7 +675,7 @@ picture {
   background-image: linear-gradient(203deg, #8181ff, #5153dc);
 }
 
-/* line 87, src/scss/_components/_footer.scss */
+/* line 93, src/scss/_components/_footer.scss */
 .footer__started-bg {
   z-index: 0;
   position: absolute;
@@ -678,7 +685,7 @@ picture {
   height: 100%;
 }
 
-/* line 95, src/scss/_components/_footer.scss */
+/* line 101, src/scss/_components/_footer.scss */
 .footer__started-bg-path {
   position: absolute;
   width: 410px;
@@ -688,27 +695,27 @@ picture {
   border: solid 150px #a9abfe4c;
 }
 
-/* line 102, src/scss/_components/_footer.scss */
+/* line 108, src/scss/_components/_footer.scss */
 .footer__started-bg-path-1 {
-  top: -154px;
+  top: -145px;
   left: 70px;
 }
 
-/* line 107, src/scss/_components/_footer.scss */
+/* line 113, src/scss/_components/_footer.scss */
 .footer__started-bg-path-2 {
-  right: -280px;
-  bottom: -130px;
+  right: -270px;
+  bottom: -106px;
 }
 
-/* line 114, src/scss/_components/_footer.scss */
+/* line 120, src/scss/_components/_footer.scss */
 .footer__started-title {
   padding-bottom: 30px;
   letter-spacing: 1px;
 }
 
-/* line 119, src/scss/_components/_footer.scss */
+/* line 125, src/scss/_components/_footer.scss */
 .footer__started-desc {
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   color: rgba(255, 255, 255, 0.85);
   font-size: 20px;
   font-weight: 500;
@@ -717,7 +724,7 @@ picture {
   text-align: center;
 }
 
-/* line 130, src/scss/_components/_footer.scss */
+/* line 136, src/scss/_components/_footer.scss */
 .footer__started-btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -729,7 +736,7 @@ picture {
           justify-content: center;
 }
 
-/* line 137, src/scss/_components/_footer.scss */
+/* line 143, src/scss/_components/_footer.scss */
 .footer__title {
   padding-bottom: 30px;
   font-size: 16px;
@@ -739,7 +746,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 147, src/scss/_components/_footer.scss */
+/* line 153, src/scss/_components/_footer.scss */
 .footer__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -758,7 +765,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 156, src/scss/_components/_footer.scss */
+/* line 162, src/scss/_components/_footer.scss */
 .footer__nav-link:hover {
   color: white;
   -webkit-transition: color 0.3s ease-in-out;
@@ -766,7 +773,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 163, src/scss/_components/_footer.scss */
+/* line 169, src/scss/_components/_footer.scss */
 .footer__desc {
   width: 100%;
   max-width: 300px;
@@ -776,7 +783,7 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 171, src/scss/_components/_footer.scss */
+/* line 177, src/scss/_components/_footer.scss */
 .footer__desc-1 {
   padding-bottom: 30px;
 }
