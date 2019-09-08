@@ -67,6 +67,28 @@ $btn-color--border: rgba(#000, 1);
       border-color: rgba($bth-background-color, 1);
       background-color: rgba($bth-background-color, 1);
     }
+
+    &-white {
+      border-color: $c-white;
+      background-color: $c-white;
+      color: $bth-background-color;
+
+      &,
+      &:hover,
+      &:active {
+        @include transition(border-color, background-color);
+      }
+
+      &:hover {
+        border-color: rgba($c-white, 0.75);
+        background-color: rgba($c-white, 0.75);
+      }
+
+      &:active {
+        border-color: rgba($c-white, 1);
+        background-color: rgba($c-white, 1);
+      }
+    }
   }
 }
 

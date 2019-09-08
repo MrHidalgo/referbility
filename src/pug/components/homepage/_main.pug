@@ -1,0 +1,34 @@
+// SECTION main :: START
+
+section#main.main
+
+  .main__bg
+    .main__bg-container
+      .main__bg-container-path.main__bg-container-path-1
+      .main__bg-container-path.main__bg-container-path-2
+
+    .main__bg-path
+
+    .main__bg-shape
+      img(src="img/crowdsourcing-shape-1.svg")
+
+  .main__wrapper
+    .main__wrapper-left
+
+      div
+        h1.main__title The best candidates are passive.
+        p.main__subtitle Leverage the public to have them referred directly to you by crowdsourcing.
+
+        .main__btn-wrapper
+          a.main__btn.c-btn.c-btn--bg(href='#' title='') Request a demo
+          a.main__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#' title='') Learn more
+
+        .main__num
+          +iconSVG('main-number', '')
+
+    .main__wrapper-right
+
+      img(src="img/img-main.png" srcset="img/img-main@2x.png 2x")
+      img(src="img/main-img-path.png" srcset="img/main-img-path@2x.png 2x")
+
+// SECTION main :: END
