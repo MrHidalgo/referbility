@@ -1078,23 +1078,33 @@ picture {
 }
 
 /* line 40, src/scss/_components/_header.scss */
-.is-hideScroll .header.header--fixed {
-  background-color: transparent;
+.is-hideScroll .header .hamburger-inner,
+.is-hideScroll .header .hamburger-inner::before,
+.is-hideScroll .header .hamburger-inner::after {
+  background-image: none;
+  background-color: #fff;
 }
 
-/* line 44, src/scss/_components/_header.scss */
+/* line 47, src/scss/_components/_header.scss */
+.is-hideScroll .header.header--fixed {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 52, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .logo__img--default {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 49, src/scss/_components/_header.scss */
+/* line 57, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .logo__img--action {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 55, src/scss/_components/_header.scss */
+/* line 63, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .hamburger-inner,
 .is-hideScroll .header.header--fixed .hamburger-inner::before,
 .is-hideScroll .header.header--fixed .hamburger-inner::after {
@@ -1102,7 +1112,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 66, src/scss/_components/_header.scss */
+/* line 74, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .header__form form > div input {
   border-color: #fff;
   background-color: transparent;
@@ -1134,7 +1144,7 @@ picture {
   color: #fff;
 }
 
-/* line 75, src/scss/_components/_header.scss */
+/* line 83, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .header__form form > div button {
   background-color: #020d60;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -1142,7 +1152,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 86, src/scss/_components/_header.scss */
+/* line 94, src/scss/_components/_header.scss */
 .header--fixed {
   background-color: #fff;
   -webkit-box-shadow: 0px 30px 100px rgba(135, 119, 217, 0.35);
@@ -1154,7 +1164,7 @@ picture {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/_header.scss */
+/* line 100, src/scss/_components/_header.scss */
 .header--fixed:hover:after {
   opacity: 1;
   visibility: visible;
@@ -1163,19 +1173,19 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 99, src/scss/_components/_header.scss */
+/* line 107, src/scss/_components/_header.scss */
 .header--fixed:hover .logo__img--default {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 104, src/scss/_components/_header.scss */
+/* line 112, src/scss/_components/_header.scss */
 .header--fixed:hover .logo__img--action {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 110, src/scss/_components/_header.scss */
+/* line 118, src/scss/_components/_header.scss */
 .header--fixed:hover .hamburger-inner,
 .header--fixed:hover .hamburger-inner::before,
 .header--fixed:hover .hamburger-inner::after {
@@ -1183,7 +1193,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 121, src/scss/_components/_header.scss */
+/* line 129, src/scss/_components/_header.scss */
 .header--fixed:hover .header__form form > div input {
   border-color: #fff;
   background-color: transparent;
@@ -1215,7 +1225,7 @@ picture {
   color: #fff;
 }
 
-/* line 130, src/scss/_components/_header.scss */
+/* line 138, src/scss/_components/_header.scss */
 .header--fixed:hover .header__form form > div button {
   background-color: #020d60;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -1223,7 +1233,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 140, src/scss/_components/_header.scss */
+/* line 148, src/scss/_components/_header.scss */
 .header--fixed .c-grid {
   max-width: 1600px !important;
   -webkit-transition: max-width 0.3s ease-in-out;
@@ -1231,7 +1241,7 @@ picture {
   transition: max-width 0.3s ease-in-out;
 }
 
-/* line 146, src/scss/_components/_header.scss */
+/* line 154, src/scss/_components/_header.scss */
 .header--fixed .header__wrapper {
   height: 75px;
   will-change: height;
@@ -1240,7 +1250,7 @@ picture {
   transition: height 0.3s ease-in-out;
 }
 
-/* line 152, src/scss/_components/_header.scss */
+/* line 160, src/scss/_components/_header.scss */
 .header--fixed .header__form {
   opacity: 1;
   visibility: visible;
@@ -1252,7 +1262,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 159, src/scss/_components/_header.scss */
+/* line 167, src/scss/_components/_header.scss */
 .header--fixed .header__tabs-wrapper {
   opacity: 0;
   visibility: hidden;
@@ -1261,19 +1271,19 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 167, src/scss/_components/_header.scss */
+/* line 175, src/scss/_components/_header.scss */
 .header--fixed .logo__img--default {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 172, src/scss/_components/_header.scss */
+/* line 180, src/scss/_components/_header.scss */
 .header--fixed .logo__img--action {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 179, src/scss/_components/_header.scss */
+/* line 187, src/scss/_components/_header.scss */
 .header .c-grid {
   max-width: 1415px;
   will-change: max-width;
@@ -1282,7 +1292,7 @@ picture {
   transition: max-width 0.3s ease-in-out;
 }
 
-/* line 185, src/scss/_components/_header.scss */
+/* line 193, src/scss/_components/_header.scss */
 .header__wrapper {
   z-index: 2;
   position: relative;
@@ -1300,17 +1310,17 @@ picture {
   transition: height 0.3s ease-in-out;
 }
 
-/* line 193, src/scss/_components/_header.scss */
+/* line 201, src/scss/_components/_header.scss */
 .header__wrapper > div {
   width: 100%;
 }
 
-/* line 197, src/scss/_components/_header.scss */
+/* line 205, src/scss/_components/_header.scss */
 .header__wrapper-left {
   max-width: 300px;
 }
 
-/* line 201, src/scss/_components/_header.scss */
+/* line 209, src/scss/_components/_header.scss */
 .header__wrapper-middle {
   position: relative;
   display: -webkit-box;
@@ -1331,7 +1341,7 @@ picture {
   padding-right: 15px;
 }
 
-/* line 212, src/scss/_components/_header.scss */
+/* line 220, src/scss/_components/_header.scss */
 .header__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1344,7 +1354,7 @@ picture {
   max-width: 300px;
 }
 
-/* line 219, src/scss/_components/_header.scss */
+/* line 227, src/scss/_components/_header.scss */
 .header__form {
   opacity: 0;
   visibility: hidden;
@@ -1360,7 +1370,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 231, src/scss/_components/_header.scss */
+/* line 239, src/scss/_components/_header.scss */
 .header__form form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1376,14 +1386,14 @@ picture {
           justify-content: space-between;
 }
 
-/* line 237, src/scss/_components/_header.scss */
+/* line 245, src/scss/_components/_header.scss */
 .header__form div {
   width: 100%;
   max-width: -webkit-calc((100% - 30px) / 4);
   max-width: calc((100% - 30px) / 4);
 }
 
-/* line 241, src/scss/_components/_header.scss */
+/* line 249, src/scss/_components/_header.scss */
 .header__form div input {
   outline: none;
   width: 100%;
@@ -1435,7 +1445,7 @@ picture {
   color: #505f79;
 }
 
-/* line 260, src/scss/_components/_header.scss */
+/* line 268, src/scss/_components/_header.scss */
 .header__form div button {
   white-space: nowrap;
   overflow: hidden;
@@ -1453,7 +1463,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 274, src/scss/_components/_header.scss */
+/* line 282, src/scss/_components/_header.scss */
 .header__form div button:after {
   content: '';
   z-index: -1;
@@ -1467,7 +1477,7 @@ picture {
   background-image: linear-gradient(197deg, #8181ff, #5153dc);
 }
 
-/* line 288, src/scss/_components/_header.scss */
+/* line 296, src/scss/_components/_header.scss */
 .header__tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1496,14 +1506,14 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 304, src/scss/_components/_header.scss */
+/* line 312, src/scss/_components/_header.scss */
 .header__tabs:hover {
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 308, src/scss/_components/_header.scss */
+/* line 316, src/scss/_components/_header.scss */
 .header__tabs--sign {
   margin-right: -1px;
   -webkit-border-top-left-radius: 2em;
@@ -1514,12 +1524,12 @@ picture {
   color: #020D60;
 }
 
-/* line 315, src/scss/_components/_header.scss */
+/* line 323, src/scss/_components/_header.scss */
 .header__tabs--sign:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 320, src/scss/_components/_header.scss */
+/* line 328, src/scss/_components/_header.scss */
 .header__tabs--for {
   margin-left: -1px;
   -webkit-border-top-right-radius: 2em;
@@ -1530,13 +1540,13 @@ picture {
   color: #fff;
 }
 
-/* line 327, src/scss/_components/_header.scss */
+/* line 335, src/scss/_components/_header.scss */
 .header__tabs--for:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: #020D60;
 }
 
-/* line 333, src/scss/_components/_header.scss */
+/* line 341, src/scss/_components/_header.scss */
 .header__tabs-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1788,23 +1798,26 @@ picture {
 .menu {
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 200px 15px 0;
   background-image: -webkit-linear-gradient(224deg, rgba(129, 129, 255, 0.9), rgba(81, 83, 220, 0.95));
   background-image: -o-linear-gradient(224deg, rgba(129, 129, 255, 0.9), rgba(81, 83, 220, 0.95));
   background-image: linear-gradient(226deg, rgba(129, 129, 255, 0.9), rgba(81, 83, 220, 0.95));
 }
 
-/* line 14, src/scss/_components/_menu.scss */
+/* line 16, src/scss/_components/_menu.scss */
 .menu__wrapper {
-  padding: 200px 15px 100px;
+  overflow-y: auto;
+  height: 100%;
 }
 
-/* line 18, src/scss/_components/_menu.scss */
+/* line 21, src/scss/_components/_menu.scss */
 .menu__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1825,23 +1838,23 @@ picture {
   margin-right: auto;
 }
 
-/* line 28, src/scss/_components/_menu.scss */
+/* line 31, src/scss/_components/_menu.scss */
 .menu__item {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 32, src/scss/_components/_menu.scss */
+/* line 35, src/scss/_components/_menu.scss */
 .menu__item:last-of-type {
   border-bottom: none;
 }
 
-/* line 36, src/scss/_components/_menu.scss */
+/* line 39, src/scss/_components/_menu.scss */
 .menu__item--first {
   padding-bottom: 40px;
 }
 
-/* line 41, src/scss/_components/_menu.scss */
+/* line 44, src/scss/_components/_menu.scss */
 .menu__btn {
   width: 100%;
   max-width: 340px;
@@ -1856,7 +1869,7 @@ picture {
   color: #020d60;
 }
 
-/* line 54, src/scss/_components/_menu.scss */
+/* line 57, src/scss/_components/_menu.scss */
 .menu__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1910,7 +1923,7 @@ picture {
   }
 }
 
-/* line 83, src/scss/_components/_menu.scss */
+/* line 86, src/scss/_components/_menu.scss */
 .slideInRight {
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
@@ -1955,7 +1968,8 @@ picture {
   left: 0;
   width: -webkit-calc(100% - 248px);
   width: calc(100% - 248px);
-  max-width: 1352px;
+  max-width: -webkit-calc(70% + 20px);
+  max-width: calc(70% + 20px);
   height: -webkit-calc(100% - 60px);
   height: calc(100% - 60px);
   -webkit-border-bottom-right-radius: 100px;

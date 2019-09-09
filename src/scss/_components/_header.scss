@@ -37,8 +37,16 @@
       }
     }
 
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-image: none;
+      background-color: $c-white;
+    }
+
     &.header--fixed {
       background-color: transparent;
+      box-shadow: none;
 
       .logo__img {
         &--default {

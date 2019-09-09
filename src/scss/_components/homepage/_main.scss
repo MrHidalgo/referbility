@@ -29,7 +29,7 @@
       top: 0;
       left: 0;
       width: calc(100% - 248px);
-      max-width: 1352px;
+      max-width: calc(70% + 20px);
       height: calc(100% - 60px);
       border-bottom-right-radius: 100px;
       background: linear-gradient(#8181ff 0%, #5153dc 100%);
