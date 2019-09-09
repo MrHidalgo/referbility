@@ -19,7 +19,7 @@ const initHamburger = () => {
       const elem = ev.currentTarget;
 
       elem.classList.toggle("is-active");
-      mobileContainer.classList.toggle("is-open");
+      $(mobileContainer).toggleClass("is-open slideInRight");
 
       hideScrollContainer.forEach((val, idx) => {
         val.classList.toggle("is-hideScroll");
