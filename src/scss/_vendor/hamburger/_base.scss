@@ -45,12 +45,14 @@
   &::after {
     width: $hamburger-layer-width;
     height: $hamburger-layer-height;
-    background-color: $hamburger-layer-color;
+    //background-color: $hamburger-layer-color;
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
     transition-timing-function: ease;
+
+    background-image: linear-gradient(#8181ff 0%, #5153dc 100%);
   }
 
   &::before,

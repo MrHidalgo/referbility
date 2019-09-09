@@ -2,6 +2,35 @@
 
 header#header.header
   .c-grid
+
     .header__wrapper
+
+      .header__wrapper-left
+
+        .logo.logo--header
+          a.logo__link(href='/' title='')
+            img.logo__img.logo__img--default(src="img/logo--white.png" srcset="img/logo--white@2x.png 2x")
+            img.logo__img.logo__img--action(src="img/logo.png" srcset="img/logo@2x.png 2x")
+
+      .header__wrapper-middle
+
+        .header__tabs-wrapper
+          a.header__tabs.header__tabs--sign(href="#") Login/Register
+          a.header__tabs.header__tabs--for(href="#") For Employers
+
+        .header__form
+          form(action='' method='' autocomplete='off')
+            div
+              input(type='text' name='' placeholder='Full Name')
+            div
+              input(type='text' name='' placeholder='Full Name')
+            div
+              input(type='text' name='' placeholder='Phone Number')
+            div
+              button.c-btn.c-btn--bg(type='submit') Request a demo
+
+      .header__wrapper-right
+
+        +hamburger()
 
 // HEADER :: END

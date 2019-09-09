@@ -14,16 +14,18 @@ const initHamburger = () => {
 	/**
    * @description
 	 */
-	btn.addEventListener("click", (ev) => {
-    const elem = ev.currentTarget;
+	if(btn) {
+    btn.addEventListener("click", (ev) => {
+      const elem = ev.currentTarget;
 
-    elem.classList.toggle("is-active");
-    mobileContainer.classList.toggle("is-open");
+      elem.classList.toggle("is-active");
+      mobileContainer.classList.toggle("is-open");
 
-    hideScrollContainer.forEach((val, idx) => {
-      val.classList.toggle("is-hideScroll");
+      hideScrollContainer.forEach((val, idx) => {
+        val.classList.toggle("is-hideScroll");
+      });
+
     });
-
-  });
+  }
 
 };

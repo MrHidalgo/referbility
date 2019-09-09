@@ -1,6 +1,36 @@
 // LOGOTYPE :: START
 
 .logo {
+  &--header {
+    .logo {
+      display: flex;
+      align-items: flex-start;
+
+      &__link {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        width: 219px;
+        height: 44px;
+      }
+
+      &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        will-change: opacity, visibility;
+        @include transition(opacity, visibility);
+
+        &--action {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
   &--footer {
     padding-bottom: 29px;
 
