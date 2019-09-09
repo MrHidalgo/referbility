@@ -54,8 +54,10 @@ var initHeaderFixed = function initHeaderFixed() {
       headerElement = $('.header');
 
   if (countScroll > 10) {
+    $('body').addClass("is-header-fixed");
     headerElement.addClass("header--fixed");
   } else {
+    $('body').removeClass("is-header-fixed");
     headerElement.removeClass("header--fixed");
   }
 };
