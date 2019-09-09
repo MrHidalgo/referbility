@@ -1,0 +1,19 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__body
+    p.c-modal__title Request a demo
+
+    form.c-modal__form(action='' method='' autocomplete='off')
+      div
+        input(type='text' name='' placeholder='Full Name')
+      div
+        input(type='text' name='' placeholder='Full Name')
+      div
+        input(type='text' name='' placeholder='Phone Number')
+      div
+        button.c-btn.c-btn--bg(type='submit') Request a demo
+
++modal('requestDemo', 'modalContent')
+
+// MODAL request a demo :: END

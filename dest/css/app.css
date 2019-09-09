@@ -577,6 +577,105 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
+/* line 1, src/scss/_shared/_magnificPopup.scss */
+.c-modal {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+/* line 16, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/* line 22, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 28, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+/* line 32, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* line 38, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+/* line 42, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* line 53, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+/* line 59, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 65, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 69, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* line 75, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+}
+
+/* line 79, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 /* line 3, src/scss/_shared/_iconSVG.scss */
 .icon-svg {
   display: inline-block;
@@ -755,6 +854,169 @@ picture {
 .c-btn--bg-white:active {
   border-color: white;
   background-color: white;
+}
+
+/* line 4, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo {
+  max-width: 580px;
+  min-height: 460px;
+  -webkit-border-radius: 16px;
+          border-radius: 16px;
+  -webkit-box-shadow: 0 30px 100px 0 rgba(135, 119, 217, 0.35);
+          box-shadow: 0 30px 100px 0 rgba(135, 119, 217, 0.35);
+  background-color: #ffffff;
+}
+
+/* line 11, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .mfp-close {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  color: #5153DC;
+}
+
+/* line 24, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__body {
+  padding: 50px 90px 60px;
+}
+
+/* line 28, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__title {
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #091e42;
+}
+
+/* line 36, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* line 41, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__form div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+/* line 47, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__form div:last-of-type {
+  padding-top: 25px;
+}
+
+/* line 51, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__form div input {
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid transparent;
+  background-color: rgba(197, 197, 255, 0.4);
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-modal#requestDemo .c-modal__form div input.placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505f79;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-modal#requestDemo .c-modal__form div input:-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505f79;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-modal#requestDemo .c-modal__form div input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505f79;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-modal#requestDemo .c-modal__form div input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505f79;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-modal#requestDemo .c-modal__form div input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505f79;
+}
+
+/* line 70, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__form div button {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  will-change: background;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 83, src/scss/_macros/_modal.scss */
+.c-modal#requestDemo .c-modal__form div button:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(253deg, #8181ff, #5153dc);
+  background-image: -o-linear-gradient(253deg, #8181ff, #5153dc);
+  background-image: linear-gradient(197deg, #8181ff, #5153dc);
 }
 
 /* line 3, src/scss/_components/_header.scss */

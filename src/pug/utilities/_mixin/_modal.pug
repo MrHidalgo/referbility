@@ -6,13 +6,13 @@
 
     @example
       mixin modalContent()
-        .modal__header
-        .modal__body
-        .modal__footer
+        .c-modal__header
+        .c-modal__body
+        .c-modal__footer
 
       +modal('modalIdName', 'modalContent')
 
 //- ========================
 mixin modal(idMod, contentModal)
-  .modal.mfp-hide.mfp-with-anim(id!= idMod)
+  .c-modal.mfp-hide.mfp-with-anim(id!= idMod)
     +#{contentModal}

@@ -3,5 +3,6 @@
 * Include :
 *
 * - jquery;
+* - magnific-popup;
 *
 * */

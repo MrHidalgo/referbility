@@ -5,6 +5,9 @@ pageClassName: p-home
 ---
 extends shared/_layout
 
+block modal
+  include components/homepage/_modalRequestDemo
+
 block content
   div.body.body--start(class!= pageClassName)
 

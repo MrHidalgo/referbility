@@ -31,6 +31,7 @@
   "dependencies": {
     "normalize-css": "^8.0.0",
     "reset-css": "^4.0.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0"
   }
 }
