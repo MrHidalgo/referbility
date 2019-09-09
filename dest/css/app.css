@@ -1982,12 +1982,19 @@ picture {
           box-shadow: 0px 40px 90px rgba(135, 119, 217, 0.2);
 }
 
-/* line 38, src/scss/_components/homepage/_main.scss */
+@media screen and (max-width: 1919px) {
+  /* line 26, src/scss/_components/homepage/_main.scss */
+  .main__bg-container {
+    max-width: 1352px;
+  }
+}
+
+/* line 41, src/scss/_components/homepage/_main.scss */
 .main__bg-container-path {
   position: absolute;
 }
 
-/* line 41, src/scss/_components/homepage/_main.scss */
+/* line 44, src/scss/_components/homepage/_main.scss */
 .main__bg-container-path-1 {
   left: -208px;
   bottom: 25px;
@@ -1998,7 +2005,7 @@ picture {
   border: 130px solid rgba(169, 171, 254, 0.2);
 }
 
-/* line 50, src/scss/_components/homepage/_main.scss */
+/* line 53, src/scss/_components/homepage/_main.scss */
 .main__bg-container-path-2 {
   top: -90px;
   right: -93px;
@@ -2009,14 +2016,14 @@ picture {
   border: 150px solid rgba(169, 171, 254, 0.2);
 }
 
-/* line 61, src/scss/_components/homepage/_main.scss */
+/* line 64, src/scss/_components/homepage/_main.scss */
 .main__bg-shape {
   position: absolute;
   top: 110px;
   right: 40px;
 }
 
-/* line 68, src/scss/_components/homepage/_main.scss */
+/* line 71, src/scss/_components/homepage/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
@@ -2025,23 +2032,13 @@ picture {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1415px;
+  max-width: 1630px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 141px;
 }
 
-@media screen and (max-width: 1799px) {
-  /* line 68, src/scss/_components/homepage/_main.scss */
-  .main__wrapper {
-    max-width: 100%;
-    padding-right: 0;
-  }
-}
-
-/* line 84, src/scss/_components/homepage/_main.scss */
+/* line 81, src/scss/_components/homepage/_main.scss */
 .main__wrapper-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2049,18 +2046,19 @@ picture {
           flex: 1;
   min-width: 1px;
   max-width: 100%;
+  padding-left: 215px;
   padding-top: 77px;
   padding-right: 95px;
 }
 
-/* line 91, src/scss/_components/homepage/_main.scss */
+/* line 89, src/scss/_components/homepage/_main.scss */
 .main__wrapper-left > div {
   width: 100%;
   max-width: 670px;
   margin-left: auto;
 }
 
-/* line 98, src/scss/_components/homepage/_main.scss */
+/* line 96, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right {
   position: relative;
   display: -webkit-box;
@@ -2079,19 +2077,19 @@ picture {
   max-width: 620px;
 }
 
-/* line 106, src/scss/_components/homepage/_main.scss */
+/* line 104, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right img {
   position: relative;
   -webkit-filter: drop-shadow(0px 90px 200px rgba(9, 30, 66, 0.25));
           filter: drop-shadow(0px 90px 200px rgba(9, 30, 66, 0.25));
 }
 
-/* line 110, src/scss/_components/homepage/_main.scss */
+/* line 108, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right img:nth-of-type(1) {
   z-index: 3;
 }
 
-/* line 113, src/scss/_components/homepage/_main.scss */
+/* line 111, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right img:nth-of-type(2) {
   z-index: 2;
   position: absolute;
@@ -2101,7 +2099,7 @@ picture {
   height: auto;
 }
 
-/* line 125, src/scss/_components/homepage/_main.scss */
+/* line 123, src/scss/_components/homepage/_main.scss */
 .main__title {
   padding-bottom: 14px;
   font-weight: bold;
@@ -2112,7 +2110,7 @@ picture {
   color: #fff;
 }
 
-/* line 135, src/scss/_components/homepage/_main.scss */
+/* line 133, src/scss/_components/homepage/_main.scss */
 .main__subtitle {
   width: 100%;
   max-width: 510px;
@@ -2125,19 +2123,19 @@ picture {
   color: #fff;
 }
 
-/* line 147, src/scss/_components/homepage/_main.scss */
+/* line 145, src/scss/_components/homepage/_main.scss */
 .main__btn {
   margin-right: 15px;
 }
 
-/* line 150, src/scss/_components/homepage/_main.scss */
+/* line 148, src/scss/_components/homepage/_main.scss */
 .main__btn:last-of-type {
   margin-right: 0;
   padding-left: 42px;
   padding-right: 42px;
 }
 
-/* line 156, src/scss/_components/homepage/_main.scss */
+/* line 154, src/scss/_components/homepage/_main.scss */
 .main__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2146,7 +2144,7 @@ picture {
   padding-bottom: 60px;
 }
 
-/* line 162, src/scss/_components/homepage/_main.scss */
+/* line 160, src/scss/_components/homepage/_main.scss */
 .main__num {
   display: -webkit-box;
   display: -webkit-flex;
