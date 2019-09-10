@@ -10,19 +10,23 @@
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
+    max-width: 1280px;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
     &-shape {
       position: absolute;
 
       &-1 {
         top: 0;
-        left: -10px;
+        left: -50px;
       }
 
       &-2 {
-        right: 0;
+        right: -100px;
         bottom: 548px;
       }
     }

@@ -15,12 +15,21 @@
 
     &-path {
       position: absolute;
-      right: -(410px - 340px);
-      bottom: -110px;
+      right: -320px;
+      bottom: -180px;
       width: 410px;
       height: 410px;
       border-radius: 50%;
       border: 90px solid rgba(234, 230, 255, 0.4);
+    }
+
+    &-row {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - 248px);
+      max-width: calc(70% + 20px);
+      height: calc(100% - 60px);
     }
 
     &-container{
@@ -63,8 +72,8 @@
 
     &-shape {
       position: absolute;
-      top: 110px;
-      right: 100px;
+      top: 90px;
+      right: -210px;
     }
   }
 
@@ -103,9 +112,6 @@
 
       img {
         position: relative;
-        display: block;
-        max-width: 100%;
-        height: auto;
         filter: drop-shadow(0px 90px 200px rgba(9, 30, 66, 0.25));
 
         &:nth-of-type(1) {
@@ -116,7 +122,7 @@
           z-index: 2;
           position: absolute;
           bottom: -41px;
-          left: -30px;
+          left: -100px;
           max-width: 100%;
           height: auto;
         }
