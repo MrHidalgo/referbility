@@ -40,8 +40,8 @@
 
 /* line 31, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-box {
-  width: 30px;
-  height: 22px;
+  width: 28px;
+  height: 19px;
   display: inline-block;
   position: relative;
 }
@@ -50,13 +50,13 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -1.5px;
 }
 
 /* line 43, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 30px;
-  height: 4px;
+  width: 28px;
+  height: 3px;
   -webkit-border-radius: 0;
           border-radius: 0;
   position: absolute;
@@ -85,12 +85,12 @@
 
 /* line 64, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-inner::before {
-  top: -9px;
+  top: -8px;
 }
 
 /* line 68, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-inner::after {
-  bottom: -9px;
+  bottom: -8px;
 }
 
 /*
@@ -790,7 +790,7 @@ picture {
           justify-content: center;
   width: auto;
   max-width: unset;
-  height: 50px;
+  height: 45px;
   border: 2px solid #020d60;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -865,8 +865,7 @@ picture {
 
 /* line 4, src/scss/_macros/_modal.scss */
 .c-modal#requestDemo {
-  max-width: 580px;
-  min-height: 460px;
+  max-width: 500px;
   -webkit-border-radius: 16px;
           border-radius: 16px;
   -webkit-box-shadow: 0 30px 100px 0 rgba(135, 119, 217, 0.35);
@@ -898,13 +897,13 @@ picture {
 
 /* line 24, src/scss/_macros/_modal.scss */
 .c-modal#requestDemo .c-modal__body {
-  padding: 50px 90px 60px;
+  padding: 50px;
 }
 
 /* line 28, src/scss/_macros/_modal.scss */
 .c-modal#requestDemo .c-modal__title {
-  padding-bottom: 40px;
-  font-size: 30px;
+  padding-bottom: 30px;
+  font-size: 26px;
   font-weight: bold;
   text-align: center;
   color: #091e42;
@@ -947,8 +946,8 @@ picture {
 .c-modal#requestDemo .c-modal__form div input {
   outline: none;
   width: 100%;
-  height: 50px;
-  padding: 0 30px;
+  height: 45px;
+  padding: 0 20px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   -webkit-box-shadow: none;
@@ -956,41 +955,41 @@ picture {
   border: 2px solid transparent;
   background-color: rgba(197, 197, 255, 0.4);
   letter-spacing: 0.5px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 /* line 88, src/scss/_utilities/_mixin.scss */
 .c-modal#requestDemo .c-modal__form div input.placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 89, src/scss/_utilities/_mixin.scss */
 .c-modal#requestDemo .c-modal__form div input:-moz-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 90, src/scss/_utilities/_mixin.scss */
 .c-modal#requestDemo .c-modal__form div input::-moz-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 91, src/scss/_utilities/_mixin.scss */
 .c-modal#requestDemo .c-modal__form div input:-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 92, src/scss/_utilities/_mixin.scss */
 .c-modal#requestDemo .c-modal__form div input::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
@@ -1000,9 +999,9 @@ picture {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  height: 50px;
+  height: 45px;
   border: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.5px;
   will-change: background;
@@ -1361,6 +1360,14 @@ picture {
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   will-change: opacity, visibility;
@@ -1369,7 +1376,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 239, src/scss/_components/_header.scss */
+/* line 241, src/scss/_components/_header.scss */
 .header__form form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1383,21 +1390,22 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
-/* line 245, src/scss/_components/_header.scss */
+/* line 248, src/scss/_components/_header.scss */
 .header__form div {
   width: 100%;
   max-width: -webkit-calc((100% - 30px) / 4);
   max-width: calc((100% - 30px) / 4);
 }
 
-/* line 249, src/scss/_components/_header.scss */
+/* line 252, src/scss/_components/_header.scss */
 .header__form div input {
   outline: none;
   width: 100%;
-  height: 50px;
-  padding: 0 35px;
+  height: 45px;
+  padding: 0 20px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   -webkit-box-shadow: none;
@@ -1405,54 +1413,54 @@ picture {
   border: 2px solid transparent;
   background-color: rgba(197, 197, 255, 0.4);
   letter-spacing: 0.5px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 /* line 88, src/scss/_utilities/_mixin.scss */
 .header__form div input.placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 89, src/scss/_utilities/_mixin.scss */
 .header__form div input:-moz-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 90, src/scss/_utilities/_mixin.scss */
 .header__form div input::-moz-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 91, src/scss/_utilities/_mixin.scss */
 .header__form div input:-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
 /* line 92, src/scss/_utilities/_mixin.scss */
 .header__form div input::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #505f79;
 }
 
-/* line 268, src/scss/_components/_header.scss */
+/* line 271, src/scss/_components/_header.scss */
 .header__form div button {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 45px;
   border: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.5px;
   will-change: background;
@@ -1462,7 +1470,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 282, src/scss/_components/_header.scss */
+/* line 285, src/scss/_components/_header.scss */
 .header__form div button:after {
   content: '';
   z-index: -1;
@@ -1476,7 +1484,7 @@ picture {
   background-image: linear-gradient(197deg, #8181ff, #5153dc);
 }
 
-/* line 296, src/scss/_components/_header.scss */
+/* line 299, src/scss/_components/_header.scss */
 .header__tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1490,14 +1498,14 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50px;
-  padding-left: 36px;
-  padding-right: 36px;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
   border: 2px solid #fff;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   will-change: background-color, color;
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -1505,14 +1513,14 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 312, src/scss/_components/_header.scss */
+/* line 315, src/scss/_components/_header.scss */
 .header__tabs:hover {
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 316, src/scss/_components/_header.scss */
+/* line 319, src/scss/_components/_header.scss */
 .header__tabs--sign {
   margin-right: -1px;
   -webkit-border-top-left-radius: 2em;
@@ -1523,12 +1531,12 @@ picture {
   color: #020D60;
 }
 
-/* line 323, src/scss/_components/_header.scss */
+/* line 326, src/scss/_components/_header.scss */
 .header__tabs--sign:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 328, src/scss/_components/_header.scss */
+/* line 331, src/scss/_components/_header.scss */
 .header__tabs--for {
   margin-left: -1px;
   -webkit-border-top-right-radius: 2em;
@@ -1539,13 +1547,13 @@ picture {
   color: #fff;
 }
 
-/* line 335, src/scss/_components/_header.scss */
+/* line 338, src/scss/_components/_header.scss */
 .header__tabs--for:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: #020D60;
 }
 
-/* line 341, src/scss/_components/_header.scss */
+/* line 344, src/scss/_components/_header.scss */
 .header__tabs-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1838,7 +1846,7 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1856,19 +1864,19 @@ picture {
 
 /* line 44, src/scss/_components/_menu.scss */
 .menu__item--first {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 /* line 49, src/scss/_components/_menu.scss */
 .menu__btn {
   width: 100%;
-  max-width: 340px;
-  height: 65px;
+  max-width: 300px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
   -webkit-border-radius: 2em;
           border-radius: 2em;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #020d60;
@@ -1888,10 +1896,10 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  font-size: 21px;
-  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   color: #ffffff;
