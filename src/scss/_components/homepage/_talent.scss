@@ -1,13 +1,13 @@
 // SECTION talent :: START
 
 .talent {
-  padding-top: 102px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   &__wrapper {
     position: relative;
-    padding-top: 155px;
-    padding-bottom: 168px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     margin-bottom: 100px;
 
     &-bg {
@@ -53,7 +53,7 @@
 
   &__line {
     width: 100%;
-    max-width: 1420px;
+    max-width: 1200px;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -67,23 +67,18 @@
   }
 
   &__title {
-    position: relative;
-    top: 3px;
     letter-spacing: 1px;
   }
 
   &__subtitle {
-    position: relative;
-    left: 14px;
     width: 100%;
-    max-width: 780px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 35px;
     font-weight: 500;
-    font-size: 27px;
-    letter-spacing: 0.02em;
-    line-height: 45px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
     text-align: center;
     color: #fff;
   }

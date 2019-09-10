@@ -2,8 +2,8 @@
 
 .crowdsourcing {
   position: relative;
-  padding-top: 138px;
-  padding-bottom: 93px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 
   &__bg {
     z-index: 0;
@@ -22,7 +22,7 @@
       }
 
       &-2 {
-        right: 60px;
+        right: 0;
         bottom: 548px;
       }
     }
@@ -39,14 +39,14 @@
   }
 
   &__title {
-    padding-bottom: 77px;
+    padding-bottom: 75px;
   }
 
   &__wrapper {
     z-index: 2;
     position: relative;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -54,64 +54,10 @@
   &__block {
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 
     &:last-of-type {
-      padding-bottom: 150px;
-    }
-
-    &-1 {
-      .crowdsourcing__block {
-        &-left {
-          > div {
-            position: relative;
-            top: -11px;
-          }
-        }
-
-        &-img {
-          img {
-            position: relative;
-            left: -5px;
-          }
-        }
-      }
-    }
-    &-2 {
-      .crowdsourcing__block {
-        &-left {
-          > div {
-            position: relative;
-            top: 13px;
-            max-width: 420px;
-          }
-        }
-
-        &-img {
-          img {
-            position: relative;
-            left: 17px;
-          }
-        }
-      }
-    }
-    &-3 {
-      .crowdsourcing__block {
-        &-left {
-          > div {
-            position: relative;
-            top: -2px;
-          }
-        }
-
-        &-img {
-          img {
-            position: relative;
-            top: -22px;
-            left: -4px;
-          }
-        }
-      }
+      padding-bottom: 100px;
     }
 
     &--reverse {
@@ -121,12 +67,11 @@
         &-left {
           justify-content: flex-start;
           padding-right: 0;
-          padding-left: 205px;
+          padding-left: 150px;
         }
 
         &-img {
-          padding-right: 0;
-          padding-left: 80px;
+          padding: 30px 30px 0 80px;
 
           &:after {
             right: auto;
@@ -142,7 +87,7 @@
       flex: 1;
       min-width: 1px;
       max-width: 100%;
-      padding-right: 180px;
+      padding-right: 150px;
 
       > div {
         width: 100%;
@@ -152,16 +97,14 @@
 
     &-right {
       width: 100%;
-      max-width: 580px;
+      max-width: 550px;
     }
 
     &-img {
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
+      overflow: hidden;
       position: relative;
-      height: 390px;
-      padding-right: 80px;
+      height: 340px;
+      padding: 30px 80px 0 30px;
       background-color: #ecebf6;
 
       &:after {
@@ -169,24 +112,32 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 80px;
+        width: 50px;
         height: 100%;
         background: linear-gradient(#8181ff 0%, #5153dc 100%);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
     &-line {
       width: 50px;
-      height: 5px;
-      margin-bottom: 21px;
+      height: 3px;
+      margin-bottom: 20px;
       background-color: #29de9c;
     }
 
     &-desc {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
-      letter-spacing: 0.5px;
-      line-height: 35px;
+      letter-spacing: 0.25px;
+      line-height: 30px;
       color: #344563;
 
       span {

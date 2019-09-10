@@ -2161,8 +2161,8 @@ picture {
 /* line 3, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing {
   position: relative;
-  padding-top: 138px;
-  padding-bottom: 93px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 /* line 8, src/scss/_components/homepage/_crowdsourcing.scss */
@@ -2188,7 +2188,7 @@ picture {
 
 /* line 24, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__bg-shape-2 {
-  right: 60px;
+  right: 0;
   bottom: 548px;
 }
 
@@ -2206,7 +2206,7 @@ picture {
 
 /* line 41, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__title {
-  padding-bottom: 77px;
+  padding-bottom: 75px;
 }
 
 /* line 45, src/scss/_components/homepage/_crowdsourcing.scss */
@@ -2214,7 +2214,7 @@ picture {
   z-index: 2;
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2229,53 +2229,15 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 
 /* line 59, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block:last-of-type {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
-/* line 66, src/scss/_components/homepage/_crowdsourcing.scss */
-.crowdsourcing__block-1 .crowdsourcing__block-left > div {
-  position: relative;
-  top: -11px;
-}
-
-/* line 73, src/scss/_components/homepage/_crowdsourcing.scss */
-.crowdsourcing__block-1 .crowdsourcing__block-img img {
-  position: relative;
-  left: -5px;
-}
-
-/* line 83, src/scss/_components/homepage/_crowdsourcing.scss */
-.crowdsourcing__block-2 .crowdsourcing__block-left > div {
-  position: relative;
-  top: 13px;
-  max-width: 420px;
-}
-
-/* line 91, src/scss/_components/homepage/_crowdsourcing.scss */
-.crowdsourcing__block-2 .crowdsourcing__block-img img {
-  position: relative;
-  left: 17px;
-}
-
-/* line 101, src/scss/_components/homepage/_crowdsourcing.scss */
-.crowdsourcing__block-3 .crowdsourcing__block-left > div {
-  position: relative;
-  top: -2px;
-}
-
-/* line 108, src/scss/_components/homepage/_crowdsourcing.scss */
-.crowdsourcing__block-3 .crowdsourcing__block-img img {
-  position: relative;
-  top: -22px;
-  left: -4px;
-}
-
-/* line 117, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 63, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -2284,29 +2246,28 @@ picture {
           flex-direction: row-reverse;
 }
 
-/* line 121, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 67, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse .crowdsourcing__block-left {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-right: 0;
-  padding-left: 205px;
+  padding-left: 150px;
 }
 
-/* line 127, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 73, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse .crowdsourcing__block-img {
-  padding-right: 0;
-  padding-left: 80px;
+  padding: 30px 30px 0 80px;
 }
 
-/* line 131, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 76, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse .crowdsourcing__block-img:after {
   right: auto;
   left: 0;
 }
 
-/* line 139, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 84, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2322,48 +2283,37 @@ picture {
           flex: 1;
   min-width: 1px;
   max-width: 100%;
-  padding-right: 180px;
+  padding-right: 150px;
 }
 
-/* line 147, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 92, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-left > div {
   width: 100%;
   max-width: 425px;
 }
 
-/* line 153, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 98, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-right {
   width: 100%;
-  max-width: 580px;
+  max-width: 550px;
 }
 
-/* line 158, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 103, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-img {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  overflow: hidden;
   position: relative;
-  height: 390px;
-  padding-right: 80px;
+  height: 340px;
+  padding: 30px 80px 0 30px;
   background-color: #ecebf6;
 }
 
-/* line 167, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 110, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-img:after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
-  width: 80px;
+  width: 50px;
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#8181ff), to(#5153dc));
   background: -webkit-linear-gradient(#8181ff 0%, #5153dc 100%);
@@ -2371,29 +2321,38 @@ picture {
   background: linear-gradient(#8181ff 0%, #5153dc 100%);
 }
 
-/* line 178, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 120, src/scss/_components/homepage/_crowdsourcing.scss */
+.crowdsourcing__block-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 129, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-line {
   width: 50px;
-  height: 5px;
-  margin-bottom: 21px;
+  height: 3px;
+  margin-bottom: 20px;
   background-color: #29de9c;
 }
 
-/* line 185, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 136, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-desc {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  line-height: 35px;
+  letter-spacing: 0.25px;
+  line-height: 30px;
   color: #344563;
 }
 
-/* line 192, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 143, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-desc span {
   font-weight: 800;
 }
 
-/* line 197, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 148, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-link {
   display: block;
   padding-top: 8px;
@@ -2405,15 +2364,15 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_talent.scss */
 .talent {
-  padding-top: 102px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
 /* line 7, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper {
   position: relative;
-  padding-top: 155px;
-  padding-bottom: 168px;
+  padding-top: 125px;
+  padding-bottom: 125px;
   margin-bottom: 100px;
 }
 
@@ -2473,7 +2432,7 @@ picture {
 /* line 54, src/scss/_components/homepage/_talent.scss */
 .talent__line {
   width: 100%;
-  max-width: 1420px;
+  max-width: 1200px;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -2488,24 +2447,19 @@ picture {
 
 /* line 69, src/scss/_components/homepage/_talent.scss */
 .talent__title {
-  position: relative;
-  top: 3px;
   letter-spacing: 1px;
 }
 
-/* line 75, src/scss/_components/homepage/_talent.scss */
+/* line 73, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle {
-  position: relative;
-  left: 14px;
   width: 100%;
-  max-width: 780px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 35px;
   font-weight: 500;
-  font-size: 27px;
-  letter-spacing: 0.02em;
-  line-height: 45px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
 }
