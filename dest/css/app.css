@@ -2062,13 +2062,15 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1310px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 100px;
 }
 
-/* line 91, src/scss/_components/homepage/_main.scss */
+/* line 93, src/scss/_components/homepage/_main.scss */
 .main__wrapper-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2080,14 +2082,14 @@ picture {
   padding-right: 75px;
 }
 
-/* line 98, src/scss/_components/homepage/_main.scss */
+/* line 100, src/scss/_components/homepage/_main.scss */
 .main__wrapper-left > div {
   width: 100%;
   max-width: 670px;
   margin-left: auto;
 }
 
-/* line 105, src/scss/_components/homepage/_main.scss */
+/* line 107, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right {
   position: relative;
   display: -webkit-box;
@@ -2106,19 +2108,19 @@ picture {
   max-width: 550px;
 }
 
-/* line 113, src/scss/_components/homepage/_main.scss */
+/* line 115, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right img {
   position: relative;
   -webkit-filter: drop-shadow(0px 90px 200px rgba(9, 30, 66, 0.25));
           filter: drop-shadow(0px 90px 200px rgba(9, 30, 66, 0.25));
 }
 
-/* line 117, src/scss/_components/homepage/_main.scss */
+/* line 119, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right img:nth-of-type(1) {
   z-index: 3;
 }
 
-/* line 121, src/scss/_components/homepage/_main.scss */
+/* line 123, src/scss/_components/homepage/_main.scss */
 .main__wrapper-right img:nth-of-type(2) {
   z-index: 2;
   position: absolute;
@@ -2128,7 +2130,7 @@ picture {
   height: auto;
 }
 
-/* line 133, src/scss/_components/homepage/_main.scss */
+/* line 135, src/scss/_components/homepage/_main.scss */
 .main__title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -2139,7 +2141,7 @@ picture {
   color: #fff;
 }
 
-/* line 143, src/scss/_components/homepage/_main.scss */
+/* line 145, src/scss/_components/homepage/_main.scss */
 .main__subtitle {
   width: 100%;
   max-width: 510px;
@@ -2152,19 +2154,19 @@ picture {
   color: #fff;
 }
 
-/* line 155, src/scss/_components/homepage/_main.scss */
+/* line 157, src/scss/_components/homepage/_main.scss */
 .main__btn {
   margin-right: 15px;
 }
 
-/* line 158, src/scss/_components/homepage/_main.scss */
+/* line 160, src/scss/_components/homepage/_main.scss */
 .main__btn:last-of-type {
   margin-right: 0;
   padding-left: 42px;
   padding-right: 42px;
 }
 
-/* line 164, src/scss/_components/homepage/_main.scss */
+/* line 166, src/scss/_components/homepage/_main.scss */
 .main__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2173,7 +2175,7 @@ picture {
   padding-bottom: 75px;
 }
 
-/* line 170, src/scss/_components/homepage/_main.scss */
+/* line 172, src/scss/_components/homepage/_main.scss */
 .main__num {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2182,7 +2184,7 @@ picture {
   padding-left: 10px;
 }
 
-/* line 174, src/scss/_components/homepage/_main.scss */
+/* line 176, src/scss/_components/homepage/_main.scss */
 .main__num svg {
   height: 55px;
 }
