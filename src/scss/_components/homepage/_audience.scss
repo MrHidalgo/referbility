@@ -1,23 +1,23 @@
 // SECTION audience :: START
 
 .audience {
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   &__wrapper {
     width: 100%;
-    max-width: 1490px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 74px;
+    padding-bottom: 50px;
   }
 
   &__title {
-    padding-bottom: 47px;
+    padding-bottom: 50px;
   }
 
   &__line {
     width: 100%;
-    max-width: 1420px;
+    max-width: 1200px;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -74,10 +74,10 @@
     &-bg {
       z-index: 0;
       position: absolute;
-      top: 30px;
+      top: 25px;
       left: 0;
       width: 100%;
-      height: calc(100% - (30px + 142px));
+      height: calc(100% - (25px + 142px));
       background-color: #ecebf6;
 
       &:before {
@@ -103,7 +103,7 @@
 
       > div {
         width: 100%;
-        max-width: calc((100% - 50px) / 6);
+        max-width: calc((100% - 25px) / 6);
         min-height: 100%;
       }
     }
@@ -113,14 +113,13 @@
     }
 
     &-body {
-      height: calc(100% - (55px + 16px + 142px));
-      padding-left: 28px;
-      padding-right: 25px;
-      padding-bottom: 25px;
+      height: calc(100% - (50px + 16px + 142px));
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
 
       p {
-        font-size: 18px;
-        letter-spacing: 0.03em;
+        font-size: 16px;
         line-height: 25px;
         text-align: left;
         color: #344563;
@@ -133,6 +132,8 @@
 
     &-footer {
       height: 142px;
+      padding-left: 15px;
+      padding-right: 15px;
 
       svg {
         position: relative;
@@ -148,16 +149,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 55px;
-      height: 55px;
+      width: 50px;
+      height: 50px;
       margin-left: auto;
       margin-right: auto;
       border-radius: 50%;
       background-color: #c5c5ff;
 
       span {
-        font-weight: bold;
-        font-size: 21px;
+        font-weight: 500;
+        font-size: 18px;
         text-align: center;
         color: #091e42;
       }

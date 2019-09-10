@@ -555,13 +555,12 @@ picture {
 
 /* line 5, src/scss/_shared/_common.scss */
 .copyright__text {
-  font-size: 18px;
-  letter-spacing: 0.5px;
+  font-size: 12px;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 11, src/scss/_shared/_common.scss */
+/* line 10, src/scss/_shared/_common.scss */
 .copyright__text a {
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease-in-out;
@@ -569,7 +568,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 15, src/scss/_shared/_common.scss */
+/* line 14, src/scss/_shared/_common.scss */
 .copyright__text a:hover {
   color: white;
   -webkit-transition: color 0.3s ease-in-out;
@@ -577,7 +576,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 24, src/scss/_shared/_common.scss */
+/* line 23, src/scss/_shared/_common.scss */
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -762,7 +761,7 @@ picture {
 
 /* line 3, src/scss/_macros/_title.scss */
 .c-title {
-  font-size: 40px;
+  font-size: 33px;
   font-weight: bold;
   text-align: center;
   color: #091e42;
@@ -791,19 +790,19 @@ picture {
           justify-content: center;
   width: auto;
   max-width: unset;
-  height: 59px;
+  height: 50px;
   border: 2px solid #020d60;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-border-radius: 29px;
-          border-radius: 29px;
+  -webkit-border-radius: 2em;
+          border-radius: 2em;
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
-  padding-left: 36px;
-  padding-right: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
@@ -1561,8 +1560,8 @@ picture {
 /* line 3, src/scss/_components/_footer.scss */
 .footer {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 /* line 8, src/scss/_components/_footer.scss */
@@ -1600,12 +1599,12 @@ picture {
 
 /* line 36, src/scss/_components/_footer.scss */
 .footer__wrapper-2 {
-  padding-top: 140px;
+  padding-top: 80px;
 }
 
 /* line 40, src/scss/_components/_footer.scss */
 .footer__wrapper-3 {
-  padding-top: 117px;
+  padding-top: 80px;
 }
 
 /* line 45, src/scss/_components/_footer.scss */
@@ -1644,7 +1643,7 @@ picture {
   z-index: 2;
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1666,8 +1665,8 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  max-width: 1250px;
-  height: 505px;
+  max-width: 1170px;
+  height: 425px;
   margin-left: auto;
   margin-right: auto;
   -webkit-border-top-right-radius: 160px;
@@ -1704,7 +1703,7 @@ picture {
 /* line 108, src/scss/_components/_footer.scss */
 .footer__started-bg-path-1 {
   top: -145px;
-  left: 70px;
+  left: -70px;
 }
 
 /* line 113, src/scss/_components/_footer.scss */
@@ -1721,9 +1720,9 @@ picture {
 
 /* line 125, src/scss/_components/_footer.scss */
 .footer__started-desc {
-  padding-bottom: 38px;
+  padding-bottom: 30px;
   color: rgba(255, 255, 255, 0.85);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.5px;
   line-height: 1.75;
@@ -1744,10 +1743,10 @@ picture {
 
 /* line 143, src/scss/_components/_footer.scss */
 .footer__title {
-  padding-bottom: 30px;
-  font-size: 16px;
+  padding-bottom: 15px;
+  font-size: 14px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
 }
@@ -1762,8 +1761,8 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 40px;
-  font-size: 18px;
+  min-height: 35px;
+  font-size: 14px;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease-in-out;
@@ -1783,7 +1782,7 @@ picture {
 .footer__desc {
   width: 100%;
   max-width: 300px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.7);
@@ -1791,7 +1790,7 @@ picture {
 
 /* line 177, src/scss/_components/_footer.scss */
 .footer__desc-1 {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 /* line 3, src/scss/_components/_menu.scss */
@@ -2514,8 +2513,8 @@ picture {
 /* line 3, src/scss/_components/homepage/_how.scss */
 .how {
   position: relative;
-  padding-top: 98px;
-  padding-bottom: 148px;
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 /* line 8, src/scss/_components/homepage/_how.scss */
@@ -2553,7 +2552,7 @@ picture {
 /* line 36, src/scss/_components/homepage/_how.scss */
 .how__line {
   width: 100%;
-  max-width: 1420px;
+  max-width: 1200px;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -2562,7 +2561,7 @@ picture {
 
 /* line 45, src/scss/_components/homepage/_how.scss */
 .how__title {
-  padding-bottom: 77px;
+  padding-bottom: 50px;
 }
 
 /* line 49, src/scss/_components/homepage/_how.scss */
@@ -2585,7 +2584,7 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 245px;
   background-image: url("../img/how-bg.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -2599,7 +2598,7 @@ picture {
 .how__block-body {
   z-index: 2;
   position: relative;
-  padding: 50px 75px 30px 30px;
+  padding: 20px 50px 20px 15px;
 }
 
 /* line 80, src/scss/_components/homepage/_how.scss */
@@ -2615,10 +2614,10 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  max-width: 1470px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 /* line 91, src/scss/_components/homepage/_how.scss */
@@ -2635,54 +2634,55 @@ picture {
 
 /* line 101, src/scss/_components/homepage/_how.scss */
 .how__block-num {
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
 }
 
 /* line 108, src/scss/_components/homepage/_how.scss */
 .how__block-desc {
-  font-size: 18px;
-  letter-spacing: 0.03em;
+  font-size: 16px;
   line-height: 25px;
   color: #fff;
 }
 
-/* line 114, src/scss/_components/homepage/_how.scss */
+/* line 113, src/scss/_components/homepage/_how.scss */
 .how__block-desc span {
   font-weight: bold;
 }
 
-/* line 119, src/scss/_components/homepage/_how.scss */
+/* line 118, src/scss/_components/homepage/_how.scss */
 .how__block-icon {
   position: absolute;
-  bottom: -72px;
+  bottom: 0;
   left: 0;
   width: 100%;
   padding-right: 50px;
 }
 
-/* line 126, src/scss/_components/homepage/_how.scss */
+/* line 125, src/scss/_components/homepage/_how.scss */
 .how__block-icon svg {
   display: block;
+  width: 75px;
+  height: 75px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 134, src/scss/_components/homepage/_how.scss */
+/* line 135, src/scss/_components/homepage/_how.scss */
 .how__arrow {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1470px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 141, src/scss/_components/homepage/_how.scss */
+/* line 142, src/scss/_components/homepage/_how.scss */
 .how__arrow > div {
   position: relative;
   width: 100%;
@@ -2690,36 +2690,36 @@ picture {
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 147, src/scss/_components/homepage/_how.scss */
+/* line 148, src/scss/_components/homepage/_how.scss */
 .how__arrow img {
   position: absolute;
   top: 0;
-  left: 132px;
+  left: 100px;
 }
 
 /* line 3, src/scss/_components/homepage/_audience.scss */
 .audience {
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 }
 
 /* line 6, src/scss/_components/homepage/_audience.scss */
 .audience__wrapper {
   width: 100%;
-  max-width: 1490px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 74px;
+  padding-bottom: 50px;
 }
 
 /* line 14, src/scss/_components/homepage/_audience.scss */
 .audience__title {
-  padding-bottom: 47px;
+  padding-bottom: 50px;
 }
 
 /* line 18, src/scss/_components/homepage/_audience.scss */
 .audience__line {
   width: 100%;
-  max-width: 1420px;
+  max-width: 1200px;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -2778,11 +2778,11 @@ picture {
 .audience__block-bg {
   z-index: 0;
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 0;
   width: 100%;
-  height: -webkit-calc(100% - (30px + 142px));
-  height: calc(100% - (30px + 142px));
+  height: -webkit-calc(100% - (25px + 142px));
+  height: calc(100% - (25px + 142px));
   background-color: #ecebf6;
 }
 
@@ -2819,8 +2819,8 @@ picture {
 /* line 104, src/scss/_components/homepage/_audience.scss */
 .audience__block-wrapper > div {
   width: 100%;
-  max-width: -webkit-calc((100% - 50px) / 6);
-  max-width: calc((100% - 50px) / 6);
+  max-width: -webkit-calc((100% - 25px) / 6);
+  max-width: calc((100% - 25px) / 6);
   min-height: 100%;
 }
 
@@ -2831,33 +2831,34 @@ picture {
 
 /* line 115, src/scss/_components/homepage/_audience.scss */
 .audience__block-body {
-  height: -webkit-calc(100% - (55px + 16px + 142px));
-  height: calc(100% - (55px + 16px + 142px));
-  padding-left: 28px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  height: -webkit-calc(100% - (50px + 16px + 142px));
+  height: calc(100% - (50px + 16px + 142px));
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 /* line 121, src/scss/_components/homepage/_audience.scss */
 .audience__block-body p {
-  font-size: 18px;
-  letter-spacing: 0.03em;
+  font-size: 16px;
   line-height: 25px;
   text-align: left;
   color: #344563;
 }
 
-/* line 128, src/scss/_components/homepage/_audience.scss */
+/* line 127, src/scss/_components/homepage/_audience.scss */
 .audience__block-body p span {
   font-weight: bold;
 }
 
-/* line 134, src/scss/_components/homepage/_audience.scss */
+/* line 133, src/scss/_components/homepage/_audience.scss */
 .audience__block-footer {
   height: 142px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* line 137, src/scss/_components/homepage/_audience.scss */
+/* line 138, src/scss/_components/homepage/_audience.scss */
 .audience__block-footer svg {
   position: relative;
   top: -50px;
@@ -2867,7 +2868,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 147, src/scss/_components/homepage/_audience.scss */
+/* line 148, src/scss/_components/homepage/_audience.scss */
 .audience__block-circle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2881,8 +2882,8 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
   -webkit-border-radius: 50%;
@@ -2890,10 +2891,10 @@ picture {
   background-color: #c5c5ff;
 }
 
-/* line 158, src/scss/_components/homepage/_audience.scss */
+/* line 159, src/scss/_components/homepage/_audience.scss */
 .audience__block-circle span {
-  font-weight: bold;
-  font-size: 21px;
+  font-weight: 500;
+  font-size: 18px;
   text-align: center;
   color: #091e42;
 }
@@ -2901,8 +2902,8 @@ picture {
 /* line 3, src/scss/_components/homepage/_advantages.scss */
 .advantages {
   position: relative;
-  padding-top: 93px;
-  padding-bottom: 43px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* line 8, src/scss/_components/homepage/_advantages.scss */
@@ -2934,24 +2935,19 @@ picture {
 .advantages__wrapper {
   z-index: 2;
   position: relative;
-  width: 100%;
-  max-width: -webkit-calc((290px * 4) + 120px);
-  max-width: calc((290px * 4) + 120px);
-  margin-left: auto;
-  margin-right: auto;
+}
+
+/* line 35, src/scss/_components/homepage/_advantages.scss */
+.advantages__title {
+  padding-bottom: 50px;
 }
 
 /* line 39, src/scss/_components/homepage/_advantages.scss */
-.advantages__title {
-  padding-bottom: 77px;
-}
-
-/* line 43, src/scss/_components/homepage/_advantages.scss */
 .advantages__block {
   cursor: pointer;
   width: 100%;
-  margin-bottom: 40px;
-  padding: 30px 25px 60px 35px;
+  margin-bottom: 20px;
+  padding: 30px 20px 50px 20px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   background-color: #ffffff;
@@ -2967,7 +2963,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 55, src/scss/_components/homepage/_advantages.scss */
+/* line 51, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover {
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
@@ -2981,7 +2977,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 61, src/scss/_components/homepage/_advantages.scss */
+/* line 57, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover .advantages__block-img svg {
   opacity: 0.9;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2989,19 +2985,19 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 68, src/scss/_components/homepage/_advantages.scss */
+/* line 64, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-head {
-  padding-bottom: 9px;
+  padding-bottom: 30px;
 }
 
-/* line 72, src/scss/_components/homepage/_advantages.scss */
+/* line 68, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
-/* line 77, src/scss/_components/homepage/_advantages.scss */
+/* line 73, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img svg {
   position: absolute;
   top: 0;
@@ -3013,25 +3009,25 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 87, src/scss/_components/homepage/_advantages.scss */
+/* line 83, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-title {
-  padding-bottom: 14px;
-  font-size: 24px;
+  padding-bottom: 15px;
+  font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
   color: #091e42;
 }
 
-/* line 95, src/scss/_components/homepage/_advantages.scss */
+/* line 91, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-desc {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.67;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
   color: #6c798f;
 }
 
-/* line 103, src/scss/_components/homepage/_advantages.scss */
+/* line 99, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3041,13 +3037,17 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 108, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col {
   width: 100%;
-  max-width: -webkit-calc((100% - 120px) / 4);
-  max-width: calc((100% - 120px) / 4);
+  max-width: -webkit-calc((100% - 60px) / 4);
+  max-width: calc((100% - 60px) / 4);
 }
 
 /* line 112, src/scss/_components/homepage/_advantages.scss */

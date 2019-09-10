@@ -5,14 +5,14 @@
 // ==================================================
 
 $bth-width: unset;
-$bth-height: 59px;
+$bth-height: 50px;
 $btn-border-width: 2px;
 $btn-border-color: rgba(#020d60, 1);
-$bth-border-radius: 29px;
+$bth-border-radius: 2em;
 $bth-box-shadow: none;
 $bth-background-color: rgba(#020d60, 1);
 $bth-color: rgba(#fff, 1);
-$bth-font-size: 15px;
+$bth-font-size: 13px;
 $bth-font-weight: 500;
 
 $btn-color--border: rgba(#000, 1);
@@ -37,10 +37,10 @@ $btn-color--border: rgba(#000, 1);
   font-size: $bth-font-size;
   font-weight: $bth-font-weight;
 
-  padding-left: 36px;
-  padding-right: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-align: center;
 
   &--border {
