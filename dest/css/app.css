@@ -2687,7 +2687,15 @@ picture {
   margin-bottom: 50px;
 }
 
-/* line 13, src/scss/_components/homepage/_talent.scss */
+@media screen and (max-width: 767px) {
+  /* line 7, src/scss/_components/homepage/_talent.scss */
+  .talent__wrapper {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+/* line 17, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg {
   z-index: 0;
   overflow: hidden;
@@ -2707,12 +2715,29 @@ picture {
           box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
 }
 
-/* line 25, src/scss/_components/homepage/_talent.scss */
+@media screen and (max-width: 1023px) {
+  /* line 17, src/scss/_components/homepage/_talent.scss */
+  .talent__wrapper-bg {
+    left: 60px;
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 17, src/scss/_components/homepage/_talent.scss */
+  .talent__wrapper-bg {
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* line 37, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path {
   position: absolute;
 }
 
-/* line 28, src/scss/_components/homepage/_talent.scss */
+/* line 40, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path-1 {
   left: -50px;
   top: -145px;
@@ -2723,7 +2748,7 @@ picture {
   border: 150px solid rgba(169, 171, 254, 0.3);
 }
 
-/* line 37, src/scss/_components/homepage/_talent.scss */
+/* line 49, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path-2 {
   right: -70px;
   bottom: -105px;
@@ -2734,24 +2759,31 @@ picture {
   border: 130px solid rgba(169, 171, 254, 0.2);
 }
 
-/* line 48, src/scss/_components/homepage/_talent.scss */
+@media screen and (max-width: 767px) {
+  /* line 49, src/scss/_components/homepage/_talent.scss */
+  .talent__wrapper-bg-path-2 {
+    display: none;
+  }
+}
+
+/* line 63, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-row {
   position: relative;
   top: -5px;
 }
 
-/* line 54, src/scss/_components/homepage/_talent.scss */
+/* line 69, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle, .talent__title {
   z-index: 2;
   position: relative;
 }
 
-/* line 60, src/scss/_components/homepage/_talent.scss */
+/* line 75, src/scss/_components/homepage/_talent.scss */
 .talent__title {
   letter-spacing: 1px;
 }
 
-/* line 64, src/scss/_components/homepage/_talent.scss */
+/* line 79, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle {
   width: 100%;
   max-width: 650px;

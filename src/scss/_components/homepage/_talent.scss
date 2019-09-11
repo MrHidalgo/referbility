@@ -9,6 +9,10 @@
     padding-top: 150px;
     padding-bottom: 150px;
     margin-bottom: 50px;
+    @include adaptive(767) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
 
     &-bg {
       z-index: 0;
@@ -21,6 +25,14 @@
       background: linear-gradient(#8181ff 0%, #5153dc 100%);
       border-bottom-left-radius: 160px;
       box-shadow: 0px 40px 90px 0 rgba(135, 119, 217, 0.2);
+      @include adaptive(1023) {
+        left: 60px;
+        width: calc(100% - 60px);
+      }
+      @include adaptive(767) {
+        left: 0;
+        width: 100%;
+      }
 
       &-path {
         position: absolute;
@@ -41,6 +53,9 @@
           height: 410px;
           border-radius: 50%;
           border: 130px solid rgba(169, 171, 254, 0.2);
+          @include adaptive(767) {
+            display: none;
+          }
         }
       }
     }
