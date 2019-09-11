@@ -8,10 +8,12 @@
 
       &__link {
         position: relative;
-        display: flex;
-        align-items: flex-start;
         width: 219px;
         height: 44px;
+        @include adaptive(767) {
+          width: auto;
+          height: auto;
+        }
       }
 
       &__img {
@@ -22,10 +24,31 @@
         height: 100%;
         will-change: opacity, visibility;
         @include transition(opacity, visibility);
+        @include adaptive(767) {
+          position: static;
+          width: auto;
+          height: auto;
+        }
+
+        &--default {
+          @include adaptive(767) {
+            display: none;
+          }
+        }
 
         &--action {
           opacity: 0;
           visibility: hidden;
+          @include adaptive(767) {
+            display: none;
+          }
+        }
+
+        &--mobile {
+          display: none;
+          @include adaptive(767) {
+            display: block;
+          }
         }
       }
     }

@@ -118,6 +118,9 @@
       padding-top: 75px;
       padding-right: 75px;
       @include adaptive(1279) {
+        padding-right: 50px;
+      }
+      @include adaptive(767) {
         padding-right: 0;
       }
 
@@ -125,6 +128,9 @@
         width: 100%;
         max-width: 670px;
         margin-left: auto;
+        @include adaptive(1279) {
+          margin-left: 0;
+        }
       }
     }
 
@@ -138,7 +144,7 @@
       @include adaptive(1279) {
         max-width: 450px;
       }
-      @include adaptive(1024) {
+      @include adaptive(1023) {
         display: none;
       }
 
@@ -167,8 +173,7 @@
             bottom: -30px;
           }
           @include adaptive(1279) {
-            display: block;
-            max-width: 100%;
+            display: none;
           }
         }
       }

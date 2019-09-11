@@ -44,6 +44,21 @@
     &--first {
       padding-bottom: 20px;
     }
+
+    &--last {
+      @include adaptive(1023) {
+        border: none;
+      }
+    }
+
+    &--hidden {
+      display: none;
+      border: none;
+      @include adaptive(1023) {
+        display: block;
+        padding-top: 10px;
+      }
+    }
   }
 
   &__btn {

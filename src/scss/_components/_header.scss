@@ -12,21 +12,6 @@
   will-change: background-color, box-shadow;
   @include transition(background-color, box-shadow);
 
-  &:after {
-    opacity: 0;
-    visibility: hidden;
-    z-index: 0;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(81,83,220,1) 0%,rgba(129,129,255,1) 100%);
-    will-change: opacity, visibility;
-    @include transition(opacity, visibility);
-  }
-
   .is-hideScroll & {
     z-index: 1010;
 
@@ -80,6 +65,16 @@
             }
           }
         }
+
+        &__tabs-wrapper {
+          //opacity: 0 !important;
+        }
+      }
+    }
+
+    &__tabs-wrapper {
+      @include adaptive(1023) {
+        opacity: 0;
       }
     }
   }
@@ -88,6 +83,9 @@
     background-color: #fff;
     box-shadow: 0px 30px 100px rgba(135, 119, 217, 0.35);
     @include transition(background-color, box-shadow);
+    @include adaptive(1023) {
+      background: linear-gradient(45deg, rgba(81,83,220,1) 0%,rgba(129,129,255,1) 100%);
+    }
 
     .header {
       &__wrapper {
@@ -103,10 +101,15 @@
         @include transition(opacity, visibility);
       }
 
-      &__tabs-wrapper {
-        opacity: 0;
-        visibility: hidden;
-        @include transition(opacity, visibility);
+      &__tabs {
+        &-wrapper {
+          opacity: 0;
+          visibility: hidden;
+          @include transition(opacity, visibility);
+          @include adaptive(1023) {
+            display: none;
+          }
+        }
       }
     }
 
@@ -114,11 +117,19 @@
       &--default {
         opacity: 0;
         visibility: hidden;
+        @include adaptive(1023) {
+          opacity: 1;
+          visibility: visible;
+        }
       }
 
       &--action {
         opacity: 1;
         visibility: visible;
+        @include adaptive(1023) {
+          opacity: 0;
+          visibility: hidden;
+        }
       }
     }
   }
@@ -143,6 +154,12 @@
 
     &-left {
       max-width: 300px;
+      @include adaptive(1279) {
+        max-width: 250px;
+      }
+      @include adaptive(767) {
+        max-width: 70px;
+      }
     }
 
     &-middle {
@@ -154,12 +171,24 @@
       max-width: 100%;
       padding-left: 15px;
       padding-right: 105px;
+      @include adaptive(1599) {
+        padding-right: 50px;
+      }
+      @include adaptive(1439) {
+        padding-right: 0;
+      }
+      @include adaptive(767) {
+        padding-left: 0;
+      }
     }
 
     &-right {
       display: flex;
       justify-content: flex-end;
       max-width: 300px;
+      @include adaptive(1279) {
+        max-width: 70px;
+      }
     }
   }
 
@@ -176,6 +205,9 @@
     height: 100%;
     will-change: opacity, visibility;
     @include transition(opacity, visibility);
+    @include adaptive(1023) {
+      display: none;
+    }
 
     form {
       display: flex;
@@ -250,6 +282,9 @@
     font-weight: 500;
     will-change: background-color, color;
     @include transition(background-color, color);
+    @include adaptive(1023) {
+      transition: unset;
+    }
 
     &:hover {
       @include transition(background-color, color);
@@ -261,6 +296,17 @@
       border-bottom-left-radius: 2em;
       background-color: $c-white;
       color: #020D60;
+      @include adaptive(1023) {
+        border-radius: 2em;
+      }
+      @include adaptive(767) {
+        width: 100%;
+        max-width: 320px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       &:hover {
         background-color: rgba($c-white, 0.7);
@@ -273,6 +319,9 @@
       border-bottom-right-radius: 2em;
       background-color: transparent;
       color: $c-white;
+      @include adaptive(1023) {
+        display: none;
+      }
 
       &:hover {
         background-color: rgba($c-white, 0.7);
@@ -284,6 +333,9 @@
       display: flex;
       will-change: opacity, visibility;
       @include transition(opacity, visibility);
+      @include adaptive(767) {
+        width: 100%;
+      }
     }
   }
 }
