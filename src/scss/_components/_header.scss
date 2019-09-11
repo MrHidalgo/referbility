@@ -30,13 +30,6 @@
   .is-hideScroll & {
     z-index: 1010;
 
-    &:hover {
-      &:after {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
-
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
@@ -95,55 +88,6 @@
     background-color: #fff;
     box-shadow: 0px 30px 100px rgba(135, 119, 217, 0.35);
     @include transition(background-color, box-shadow);
-
-    &:hover {
-      &:after {
-        opacity: 1;
-        visibility: visible;
-        @include transition(opacity, visibility);
-      }
-
-      .logo__img {
-        &--default {
-          opacity: 1;
-          visibility: visible;
-        }
-
-        &--action {
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
-
-      .hamburger-inner,
-      .hamburger-inner::before,
-      .hamburger-inner::after {
-        background-image: none;
-        background-color: $c-white;
-      }
-
-      .header {
-        &__form {
-          form {
-            > div {
-              input {
-                border-color: $c-white;
-                background-color: transparent;
-                color: $c-white;
-                @include inputPlaceholder {
-                  color: $c-white;
-                }
-              }
-
-              button {
-                background-color: #020d60;
-                @include transition(background-color);
-              }
-            }
-          }
-        }
-      }
-    }
 
     .c-grid {
       max-width: 1600px !important;

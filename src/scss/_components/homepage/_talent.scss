@@ -8,7 +8,7 @@
     position: relative;
     padding-top: 150px;
     padding-bottom: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     &-bg {
       z-index: 0;
@@ -49,15 +49,6 @@
       position: relative;
       top: -5px;
     }
-  }
-
-  &__line {
-    width: 100%;
-    max-width: 1200px;
-    height: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(192, 182, 242, 0.4);
   }
 
   &__subtitle,

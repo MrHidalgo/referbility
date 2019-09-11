@@ -556,11 +556,12 @@ picture {
 /* line 5, src/scss/_shared/_common.scss */
 .copyright__text {
   font-size: 12px;
+  font-weight: 500;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 10, src/scss/_shared/_common.scss */
+/* line 11, src/scss/_shared/_common.scss */
 .copyright__text a {
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease-in-out;
@@ -568,7 +569,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 14, src/scss/_shared/_common.scss */
+/* line 15, src/scss/_shared/_common.scss */
 .copyright__text a:hover {
   color: white;
   -webkit-transition: color 0.3s ease-in-out;
@@ -576,7 +577,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 23, src/scss/_shared/_common.scss */
+/* line 24, src/scss/_shared/_common.scss */
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -1069,13 +1070,7 @@ picture {
   z-index: 1010;
 }
 
-/* line 34, src/scss/_components/_header.scss */
-.is-hideScroll .header:hover:after {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* line 40, src/scss/_components/_header.scss */
+/* line 33, src/scss/_components/_header.scss */
 .is-hideScroll .header .hamburger-inner,
 .is-hideScroll .header .hamburger-inner::before,
 .is-hideScroll .header .hamburger-inner::after {
@@ -1083,26 +1078,26 @@ picture {
   background-color: #fff;
 }
 
-/* line 47, src/scss/_components/_header.scss */
+/* line 40, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed {
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 52, src/scss/_components/_header.scss */
+/* line 45, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .logo__img--default {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 57, src/scss/_components/_header.scss */
+/* line 50, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .logo__img--action {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 63, src/scss/_components/_header.scss */
+/* line 56, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .hamburger-inner,
 .is-hideScroll .header.header--fixed .hamburger-inner::before,
 .is-hideScroll .header.header--fixed .hamburger-inner::after {
@@ -1110,7 +1105,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 74, src/scss/_components/_header.scss */
+/* line 67, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .header__form form > div input {
   border-color: #fff;
   background-color: transparent;
@@ -1142,7 +1137,7 @@ picture {
   color: #fff;
 }
 
-/* line 83, src/scss/_components/_header.scss */
+/* line 76, src/scss/_components/_header.scss */
 .is-hideScroll .header.header--fixed .header__form form > div button {
   background-color: #020d60;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -1150,7 +1145,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 94, src/scss/_components/_header.scss */
+/* line 87, src/scss/_components/_header.scss */
 .header--fixed {
   background-color: #fff;
   -webkit-box-shadow: 0px 30px 100px rgba(135, 119, 217, 0.35);
@@ -1162,76 +1157,7 @@ picture {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 100, src/scss/_components/_header.scss */
-.header--fixed:hover:after {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* line 107, src/scss/_components/_header.scss */
-.header--fixed:hover .logo__img--default {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* line 112, src/scss/_components/_header.scss */
-.header--fixed:hover .logo__img--action {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* line 118, src/scss/_components/_header.scss */
-.header--fixed:hover .hamburger-inner,
-.header--fixed:hover .hamburger-inner::before,
-.header--fixed:hover .hamburger-inner::after {
-  background-image: none;
-  background-color: #fff;
-}
-
-/* line 129, src/scss/_components/_header.scss */
-.header--fixed:hover .header__form form > div input {
-  border-color: #fff;
-  background-color: transparent;
-  color: #fff;
-}
-
-/* line 88, src/scss/_utilities/_mixin.scss */
-.header--fixed:hover .header__form form > div input.placeholder {
-  color: #fff;
-}
-
-/* line 89, src/scss/_utilities/_mixin.scss */
-.header--fixed:hover .header__form form > div input:-moz-placeholder {
-  color: #fff;
-}
-
-/* line 90, src/scss/_utilities/_mixin.scss */
-.header--fixed:hover .header__form form > div input::-moz-placeholder {
-  color: #fff;
-}
-
-/* line 91, src/scss/_utilities/_mixin.scss */
-.header--fixed:hover .header__form form > div input:-ms-input-placeholder {
-  color: #fff;
-}
-
-/* line 92, src/scss/_utilities/_mixin.scss */
-.header--fixed:hover .header__form form > div input::-webkit-input-placeholder {
-  color: #fff;
-}
-
-/* line 138, src/scss/_components/_header.scss */
-.header--fixed:hover .header__form form > div button {
-  background-color: #020d60;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* line 148, src/scss/_components/_header.scss */
+/* line 92, src/scss/_components/_header.scss */
 .header--fixed .c-grid {
   max-width: 1600px !important;
   -webkit-transition: max-width 0.3s ease-in-out;
@@ -1239,7 +1165,7 @@ picture {
   transition: max-width 0.3s ease-in-out;
 }
 
-/* line 154, src/scss/_components/_header.scss */
+/* line 98, src/scss/_components/_header.scss */
 .header--fixed .header__wrapper {
   height: 75px;
   will-change: height;
@@ -1248,7 +1174,7 @@ picture {
   transition: height 0.3s ease-in-out;
 }
 
-/* line 160, src/scss/_components/_header.scss */
+/* line 104, src/scss/_components/_header.scss */
 .header--fixed .header__form {
   opacity: 1;
   visibility: visible;
@@ -1260,7 +1186,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 167, src/scss/_components/_header.scss */
+/* line 111, src/scss/_components/_header.scss */
 .header--fixed .header__tabs-wrapper {
   opacity: 0;
   visibility: hidden;
@@ -1269,19 +1195,19 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 175, src/scss/_components/_header.scss */
+/* line 119, src/scss/_components/_header.scss */
 .header--fixed .logo__img--default {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 180, src/scss/_components/_header.scss */
+/* line 124, src/scss/_components/_header.scss */
 .header--fixed .logo__img--action {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 187, src/scss/_components/_header.scss */
+/* line 131, src/scss/_components/_header.scss */
 .header .c-grid {
   max-width: 1415px;
   will-change: max-width;
@@ -1290,7 +1216,7 @@ picture {
   transition: max-width 0.3s ease-in-out;
 }
 
-/* line 193, src/scss/_components/_header.scss */
+/* line 137, src/scss/_components/_header.scss */
 .header__wrapper {
   z-index: 2;
   position: relative;
@@ -1308,17 +1234,17 @@ picture {
   transition: height 0.3s ease-in-out;
 }
 
-/* line 201, src/scss/_components/_header.scss */
+/* line 145, src/scss/_components/_header.scss */
 .header__wrapper > div {
   width: 100%;
 }
 
-/* line 205, src/scss/_components/_header.scss */
+/* line 149, src/scss/_components/_header.scss */
 .header__wrapper-left {
   max-width: 300px;
 }
 
-/* line 209, src/scss/_components/_header.scss */
+/* line 153, src/scss/_components/_header.scss */
 .header__wrapper-middle {
   position: relative;
   display: -webkit-box;
@@ -1339,7 +1265,7 @@ picture {
   padding-right: 15px;
 }
 
-/* line 220, src/scss/_components/_header.scss */
+/* line 164, src/scss/_components/_header.scss */
 .header__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1352,7 +1278,7 @@ picture {
   max-width: 300px;
 }
 
-/* line 227, src/scss/_components/_header.scss */
+/* line 171, src/scss/_components/_header.scss */
 .header__form {
   opacity: 0;
   visibility: hidden;
@@ -1376,7 +1302,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 241, src/scss/_components/_header.scss */
+/* line 185, src/scss/_components/_header.scss */
 .header__form form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1393,14 +1319,14 @@ picture {
   width: 100%;
 }
 
-/* line 248, src/scss/_components/_header.scss */
+/* line 192, src/scss/_components/_header.scss */
 .header__form div {
   width: 100%;
   max-width: -webkit-calc((100% - 30px) / 4);
   max-width: calc((100% - 30px) / 4);
 }
 
-/* line 252, src/scss/_components/_header.scss */
+/* line 196, src/scss/_components/_header.scss */
 .header__form div input {
   outline: none;
   width: 100%;
@@ -1452,7 +1378,7 @@ picture {
   color: #505f79;
 }
 
-/* line 271, src/scss/_components/_header.scss */
+/* line 215, src/scss/_components/_header.scss */
 .header__form div button {
   white-space: nowrap;
   overflow: hidden;
@@ -1470,7 +1396,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 285, src/scss/_components/_header.scss */
+/* line 229, src/scss/_components/_header.scss */
 .header__form div button:after {
   content: '';
   z-index: -1;
@@ -1484,7 +1410,7 @@ picture {
   background-image: linear-gradient(197deg, #8181ff, #5153dc);
 }
 
-/* line 299, src/scss/_components/_header.scss */
+/* line 243, src/scss/_components/_header.scss */
 .header__tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1513,14 +1439,14 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 315, src/scss/_components/_header.scss */
+/* line 259, src/scss/_components/_header.scss */
 .header__tabs:hover {
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 319, src/scss/_components/_header.scss */
+/* line 263, src/scss/_components/_header.scss */
 .header__tabs--sign {
   margin-right: -1px;
   -webkit-border-top-left-radius: 2em;
@@ -1531,12 +1457,12 @@ picture {
   color: #020D60;
 }
 
-/* line 326, src/scss/_components/_header.scss */
+/* line 270, src/scss/_components/_header.scss */
 .header__tabs--sign:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 331, src/scss/_components/_header.scss */
+/* line 275, src/scss/_components/_header.scss */
 .header__tabs--for {
   margin-left: -1px;
   -webkit-border-top-right-radius: 2em;
@@ -1547,13 +1473,13 @@ picture {
   color: #fff;
 }
 
-/* line 338, src/scss/_components/_header.scss */
+/* line 282, src/scss/_components/_header.scss */
 .header__tabs--for:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: #020D60;
 }
 
-/* line 344, src/scss/_components/_header.scss */
+/* line 288, src/scss/_components/_header.scss */
 .header__tabs-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1797,6 +1723,16 @@ picture {
 }
 
 /* line 177, src/scss/_components/_footer.scss */
+.footer__desc span {
+  font-weight: bold;
+}
+
+/* line 181, src/scss/_components/_footer.scss */
+.footer__desc a {
+  color: #fff;
+}
+
+/* line 185, src/scss/_components/_footer.scss */
 .footer__desc-1 {
   padding-bottom: 20px;
 }
@@ -2269,7 +2205,7 @@ picture {
 
 /* line 63, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block:last-of-type {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 /* line 67, src/scss/_components/homepage/_crowdsourcing.scss */
@@ -2408,7 +2344,7 @@ picture {
   position: relative;
   padding-top: 150px;
   padding-bottom: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 /* line 13, src/scss/_components/homepage/_talent.scss */
@@ -2465,27 +2401,17 @@ picture {
 }
 
 /* line 54, src/scss/_components/homepage/_talent.scss */
-.talent__line {
-  width: 100%;
-  max-width: 1200px;
-  height: 2px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(192, 182, 242, 0.4);
-}
-
-/* line 63, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle, .talent__title {
   z-index: 2;
   position: relative;
 }
 
-/* line 69, src/scss/_components/homepage/_talent.scss */
+/* line 60, src/scss/_components/homepage/_talent.scss */
 .talent__title {
   letter-spacing: 1px;
 }
 
-/* line 73, src/scss/_components/homepage/_talent.scss */
+/* line 64, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle {
   width: 100%;
   max-width: 650px;
@@ -2539,34 +2465,24 @@ picture {
 }
 
 /* line 36, src/scss/_components/homepage/_how.scss */
-.how__line {
-  width: 100%;
-  max-width: 1200px;
-  height: 2px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(192, 182, 242, 0.4);
-}
-
-/* line 45, src/scss/_components/homepage/_how.scss */
 .how__title {
   padding-bottom: 50px;
 }
 
-/* line 49, src/scss/_components/homepage/_how.scss */
+/* line 40, src/scss/_components/homepage/_how.scss */
 .how__block {
   position: relative;
   min-height: 300px;
 }
 
-/* line 54, src/scss/_components/homepage/_how.scss */
+/* line 45, src/scss/_components/homepage/_how.scss */
 .how__block-5 .how__block-bg {
   width: -webkit-calc(100% - 50px);
   width: calc(100% - 50px);
   background-image: url("../img/how-bg-woArrow.svg");
 }
 
-/* line 60, src/scss/_components/homepage/_how.scss */
+/* line 51, src/scss/_components/homepage/_how.scss */
 .how__block-bg {
   z-index: 0;
   position: absolute;
@@ -2583,14 +2499,14 @@ picture {
           filter: drop-shadow(0px 35px 90px rgba(153, 141, 217, 0.2));
 }
 
-/* line 74, src/scss/_components/homepage/_how.scss */
+/* line 65, src/scss/_components/homepage/_how.scss */
 .how__block-body {
   z-index: 2;
   position: relative;
-  padding: 20px 50px 20px 15px;
+  padding: 15px 50px 15px 15px;
 }
 
-/* line 80, src/scss/_components/homepage/_how.scss */
+/* line 71, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper {
   position: relative;
   left: 26px;
@@ -2609,19 +2525,19 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 91, src/scss/_components/homepage/_how.scss */
+/* line 82, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 5);
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 95, src/scss/_components/homepage/_how.scss */
+/* line 86, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div:nth-of-type(even) {
   padding-top: 50px;
 }
 
-/* line 101, src/scss/_components/homepage/_how.scss */
+/* line 92, src/scss/_components/homepage/_how.scss */
 .how__block-num {
   padding-bottom: 5px;
   font-weight: bold;
@@ -2629,19 +2545,19 @@ picture {
   color: #fff;
 }
 
-/* line 108, src/scss/_components/homepage/_how.scss */
+/* line 99, src/scss/_components/homepage/_how.scss */
 .how__block-desc {
   font-size: 16px;
   line-height: 25px;
   color: #fff;
 }
 
-/* line 113, src/scss/_components/homepage/_how.scss */
+/* line 104, src/scss/_components/homepage/_how.scss */
 .how__block-desc span {
   font-weight: bold;
 }
 
-/* line 118, src/scss/_components/homepage/_how.scss */
+/* line 109, src/scss/_components/homepage/_how.scss */
 .how__block-icon {
   position: absolute;
   bottom: 0;
@@ -2650,7 +2566,7 @@ picture {
   padding-right: 50px;
 }
 
-/* line 125, src/scss/_components/homepage/_how.scss */
+/* line 116, src/scss/_components/homepage/_how.scss */
 .how__block-icon svg {
   display: block;
   width: 75px;
@@ -2659,7 +2575,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 135, src/scss/_components/homepage/_how.scss */
+/* line 126, src/scss/_components/homepage/_how.scss */
 .how__arrow {
   position: relative;
   display: -webkit-box;
@@ -2671,7 +2587,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 142, src/scss/_components/homepage/_how.scss */
+/* line 133, src/scss/_components/homepage/_how.scss */
 .how__arrow > div {
   position: relative;
   width: 100%;
@@ -2679,7 +2595,7 @@ picture {
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 148, src/scss/_components/homepage/_how.scss */
+/* line 139, src/scss/_components/homepage/_how.scss */
 .how__arrow img {
   position: absolute;
   top: 0;
@@ -2697,73 +2613,62 @@ picture {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px;
 }
 
-/* line 14, src/scss/_components/homepage/_audience.scss */
+/* line 13, src/scss/_components/homepage/_audience.scss */
 .audience__title {
   padding-bottom: 50px;
 }
 
-/* line 18, src/scss/_components/homepage/_audience.scss */
-.audience__line {
-  width: 100%;
-  max-width: 1200px;
-  height: 2px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(192, 182, 242, 0.4);
-}
-
-/* line 27, src/scss/_components/homepage/_audience.scss */
+/* line 17, src/scss/_components/homepage/_audience.scss */
 .audience__block {
   position: relative;
   height: 100%;
 }
 
-/* line 33, src/scss/_components/homepage/_audience.scss */
+/* line 23, src/scss/_components/homepage/_audience.scss */
 .audience__block-1 .audience__block-footer svg {
   -webkit-transform: translateY(-7px);
       -ms-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
-/* line 40, src/scss/_components/homepage/_audience.scss */
+/* line 30, src/scss/_components/homepage/_audience.scss */
 .audience__block-2 .audience__block-footer svg {
   -webkit-transform: translateY(-7px);
       -ms-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
-/* line 47, src/scss/_components/homepage/_audience.scss */
+/* line 37, src/scss/_components/homepage/_audience.scss */
 .audience__block-3 .audience__block-footer svg {
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-/* line 54, src/scss/_components/homepage/_audience.scss */
+/* line 44, src/scss/_components/homepage/_audience.scss */
 .audience__block-4 .audience__block-footer svg {
   -webkit-transform: translateY(-19px);
       -ms-transform: translateY(-19px);
           transform: translateY(-19px);
 }
 
-/* line 61, src/scss/_components/homepage/_audience.scss */
+/* line 51, src/scss/_components/homepage/_audience.scss */
 .audience__block-5 .audience__block-footer svg {
   -webkit-transform: translateY(25px);
       -ms-transform: translateY(25px);
           transform: translateY(25px);
 }
 
-/* line 68, src/scss/_components/homepage/_audience.scss */
+/* line 58, src/scss/_components/homepage/_audience.scss */
 .audience__block-6 .audience__block-footer svg {
   -webkit-transform: translateY(-13px);
       -ms-transform: translateY(-13px);
           transform: translateY(-13px);
 }
 
-/* line 74, src/scss/_components/homepage/_audience.scss */
+/* line 64, src/scss/_components/homepage/_audience.scss */
 .audience__block-bg {
   z-index: 0;
   position: absolute;
@@ -2775,7 +2680,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 83, src/scss/_components/homepage/_audience.scss */
+/* line 73, src/scss/_components/homepage/_audience.scss */
 .audience__block-bg:before {
   content: '';
   position: absolute;
@@ -2786,14 +2691,14 @@ picture {
   background-color: #c5c5ff;
 }
 
-/* line 94, src/scss/_components/homepage/_audience.scss */
+/* line 84, src/scss/_components/homepage/_audience.scss */
 .audience__block-cover {
   z-index: 2;
   position: relative;
   height: 100%;
 }
 
-/* line 100, src/scss/_components/homepage/_audience.scss */
+/* line 90, src/scss/_components/homepage/_audience.scss */
 .audience__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2805,7 +2710,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 104, src/scss/_components/homepage/_audience.scss */
+/* line 94, src/scss/_components/homepage/_audience.scss */
 .audience__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 25px) / 6);
@@ -2813,12 +2718,12 @@ picture {
   min-height: 100%;
 }
 
-/* line 111, src/scss/_components/homepage/_audience.scss */
+/* line 101, src/scss/_components/homepage/_audience.scss */
 .audience__block-head {
   padding-bottom: 15px;
 }
 
-/* line 115, src/scss/_components/homepage/_audience.scss */
+/* line 105, src/scss/_components/homepage/_audience.scss */
 .audience__block-body {
   height: -webkit-calc(100% - (50px + 16px + 142px));
   height: calc(100% - (50px + 16px + 142px));
@@ -2827,7 +2732,7 @@ picture {
   padding-bottom: 30px;
 }
 
-/* line 121, src/scss/_components/homepage/_audience.scss */
+/* line 111, src/scss/_components/homepage/_audience.scss */
 .audience__block-body p {
   font-size: 16px;
   line-height: 25px;
@@ -2835,19 +2740,19 @@ picture {
   color: #344563;
 }
 
-/* line 127, src/scss/_components/homepage/_audience.scss */
+/* line 117, src/scss/_components/homepage/_audience.scss */
 .audience__block-body p span {
   font-weight: bold;
 }
 
-/* line 133, src/scss/_components/homepage/_audience.scss */
+/* line 123, src/scss/_components/homepage/_audience.scss */
 .audience__block-footer {
   height: 142px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 138, src/scss/_components/homepage/_audience.scss */
+/* line 128, src/scss/_components/homepage/_audience.scss */
 .audience__block-footer svg {
   position: relative;
   top: -50px;
@@ -2857,7 +2762,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 148, src/scss/_components/homepage/_audience.scss */
+/* line 138, src/scss/_components/homepage/_audience.scss */
 .audience__block-circle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2880,7 +2785,7 @@ picture {
   background-color: #c5c5ff;
 }
 
-/* line 159, src/scss/_components/homepage/_audience.scss */
+/* line 149, src/scss/_components/homepage/_audience.scss */
 .audience__block-circle span {
   font-weight: 500;
   font-size: 18px;

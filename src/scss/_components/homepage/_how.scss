@@ -33,15 +33,6 @@
     padding-bottom: 70px;
   }
 
-  &__line {
-    width: 100%;
-    max-width: 1200px;
-    height: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(192, 182, 242, 0.4);
-  }
-
   &__title {
     padding-bottom: 50px;
   }
@@ -74,7 +65,7 @@
     &-body {
       z-index: 2;
       position: relative;
-      padding: 20px 50px 20px 15px;
+      padding: 15px 50px 15px 15px;
     }
 
     &-wrapper {
