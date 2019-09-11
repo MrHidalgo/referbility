@@ -4,6 +4,13 @@
   position: relative;
   padding-top: 150px;
   padding-bottom: 75px;
+  @include adaptive(1279) {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  @include adaptive(767) {
+    padding-top: 75px;
+  }
 
   &__bg {
     z-index: 0;
@@ -21,6 +28,9 @@
       height: 410px;
       border-radius: 50%;
       border: 90px solid rgba(234, 230, 255, 0.4);
+      @include adaptive(767) {
+        display: none;
+      }
     }
 
     &-row {
@@ -30,6 +40,10 @@
       width: calc(100% - 248px);
       max-width: calc(70% + 20px);
       height: calc(100% - 60px);
+      @include adaptive(1279) {
+        width: 100%;
+        max-width: 100%;
+      }
     }
 
     &-container{
@@ -46,6 +60,10 @@
       @include adaptive(1919) {
         max-width: 1352px;
       }
+      @include adaptive(1279) {
+        width: 100%;
+        max-width: 100%;
+      }
 
       &-path {
         position: absolute;
@@ -57,6 +75,9 @@
           height: 410px;
           border-radius: 50%;
           border: 130px solid rgba(169, 171, 254, 0.2);
+          @include adaptive(767) {
+            display: none;
+          }
         }
 
         &-2 {
@@ -96,6 +117,9 @@
       max-width: 100%;
       padding-top: 75px;
       padding-right: 75px;
+      @include adaptive(1279) {
+        padding-right: 0;
+      }
 
       > div {
         width: 100%;
@@ -111,10 +135,21 @@
       justify-content: flex-end;
       width: 100%;
       max-width: 550px;
+      @include adaptive(1279) {
+        max-width: 450px;
+      }
+      @include adaptive(1024) {
+        display: none;
+      }
 
       img {
         position: relative;
         filter: drop-shadow(0px 90px 200px rgba(9, 30, 66, 0.25));
+        @include adaptive(1439) {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
 
         &:nth-of-type(1) {
           z-index: 3;
@@ -127,6 +162,14 @@
           left: -100px;
           max-width: 100%;
           height: auto;
+          @include adaptive(1439) {
+            left: -30px;
+            bottom: -30px;
+          }
+          @include adaptive(1279) {
+            display: block;
+            max-width: 100%;
+          }
         }
       }
     }
@@ -140,6 +183,18 @@
     line-height: 1.2;
     text-align: left;
     color: #fff;
+    @include adaptive(1439) {
+      font-size: 50px;
+    }
+    @include adaptive(1279) {
+      font-size: 45px;
+    }
+    @include adaptive(1023) {
+      font-size: 40px;
+    }
+    @include adaptive(767) {
+      font-size: 36px;
+    }
   }
 
   &__subtitle {
@@ -152,26 +207,45 @@
     line-height: 35px;
     text-align: left;
     color: #fff;
+    @include adaptive(1279) {
+      font-size: 18px;
+    }
   }
 
   &__btn {
     margin-right: 15px;
+    @include adaptive(767) {
+      width: 100%;
+      max-width: 320px;
+      margin-left: 0;
+    }
 
     &:last-of-type {
       margin-right: 0;
       padding-left: 42px;
       padding-right: 42px;
+      @include adaptive(767) {
+        margin-top: 15px;
+        margin-right: auto;
+      }
     }
 
     &-wrapper {
       display: flex;
       padding-bottom: 75px;
+      @include adaptive(767) {
+        flex-direction: column;
+        padding-bottom: 50px;
+      }
     }
   }
 
   &__num {
     display: flex;
     padding-left: 10px;
+    @include adaptive(767) {
+      display: none;
+    }
 
     svg {
       height: 55px;
