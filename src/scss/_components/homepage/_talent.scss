@@ -32,6 +32,7 @@
       @include adaptive(767) {
         left: 0;
         width: 100%;
+        border-bottom-left-radius: 130px;
       }
 
       &-path {

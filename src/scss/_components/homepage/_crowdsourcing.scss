@@ -28,6 +28,9 @@
       &-2 {
         right: -100px;
         bottom: 548px;
+        @include adaptive(1023) {
+          display: none;
+        }
       }
     }
 
@@ -43,6 +46,8 @@
   }
 
   &__title {
+    z-index: 2;
+    position: relative;
     padding-bottom: 75px;
   }
 
@@ -59,6 +64,10 @@
     display: flex;
     align-items: center;
     padding-bottom: 75px;
+    @include adaptive(1023) {
+      flex-direction: column-reverse;
+      padding-bottom: 50px;
+    }
 
     &:last-of-type {
       padding-bottom: 50px;
@@ -66,16 +75,29 @@
 
     &--reverse {
       flex-direction: row-reverse;
+      @include adaptive(1023) {
+        flex-direction: column-reverse;
+      }
 
       .crowdsourcing__block {
         &-left {
           justify-content: flex-start;
           padding-right: 0;
           padding-left: 150px;
+          @include adaptive(1279) {
+            padding-left: 50px;
+            padding-right: 15px;
+          }
+          @include adaptive(1023) {
+            padding-left: 15px;
+          }
         }
 
         &-img {
           padding: 30px 30px 0 80px;
+          @include adaptive(767) {
+            padding: 30px;
+          }
 
           &:after {
             right: auto;
@@ -92,16 +114,30 @@
       min-width: 1px;
       max-width: 100%;
       padding-right: 150px;
+      @include adaptive(1279) {
+        padding-right: 50px;
+        padding-left: 15px;
+      }
+      @include adaptive(1023) {
+        padding-top: 25px;
+        padding-right: 15px;
+      }
 
       > div {
         width: 100%;
         max-width: 425px;
+        @include adaptive(1023) {
+          max-width: 100%;
+        }
       }
     }
 
     &-right {
       width: 100%;
       max-width: 550px;
+      @include adaptive(1023) {
+        max-width: 100%;
+      }
     }
 
     &-img {
@@ -110,6 +146,11 @@
       height: 340px;
       padding: 30px 80px 0 30px;
       background-color: #ecebf6;
+      @include adaptive(767) {
+        height: auto;
+        padding: 30px;
+        background-color: transparent;
+      }
 
       &:after {
         content: '';
@@ -119,6 +160,9 @@
         width: 50px;
         height: 100%;
         background: linear-gradient(#8181ff 0%, #5153dc 100%);
+        @include adaptive(767) {
+          display: none;
+        }
       }
 
       img {

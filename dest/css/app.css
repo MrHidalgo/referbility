@@ -2503,7 +2503,14 @@ picture {
   bottom: 548px;
 }
 
-/* line 34, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1023px) {
+  /* line 28, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__bg-shape-2 {
+    display: none;
+  }
+}
+
+/* line 37, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__bg-path {
   position: absolute;
   bottom: 73px;
@@ -2515,12 +2522,14 @@ picture {
   border: 130px solid rgba(234, 230, 255, 0.4);
 }
 
-/* line 45, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 48, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__title {
+  z-index: 2;
+  position: relative;
   padding-bottom: 75px;
 }
 
-/* line 49, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 54, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__wrapper {
   z-index: 2;
   position: relative;
@@ -2530,7 +2539,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 58, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 63, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2543,12 +2552,24 @@ picture {
   padding-bottom: 75px;
 }
 
-/* line 63, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1023px) {
+  /* line 63, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 72, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block:last-of-type {
   padding-bottom: 50px;
 }
 
-/* line 67, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 76, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -2557,7 +2578,18 @@ picture {
           flex-direction: row-reverse;
 }
 
-/* line 71, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1023px) {
+  /* line 76, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block--reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+/* line 83, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse .crowdsourcing__block-left {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -2567,18 +2599,40 @@ picture {
   padding-left: 150px;
 }
 
-/* line 77, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1279px) {
+  /* line 83, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block--reverse .crowdsourcing__block-left {
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 83, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block--reverse .crowdsourcing__block-left {
+    padding-left: 15px;
+  }
+}
+
+/* line 96, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse .crowdsourcing__block-img {
   padding: 30px 30px 0 80px;
 }
 
-/* line 80, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 767px) {
+  /* line 96, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block--reverse .crowdsourcing__block-img {
+    padding: 30px;
+  }
+}
+
+/* line 102, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block--reverse .crowdsourcing__block-img:after {
   right: auto;
   left: 0;
 }
 
-/* line 88, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 110, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2597,19 +2651,49 @@ picture {
   padding-right: 150px;
 }
 
-/* line 96, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1279px) {
+  /* line 110, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block-left {
+    padding-right: 50px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 110, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block-left {
+    padding-top: 25px;
+    padding-right: 15px;
+  }
+}
+
+/* line 126, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-left > div {
   width: 100%;
   max-width: 425px;
 }
 
-/* line 102, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1023px) {
+  /* line 126, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block-left > div {
+    max-width: 100%;
+  }
+}
+
+/* line 135, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-right {
   width: 100%;
   max-width: 550px;
 }
 
-/* line 107, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 1023px) {
+  /* line 135, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block-right {
+    max-width: 100%;
+  }
+}
+
+/* line 143, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-img {
   overflow: hidden;
   position: relative;
@@ -2618,7 +2702,16 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 114, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 767px) {
+  /* line 143, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block-img {
+    height: auto;
+    padding: 30px;
+    background-color: transparent;
+  }
+}
+
+/* line 155, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-img:after {
   content: '';
   position: absolute;
@@ -2632,7 +2725,14 @@ picture {
   background: linear-gradient(#8181ff 0%, #5153dc 100%);
 }
 
-/* line 124, src/scss/_components/homepage/_crowdsourcing.scss */
+@media screen and (max-width: 767px) {
+  /* line 155, src/scss/_components/homepage/_crowdsourcing.scss */
+  .crowdsourcing__block-img:after {
+    display: none;
+  }
+}
+
+/* line 168, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-img img {
   display: block;
   max-width: 100%;
@@ -2641,7 +2741,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 133, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 177, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-line {
   width: 50px;
   height: 3px;
@@ -2649,7 +2749,7 @@ picture {
   background-color: #29de9c;
 }
 
-/* line 140, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 184, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-desc {
   font-size: 16px;
   font-weight: 500;
@@ -2658,12 +2758,12 @@ picture {
   color: #344563;
 }
 
-/* line 147, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 191, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-desc span {
   font-weight: 800;
 }
 
-/* line 152, src/scss/_components/homepage/_crowdsourcing.scss */
+/* line 196, src/scss/_components/homepage/_crowdsourcing.scss */
 .crowdsourcing__block-link {
   display: block;
   padding-top: 8px;
@@ -2729,15 +2829,17 @@ picture {
   .talent__wrapper-bg {
     left: 0;
     width: 100%;
+    -webkit-border-bottom-left-radius: 130px;
+            border-bottom-left-radius: 130px;
   }
 }
 
-/* line 37, src/scss/_components/homepage/_talent.scss */
+/* line 38, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path {
   position: absolute;
 }
 
-/* line 40, src/scss/_components/homepage/_talent.scss */
+/* line 41, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path-1 {
   left: -50px;
   top: -145px;
@@ -2748,7 +2850,7 @@ picture {
   border: 150px solid rgba(169, 171, 254, 0.3);
 }
 
-/* line 49, src/scss/_components/homepage/_talent.scss */
+/* line 50, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-bg-path-2 {
   right: -70px;
   bottom: -105px;
@@ -2760,30 +2862,30 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 49, src/scss/_components/homepage/_talent.scss */
+  /* line 50, src/scss/_components/homepage/_talent.scss */
   .talent__wrapper-bg-path-2 {
     display: none;
   }
 }
 
-/* line 63, src/scss/_components/homepage/_talent.scss */
+/* line 64, src/scss/_components/homepage/_talent.scss */
 .talent__wrapper-row {
   position: relative;
   top: -5px;
 }
 
-/* line 69, src/scss/_components/homepage/_talent.scss */
+/* line 70, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle, .talent__title {
   z-index: 2;
   position: relative;
 }
 
-/* line 75, src/scss/_components/homepage/_talent.scss */
+/* line 76, src/scss/_components/homepage/_talent.scss */
 .talent__title {
   letter-spacing: 1px;
 }
 
-/* line 79, src/scss/_components/homepage/_talent.scss */
+/* line 80, src/scss/_components/homepage/_talent.scss */
 .talent__subtitle {
   width: 100%;
   max-width: 650px;
