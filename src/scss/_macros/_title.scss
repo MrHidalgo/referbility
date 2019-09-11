@@ -5,6 +5,12 @@
   font-weight: bold;
   text-align: center;
   color: #091e42;
+  @include adaptive(1279) {
+    font-size: 30px;
+  }
+  @include adaptive(767) {
+    font-size: 26px;
+  }
 
   &--white {
     color: $c-white;

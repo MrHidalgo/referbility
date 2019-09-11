@@ -39,35 +39,81 @@
 
     &-3 {
       padding-top: 80px;
+      @include adaptive(1023) {
+        padding-top: 50px;
+      }
     }
   }
 
   &__row {
     display: flex;
+    @include adaptive(1023) {
+      flex-wrap: wrap;
+    }
   }
 
   &__col {
     width: 100%;
 
-    &-1 {
-      display: flex;
-      max-width: 700px;
-
-      > div {
-        width: 100%;
-        max-width: 50%;
-        padding-right: 15px;
+    &-1,
+    &-2 {
+      max-width: 350px;
+      padding-right: 15px;
+      @include adaptive(1279) {
+        max-width: 300px;
       }
     }
 
-    &-2,
-    &-3 {
+    &-3,
+    &-4 {
       position: relative;
       max-width: calc((100% - 700px) / 2);
+      @include adaptive(1279) {
+        max-width: calc((100% - 600px) / 2);
+      }
+      @include adaptive(1023) {
+        max-width: calc(50% / 2);
+      }
+      @include adaptive(767) {
+        max-width: calc(100% / 2);
+      }
     }
 
+    &-1 {
+      @include adaptive(1023) {
+        order: 1;
+        max-width: 50%;
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+      }
+    }
+    &-2 {
+      @include adaptive(1023) {
+        order: 4;
+        max-width: 100%;
+        padding-top: 50px;
+        padding-right: 0;
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+      }
+    }
     &-3 {
-      left: 65px;
+      @include adaptive(1023) {
+        order: 2;
+      }
+      @include adaptive(767) {
+        padding-top: 50px;
+      }
+    }
+    &-4 {
+      @include adaptive(1023) {
+        order: 3;
+      }
+      @include adaptive(767) {
+        padding-top: 50px;
+      }
     }
   }
 
@@ -78,6 +124,8 @@
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &-wrapper {
       overflow: hidden;
@@ -87,13 +135,22 @@
       justify-content: center;
       width: 100%;
       max-width: 1170px;
-      height: 425px;
+      min-height: 425px;
       margin-left: auto;
       margin-right: auto;
       border-top-right-radius: 160px;
       border-bottom-left-radius: 160px;
       box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
       background-image: linear-gradient(203deg, #8181ff, #5153dc);
+      @include adaptive(1023) {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 100px;
+      }
+      @include adaptive(767) {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 130px;
+      }
     }
 
     &-bg {
@@ -119,6 +176,9 @@
         &-2 {
           right: -270px;
           bottom: -106px;
+          @include adaptive(767) {
+            display: none;
+          }
         }
       }
     }
@@ -136,6 +196,9 @@
       letter-spacing: 0.5px;
       line-height: 1.75;
       text-align: center;
+      @include adaptive(767) {
+        font-size: 14px;
+      }
     }
 
     &-btn {
@@ -153,6 +216,9 @@
     letter-spacing: 1px;
     color: rgba(#ffffff, 0.7);
     text-transform: uppercase;
+    @include adaptive(767) {
+      text-align: center;
+    }
   }
 
   &__nav {
@@ -164,6 +230,9 @@
       letter-spacing: 0.5px;
       color: rgba(#ffffff, 0.7);
       @include transition(color);
+      @include adaptive(767) {
+        justify-content: center;
+      }
 
       &:hover {
         color: rgba(#ffffff, 1);
@@ -179,6 +248,11 @@
     line-height: 1.67;
     letter-spacing: 0.5px;
     color: rgba(#ffffff, 0.7);
+    @include adaptive(767) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
 
     span {
       font-weight: bold;

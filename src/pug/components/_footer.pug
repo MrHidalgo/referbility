@@ -27,30 +27,28 @@ footer#footer.footer
       .footer__row
         .footer__col.footer__col-1
 
-          div
+          .logo.logo--footer
+            a.logo__link(href='/' title='')
+              img.logo__img(src="img/logo--footer.png")
 
-            .logo.logo--footer
-              a.logo__link(href='/' title='')
-                img.logo__img(src="img/logo--footer.png")
-
-            p.footer__desc.footer__desc-2!= "We redefine the way candidates and employers come together by facilitating <span>public talent crowdsourcing</span>. Everyone can refer people they know to the jobs posted with us and get paid for every successful referral!"
-
-          div
-
-            .social
-              p.social__title Follow referbility.com
-              ul.social__list
-                li.social__item
-                  a.social__link(href="#")
-                    i.icon-font.icon-facebook
-                li.social__item
-                  a.social__link(href="#")
-                    i.icon-font.icon-linkedin
-                li.social__item
-                  a.social__link(href="#")
-                    i.icon-font.icon-twitter
+          p.footer__desc.footer__desc-2!= "We redefine the way candidates and employers come together by facilitating <span>public talent crowdsourcing</span>. Everyone can refer people they know to the jobs posted with us and get paid for every successful referral!"
 
         .footer__col.footer__col-2
+
+          .social
+            p.social__title Follow referbility.com
+            ul.social__list
+              li.social__item
+                a.social__link(href="#")
+                  i.icon-font.icon-facebook
+              li.social__item
+                a.social__link(href="#")
+                  i.icon-font.icon-linkedin
+              li.social__item
+                a.social__link(href="#")
+                  i.icon-font.icon-twitter
+
+        .footer__col.footer__col-3
 
           p.footer__title Quick Link
 
@@ -70,7 +68,7 @@ footer#footer.footer
             li.footer__nav-item
               a.footer__nav-link(href='#' title='') Terms & Conditions
 
-        .footer__col.footer__col-3
+        .footer__col.footer__col-4
 
           p.footer__title Company
 

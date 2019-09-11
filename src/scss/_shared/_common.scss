@@ -4,6 +4,9 @@
 .social {
   display: flex;
   flex-direction: column;
+  @include adaptive(1023) {
+    align-items: center;
+  }
 
   &__title {
     padding-bottom: 15px;
