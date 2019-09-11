@@ -50,7 +50,14 @@
     width: 100%;
 
     &-1 {
+      display: flex;
       max-width: 700px;
+
+      > div {
+        width: 100%;
+        max-width: 50%;
+        padding-right: 15px;
+      }
     }
 
     &-2,

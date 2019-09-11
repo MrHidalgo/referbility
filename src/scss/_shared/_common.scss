@@ -1,6 +1,58 @@
 // COMMON :: START
 
-//  .copyright
+// social
+.social {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+
+  &__title {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(#ffffff, 0.7);
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    padding-right: 10px;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(#ffffff, 0.7);
+    will-change: background-color;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: $c-white;
+      @include transition(background-color);
+    }
+
+    .icon-font {
+      color: #020d60;
+      font-size: 16px;
+    }
+  }
+}
+// social :: end
+
+//  copyright
 .copyright {
   &__text {
     font-size: 12px;
@@ -19,7 +71,7 @@
     }
   }
 }
-//  .copyright :: end
+//  copyright :: end
 
 .animated {
   animation-duration: 1s;
