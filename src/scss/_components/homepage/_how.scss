@@ -4,6 +4,9 @@
   position: relative;
   padding-top: 50px;
   padding-bottom: 150px;
+  @include adaptive(1279) {
+    padding-bottom: 50px;
+  }
 
   &__bg {
     z-index: 0;
@@ -31,20 +34,42 @@
     z-index: 2;
     position: relative;
     padding-bottom: 70px;
+    @include adaptive(1279) {
+      padding-bottom: 0;
+    }
   }
 
   &__title {
+    z-index: 2;
+    position: relative;
     padding-bottom: 50px;
   }
 
   &__block {
     position: relative;
     min-height: 300px;
+    @include adaptive(767) {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &-5 {
-      .how__block-bg {
-        width: calc(100% - 50px);
-        background-image: url('../img/how-bg-woArrow.svg');
+      .how__block {
+        &-bg {
+          width: calc(100% - 50px);
+          background-image: url('../img/how-bg-woArrow.svg');
+          @include adaptive(767) {
+            width: 100%;
+          }
+        }
+
+        &-body {
+          padding-right: 60px;
+          @include adaptive(767) {
+            padding-right: 20px;
+          }
+        }
       }
     }
 
@@ -60,12 +85,27 @@
       background-size: cover;
       background-position: center;
       filter: drop-shadow(0px 35px 90px rgba(153, 141, 217, 0.2));
+      @include adaptive(767) {
+        background-image: url('../img/how-bg-woArrow.svg');
+      }
     }
 
     &-body {
       z-index: 2;
       position: relative;
       padding: 15px 50px 15px 15px;
+      @include adaptive(1279) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 245px;
+      }
+      @include adaptive(767) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        text-align: center;
+      }
     }
 
     &-wrapper {
@@ -74,17 +114,44 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      max-width: 1200px;
+      max-width: 1280px;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include adaptive(1279) {
+        left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       > div {
         width: 100%;
         max-width: calc((100% - 20px) / 5);
+        @include adaptive(1279) {
+          max-width: calc((100% - 10px) / 3);
+          padding-right: 5px;
+          padding-bottom: 15px;
+        }
+        @include adaptive(767) {
+          max-width: 100%;
+        }
 
         &:nth-of-type(even) {
           padding-top: 50px;
+          @include adaptive(1279) {
+            padding-top: 0;
+          }
+        }
+
+        &:nth-of-type(odd) {
+          @include adaptive(1279) {
+            padding-top: 50px;
+          }
+          @include adaptive(767) {
+            padding-top: 0;
+          }
         }
       }
     }
@@ -112,6 +179,9 @@
       left: 0;
       width: 100%;
       padding-right: 50px;
+      @include adaptive(767) {
+        padding-right: 0;
+      }
 
       svg {
         display: block;
@@ -119,6 +189,10 @@
         height: 75px;
         margin-left: auto;
         margin-right: auto;
+        @include adaptive(767) {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
@@ -129,6 +203,9 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    @include adaptive(1279) {
+      display: none;
+    }
 
     > div {
       position: relative;

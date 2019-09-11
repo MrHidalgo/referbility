@@ -2772,7 +2772,14 @@ picture {
   padding-bottom: 150px;
 }
 
-/* line 8, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 3, src/scss/_components/homepage/_how.scss */
+  .how {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 11, src/scss/_components/homepage/_how.scss */
 .how__bg {
   z-index: 0;
   top: 0;
@@ -2781,12 +2788,12 @@ picture {
   height: 100%;
 }
 
-/* line 15, src/scss/_components/homepage/_how.scss */
+/* line 18, src/scss/_components/homepage/_how.scss */
 .how__bg, .how__bg-path {
   position: absolute;
 }
 
-/* line 20, src/scss/_components/homepage/_how.scss */
+/* line 23, src/scss/_components/homepage/_how.scss */
 .how__bg-path {
   top: 0;
   left: -185px;
@@ -2797,32 +2804,69 @@ picture {
   border: 90px solid rgba(234, 230, 255, 0.4);
 }
 
-/* line 30, src/scss/_components/homepage/_how.scss */
+/* line 33, src/scss/_components/homepage/_how.scss */
 .how__wrapper {
   z-index: 2;
   position: relative;
   padding-bottom: 70px;
 }
 
-/* line 36, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 33, src/scss/_components/homepage/_how.scss */
+  .how__wrapper {
+    padding-bottom: 0;
+  }
+}
+
+/* line 42, src/scss/_components/homepage/_how.scss */
 .how__title {
+  z-index: 2;
+  position: relative;
   padding-bottom: 50px;
 }
 
-/* line 40, src/scss/_components/homepage/_how.scss */
+/* line 48, src/scss/_components/homepage/_how.scss */
 .how__block {
   position: relative;
   min-height: 300px;
 }
 
-/* line 45, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 767px) {
+  /* line 48, src/scss/_components/homepage/_how.scss */
+  .how__block {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 59, src/scss/_components/homepage/_how.scss */
 .how__block-5 .how__block-bg {
   width: -webkit-calc(100% - 50px);
   width: calc(100% - 50px);
   background-image: url("../img/how-bg-woArrow.svg");
 }
 
-/* line 51, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 767px) {
+  /* line 59, src/scss/_components/homepage/_how.scss */
+  .how__block-5 .how__block-bg {
+    width: 100%;
+  }
+}
+
+/* line 67, src/scss/_components/homepage/_how.scss */
+.how__block-5 .how__block-body {
+  padding-right: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 67, src/scss/_components/homepage/_how.scss */
+  .how__block-5 .how__block-body {
+    padding-right: 20px;
+  }
+}
+
+/* line 76, src/scss/_components/homepage/_how.scss */
 .how__block-bg {
   z-index: 0;
   position: absolute;
@@ -2839,14 +2883,51 @@ picture {
           filter: drop-shadow(0px 35px 90px rgba(153, 141, 217, 0.2));
 }
 
-/* line 65, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 767px) {
+  /* line 76, src/scss/_components/homepage/_how.scss */
+  .how__block-bg {
+    background-image: url("../img/how-bg-woArrow.svg");
+  }
+}
+
+/* line 93, src/scss/_components/homepage/_how.scss */
 .how__block-body {
   z-index: 2;
   position: relative;
   padding: 15px 50px 15px 15px;
 }
 
-/* line 71, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 93, src/scss/_components/homepage/_how.scss */
+  .how__block-body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 245px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 93, src/scss/_components/homepage/_how.scss */
+  .how__block-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+}
+
+/* line 111, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper {
   position: relative;
   left: 26px;
@@ -2859,25 +2940,79 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* line 82, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 111, src/scss/_components/homepage/_how.scss */
+  .how__block-wrapper {
+    left: 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 129, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 5);
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 86, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 129, src/scss/_components/homepage/_how.scss */
+  .how__block-wrapper > div {
+    max-width: -webkit-calc((100% - 10px) / 3);
+    max-width: calc((100% - 10px) / 3);
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 129, src/scss/_components/homepage/_how.scss */
+  .how__block-wrapper > div {
+    max-width: 100%;
+  }
+}
+
+/* line 141, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div:nth-of-type(even) {
   padding-top: 50px;
 }
 
-/* line 92, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 141, src/scss/_components/homepage/_how.scss */
+  .how__block-wrapper > div:nth-of-type(even) {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 148, src/scss/_components/homepage/_how.scss */
+  .how__block-wrapper > div:nth-of-type(odd) {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 148, src/scss/_components/homepage/_how.scss */
+  .how__block-wrapper > div:nth-of-type(odd) {
+    padding-top: 0;
+  }
+}
+
+/* line 159, src/scss/_components/homepage/_how.scss */
 .how__block-num {
   padding-bottom: 5px;
   font-weight: bold;
@@ -2885,19 +3020,19 @@ picture {
   color: #fff;
 }
 
-/* line 99, src/scss/_components/homepage/_how.scss */
+/* line 166, src/scss/_components/homepage/_how.scss */
 .how__block-desc {
   font-size: 16px;
   line-height: 25px;
   color: #fff;
 }
 
-/* line 104, src/scss/_components/homepage/_how.scss */
+/* line 171, src/scss/_components/homepage/_how.scss */
 .how__block-desc span {
   font-weight: bold;
 }
 
-/* line 109, src/scss/_components/homepage/_how.scss */
+/* line 176, src/scss/_components/homepage/_how.scss */
 .how__block-icon {
   position: absolute;
   bottom: 0;
@@ -2906,7 +3041,14 @@ picture {
   padding-right: 50px;
 }
 
-/* line 116, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 767px) {
+  /* line 176, src/scss/_components/homepage/_how.scss */
+  .how__block-icon {
+    padding-right: 0;
+  }
+}
+
+/* line 186, src/scss/_components/homepage/_how.scss */
 .how__block-icon svg {
   display: block;
   width: 75px;
@@ -2915,7 +3057,15 @@ picture {
   margin-right: auto;
 }
 
-/* line 126, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 767px) {
+  /* line 186, src/scss/_components/homepage/_how.scss */
+  .how__block-icon svg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* line 200, src/scss/_components/homepage/_how.scss */
 .how__arrow {
   position: relative;
   display: -webkit-box;
@@ -2927,7 +3077,14 @@ picture {
   margin-right: auto;
 }
 
-/* line 133, src/scss/_components/homepage/_how.scss */
+@media screen and (max-width: 1279px) {
+  /* line 200, src/scss/_components/homepage/_how.scss */
+  .how__arrow {
+    display: none;
+  }
+}
+
+/* line 210, src/scss/_components/homepage/_how.scss */
 .how__arrow > div {
   position: relative;
   width: 100%;
@@ -2935,7 +3092,7 @@ picture {
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 139, src/scss/_components/homepage/_how.scss */
+/* line 216, src/scss/_components/homepage/_how.scss */
 .how__arrow img {
   position: absolute;
   top: 0;
