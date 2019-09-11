@@ -47,6 +47,17 @@
     backface-visibility: hidden;
     will-change: transform, box-shadow;
     @include transition(transform, box-shadow);
+    @include adaptive(1023) {
+      padding: 20px 15px 40px 15px;
+      margin-bottom: 15px;
+    }
+    @include adaptive(767) {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px 20px 50px 20px;
+      text-align: center;
+    }
 
     &:hover {
       transform: translateY(-10px);
@@ -69,6 +80,10 @@
       position: relative;
       width: 75px;
       height: 75px;
+      @include adaptive(767) {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       svg {
         position: absolute;
@@ -103,22 +118,40 @@
       max-width: 960px;
       margin-left: auto;
       margin-right: auto;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
     }
 
     &-col {
       width: 100%;
       max-width: calc((100% - 60px) / 4);
+      @include adaptive(1023) {
+        max-width: calc((100% - 45px) / 4);
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+      }
 
       &-1 {
         padding-top: 128px;
+        @include adaptive(767) {
+          padding-top: 0;
+        }
       }
 
       &-3 {
         padding-top: 68px;
+        @include adaptive(767) {
+          padding-top: 0;
+        }
       }
 
       &-4 {
         padding-top: 228px;
+        @include adaptive(767) {
+          padding-top: 0;
+        }
       }
     }
   }

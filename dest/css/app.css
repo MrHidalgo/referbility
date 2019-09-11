@@ -937,7 +937,7 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 3, src/scss/_macros/_title.scss */
   .c-title {
-    font-size: 26px;
+    font-size: 27px;
   }
 }
 
@@ -3197,7 +3197,26 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 51, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 1023px) {
+  /* line 39, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block {
+    padding: 20px 15px 40px 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 39, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+  }
+}
+
+/* line 62, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover {
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
@@ -3211,7 +3230,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 57, src/scss/_components/homepage/_advantages.scss */
+/* line 68, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover .advantages__block-img svg {
   opacity: 0.9;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -3219,19 +3238,27 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 64, src/scss/_components/homepage/_advantages.scss */
+/* line 75, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-head {
   padding-bottom: 30px;
 }
 
-/* line 68, src/scss/_components/homepage/_advantages.scss */
+/* line 79, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img {
   position: relative;
   width: 75px;
   height: 75px;
 }
 
-/* line 73, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 88, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img svg {
   position: absolute;
   top: 0;
@@ -3243,7 +3270,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 83, src/scss/_components/homepage/_advantages.scss */
+/* line 98, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-title {
   padding-bottom: 15px;
   font-size: 20px;
@@ -3252,7 +3279,7 @@ picture {
   color: #091e42;
 }
 
-/* line 91, src/scss/_components/homepage/_advantages.scss */
+/* line 106, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-desc {
   font-size: 16px;
   font-weight: 500;
@@ -3261,7 +3288,7 @@ picture {
   color: #6c798f;
 }
 
-/* line 99, src/scss/_components/homepage/_advantages.scss */
+/* line 114, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3277,26 +3304,71 @@ picture {
   margin-right: auto;
 }
 
-/* line 108, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 767px) {
+  /* line 114, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 126, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col {
   width: 100%;
   max-width: -webkit-calc((100% - 60px) / 4);
   max-width: calc((100% - 60px) / 4);
 }
 
-/* line 112, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 1023px) {
+  /* line 126, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-col {
+    max-width: -webkit-calc((100% - 45px) / 4);
+    max-width: calc((100% - 45px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 126, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-col {
+    max-width: 100%;
+  }
+}
+
+/* line 136, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-1 {
   padding-top: 128px;
 }
 
-/* line 116, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 767px) {
+  /* line 136, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-col-1 {
+    padding-top: 0;
+  }
+}
+
+/* line 143, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-3 {
   padding-top: 68px;
 }
 
-/* line 120, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 767px) {
+  /* line 143, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-col-3 {
+    padding-top: 0;
+  }
+}
+
+/* line 150, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-4 {
   padding-top: 228px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 150, src/scss/_components/homepage/_advantages.scss */
+  .advantages__block-col-4 {
+    padding-top: 0;
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */
