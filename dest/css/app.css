@@ -598,10 +598,9 @@ picture {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 30px;
 }
 
-/* line 9, src/scss/_shared/_common.scss */
+/* line 8, src/scss/_shared/_common.scss */
 .social__title {
   padding-bottom: 15px;
   font-size: 14px;
@@ -611,7 +610,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 18, src/scss/_shared/_common.scss */
+/* line 17, src/scss/_shared/_common.scss */
 .social__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -623,17 +622,17 @@ picture {
           align-items: center;
 }
 
-/* line 23, src/scss/_shared/_common.scss */
+/* line 22, src/scss/_shared/_common.scss */
 .social__item {
   padding-right: 10px;
 }
 
-/* line 26, src/scss/_shared/_common.scss */
+/* line 25, src/scss/_shared/_common.scss */
 .social__item:last-of-type {
   padding-right: 0;
 }
 
-/* line 31, src/scss/_shared/_common.scss */
+/* line 30, src/scss/_shared/_common.scss */
 .social__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -658,7 +657,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 42, src/scss/_shared/_common.scss */
+/* line 41, src/scss/_shared/_common.scss */
 .social__link:hover {
   background-color: #fff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -666,13 +665,13 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 47, src/scss/_shared/_common.scss */
+/* line 46, src/scss/_shared/_common.scss */
 .social__link .icon-font {
   color: #020d60;
   font-size: 16px;
 }
 
-/* line 57, src/scss/_shared/_common.scss */
+/* line 56, src/scss/_shared/_common.scss */
 .copyright__text {
   font-size: 12px;
   font-weight: 500;
@@ -680,7 +679,7 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 63, src/scss/_shared/_common.scss */
+/* line 62, src/scss/_shared/_common.scss */
 .copyright__text a {
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease-in-out;
@@ -688,7 +687,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 67, src/scss/_shared/_common.scss */
+/* line 66, src/scss/_shared/_common.scss */
 .copyright__text a:hover {
   color: white;
   -webkit-transition: color 0.3s ease-in-out;
@@ -696,7 +695,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 76, src/scss/_shared/_common.scss */
+/* line 75, src/scss/_shared/_common.scss */
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -1693,17 +1692,16 @@ picture {
 /* line 63, src/scss/_components/_footer.scss */
 .footer__col-2, .footer__col-3 {
   position: relative;
-  top: 30px;
   max-width: -webkit-calc((100% - 700px) / 2);
   max-width: calc((100% - 700px) / 2);
 }
 
-/* line 70, src/scss/_components/_footer.scss */
+/* line 69, src/scss/_components/_footer.scss */
 .footer__col-3 {
   left: 65px;
 }
 
-/* line 75, src/scss/_components/_footer.scss */
+/* line 74, src/scss/_components/_footer.scss */
 .footer__started {
   z-index: 2;
   position: relative;
@@ -1713,7 +1711,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 83, src/scss/_components/_footer.scss */
+/* line 82, src/scss/_components/_footer.scss */
 .footer__started-wrapper {
   overflow: hidden;
   position: relative;
@@ -1745,7 +1743,7 @@ picture {
   background-image: linear-gradient(203deg, #8181ff, #5153dc);
 }
 
-/* line 100, src/scss/_components/_footer.scss */
+/* line 99, src/scss/_components/_footer.scss */
 .footer__started-bg {
   z-index: 0;
   position: absolute;
@@ -1755,7 +1753,7 @@ picture {
   height: 100%;
 }
 
-/* line 108, src/scss/_components/_footer.scss */
+/* line 107, src/scss/_components/_footer.scss */
 .footer__started-bg-path {
   position: absolute;
   width: 410px;
@@ -1765,25 +1763,25 @@ picture {
   border: solid 150px #a9abfe4c;
 }
 
-/* line 115, src/scss/_components/_footer.scss */
+/* line 114, src/scss/_components/_footer.scss */
 .footer__started-bg-path-1 {
   top: -145px;
   left: -70px;
 }
 
-/* line 120, src/scss/_components/_footer.scss */
+/* line 119, src/scss/_components/_footer.scss */
 .footer__started-bg-path-2 {
   right: -270px;
   bottom: -106px;
 }
 
-/* line 127, src/scss/_components/_footer.scss */
+/* line 126, src/scss/_components/_footer.scss */
 .footer__started-title {
   padding-bottom: 30px;
   letter-spacing: 1px;
 }
 
-/* line 132, src/scss/_components/_footer.scss */
+/* line 131, src/scss/_components/_footer.scss */
 .footer__started-desc {
   padding-bottom: 30px;
   color: rgba(255, 255, 255, 0.85);
@@ -1794,7 +1792,7 @@ picture {
   text-align: center;
 }
 
-/* line 143, src/scss/_components/_footer.scss */
+/* line 142, src/scss/_components/_footer.scss */
 .footer__started-btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1806,7 +1804,7 @@ picture {
           justify-content: center;
 }
 
-/* line 150, src/scss/_components/_footer.scss */
+/* line 149, src/scss/_components/_footer.scss */
 .footer__title {
   padding-bottom: 15px;
   font-size: 14px;
@@ -1816,7 +1814,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 160, src/scss/_components/_footer.scss */
+/* line 159, src/scss/_components/_footer.scss */
 .footer__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1835,7 +1833,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 169, src/scss/_components/_footer.scss */
+/* line 168, src/scss/_components/_footer.scss */
 .footer__nav-link:hover {
   color: white;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1843,7 +1841,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 176, src/scss/_components/_footer.scss */
+/* line 175, src/scss/_components/_footer.scss */
 .footer__desc {
   width: 100%;
   max-width: 300px;
@@ -1853,17 +1851,17 @@ picture {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 184, src/scss/_components/_footer.scss */
+/* line 183, src/scss/_components/_footer.scss */
 .footer__desc span {
   font-weight: bold;
 }
 
-/* line 188, src/scss/_components/_footer.scss */
+/* line 187, src/scss/_components/_footer.scss */
 .footer__desc a {
   color: #fff;
 }
 
-/* line 192, src/scss/_components/_footer.scss */
+/* line 191, src/scss/_components/_footer.scss */
 .footer__desc-1 {
   padding-bottom: 20px;
 }
