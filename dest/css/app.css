@@ -2481,6 +2481,11 @@ picture {
 }
 
 /* line 62, src/scss/_components/_menu.scss */
+.is-header-fixed .menu__item--request {
+  display: none;
+}
+
+/* line 68, src/scss/_components/_menu.scss */
 .menu__btn {
   width: 100%;
   max-width: 300px;
@@ -2495,7 +2500,7 @@ picture {
   color: #020d60;
 }
 
-/* line 75, src/scss/_components/_menu.scss */
+/* line 81, src/scss/_components/_menu.scss */
 .menu__link {
   position: relative;
   display: -webkit-box;
@@ -2529,7 +2534,7 @@ picture {
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/_menu.scss */
+/* line 98, src/scss/_components/_menu.scss */
 .menu__link span {
   position: relative;
   will-change: transform;
@@ -2540,7 +2545,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 98, src/scss/_components/_menu.scss */
+/* line 104, src/scss/_components/_menu.scss */
 .menu__link .icon-font {
   opacity: 0;
   visibility: hidden;
@@ -2561,7 +2566,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 110, src/scss/_components/_menu.scss */
+/* line 116, src/scss/_components/_menu.scss */
 .menu__link:hover {
   text-shadow: 0 2px 5px rgba(255, 255, 255, 0.25);
   -webkit-transition: text-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -2571,7 +2576,7 @@ picture {
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 114, src/scss/_components/_menu.scss */
+/* line 120, src/scss/_components/_menu.scss */
 .menu__link:hover span {
   -webkit-transform: translateX(-20px);
       -ms-transform: translateX(-20px);
@@ -2583,7 +2588,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 119, src/scss/_components/_menu.scss */
+/* line 125, src/scss/_components/_menu.scss */
 .menu__link:hover .icon-font {
   opacity: 1;
   visibility: visible;
@@ -2601,8 +2606,8 @@ picture {
   from {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
   }
   to {
     opacity: 1;
@@ -2616,8 +2621,8 @@ picture {
   from {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
   }
   to {
     opacity: 1;
@@ -2627,7 +2632,7 @@ picture {
   }
 }
 
-/* line 143, src/scss/_components/_menu.scss */
+/* line 149, src/scss/_components/_menu.scss */
 .slideInRight {
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;

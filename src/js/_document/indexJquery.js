@@ -34,6 +34,7 @@ $(document).ready((ev) => {
 
     // lib
     initHamburger();
+    initSmoothScroll();
     initPopups();
     initStellar();
     initViewPortChecker();

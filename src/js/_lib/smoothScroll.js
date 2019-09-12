@@ -7,7 +7,7 @@
  */
 const initSmoothScroll = (
   btnName = "[anchor-js]",
-  animateSpeed = 1000
+  animateSpeed = 750
 ) => {
 
   $(btnName).on("click", (e) => {

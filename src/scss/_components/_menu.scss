@@ -57,6 +57,12 @@
         padding-top: 10px;
       }
     }
+
+    &--request {
+      .is-header-fixed & {
+        display: none;
+      }
+    }
   }
 
   &__btn {
@@ -130,7 +136,7 @@
   from {
     opacity: 0;
     visibility: hidden;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {

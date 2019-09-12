@@ -108,6 +108,28 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSmoothScroll
+ *
+ * @description Smooth transition to anchors to the block.
+ */
+var initSmoothScroll = function initSmoothScroll() {
+  var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+  var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 750;
+
+
+  $(btnName).on("click", function (e) {
+
+    var linkHref = $(e.currentTarget).attr('href'),
+        headerHeight = $(".header").outerHeight() || 0,
+        topHeightOffset = $(linkHref).offset().top - headerHeight;
+
+    $('body, html').animate({
+      scrollTop: topHeightOffset
+    }, animateSpeed);
+  });
+};
+
+/**
  * @name initStellar
  * @description Stellar.js is a jQuery plugin that provides parallax scrolling effects to any scrolling element.
  *
@@ -270,6 +292,7 @@ $(document).ready(function (ev) {
 
     // lib
     initHamburger();
+    initSmoothScroll();
     initPopups();
     initStellar();
     initViewPortChecker();
