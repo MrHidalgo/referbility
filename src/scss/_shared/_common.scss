@@ -84,9 +84,26 @@
 }
 //  copyright :: end
 
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes c-slideInUp {
+  from {
+    transform: translateY(75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .animated {
-  animation-duration: 1s;
   animation-fill-mode: both;
+  animation-duration: 1s;
 }
 
 // COMMON :: END

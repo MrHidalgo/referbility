@@ -48,10 +48,19 @@
   &__block {
     position: relative;
     min-height: 300px;
+    backface-visibility: hidden;
+    transform-origin: center;
+    will-change: transform;
+    @include transition(transform);
     @include adaptive(767) {
       max-width: 300px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    &:hover {
+      transform: translateX(5px);
+      @include transition(transform 0.5s);
     }
 
     &-5 {

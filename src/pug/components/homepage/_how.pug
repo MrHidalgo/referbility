@@ -5,12 +5,12 @@ section#how.how
   .how__bg
     .how__bg-path(parallax-js data-stellar-ratio="1.2")
 
-  h2.how__title.c-title How it works
+  h2.how__title.c-title.viewport-hide-js(data-animation-delay='0.2s') How it works
 
   .how__wrapper
 
     .how__block-wrapper
-      div
+      div.viewport-hide-js(data-animation-delay='0.2s')
         .how__block.how__block-1
           .how__block-bg
           .how__block-body
@@ -18,7 +18,7 @@ section#how.how
             p.how__block-desc!= "<span>Post your job for free.</span> Tell us how much you are willing to pay when you hire the perfect candidate."
           .how__block-icon
             +iconSVG('how-1', '')
-      div
+      div.viewport-hide-js(data-animation-delay='0.3s')
         .how__block.how__block-2
           .how__block-bg
           .how__block-body
@@ -26,7 +26,7 @@ section#how.how
             p.how__block-desc!= "We tailor-make and <span>publish advertisements</span> to relevant segments of the <span>public, inviting them to refer.</span>"
           .how__block-icon
             +iconSVG('how-2', '')
-      div
+      div.viewport-hide-js(data-animation-delay='0.4s')
         .how__block.how__block-3
           .how__block-bg
           .how__block-body
@@ -34,7 +34,7 @@ section#how.how
             p.how__block-desc!= "Receive <span>unlimited referrals</span> of best-in-class talent, sorted through our <span>algorithm.</span>"
           .how__block-icon
             +iconSVG('how-3', '')
-      div
+      div.viewport-hide-js(data-animation-delay='0.5s')
         .how__block.how__block-4
           .how__block-bg
           .how__block-body
@@ -42,7 +42,7 @@ section#how.how
             p.how__block-desc!= "Our <span>account managers</span> share the best referred profiles with you. <span>Start hiring</span> by depositing the reward into an escrow!"
           .how__block-icon
             +iconSVG('how-4', '')
-      div
+      div.viewport-hide-js(data-animation-delay='0.6s')
         .how__block.how__block-5
           .how__block-bg
           .how__block-body
@@ -51,7 +51,7 @@ section#how.how
           .how__block-icon
             +iconSVG('how-5', '')
 
-    .how__arrow
+    .how__arrow.viewport-hide-js(data-animation-delay='0.6s')
       div
       div
         img(src="img/how-line.png" srcset="img/how-line@2x.png 2x")

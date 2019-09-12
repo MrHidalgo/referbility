@@ -162,6 +162,65 @@ var initStellar = function initStellar() {
 };
 
 /**
+ * @name scrollAnimation
+ *
+ * @param elem
+ * @param el
+ *
+ * @description
+ */
+var scrollAnimation = function scrollAnimation(elem, el) {
+
+  $(elem).css({
+    'animation-name': $(el).data('animation-name') ? $(el).data('animation-name') + ", c-fadeIn" : 'c-slideInUp, c-fadeIn',
+    'animation-delay': $(el).data('animation-delay') || '0s',
+    'animation-duration': $(el).data('animation-duration') || '1s'
+  });
+};
+
+/**
+ * @name initViewPortChecker
+ *
+ * @param className {String}              - default is `viewport-hide-js`
+ * @param classNameToAdd {String}         - default is `viewport-show-js animated`
+ * @param offsetVal {Number}              - default is 100
+ * @param callbackFunctionName {Object}   - default is `scrollAnimation()`
+ *
+ * @description Detects if an element is in the viewport and adds a class to it
+ *
+ * You can to add some attribute:
+ * - <div data-vp-add-class="random"></div>                       > classToAdd
+ * - <div data-vp-remove-class="random"></div>                    > classToRemove
+ * - <div data-vp-remove-after-animation="true|false"></div>      > Removes added classes after CSS3 animation has completed
+ * - <div data-vp-offset="[100 OR 10%]"></div>                    > offset
+ * - <div data-vp-repeat="true"></div>                            > repeat
+ * - <div data-vp-scrollHorizontal="false"></div>                 > scrollHorizontal
+ */
+var initViewPortChecker = function initViewPortChecker() {
+  var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "viewport-hide-js";
+  var classNameToAdd = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "viewport-show-js animated";
+  var offsetVal = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 100;
+  var callbackFunctionName = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : scrollAnimation;
+
+
+  $("." + className).not(".full-visible").each(function (idx, el) {
+
+    $(el).viewportChecker({
+      classToAdd: classNameToAdd,
+      classToAddForFullView: 'full-visible',
+      classToRemove: className,
+      removeClassAfterAnimation: true,
+      offset: offsetVal,
+      repeat: false,
+      callbackFunction: function callbackFunction(elem, action) {
+
+        callbackFunctionName(elem, el);
+      }
+    });
+  });
+};
+
+/**
  * @description Window on load.
  */
 window.addEventListener('load', function (ev) {
@@ -213,6 +272,7 @@ $(document).ready(function (ev) {
     initHamburger();
     initPopups();
     initStellar();
+    initViewPortChecker();
     // ==========================================
 
     // callback

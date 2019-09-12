@@ -717,12 +717,62 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 87, src/scss/_shared/_common.scss */
+@-webkit-keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes c-slideInUp {
+  from {
+    -webkit-transform: translateY(75px);
+            transform: translateY(75px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes c-slideInUp {
+  from {
+    -webkit-transform: translateY(75px);
+            transform: translateY(75px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/* line 104, src/scss/_shared/_common.scss */
 .animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/* line 1, src/scss/_shared/_viewPortChecker.scss */
+.viewport-hide-js {
+  opacity: 0;
+}
+
+/* line 4, src/scss/_shared/_viewPortChecker.scss */
+.viewport-show-js {
+  opacity: 1;
 }
 
 /* line 1, src/scss/_shared/_magnificPopup.scss */
@@ -3503,6 +3553,17 @@ picture {
 .how__block {
   position: relative;
   min-height: 300px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -3514,7 +3575,19 @@ picture {
   }
 }
 
-/* line 59, src/scss/_components/homepage/_how.scss */
+/* line 61, src/scss/_components/homepage/_how.scss */
+.how__block:hover {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 68, src/scss/_components/homepage/_how.scss */
 .how__block-5 .how__block-bg {
   width: -webkit-calc(100% - 50px);
   width: calc(100% - 50px);
@@ -3522,25 +3595,25 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 59, src/scss/_components/homepage/_how.scss */
+  /* line 68, src/scss/_components/homepage/_how.scss */
   .how__block-5 .how__block-bg {
     width: 100%;
   }
 }
 
-/* line 67, src/scss/_components/homepage/_how.scss */
+/* line 76, src/scss/_components/homepage/_how.scss */
 .how__block-5 .how__block-body {
   padding-right: 60px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 67, src/scss/_components/homepage/_how.scss */
+  /* line 76, src/scss/_components/homepage/_how.scss */
   .how__block-5 .how__block-body {
     padding-right: 20px;
   }
 }
 
-/* line 76, src/scss/_components/homepage/_how.scss */
+/* line 85, src/scss/_components/homepage/_how.scss */
 .how__block-bg {
   z-index: 0;
   position: absolute;
@@ -3558,13 +3631,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 76, src/scss/_components/homepage/_how.scss */
+  /* line 85, src/scss/_components/homepage/_how.scss */
   .how__block-bg {
     background-image: url("../img/how-bg-woArrow.svg");
   }
 }
 
-/* line 93, src/scss/_components/homepage/_how.scss */
+/* line 102, src/scss/_components/homepage/_how.scss */
 .how__block-body {
   z-index: 2;
   position: relative;
@@ -3572,7 +3645,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 93, src/scss/_components/homepage/_how.scss */
+  /* line 102, src/scss/_components/homepage/_how.scss */
   .how__block-body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3592,7 +3665,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 93, src/scss/_components/homepage/_how.scss */
+  /* line 102, src/scss/_components/homepage/_how.scss */
   .how__block-body {
     padding-left: 20px;
     padding-right: 20px;
@@ -3601,7 +3674,7 @@ picture {
   }
 }
 
-/* line 111, src/scss/_components/homepage/_how.scss */
+/* line 120, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper {
   position: relative;
   left: 26px;
@@ -3623,7 +3696,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 111, src/scss/_components/homepage/_how.scss */
+  /* line 120, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper {
     left: 0;
     -webkit-flex-wrap: wrap;
@@ -3636,7 +3709,7 @@ picture {
   }
 }
 
-/* line 129, src/scss/_components/homepage/_how.scss */
+/* line 138, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 5);
@@ -3644,7 +3717,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 129, src/scss/_components/homepage/_how.scss */
+  /* line 138, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div {
     max-width: -webkit-calc((100% - 10px) / 3);
     max-width: calc((100% - 10px) / 3);
@@ -3654,39 +3727,39 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 129, src/scss/_components/homepage/_how.scss */
+  /* line 138, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 141, src/scss/_components/homepage/_how.scss */
+/* line 150, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div:nth-of-type(even) {
   padding-top: 50px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 141, src/scss/_components/homepage/_how.scss */
+  /* line 150, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div:nth-of-type(even) {
     padding-top: 0;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 148, src/scss/_components/homepage/_how.scss */
+  /* line 157, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div:nth-of-type(odd) {
     padding-top: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 148, src/scss/_components/homepage/_how.scss */
+  /* line 157, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div:nth-of-type(odd) {
     padding-top: 0;
   }
 }
 
-/* line 159, src/scss/_components/homepage/_how.scss */
+/* line 168, src/scss/_components/homepage/_how.scss */
 .how__block-num {
   padding-bottom: 5px;
   font-weight: bold;
@@ -3694,19 +3767,19 @@ picture {
   color: #fff;
 }
 
-/* line 166, src/scss/_components/homepage/_how.scss */
+/* line 175, src/scss/_components/homepage/_how.scss */
 .how__block-desc {
   font-size: 16px;
   line-height: 25px;
   color: #fff;
 }
 
-/* line 171, src/scss/_components/homepage/_how.scss */
+/* line 180, src/scss/_components/homepage/_how.scss */
 .how__block-desc span {
   font-weight: bold;
 }
 
-/* line 176, src/scss/_components/homepage/_how.scss */
+/* line 185, src/scss/_components/homepage/_how.scss */
 .how__block-icon {
   position: absolute;
   bottom: 0;
@@ -3716,13 +3789,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 176, src/scss/_components/homepage/_how.scss */
+  /* line 185, src/scss/_components/homepage/_how.scss */
   .how__block-icon {
     padding-right: 0;
   }
 }
 
-/* line 186, src/scss/_components/homepage/_how.scss */
+/* line 195, src/scss/_components/homepage/_how.scss */
 .how__block-icon svg {
   display: block;
   width: 75px;
@@ -3732,14 +3805,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 186, src/scss/_components/homepage/_how.scss */
+  /* line 195, src/scss/_components/homepage/_how.scss */
   .how__block-icon svg {
     width: 100px;
     height: 100px;
   }
 }
 
-/* line 200, src/scss/_components/homepage/_how.scss */
+/* line 209, src/scss/_components/homepage/_how.scss */
 .how__arrow {
   position: relative;
   display: -webkit-box;
@@ -3752,13 +3825,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 200, src/scss/_components/homepage/_how.scss */
+  /* line 209, src/scss/_components/homepage/_how.scss */
   .how__arrow {
     display: none;
   }
 }
 
-/* line 210, src/scss/_components/homepage/_how.scss */
+/* line 219, src/scss/_components/homepage/_how.scss */
 .how__arrow > div {
   position: relative;
   width: 100%;
@@ -3766,7 +3839,7 @@ picture {
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 216, src/scss/_components/homepage/_how.scss */
+/* line 225, src/scss/_components/homepage/_how.scss */
 .how__arrow img {
   position: absolute;
   top: 0;

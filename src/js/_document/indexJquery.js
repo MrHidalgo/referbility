@@ -36,6 +36,7 @@ $(document).ready((ev) => {
     initHamburger();
     initPopups();
     initStellar();
+    initViewPortChecker();
 		// ==========================================
 
     // callback

@@ -11,7 +11,7 @@
 const scrollAnimation = (elem, el) => {
 
   $(elem).css({
-    'animation-name'      : ($(el).data('animation-name')) ? $(el).data('animation-name') + ", fadeIn" : 'slideInUp, fadeIn',
+    'animation-name'      : ($(el).data('animation-name')) ? $(el).data('animation-name') + ", c-fadeIn" : 'c-slideInUp, c-fadeIn',
     'animation-delay'     : $(el).data('animation-delay') || '0s',
     'animation-duration'  : $(el).data('animation-duration') || '1s'
   });
