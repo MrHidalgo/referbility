@@ -6,7 +6,7 @@
 
 $bth-width: unset;
 $bth-height: 45px;
-$btn-border-width: 2px;
+$btn-border-width: 0;
 $btn-border-color: rgba(#020d60, 1);
 $bth-border-radius: 2em;
 $bth-box-shadow: none;
@@ -23,7 +23,9 @@ $btn-color--border: rgba(#000, 1);
 
 .c-btn {
   outline: none;
+  overflow: hidden;
   cursor: pointer;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,50 +45,86 @@ $btn-color--border: rgba(#000, 1);
   letter-spacing: 0.5px;
   text-align: center;
 
-  &--border {
-    background-color: transparent;
-    color: $btn-color--border;
+  span {
+    z-index: 2;
+    position: relative;
   }
 
   &--bg {
-    background-color: $bth-background-color;
-    will-change: border-color, background-color;
-
-    &,
-    &:hover,
-    &:active {
-      @include transition(border-color, background-color);
-    }
-
-    &:hover {
-      border-color: rgba($bth-background-color, 0.75);
-      background-color: rgba($bth-background-color, 0.75);
-    }
-
-    &:active {
-      border-color: rgba($bth-background-color, 1);
-      background-color: rgba($bth-background-color, 1);
-    }
-
+    &-blue,
     &-white {
-      border-color: $c-white;
-      background-color: $c-white;
-      color: $bth-background-color;
+      transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+
+      &:hover {
+        &:after {
+          opacity: 1.0;
+          visibility: visible;
+          transform: translateX(-50%) translateY(-50%) scale(1);
+          transform-origin: center center;
+          transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+        }
+      }
+
+      &:after {
+        content: '';
+        opacity: 0;
+        visibility: hidden;
+        z-index: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: calc(100% + 30px);
+        padding: calc(40% + 30px) 0;
+        border-radius: 50%;
+        will-change: transform;
+        transform: translateX(-50%) translateY(-50%) scale(0.001);
+        transform-origin: center center;
+        transition: visibility 0.25s, opacity 0.25s, cubic-bezier(0, 0.9, 0.5, 1);
+      }
+    }
+
+    &-blue {
+      background-color: $bth-background-color;
+
+      &:after {
+        background-color: lighten($bth-background-color, 5%);
+      }
 
       &,
       &:hover,
       &:active {
-        @include transition(border-color, background-color);
+        @include transition(box-shadow);
       }
 
       &:hover {
-        border-color: rgba($c-white, 0.75);
-        background-color: rgba($c-white, 0.75);
+        box-shadow: 0 5px 10px 0 rgba($bth-background-color, 0.15);
       }
 
       &:active {
-        border-color: rgba($c-white, 1);
-        background-color: rgba($c-white, 1);
+        box-shadow: 0 5px 10px 0 rgba($bth-background-color, 0);
+      }
+    }
+
+    &-white {
+      background-color: $c-white;
+      color: $bth-background-color;
+
+      &:after {
+        background-color: lighten($c-black, 95%);
+      }
+
+      &,
+      &:hover,
+      &:active {
+        @include transition(box-shadow);
+      }
+
+      &:hover {
+        box-shadow: 0 5px 10px 0 rgba($c-black, 0.15);
+      }
+
+      &:active {
+        box-shadow: 0 5px 10px 0 rgba($c-black, 0);
       }
     }
   }

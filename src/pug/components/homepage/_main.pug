@@ -5,14 +5,14 @@ section#main.main
   .main__bg
 
     .main__bg-row
-      .main__bg-path
+      .main__bg-path(parallax-js data-stellar-ratio="1.2")
 
-      .main__bg-shape
+      .main__bg-shape(parallax-js data-stellar-ratio="1.2")
         img(src="img/crowdsourcing-shape-1.svg")
 
     .main__bg-container
-      .main__bg-container-path.main__bg-container-path-1
-      .main__bg-container-path.main__bg-container-path-2
+      .main__bg-container-path.main__bg-container-path-1(parallax-js data-stellar-ratio="1.2")
+      .main__bg-container-path.main__bg-container-path-2(parallax-js data-stellar-ratio="0.8")
 
   .main__wrapper
     .main__wrapper-left
@@ -22,8 +22,10 @@ section#main.main
         p.main__subtitle Leverage the public to have them referred directly to you by crowdsourcing.
 
         .main__btn-wrapper
-          a.main__btn.c-btn.c-btn--bg(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js) Request a demo
-          a.main__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#' title='') Learn more
+          a.main__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
+            span Request a demo
+          a.main__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#' title='')
+            span Learn more
 
         .main__num
           +iconSVG('main-number', '')

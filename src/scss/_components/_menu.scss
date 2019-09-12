@@ -46,9 +46,7 @@
     }
 
     &--last {
-      @include adaptive(1023) {
-        border: none;
-      }
+      border: none;
     }
 
     &--hidden {
@@ -75,6 +73,7 @@
   }
 
   &__link {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +85,44 @@
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    transform-origin: center;
+    will-change: transform, text-shadow;
+    @include transition(transform, text-shadow);
+
+    span {
+      position: relative;
+      will-change: transform;
+      @include transition(transform);
+    }
+
+    .icon-font {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      transform-origin: center;
+      will-change: opacity, visibility, transform;
+      @include transition(opacity, visibility, transform);
+    }
+
+    &:hover {
+      text-shadow: 0 2px 5px rgba($c-white, 0.25);
+      @include transition(transform, text-shadow);
+
+      span {
+        transform: translateX(-20px);
+        @include transition(transform);
+      }
+
+      .icon-font {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) translateX(20px);
+        @include transition(opacity, visibility, transform);
+      }
+    }
   }
 }
 

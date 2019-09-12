@@ -33,7 +33,7 @@ const initStellar = () => {
         // Select which property is used to position elements.
         // Choose between 'position' or 'transform',
         // or write your own 'positionProperty' plugin.
-        positionProperty: 'position',
+        positionProperty: 'transform',
 
         // Enable or disable the two types of parallax
         parallaxBackgrounds: true,

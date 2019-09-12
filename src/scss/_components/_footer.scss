@@ -96,6 +96,7 @@
         padding-right: 0;
       }
       @include adaptive(767) {
+        order: 2;
         max-width: 100%;
       }
     }
@@ -104,6 +105,7 @@
         order: 2;
       }
       @include adaptive(767) {
+        order: 3;
         padding-top: 50px;
       }
     }
@@ -112,6 +114,7 @@
         order: 3;
       }
       @include adaptive(767) {
+        order: 4;
         padding-top: 50px;
       }
     }
