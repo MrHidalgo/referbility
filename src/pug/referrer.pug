@@ -1,0 +1,22 @@
+---
+title: Referrer
+
+pageClassName: p-referrer
+---
+extends shared/_layout
+
+block modal
+  include components/homepage/_modalRequestDemo
+
+block menu
+  include components/homepage/_menu
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/homepage/_main
+    include components/homepage/_crowdsourcing
+    include components/homepage/_talent
+    include components/homepage/_how
+    include components/homepage/_audience
+    include components/homepage/_advantages

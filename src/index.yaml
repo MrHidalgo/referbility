@@ -4,3 +4,6 @@ PageList:
 - file: index.html
   titleName: Home
   ready: 95
+- file: referrer.html
+  titleName: Referrer
+  ready: 1

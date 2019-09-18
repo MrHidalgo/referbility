@@ -5,6 +5,48 @@
   padding-top: 50px;
   padding-bottom: 40px;
 
+  &--referrer {
+    .footer {
+      &__bg {
+        &-bottom {
+          background-color: #2d1c40;
+        }
+      }
+
+      &__started {
+        &-wrapper {
+          box-shadow: none;
+          background: linear-gradient(#a790dd 0%, #7650b4 100%);
+        }
+
+        &-bg {
+          &-path {
+            border-width: 130px;
+
+            &-1 {
+              top: -200px;
+              left: 70px;
+            }
+
+            &-2 {
+              right: -250px;
+              bottom: -136px;
+            }
+          }
+        }
+
+        &-btn {
+          min-width: 200px;
+          background-color: rgba(#2D1C40, 1);
+
+          &:after {
+            background-color: lighten(#2D1C40, 5%);
+          }
+        }
+      }
+    }
+  }
+
   &__bg {
     height: 100%;
 

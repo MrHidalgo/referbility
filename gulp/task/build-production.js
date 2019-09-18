@@ -1,14 +1,15 @@
 argv = require('yargs').argv;
 
 const gulp          = require('gulp'),
-  plumber           = require('gulp-plumber'),
+	plumber           = require('gulp-plumber'),
 	order             = require("gulp-order"),
 	concat            = require('gulp-concat'),
 	cssMinify         = require('gulp-cssmin'),
 	rename            = require('gulp-rename'),
 	stripCssComments  = require('gulp-strip-css-comments'),
 	uglify          	= require('gulp-uglify'),
-  runSequence       = require('run-sequence');
+	del            		= require('del'),
+	runSequence       = require('run-sequence');
 
 
 /**
@@ -16,7 +17,7 @@ const gulp          = require('gulp'),
  * @type {{src, dest, errorHandler}}
  */
 const configPath  = require('../config/configPath'),
-  configOption    = require('../config/configOption');
+	configOption    = require('../config/configOption');
 
 
 /**
@@ -27,11 +28,12 @@ gulp.task("prodScript", function() {
 		.src('dest/js/**')
 		.pipe(plumber(configOption.pipeBreaking.err))
 		.pipe(order([
-			"vendor.js"
+			"vendor.*",
+			"*"
 		]))
-		.pipe(concat('bundle.js'))
-		.pipe(uglify())
-		.pipe(rename(configOption.renameOption))
+		.pipe(concat('main.js'))
+		// .pipe(uglify())
+		// .pipe(rename(configOption.renameOption))
 		.pipe(gulp.dest(configPath.dest.js))
 });
 
@@ -42,15 +44,24 @@ gulp.task("prodScript", function() {
 gulp.task("prodStyle", function() {
 	return gulp
 		.src('dest/css/**')
-			.pipe(plumber(configOption.pipeBreaking.err))
-			.pipe(order([
-				"vendor.css"
-			]))
-			.pipe(concat('bundle.css'))
-			.pipe(stripCssComments())
-			.pipe(cssMinify(configOption.cssMinOption))
-			.pipe(rename(configOption.renameOption))
-			.pipe(gulp.dest(configPath.dest.css));
+		.pipe(plumber(configOption.pipeBreaking.err))
+		.pipe(order([
+			"vendor.*",
+			"*"
+		]))
+		.pipe(concat('style2.css'))
+		.pipe(stripCssComments())
+		// .pipe(cssMinify(configOption.cssMinOption))
+		// .pipe(rename(configOption.renameOption))
+		.pipe(gulp.dest(configPath.dest.css));
+});
+
+
+gulp.task('cleanFiles', function() {
+	return del.sync([
+		'dest/css/style2.css',
+		'dest/js/main.js',
+	]);
 });
 
 
@@ -59,10 +70,11 @@ gulp.task("prodStyle", function() {
  */
 gulp.task("production", function() {
 	runSequence(
+		'cleanFiles',
 		'pug',
-    [
+		[
 			'prodStyle',
 			'prodScript'
 		]
-  );
+	);
 });

@@ -38,15 +38,15 @@ const renderPug = () => {
 		.pipe(pug({
 			pretty: true,
 			data: {
-				env : (argv.prod) ? 'production' : ""
+				env : (argv.prod) ? 'production' : ''
 			},
 		}))
-		.pipe(gulpif(argv.prod, htmlmin({
-			collapseBooleanAttributes: true,
-			collapseWhitespace: true,
-			removeEmptyAttributes: true,
-			removeComments: true
-		})))
+		// .pipe(gulpif(argv.prod, htmlmin({
+		// 	collapseBooleanAttributes: true,
+		// 	collapseWhitespace: true,
+		// 	removeEmptyAttributes: true,
+		// 	removeComments: true
+		// })))
 		.pipe(changedInPlace(configOption.changed))
 		.pipe(gulp.dest(configPath.dest.html));
 };

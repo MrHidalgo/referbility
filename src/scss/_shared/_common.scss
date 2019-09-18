@@ -17,6 +17,16 @@
     align-items: center;
   }
 
+  &--referrer {
+    .social {
+      &__link {
+        .icon-font {
+          color: #2d1c40;
+        }
+      }
+    }
+  }
+
   &__title {
     padding-bottom: 15px;
     font-size: 14px;
