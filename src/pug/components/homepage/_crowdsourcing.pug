@@ -1,12 +1,18 @@
 // SECTION crowdsourcing :: START
 
-section#crowdsourcing.crowdsourcing
+section#crowdsourcing.crowdsourcing(class!= (pageClassName === 'p-referrer') ? 'crowdsourcing--referrer':'')
 
   .crowdsourcing__bg
     .crowdsourcing__bg-shape.crowdsourcing__bg-shape-1(parallax-js data-stellar-ratio="1.15")
-      img(src="img/crowdsourcing-shape-1.svg")
+      if(pageClassName === 'p-referrer')
+        img(src="img/crowdsourcing-shape-2.svg")
+      else
+        img(src="img/crowdsourcing-shape-1.svg")
     .crowdsourcing__bg-shape.crowdsourcing__bg-shape-2(parallax-js data-stellar-ratio="1.2")
-      img(src="img/crowdsourcing-shape-2.svg")
+      if(pageClassName === 'p-referrer')
+        img(src="img/crowdsourcing-shape-2.svg")
+      else
+        img(src="img/crowdsourcing-shape-1.svg")
     .crowdsourcing__bg-path(parallax-js data-stellar-ratio="0.85")
 
   h2.crowdsourcing__title.c-title.viewport-hide-js(data-animation-delay='0.2s') Talent Crowdsourcing
@@ -19,36 +25,54 @@ section#crowdsourcing.crowdsourcing
         div
           .crowdsourcing__block-line
 
-          p.crowdsourcing__block-desc!= "<span>70% of the global workforce</span> (a.k.a. the best candidates) does not apply to job postings. <span>They are called passive talent.</span> Surprisingly, <span>87%</span> of passive talent is <span>open to new opportunities</span> – but those opportunities have to be brought to them."
-          a.crowdsourcing__block-link(href='#' title="") Source: LinkedIn (2015)
+          if(pageClassName === 'p-referrer')
+            p.crowdsourcing__block-desc!= "Employers need the best talent imaginable to succeed. And candidates need the best employers to build a meaningful career. <span>But how do they meet?</span>"
+          else
+            p.crowdsourcing__block-desc!= "<span>70% of the global workforce</span> (a.k.a. the best candidates) does not apply to job postings. <span>They are called passive talent.</span> Surprisingly, <span>87%</span> of passive talent is <span>open to new opportunities</span> – but those opportunities have to be brought to them."
+            a.crowdsourcing__block-link(href='#' title="") Source: LinkedIn (2015)
 
       .crowdsourcing__block-right
 
         .crowdsourcing__block-img
-          img(src='img/crowdsourcing-1.svg')
+          if(pageClassName === 'p-referrer')
+            img(src='img/crowdsourcing-4.svg')
+          else
+            img(src='img/crowdsourcing-1.svg')
 
     .crowdsourcing__block.crowdsourcing__block-2.crowdsourcing__block--reverse.viewport-hide-js(data-animation-delay='0.2s')
       .crowdsourcing__block-left
 
         div
           .crowdsourcing__block-line
-          p.crowdsourcing__block-desc!= "Even worse : <span>Your best possible candidate is likely working for your competitor.</span> Right now, as you read this. And because they already work, they’re much less likely to apply for a new role. <span>It’s a vicious cycle.</span>"
+          if(pageClassName === 'p-referrer')
+            p.crowdsourcing__block-desc!= "This is where you come in. You know great, talented people. Employers want to hire them. <span>We enable you to monetize your network through referring them.</span>"
+          else
+            p.crowdsourcing__block-desc!= "Even worse : <span>Your best possible candidate is likely working for your competitor.</span> Right now, as you read this. And because they already work, they’re much less likely to apply for a new role. <span>It’s a vicious cycle.</span>"
 
       .crowdsourcing__block-right
 
         .crowdsourcing__block-img
-          img(src='img/crowdsourcing-2.svg')
+          if(pageClassName === 'p-referrer')
+            img(src='img/crowdsourcing-5.svg')
+          else
+            img(src='img/crowdsourcing-2.svg')
 
     .crowdsourcing__block.crowdsourcing__block-3.viewport-hide-js(data-animation-delay='0.2s')
       .crowdsourcing__block-left
 
         div
           .crowdsourcing__block-line
-          p.crowdsourcing__block-desc!= "And this is where we come in. <span>We turn the public into your very own recruiters</span> by asking them to refer qualified people they know to the jobs you post. Imagine leaning back while <span>hundreds of people work on searching candidates for you...</span> on a pure success-fee basis!"
+          if(pageClassName === 'p-referrer')
+            p.crowdsourcing__block-desc!= "It’s a <span>win-win situation</span> for everyone involved: you make a second income, your friends get access to great jobs without the usual hassle, and employers hire the best talent imaginable."
+          else
+            p.crowdsourcing__block-desc!= "And this is where we come in. <span>We turn the public into your very own recruiters</span> by asking them to refer qualified people they know to the jobs you post. Imagine leaning back while <span>hundreds of people work on searching candidates for you...</span> on a pure success-fee basis!"
 
       .crowdsourcing__block-right
 
         .crowdsourcing__block-img
-          img(src='img/crowdsourcing-3.svg')
+          if(pageClassName === 'p-referrer')
+            img(src='img/crowdsourcing-6.svg')
+          else
+            img(src='img/crowdsourcing-3.svg')
 
 // SECTION crowdsourcing :: END

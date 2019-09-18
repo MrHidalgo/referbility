@@ -5,6 +5,22 @@
   padding-top: 100px;
   padding-bottom: 50px;
 
+  &--referrer {
+    .crowdsourcing {
+      &__block {
+        &-line {
+          background-color: #a537fd;
+        }
+
+        &-img {
+          &:after {
+            background: linear-gradient(#a790dd 0%, #7650b4 100%);
+          }
+        }
+      }
+    }
+  }
+
   &__bg {
     z-index: 0;
     position: absolute;
