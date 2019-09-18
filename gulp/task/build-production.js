@@ -29,7 +29,7 @@ gulp.task("prodScript", function() {
 		.pipe(plumber(configOption.pipeBreaking.err))
 		.pipe(order([
 			"vendor.*",
-			"*"
+			"*.js"
 		]))
 		.pipe(concat('main.js'))
 		// .pipe(uglify())
@@ -47,10 +47,10 @@ gulp.task("prodStyle", function() {
 		.pipe(plumber(configOption.pipeBreaking.err))
 		.pipe(order([
 			"vendor.*",
-			"*"
+			"*.css",
 		]))
 		.pipe(concat('style2.css'))
-		.pipe(stripCssComments())
+		// .pipe(stripCssComments())
 		// .pipe(cssMinify(configOption.cssMinOption))
 		// .pipe(rename(configOption.renameOption))
 		.pipe(gulp.dest(configPath.dest.css));
@@ -59,6 +59,7 @@ gulp.task("prodStyle", function() {
 
 gulp.task('cleanFiles', function() {
 	return del.sync([
+		'dest/css/maps',
 		'dest/css/style2.css',
 		'dest/js/main.js',
 	]);

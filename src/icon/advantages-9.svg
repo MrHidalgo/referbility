@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>design asset 14</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-asset-14">
+            <circle id="Oval" fill="#D5B8FF" cx="50" cy="50" r="50"></circle>
+            <g id="Artboard-6-copy-8" transform="translate(24.000000, 16.000000)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="#7F5BB2" x="6.85" y="0.46" width="44.275" height="67.345" rx="3.915"></rect>
+                <rect id="Rectangle" fill="#663398" x="0.155" y="0.46" width="44.275" height="67.345" rx="3.915"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="4.62" y="7.53" width="35.345" height="44.09" rx="2"></rect>
+                <circle id="Oval" fill="#7F5BB2" cx="22.475" cy="28.55" r="10.605"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="22.475" cy="59.62" r="4.185"></circle>
+                <path d="M20.525,35.25 L20.455,35.25 C20.0876225,35.2271841 19.7549078,35.0253122 19.565,34.71 L16.22,29.125 C15.9865431,28.6064004 16.1808135,27.9952032 16.6708517,27.7065682 C17.1608899,27.4179331 17.7896317,27.5443718 18.13,28 L20.63,32.19 L26.885,24.19 C27.090599,23.8037522 27.5031124,23.5734612 27.9397952,23.6011467 C28.376478,23.6288323 28.7566046,23.9093764 28.9117776,24.318497 C29.0669505,24.7276177 28.9684844,25.1896844 28.66,25.5 L21.405,34.82 C21.192254,35.0896159 20.868437,35.2478447 20.525,35.25 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

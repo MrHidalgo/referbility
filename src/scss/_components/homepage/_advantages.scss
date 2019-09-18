@@ -5,6 +5,32 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  &--referrer {
+    .advantages {
+      &__block {
+        &-col {
+          &-3 {
+            padding-top: 228px;
+          }
+
+          &-4 {
+            padding-top: 68px;
+          }
+        }
+
+        &-img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &-title,
+        &-desc {
+          text-align: center;
+        }
+      }
+    }
+  }
+
   &__bg {
     z-index: 0;
     top: 0;

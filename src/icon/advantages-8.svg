@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>design asset 13</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-asset-13">
+            <circle id="Oval" fill="#D5B8FF" cx="50" cy="50" r="50"></circle>
+            <g id="Artboard-6-copy-7" transform="translate(24.000000, 15.000000)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="#663398" x="7.085" y="0.055" width="43.98" height="53.135" rx="1.485"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="0.005" y="6.55" width="43.98" height="53.135" rx="1.485"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.28" x="5.54" y="16.775" width="11.215" height="2.655" rx="0.595"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="5.54" y="22.86" width="29.885" height="2.655" rx="0.595"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="5.54" y="28.995" width="29.885" height="2.655" rx="0.595"></rect>
+                <circle id="Oval" fill="#7F5BB2" cx="21.995" cy="54.655" r="15.605"></circle>
+                <rect id="Rectangle" fill="#663398" x="14.64" y="52.525" width="14.49" height="10.91" rx="0.855"></rect>
+                <path d="M27.145,52.525 L24.91,52.525 L24.91,50.13 C24.91,49.008186 24.3115194,47.9715871 23.34,47.4106801 C22.3684806,46.8497731 21.1715194,46.8497731 20.2,47.4106801 C19.2284806,47.9715871 18.63,49.008186 18.63,50.13 L18.63,52.525 L16.4,52.525 L16.4,50.13 C16.4885824,47.2266436 18.8677926,44.9189169 21.7725,44.9189169 C24.6772074,44.9189169 27.0564176,47.2266436 27.145,50.13 L27.145,52.525 Z" id="Path" fill="#FFFFFF"></path>
+                <path d="M23.3150225,57.035 C23.3188015,56.3785274 22.8395995,55.819027 22.1903426,55.7218871 C21.5410856,55.6247472 20.9191122,56.019493 20.7306093,56.6483311 C20.5421064,57.2771693 20.8443686,57.9489675 21.44,58.225 L21.44,60.86 L22.55,60.86 L22.55,58.225 C23.0139767,58.0100009 23.3120309,57.5463611 23.3150225,57.035 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
