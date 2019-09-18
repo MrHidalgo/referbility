@@ -1,11 +1,16 @@
 // SECTION talent :: START
 
-section#talent.talent
+section#talent.talent(class!= (pageClassName === 'p-referrer') ? 'talent--referrer':'')
 
   .talent__wrapper
     .talent__wrapper-bg
       .talent__wrapper-bg-path.talent__wrapper-bg-path-1(parallax-js data-stellar-ratio="1.1")
       .talent__wrapper-bg-path.talent__wrapper-bg-path-2(parallax-js data-stellar-ratio="0.95")
+
+      if(pageClassName === 'p-referrer')
+        .talent__wrapper-bg-path.talent__wrapper-bg-path-3(parallax-js data-stellar-ratio="1.05")
+        .talent__wrapper-bg-path.talent__wrapper-bg-path-4(parallax-js data-stellar-ratio="0.975")
+        .talent__wrapper-bg-path.talent__wrapper-bg-path-5(parallax-js data-stellar-ratio="0.975")
 
     .talent__wrapper-row
       p.talent__subtitle.viewport-hide-js(data-animation-delay='0.2s') Welcome to the future of recruitment:

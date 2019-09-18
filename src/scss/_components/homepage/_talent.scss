@@ -4,6 +4,67 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  &--referrer {
+    .talent {
+      &__wrapper {
+        &-bg {
+          left: 0;
+          right: 0;
+          width: 90%;
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
+          border-top-right-radius: 160px;
+          background: linear-gradient(#a790dd 0%, #7650b4 100%);
+          @include adaptive(1023) {
+            width: 100%;
+          }
+          @include adaptive(767) {
+            border-top-right-radius: 130px;
+          }
+
+          &-path {
+            &-2 {
+              bottom: -200px;
+            }
+
+            &-3 {
+              top: -650px;
+              right: -450px;
+              width: 950px;
+              height: 950px;
+              border-radius: 50%;
+              background: rgba(213, 184, 255, 0.3);
+              @include adaptive(1279) {
+                display: none;
+              }
+            }
+
+            &-4,
+            &-5 {
+              width: 190px;
+              height: 230px;
+              @include adaptive(767) {
+                display: none;
+              }
+            }
+
+            &-4 {
+              top: -75px;
+              right: 150px;
+              background-image: url('../img/crowdsourcing-shape-1.svg');
+            }
+            &-5 {
+              left: 150px;
+              bottom: -175px;
+              background-image: url('../img/crowdsourcing-shape-1.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
   &__wrapper {
     position: relative;
     padding-top: 150px;
