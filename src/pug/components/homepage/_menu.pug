@@ -1,6 +1,6 @@
 // SECTION menu :: START
 
-#menu.menu.animated(mobile-block-js)
+#menu.menu.animated(mobile-block-js class!= (pageClassName === 'p-referrer') ? 'menu--referrer':'')
 
   .menu__wrapper
 
@@ -33,9 +33,9 @@
           span
             | Contact us
             i.icon-font.icon-corner
-      li.menu__item.menu__item--request.menu__item--hidden
-        a.menu__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
-          span Request a Demo
+      //li.menu__item.menu__item--request.menu__item--hidden
+      //  a.menu__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
+      //    span Request a Demo
       li.menu__item.menu__item--hidden
         a.menu__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#' title='')
           span Login/Register

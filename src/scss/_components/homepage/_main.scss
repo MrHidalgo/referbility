@@ -16,6 +16,9 @@
     .main {
       &__bg {
         height: calc(100% - 100px);
+        @include adaptive(1279) {
+          height: 100%;
+        }
 
         &-row,
         &-container {
@@ -30,6 +33,9 @@
         &-container {
           border-bottom-left-radius: 100px;
           background: linear-gradient(#a790dd 0%, #7650b4 100%);
+          @include adaptive(1023) {
+            border-bottom-right-radius: 0;
+          }
 
           &-path {
             &-2 {

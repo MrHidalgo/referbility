@@ -13,6 +13,10 @@
   padding: 100px 15px 0;
   background-image: linear-gradient(226deg, rgba(#8181ff, 0.9), rgba(#5153dc, 0.95));
 
+  &--referrer {
+    background-image: linear-gradient(226deg, rgba(#a790dd, 0.9), rgba(#7650b4, 0.95));
+  }
+
   .is-header-fixed & {
     padding-top: 75px;
   }
