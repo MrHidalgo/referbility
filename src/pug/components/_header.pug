@@ -16,8 +16,12 @@ header#header.header
       .header__wrapper-middle
 
         .header__tabs-wrapper
-          a.header__tabs.header__tabs--sign(href="#") Login/Register
-          a.header__tabs.header__tabs--for(href="#") For Referrers
+          if(pageClassName === 'p-referrer')
+            a.header__tabs.header__tabs--sign(href="#") Login/Register
+            a.header__tabs.header__tabs--for(href="#") For Employers
+          else
+            a.header__tabs.header__tabs--sign(href="#") Login/Register
+            a.header__tabs.header__tabs--for(href="#") For Referrers
 
         .header__form
           form(action='' method='' autocomplete='off')

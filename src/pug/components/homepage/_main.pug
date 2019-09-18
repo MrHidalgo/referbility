@@ -1,6 +1,6 @@
 // SECTION main :: START
 
-section#main.main
+section#main.main(class!= (pageClassName === 'p-referrer') ? 'main--referrer':'')
 
   .main__bg
 
@@ -18,21 +18,35 @@ section#main.main
     .main__wrapper-left
 
       div
-        h1.main__title The best candidates are passive.
-        p.main__subtitle Leverage the public to have them referred directly to you by crowdsourcing.
+        if(pageClassName === 'p-referrer')
+          h1.main__title Get paid for referring friends to great jobs.
+          p.main__subtitle Join our network today and never miss an opportunity to refer!
+        else
+          h1.main__title The best candidates are passive.
+          p.main__subtitle Leverage the public to have them referred directly to you by crowdsourcing.
 
         .main__btn-wrapper
-          a.main__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
-            span Request a demo
-          a.main__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#crowdsourcing' title='' anchor-js)
-            span Learn more
+          if(pageClassName === 'p-referrer')
+            a.main__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#' title='')
+              span Available Jobs
+            a.main__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#crowdsourcing' title='' anchor-js)
+              span Learn more
+          else
+            a.main__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
+              span Request a demo
+            a.main__btn.c-btn.c-btn--bg.c-btn--bg-white(href='#crowdsourcing' title='' anchor-js)
+              span Learn more
 
         .main__num
           +iconSVG('main-number', '')
 
     .main__wrapper-right
 
-      img(src="img/img-main.png")
-      img(src="img/main-img-path.png" srcset="img/main-img-path@2x.png 2x")
+      if(pageClassName === 'p-referrer')
+        img(src="img/img-main-1.png")
+        img(src="img/main-img-path-1.png" srcset="img/main-img-path-1@2x.png 2x")
+      else
+        img(src="img/img-main.png")
+        img(src="img/main-img-path.png" srcset="img/main-img-path@2x.png 2x")
 
 // SECTION main :: END
