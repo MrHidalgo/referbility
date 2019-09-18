@@ -11,10 +11,16 @@
         &-col {
           &-3 {
             padding-top: 228px;
+            @include adaptive(767) {
+              padding-top: 0;
+            }
           }
 
           &-4 {
             padding-top: 68px;
+            @include adaptive(767) {
+              padding-top: 0;
+            }
           }
         }
 

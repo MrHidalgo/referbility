@@ -1,6 +1,6 @@
 // SECTION how :: START
 
-section#how.how
+section#how.how(class!= (pageClassName === 'p-referrer') ? 'how--referrer':'')
 
   .how__bg
     .how__bg-path(parallax-js data-stellar-ratio="1.2")
@@ -15,45 +15,76 @@ section#how.how
           .how__block-bg
           .how__block-body
             p.how__block-num 01
-            p.how__block-desc!= "<span>Post your job for free.</span> Tell us how much you are willing to pay when you hire the perfect candidate."
+            if((pageClassName !== 'p-referrer'))
+              p.how__block-desc!= "<span>Post your job for free.</span> Tell us how much you are willing to pay when you hire the perfect candidate."
+            else
+              p.how__block-desc!= "<span>Check for available jobs</span> & their respective rewards. Found a good one? Refer a friend!"
           .how__block-icon
-            +iconSVG('how-1', '')
+            if((pageClassName !== 'p-referrer'))
+              +iconSVG('how-1', '')
+            else
+              +iconSVG('how-6', '')
       div.viewport-hide-js(data-animation-delay='0.3s')
         .how__block.how__block-2
           .how__block-bg
           .how__block-body
             p.how__block-num 02
-            p.how__block-desc!= "We tailor-make and <span>publish advertisements</span> to relevant segments of the <span>public, inviting them to refer.</span>"
+            if((pageClassName !== 'p-referrer'))
+              p.how__block-desc!= "We tailor-make and <span>publish advertisements</span> to relevant segments of the <span>public, inviting them to refer.</span>"
+            else
+              p.how__block-desc!= "Provide the details of your referral by filling in our simple <span>referral form.</span>"
           .how__block-icon
-            +iconSVG('how-2', '')
+            if((pageClassName !== 'p-referrer'))
+              +iconSVG('how-2', '')
+            else
+              +iconSVG('how-7', '')
       div.viewport-hide-js(data-animation-delay='0.4s')
         .how__block.how__block-3
           .how__block-bg
           .how__block-body
             p.how__block-num 03
-            p.how__block-desc!= "Receive <span>unlimited referrals</span> of best-in-class talent, sorted through our <span>algorithm.</span>"
+            if((pageClassName !== 'p-referrer'))
+              p.how__block-desc!= "Receive <span>unlimited referrals</span> of best-in-class talent, sorted through our <span>algorithm.</span>"
+            else
+              p.how__block-desc!= "Your referral receives an email with a request to <span>verify their acceptance</span> of being referred."
           .how__block-icon
-            +iconSVG('how-3', '')
+            if((pageClassName !== 'p-referrer'))
+              +iconSVG('how-3', '')
+            else
+              +iconSVG('how-8', '')
       div.viewport-hide-js(data-animation-delay='0.5s')
         .how__block.how__block-4
           .how__block-bg
           .how__block-body
             p.how__block-num 04
-            p.how__block-desc!= "Our <span>account managers</span> share the best referred profiles with you. <span>Start hiring</span> by depositing the reward into an escrow!"
+            if((pageClassName !== 'p-referrer'))
+              p.how__block-desc!= "Our <span>account managers</span> share the best referred profiles with you. <span>Start hiring</span> by depositing the reward into an escrow!"
+            else
+              p.how__block-desc!= "The employer can access and assess your referral for three months through a <span>secure 3-month escrow.</span>"
           .how__block-icon
-            +iconSVG('how-4', '')
+            if((pageClassName !== 'p-referrer'))
+              +iconSVG('how-4', '')
+            else
+              +iconSVG('how-9', '')
       div.viewport-hide-js(data-animation-delay='0.6s')
         .how__block.how__block-5
           .how__block-bg
           .how__block-body
             p.how__block-num 05
-            p.how__block-desc!= "<span>Encash the reward to the referrer</span> when you confirm the candidate - or get <span>your money back</span> if you don't!"
+            if((pageClassName !== 'p-referrer'))
+              p.how__block-desc!= "<span>Encash the reward to the referrer</span> when you confirm the candidate - or get <span>your money back</span> if you don't!"
+            else
+              p.how__block-desc!= "When your referral is hired the escrow expires, you request <span>encashment of your reward</span> through bank transfer."
           .how__block-icon
-            +iconSVG('how-5', '')
+            if((pageClassName !== 'p-referrer'))
+              +iconSVG('how-5', '')
+            else
+              +iconSVG('how-10', '')
 
-    .how__arrow.viewport-hide-js(data-animation-delay='0.6s')
-      div
-      div
-        img(src="img/how-line.png" srcset="img/how-line@2x.png 2x")
+    if((pageClassName !== 'p-referrer'))
+      .how__arrow.viewport-hide-js(data-animation-delay='0.6s')
+        div
+        div
+          img(src="img/how-line.png" srcset="img/how-line@2x.png 2x")
 
 // SECTION how :: END

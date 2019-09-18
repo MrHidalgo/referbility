@@ -8,6 +8,37 @@
     padding-bottom: 50px;
   }
 
+  &--referrer {
+    padding-bottom: 0;
+
+    .how {
+      &__block {
+        &-5 {
+          .how__block {
+            &-bg {
+              background-image: url('../img/how-bg-1-woArrow.svg');
+            }
+          }
+        }
+
+        &-bg {
+          background-image: url('../img/how-bg-1.svg');
+          @include adaptive(767) {
+            background-image: url('../img/how-bg-1-woArrow.svg');
+          }
+        }
+
+        &-wrapper {
+          > div {
+            &:nth-of-type(3) {
+              padding-top: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &__bg {
     z-index: 0;
     top: 0;

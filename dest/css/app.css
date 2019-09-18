@@ -269,30 +269,60 @@
 }
 
 /* line 69, dest/assets/scss/_spriteSVG.scss */
+.icon-how-10 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 73, dest/assets/scss/_spriteSVG.scss */
 .icon-how-2 {
   width: 101.736px;
   height: 101.736px;
 }
 
-/* line 73, dest/assets/scss/_spriteSVG.scss */
+/* line 77, dest/assets/scss/_spriteSVG.scss */
 .icon-how-3 {
   width: 101.736px;
   height: 101.736px;
 }
 
-/* line 77, dest/assets/scss/_spriteSVG.scss */
+/* line 81, dest/assets/scss/_spriteSVG.scss */
 .icon-how-4 {
   width: 101.736px;
   height: 101.736px;
 }
 
-/* line 81, dest/assets/scss/_spriteSVG.scss */
+/* line 85, dest/assets/scss/_spriteSVG.scss */
 .icon-how-5 {
   width: 101.736px;
   height: 101.736px;
 }
 
-/* line 85, dest/assets/scss/_spriteSVG.scss */
+/* line 89, dest/assets/scss/_spriteSVG.scss */
+.icon-how-6 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 93, dest/assets/scss/_spriteSVG.scss */
+.icon-how-7 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 97, dest/assets/scss/_spriteSVG.scss */
+.icon-how-8 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 101, dest/assets/scss/_spriteSVG.scss */
+.icon-how-9 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 105, dest/assets/scss/_spriteSVG.scss */
 .icon-main-number {
   width: 22px;
   height: 70px;
@@ -3587,6 +3617,33 @@ picture {
 }
 
 /* line 11, src/scss/_components/homepage/_how.scss */
+.how--referrer {
+  padding-bottom: 0;
+}
+
+/* line 18, src/scss/_components/homepage/_how.scss */
+.how--referrer .how__block-5 .how__block-bg {
+  background-image: url("../img/how-bg-1-woArrow.svg");
+}
+
+/* line 24, src/scss/_components/homepage/_how.scss */
+.how--referrer .how__block-bg {
+  background-image: url("../img/how-bg-1.svg");
+}
+
+@media screen and (max-width: 767px) {
+  /* line 24, src/scss/_components/homepage/_how.scss */
+  .how--referrer .how__block-bg {
+    background-image: url("../img/how-bg-1-woArrow.svg");
+  }
+}
+
+/* line 33, src/scss/_components/homepage/_how.scss */
+.how--referrer .how__block-wrapper > div:nth-of-type(3) {
+  padding-top: 100px;
+}
+
+/* line 42, src/scss/_components/homepage/_how.scss */
 .how__bg {
   z-index: 0;
   top: 0;
@@ -3595,12 +3652,12 @@ picture {
   height: 100%;
 }
 
-/* line 18, src/scss/_components/homepage/_how.scss */
+/* line 49, src/scss/_components/homepage/_how.scss */
 .how__bg, .how__bg-path {
   position: absolute;
 }
 
-/* line 23, src/scss/_components/homepage/_how.scss */
+/* line 54, src/scss/_components/homepage/_how.scss */
 .how__bg-path {
   top: 0;
   left: -185px;
@@ -3611,7 +3668,7 @@ picture {
   border: 90px solid rgba(234, 230, 255, 0.4);
 }
 
-/* line 33, src/scss/_components/homepage/_how.scss */
+/* line 64, src/scss/_components/homepage/_how.scss */
 .how__wrapper {
   z-index: 2;
   position: relative;
@@ -3619,20 +3676,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 33, src/scss/_components/homepage/_how.scss */
+  /* line 64, src/scss/_components/homepage/_how.scss */
   .how__wrapper {
     padding-bottom: 0;
   }
 }
 
-/* line 42, src/scss/_components/homepage/_how.scss */
+/* line 73, src/scss/_components/homepage/_how.scss */
 .how__title {
   z-index: 2;
   position: relative;
   padding-bottom: 50px;
 }
 
-/* line 48, src/scss/_components/homepage/_how.scss */
+/* line 79, src/scss/_components/homepage/_how.scss */
 .how__block {
   position: relative;
   min-height: 300px;
@@ -3650,7 +3707,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 48, src/scss/_components/homepage/_how.scss */
+  /* line 79, src/scss/_components/homepage/_how.scss */
   .how__block {
     max-width: 300px;
     margin-left: auto;
@@ -3658,7 +3715,7 @@ picture {
   }
 }
 
-/* line 61, src/scss/_components/homepage/_how.scss */
+/* line 92, src/scss/_components/homepage/_how.scss */
 .how__block:hover {
   -webkit-transform: translateX(5px);
       -ms-transform: translateX(5px);
@@ -3670,7 +3727,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 68, src/scss/_components/homepage/_how.scss */
+/* line 99, src/scss/_components/homepage/_how.scss */
 .how__block-5 .how__block-bg {
   width: -webkit-calc(100% - 50px);
   width: calc(100% - 50px);
@@ -3678,25 +3735,25 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 68, src/scss/_components/homepage/_how.scss */
+  /* line 99, src/scss/_components/homepage/_how.scss */
   .how__block-5 .how__block-bg {
     width: 100%;
   }
 }
 
-/* line 76, src/scss/_components/homepage/_how.scss */
+/* line 107, src/scss/_components/homepage/_how.scss */
 .how__block-5 .how__block-body {
   padding-right: 60px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 76, src/scss/_components/homepage/_how.scss */
+  /* line 107, src/scss/_components/homepage/_how.scss */
   .how__block-5 .how__block-body {
     padding-right: 20px;
   }
 }
 
-/* line 85, src/scss/_components/homepage/_how.scss */
+/* line 116, src/scss/_components/homepage/_how.scss */
 .how__block-bg {
   z-index: 0;
   position: absolute;
@@ -3714,13 +3771,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 85, src/scss/_components/homepage/_how.scss */
+  /* line 116, src/scss/_components/homepage/_how.scss */
   .how__block-bg {
     background-image: url("../img/how-bg-woArrow.svg");
   }
 }
 
-/* line 102, src/scss/_components/homepage/_how.scss */
+/* line 133, src/scss/_components/homepage/_how.scss */
 .how__block-body {
   z-index: 2;
   position: relative;
@@ -3728,7 +3785,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 102, src/scss/_components/homepage/_how.scss */
+  /* line 133, src/scss/_components/homepage/_how.scss */
   .how__block-body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3748,7 +3805,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 102, src/scss/_components/homepage/_how.scss */
+  /* line 133, src/scss/_components/homepage/_how.scss */
   .how__block-body {
     padding-left: 20px;
     padding-right: 20px;
@@ -3757,7 +3814,7 @@ picture {
   }
 }
 
-/* line 120, src/scss/_components/homepage/_how.scss */
+/* line 151, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper {
   position: relative;
   left: 26px;
@@ -3779,7 +3836,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 120, src/scss/_components/homepage/_how.scss */
+  /* line 151, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper {
     left: 0;
     -webkit-flex-wrap: wrap;
@@ -3792,7 +3849,7 @@ picture {
   }
 }
 
-/* line 138, src/scss/_components/homepage/_how.scss */
+/* line 169, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 5);
@@ -3800,7 +3857,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 138, src/scss/_components/homepage/_how.scss */
+  /* line 169, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div {
     max-width: -webkit-calc((100% - 10px) / 3);
     max-width: calc((100% - 10px) / 3);
@@ -3810,39 +3867,39 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 138, src/scss/_components/homepage/_how.scss */
+  /* line 169, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 150, src/scss/_components/homepage/_how.scss */
+/* line 181, src/scss/_components/homepage/_how.scss */
 .how__block-wrapper > div:nth-of-type(even) {
   padding-top: 50px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 150, src/scss/_components/homepage/_how.scss */
+  /* line 181, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div:nth-of-type(even) {
     padding-top: 0;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 157, src/scss/_components/homepage/_how.scss */
+  /* line 188, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div:nth-of-type(odd) {
     padding-top: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 157, src/scss/_components/homepage/_how.scss */
+  /* line 188, src/scss/_components/homepage/_how.scss */
   .how__block-wrapper > div:nth-of-type(odd) {
     padding-top: 0;
   }
 }
 
-/* line 168, src/scss/_components/homepage/_how.scss */
+/* line 199, src/scss/_components/homepage/_how.scss */
 .how__block-num {
   padding-bottom: 5px;
   font-weight: bold;
@@ -3850,19 +3907,19 @@ picture {
   color: #fff;
 }
 
-/* line 175, src/scss/_components/homepage/_how.scss */
+/* line 206, src/scss/_components/homepage/_how.scss */
 .how__block-desc {
   font-size: 16px;
   line-height: 25px;
   color: #fff;
 }
 
-/* line 180, src/scss/_components/homepage/_how.scss */
+/* line 211, src/scss/_components/homepage/_how.scss */
 .how__block-desc span {
   font-weight: bold;
 }
 
-/* line 185, src/scss/_components/homepage/_how.scss */
+/* line 216, src/scss/_components/homepage/_how.scss */
 .how__block-icon {
   position: absolute;
   bottom: 0;
@@ -3872,13 +3929,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 185, src/scss/_components/homepage/_how.scss */
+  /* line 216, src/scss/_components/homepage/_how.scss */
   .how__block-icon {
     padding-right: 0;
   }
 }
 
-/* line 195, src/scss/_components/homepage/_how.scss */
+/* line 226, src/scss/_components/homepage/_how.scss */
 .how__block-icon svg {
   display: block;
   width: 75px;
@@ -3888,14 +3945,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 195, src/scss/_components/homepage/_how.scss */
+  /* line 226, src/scss/_components/homepage/_how.scss */
   .how__block-icon svg {
     width: 100px;
     height: 100px;
   }
 }
 
-/* line 209, src/scss/_components/homepage/_how.scss */
+/* line 240, src/scss/_components/homepage/_how.scss */
 .how__arrow {
   position: relative;
   display: -webkit-box;
@@ -3908,13 +3965,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 209, src/scss/_components/homepage/_how.scss */
+  /* line 240, src/scss/_components/homepage/_how.scss */
   .how__arrow {
     display: none;
   }
 }
 
-/* line 219, src/scss/_components/homepage/_how.scss */
+/* line 250, src/scss/_components/homepage/_how.scss */
 .how__arrow > div {
   position: relative;
   width: 100%;
@@ -3922,7 +3979,7 @@ picture {
   max-width: calc((100% - 20px) / 5);
 }
 
-/* line 225, src/scss/_components/homepage/_how.scss */
+/* line 256, src/scss/_components/homepage/_how.scss */
 .how__arrow img {
   position: absolute;
   top: 0;
@@ -4209,23 +4266,37 @@ picture {
   padding-top: 228px;
 }
 
-/* line 16, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_components/homepage/_advantages.scss */
+  .advantages--referrer .advantages__block-col-3 {
+    padding-top: 0;
+  }
+}
+
+/* line 19, src/scss/_components/homepage/_advantages.scss */
 .advantages--referrer .advantages__block-col-4 {
   padding-top: 68px;
 }
 
-/* line 21, src/scss/_components/homepage/_advantages.scss */
+@media screen and (max-width: 767px) {
+  /* line 19, src/scss/_components/homepage/_advantages.scss */
+  .advantages--referrer .advantages__block-col-4 {
+    padding-top: 0;
+  }
+}
+
+/* line 27, src/scss/_components/homepage/_advantages.scss */
 .advantages--referrer .advantages__block-img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 26, src/scss/_components/homepage/_advantages.scss */
+/* line 32, src/scss/_components/homepage/_advantages.scss */
 .advantages--referrer .advantages__block-title, .advantages--referrer .advantages__block-desc {
   text-align: center;
 }
 
-/* line 34, src/scss/_components/homepage/_advantages.scss */
+/* line 40, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg {
   z-index: 0;
   top: 0;
@@ -4234,12 +4305,12 @@ picture {
   height: 100%;
 }
 
-/* line 41, src/scss/_components/homepage/_advantages.scss */
+/* line 47, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg, .advantages__bg-path {
   position: absolute;
 }
 
-/* line 46, src/scss/_components/homepage/_advantages.scss */
+/* line 52, src/scss/_components/homepage/_advantages.scss */
 .advantages__bg-path {
   top: 36px;
   right: -370px;
@@ -4250,18 +4321,18 @@ picture {
   border: solid 130px #eae6ff67;
 }
 
-/* line 56, src/scss/_components/homepage/_advantages.scss */
+/* line 62, src/scss/_components/homepage/_advantages.scss */
 .advantages__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 61, src/scss/_components/homepage/_advantages.scss */
+/* line 67, src/scss/_components/homepage/_advantages.scss */
 .advantages__title {
   padding-bottom: 50px;
 }
 
-/* line 65, src/scss/_components/homepage/_advantages.scss */
+/* line 71, src/scss/_components/homepage/_advantages.scss */
 .advantages__block {
   cursor: pointer;
   width: 100%;
@@ -4283,7 +4354,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 65, src/scss/_components/homepage/_advantages.scss */
+  /* line 71, src/scss/_components/homepage/_advantages.scss */
   .advantages__block {
     padding: 20px 15px 40px 15px;
     margin-bottom: 15px;
@@ -4291,7 +4362,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 65, src/scss/_components/homepage/_advantages.scss */
+  /* line 71, src/scss/_components/homepage/_advantages.scss */
   .advantages__block {
     max-width: 320px;
     margin-left: auto;
@@ -4301,7 +4372,7 @@ picture {
   }
 }
 
-/* line 88, src/scss/_components/homepage/_advantages.scss */
+/* line 94, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover {
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
@@ -4315,7 +4386,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 94, src/scss/_components/homepage/_advantages.scss */
+/* line 100, src/scss/_components/homepage/_advantages.scss */
 .advantages__block:hover .advantages__block-img svg {
   opacity: 0.9;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -4323,12 +4394,12 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 101, src/scss/_components/homepage/_advantages.scss */
+/* line 107, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-head {
   padding-bottom: 30px;
 }
 
-/* line 105, src/scss/_components/homepage/_advantages.scss */
+/* line 111, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img {
   position: relative;
   width: 75px;
@@ -4336,14 +4407,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 105, src/scss/_components/homepage/_advantages.scss */
+  /* line 111, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-img {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 114, src/scss/_components/homepage/_advantages.scss */
+/* line 120, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-img svg {
   position: absolute;
   top: 0;
@@ -4355,7 +4426,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 124, src/scss/_components/homepage/_advantages.scss */
+/* line 130, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-title {
   padding-bottom: 15px;
   font-size: 20px;
@@ -4364,7 +4435,7 @@ picture {
   color: #091e42;
 }
 
-/* line 132, src/scss/_components/homepage/_advantages.scss */
+/* line 138, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-desc {
   font-size: 16px;
   font-weight: 500;
@@ -4373,7 +4444,7 @@ picture {
   color: #6c798f;
 }
 
-/* line 140, src/scss/_components/homepage/_advantages.scss */
+/* line 146, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4390,7 +4461,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 140, src/scss/_components/homepage/_advantages.scss */
+  /* line 146, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -4398,7 +4469,7 @@ picture {
   }
 }
 
-/* line 152, src/scss/_components/homepage/_advantages.scss */
+/* line 158, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col {
   width: 100%;
   max-width: -webkit-calc((100% - 60px) / 4);
@@ -4406,7 +4477,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 152, src/scss/_components/homepage/_advantages.scss */
+  /* line 158, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-col {
     max-width: -webkit-calc((100% - 45px) / 4);
     max-width: calc((100% - 45px) / 4);
@@ -4414,43 +4485,43 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 152, src/scss/_components/homepage/_advantages.scss */
+  /* line 158, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-col {
     max-width: 100%;
   }
 }
 
-/* line 162, src/scss/_components/homepage/_advantages.scss */
+/* line 168, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-1 {
   padding-top: 128px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 162, src/scss/_components/homepage/_advantages.scss */
+  /* line 168, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-col-1 {
     padding-top: 0;
   }
 }
 
-/* line 169, src/scss/_components/homepage/_advantages.scss */
+/* line 175, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-3 {
   padding-top: 68px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 169, src/scss/_components/homepage/_advantages.scss */
+  /* line 175, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-col-3 {
     padding-top: 0;
   }
 }
 
-/* line 176, src/scss/_components/homepage/_advantages.scss */
+/* line 182, src/scss/_components/homepage/_advantages.scss */
 .advantages__block-col-4 {
   padding-top: 228px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 176, src/scss/_components/homepage/_advantages.scss */
+  /* line 182, src/scss/_components/homepage/_advantages.scss */
   .advantages__block-col-4 {
     padding-top: 0;
   }

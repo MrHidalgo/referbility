@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>design asset 10</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-asset-10">
+            <circle id="Oval" fill="#D5B8FF" cx="50" cy="50" r="50"></circle>
+            <g id="Artboard-6-copy" transform="translate(23.000000, 17.000000)" fill-rule="nonzero">
+                <path d="M54.3700024,12.92 L54.3700024,60.15 C54.3713269,61.5074484 53.8330125,62.8097536 52.8736201,63.7700839 C51.9142277,64.7304141 50.6124491,65.27 49.255,65.27 L5.3,65.27 C3.9425509,65.27 2.64077233,64.7304141 1.6813799,63.7700839 C0.721987464,62.8097536 0.18367307,61.5074484 0.184997553,60.15 L0.184997553,5.36 C0.184997553,2.53425355 2.4742549,0.242759518 5.3,0.24 L41.365,0.24" id="Path" fill="#FFFFFF"></path>
+                <rect id="Rectangle" fill="#663398" x="11.54" y="32.755" width="31.39" height="23.12" rx="1.875"></rect>
+                <path d="M41.3649955,0.24 L41.3649955,10.145 C41.3636696,10.8813828 41.6556076,11.5879882 42.1763097,12.1086903 C42.6970118,12.6293924 43.4036172,12.9213304 44.14,12.9200045 L54.37,12.9200045 L41.3649955,0.24 Z" id="Path" fill="#663398"></path>
+                <rect id="Rectangle" fill="#663398" opacity="0.28" x="7.905" y="9.87" width="7.27" height="3.225" rx="0.67"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="7.905" y="16.105" width="19.37" height="3.225" rx="0.67"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="7.905" y="22.34" width="19.37" height="3.225" rx="0.67"></rect>
+                <path d="M35,55.875 L34.405,50.45 C34.2917709,49.4192019 33.782648,48.4726637 32.985,47.81 L31.19,46.31 C28.9126979,44.4200968 25.6123021,44.4200968 23.335,46.31 L21.54,47.81 C20.742352,48.4726637 20.2332291,49.4192019 20.12,50.45 L19.525,55.875 L35.025,55.875 L35,55.875 Z" id="Path" fill="#7F5BB2"></path>
+                <circle id="Oval" fill="#FFFFFF" cx="27.275" cy="41.635" r="4.91"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

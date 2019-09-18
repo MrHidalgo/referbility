@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>design asset 8</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-asset-8">
+            <circle id="Oval" fill="#D5B8FF" cx="50" cy="50" r="50"></circle>
+            <g id="Artboard-6-copy-3" transform="translate(21.000000, 16.000000)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="#663398" x="8.125" y="0.02" width="49.77" height="60.125" rx="1.485"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="0.105" y="7.365" width="49.77" height="60.125" rx="1.485"></rect>
+                <circle id="Oval" fill="#663398" cx="24.99" cy="27.71" r="12.895"></circle>
+                <path d="M23.195,34.18 L23.105,34.18 C22.5067482,34.1501852 21.9619921,33.8263268 21.65,33.315 L18.44,28.045 C17.9208523,27.1931008 18.1906008,26.0816477 19.0425,25.5625 C19.8943992,25.0433523 21.0058523,25.3131008 21.525,26.165 L23.355,29.165 L28.56,22.29 C29.1782716,21.5469186 30.2713283,21.4208111 31.0425655,22.003583 C31.8138027,22.586355 31.9909918,23.6723016 31.445,24.47 L24.635,33.47 C24.2914636,33.9176423 23.7592703,34.18 23.195,34.18 Z" id="Path" fill="#FFFFFF"></path>
+                <rect id="Rectangle" fill="#663398" opacity="0.28" x="6.37" y="45.58" width="12.695" height="3.005" rx="0.625"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="6.37" y="52.47" width="33.82" height="3.005" rx="0.625"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>design asset 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-asset-6">
+            <circle id="Oval" fill="#D5B8FF" cx="50" cy="50" r="50"></circle>
+            <g id="Artboard-6" transform="translate(14.000000, 20.000000)" fill-rule="nonzero">
+                <path d="M63.53,21.085 L63.53,55.555 C63.5272413,57.5247037 61.9297056,59.12 59.96,59.12 L3.705,59.12 C1.73610487,59.12 0.14,57.5238951 0.14,55.555 L0.14,12 C0.14,10.0311049 1.73610487,8.435 3.705,8.435 L50.5,8.435" id="Path" fill="#663398"></path>
+                <path d="M71.86,13.145 L71.86,47.615 C71.86,49.5838951 70.2638951,51.18 68.295,51.18 L12.04,51.18 C10.0702944,51.18 8.47275869,49.5847037 8.47,47.615 L8.47,4.035 C8.47275869,2.06529635 10.0702944,0.47 12.04,0.47 L58.85,0.47" id="Path" fill="#FFFFFF"></path>
+                <path d="M58.85,0.47 L58.85,10.375 C58.8527579,11.9056372 60.0943603,13.145 61.625,13.145 L71.86,13.145 L58.85,0.47 Z" id="Path" fill="#663398"></path>
+                <rect id="Rectangle" fill="#7F5BB2" x="15.8" y="17.3" width="23.685" height="23.685" rx="1.555"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.28" x="45.225" y="21.29" width="7.27" height="3.225" rx="0.67"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="45.225" y="27.53" width="19.37" height="3.225" rx="0.67"></rect>
+                <rect id="Rectangle" fill="#663398" opacity="0.1" x="45.225" y="33.765" width="19.37" height="3.225" rx="0.67"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
