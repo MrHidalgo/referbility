@@ -12,6 +12,65 @@
   will-change: background-color, box-shadow;
   @include transition(background-color, box-shadow);
 
+  &--referrer {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-image: none;
+      background-color: $c-white;
+    }
+
+    &.header {
+      &--fixed {
+        @include adaptive(1023) {
+          background: linear-gradient(45deg, rgba(#7650b4,1) 0%,rgba(#a790dd,1) 100%);
+        }
+
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+          background-color: transparent;
+          background: linear-gradient(#a790dd 0%, #7650b4 100%);
+          @include adaptive(1023) {
+            background-image: none;
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .header {
+      &__form {
+        div  {
+          button {
+            background-color: rgba(#2D1C40, 1) !important;
+
+            &:after {
+              background-color: lighten(#2D1C40, 5%) !important;
+            }
+          }
+        }
+      }
+
+      &__tabs {
+        &--sign {
+          &:hover {
+            background-color: #2D1C40;
+            color: $c-white;
+          }
+        }
+
+        &--for {
+          &:hover {
+            border-color: #2D1C40;
+            background-color: #2D1C40;
+            color: $c-white;
+          }
+        }
+      }
+    }
+  }
+
   .is-hideScroll & {
     z-index: 1010;
 

@@ -1,6 +1,6 @@
 // HEADER :: START
 
-header#header.header
+header#header.header(class!= (pageClassName === 'p-referrer') ? 'header--referrer':'')
   .c-grid
 
     .header__wrapper
@@ -36,8 +36,8 @@ header#header.header
                 span Request a demo
 
         .header__mobile
-          a.c-btn.c-btn--bg.c-btn--bg-blue(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
-            span Request a demo
+          //a.c-btn.c-btn--bg.c-btn--bg-blue(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
+          //  span Request a demo
 
       .header__wrapper-right
 
