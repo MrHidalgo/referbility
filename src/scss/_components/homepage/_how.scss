@@ -32,6 +32,9 @@
           > div {
             &:nth-of-type(3) {
               padding-top: 100px;
+              @include adaptive(767) {
+                padding-top: 0;
+              }
             }
           }
         }
