@@ -13,6 +13,7 @@
 .social {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
   @include adaptive(1023) {
     align-items: center;
   }

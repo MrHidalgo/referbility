@@ -310,26 +310,13 @@
     &-1 {
       padding-bottom: 20px;
     }
-
-    &-2 {
-      padding-bottom: 30px;
-    }
   }
 
   &__delete {
     max-width: 200px;
-    height: 40px;
-    border: 2px solid #fff;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 12px;
     @include adaptive(767) {
       margin-left: auto;
       margin-right: auto;
-    }
-
-    &:after {
-      display: none;
     }
   }
 }

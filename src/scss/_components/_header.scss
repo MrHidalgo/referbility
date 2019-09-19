@@ -22,6 +22,8 @@
 
     &.header {
       &--fixed {
+        background-color: #f8f7ff;
+
         @include adaptive(1023) {
           background: linear-gradient(45deg, rgba(#7650b4,1) 0%,rgba(#a790dd,1) 100%);
         }
