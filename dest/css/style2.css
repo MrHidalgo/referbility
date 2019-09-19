@@ -3335,7 +3335,10 @@ picture {
 
 /* line 315, src/scss/_components/_footer.scss */
 .footer__delete {
-  max-width: 200px;
+  max-width: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.35);
 }
 
 @media screen and (max-width: 767px) {
@@ -3344,6 +3347,11 @@ picture {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* line 325, src/scss/_components/_footer.scss */
+.footer__delete:after {
+  display: none;
 }
 
 /* line 3, src/scss/_components/_menu.scss */
