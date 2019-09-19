@@ -50,10 +50,18 @@
           justify-content: flex-end;
 
           a {
-            background-color: rgba(#2D1C40, 1) !important;
+            background-color: rgba(#7650b4, 1) !important;
 
             &:after {
-              background-color: lighten(#2D1C40, 5%) !important;
+              background-color: lighten(#7650b4, 5%) !important;
+            }
+
+            &:nth-of-type(2) {
+              background-color: rgba(#a790dd, 1) !important;
+
+              &:after {
+                background-color: lighten(rgba(#a790dd, 1), 5%) !important;
+              }
             }
           }
         }
