@@ -323,6 +323,10 @@
     background-color: transparent;
     color: #ffffff;
     font-size: 12px;
+    @include adaptive(767) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &:after {
       display: none;

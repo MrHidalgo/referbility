@@ -2579,7 +2579,15 @@ picture {
   font-size: 12px;
 }
 
-/* line 327, src/scss/_components/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 319, src/scss/_components/_footer.scss */
+  .footer__delete {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 331, src/scss/_components/_footer.scss */
 .footer__delete:after {
   display: none;
 }
