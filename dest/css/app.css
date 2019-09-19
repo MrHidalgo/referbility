@@ -2564,6 +2564,26 @@ picture {
   padding-bottom: 20px;
 }
 
+/* line 314, src/scss/_components/_footer.scss */
+.footer__desc-2 {
+  padding-bottom: 30px;
+}
+
+/* line 319, src/scss/_components/_footer.scss */
+.footer__delete {
+  max-width: 200px;
+  height: 40px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* line 327, src/scss/_components/_footer.scss */
+.footer__delete:after {
+  display: none;
+}
+
 /* line 3, src/scss/_components/_menu.scss */
 .menu {
   opacity: 0;
