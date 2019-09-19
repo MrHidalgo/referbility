@@ -42,11 +42,13 @@ section#main.main(class!= (pageClassName === 'p-referrer') ? 'main--referrer':''
 
     .main__wrapper-right
 
-      if(pageClassName === 'p-referrer')
-        img(src="img/img-main-1.png")
-        img(src="img/main-img-path-1.png" srcset="img/main-img-path-1@2x.png 2x")
-      else
-        img(src="img/img-main.png")
+      div
+
+        if(pageClassName === 'p-referrer')
+          img(src="img/img-main-1.png")
+        else
+          img(src="img/img-main.png")
+
         img(src="img/main-img-path.png" srcset="img/main-img-path@2x.png 2x")
 
 // SECTION main :: END

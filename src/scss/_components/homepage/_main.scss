@@ -15,58 +15,8 @@
   &--referrer {
     .main {
       &__bg {
-        height: calc(100% - 100px);
-        @include adaptive(1279) {
-          height: 100%;
-        }
-
-        &-row,
         &-container {
-          right: 0;
-          left: 0;
-          width: 100%;
-          max-width: 1700px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        &-container {
-          border-bottom-left-radius: 100px;
           background: linear-gradient(#a790dd 0%, #7650b4 100%);
-          @include adaptive(1023) {
-            border-bottom-right-radius: 0;
-          }
-
-          &-path {
-            &-2 {
-              right: -200px;
-            }
-          }
-        }
-
-        &-shape {
-          right: -175px;
-        }
-
-        &-path {
-          right: -175px;
-        }
-      }
-
-      &__wrapper {
-        &-right {
-          img {
-            &:nth-of-type(2) {
-              left: -50px;
-              @include adaptive(1439) {
-                left: -30px;
-                bottom: -30px;
-              }
-              @include adaptive(1279) {
-                display: none;
-              }
-            }
-          }
         }
       }
 

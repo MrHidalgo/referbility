@@ -16,8 +16,11 @@
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-      background-image: none;
-      background-color: $c-white;
+      background: linear-gradient(#a790dd 0%, #7650b4 100%);
+      @include adaptive(1279) {
+        background-image: none;
+        background-color: $c-white;
+      }
     }
 
     &.header {
@@ -43,8 +46,10 @@
 
     .header {
       &__form {
-        div  {
-          button {
+        form {
+          justify-content: flex-end;
+
+          a {
             background-color: rgba(#2D1C40, 1) !important;
 
             &:after {

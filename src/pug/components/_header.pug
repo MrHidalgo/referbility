@@ -35,11 +35,22 @@ header#header.header(class!= (pageClassName === 'p-referrer') ? 'header--referre
               div
                 button.c-btn.c-btn--bg.c-btn--bg-blue(type='submit')
                   span Request a demo
+        else
+          .header__form
+            form(action='' method='' autocomplete='off')
+              a.main__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#' title='')
+                span Available Jobs
+              a.main__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#' title='')
+                span Login/Register
 
         if(pageClassName !== 'p-referrer')
           .header__mobile
             a.c-btn.c-btn--bg.c-btn--bg-blue(href='#requestDemo' title='' data-effect='mfp-zoom-in' popup-js)
               span Request a demo
+        else
+          .header__mobile
+            a.c-btn.c-btn--bg.c-btn--bg-blue(href='#' title='')
+              span Login/Register
 
       .header__wrapper-right
 
