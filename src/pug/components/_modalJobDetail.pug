@@ -1,0 +1,116 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__head
+
+    .c-modal__head-bg
+      .c-modal__head-bg-obj.c-modal__head-bg-obj-1
+      .c-modal__head-bg-obj.c-modal__head-bg-obj-2
+
+    .c-modal__head-content
+
+      p.c-modal__title Choose how to refer
+
+      .c-modal__radio-wrapper
+        a.c-modal__radio.c-modal__radio-1(href='#' data-id='1')
+          div
+            i
+          div
+            span Refer by filling in our
+            p Email
+        a.c-modal__radio.c-modal__radio-2.is-active(href='#' data-id='2')
+          div
+            i
+          div
+            span Refer by filling in our
+            p Form
+
+      p.c-modal__desc Refer by filing in our simple form & sharing your referral’s CV. You will earn
+      p.c-modal__price $2,000
+      p.c-modal__info if your referral is successful*
+
+  .c-modal__body
+
+    p.c-modal__heading Provide Information
+
+    .c-modal__body-content.c-modal__body-content-1
+
+      .c-modal__input.c-modal__input-1
+        input(type='text' name='' placeholder='Your referral’s name')
+      .c-modal__input.c-modal__input-2
+        input(type='text' name='' placeholder='Your referral’s email')
+
+    .c-modal__body-content.c-modal__body-content-2
+
+      .c-modal__row.c-modal__row-1
+        p.c-modal__row-title How many years of experience does your referral have?
+
+        .c-modal__range
+          div
+            .c-modal__range-result 3
+          div
+            input(type='range' min='1' max='10' step='1' value='3')
+
+      .c-modal__row.c-modal__row-1
+        p.c-modal__row-title Which sectors has your referral worked in?
+
+        .c-modal__tags
+          select.multipleSelect(multiple='', name='language')
+            option(selected='', value='Healthcare') Healthcare
+            option(value='Automotive') Automotive
+            option(value='Fast-moving consumer goods (FMCG)') Fast-moving consumer goods (FMCG)
+            option(value='Heating, ventilation, air condition (HVAC)') Heating, ventilation, air condition (HVAC)
+            option(value='Hotels') Hotels
+            option(value='HR Consulting') HR Consulting
+
+      .c-modal__row.c-modal__row-1
+        p.c-modal__row-title Please upload your referral’s CV
+
+        .c-modal__browse
+          a(href='#' title='')
+            span Browse
+            i.icon-font.icon-file-text
+          p
+            span Browse your files
+          input#file(type='file' name='' inputfile-js)
+
+        .c-modal__browse-info Valid resume files are DOC, DOCX or PDF. Max of 5 MB
+
+
+      .c-modal__optional
+        .c-modal__optional-head
+          i.icon-font.icon-corner
+          p PROVIDE OPTIONAL INFORMATION
+
+        .c-modal__optional-body
+          div
+            each val, idx in [1,2,3,4,5,6,7,8,9,0]
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Your referral’s name')
+
+  .c-modal__footer
+
+    .c-modal__footer-bg
+      .c-modal__footer-bg-obj.c-modal__footer-bg-obj-1
+
+      .c-modal__footer-bg-obj.c-modal__footer-bg-obj-2
+
+    .c-modal__footer-content
+
+      p.c-modal__subtitle Disclaimer
+
+      .c-modal__checkbox
+        div
+          input(type='checkbox' name='' id='jobDetailCheckbox')
+        div
+          label(for='jobDetailCheckbox') The individual I am referring has been informed about the referral and consented to be referred on referbility.com. I have read, understood, and am adhering to the terms, conditions, and policies of referbility.com
+
+      p.c-modal__note!= "<span>Please note</span> Your referral will receive an automated email containing a confirmation link which is valid for 72 hours. If the link is not clicked within 72 hours, your referral will not be forwarded to the employer. Do ask your referral to check his/her inbox!"
+      p.c-modal__note!= "In case of a successful referral, you are eligible to the above stated reward.<br>You are only eligible if the employer<br>a) Did not know the candidate before the referral and<br>b) Hires & retains the candidate for 3 months."
+
+      .c-modal__btn-wrapper
+        a.c-modal__btn(href='#' title='') REFER
+
++modal('jobDetail', 'modalContent')
+
+// MODAL request a demo :: END

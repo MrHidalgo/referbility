@@ -17,7 +17,45 @@ $(document).ready((ev) => {
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
+  const initModalJobDetail = () => {
+    $('.c-modal__radio').on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _elID = _el.attr('data-id');
 
+      $('.c-modal__radio').removeClass('is-active');
+      _el.addClass('is-active');
+
+      if(_elID === '1') {
+        $('.c-modal__body-content-2').fadeOut(250);
+      } else {
+        $('.c-modal__body-content').show();
+      }
+    });
+
+    $('.c-modal__optional-head').on('click', (ev) => {
+      $('.c-modal__optional-body').slideToggle(300);
+    });
+
+    $('.multipleSelect').fastselect();
+
+    $('[inputfile-js]').on('change', (ev) => {
+      let _valNode = $(ev.currentTarget).prev('p');
+
+      _valNode.find('span').text(ev.currentTarget.value.split('\\').pop());
+    });
+
+    $('input[type=range]').on('input', function (e) {
+      var min = e.target.min,
+        max = e.target.max,
+        val = e.target.value;
+
+      $('.c-modal__range-result').text(val);
+
+      $(e.target).css({
+        'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+      });
+    }).trigger('input');
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -41,6 +79,7 @@ $(document).ready((ev) => {
 		// ==========================================
 
     // callback
+    initModalJobDetail();
 		// ==========================================
 
     $(window).on('load', () => {

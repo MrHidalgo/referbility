@@ -33,11 +33,14 @@
 	@if $filename == facebook {
 		$char: "\E002";
 	}
-	@if $filename == linkedin {
+	@if $filename == file-text {
 		$char: "\E003";
 	}
-	@if $filename == twitter {
+	@if $filename == linkedin {
 		$char: "\E004";
+	}
+	@if $filename == twitter {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -60,6 +63,10 @@
 }
 .icon-facebook {
 	@include icon(facebook);
+
+}
+.icon-file-text {
+	@include icon(file-text);
 
 }
 .icon-linkedin {

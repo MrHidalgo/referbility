@@ -1,0 +1,18 @@
+---
+title: Referbility | Job Detail
+
+pageClassName: p-jobDetail
+---
+extends shared/_layout
+
+block header
+block footer
+block modal
+  include components/_modalJobDetail
+
+block menu
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    a(href='#jobDetail' title='' data-effect='mfp-zoom-in' popup-js) Open Modal

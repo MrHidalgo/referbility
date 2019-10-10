@@ -3,7 +3,10 @@ ProjectTitle: Referbility
 PageList:
 - file: index.html
   titleName: Home
-  ready: 95
+  ready: 100
 - file: referrer.html
   titleName: Referrer
-  ready: 95
+  ready: 100
+- file: jobDetail.html
+  titleName: Referrer
+  ready: 1
