@@ -12,13 +12,13 @@ mixin modalContent()
       p.c-modal__title Choose how to refer
 
       .c-modal__radio-wrapper
-        a.c-modal__radio.c-modal__radio-1(href='#' data-id='1')
+        a.c-modal__radio.c-modal__radio-1.is-active(href='#' data-id='1')
           div
             i
           div
-            span Refer by filling in our
+            span Refer by
             p Email
-        a.c-modal__radio.c-modal__radio-2.is-active(href='#' data-id='2')
+        a.c-modal__radio.c-modal__radio-2(href='#' data-id='2')
           div
             i
           div
@@ -26,7 +26,7 @@ mixin modalContent()
             p Form
 
       p.c-modal__desc Refer by filing in our simple form & sharing your referral’s CV. You will earn
-      p.c-modal__price $2,000
+      p.c-modal__price(data-price-email='$2000' data-price-form='$1875') $2,000
       p.c-modal__info if your referral is successful*
 
   .c-modal__body
@@ -41,46 +41,47 @@ mixin modalContent()
         input(type='text' name='' placeholder='Your referral’s email')
 
     .c-modal__body-content.c-modal__body-content-2
+      .c-modal__body-cover
 
-      .c-modal__row.c-modal__row-1
-        p.c-modal__row-title How many years of experience does your referral have?
+        .c-modal__row.c-modal__row-1
+          p.c-modal__row-title How many years of experience does your referral have?
 
-        .c-modal__range
-          div
-            .c-modal__range-result 3
-          div
-            input(type='range' min='1' max='10' step='1' value='3')
+          .c-modal__range
+            div
+              .c-modal__range-result 10
+            div
+              input(type='range' min='1' max='30' step='1' value='10')
 
-      .c-modal__row.c-modal__row-1
-        p.c-modal__row-title Which sectors has your referral worked in?
+        .c-modal__row.c-modal__row-1
+          p.c-modal__row-title Which sectors has your referral worked in?
 
-        .c-modal__tags
-          select.multipleSelect(multiple='', name='language')
-            option(selected='', value='Healthcare') Healthcare
-            option(value='Automotive') Automotive
-            option(value='Fast-moving consumer goods (FMCG)') Fast-moving consumer goods (FMCG)
-            option(value='Heating, ventilation, air condition (HVAC)') Heating, ventilation, air condition (HVAC)
-            option(value='Hotels') Hotels
-            option(value='HR Consulting') HR Consulting
+          .c-modal__tags
+            select.multipleSelect(multiple='', name='language')
+              option(selected='', value='Healthcare') Healthcare
+              option(value='Automotive') Automotive
+              option(value='Fast-moving consumer goods (FMCG)') Fast-moving consumer goods (FMCG)
+              option(value='Heating, ventilation, air condition (HVAC)') Heating, ventilation, air condition (HVAC)
+              option(value='Hotels') Hotels
+              option(value='HR Consulting') HR Consulting
 
-      .c-modal__row.c-modal__row-1
-        p.c-modal__row-title Please upload your referral’s CV
+        .c-modal__row.c-modal__row-1
+          p.c-modal__row-title Please upload your referral’s CV
 
-        .c-modal__browse
-          a(href='#' title='')
-            span Browse
-            i.icon-font.icon-file-text
-          p
-            span Browse your files
-          input#file(type='file' name='' inputfile-js)
+          .c-modal__browse
+            a(href='#' title='')
+              span Browse
+              i.icon-font.icon-file-text
+            p
+              span Browse your files
+            input#file(type='file' name='' inputfile-js)
 
-        .c-modal__browse-info Valid resume files are DOC, DOCX or PDF. Max of 5 MB
+          .c-modal__browse-info Valid resume files are DOC, DOCX or PDF. Max of 5 MB
 
 
       .c-modal__optional
         .c-modal__optional-head
           i.icon-font.icon-corner
-          p PROVIDE OPTIONAL INFORMATION
+          p(data-show-val='Hide Optional Information' data-hide-val='PROVIDE OPTIONAL INFORMATION') PROVIDE OPTIONAL INFORMATION
 
         .c-modal__optional-body
           div
@@ -109,7 +110,8 @@ mixin modalContent()
       p.c-modal__note!= "In case of a successful referral, you are eligible to the above stated reward.<br>You are only eligible if the employer<br>a) Did not know the candidate before the referral and<br>b) Hires & retains the candidate for 3 months."
 
       .c-modal__btn-wrapper
-        a.c-modal__btn(href='#' title='') REFER
+        a.c-modal__btn(href='#' title='')
+          span REFER
 
 +modal('jobDetail', 'modalContent')
 

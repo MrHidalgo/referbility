@@ -25,4 +25,6 @@ const initPopups = () => {
     }
   });
 
+  // $('[popup-js]').magnificPopup('open');
+
 };
