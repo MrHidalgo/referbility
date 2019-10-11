@@ -8,5 +8,6 @@
 * - viewport-checker;
 * - stellar;
 * - fastselect.standalone.js;
+* - jquery.countTo.js;
 *
 * */

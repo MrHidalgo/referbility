@@ -25,69 +25,103 @@ mixin modalContent()
             span Refer by filling in our
             p Form
 
-      p.c-modal__desc Refer by filing in our simple form & sharing your referral’s CV. You will earn
-      p.c-modal__price(data-price-email='$2000' data-price-form='$1875') $2,000
-      p.c-modal__info if your referral is successful*
+      p.c-modal__desc.c-modal__desc-1!= "Refer by only dropping your referral's name and email.<br>You will earn"
+      p.c-modal__desc.c-modal__desc-2!= "Refer by filing in our simple form & sharing your referral’s CV.<br>You will earn"
+      p.c-modal__price!= '$<span>2,000</span>'
+      p.c-modal__info if your referral is successful.
 
   .c-modal__body
 
-    p.c-modal__heading Provide Information
+    .c-modal__body-col.c-modal__body-col-1
+      p.c-modal__heading Provide Information
 
-    .c-modal__body-content.c-modal__body-content-1
+      .c-modal__body-content.c-modal__body-content-1
 
-      .c-modal__input.c-modal__input-1
-        input(type='text' name='' placeholder='Your referral’s name')
-      .c-modal__input.c-modal__input-2
-        input(type='text' name='' placeholder='Your referral’s email')
+        .c-modal__input.c-modal__input-1
+          input(type='text' name='' placeholder='Your referral’s name')
+        .c-modal__input.c-modal__input-2
+          input(type='text' name='' placeholder='Your referral’s email')
 
-    .c-modal__body-content.c-modal__body-content-2
-      .c-modal__body-cover
+      .c-modal__body-content.c-modal__body-content-2
+        .c-modal__body-cover
 
-        .c-modal__row.c-modal__row-1
-          p.c-modal__row-title How many years of experience does your referral have?
+          .c-modal__row.c-modal__row-1
+            p.c-modal__row-title How many years of experience does your referral have?
 
-          .c-modal__range
+            .c-modal__range
+              div
+                input.c-modal__range-result(type='text' value='10')
+              div
+                input(type='range' min='1' max='30' step='1' value='10')
+
+          .c-modal__row.c-modal__row-1
+            p.c-modal__row-title Which sectors has your referral worked in?
+
+            .c-modal__tags
+              select.multipleSelect(multiple='', name='language')
+                option(selected='', value='Healthcare') Healthcare
+                option(value='Automotive') Automotive
+                option(value='Fast-moving consumer goods (FMCG)') Fast-moving consumer goods (FMCG)
+                option(value='Heating, ventilation, air condition (HVAC)') Heating, ventilation, air condition (HVAC)
+                option(value='Hotels') Hotels
+                option(value='HR Consulting') HR Consulting
+
+          .c-modal__row.c-modal__row-1
+            p.c-modal__row-title Please upload your referral’s CV
+
+            .c-modal__browse
+              input#file(type='file' name='' inputfile-js)
+              label(for='file')
+                span Browse
+                i.icon-font.icon-file-text
+              p
+                span Browse your files
+
+            .c-modal__browse-info Valid resume files are DOC, DOCX or PDF. Max of 5 MB
+
+    .c-modal__body-col.c-modal__body-col-2
+      .c-modal__body-content.c-modal__body-content-3
+        .c-modal__optional
+          .c-modal__optional-head
+            i.icon-font.icon-corner
+            p(data-show-val='Hide Optional Information' data-hide-val='PROVIDE OPTIONAL INFORMATION') PROVIDE OPTIONAL INFORMATION
+
+          .c-modal__optional-body
             div
-              .c-modal__range-result 10
-            div
-              input(type='range' min='1' max='30' step='1' value='10')
-
-        .c-modal__row.c-modal__row-1
-          p.c-modal__row-title Which sectors has your referral worked in?
-
-          .c-modal__tags
-            select.multipleSelect(multiple='', name='language')
-              option(selected='', value='Healthcare') Healthcare
-              option(value='Automotive') Automotive
-              option(value='Fast-moving consumer goods (FMCG)') Fast-moving consumer goods (FMCG)
-              option(value='Heating, ventilation, air condition (HVAC)') Heating, ventilation, air condition (HVAC)
-              option(value='Hotels') Hotels
-              option(value='HR Consulting') HR Consulting
-
-        .c-modal__row.c-modal__row-1
-          p.c-modal__row-title Please upload your referral’s CV
-
-          .c-modal__browse
-            a(href='#' title='')
-              span Browse
-              i.icon-font.icon-file-text
-            p
-              span Browse your files
-            input#file(type='file' name='' inputfile-js)
-
-          .c-modal__browse-info Valid resume files are DOC, DOCX or PDF. Max of 5 MB
-
-
-      .c-modal__optional
-        .c-modal__optional-head
-          i.icon-font.icon-corner
-          p(data-show-val='Hide Optional Information' data-hide-val='PROVIDE OPTIONAL INFORMATION') PROVIDE OPTIONAL INFORMATION
-
-        .c-modal__optional-body
-          div
-            each val, idx in [1,2,3,4,5,6,7,8,9,0]
               .c-modal__input.c-modal__input-1
-                input(type='text' name='' placeholder='Your referral’s name')
+                input(type='text' name='' placeholder='Mobile phone')
+              .c-modal__input.c-modal__input--select.c-modal__input-1
+                select(name='')
+                  option(selected disabled) Highest degree
+                  option() Action
+                  option() More Action
+                  option() One More Action
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Current Residence (City / Country)')
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Certifications & Diplomas')
+              .c-modal__input.c-modal__input--select.c-modal__input-1
+                select(name='')
+                  option(selected disabled) Career Level
+                  option() Action
+                  option() More Action
+                  option() One More Action
+              .c-modal__input.c-modal__input--select.c-modal__input-1
+                select(name='')
+                  option(selected disabled) Current job function
+                  option() Action
+                  option() More Action
+                  option() One More Action
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Current Designation')
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Current Employer')
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Languages known')
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Skills')
+              .c-modal__input.c-modal__input-1
+                input(type='text' name='' placeholder='Anything else the employer should know?')
 
   .c-modal__footer
 

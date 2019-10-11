@@ -2542,11 +2542,16 @@ picture {
 }
 
 /* line 175, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__body-content-2 {
+.c-modal#jobDetail .c-modal__body-content-2, .c-modal#jobDetail .c-modal__body-content-3 {
   display: none;
 }
 
 /* line 181, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__body-cover {
+  padding-bottom: 20px;
+}
+
+/* line 186, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__footer {
   -webkit-border-bottom-left-radius: 15px;
           border-bottom-left-radius: 15px;
@@ -2557,7 +2562,7 @@ picture {
   background-image: linear-gradient(193deg, #8181ff, #5153dc);
 }
 
-/* line 186, src/scss/_macros/_modal.scss */
+/* line 191, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__footer-bg {
   z-index: 0;
   position: absolute;
@@ -2567,14 +2572,14 @@ picture {
   height: 100%;
 }
 
-/* line 194, src/scss/_macros/_modal.scss */
+/* line 199, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__footer-bg-obj {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 198, src/scss/_macros/_modal.scss */
+/* line 203, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__footer-bg-obj-1 {
   left: -300px;
   bottom: 50px;
@@ -2583,7 +2588,7 @@ picture {
   border: solid 90px rgba(169, 171, 254, 0.2);
 }
 
-/* line 205, src/scss/_macros/_modal.scss */
+/* line 210, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__footer-bg-obj-2 {
   right: -260px;
   bottom: -130px;
@@ -2592,14 +2597,14 @@ picture {
   border: solid 110px rgba(169, 171, 254, 0.2);
 }
 
-/* line 215, src/scss/_macros/_modal.scss */
+/* line 220, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__footer-content {
   z-index: 2;
   position: relative;
   padding: 30px 15px;
 }
 
-/* line 222, src/scss/_macros/_modal.scss */
+/* line 227, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__title {
   padding-bottom: 30px;
   font-size: 30px;
@@ -2608,7 +2613,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 230, src/scss/_macros/_modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 227, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__title {
+    font-size: 24px;
+  }
+}
+
+/* line 238, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio {
   cursor: pointer;
   display: -webkit-box;
@@ -2622,44 +2634,46 @@ picture {
   width: 100%;
   max-width: 240px;
   height: 90px;
-  -webkit-border-radius: 20px 5px 20px 5px;
-          border-radius: 20px 5px 20px 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   background-color: #ecebf6;
-  will-change: background-color, box-shadow;
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0);
+  will-change: border-radius, background-color, box-shadow;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-border-radius 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-border-radius 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-border-radius 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 230, src/scss/_macros/_modal.scss */
+  /* line 238, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__radio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    max-width: -webkit-calc((100% - 15px) / 2);
-    max-width: calc((100% - 15px) / 2);
-    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 254, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__radio-1 {
+    margin-bottom: 15px;
   }
 }
 
-/* line 247, src/scss/_macros/_modal.scss */
+/* line 259, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio.is-active {
+  -webkit-border-radius: 20px 5px 20px 5px;
+          border-radius: 20px 5px 20px 5px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-border-radius 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-border-radius 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-border-radius 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 254, src/scss/_macros/_modal.scss */
+/* line 267, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio.is-active > div i:before {
   opacity: 1;
   visibility: visible;
@@ -2673,7 +2687,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 262, src/scss/_macros/_modal.scss */
+/* line 275, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio.is-active > div p {
   color: #6554c0;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2681,7 +2695,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 270, src/scss/_macros/_modal.scss */
+/* line 283, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2700,15 +2714,7 @@ picture {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 270, src/scss/_macros/_modal.scss */
-  .c-modal#jobDetail .c-modal__radio > div:nth-of-type(1) {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* line 282, src/scss/_macros/_modal.scss */
+/* line 291, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2718,7 +2724,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 288, src/scss/_macros/_modal.scss */
+/* line 297, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio > div i {
   position: relative;
   display: -webkit-box;
@@ -2740,7 +2746,7 @@ picture {
   border: 2px solid #6554c0;
 }
 
-/* line 298, src/scss/_macros/_modal.scss */
+/* line 307, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio > div i:before {
   opacity: 0;
   visibility: hidden;
@@ -2766,13 +2772,13 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 315, src/scss/_macros/_modal.scss */
+/* line 324, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio > div span {
   display: block;
   color: #222222;
 }
 
-/* line 320, src/scss/_macros/_modal.scss */
+/* line 329, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio > div p {
   color: #222222;
   text-transform: uppercase;
@@ -2783,14 +2789,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 320, src/scss/_macros/_modal.scss */
-  .c-modal#jobDetail .c-modal__radio > div p {
-    font-size: 16px;
-  }
-}
-
-/* line 332, src/scss/_macros/_modal.scss */
+/* line 338, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__radio-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2807,7 +2806,18 @@ picture {
   padding-bottom: 30px;
 }
 
-/* line 343, src/scss/_macros/_modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 338, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__radio-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 352, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__desc {
   padding-bottom: 10px;
   width: 100%;
@@ -2822,13 +2832,18 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 343, src/scss/_macros/_modal.scss */
+  /* line 352, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__desc {
     font-size: 14px;
   }
 }
 
-/* line 359, src/scss/_macros/_modal.scss */
+/* line 368, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__desc-2 {
+  display: none;
+}
+
+/* line 373, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__price {
   padding-bottom: 10px;
   font-size: 40px;
@@ -2839,13 +2854,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 359, src/scss/_macros/_modal.scss */
+  /* line 373, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__price {
     font-size: 33px;
   }
 }
 
-/* line 371, src/scss/_macros/_modal.scss */
+/* line 385, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__info {
   line-height: 1.67;
   letter-spacing: 0.5px;
@@ -2853,7 +2868,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 378, src/scss/_macros/_modal.scss */
+/* line 392, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__subtitle {
   padding-bottom: 30px;
   font-size: 26px;
@@ -2862,7 +2877,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 386, src/scss/_macros/_modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 392, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__subtitle {
+    font-size: 22px;
+  }
+}
+
+/* line 403, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__checkbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2871,12 +2893,12 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 391, src/scss/_macros/_modal.scss */
+/* line 408, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__checkbox > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 394, src/scss/_macros/_modal.scss */
+/* line 411, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__checkbox > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2886,62 +2908,62 @@ picture {
   max-width: 100%;
 }
 
-/* line 401, src/scss/_macros/_modal.scss */
+/* line 418, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__checkbox input {
   position: relative;
   top: 3px;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 410, src/scss/_macros/_modal.scss */
+/* line 427, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__checkbox label {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.43;
+  line-height: 1.5;
   color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 410, src/scss/_macros/_modal.scss */
+  /* line 427, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__checkbox label {
     font-size: 12px;
   }
 }
 
-/* line 421, src/scss/_macros/_modal.scss */
+/* line 438, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__note {
   position: relative;
   padding-left: 45px;
   margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 1.43;
+  font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 0.5px;
   color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 421, src/scss/_macros/_modal.scss */
+  /* line 438, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__note {
     margin-bottom: 30px;
     font-size: 12px;
   }
 }
 
-/* line 434, src/scss/_macros/_modal.scss */
+/* line 451, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__note span {
   font-weight: 700;
 }
 
-/* line 438, src/scss/_macros/_modal.scss */
+/* line 455, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__note:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 442, src/scss/_macros/_modal.scss */
+/* line 459, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__note:before {
   content: '';
   position: absolute;
@@ -2956,7 +2978,7 @@ picture {
   background-image: linear-gradient(20deg, #00aaff, #28d7cc);
 }
 
-/* line 454, src/scss/_macros/_modal.scss */
+/* line 471, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__heading {
   padding-bottom: 30px;
   font-size: 26px;
@@ -2965,17 +2987,40 @@ picture {
   color: #091e42;
 }
 
-/* line 463, src/scss/_macros/_modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 471, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__heading {
+    font-size: 22px;
+  }
+}
+
+/* line 483, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__input-1 {
   padding-bottom: 15px;
 }
 
-/* line 467, src/scss/_macros/_modal.scss */
+/* line 487, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__input-2 {
   padding-bottom: 30px;
 }
 
-/* line 471, src/scss/_macros/_modal.scss */
+/* line 492, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__input--select select {
+  outline: none;
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #ecebf6;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 506, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__input input {
   outline: none;
   width: 100%;
@@ -3020,12 +3065,12 @@ picture {
   color: #091e42;
 }
 
-/* line 488, src/scss/_macros/_modal.scss */
+/* line 523, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__row {
   padding-bottom: 30px;
 }
 
-/* line 491, src/scss/_macros/_modal.scss */
+/* line 526, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__row-title {
   padding-bottom: 15px;
   font-size: 16px;
@@ -3034,7 +3079,7 @@ picture {
   color: #344563;
 }
 
-/* line 500, src/scss/_macros/_modal.scss */
+/* line 535, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3046,36 +3091,24 @@ picture {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 500, src/scss/_macros/_modal.scss */
-  .c-modal#jobDetail .c-modal__range {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-/* line 507, src/scss/_macros/_modal.scss */
+/* line 539, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range > div {
   width: 100%;
 }
 
-/* line 510, src/scss/_macros/_modal.scss */
+/* line 542, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range > div:nth-of-type(1) {
   max-width: 130px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 510, src/scss/_macros/_modal.scss */
+  /* line 542, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__range > div:nth-of-type(1) {
-    max-width: 100%;
-    padding-top: 15px;
+    max-width: 70px;
   }
 }
 
-/* line 517, src/scss/_macros/_modal.scss */
+/* line 548, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3085,8 +3118,10 @@ picture {
   max-width: 100%;
 }
 
-/* line 524, src/scss/_macros/_modal.scss */
+/* line 555, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range-result {
+  outline: none;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3101,6 +3136,9 @@ picture {
           justify-content: center;
   width: 100px;
   height: 45px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   background-color: #ecebf6;
@@ -3110,14 +3148,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 524, src/scss/_macros/_modal.scss */
+  /* line 555, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__range-result {
-    margin-left: auto;
-    margin-right: auto;
+    width: 60px;
   }
 }
 
-/* line 541, src/scss/_macros/_modal.scss */
+/* line 575, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range input[type=range] {
   outline: none;
   cursor: pointer;
@@ -3140,7 +3177,7 @@ picture {
           appearance: none;
 }
 
-/* line 556, src/scss/_macros/_modal.scss */
+/* line 590, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3150,24 +3187,24 @@ picture {
           appearance: none;
 }
 
-/* line 563, src/scss/_macros/_modal.scss */
+/* line 597, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range input[type=range]::-moz-range-track {
   box-shadow: none;
   border: none;
   background: transparent;
 }
 
-/* line 569, src/scss/_macros/_modal.scss */
+/* line 603, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range input[type=range]::-moz-focus-outer {
   border: 0;
 }
 
-/* line 573, src/scss/_macros/_modal.scss */
+/* line 607, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range input[type=range]::-webkit-slider-thumb {
   width: 9px;
   height: 9px;
-  -webkit-box-shadow: 0 0 0 5px rgba(41, 222, 156, 0.3);
-          box-shadow: 0 0 0 5px rgba(41, 222, 156, 0.3);
+  -webkit-box-shadow: 0 0 0 7px rgba(41, 222, 156, 0.3);
+          box-shadow: 0 0 0 7px rgba(41, 222, 156, 0.3);
   background-color: #36b37e;
   -webkit-border-radius: 100%;
           border-radius: 100%;
@@ -3175,16 +3212,16 @@ picture {
           appearance: none;
 }
 
-/* line 582, src/scss/_macros/_modal.scss */
+/* line 616, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__range input[type=range]::-moz-range-thumb {
   width: 9px;
   height: 9px;
-  box-shadow: 0 0 0 5px rgba(41, 222, 156, 0.3);
+  box-shadow: 0 0 0 7px rgba(41, 222, 156, 0.3);
   background-color: #36b37e;
   border-radius: 100%;
 }
 
-/* line 592, src/scss/_macros/_modal.scss */
+/* line 626, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstQueryInput {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -3227,7 +3264,7 @@ picture {
   color: #091e42;
 }
 
-/* line 604, src/scss/_macros/_modal.scss */
+/* line 638, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstElement {
   width: 100%;
   min-height: 45px;
@@ -3237,19 +3274,19 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 612, src/scss/_macros/_modal.scss */
+/* line 646, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstControls {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 618, src/scss/_macros/_modal.scss */
+/* line 652, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstMultipleMode .fstControls {
   padding-top: 0.6em;
 }
 
-/* line 622, src/scss/_macros/_modal.scss */
+/* line 656, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstChoiceItem {
   padding: 0.25em 1.75em 0.25em 0.75em;
   -webkit-border-radius: 4px;
@@ -3262,7 +3299,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 622, src/scss/_macros/_modal.scss */
+  /* line 656, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__tags .fstChoiceItem {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3272,18 +3309,17 @@ picture {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 12px;
   }
 }
 
-/* line 636, src/scss/_macros/_modal.scss */
+/* line 669, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstChoiceItem .fstChoiceRemove {
   font-size: 20px;
   left: auto;
   right: 5px;
 }
 
-/* line 643, src/scss/_macros/_modal.scss */
+/* line 676, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstResults {
   border: none;
   -webkit-border-bottom-left-radius: 4px;
@@ -3293,7 +3329,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 650, src/scss/_macros/_modal.scss */
+/* line 683, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstResultItem {
   font-size: 14px;
   line-height: 2.5;
@@ -3302,7 +3338,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 657, src/scss/_macros/_modal.scss */
+/* line 690, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstResultItem.fstSelected {
   display: none;
   border-color: #020d60;
@@ -3310,7 +3346,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 665, src/scss/_macros/_modal.scss */
+/* line 698, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__tags .fstNoResults {
   font-size: 14px;
   line-height: 2.5;
@@ -3319,53 +3355,26 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 674, src/scss/_macros/_modal.scss */
+/* line 707, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__browse {
   position: relative;
 }
 
-/* line 677, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__browse p {
+/* line 710, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse input {
+  opacity: 0;
   cursor: pointer;
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 600px;
-  height: 45px;
-  line-height: 45px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  background-color: #ecebf6;
-  letter-spacing: 0.5px;
-  color: #091e42;
+  height: 100%;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 677, src/scss/_macros/_modal.scss */
-  .c-modal#jobDetail .c-modal__browse p {
-    height: 106px;
-  }
-}
-
-/* line 692, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__browse p span {
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  display: block;
-  padding: 0 165px 0 15px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 692, src/scss/_macros/_modal.scss */
-  .c-modal#jobDetail .c-modal__browse p span {
-    padding-right: 15px;
-  }
-}
-
-/* line 704, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__browse a {
+/* line 720, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse label {
   cursor: pointer;
+  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
@@ -3387,19 +3396,54 @@ picture {
           border-radius: 4px;
   background-color: #020d60;
   color: #ffffff;
+  will-change: background-color;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 704, src/scss/_macros/_modal.scss */
-  .c-modal#jobDetail .c-modal__browse a {
-    top: auto;
-    bottom: 0;
-    width: 100%;
+  /* line 720, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__browse label {
+    width: 60px;
   }
 }
 
-/* line 723, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__browse a span {
+/* line 740, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse label:before {
+  content: '';
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(51deg, #00aaff, #28d7cc);
+  background-image: -o-linear-gradient(51deg, #00aaff, #28d7cc);
+  background-image: linear-gradient(39deg, #00aaff, #28d7cc);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 754, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse label:hover:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 760, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse label span,
+.c-modal#jobDetail .c-modal__browse label .icon-font {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 766, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse label span {
   padding-right: 15px;
   font-size: 12px;
   font-weight: 500;
@@ -3409,18 +3453,46 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 734, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__browse input {
-  opacity: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 767px) {
+  /* line 766, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__browse label span {
+    display: none;
+  }
 }
 
-/* line 744, src/scss/_macros/_modal.scss */
+/* line 780, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse p {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 45px;
+  line-height: 45px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #ecebf6;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 792, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__browse p span {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: block;
+  padding: 0 165px 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 792, src/scss/_macros/_modal.scss */
+  .c-modal#jobDetail .c-modal__browse p span {
+    padding-right: 75px;
+  }
+}
+
+/* line 804, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__browse-info {
   padding-top: 15px;
   font-size: 12px;
@@ -3429,16 +3501,11 @@ picture {
   color: #091e42;
 }
 
-/* line 753, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__optional {
-  padding-top: 20px;
-}
-
-/* line 757, src/scss/_macros/_modal.scss */
+/* line 815, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__optional.is-open .icon-corner {
-  -webkit-transform: rotate(90deg) scale(-1);
-      -ms-transform: rotate(90deg) scale(-1);
-          transform: rotate(90deg) scale(-1);
+  -webkit-transform: rotate(90deg) scale(1);
+      -ms-transform: rotate(90deg) scale(1);
+          transform: rotate(90deg) scale(1);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
@@ -3446,7 +3513,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 763, src/scss/_macros/_modal.scss */
+/* line 821, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__optional-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3463,12 +3530,12 @@ picture {
   color: #36b37e;
 }
 
-/* line 769, src/scss/_macros/_modal.scss */
+/* line 827, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__optional-head .icon-font {
   margin-right: 10px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(90deg) scale(-1);
+      -ms-transform: rotate(90deg) scale(-1);
+          transform: rotate(90deg) scale(-1);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
@@ -3476,7 +3543,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 775, src/scss/_macros/_modal.scss */
+/* line 833, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__optional-head p {
   font-weight: 500;
   text-align: center;
@@ -3484,23 +3551,23 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 775, src/scss/_macros/_modal.scss */
+  /* line 833, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__optional-head p {
     font-size: 14px;
   }
 }
 
-/* line 785, src/scss/_macros/_modal.scss */
+/* line 843, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__optional-body {
   display: none;
 }
 
-/* line 788, src/scss/_macros/_modal.scss */
+/* line 846, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__optional-body > div {
   padding: 15px 0 0;
 }
 
-/* line 794, src/scss/_macros/_modal.scss */
+/* line 852, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__btn {
   overflow: hidden;
   position: relative;
@@ -3535,22 +3602,35 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 810, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__btn:before {
+/* line 868, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__btn:after {
   content: '';
   opacity: 0;
+  visibility: hidden;
+  z-index: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00aaff;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  left: 50%;
+  top: 50%;
+  width: -webkit-calc(100% + 30px);
+  width: calc(100% + 30px);
+  padding: -webkit-calc(40% + 30px) 0;
+  padding: calc(40% + 30px) 0;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #020d60;
+  will-change: transform;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.001);
+      -ms-transform: translateX(-50%) translateY(-50%) scale(0.001);
+          transform: translateX(-50%) translateY(-50%) scale(0.001);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+  -o-transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+  transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 822, src/scss/_macros/_modal.scss */
+/* line 886, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -3561,15 +3641,22 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 826, src/scss/_macros/_modal.scss */
-.c-modal#jobDetail .c-modal__btn:hover:before {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+/* line 890, src/scss/_macros/_modal.scss */
+.c-modal#jobDetail .c-modal__btn:hover:after {
+  opacity: 1.0;
+  visibility: visible;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+      -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+          transform: translateX(-50%) translateY(-50%) scale(1);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+  -o-transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+  transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 832, src/scss/_macros/_modal.scss */
+/* line 899, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -3581,7 +3668,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 843, src/scss/_macros/_modal.scss */
+/* line 910, src/scss/_macros/_modal.scss */
 .c-modal#jobDetail .c-modal__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3599,7 +3686,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 843, src/scss/_macros/_modal.scss */
+  /* line 910, src/scss/_macros/_modal.scss */
   .c-modal#jobDetail .c-modal__btn-wrapper {
     padding-top: 30px;
   }

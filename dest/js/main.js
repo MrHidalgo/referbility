@@ -14678,6 +14678,137 @@ void 0 === jQuery.migrateMute && (jQuery.migrateMute = !0), function(e) {
         }, t && t.call(n, n), n;
     }, e.Deferred.exceptionHook = S.exceptionHook, e;
 });
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // CommonJS
+        factory(require('jquery'));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
+  var CountTo = function (element, options) {
+    this.$element = $(element);
+    this.options  = $.extend({}, CountTo.DEFAULTS, this.dataOptions(), options);
+    this.init();
+  };
+
+  CountTo.DEFAULTS = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  CountTo.prototype.init = function () {
+    this.value     = this.options.from;
+    this.loops     = Math.ceil(this.options.speed / this.options.refreshInterval);
+    this.loopCount = 0;
+    this.increment = (this.options.to - this.options.from) / this.loops;
+  };
+
+  CountTo.prototype.dataOptions = function () {
+    var options = {
+      from:            this.$element.data('from'),
+      to:              this.$element.data('to'),
+      speed:           this.$element.data('speed'),
+      refreshInterval: this.$element.data('refresh-interval'),
+      decimals:        this.$element.data('decimals')
+    };
+
+    var keys = Object.keys(options);
+
+    for (var i in keys) {
+      var key = keys[i];
+
+      if (typeof(options[key]) === 'undefined') {
+        delete options[key];
+      }
+    }
+
+    return options;
+  };
+
+  CountTo.prototype.update = function () {
+    this.value += this.increment;
+    this.loopCount++;
+
+    this.render();
+
+    if (typeof(this.options.onUpdate) == 'function') {
+      this.options.onUpdate.call(this.$element, this.value);
+    }
+
+    if (this.loopCount >= this.loops) {
+      clearInterval(this.interval);
+      this.value = this.options.to;
+
+      if (typeof(this.options.onComplete) == 'function') {
+        this.options.onComplete.call(this.$element, this.value);
+      }
+    }
+  };
+
+  CountTo.prototype.render = function () {
+    var formattedValue = this.options.formatter.call(this.$element, this.value, this.options);
+    this.$element.text(formattedValue);
+  };
+
+  CountTo.prototype.restart = function () {
+    this.stop();
+    this.init();
+    this.start();
+  };
+
+  CountTo.prototype.start = function () {
+    this.stop();
+    this.render();
+    this.interval = setInterval(this.update.bind(this), this.options.refreshInterval);
+  };
+
+  CountTo.prototype.stop = function () {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
+  };
+
+  CountTo.prototype.toggle = function () {
+    if (this.interval) {
+      this.stop();
+    } else {
+      this.start();
+    }
+  };
+
+  function formatter(value, options) {
+    return value.toFixed(options.decimals);
+  }
+
+  $.fn.countTo = function (option) {
+    return this.each(function () {
+      var $this   = $(this);
+      var data    = $this.data('countTo');
+      var init    = !data || typeof(option) === 'object';
+      var options = typeof(option) === 'object' ? option : {};
+      var method  = typeof(option) === 'string' ? option : 'start';
+
+      if (init) {
+        if (data) data.stop();
+        $this.data('countTo', data = new CountTo(this, options));
+      }
+
+      data[method].call(data);
+    });
+  };
+}));
+
 "use strict";
 
 /*
@@ -14960,6 +15091,21 @@ $(document).ready(function (ev) {
   * CALLBACK :: start
   * ============================================= */
   var initModalJobDetail = function initModalJobDetail() {
+    var _countToOption = function _countToOption(fromVal, toVal) {
+      return {
+        from: fromVal,
+        to: toVal,
+        speed: 750,
+        formatter: function formatter(value, options) {
+          value = value.toFixed(options.decimals);
+          value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          return value;
+        }
+      };
+    };
+
+    // $('.c-modal__price span').countTo(_countToOption(0, 2000));
+
     $('.c-modal__radio').on('click', function (ev) {
       var _el = $(ev.currentTarget),
           _elID = _el.attr('data-id');
@@ -14968,9 +15114,17 @@ $(document).ready(function (ev) {
       _el.addClass('is-active');
 
       if (_elID === '1') {
-        $('.c-modal__body-content-2').slideUp(250);
+        $('.c-modal__desc-1').show();
+        $('.c-modal__desc-2').hide();
+        $('.c-modal__body-content-2, .c-modal__body-content-3').slideUp(300);
+
+        $('.c-modal__price span').countTo(_countToOption(3000, 2000));
       } else {
-        $('.c-modal__body-content-2').slideDown(250);
+        $('.c-modal__desc-2').show();
+        $('.c-modal__desc-1').hide();
+        $('.c-modal__body-content-2, .c-modal__body-content-3').slideDown(300);
+
+        $('.c-modal__price span').countTo(_countToOption(2000, 3000));
       }
     });
 
@@ -14979,15 +15133,15 @@ $(document).ready(function (ev) {
 
       if (_parentNode.hasClass('is-open')) {
         $('.c-modal__optional').removeClass('is-open');
-        $('.c-modal__heading, .c-modal__body-content-1, .c-modal__body-content-2 .c-modal__body-cover').fadeIn(100);
+        $('.c-modal__body-col-1').slideDown(300);
         $(ev.currentTarget).find('p').text($(ev.currentTarget).find('p').attr('data-hide-val'));
       } else {
         $('.c-modal__optional').addClass('is-open');
-        $('.c-modal__heading, .c-modal__body-content-1, .c-modal__body-content-2 .c-modal__body-cover').fadeOut(100);
+        $('.c-modal__body-col-1').slideUp(300);
         $(ev.currentTarget).find('p').text($(ev.currentTarget).find('p').attr('data-show-val'));
       }
 
-      $('.c-modal__optional-body').slideToggle(150);
+      $('.c-modal__optional-body').slideToggle(300);
     });
 
     $('.multipleSelect').fastselect();
@@ -15003,12 +15157,24 @@ $(document).ready(function (ev) {
           max = e.target.max,
           val = e.target.value;
 
-      $('.c-modal__range-result').text(val);
+      $('.c-modal__range-result').val(val);
 
       $(e.target).css({
         'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
       });
     }).trigger('input');
+
+    $('.c-modal__range-result').on('keyup', function (ev) {
+      var _val = $(ev.currentTarget).val();
+
+      if (_val <= 0) {
+        $('input[type=range]').val(1).trigger('input');
+      } else if (_val > 30) {
+        $('input[type=range]').val(30).trigger('input');
+      } else {
+        $('input[type=range]').val($(ev.currentTarget).val()).trigger('input');
+      }
+    });
   };
   /*
   * CALLBACK :: end
