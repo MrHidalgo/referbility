@@ -243,6 +243,7 @@
         max-width: 240px;
         height: 90px;
         border-radius: 5px;
+        border: 2px solid #ecebf6;
         background-color: #ecebf6;
         box-shadow: 0 5px 15px 0 rgba(#000, 0);
         will-change: border-radius, background-color, box-shadow;
@@ -258,6 +259,7 @@
 
         &.is-active {
           border-radius: 20px 5px 20px 5px;
+          border-color: #a790dd;
           background-color: #ffffff;
           box-shadow: 0 5px 10px 0 rgba(#000, 0.3);
           @include transition(border-radius, background-color, box-shadow);
