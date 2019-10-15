@@ -346,7 +346,7 @@ $(document).ready(function (ev) {
           max = e.target.max,
           val = e.target.value;
 
-      $('.c-modal__range-result').val(val);
+      $(e.currentTarget).closest('.c-modal__range').find('.c-modal__range-result, .c-modal__range-sum').val(val);
 
       $(e.target).css({
         'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
@@ -357,11 +357,22 @@ $(document).ready(function (ev) {
       var _val = $(ev.currentTarget).val();
 
       if (_val <= 0) {
-        $('input[type=range]').val(1).trigger('input');
+        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(1).trigger('input');
       } else if (_val > 30) {
-        $('input[type=range]').val(30).trigger('input');
+        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(30).trigger('input');
       } else {
-        $('input[type=range]').val($(ev.currentTarget).val()).trigger('input');
+        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val($(ev.currentTarget).val()).trigger('input');
+      }
+    });
+    $('.c-modal__range-sum').on('keyup', function (ev) {
+      var _val = $(ev.currentTarget).val();
+
+      if (_val <= 0) {
+        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(1).trigger('input');
+      } else if (_val > 1500) {
+        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(30).trigger('input');
+      } else {
+        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val($(ev.currentTarget).val()).trigger('input');
       }
     });
   };

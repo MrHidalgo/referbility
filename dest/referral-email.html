@@ -139,6 +139,141 @@
         </div>
       </section>
       <!-- SECTION referral main :: END-->
+      <!-- SECTION referral body :: START-->
+      <section class="referral-body" id="referral-body">
+        <div class="referral-body__bg">
+          <div><img src="img/crowdsourcing-shape-1.svg"></div>
+          <div></div>
+        </div>
+        <div class="c-grid">
+          <div class="referral-body__wrapper">
+            <p class="referral-body__desc">We are a talent crowdsourcing portal on which anyone can refer friends, family, colleagues, and peers to great jobs.</p>
+            <p class="referral-body__desc">When accepting the referral, your profile will be sent to the employer, who then may reach out directly to discuss the opportunity in detail.</p>
+            <p class="referral-body__desc">Accepting the referral is free and will take only a few moments. To proceed, please answer the following question(s):</p>
+            <div class="c-modal">
+              <div class="c-modal__row c-modal__row-1">
+                <p class="c-modal__row-title">How many years of experience does your referral have?</p>
+                <div class="c-modal__range">
+                  <div>
+                    <input class="c-modal__range-result" type="text" value="10">
+                  </div>
+                  <div>
+                    <input type="range" min="1" max="30" step="1" value="10">
+                  </div>
+                </div>
+              </div>
+              <div class="c-modal__row c-modal__row-1">
+                <p class="c-modal__row-title">Which sectors has your referral worked in?</p>
+                <div class="c-modal__tags">
+                  <select class="multipleSelect" multiple="" name="language">
+                    <option selected="" value="Healthcare">Healthcare</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Fast-moving consumer goods (FMCG)">Fast-moving consumer goods (FMCG)</option>
+                    <option value="Heating, ventilation, air condition (HVAC)">Heating, ventilation, air condition (HVAC)</option>
+                    <option value="Hotels">Hotels</option>
+                    <option value="HR Consulting">HR Consulting</option>
+                  </select>
+                </div>
+              </div>
+              <div class="c-modal__row c-modal__row-1">
+                <p class="c-modal__row-title">Please upload your referral’s CV</p>
+                <div class="c-modal__browse">
+                  <input id="file" type="file" name="" inputfile-js>
+                  <label for="file"><span>Browse</span><i class="icon-font icon-file-text"></i></label>
+                  <p><span>Browse your files</span></p>
+                </div>
+                <div class="c-modal__browse-info">Valid resume files are DOC, DOCX or PDF. Max of 5 MB</div>
+              </div>
+              <div class="c-modal__row c-modal__row-1">
+                <p class="c-modal__row-title">Please answer the following question(s) for the employer:</p>
+                <div class="c-modal__input c-modal__input-1">
+                  <input type="text" name="" placeholder="Write Something">
+                </div>
+              </div>
+              <div class="c-modal__row c-modal__row-1">
+                <p class="c-modal__row-title">What monthly salary would you expect?</p>
+                <div class="c-modal__range c-modal__range--wrap">
+                  <div>
+                    <input class="c-modal__range-sum" type="text" value="500">
+                  </div>
+                  <div>
+                    <input type="range" min="0" max="1500" step="1" value="500">
+                  </div>
+                  <div>
+                    <div class="c-modal__input c-modal__input--select c-modal__input-1">
+                      <select name="">
+                        <option selected disabled>Currency</option>
+                        <option>USD</option>
+                        <option>EUR</option>
+                        <option>UAH</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-modal__optional">
+                <div class="c-modal__optional-head"><i class="icon-font icon-corner"></i>
+                  <p data-show-val="WOULD YOU LIKE TO PROVIDE OPTIONAL INFORMATION TO THE EMPLOYER?" data-hide-val="WOULD YOU LIKE TO PROVIDE OPTIONAL INFORMATION TO THE EMPLOYER?">WOULD YOU LIKE TO PROVIDE OPTIONAL INFORMATION TO THE EMPLOYER?</p>
+                </div>
+                <div class="c-modal__optional-body">
+                  <div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Mobile phone">
+                    </div>
+                    <div class="c-modal__input c-modal__input--select c-modal__input-1">
+                      <select name="">
+                        <option selected disabled>Highest degree</option>
+                        <option>Action</option>
+                        <option>More Action</option>
+                        <option>One More Action</option>
+                      </select>
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Current Residence (City / Country)">
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Certifications &amp; Diplomas">
+                    </div>
+                    <div class="c-modal__input c-modal__input--select c-modal__input-1">
+                      <select name="">
+                        <option selected disabled>Career Level</option>
+                        <option>Action</option>
+                        <option>More Action</option>
+                        <option>One More Action</option>
+                      </select>
+                    </div>
+                    <div class="c-modal__input c-modal__input--select c-modal__input-1">
+                      <select name="">
+                        <option selected disabled>Current job function</option>
+                        <option>Action</option>
+                        <option>More Action</option>
+                        <option>One More Action</option>
+                      </select>
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Current Designation">
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Current Employer">
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Languages known">
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Skills">
+                    </div>
+                    <div class="c-modal__input c-modal__input-1">
+                      <input type="text" name="" placeholder="Anything else the employer should know?">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-modal__btn-wrapper"><a class="c-modal__btn" href="#" title=""><span>YES, I WANT TO BE REFERRED!</span></a></div><a class="referral-body__link" href="#" title="">No, I dont want to be referred for this role.</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION referral body :: END-->
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer footer--mod" id="footer">
