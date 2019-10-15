@@ -11,10 +11,7 @@
       margin-right: auto;
 
       &__wrapper {
-        padding-bottom: 90px;
-        @include adaptive(767) {
-          padding-bottom: 75px;
-        }
+        padding-bottom: 75px;
       }
     }
 
@@ -867,12 +864,47 @@
     }
 
     &__link {
+      position: relative;
       display: block;
       margin-top: 15px;
       font-size: 14px;
       letter-spacing: 0.5px;
       text-align: center;
       color: #e55d6d;
+
+      &:hover {
+        &:before {
+          width: 50%;
+          @include transition(width);
+        }
+        &:after {
+          width: 50%;
+          @include transition(width);
+        }
+      }
+
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #e55d6d;
+        @include transition(width);
+      }
+
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -915,6 +947,7 @@
     }
 
     &__line {
+      position: relative;
       display: block;
       width: 100%;
       height: 2px;
@@ -925,7 +958,7 @@
     &__desc {
       font-size: 14px;
       font-weight: 300;
-      line-height: 1.67;
+      line-height: 2;
       letter-spacing: 0.5px;
       text-align: center;
       color: #344563;

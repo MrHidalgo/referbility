@@ -16,7 +16,7 @@ section#referral-body.referral-body
 
       .c-modal
         .c-modal__row.c-modal__row-1
-          p.c-modal__row-title How many years of experience does your referral have?
+          p.c-modal__row-title How many years of experience do you have?
 
           .c-modal__range
             div
@@ -25,7 +25,7 @@ section#referral-body.referral-body
               input(type='range' min='1' max='30' step='1' value='10')
 
         .c-modal__row.c-modal__row-1
-          p.c-modal__row-title Which sectors has your referral worked in?
+          p.c-modal__row-title Which sectors have you worked in?
 
           .c-modal__tags
             select.multipleSelect(multiple='', name='language')
@@ -37,7 +37,7 @@ section#referral-body.referral-body
               option(value='HR Consulting') HR Consulting
 
         .c-modal__row.c-modal__row-1
-          p.c-modal__row-title Please upload your referral’s CV
+          p.c-modal__row-title Please upload your CV so we can share it with the employer:
 
           .c-modal__browse
             input#file(type='file' name='' inputfile-js)
@@ -60,9 +60,9 @@ section#referral-body.referral-body
 
           .c-modal__range.c-modal__range--wrap
             div
-              input.c-modal__range-sum(type='text' value='500')
+              input.c-modal__range-sum(type='text' value='5000')
             div
-              input(type='range' min='0' max='1500' step='1' value='500')
+              input(type='range' min='0' max='100000' step='1' value='5000')
             div
               .c-modal__input.c-modal__input--select.c-modal__input-1
                 select(name='')
@@ -117,6 +117,7 @@ section#referral-body.referral-body
           a.c-modal__btn(href='#' title='')
             span YES, I WANT TO BE REFERRED!
 
-        a.referral-body__link(href='#' title='') No, I dont want to be referred for this role.
+        .referral-body__link-wrapper
+          a.referral-body__link(href='#' title='') No, I dont want to be referred for this role.
 
 // SECTION referral body :: END

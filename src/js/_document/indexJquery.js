@@ -108,7 +108,7 @@ $(document).ready((ev) => {
 
       if(_val <= 0) {
         $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(1).trigger('input');
-      } else if (_val > 1500) {
+      } else if (_val > 100000) {
         $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(30).trigger('input');
       } else {
         $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val($(ev.currentTarget).val()).trigger('input');

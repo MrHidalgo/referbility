@@ -6087,17 +6087,10 @@ picture {
 
 /* line 13, src/scss/_components/referral/_referral.scss */
 .referral-main .logo__wrapper {
-  padding-bottom: 90px;
+  padding-bottom: 75px;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 13, src/scss/_components/referral/_referral.scss */
-  .referral-main .logo__wrapper {
-    padding-bottom: 75px;
-  }
-}
-
-/* line 21, src/scss/_components/referral/_referral.scss */
+/* line 18, src/scss/_components/referral/_referral.scss */
 .referral-main__bg {
   z-index: 0;
   position: absolute;
@@ -6107,14 +6100,14 @@ picture {
   height: 100%;
 }
 
-/* line 29, src/scss/_components/referral/_referral.scss */
+/* line 26, src/scss/_components/referral/_referral.scss */
 .referral-main__bg-top, .referral-main__bg-bottom {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 36, src/scss/_components/referral/_referral.scss */
+/* line 33, src/scss/_components/referral/_referral.scss */
 .referral-main__bg-top {
   overflow: hidden;
   top: 0;
@@ -6126,7 +6119,7 @@ picture {
   background-image: linear-gradient(247deg, #8181ff, #5153dc);
 }
 
-/* line 43, src/scss/_components/referral/_referral.scss */
+/* line 40, src/scss/_components/referral/_referral.scss */
 .referral-main__bg-top > div {
   opacity: 0.7;
   position: absolute;
@@ -6136,7 +6129,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 50, src/scss/_components/referral/_referral.scss */
+/* line 47, src/scss/_components/referral/_referral.scss */
 .referral-main__bg-top > div:nth-of-type(1) {
   left: 15px;
   bottom: -205px;
@@ -6144,13 +6137,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 50, src/scss/_components/referral/_referral.scss */
+  /* line 47, src/scss/_components/referral/_referral.scss */
   .referral-main__bg-top > div:nth-of-type(1) {
     left: -200px;
   }
 }
 
-/* line 58, src/scss/_components/referral/_referral.scss */
+/* line 55, src/scss/_components/referral/_referral.scss */
 .referral-main__bg-top > div:nth-of-type(2) {
   top: 50%;
   margin-top: -205px;
@@ -6159,26 +6152,26 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 58, src/scss/_components/referral/_referral.scss */
+  /* line 55, src/scss/_components/referral/_referral.scss */
   .referral-main__bg-top > div:nth-of-type(2) {
     right: -250px;
   }
 }
 
-/* line 70, src/scss/_components/referral/_referral.scss */
+/* line 67, src/scss/_components/referral/_referral.scss */
 .referral-main__bg-bottom {
   bottom: 0;
   height: -webkit-calc(100% - 580px);
   height: calc(100% - 580px);
 }
 
-/* line 76, src/scss/_components/referral/_referral.scss */
+/* line 73, src/scss/_components/referral/_referral.scss */
 .referral-main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 81, src/scss/_components/referral/_referral.scss */
+/* line 78, src/scss/_components/referral/_referral.scss */
 .referral-main__title {
   padding-bottom: 10px;
   font-size: 36px;
@@ -6188,13 +6181,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 81, src/scss/_components/referral/_referral.scss */
+  /* line 78, src/scss/_components/referral/_referral.scss */
   .referral-main__title {
     font-size: 33px;
   }
 }
 
-/* line 92, src/scss/_components/referral/_referral.scss */
+/* line 89, src/scss/_components/referral/_referral.scss */
 .referral-main__subtitle {
   padding-bottom: 40px;
   font-size: 18px;
@@ -6204,13 +6197,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 92, src/scss/_components/referral/_referral.scss */
+  /* line 89, src/scss/_components/referral/_referral.scss */
   .referral-main__subtitle {
     font-size: 16px;
   }
 }
 
-/* line 103, src/scss/_components/referral/_referral.scss */
+/* line 100, src/scss/_components/referral/_referral.scss */
 .referral-main__box {
   overflow: hidden;
   width: 100%;
@@ -6227,7 +6220,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 103, src/scss/_components/referral/_referral.scss */
+  /* line 100, src/scss/_components/referral/_referral.scss */
   .referral-main__box {
     width: -webkit-calc(100% + 30px);
     width: calc(100% + 30px);
@@ -6235,7 +6228,7 @@ picture {
   }
 }
 
-/* line 119, src/scss/_components/referral/_referral.scss */
+/* line 116, src/scss/_components/referral/_referral.scss */
 .referral-main__box-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6249,7 +6242,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 119, src/scss/_components/referral/_referral.scss */
+  /* line 116, src/scss/_components/referral/_referral.scss */
   .referral-main__box-head {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -6258,7 +6251,7 @@ picture {
   }
 }
 
-/* line 131, src/scss/_components/referral/_referral.scss */
+/* line 128, src/scss/_components/referral/_referral.scss */
 .referral-main__box-head > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6277,7 +6270,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 131, src/scss/_components/referral/_referral.scss */
+  /* line 128, src/scss/_components/referral/_referral.scss */
   .referral-main__box-head > div:nth-of-type(1) {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -6293,7 +6286,7 @@ picture {
   }
 }
 
-/* line 145, src/scss/_components/referral/_referral.scss */
+/* line 142, src/scss/_components/referral/_referral.scss */
 .referral-main__box-head > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -6303,19 +6296,19 @@ picture {
   max-width: 100%;
 }
 
-/* line 153, src/scss/_components/referral/_referral.scss */
+/* line 150, src/scss/_components/referral/_referral.scss */
 .referral-main__box-body {
   padding: 30px 50px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 153, src/scss/_components/referral/_referral.scss */
+  /* line 150, src/scss/_components/referral/_referral.scss */
   .referral-main__box-body {
     padding: 30px 15px;
   }
 }
 
-/* line 160, src/scss/_components/referral/_referral.scss */
+/* line 157, src/scss/_components/referral/_referral.scss */
 .referral-main__box-title {
   padding-bottom: 20px;
   font-size: 20px;
@@ -6325,14 +6318,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 160, src/scss/_components/referral/_referral.scss */
+  /* line 157, src/scss/_components/referral/_referral.scss */
   .referral-main__box-title {
     font-size: 18px;
     text-align: center;
   }
 }
 
-/* line 172, src/scss/_components/referral/_referral.scss */
+/* line 169, src/scss/_components/referral/_referral.scss */
 .referral-main__box-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6360,7 +6353,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 186, src/scss/_components/referral/_referral.scss */
+/* line 183, src/scss/_components/referral/_referral.scss */
 .referral-main__box-link:hover {
   color: #ffffff;
   background-color: #5153dc;
@@ -6369,7 +6362,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 193, src/scss/_components/referral/_referral.scss */
+/* line 190, src/scss/_components/referral/_referral.scss */
 .referral-main__box-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6378,7 +6371,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 193, src/scss/_components/referral/_referral.scss */
+  /* line 190, src/scss/_components/referral/_referral.scss */
   .referral-main__box-row {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -6386,29 +6379,29 @@ picture {
   }
 }
 
-/* line 199, src/scss/_components/referral/_referral.scss */
+/* line 196, src/scss/_components/referral/_referral.scss */
 .referral-main__box-row .referral-main__box-info {
   padding-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 199, src/scss/_components/referral/_referral.scss */
+  /* line 196, src/scss/_components/referral/_referral.scss */
   .referral-main__box-row .referral-main__box-info {
     padding-bottom: 15px;
   }
 }
 
-/* line 205, src/scss/_components/referral/_referral.scss */
+/* line 202, src/scss/_components/referral/_referral.scss */
 .referral-main__box-row .referral-main__box-info p {
   line-height: 2.3;
 }
 
-/* line 209, src/scss/_components/referral/_referral.scss */
+/* line 206, src/scss/_components/referral/_referral.scss */
 .referral-main__box-row .referral-main__box-info span {
   font-weight: 500;
 }
 
-/* line 213, src/scss/_components/referral/_referral.scss */
+/* line 210, src/scss/_components/referral/_referral.scss */
 .referral-main__box-row .referral-main__box-info i {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6435,7 +6428,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 229, src/scss/_components/referral/_referral.scss */
+/* line 226, src/scss/_components/referral/_referral.scss */
 .referral-main__box-row .referral-main__box-info u {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6465,31 +6458,31 @@ picture {
   color: #ffffff;
 }
 
-/* line 250, src/scss/_components/referral/_referral.scss */
+/* line 247, src/scss/_components/referral/_referral.scss */
 .referral-main__box-col {
   width: 100%;
   max-width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 250, src/scss/_components/referral/_referral.scss */
+  /* line 247, src/scss/_components/referral/_referral.scss */
   .referral-main__box-col {
     max-width: 100%;
     padding: 0 !important;
   }
 }
 
-/* line 258, src/scss/_components/referral/_referral.scss */
+/* line 255, src/scss/_components/referral/_referral.scss */
 .referral-main__box-col:nth-of-type(1) {
   padding-right: 15px;
 }
 
-/* line 261, src/scss/_components/referral/_referral.scss */
+/* line 258, src/scss/_components/referral/_referral.scss */
 .referral-main__box-col:nth-of-type(2) {
   padding-left: 15px;
 }
 
-/* line 266, src/scss/_components/referral/_referral.scss */
+/* line 263, src/scss/_components/referral/_referral.scss */
 .referral-main__box-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6503,7 +6496,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 272, src/scss/_components/referral/_referral.scss */
+  /* line 269, src/scss/_components/referral/_referral.scss */
   .referral-main__box-info.referral-main__box-info-1 li {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -6514,23 +6507,23 @@ picture {
             justify-content: center;
     padding-bottom: 15px;
   }
-  /* line 277, src/scss/_components/referral/_referral.scss */
+  /* line 274, src/scss/_components/referral/_referral.scss */
   .referral-main__box-info.referral-main__box-info-1 li > div {
     width: 100% !important;
   }
-  /* line 281, src/scss/_components/referral/_referral.scss */
+  /* line 278, src/scss/_components/referral/_referral.scss */
   .referral-main__box-info.referral-main__box-info-1 li p,
   .referral-main__box-info.referral-main__box-info-1 li span {
     display: block;
     text-align: center;
   }
-  /* line 287, src/scss/_components/referral/_referral.scss */
+  /* line 284, src/scss/_components/referral/_referral.scss */
   .referral-main__box-info.referral-main__box-info-1 li span {
     font-weight: 500;
   }
 }
 
-/* line 294, src/scss/_components/referral/_referral.scss */
+/* line 291, src/scss/_components/referral/_referral.scss */
 .referral-main__box-info li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6543,17 +6536,17 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 299, src/scss/_components/referral/_referral.scss */
+/* line 296, src/scss/_components/referral/_referral.scss */
 .referral-main__box-info li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 304, src/scss/_components/referral/_referral.scss */
+/* line 301, src/scss/_components/referral/_referral.scss */
 .referral-main__box-info li > div:nth-of-type(1) {
   width: 150px;
 }
 
-/* line 307, src/scss/_components/referral/_referral.scss */
+/* line 304, src/scss/_components/referral/_referral.scss */
 .referral-main__box-info li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -6563,7 +6556,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 313, src/scss/_components/referral/_referral.scss */
+/* line 310, src/scss/_components/referral/_referral.scss */
 .referral-main__box-info li > div p,
 .referral-main__box-info li > div span {
   font-size: 14px;
@@ -6572,15 +6565,16 @@ picture {
   color: #344563;
 }
 
-/* line 326, src/scss/_components/referral/_referral.scss */
+/* line 323, src/scss/_components/referral/_referral.scss */
 .referral-body {
   position: relative;
   padding-top: 40px;
   padding-bottom: 80px;
 }
 
-/* line 331, src/scss/_components/referral/_referral.scss */
+/* line 328, src/scss/_components/referral/_referral.scss */
 .referral-body__bg {
+  overflow: hidden;
   z-index: 0;
   position: absolute;
   top: 0;
@@ -6590,24 +6584,24 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 331, src/scss/_components/referral/_referral.scss */
+  /* line 328, src/scss/_components/referral/_referral.scss */
   .referral-body__bg {
     display: none;
   }
 }
 
-/* line 342, src/scss/_components/referral/_referral.scss */
+/* line 340, src/scss/_components/referral/_referral.scss */
 .referral-body__bg > div {
   position: absolute;
 }
 
-/* line 345, src/scss/_components/referral/_referral.scss */
+/* line 343, src/scss/_components/referral/_referral.scss */
 .referral-body__bg > div:nth-of-type(1) {
   top: 100px;
   left: 0;
 }
 
-/* line 349, src/scss/_components/referral/_referral.scss */
+/* line 347, src/scss/_components/referral/_referral.scss */
 .referral-body__bg > div:nth-of-type(2) {
   top: 50%;
   right: -330px;
@@ -6619,7 +6613,7 @@ picture {
   border: solid 150px rgba(234, 230, 255, 0.3);
 }
 
-/* line 361, src/scss/_components/referral/_referral.scss */
+/* line 359, src/scss/_components/referral/_referral.scss */
 .referral-body__wrapper {
   z-index: 2;
   position: relative;
@@ -6629,22 +6623,22 @@ picture {
   margin-right: auto;
 }
 
-/* line 370, src/scss/_components/referral/_referral.scss */
+/* line 368, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal {
   background-color: transparent;
 }
 
-/* line 374, src/scss/_components/referral/_referral.scss */
+/* line 372, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__input-1 {
   padding-bottom: 15px;
 }
 
-/* line 378, src/scss/_components/referral/_referral.scss */
+/* line 376, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__input-2 {
   padding-bottom: 30px;
 }
 
-/* line 383, src/scss/_components/referral/_referral.scss */
+/* line 381, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__input--select select {
   outline: none;
   width: 100%;
@@ -6660,7 +6654,7 @@ picture {
   color: #091e42;
 }
 
-/* line 397, src/scss/_components/referral/_referral.scss */
+/* line 395, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__input input {
   outline: none;
   width: 100%;
@@ -6705,12 +6699,12 @@ picture {
   color: #091e42;
 }
 
-/* line 414, src/scss/_components/referral/_referral.scss */
+/* line 412, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__row {
   padding-bottom: 30px;
 }
 
-/* line 417, src/scss/_components/referral/_referral.scss */
+/* line 415, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__row-title {
   padding-bottom: 15px;
   font-size: 16px;
@@ -6720,13 +6714,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 417, src/scss/_components/referral/_referral.scss */
+  /* line 415, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__row-title {
     font-size: 14px;
   }
 }
 
-/* line 429, src/scss/_components/referral/_referral.scss */
+/* line 427, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6739,7 +6733,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 433, src/scss/_components/referral/_referral.scss */
+  /* line 431, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__range--wrap {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -6747,29 +6741,29 @@ picture {
   }
 }
 
-/* line 439, src/scss/_components/referral/_referral.scss */
+/* line 437, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range > div {
   width: 100%;
 }
 
-/* line 442, src/scss/_components/referral/_referral.scss */
+/* line 440, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range > div:nth-of-type(1), .referral-body .c-modal__range > div:nth-of-type(3) {
   max-width: 150px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 442, src/scss/_components/referral/_referral.scss */
+  /* line 440, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__range > div:nth-of-type(1), .referral-body .c-modal__range > div:nth-of-type(3) {
     max-width: 70px;
   }
 }
 
-/* line 450, src/scss/_components/referral/_referral.scss */
+/* line 448, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range > div:nth-of-type(1) {
   padding-right: 15px;
 }
 
-/* line 454, src/scss/_components/referral/_referral.scss */
+/* line 452, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -6779,13 +6773,13 @@ picture {
   max-width: 100%;
 }
 
-/* line 460, src/scss/_components/referral/_referral.scss */
+/* line 458, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range > div:nth-of-type(3) {
   padding-left: 15px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 460, src/scss/_components/referral/_referral.scss */
+  /* line 458, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__range > div:nth-of-type(3) {
     padding-left: 0;
     padding-top: 15px;
@@ -6794,7 +6788,7 @@ picture {
   }
 }
 
-/* line 471, src/scss/_components/referral/_referral.scss */
+/* line 469, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range-result, .referral-body .c-modal__range-sum {
   outline: none;
   cursor: pointer;
@@ -6824,18 +6818,18 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 471, src/scss/_components/referral/_referral.scss */
+  /* line 469, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__range-result, .referral-body .c-modal__range-sum {
     width: 60px;
   }
 }
 
-/* line 492, src/scss/_components/referral/_referral.scss */
+/* line 490, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range .c-modal__input {
   padding-bottom: 0;
 }
 
-/* line 496, src/scss/_components/referral/_referral.scss */
+/* line 494, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range input[type=range] {
   outline: none;
   cursor: pointer;
@@ -6858,7 +6852,7 @@ picture {
           appearance: none;
 }
 
-/* line 511, src/scss/_components/referral/_referral.scss */
+/* line 509, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range input[type=range]::-webkit-slider-runnable-track {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -6868,19 +6862,19 @@ picture {
           appearance: none;
 }
 
-/* line 518, src/scss/_components/referral/_referral.scss */
+/* line 516, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range input[type=range]::-moz-range-track {
   box-shadow: none;
   border: none;
   background: transparent;
 }
 
-/* line 524, src/scss/_components/referral/_referral.scss */
+/* line 522, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range input[type=range]::-moz-focus-outer {
   border: 0;
 }
 
-/* line 528, src/scss/_components/referral/_referral.scss */
+/* line 526, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range input[type=range]::-webkit-slider-thumb {
   width: 9px;
   height: 9px;
@@ -6893,7 +6887,7 @@ picture {
           appearance: none;
 }
 
-/* line 537, src/scss/_components/referral/_referral.scss */
+/* line 535, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__range input[type=range]::-moz-range-thumb {
   width: 9px;
   height: 9px;
@@ -6902,7 +6896,7 @@ picture {
   border-radius: 100%;
 }
 
-/* line 547, src/scss/_components/referral/_referral.scss */
+/* line 545, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstQueryInput {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -6945,7 +6939,7 @@ picture {
   color: #091e42;
 }
 
-/* line 559, src/scss/_components/referral/_referral.scss */
+/* line 557, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstElement {
   width: 100%;
   min-height: 45px;
@@ -6955,19 +6949,19 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 567, src/scss/_components/referral/_referral.scss */
+/* line 565, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstControls {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 573, src/scss/_components/referral/_referral.scss */
+/* line 571, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstMultipleMode .fstControls {
   padding-top: 0.6em;
 }
 
-/* line 577, src/scss/_components/referral/_referral.scss */
+/* line 575, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstChoiceItem {
   padding: 0.25em 1.75em 0.25em 0.75em;
   -webkit-border-radius: 4px;
@@ -6980,7 +6974,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 577, src/scss/_components/referral/_referral.scss */
+  /* line 575, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__tags .fstChoiceItem {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6993,14 +6987,14 @@ picture {
   }
 }
 
-/* line 590, src/scss/_components/referral/_referral.scss */
+/* line 588, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstChoiceItem .fstChoiceRemove {
   font-size: 20px;
   left: auto;
   right: 5px;
 }
 
-/* line 597, src/scss/_components/referral/_referral.scss */
+/* line 595, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstResults {
   border: none;
   -webkit-border-bottom-left-radius: 4px;
@@ -7010,7 +7004,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 604, src/scss/_components/referral/_referral.scss */
+/* line 602, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstResultItem {
   font-size: 14px;
   line-height: 2.5;
@@ -7019,7 +7013,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 611, src/scss/_components/referral/_referral.scss */
+/* line 609, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstResultItem.fstSelected {
   display: none;
   border-color: #020d60;
@@ -7027,7 +7021,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 619, src/scss/_components/referral/_referral.scss */
+/* line 617, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__tags .fstNoResults {
   font-size: 14px;
   line-height: 2.5;
@@ -7036,12 +7030,12 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 628, src/scss/_components/referral/_referral.scss */
+/* line 626, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse {
   position: relative;
 }
 
-/* line 631, src/scss/_components/referral/_referral.scss */
+/* line 629, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse input {
   opacity: 0;
   cursor: pointer;
@@ -7052,7 +7046,7 @@ picture {
   height: 100%;
 }
 
-/* line 641, src/scss/_components/referral/_referral.scss */
+/* line 639, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse label {
   cursor: pointer;
   overflow: hidden;
@@ -7084,13 +7078,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 641, src/scss/_components/referral/_referral.scss */
+  /* line 639, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__browse label {
     width: 60px;
   }
 }
 
-/* line 661, src/scss/_components/referral/_referral.scss */
+/* line 659, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse label:before {
   content: '';
   opacity: 0;
@@ -7108,7 +7102,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 675, src/scss/_components/referral/_referral.scss */
+/* line 673, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse label:hover:before {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -7116,14 +7110,14 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 681, src/scss/_components/referral/_referral.scss */
+/* line 679, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse label span,
 .referral-body .c-modal__browse label .icon-font {
   z-index: 2;
   position: relative;
 }
 
-/* line 687, src/scss/_components/referral/_referral.scss */
+/* line 685, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse label span {
   padding-right: 15px;
   font-size: 12px;
@@ -7135,13 +7129,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 687, src/scss/_components/referral/_referral.scss */
+  /* line 685, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__browse label span {
     display: none;
   }
 }
 
-/* line 701, src/scss/_components/referral/_referral.scss */
+/* line 699, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse p {
   cursor: pointer;
   display: block;
@@ -7156,7 +7150,7 @@ picture {
   color: #091e42;
 }
 
-/* line 713, src/scss/_components/referral/_referral.scss */
+/* line 711, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse p span {
   white-space: nowrap;
   overflow: hidden;
@@ -7167,13 +7161,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 713, src/scss/_components/referral/_referral.scss */
+  /* line 711, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__browse p span {
     padding-right: 75px;
   }
 }
 
-/* line 725, src/scss/_components/referral/_referral.scss */
+/* line 723, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__browse-info {
   padding-top: 15px;
   font-size: 12px;
@@ -7182,12 +7176,12 @@ picture {
   color: #091e42;
 }
 
-/* line 734, src/scss/_components/referral/_referral.scss */
+/* line 732, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional {
   padding-top: 20px;
 }
 
-/* line 738, src/scss/_components/referral/_referral.scss */
+/* line 736, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional.is-open .icon-corner {
   -webkit-transform: rotate(90deg) scale(1);
       -ms-transform: rotate(90deg) scale(1);
@@ -7199,7 +7193,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 744, src/scss/_components/referral/_referral.scss */
+/* line 742, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7217,7 +7211,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 744, src/scss/_components/referral/_referral.scss */
+  /* line 742, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__optional-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -7235,7 +7229,7 @@ picture {
   }
 }
 
-/* line 755, src/scss/_components/referral/_referral.scss */
+/* line 753, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional-head .icon-font {
   margin-right: 10px;
   -webkit-transform: rotate(90deg) scale(-1);
@@ -7248,7 +7242,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 761, src/scss/_components/referral/_referral.scss */
+/* line 759, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional-head p {
   font-weight: 500;
   text-align: center;
@@ -7256,23 +7250,23 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 761, src/scss/_components/referral/_referral.scss */
+  /* line 759, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__optional-head p {
     font-size: 14px;
   }
 }
 
-/* line 771, src/scss/_components/referral/_referral.scss */
+/* line 769, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional-body {
   display: none;
 }
 
-/* line 774, src/scss/_components/referral/_referral.scss */
+/* line 772, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__optional-body > div {
   padding: 15px 0 0;
 }
 
-/* line 780, src/scss/_components/referral/_referral.scss */
+/* line 778, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__btn {
   overflow: hidden;
   position: relative;
@@ -7309,7 +7303,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 798, src/scss/_components/referral/_referral.scss */
+/* line 796, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -7337,7 +7331,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 816, src/scss/_components/referral/_referral.scss */
+/* line 814, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -7348,7 +7342,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 820, src/scss/_components/referral/_referral.scss */
+/* line 818, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -7363,7 +7357,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 829, src/scss/_components/referral/_referral.scss */
+/* line 827, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -7375,7 +7369,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 840, src/scss/_components/referral/_referral.scss */
+/* line 838, src/scss/_components/referral/_referral.scss */
 .referral-body .c-modal__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7393,13 +7387,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 840, src/scss/_components/referral/_referral.scss */
+  /* line 838, src/scss/_components/referral/_referral.scss */
   .referral-body .c-modal__btn-wrapper {
     padding-top: 30px;
   }
 }
 
-/* line 852, src/scss/_components/referral/_referral.scss */
+/* line 850, src/scss/_components/referral/_referral.scss */
 .referral-body__desc {
   padding-bottom: 20px;
   font-size: 16px;
@@ -7410,19 +7404,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 852, src/scss/_components/referral/_referral.scss */
+  /* line 850, src/scss/_components/referral/_referral.scss */
   .referral-body__desc {
     font-size: 14px;
   }
 }
 
-/* line 863, src/scss/_components/referral/_referral.scss */
+/* line 861, src/scss/_components/referral/_referral.scss */
 .referral-body__desc:last-of-type {
   padding-bottom: 60px;
 }
 
-/* line 868, src/scss/_components/referral/_referral.scss */
+/* line 866, src/scss/_components/referral/_referral.scss */
 .referral-body__link {
+  position: relative;
   display: block;
   margin-top: 15px;
   font-size: 14px;
@@ -7431,15 +7426,67 @@ picture {
   color: #e55d6d;
 }
 
-/* line 878, src/scss/_components/referral/_referral.scss */
+/* line 876, src/scss/_components/referral/_referral.scss */
+.referral-body__link:hover:before {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 880, src/scss/_components/referral/_referral.scss */
+.referral-body__link:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 886, src/scss/_components/referral/_referral.scss */
+.referral-body__link:before {
+  left: 50%;
+}
+
+/* line 889, src/scss/_components/referral/_referral.scss */
+.referral-body__link:after {
+  right: 50%;
+}
+
+/* line 893, src/scss/_components/referral/_referral.scss */
+.referral-body__link:before, .referral-body__link:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #e55d6d;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 904, src/scss/_components/referral/_referral.scss */
+.referral-body__link-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 911, src/scss/_components/referral/_referral.scss */
 .referral-footer {
   position: relative;
   padding-top: 40px;
   padding-bottom: 150px;
 }
 
-/* line 883, src/scss/_components/referral/_referral.scss */
+/* line 916, src/scss/_components/referral/_referral.scss */
 .referral-footer__bg {
+  overflow: hidden;
   z-index: 0;
   position: absolute;
   top: 0;
@@ -7449,13 +7496,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 883, src/scss/_components/referral/_referral.scss */
+  /* line 916, src/scss/_components/referral/_referral.scss */
   .referral-footer__bg {
     display: none;
   }
 }
 
-/* line 894, src/scss/_components/referral/_referral.scss */
+/* line 928, src/scss/_components/referral/_referral.scss */
 .referral-footer__bg > div {
   position: absolute;
   bottom: -150px;
@@ -7468,7 +7515,7 @@ picture {
   border: solid 130px rgba(234, 230, 255, 0.3);
 }
 
-/* line 906, src/scss/_components/referral/_referral.scss */
+/* line 940, src/scss/_components/referral/_referral.scss */
 .referral-footer__wrapper {
   z-index: 2;
   position: relative;
@@ -7478,8 +7525,9 @@ picture {
   margin-right: auto;
 }
 
-/* line 915, src/scss/_components/referral/_referral.scss */
+/* line 949, src/scss/_components/referral/_referral.scss */
 .referral-footer__line {
+  position: relative;
   display: block;
   width: 100%;
   height: 2px;
@@ -7487,11 +7535,11 @@ picture {
   margin-bottom: 20px;
 }
 
-/* line 923, src/scss/_components/referral/_referral.scss */
+/* line 958, src/scss/_components/referral/_referral.scss */
 .referral-footer__desc {
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.67;
+  line-height: 2;
   letter-spacing: 0.5px;
   text-align: center;
   color: #344563;
