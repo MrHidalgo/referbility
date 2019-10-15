@@ -293,6 +293,10 @@ $(document).ready(function (ev) {
       };
     };
 
+    var numberWithCommas = function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
     // $('.c-modal__price span').countTo(_countToOption(0, 2000));
 
     $('.c-modal__radio').on('click', function (ev) {
@@ -346,7 +350,11 @@ $(document).ready(function (ev) {
           max = e.target.max,
           val = e.target.value;
 
-      $(e.currentTarget).closest('.c-modal__range').find('.c-modal__range-result, .c-modal__range-sum').val(val);
+      if ($(e.currentTarget).closest('.c-modal__range').find('.c-modal__range-sum').length) {
+        $(e.currentTarget).closest('.c-modal__range').find('.c-modal__range-sum').val(numberWithCommas(val));
+      } else {
+        $(e.currentTarget).closest('.c-modal__range').find('.c-modal__range-result').val(val);
+      }
 
       $(e.target).css({
         'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
@@ -364,15 +372,24 @@ $(document).ready(function (ev) {
         $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val($(ev.currentTarget).val()).trigger('input');
       }
     });
-    $('.c-modal__range-sum').on('keyup', function (ev) {
-      var _val = $(ev.currentTarget).val();
 
-      if (_val <= 0) {
-        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(1).trigger('input');
-      } else if (_val > 100000) {
-        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val(30).trigger('input');
-      } else {
-        $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]').val($(ev.currentTarget).val()).trigger('input');
+    $('.c-modal__range-sum').on('blur keyup', function (ev) {
+      var _val = $(ev.currentTarget).val().replace(/,/g, ''),
+          _newVal = Math.round(parseInt(_val).toFixed(0) / 500) * 500,
+          _range = $(ev.currentTarget).closest('.c-modal__range').find('input[type=range]');
+
+      var _helperInputVal = function _helperInputVal(_v) {
+        if (_v <= 0) {
+          _range.val(1).trigger('input');
+        } else if (_v > 100000) {
+          _range.val(numberWithCommas(100000)).trigger('input');
+        } else {
+          _range.val(_v).trigger('input');
+        }
+      };
+
+      if (ev.keyCode === 13 || ev.type === 'blur') {
+        _helperInputVal(_newVal);
       }
     });
   };
