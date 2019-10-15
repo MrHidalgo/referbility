@@ -329,6 +329,7 @@
     padding-bottom: 80px;
 
     &__bg {
+      overflow: hidden;
       z-index: 0;
       position: absolute;
       top: 0;
@@ -881,6 +882,7 @@
     padding-bottom: 150px;
 
     &__bg {
+      overflow: hidden;
       z-index: 0;
       position: absolute;
       top: 0;
