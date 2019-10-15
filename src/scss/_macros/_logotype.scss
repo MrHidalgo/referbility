@@ -75,6 +75,11 @@
     }
   }
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   &__link {
     display: flex;
     align-items: flex-start;

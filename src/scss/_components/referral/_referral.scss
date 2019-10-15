@@ -1,0 +1,327 @@
+// SECTION referral :: START
+
+.referral {
+  &-main {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .logo {
+      margin-left: auto;
+      margin-right: auto;
+
+      &__wrapper {
+        padding-bottom: 90px;
+        @include adaptive(767) {
+          padding-bottom: 75px;
+        }
+      }
+    }
+
+    &__bg {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &-top,
+      &-bottom {
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+
+      &-top {
+        overflow: hidden;
+        top: 0;
+        height: 580px;
+        box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
+        background-image: linear-gradient(247deg, #8181ff, #5153dc);
+
+        > div {
+          opacity: 0.7;
+          position: absolute;
+          width: 410px;
+          height: 410px;
+          border-radius: 50%;
+
+          &:nth-of-type(1) {
+            left: 15px;
+            bottom: -205px;
+            border: solid 130px rgba(169, 171, 254, 0.2);
+            @include adaptive(767) {
+              left: -200px;
+            }
+          }
+          &:nth-of-type(2) {
+            top: 50%;
+            margin-top: -205px;
+            right: 100px;
+            border: solid 150px rgba(169, 171, 254, 0.2);
+            @include adaptive(767) {
+              right: -250px;
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        bottom: 0;
+        height: calc(100% - 580px);
+      }
+    }
+
+    &__wrapper {
+      z-index: 2;
+      position: relative;
+    }
+
+    &__title {
+      padding-bottom: 10px;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      @include adaptive(767) {
+        font-size: 33px;
+      }
+    }
+
+    &__subtitle {
+      padding-bottom: 40px;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #ffffff;
+      @include adaptive(767) {
+        font-size: 16px;
+      }
+    }
+
+    &__box {
+      overflow: hidden;
+      width: 100%;
+      max-width: 750px;
+      min-height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+      box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+      border: solid 1px #dfdfff;
+      background-color: #ffffff;
+      @include adaptive(767) {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+      }
+
+      &-head {
+        display: flex;
+        padding: 30px;
+        border-bottom: solid 1px #dfdfff;
+        background-color: #ffffff;
+        box-shadow: 0 20px 50px 0 rgba(135, 131, 157, 0.1);
+        @include adaptive(767) {
+          flex-wrap: wrap;
+          padding: 30px 15px;
+        }
+
+        > div {
+          &:nth-of-type(1) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            width: 180px;
+            padding-right: 30px;
+            @include adaptive(767) {
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              padding-right: 0;
+              padding-bottom: 15px;
+            }
+          }
+          &:nth-of-type(2) {
+            flex: 1;
+            min-width: 1px;
+            max-width: 100%;
+          }
+        }
+      }
+
+      &-body {
+        padding: 30px 50px;
+        @include adaptive(767) {
+          padding: 30px 15px;
+        }
+      }
+
+      &-title {
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: #091e42;
+        @include adaptive(767) {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        border-radius: 3px;
+        background-color: #f8f7ff;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: rgba(#091e42, 0.7);
+        @include transition(background-color, color);
+
+        &:hover {
+          color: #ffffff;
+          background-color: #5153dc;
+          @include transition(background-color, color);
+        }
+      }
+
+      &-row {
+        display: flex;
+        @include adaptive(767) {
+          flex-wrap: wrap;
+        }
+
+        .referral-main__box-info {
+          padding-bottom: 25px;
+          @include adaptive(767) {
+            padding-bottom: 15px;
+          }
+
+          p {
+            line-height: 2.3;
+          }
+
+          span {
+            font-weight: 500;
+          }
+
+          i {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 28px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 3px;
+            background-color: #020d60;
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            color: #ffffff;
+          }
+
+          u {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 28px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 3px;
+            background-color: #6364e9;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+      }
+
+      &-col {
+        width: 100%;
+        max-width: 50%;
+        @include adaptive(767) {
+          max-width: 100%;
+          padding: 0 !important;
+        }
+
+        &:nth-of-type(1) {
+          padding-right: 15px;
+        }
+        &:nth-of-type(2) {
+          padding-left: 15px;
+        }
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+
+        &.referral-main__box-info-1 {
+          @include adaptive(767) {
+            li {
+              flex-wrap: wrap;
+              justify-content: center;
+              padding-bottom: 15px;
+
+              > div {
+                width: 100% !important;
+              }
+
+              p,
+              span {
+                display: block;
+                text-align: center;
+              }
+
+              span {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          padding-bottom: 5px;
+
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+
+          > div {
+            &:nth-of-type(1) {
+              width: 150px;
+            }
+            &:nth-of-type(2) {
+              flex: 1;
+              min-width: 1px;
+              max-width: 100%;
+            }
+
+            p,
+            span {
+              font-size: 14px;
+              line-height: 1.56;
+              letter-spacing: 0.5px;
+              color: #344563;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// SECTION referral :: END

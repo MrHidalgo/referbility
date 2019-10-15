@@ -1,0 +1,17 @@
+---
+title: Referbility | Referral through email
+
+pageClassName: p-referral-email
+---
+extends shared/_layout
+
+block header
+block modal
+block menu
+block footer
+  include components/_footer--mod
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/referral/_referral-main

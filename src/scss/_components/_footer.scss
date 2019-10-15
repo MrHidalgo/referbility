@@ -5,6 +5,22 @@
   padding-top: 50px;
   padding-bottom: 40px;
 
+  &--mod {
+    padding-top: 0;
+
+    .footer {
+      &__bg {
+        &-top {
+          height: 0;
+        }
+        &-bottom {
+          top: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
+
   &--referrer {
     .footer {
       &__bg {

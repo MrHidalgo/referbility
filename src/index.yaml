@@ -8,5 +8,8 @@ PageList:
   titleName: Referrer
   ready: 100
 - file: jobDetail.html
-  titleName: Referrer
+  titleName: Job Details modal
+  ready: 100
+- file: referral-email.html
+  titleName: Referral through email
   ready: 1
