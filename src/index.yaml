@@ -12,4 +12,7 @@ PageList:
   ready: 100
 - file: referral-email.html
   titleName: Referral through email
-  ready: 90
+  ready: 100
+- file: employer-kanban.html
+  titleName: Employer Kanban
+  ready: 1

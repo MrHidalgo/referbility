@@ -86,6 +86,42 @@
     }
   }
 
+  &.header--kanban {
+    background: linear-gradient(45deg, rgba(81,83,220,1) 0%,rgba(129,129,255,1) 100%);
+
+    .c-grid {
+      max-width: 1200px;
+    }
+
+    .header {
+      &__wrapper {
+        justify-content: space-between;
+        height: 80px;
+      }
+
+      &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 19px;
+        margin-left: 20px;
+
+        .icon-font {
+          color: #ffffff;
+          font-size: 20px;
+        }
+
+        &-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-right: 50px;
+        }
+      }
+    }
+  }
+
   .is-hideScroll & {
     z-index: 1010;
 

@@ -1,0 +1,14 @@
+// SECTION kanban :: START
+
+.kanban {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+// SECTION kanban :: END

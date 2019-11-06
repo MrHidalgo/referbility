@@ -27,20 +27,29 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == corner {
+	@if $filename == bar-chart {
 		$char: "\E001";
 	}
-	@if $filename == facebook {
+	@if $filename == bell {
 		$char: "\E002";
 	}
-	@if $filename == file-text {
+	@if $filename == corner {
 		$char: "\E003";
 	}
-	@if $filename == linkedin {
+	@if $filename == facebook {
 		$char: "\E004";
 	}
-	@if $filename == twitter {
+	@if $filename == file-text {
 		$char: "\E005";
+	}
+	@if $filename == linkedin {
+		$char: "\E006";
+	}
+	@if $filename == mail {
+		$char: "\E007";
+	}
+	@if $filename == twitter {
+		$char: "\E008";
 	}
 
 	@return $char;
@@ -57,6 +66,14 @@
 	}
 }
 
+.icon-bar-chart {
+	@include icon(bar-chart);
+
+}
+.icon-bell {
+	@include icon(bell);
+
+}
 .icon-corner {
 	@include icon(corner);
 
@@ -71,6 +88,10 @@
 }
 .icon-linkedin {
 	@include icon(linkedin);
+
+}
+.icon-mail {
+	@include icon(mail);
 
 }
 .icon-twitter {

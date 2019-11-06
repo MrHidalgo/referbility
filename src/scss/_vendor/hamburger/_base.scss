@@ -57,6 +57,11 @@
       background-image: none;
       background-color: $c-white;
     }
+
+    .hamburger--kanban & {
+      background-image: none;
+      background-color: #fff;
+    }
   }
 
   &::before,
