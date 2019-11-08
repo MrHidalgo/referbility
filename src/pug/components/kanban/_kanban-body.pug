@@ -1,7 +1,7 @@
 // SECTION kanban :: START
 
 mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)
-  a.kanban__box(href='#' title='' class='kanban__box--' + classMod)
+  a.kanban__box(href='#' title='ajsdhlaksjdh' class='kanban__box--' + classMod)
     if(badge)
       .kanban__box-badge
         p recommended
@@ -111,51 +111,57 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       p.kanban__title Received
       .kanban__title-indication 3
 
-    .kanban__box-cover(sortable-box-js)
-      +kanbanBox('','','','','','Jordan McBride')
-      +kanbanBox('','','','','away','Rodney Johnson')
-      +kanbanBox('','','','','disturb','Cecilia Yates')
+    .kanban__box-cover
+      div(sortable-box-js)
+        +kanbanBox('','','','','','Jordan McBride')
+        +kanbanBox('','','','','away','Rodney Johnson')
+        +kanbanBox('','','','','disturb','Cecilia Yates')
 
   .kanban__box-wrapper.kanban__box-wrapper-2
     .kanban__title-wrapper
       p.kanban__title Shortlisted
       .kanban__title-indication 2
 
-    .kanban__box-cover(sortable-box-js)
-      +kanbanBox('badge', true, '','','','Emily Welch')
-      +kanbanBox('','','','','away','Tony Duncan')
+    .kanban__box-cover
+      div(sortable-box-js)
+        +kanbanBox('badge', true, '','','','Emily Welch')
+        +kanbanBox('','','','','away','Tony Duncan')
 
   .kanban__box-wrapper.kanban__box-wrapper-3
     .kanban__title-wrapper
       p.kanban__title Interviews / Assessment
       .kanban__title-indication 1
 
-    .kanban__box-cover(sortable-box-js)
-      +kanbanBox('','','','','away','Kevin Brock')
+    .kanban__box-cover
+      div(sortable-box-js)
+        +kanbanBox('','','','','away','Kevin Brock')
 
   .kanban__box-wrapper.kanban__box-wrapper-4
     .kanban__title-wrapper
       p.kanban__title Job Offer
       .kanban__title-indication 2
 
-    .kanban__box-cover(sortable-box-js)
-      +kanbanBox('','','','','away','Ellen Weber')
-      +kanbanBox('','','','','away','Harvey Wilkerson')
+    .kanban__box-cover
+      div(sortable-box-js)
+        +kanbanBox('','','','','away','Ellen Weber')
+        +kanbanBox('','','','','away','Harvey Wilkerson')
 
   .kanban__box-wrapper.kanban__box-wrapper-5
     .kanban__title-wrapper
       p.kanban__title Placement Guarantee
       .kanban__title-indication 1
 
-    .kanban__box-cover(sortable-box-js)
-      +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
+    .kanban__box-cover
+      div(sortable-box-js)
+        +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
 
   .kanban__box-wrapper.kanban__box-wrapper-6
     .kanban__title-wrapper
       p.kanban__title Hired
       .kanban__title-indication 1
 
-    .kanban__box-cover(sortable-box-js)
-      +kanbanBox('', '', true, '','','Tom Fox')
+    .kanban__box-cover
+      div(sortable-box-js)
+        +kanbanBox('', '', true, '','','Tom Fox')
 
 // SECTION kanban :: END

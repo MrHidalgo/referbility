@@ -139,7 +139,9 @@ $(document).ready((ev) => {
     for(let i = 0; i < el.length; i++) {
       var sortable = Sortable.create(el[i], {
         group: 'shared',
-        animation: 250
+        animation: 250,
+        easing: "cubic-bezier(1, 0, 0, 1)",
+        dragoverBubble: true,
       });
     }
   };
@@ -177,6 +179,10 @@ $(document).ready((ev) => {
     });
 
   };
+
+  const initCustomScrollbar = () => {
+    $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -203,6 +209,7 @@ $(document).ready((ev) => {
     initModalJobDetail();
     initSortable();
     initKanbanDrop();
+    initCustomScrollbar();
 		// ==========================================
 
     $(window).on('load', () => {
