@@ -1,0 +1,161 @@
+// SECTION kanban :: START
+
+mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)
+  a.kanban__box(href='#' title='' class='kanban__box--' + classMod)
+    if(badge)
+      .kanban__box-badge
+        p recommended
+    .kanban__box-head
+      .kanban__box-indication(class!='kanban__box-indication--' + indicationClassMod)
+      p.kanban__box-name!= name
+      p.kanban__box-position Marketing Manager
+
+      .kanban__box-cv
+        i.icon-font.icon-cv
+
+      .kanban__box-like
+        i.icon-font.icon-thumbs-up
+
+    .kanban__box-body
+
+      ul.kanban__box-list
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-experience
+              div
+                p Experience:
+          div
+            .kanban__box-list-result
+              span 20 years
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-building
+              div
+                p Industry:
+          div
+            .kanban__box-list-result.kanban__box-list-result--bg
+              span Energy and Power
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-wallet
+              div
+                p Salary:
+          div
+            .kanban__box-list-result
+              span QAR 12,000
+
+      if(guaranteeMod)
+        .kanban__box-guarantee
+          .kanban__box-guarantee-head
+            span
+              i.icon-font.icon-timer
+            p Placement guarantee:
+          .kanban__box-guarantee-body
+            ul.kanban__box-list
+              li.kanban__box-list-item
+                div
+                  .kanban__box-list-main
+                    div
+                      i.icon-font.icon-flag
+                    div
+                      p Started:
+                div
+                  .kanban__box-list-result
+                    span 02/10/2019
+              li.kanban__box-list-item
+                div
+                  .kanban__box-list-main
+                    div
+                      i.icon-font.icon-calendar-check
+                    div
+                      p Will end:
+                div
+                  .kanban__box-list-result
+                    span 04/12/2019
+
+            .kanban__box-guarantee-progress
+              i(style='width: 50%;')
+              p 49 days left
+
+    .kanban__box-prefooter
+      div
+        .kanban__box-date
+          i.icon-font.icon-date
+          p Referred on 02/10/2019
+        if(calendarCheck)
+          .kanban__box-date
+            i.icon-font.icon-calendar-check
+            p Hired on 12/10/2019
+      div
+        span
+         i.icon-font.icon-more
+    .kanban__box-footer
+      div
+        p
+          i.icon-font.icon-chat
+        if(badge)
+          span Lorem ipsum dolor sitamet persius nominavi te eam
+        else
+          span Click to leave a comment
+
+.kanban__wrapper-body
+
+  .kanban__box-wrapper.kanban__box-wrapper-1
+    .kanban__title-wrapper
+      p.kanban__title Received
+      .kanban__title-indication 3
+
+    .kanban__box-cover(sortable-box-js)
+      +kanbanBox('','','','','','Jordan McBride')
+      +kanbanBox('','','','','away','Rodney Johnson')
+      +kanbanBox('','','','','disturb','Cecilia Yates')
+
+  .kanban__box-wrapper.kanban__box-wrapper-2
+    .kanban__title-wrapper
+      p.kanban__title Shortlisted
+      .kanban__title-indication 2
+
+    .kanban__box-cover(sortable-box-js)
+      +kanbanBox('badge', true, '','','','Emily Welch')
+      +kanbanBox('','','','','away','Tony Duncan')
+
+  .kanban__box-wrapper.kanban__box-wrapper-3
+    .kanban__title-wrapper
+      p.kanban__title Interviews / Assessment
+      .kanban__title-indication 1
+
+    .kanban__box-cover(sortable-box-js)
+      +kanbanBox('','','','','away','Kevin Brock')
+
+  .kanban__box-wrapper.kanban__box-wrapper-4
+    .kanban__title-wrapper
+      p.kanban__title Job Offer
+      .kanban__title-indication 2
+
+    .kanban__box-cover(sortable-box-js)
+      +kanbanBox('','','','','away','Ellen Weber')
+      +kanbanBox('','','','','away','Harvey Wilkerson')
+
+  .kanban__box-wrapper.kanban__box-wrapper-5
+    .kanban__title-wrapper
+      p.kanban__title Placement Guarantee
+      .kanban__title-indication 1
+
+    .kanban__box-cover(sortable-box-js)
+      +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
+
+  .kanban__box-wrapper.kanban__box-wrapper-6
+    .kanban__title-wrapper
+      p.kanban__title Hired
+      .kanban__title-indication 1
+
+    .kanban__box-cover(sortable-box-js)
+      +kanbanBox('', '', true, '','Tom Fox')
+
+// SECTION kanban :: END

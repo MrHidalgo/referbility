@@ -33,23 +33,65 @@
 	@if $filename == bell {
 		$char: "\E002";
 	}
-	@if $filename == corner {
+	@if $filename == building {
 		$char: "\E003";
 	}
-	@if $filename == facebook {
+	@if $filename == calendar-check {
 		$char: "\E004";
 	}
-	@if $filename == file-text {
+	@if $filename == case {
 		$char: "\E005";
 	}
-	@if $filename == linkedin {
+	@if $filename == chat {
 		$char: "\E006";
 	}
-	@if $filename == mail {
+	@if $filename == corner {
 		$char: "\E007";
 	}
-	@if $filename == twitter {
+	@if $filename == cv {
 		$char: "\E008";
+	}
+	@if $filename == date {
+		$char: "\E009";
+	}
+	@if $filename == experience {
+		$char: "\E00A";
+	}
+	@if $filename == facebook {
+		$char: "\E00B";
+	}
+	@if $filename == file-text {
+		$char: "\E00C";
+	}
+	@if $filename == flag {
+		$char: "\E00D";
+	}
+	@if $filename == linkedin {
+		$char: "\E00E";
+	}
+	@if $filename == mail {
+		$char: "\E00F";
+	}
+	@if $filename == more {
+		$char: "\E010";
+	}
+	@if $filename == pencil-create {
+		$char: "\E011";
+	}
+	@if $filename == search {
+		$char: "\E012";
+	}
+	@if $filename == thumbs-up {
+		$char: "\E013";
+	}
+	@if $filename == timer {
+		$char: "\E014";
+	}
+	@if $filename == twitter {
+		$char: "\E015";
+	}
+	@if $filename == wallet {
+		$char: "\E016";
 	}
 
 	@return $char;
@@ -74,8 +116,36 @@
 	@include icon(bell);
 
 }
+.icon-building {
+	@include icon(building);
+
+}
+.icon-calendar-check {
+	@include icon(calendar-check);
+
+}
+.icon-case {
+	@include icon(case);
+
+}
+.icon-chat {
+	@include icon(chat);
+
+}
 .icon-corner {
 	@include icon(corner);
+
+}
+.icon-cv {
+	@include icon(cv);
+
+}
+.icon-date {
+	@include icon(date);
+
+}
+.icon-experience {
+	@include icon(experience);
 
 }
 .icon-facebook {
@@ -86,6 +156,10 @@
 	@include icon(file-text);
 
 }
+.icon-flag {
+	@include icon(flag);
+
+}
 .icon-linkedin {
 	@include icon(linkedin);
 
@@ -94,7 +168,31 @@
 	@include icon(mail);
 
 }
+.icon-more {
+	@include icon(more);
+
+}
+.icon-pencil-create {
+	@include icon(pencil-create);
+
+}
+.icon-search {
+	@include icon(search);
+
+}
+.icon-thumbs-up {
+	@include icon(thumbs-up);
+
+}
+.icon-timer {
+	@include icon(timer);
+
+}
 .icon-twitter {
 	@include icon(twitter);
+
+}
+.icon-wallet {
+	@include icon(wallet);
 
 }

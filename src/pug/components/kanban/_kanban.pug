@@ -2,8 +2,12 @@
 
 section#kanban.kanban
 
-  .c-grid-fluid
+  .kanban__overlay(overlay-js)
 
-    .kanban__wrapper
+  .kanban__wrapper
+
+    include _kanban-head
+
+    include _kanban-body
 
 // SECTION kanban :: END

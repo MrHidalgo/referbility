@@ -9,5 +9,6 @@
 * - stellar;
 * - fastselect.standalone.js;
 * - jquery.countTo.js;
+* - sortable.js;
 *
 * */

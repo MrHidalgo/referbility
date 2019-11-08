@@ -89,6 +89,20 @@
   &.header--kanban {
     background: linear-gradient(45deg, rgba(81,83,220,1) 0%,rgba(129,129,255,1) 100%);
 
+    &.header--fixed {
+      .logo__img {
+        &--default {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &--action {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+
     .c-grid {
       max-width: 1200px;
     }

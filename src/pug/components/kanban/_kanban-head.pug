@@ -1,0 +1,182 @@
+// SECTION kanban :: START
+
+mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod)
+  a.kanban__box(href='#' title='' class='kanban__box--' + classMod)
+    if(badge)
+      .kanban__box-badge
+        p recommended
+    .kanban__box-head
+      .kanban__box-indication
+      p.kanban__box-name Emily Welch
+      p.kanban__box-position Marketing Manager
+
+      .kanban__box-cv
+        i.icon-font.icon-cv
+
+      .kanban__box-like
+        i.icon-font.icon-thumbs-up
+
+    .kanban__box-body
+
+      ul.kanban__box-list
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-experience
+              div
+                p Experience:
+          div
+            .kanban__box-list-result
+              span 20 years
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-building
+              div
+                p Industry:
+          div
+            .kanban__box-list-result.kanban__box-list-result--bg
+              span Energy and Power
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-wallet
+              div
+                p Salary:
+          div
+            .kanban__box-list-result
+              span QAR 12,000
+
+      if(guaranteeMod)
+        .kanban__box-guarantee
+          .kanban__box-guarantee-head
+            span
+              i.icon-font.icon-timer
+            p Placement guarantee:
+          .kanban__box-guarantee-body
+            ul.kanban__box-list
+              li.kanban__box-list-item
+                div
+                  .kanban__box-list-main
+                    div
+                      i.icon-font.icon-flag
+                    div
+                      p Started:
+                div
+                  .kanban__box-list-result
+                    span 02/10/2019
+              li.kanban__box-list-item
+                div
+                  .kanban__box-list-main
+                    div
+                      i.icon-font.icon-calendar-check
+                    div
+                      p Will end:
+                div
+                  .kanban__box-list-result
+                    span 04/12/2019
+
+            .kanban__box-guarantee-progress
+              i(style='width: 50%;')
+              p 49 days left
+
+    .kanban__box-prefooter
+      div
+        .kanban__box-date
+          i.icon-font.icon-date
+          p Referred on 02/10/2019
+        if(calendarCheck)
+          .kanban__box-date
+            i.icon-font.icon-calendar-check
+            p Hired on 12/10/2019
+      div
+        span
+         i.icon-font.icon-more
+    .kanban__box-footer
+      div
+        p
+          i.icon-font.icon-chat
+        if(badge)
+          span Lorem ipsum dolor sitamet persius nominavi te eam
+        else
+          span Click to leave a comment
+
+.kanban__wrapper-head
+
+  .c-grid
+
+    .kanban__wrapper-block
+      div
+
+        .kanban__heading
+          div
+            i.icon-font.icon-case
+          div
+            h2
+              | Chief Financial Officer - Thermal Power Plan
+              i.icon-font.icon-pencil-create
+            p!= 'Reward <span>$2,000</span>'
+
+      div
+
+        .kanban__action
+          div
+            .kanban__action-search
+              input(type='search' name='' placeholder='Search')
+              button(type='submit')
+                i.icon-font.icon-search
+          div
+            .kanban__action-job(dropdown-js)
+              .kanban__action-job-head(dropdown-btn-js)
+                a(href='#' title='')
+                  p My Jobs
+                  span
+                    i.icon-font.icon-corner
+              .kanban__action-job-drop(dropdown-contnet-js)
+                .kanban__action-job-title
+                  p active
+                .kanban__action-job-content
+
+                  .kanban__radio
+                    input(type='checkbox' checked)
+                    label
+                      span
+                        i
+                      p Sales Manager (Dubai, UEA)
+
+                  .kanban__radio
+                    input(type='checkbox')
+                    label
+                      span
+                        i
+                      p HR Executive (Daha, Qatar)
+
+                .kanban__action-job-title
+                  p Expired
+                .kanban__action-job-content
+
+                  .kanban__radio
+                    input(type='checkbox')
+                    label
+                      span
+                        i
+                      p Manager (Dubai, UEA)
+
+          div
+            .kanban__action-rejected(dropdown-js)
+              .kanban__action-rejected-head(dropdown-btn-js)
+                h3 Rejected Candidates
+                p 2
+                i.icon-font.icon-corner
+              .kanban__action-rejected-drop(dropdown-contnet-js)
+                .kanban__action-rejected-content
+                  .kanban__action-search
+                    input(type='search' name='' placeholder='Search')
+                    button(type='submit')
+                      i.icon-font.icon-search
+                .kanban__action-rejected-content
+
+// SECTION kanban :: END

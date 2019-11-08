@@ -9,6 +9,22 @@
 }
 // stellar parallax obj :: end
 
+// kanban dropdown
+[dropdown-contnet-js] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  @include transition(opacity, visibility, transform);
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    @include transition(opacity, visibility, transform);
+  }
+}
+// kanban dropdown :: end
+
 // social
 .social {
   display: flex;
