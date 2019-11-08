@@ -1,13 +1,13 @@
 // SECTION kanban :: START
 
-mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod)
+mixin kanbanBox(classMod, indicationClassMod, name)
   a.kanban__box(href='#' title='' class='kanban__box--' + classMod)
     if(badge)
       .kanban__box-badge
         p recommended
     .kanban__box-head
-      .kanban__box-indication
-      p.kanban__box-name Emily Welch
+      .kanban__box-indication(class!='kanban__box-indication--' + indicationClassMod)
+      p.kanban__box-name!= name
       p.kanban__box-position Marketing Manager
 
       .kanban__box-cv
@@ -50,59 +50,25 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod)
             .kanban__box-list-result
               span QAR 12,000
 
-      if(guaranteeMod)
-        .kanban__box-guarantee
-          .kanban__box-guarantee-head
-            span
-              i.icon-font.icon-timer
-            p Placement guarantee:
-          .kanban__box-guarantee-body
-            ul.kanban__box-list
-              li.kanban__box-list-item
-                div
-                  .kanban__box-list-main
-                    div
-                      i.icon-font.icon-flag
-                    div
-                      p Started:
-                div
-                  .kanban__box-list-result
-                    span 02/10/2019
-              li.kanban__box-list-item
-                div
-                  .kanban__box-list-main
-                    div
-                      i.icon-font.icon-calendar-check
-                    div
-                      p Will end:
-                div
-                  .kanban__box-list-result
-                    span 04/12/2019
-
-            .kanban__box-guarantee-progress
-              i(style='width: 50%;')
-              p 49 days left
-
     .kanban__box-prefooter
       div
         .kanban__box-date
           i.icon-font.icon-date
           p Referred on 02/10/2019
-        if(calendarCheck)
-          .kanban__box-date
-            i.icon-font.icon-calendar-check
-            p Hired on 12/10/2019
+        .kanban__box-date.kanban__box-date--rejected
+          i.icon-font.icon-calendar-check
+          p Rejected on 15/11/2019
+        .kanban__box-date.kanban__box-date--relevant
+          i.icon-font.icon-comment-delete
+          p Reason Not relevant
       div
         span
-         i.icon-font.icon-more
+          i.icon-font.icon-more
     .kanban__box-footer
       div
         p
           i.icon-font.icon-chat
-        if(badge)
-          span Lorem ipsum dolor sitamet persius nominavi te eam
-        else
-          span Click to leave a comment
+        span Lorem ipsum dolor sitamet persius nominavi te eam
 
 .kanban__wrapper-head
 
@@ -178,5 +144,9 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod)
                     button(type='submit')
                       i.icon-font.icon-search
                 .kanban__action-rejected-content
+                  +kanbanBox('','away','Kevin Brock')
+                  +kanbanBox('','away','Gabriel Chambers')
+                .kanban__action-rejected-more
+                  span Load More
 
 // SECTION kanban :: END

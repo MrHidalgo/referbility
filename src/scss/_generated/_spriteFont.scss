@@ -45,53 +45,56 @@
 	@if $filename == chat {
 		$char: "\E006";
 	}
-	@if $filename == corner {
+	@if $filename == comment-delete {
 		$char: "\E007";
 	}
-	@if $filename == cv {
+	@if $filename == corner {
 		$char: "\E008";
 	}
-	@if $filename == date {
+	@if $filename == cv {
 		$char: "\E009";
 	}
-	@if $filename == experience {
+	@if $filename == date {
 		$char: "\E00A";
 	}
-	@if $filename == facebook {
+	@if $filename == experience {
 		$char: "\E00B";
 	}
-	@if $filename == file-text {
+	@if $filename == facebook {
 		$char: "\E00C";
 	}
-	@if $filename == flag {
+	@if $filename == file-text {
 		$char: "\E00D";
 	}
-	@if $filename == linkedin {
+	@if $filename == flag {
 		$char: "\E00E";
 	}
-	@if $filename == mail {
+	@if $filename == linkedin {
 		$char: "\E00F";
 	}
-	@if $filename == more {
+	@if $filename == mail {
 		$char: "\E010";
 	}
-	@if $filename == pencil-create {
+	@if $filename == more {
 		$char: "\E011";
 	}
-	@if $filename == search {
+	@if $filename == pencil-create {
 		$char: "\E012";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == search {
 		$char: "\E013";
 	}
-	@if $filename == timer {
+	@if $filename == thumbs-up {
 		$char: "\E014";
 	}
-	@if $filename == twitter {
+	@if $filename == timer {
 		$char: "\E015";
 	}
-	@if $filename == wallet {
+	@if $filename == twitter {
 		$char: "\E016";
+	}
+	@if $filename == wallet {
+		$char: "\E017";
 	}
 
 	@return $char;
@@ -130,6 +133,10 @@
 }
 .icon-chat {
 	@include icon(chat);
+
+}
+.icon-comment-delete {
+	@include icon(comment-delete);
 
 }
 .icon-corner {
