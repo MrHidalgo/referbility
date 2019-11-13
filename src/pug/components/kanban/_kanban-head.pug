@@ -70,7 +70,7 @@ mixin kanbanBox(classMod, indicationClassMod, name)
           i.icon-font.icon-chat
         span Lorem ipsum dolor sitamet persius nominavi te eam
 
-.kanban__wrapper-head
+.kanban__wrapper-head(kanban-head-js)
 
   .c-grid
 
@@ -145,7 +145,7 @@ mixin kanbanBox(classMod, indicationClassMod, name)
                     input(type='search' name='' placeholder='Search')
                     button(type='submit')
                       i.icon-font.icon-search
-                .kanban__action-rejected-content
+                .kanban__action-rejected-content.kanban__action-rejected-scroll
                   +kanbanBox('','away','Kevin Brock')
                   +kanbanBox('','away','Gabriel Chambers')
                 .kanban__action-rejected-more

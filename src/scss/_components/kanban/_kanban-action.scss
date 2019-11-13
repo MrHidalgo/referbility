@@ -255,6 +255,11 @@
       }
     }
 
+    &-scroll {
+      overflow-y: auto;
+      max-height: 450px;
+    }
+
     &-more {
       display: flex;
       align-items: center;

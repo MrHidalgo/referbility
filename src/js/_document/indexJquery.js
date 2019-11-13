@@ -161,19 +161,19 @@ $(document).ready((ev) => {
 
     _document.on('keyup', (ev) => {
       if (ev.keyCode === 27) {
-        $('[dropdown-contnet-js]').removeClass('is-open');
+        $('[dropdown-contnet-js], .kanban__more').removeClass('is-open');
         $('[overlay-js]').removeClass('is-show');
       }
     });
 
     $('[overlay-js]').on('click', (ev) => {
-      $('[dropdown-contnet-js]').removeClass('is-open');
+      $('[dropdown-contnet-js], .kanban__more').removeClass('is-open');
       $('[overlay-js]').removeClass('is-show');
     });
 
     $('body').on('click', function (e) {
-      if (!$(e.target).closest('[dropdown-btn-js], [dropdown-contnet-js]').length) {
-        $('[dropdown-contnet-js]').removeClass('is-open');
+      if (!$(e.target).closest('[dropdown-btn-js], [dropdown-contnet-js], [dropdown-more-js], .kanban__more').length) {
+        $('[dropdown-contnet-js], .kanban__more').removeClass('is-open');
         $('[overlay-js]').removeClass('is-show');
       }
     });
@@ -182,6 +182,22 @@ $(document).ready((ev) => {
 
   const initCustomScrollbar = () => {
     $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
+  };
+
+  const initKanbanHeight = () => {
+    $(window).on('resize load', (ev) => {
+      $('[kanban-body-js]').attr('style', 'height:calc(100vh - ' + ($('[kanban-head-js]').outerHeight(true) + $('header').outerHeight(true)) + 'px)');
+    });
+  };
+
+  const initModalMoreQuestion = () => {
+    $('.c-modal__question-head').on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _parent = _el.closest('.c-modal__question-wrapper');
+
+      _parent.toggleClass('is-open');
+      _parent.find('.c-modal__question-body').slideToggle(250);
+    });
   };
 	/*
 	* CALLBACK :: end
@@ -210,6 +226,8 @@ $(document).ready((ev) => {
     initSortable();
     initKanbanDrop();
     initCustomScrollbar();
+    initKanbanHeight();
+    initModalMoreQuestion();
 		// ==========================================
 
     $(window).on('load', () => {

@@ -419,19 +419,19 @@ $(document).ready(function (ev) {
 
     _document.on('keyup', function (ev) {
       if (ev.keyCode === 27) {
-        $('[dropdown-contnet-js]').removeClass('is-open');
+        $('[dropdown-contnet-js], .kanban__more').removeClass('is-open');
         $('[overlay-js]').removeClass('is-show');
       }
     });
 
     $('[overlay-js]').on('click', function (ev) {
-      $('[dropdown-contnet-js]').removeClass('is-open');
+      $('[dropdown-contnet-js], .kanban__more').removeClass('is-open');
       $('[overlay-js]').removeClass('is-show');
     });
 
     $('body').on('click', function (e) {
-      if (!$(e.target).closest('[dropdown-btn-js], [dropdown-contnet-js]').length) {
-        $('[dropdown-contnet-js]').removeClass('is-open');
+      if (!$(e.target).closest('[dropdown-btn-js], [dropdown-contnet-js], [dropdown-more-js], .kanban__more').length) {
+        $('[dropdown-contnet-js], .kanban__more').removeClass('is-open');
         $('[overlay-js]').removeClass('is-show');
       }
     });
@@ -439,6 +439,22 @@ $(document).ready(function (ev) {
 
   var initCustomScrollbar = function initCustomScrollbar() {
     $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({});
+  };
+
+  var initKanbanHeight = function initKanbanHeight() {
+    $(window).on('resize load', function (ev) {
+      $('[kanban-body-js]').attr('style', 'height:calc(100vh - ' + ($('[kanban-head-js]').outerHeight(true) + $('header').outerHeight(true)) + 'px)');
+    });
+  };
+
+  var initModalMoreQuestion = function initModalMoreQuestion() {
+    $('.c-modal__question-head').on('click', function (ev) {
+      var _el = $(ev.currentTarget),
+          _parent = _el.closest('.c-modal__question-wrapper');
+
+      _parent.toggleClass('is-open');
+      _parent.find('.c-modal__question-body').slideToggle(250);
+    });
   };
   /*
   * CALLBACK :: end
@@ -465,6 +481,8 @@ $(document).ready(function (ev) {
     initSortable();
     initKanbanDrop();
     initCustomScrollbar();
+    initKanbanHeight();
+    initModalMoreQuestion();
     // ==========================================
 
     $(window).on('load', function () {

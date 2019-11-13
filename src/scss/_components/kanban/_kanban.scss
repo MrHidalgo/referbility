@@ -52,6 +52,9 @@
       height: calc(100vh - (120px + 80px));
       padding-bottom: 15px;
       font-size: 0;
+      @include adaptive(1279) {
+        height: calc(100vh - (132px + 80px));
+      }
       @include adaptive(1023) {
         height: calc(100vh - (170px + 80px));
       }
@@ -212,6 +215,49 @@
       font-size: 14px;
       letter-spacing: 0.5px;
       color: #020d60;
+    }
+  }
+
+  &__more {
+    z-index: 500;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    position: fixed;
+    width: 450px;
+    border-radius: 6px;
+    background-color: #f8f7ff;
+    @include transition(opacity, visibility, transform);
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      @include transition(opacity, visibility, transform);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 95px;
+      left: -20px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px;
+      border-color: transparent #f8f7ff transparent transparent;
+    }
+
+    &-head {
+      min-height: 120px;
+    }
+
+    &-body {
+      min-height: 280px;
+    }
+
+    &-footer {
+      min-height: 120px;
     }
   }
 }

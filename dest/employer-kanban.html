@@ -57,7 +57,7 @@
         <div class="kanban__overlay" overlay-js></div>
         <div class="kanban__wrapper">
           <!-- SECTION kanban :: START-->
-          <div class="kanban__wrapper-head">
+          <div class="kanban__wrapper-head" kanban-head-js>
             <div class="c-grid">
               <div class="kanban__wrapper-block">
                 <div>
@@ -129,7 +129,7 @@
                               <button type="submit"><i class="icon-font icon-search"></i></button>
                             </div>
                           </div>
-                          <div class="kanban__action-rejected-content"><a class="kanban__box kanban__box--" href="#" title="">
+                          <div class="kanban__action-rejected-content kanban__action-rejected-scroll"><a class="kanban__box kanban__box--" href="#" title="">
                                         <div class="kanban__box-head">
                                           <div class="kanban__box-indication kanban__box-indication--away"></div>
                                           <p class="kanban__box-name">Kevin Brock</p>
@@ -280,7 +280,7 @@
           </div>
           <!-- SECTION kanban :: END-->
           <!-- SECTION kanban :: START-->
-          <div class="kanban__wrapper-body">
+          <div class="kanban__wrapper-body" kanban-body-js>
             <div class="kanban__box-wrapper kanban__box-wrapper-1">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Received</p>
@@ -344,7 +344,7 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -407,7 +407,7 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -470,7 +470,7 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -546,7 +546,7 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -609,7 +609,70 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--away"></div>
+                                <p class="kanban__box-name">Tony Duncan</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -682,7 +745,133 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--away"></div>
+                                <p class="kanban__box-name">Kevin Brock</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--away"></div>
+                                <p class="kanban__box-name">Kevin Brock</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -755,7 +944,7 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -818,7 +1007,70 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--away"></div>
+                                <p class="kanban__box-name">Harvey Wilkerson</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -929,7 +1181,209 @@
                                     <p>Referred on 02/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--disturb"></div>
+                                <p class="kanban__box-name">Gordon Chandler</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <div class="kanban__box-guarantee">
+                                  <div class="kanban__box-guarantee-head"><span><i class="icon-font icon-timer"></i></span>
+                                    <p>Placement guarantee:</p>
+                                  </div>
+                                  <div class="kanban__box-guarantee-body">
+                                    <ul class="kanban__box-list">
+                                      <li class="kanban__box-list-item">
+                                        <div>
+                                          <div class="kanban__box-list-main">
+                                            <div><i class="icon-font icon-flag"></i></div>
+                                            <div>
+                                              <p>Started:</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <div class="kanban__box-list-result"><span>02/10/2019</span></div>
+                                        </div>
+                                      </li>
+                                      <li class="kanban__box-list-item">
+                                        <div>
+                                          <div class="kanban__box-list-main">
+                                            <div><i class="icon-font icon-calendar-check"></i></div>
+                                            <div>
+                                              <p>Will end:</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <div class="kanban__box-list-result"><span>04/12/2019</span></div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                    <div class="kanban__box-guarantee-progress"><i style="width: 50%;"></i>
+                                      <p>49 days left</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--disturb"></div>
+                                <p class="kanban__box-name">Gordon Chandler</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <div class="kanban__box-guarantee">
+                                  <div class="kanban__box-guarantee-head"><span><i class="icon-font icon-timer"></i></span>
+                                    <p>Placement guarantee:</p>
+                                  </div>
+                                  <div class="kanban__box-guarantee-body">
+                                    <ul class="kanban__box-list">
+                                      <li class="kanban__box-list-item">
+                                        <div>
+                                          <div class="kanban__box-list-main">
+                                            <div><i class="icon-font icon-flag"></i></div>
+                                            <div>
+                                              <p>Started:</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <div class="kanban__box-list-result"><span>02/10/2019</span></div>
+                                        </div>
+                                      </li>
+                                      <li class="kanban__box-list-item">
+                                        <div>
+                                          <div class="kanban__box-list-main">
+                                            <div><i class="icon-font icon-calendar-check"></i></div>
+                                            <div>
+                                              <p>Will end:</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <div class="kanban__box-list-result"><span>04/12/2019</span></div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                    <div class="kanban__box-guarantee-progress"><i style="width: 50%;"></i>
+                                      <p>49 days left</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -1005,7 +1459,139 @@
                                     <p>Hired on 12/10/2019</p>
                                   </div>
                                 </div>
-                                <div><span><i class="icon-font icon-more"></i></span></div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--"></div>
+                                <p class="kanban__box-name">Tom Fox</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-calendar-check"></i>
+                                    <p>Hired on 12/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
+                              </div>
+                              <div class="kanban__box-footer">
+                                <div>
+                                  <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
+                                </div>
+                              </div></a><a class="kanban__box kanban__box--" href="#" title="ajsdhlaksjdh">
+                              <div class="kanban__box-head">
+                                <div class="kanban__box-indication kanban__box-indication--"></div>
+                                <p class="kanban__box-name">Tom Fox</p>
+                                <p class="kanban__box-position">Marketing Manager</p>
+                                <div class="kanban__box-cv"><i class="icon-font icon-cv"></i></div>
+                                <div class="kanban__box-like"><i class="icon-font icon-thumbs-up"></i></div>
+                              </div>
+                              <div class="kanban__box-body">
+                                <ul class="kanban__box-list">
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-experience"></i></div>
+                                        <div>
+                                          <p>Experience:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>20 years</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-building"></i></div>
+                                        <div>
+                                          <p>Industry:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result kanban__box-list-result--bg"><span>Energy and Power</span></div>
+                                    </div>
+                                  </li>
+                                  <li class="kanban__box-list-item">
+                                    <div>
+                                      <div class="kanban__box-list-main">
+                                        <div><i class="icon-font icon-wallet"></i></div>
+                                        <div>
+                                          <p>Salary:</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="kanban__box-list-result"><span>QAR 12,000</span></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="kanban__box-prefooter">
+                                <div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-date"></i>
+                                    <p>Referred on 02/10/2019</p>
+                                  </div>
+                                  <div class="kanban__box-date"><i class="icon-font icon-calendar-check"></i>
+                                    <p>Hired on 12/10/2019</p>
+                                  </div>
+                                </div>
+                                <div><span data-id="1" popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore"><i class="icon-font icon-more"></i></span></div>
                               </div>
                               <div class="kanban__box-footer">
                                 <div>
@@ -1021,61 +1607,137 @@
       </section>
       <!-- SECTION kanban :: END-->
     </div>
-    <!-- FOOTER :: START-->
-    <footer class="footer footer--mod" id="footer">
-      <div class="footer__bg">
-        <div class="footer__bg-top"></div>
-        <div class="footer__bg-bottom"></div>
-      </div>
-      <div class="c-grid">
-        <div class="footer__wrapper footer__wrapper-2">
-          <div class="footer__row">
-            <div class="footer__col footer__col-1">
-              <div class="logo logo--footer"><a class="logo__link" href="/" title=""><img class="logo__img" src="img/logo--footer.png"></a></div>
-              <p class="footer__desc footer__desc-2">We redefine the way candidates and employers come together by facilitating <span>public talent crowdsourcing</span>. Everyone can refer people they know to the jobs posted with us and get paid for every successful referral!</p>
+    <!-- MODAL request a demo :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim" id="kanbanMore">
+          <div class="c-modal__head">
+            <ul class="c-modal__information">
+              <li>
+                <div><i class="icon-font icon-mail"></i></div>
+                <div>
+                  <p>brendan.haley@lang.us</p>
+                </div>
+              </li>
+              <li>
+                <div><i class="icon-font icon-call-calling"></i></div>
+                <div>
+                  <p>510-130-6827</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="c-modal__body">
+            <ul class="c-modal__description">
+              <li>
+                <div><span>Highest degree</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Current residence</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Certification & diplomas</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Career level</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Job Function</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Employer</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Languages known</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+              <li>
+                <div><span>Skills</span></div>
+                <div>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="c-modal__prefooter">
+            <div class="c-modal__question-wrapper">
+              <div class="c-modal__question-head">
+                <div>
+                  <div class="c-modal__question">Q</div>
+                </div>
+                <div>
+                  <p>How many years of experience does your referral have?</p>
+                </div>
+                <div><i class="icon-font icon-chevron-bottom"></i></div>
+              </div>
+              <div class="c-modal__question-body">
+                <div class="c-modal__question-answer">
+                  <div>
+                    <div class="c-modal__question"><span>A</span></div>
+                  </div>
+                  <div><span>My referral has 14 years of experience.</span></div>
+                </div>
+              </div>
             </div>
-            <div class="footer__col footer__col-2">
-              <div class="social">
-                <p class="social__title">Follow referbility.com</p>
-                <ul class="social__list">
-                  <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-facebook"></i></a></li>
-                  <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-linkedin"></i></a></li>
-                  <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-twitter"></i></a></li>
-                </ul>
-              </div><a class="footer__delete c-btn c-btn--bg c-btn--bg-white" href="#" title=""><span>Delete your profile</span></a>
-            </div>
-            <div class="footer__col footer__col-3">
-              <p class="footer__title">Quick Link</p>
-              <ul class="footer__nav">
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Home</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">For Referrers</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">For Employers</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Search Jobs</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Blog</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">FAQs</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Terms & Conditions</a></li>
-              </ul>
-            </div>
-            <div class="footer__col footer__col-4">
-              <p class="footer__title">Company</p>
-              <ul class="footer__nav">
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Referrer Login</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Employer Login</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="">Contact Us</a></li>
-              </ul>
+            <div class="c-modal__question-wrapper">
+              <div class="c-modal__question-head">
+                <div>
+                  <div class="c-modal__question">Q</div>
+                </div>
+                <div>
+                  <p>How many years of experience does your referral have?</p>
+                </div>
+                <div><i class="icon-font icon-chevron-bottom"></i></div>
+              </div>
+              <div class="c-modal__question-body">
+                <div class="c-modal__question-answer">
+                  <div>
+                    <div class="c-modal__question"><span>A</span></div>
+                  </div>
+                  <div><span>My referral has 14 years of experience.</span></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="c-grid">
-          <div class="footer__wrapper footer__wrapper-3">
-            <div class="copyright">
-              <p class="copyright__text">© referbility.com - All Right Reserved - <a href='#'>Terms of Use</a> / <a href='#'>Privacy Policy</a></p>
+          <div class="c-modal__footer">
+            <div class="c-modal__question-wrapper c-modal__question-wrapper--additional">
+              <div class="c-modal__question-head">
+                <div></div>
+                <div>
+                  <p>Anything else the employer should know?</p>
+                </div>
+                <div><i class="icon-font icon-chevron-bottom"></i></div>
+              </div>
+              <div class="c-modal__question-body">
+                <div class="c-modal__question-answer">
+                  <div>
+                    <div class="c-modal__question c-modal__question--warrning"><span>!</span></div>
+                  </div>
+                  <div><span>My referral has 14 years of experience.</span></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </footer>
-    <!-- FOOTER :: END 3025-->
+    </div>
+    <!-- MODAL request a demo :: END-->
     <!-- SECTION menu :: START-->
     <div class="menu animated" id="menu" mobile-block-js>
       <div class="menu__wrapper">
