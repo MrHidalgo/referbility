@@ -1,0 +1,42 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__head
+    p Rejection Reason:
+
+  .c-modal__body
+
+    .c-modal__radio-wrapper
+      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-1')
+      label(for="modal_thumbs-1")
+        span
+          i
+        p Already known
+
+    .c-modal__radio-wrapper
+      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-2')
+      label(for="modal_thumbs-2")
+        span
+          i
+        p Not relevant
+
+    .c-modal__radio-wrapper
+      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-3')
+      label(for="modal_thumbs-3")
+        span
+          i
+        p Salary expectations too high
+
+    .c-modal__radio-wrapper
+      input.c-modal__radio.c-modal__radio-textarea(type='radio' name='modal_thumbs' id='modal_thumbs-4')
+      label(for="modal_thumbs-4")
+        span
+          i
+        p Other
+
+    .c-modal__textarea-wrapper
+      textarea.c-modal__textarea(placeholder='Rejection Reason')
+
++modal('kanbanThumbs', 'modalContent')
+
+// MODAL request a demo :: END

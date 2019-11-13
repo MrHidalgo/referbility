@@ -13,7 +13,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__box-cv
         i.icon-font.icon-cv
 
-      .kanban__box-like
+      .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
         i.icon-font.icon-thumbs-up
 
     .kanban__box-body
@@ -89,7 +89,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
           i.icon-font.icon-date
           p Referred on 02/10/2019
         if(calendarCheck)
-          .kanban__box-date
+          .kanban__box-date.kanban__box-date--hired
             i.icon-font.icon-calendar-check
             p Hired on 12/10/2019
       div
@@ -126,7 +126,6 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       div(sortable-box-js)
         +kanbanBox('badge', true, '','','','Emily Welch')
         +kanbanBox('','','','','away','Tony Duncan')
-        +kanbanBox('','','','','away','Tony Duncan')
 
   .kanban__box-wrapper.kanban__box-wrapper-3
     .kanban__title-wrapper
@@ -135,8 +134,6 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
 
     .kanban__box-cover
       div(sortable-box-js)
-        +kanbanBox('','','','','away','Kevin Brock')
-        +kanbanBox('','','','','away','Kevin Brock')
         +kanbanBox('','','','','away','Kevin Brock')
 
   .kanban__box-wrapper.kanban__box-wrapper-4
@@ -148,7 +145,6 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       div(sortable-box-js)
         +kanbanBox('','','','','away','Ellen Weber')
         +kanbanBox('','','','','away','Harvey Wilkerson')
-        +kanbanBox('','','','','away','Harvey Wilkerson')
 
   .kanban__box-wrapper.kanban__box-wrapper-5
     .kanban__title-wrapper
@@ -158,8 +154,6 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
     .kanban__box-cover
       div(sortable-box-js)
         +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
-        +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
-        +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
 
   .kanban__box-wrapper.kanban__box-wrapper-6
     .kanban__title-wrapper
@@ -168,8 +162,6 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
 
     .kanban__box-cover
       div(sortable-box-js)
-        +kanbanBox('', '', true, '','','Tom Fox')
-        +kanbanBox('', '', true, '','','Tom Fox')
         +kanbanBox('', '', true, '','','Tom Fox')
 
 // SECTION kanban :: END

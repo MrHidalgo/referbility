@@ -215,6 +215,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
 
+    &.kanban__box-date--hired {
+      .icon-calendar-check {
+        color: #36b37e;
+      }
+    }
+
     .icon-font {
       margin-right: 11px;
       font-size: 13px;

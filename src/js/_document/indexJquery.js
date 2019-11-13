@@ -36,7 +36,7 @@ $(document).ready((ev) => {
     };
 
 
-    $('.c-modal__radio').on('click', (ev) => {
+    $('#jobDetail .c-modal__radio').on('click', (ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.attr('data-id');
 
@@ -186,7 +186,11 @@ $(document).ready((ev) => {
 
   const initKanbanHeight = () => {
     $(window).on('resize load', (ev) => {
-      $('[kanban-body-js]').attr('style', 'height:calc(100vh - ' + ($('[kanban-head-js]').outerHeight(true) + $('header').outerHeight(true)) + 'px)');
+      if($(window).width() > 767) {
+        $('[kanban-body-js]').attr('style', 'height:calc(100vh - ' + ($('[kanban-head-js]').outerHeight(true) + $('header').outerHeight(true)) + 'px)');
+      } else {
+        $('[kanban-body-js]').attr('style', 'height:auto;');
+      }
     });
   };
 
@@ -198,6 +202,15 @@ $(document).ready((ev) => {
       _parent.toggleClass('is-open');
       _parent.find('.c-modal__question-body').slideToggle(250);
     });
+  };
+
+  const initThumbsOtherTextarea = () => {
+    $('.c-modal__radio').on('change', (ev) => {
+      $('.c-modal__textarea-wrapper').slideUp(250);
+    });
+    $('.c-modal__radio-textarea').on('change', (ev) => {
+      $('.c-modal__textarea-wrapper').slideDown(250);
+    })
   };
 	/*
 	* CALLBACK :: end
@@ -228,6 +241,7 @@ $(document).ready((ev) => {
     initCustomScrollbar();
     initKanbanHeight();
     initModalMoreQuestion();
+    initThumbsOtherTextarea();
 		// ==========================================
 
     $(window).on('load', () => {
