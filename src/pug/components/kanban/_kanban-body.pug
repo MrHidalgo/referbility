@@ -13,8 +13,11 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__box-cv
         i.icon-font.icon-cv
 
-      .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
-        i.icon-font.icon-thumbs-up
+      if(guaranteeMod)
+      else if(calendarCheck)
+      else
+        .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
+          i.icon-font.icon-thumbs-up
 
     .kanban__box-body
 
@@ -161,7 +164,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 1
 
     .kanban__box-cover
-      div(sortable-box-js)
+      div
         +kanbanBox('', '', true, '','','Tom Fox')
 
 // SECTION kanban :: END
