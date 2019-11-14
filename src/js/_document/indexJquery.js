@@ -142,6 +142,12 @@ $(document).ready((ev) => {
         animation: 250,
         easing: "cubic-bezier(1, 0, 0, 1)",
         dragoverBubble: true,
+        // filter: ".kanban-box--guarantee",
+        onMove: event => {
+          // console.log(event);
+          // console.log(event.related.classList.contains('kanban-box--guarantee'));
+          // return !event.related.classList.contains('kanban-box--guarantee');
+        }
       });
     }
   };

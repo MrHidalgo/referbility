@@ -400,7 +400,13 @@ $(document).ready(function (ev) {
         group: 'shared',
         animation: 250,
         easing: "cubic-bezier(1, 0, 0, 1)",
-        dragoverBubble: true
+        dragoverBubble: true,
+        // filter: ".kanban-box--guarantee",
+        onMove: function onMove(event) {
+          // console.log(event);
+          // console.log(event.related.classList.contains('kanban-box--guarantee'));
+          // return !event.related.classList.contains('kanban-box--guarantee');
+        }
       });
     }
   };

@@ -1,7 +1,7 @@
 // SECTION kanban :: START
 
 mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)
-  a.kanban__box(href='#' title='ajsdhlaksjdh' class='kanban__box--' + classMod)
+  a.kanban__box(href='#' title='' class!= (classMod)?'kanban__box--' + classMod:'')
     if(badge)
       .kanban__box-badge
         p recommended
@@ -156,7 +156,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
 
     .kanban__box-cover
       div(sortable-box-js)
-        +kanbanBox('', '', '', true, 'disturb','Gordon Chandler')
+        +kanbanBox('guarantee', '', '', true, 'disturb','Gordon Chandler')
 
   .kanban__box-wrapper.kanban__box-wrapper-6
     .kanban__title-wrapper
