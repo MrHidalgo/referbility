@@ -251,6 +251,10 @@
     .icon-font {
       color: #ff7452;
       @include transition(color);
+
+      .kanban__action-rejected & {
+        transform: rotate(180deg);
+      }
     }
   }
 

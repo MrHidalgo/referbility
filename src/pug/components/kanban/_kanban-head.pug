@@ -13,7 +13,7 @@ mixin kanbanBox(classMod, indicationClassMod, name)
       .kanban__box-cv
         i.icon-font.icon-cv
 
-      .kanban__box-like
+      .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
         i.icon-font.icon-thumbs-up
 
     .kanban__box-body
@@ -62,7 +62,7 @@ mixin kanbanBox(classMod, indicationClassMod, name)
           i.icon-font.icon-comment-delete
           p Reason Not relevant
       div
-        span
+        span(data-id='1' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore")
           i.icon-font.icon-more
     .kanban__box-footer
       div
