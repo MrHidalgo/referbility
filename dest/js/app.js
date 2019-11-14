@@ -467,12 +467,20 @@ $(document).ready(function (ev) {
     });
   };
 
+  var initThumbs = function initThumbs() {
+    $('.kanban__box-like').on('click', function (ev) {
+      $('#kanbanThumbs .c-modal__radio').prop('checked', false).change();
+    });
+  };
+
   var initThumbsOtherTextarea = function initThumbsOtherTextarea() {
     $('.c-modal__radio').on('change', function (ev) {
       $('.c-modal__textarea-wrapper').slideUp(250);
     });
     $('.c-modal__radio-textarea').on('change', function (ev) {
-      $('.c-modal__textarea-wrapper').slideDown(250);
+      if ($(ev.currentTarget).is('checked')) {
+        $('.c-modal__textarea-wrapper').slideDown(250);
+      }
     });
   };
   /*
@@ -503,6 +511,7 @@ $(document).ready(function (ev) {
     initKanbanHeight();
     initModalMoreQuestion();
     initThumbsOtherTextarea();
+    initThumbs();
     // ==========================================
 
     $(window).on('load', function () {

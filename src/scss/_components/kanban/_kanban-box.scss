@@ -372,6 +372,13 @@
     border-radius: 10px;
     border: solid 1px #dfdfff;
     background-color: #ffffff;
+    @include transition(border-color, box-shadow);
+
+    &:hover {
+      border-color: darken(#dfdfff, 10%);
+      box-shadow: 0 5px 10px rgba(135, 131, 157, 0.35);
+      @include transition(border-color, box-shadow);
+    }
 
     &-head {
       display: flex;
