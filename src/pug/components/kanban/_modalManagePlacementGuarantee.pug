@@ -49,9 +49,9 @@ mixin modalContent()
         p.c-modal__desc!= "Click <span>Terminate</span> if the candidate's employment was terminated within the guarantee, or click <span>Release</span> to encash the reward to the referrer."
 
       .c-modal__btn-wrapper
-        a.c-modal__btn.c-modal__btn--terminate(href='#' title='')
+        a.c-modal__btn.c-modal__btn--terminate(href='#terminatePlacementGuarantee' title='' popup-js data-effect="mfp-zoom-in")
           span Terminate
-        a.c-modal__btn.c-modal__btn--release(href='#' title='')
+        a.c-modal__btn.c-modal__btn--release(href='#' title='' popup-js data-effect="mfp-zoom-in")
           span Release
 
 +modal('managePlacementGuarantee', 'modalContent')

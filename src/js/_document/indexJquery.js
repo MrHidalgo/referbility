@@ -134,6 +134,21 @@ $(document).ready((ev) => {
 
 
   const initSortable = () => {
+    function _changeKanbanBoxesHeight(self) {
+      const _kanbanBoxes = $(self).find('.kanban__box'),
+        _kanbanBoxesCover = $(self).find('.kanban__box-overlay');
+
+      let _kanbanBoxesSum = 0;
+
+      for(let i = 0; i < _kanbanBoxes.length; i++) {
+        _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
+      }
+
+      _kanbanBoxesCover.css({
+        'height' : _kanbanBoxesSum
+      });
+    }
+
     var el = document.querySelectorAll('[sortable-box-js]');
 
     for(let i = 0; i < el.length; i++) {
@@ -143,8 +158,18 @@ $(document).ready((ev) => {
         easing: "cubic-bezier(1, 0, 0, 1)",
         dragoverBubble: true,
         handle: ".kanban__box--draggable",
+        onChange: function(evt) {
+          const itemEl = evt.item;
+
+          _changeKanbanBoxesHeight(evt.to);
+          _changeKanbanBoxesHeight(evt.from);
+        },
         onEnd: function (evt) {
           const itemEl = evt.item;
+
+          _changeKanbanBoxesHeight(evt.to);
+          _changeKanbanBoxesHeight(evt.from);
+
 
           if(itemEl.closest('.kanban--guarantee')) {
             $('#btnStartPlacementGuarantee').click();
@@ -156,6 +181,25 @@ $(document).ready((ev) => {
         }
       });
     }
+
+    $(window).on('load resize', () => {
+      const _kanbanBoxWrapper = $('.kanban__box-wrapper');
+
+      for(let idx = 0; idx < _kanbanBoxWrapper.length; idx++) {
+        const _kanbanBoxes = $('.kanban__box-wrapper-' + idx + ' .kanban__box'),
+          _kanbanBoxesCover = $('.kanban__box-wrapper-' + idx + ' .kanban__box-overlay');
+
+        let _kanbanBoxesSum = 0;
+
+        for(let i = 0; i < _kanbanBoxes.length; i++) {
+          _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
+        }
+
+        _kanbanBoxesCover.css({
+          'height' : _kanbanBoxesSum
+        });
+      }
+    });
   };
 
 
@@ -193,7 +237,7 @@ $(document).ready((ev) => {
   };
 
   const initCustomScrollbar = () => {
-    // $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
+    $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
   };
 
   const initKanbanHeight = () => {

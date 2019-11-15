@@ -281,13 +281,14 @@
           <!-- SECTION kanban :: END-->
           <!-- SECTION kanban :: START-->
           <div class="kanban__wrapper-body" kanban-body-js>
-            <div class="kanban__box-wrapper kanban__box-wrapper-1">
+            <div class="kanban__box-wrapper kanban__box-wrapper-0">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Received</p>
                 <div class="kanban__title-indication">3</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--draggable" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js>
+                  <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--"></div>
                                                     <p class="kanban__box-name">Jordan McBride</p>
@@ -480,13 +481,14 @@
                 </div>
               </div>
             </div>
-            <div class="kanban__box-wrapper kanban__box-wrapper-2">
+            <div class="kanban__box-wrapper kanban__box-wrapper-1">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Shortlisted</p>
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--badge kanban__box--draggable" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js>
+                  <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--badge kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-badge">
                                                     <p>recommended</p>
                                                   </div>
@@ -625,13 +627,14 @@
                 </div>
               </div>
             </div>
-            <div class="kanban__box-wrapper kanban__box-wrapper-3">
+            <div class="kanban__box-wrapper kanban__box-wrapper-2">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Interviews / Assessment</p>
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--draggable" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js>
+                  <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--away"></div>
                                                     <p class="kanban__box-name">Kevin Brock</p>
@@ -701,13 +704,14 @@
                 </div>
               </div>
             </div>
-            <div class="kanban__box-wrapper kanban__box-wrapper-4">
+            <div class="kanban__box-wrapper kanban__box-wrapper-3">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Job Offer</p>
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--draggable" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js>
+                  <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--away"></div>
                                                     <p class="kanban__box-name">Ellen Weber</p>
@@ -843,13 +847,14 @@
                 </div>
               </div>
             </div>
-            <div class="kanban__box-wrapper kanban__box-wrapper-5">
+            <div class="kanban__box-wrapper kanban__box-wrapper-4">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Placement Guarantee</p>
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
                 <div class="kanban--guarantee kanban__box-row" sortable-box-js>
+                  <div class="kanban__box-overlay"></div>
                   <input type="hidden" id="btnStartPlacementGuarantee" name="" popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee"><a class="kanban__box kanban__box--guarantee" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--disturb"></div>
@@ -1062,13 +1067,14 @@
                 </div>
               </div>
             </div>
-            <div class="kanban__box-wrapper kanban__box-wrapper-6">
+            <div class="kanban__box-wrapper kanban__box-wrapper-5">
               <div class="kanban__title-wrapper">
                 <p class="kanban__title">Hired</p>
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row"><a class="kanban__box" href="#" title="">
+                <div class="kanban__box-row">
+                  <div class="kanban__box-overlay"></div><a class="kanban__box" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--"></div>
                                                     <p class="kanban__box-name">Tom Fox</p>
@@ -1422,7 +1428,37 @@
               <div class="c-modal__desc-wrapper">
                 <p class="c-modal__desc">Click <span>Terminate</span> if the candidate's employment was terminated within the guarantee, or click <span>Release</span> to encash the reward to the referrer.</p>
               </div>
-              <div class="c-modal__btn-wrapper"><a class="c-modal__btn c-modal__btn--terminate" href="#" title=""><span>Terminate</span></a><a class="c-modal__btn c-modal__btn--release" href="#" title=""><span>Release</span></a></div>
+              <div class="c-modal__btn-wrapper"><a class="c-modal__btn c-modal__btn--terminate" href="#terminatePlacementGuarantee" title="" popup-js data-effect="mfp-zoom-in"><span>Terminate</span></a><a class="c-modal__btn c-modal__btn--release" href="#" title="" popup-js data-effect="mfp-zoom-in"><span>Release</span></a></div>
+            </div>
+          </div>
+    </div>
+    <!-- MODAL request a demo :: END-->
+    <!-- MODAL request a demo :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim" id="terminatePlacementGuarantee">
+          <div class="c-modal__head">
+            <p>Terminate Placement Guarantee</p>
+          </div>
+          <div class="c-modal__body">
+            <div class="c-modal__content">
+              <div class="c-modal__desc-wrapper">
+                <p class="c-modal__desc">By terminating the placement guarantee, you are confirming that the candidate's employment has been terminated either through you or through the candidate. Please provide the reason for the termination:</p>
+              </div>
+              <textarea class="c-modal__textarea" name="" placeholder="Reason"></textarea>
+              <div class="c-modal__btn-wrapper"><a class="c-modal__btn" href="#terminateSubmitPlacementGuarantee" title="" popup-js data-effect="mfp-zoom-in"><span>Submit</span></a></div>
+            </div>
+          </div>
+    </div>
+    <!-- MODAL request a demo :: END-->
+    <!-- MODAL request a demo :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim" id="terminateSubmitPlacementGuarantee">
+          <div class="c-modal__head">
+            <p>Manage Placement Guarantee</p>
+          </div>
+          <div class="c-modal__body">
+            <div class="c-modal__content">
+              <div class="c-modal__desc-wrapper">
+                <p class="c-modal__desc">Your request for placement guarantee termination has been filed and is under review. We will be in touch shortly.</p>
+              </div>
             </div>
           </div>
     </div>

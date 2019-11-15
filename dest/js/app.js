@@ -393,6 +393,21 @@ $(document).ready(function (ev) {
   };
 
   var initSortable = function initSortable() {
+    function _changeKanbanBoxesHeight(self) {
+      var _kanbanBoxes = $(self).find('.kanban__box'),
+          _kanbanBoxesCover = $(self).find('.kanban__box-overlay');
+
+      var _kanbanBoxesSum = 0;
+
+      for (var i = 0; i < _kanbanBoxes.length; i++) {
+        _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
+      }
+
+      _kanbanBoxesCover.css({
+        'height': _kanbanBoxesSum
+      });
+    }
+
     var el = document.querySelectorAll('[sortable-box-js]');
 
     for (var i = 0; i < el.length; i++) {
@@ -402,8 +417,17 @@ $(document).ready(function (ev) {
         easing: "cubic-bezier(1, 0, 0, 1)",
         dragoverBubble: true,
         handle: ".kanban__box--draggable",
+        onChange: function onChange(evt) {
+          var itemEl = evt.item;
+
+          _changeKanbanBoxesHeight(evt.to);
+          _changeKanbanBoxesHeight(evt.from);
+        },
         onEnd: function onEnd(evt) {
           var itemEl = evt.item;
+
+          _changeKanbanBoxesHeight(evt.to);
+          _changeKanbanBoxesHeight(evt.from);
 
           if (itemEl.closest('.kanban--guarantee')) {
             $('#btnStartPlacementGuarantee').click();
@@ -413,6 +437,25 @@ $(document).ready(function (ev) {
         }
       });
     }
+
+    $(window).on('load resize', function () {
+      var _kanbanBoxWrapper = $('.kanban__box-wrapper');
+
+      for (var idx = 0; idx < _kanbanBoxWrapper.length; idx++) {
+        var _kanbanBoxes = $('.kanban__box-wrapper-' + idx + ' .kanban__box'),
+            _kanbanBoxesCover = $('.kanban__box-wrapper-' + idx + ' .kanban__box-overlay');
+
+        var _kanbanBoxesSum = 0;
+
+        for (var _i = 0; _i < _kanbanBoxes.length; _i++) {
+          _kanbanBoxesSum += $(_kanbanBoxes[_i]).outerHeight(true);
+        }
+
+        _kanbanBoxesCover.css({
+          'height': _kanbanBoxesSum
+        });
+      }
+    });
   };
 
   var initKanbanDrop = function initKanbanDrop() {
@@ -448,7 +491,7 @@ $(document).ready(function (ev) {
   };
 
   var initCustomScrollbar = function initCustomScrollbar() {
-    // $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
+    $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({});
   };
 
   var initKanbanHeight = function initKanbanHeight() {

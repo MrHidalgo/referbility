@@ -1,0 +1,22 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__head
+    p Terminate Placement Guarantee
+
+  .c-modal__body
+
+    .c-modal__content
+
+      .c-modal__desc-wrapper
+        p.c-modal__desc By terminating the placement guarantee, you are confirming that the candidate's employment has been terminated either through you or through the candidate. Please provide the reason for the termination:
+
+      textarea.c-modal__textarea(name='' placeholder='Reason')
+
+      .c-modal__btn-wrapper
+        a.c-modal__btn(href='#terminateSubmitPlacementGuarantee' title='' popup-js data-effect="mfp-zoom-in")
+          span Submit
+
++modal('terminatePlacementGuarantee', 'modalContent')
+
+// MODAL request a demo :: END
