@@ -115,10 +115,10 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 3
 
     .kanban__box-cover
-      div(sortable-box-js)
-        +kanbanBox('','','','','','Jordan McBride')
-        +kanbanBox('','','','','away','Rodney Johnson')
-        +kanbanBox('','','','','disturb','Cecilia Yates')
+      div.kanban__box-row(sortable-box-js)
+        +kanbanBox('draggable','','','','','Jordan McBride')
+        +kanbanBox('draggable','','','','away','Rodney Johnson')
+        +kanbanBox('draggable','','','','disturb','Cecilia Yates')
 
   .kanban__box-wrapper.kanban__box-wrapper-2
     .kanban__title-wrapper
@@ -126,9 +126,9 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 2
 
     .kanban__box-cover
-      div(sortable-box-js)
-        +kanbanBox('badge', true, '','','','Emily Welch')
-        +kanbanBox('','','','','away','Tony Duncan')
+      div.kanban__box-row(sortable-box-js)
+        +kanbanBox('badge kanban__box--draggable', true, '','','','Emily Welch')
+        +kanbanBox('draggable','','','','away','Tony Duncan')
 
   .kanban__box-wrapper.kanban__box-wrapper-3
     .kanban__title-wrapper
@@ -136,8 +136,8 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 1
 
     .kanban__box-cover
-      div(sortable-box-js)
-        +kanbanBox('','','','','away','Kevin Brock')
+      div.kanban__box-row(sortable-box-js)
+        +kanbanBox('draggable','','','','away','Kevin Brock')
 
   .kanban__box-wrapper.kanban__box-wrapper-4
     .kanban__title-wrapper
@@ -145,9 +145,9 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 2
 
     .kanban__box-cover
-      div(sortable-box-js)
-        +kanbanBox('','','','','away','Ellen Weber')
-        +kanbanBox('','','','','away','Harvey Wilkerson')
+      div.kanban__box-row(sortable-box-js)
+        +kanbanBox('draggable','','','','away','Ellen Weber')
+        +kanbanBox('draggable','','','','away','Harvey Wilkerson')
 
   .kanban__box-wrapper.kanban__box-wrapper-5
     .kanban__title-wrapper
@@ -155,7 +155,8 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 1
 
     .kanban__box-cover
-      div(sortable-box-js)
+      div.kanban--guarantee.kanban__box-row(sortable-box-js)
+        input(type='hidden' id='btnStartPlacementGuarantee' popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
         +kanbanBox('guarantee', '', '', true, 'disturb','Gordon Chandler')
 
   .kanban__box-wrapper.kanban__box-wrapper-6
@@ -164,7 +165,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 1
 
     .kanban__box-cover
-      div
+      div.kanban__box-row
         +kanbanBox('', '', true, '','','Tom Fox')
 
 // SECTION kanban :: END

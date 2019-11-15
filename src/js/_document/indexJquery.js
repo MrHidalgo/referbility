@@ -142,11 +142,17 @@ $(document).ready((ev) => {
         animation: 250,
         easing: "cubic-bezier(1, 0, 0, 1)",
         dragoverBubble: true,
-        // filter: ".kanban-box--guarantee",
-        onMove: event => {
-          // console.log(event);
-          // console.log(event.related.classList.contains('kanban-box--guarantee'));
-          // return !event.related.classList.contains('kanban-box--guarantee');
+        handle: ".kanban__box--draggable",
+        onEnd: function (evt) {
+          const itemEl = evt.item;
+
+          if(itemEl.closest('.kanban--guarantee')) {
+            $('#btnStartPlacementGuarantee').click();
+
+            $(itemEl)
+              .removeClass('kanban__box--draggable')
+              .addClass('kanban__box--guarantee')
+          }
         }
       });
     }
@@ -187,7 +193,7 @@ $(document).ready((ev) => {
   };
 
   const initCustomScrollbar = () => {
-    $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
+    // $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
   };
 
   const initKanbanHeight = () => {

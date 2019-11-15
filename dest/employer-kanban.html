@@ -287,7 +287,7 @@
                 <div class="kanban__title-indication">3</div>
               </div>
               <div class="kanban__box-cover">
-                <div sortable-box-js><a class="kanban__box" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--"></div>
                                 <p class="kanban__box-name">Jordan McBride</p>
@@ -350,7 +350,7 @@
                                 <div>
                                   <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
                                 </div>
-                              </div></a><a class="kanban__box" href="#" title="">
+                              </div></a><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--away"></div>
                                 <p class="kanban__box-name">Rodney Johnson</p>
@@ -413,7 +413,7 @@
                                 <div>
                                   <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
                                 </div>
-                              </div></a><a class="kanban__box" href="#" title="">
+                              </div></a><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--disturb"></div>
                                 <p class="kanban__box-name">Cecilia Yates</p>
@@ -486,7 +486,7 @@
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div sortable-box-js><a class="kanban__box kanban__box--badge" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--badge kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-badge">
                                 <p>recommended</p>
                               </div>
@@ -552,7 +552,7 @@
                                 <div>
                                   <p><i class="icon-font icon-chat"></i></p><span>Lorem ipsum dolor sitamet persius nominavi te eam</span>
                                 </div>
-                              </div></a><a class="kanban__box" href="#" title="">
+                              </div></a><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--away"></div>
                                 <p class="kanban__box-name">Tony Duncan</p>
@@ -625,7 +625,7 @@
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div sortable-box-js><a class="kanban__box" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--away"></div>
                                 <p class="kanban__box-name">Kevin Brock</p>
@@ -698,7 +698,7 @@
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div sortable-box-js><a class="kanban__box" href="#" title="">
+                <div class="kanban__box-row" sortable-box-js><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--away"></div>
                                 <p class="kanban__box-name">Ellen Weber</p>
@@ -761,7 +761,7 @@
                                 <div>
                                   <p><i class="icon-font icon-chat"></i></p><span>Click to leave a comment</span>
                                 </div>
-                              </div></a><a class="kanban__box" href="#" title="">
+                              </div></a><a class="kanban__box kanban__box--draggable" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--away"></div>
                                 <p class="kanban__box-name">Harvey Wilkerson</p>
@@ -834,7 +834,8 @@
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div sortable-box-js><a class="kanban__box kanban__box--guarantee" href="#" title="">
+                <div class="kanban--guarantee kanban__box-row" sortable-box-js>
+                  <input type="hidden" id="btnStartPlacementGuarantee" popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee"><a class="kanban__box kanban__box--guarantee" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--disturb"></div>
                                 <p class="kanban__box-name">Gordon Chandler</p>
@@ -944,7 +945,7 @@
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div><a class="kanban__box" href="#" title="">
+                <div class="kanban__box-row"><a class="kanban__box" href="#" title="">
                               <div class="kanban__box-head">
                                 <div class="kanban__box-indication kanban__box-indication--"></div>
                                 <p class="kanban__box-name">Tom Fox</p>
@@ -1182,6 +1183,73 @@
             </div>
             <div class="c-modal__textarea-wrapper">
               <textarea class="c-modal__textarea" placeholder="Rejection Reason"></textarea>
+            </div>
+          </div>
+    </div>
+    <!-- MODAL request a demo :: END-->
+    <!-- MODAL request a demo :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim" id="startPlacementGuarantee">
+          <div class="c-modal__head">
+            <p>Start Placement Guarantee</p>
+          </div>
+          <div class="c-modal__body">
+            <div class="c-modal__content">
+              <div class="c-modal__desc-wrapper c-modal__desc-wrapper-1">
+                <p class="c-modal__desc">Our placement guarantee keeps your funds secure for 90 days from the date a candidate accepted your job offer. Throughout the 90 days, you can stop the placement guarantee at any time if the employment relationship is terminated to have the reward credited back to your available balance.</p>
+                <p class="c-modal__desc">To start the placement guarantee, the reward which you have specified for the job will be deducted from your available balance and locked into an escrow.</p>
+              </div>
+              <div class="c-modal__info">
+                <ul class="c-modal__list">
+                  <li class="c-modal__list-item">
+                    <div class="c-modal__list-left">
+                      <div><i class="icon-font icon-user"></i></div>
+                      <div><span>Candidate name:</span></div>
+                    </div>
+                    <div class="c-modal__list-right">
+                      <p>Rosalie Mendoza</p>
+                    </div>
+                  </li>
+                  <li class="c-modal__list-item">
+                    <div class="c-modal__list-left">
+                      <div><i class="icon-font icon-case"></i></div>
+                      <div><span>Job:</span></div>
+                    </div>
+                    <div class="c-modal__list-right">
+                      <p>Chief Financial Officer - Thermal Power Plant</p>
+                    </div>
+                  </li>
+                  <li class="c-modal__list-item">
+                    <div class="c-modal__list-left">
+                      <div><i class="icon-font icon-cup"></i></div>
+                      <div><span>Specified Reward:</span></div>
+                    </div>
+                    <div class="c-modal__list-right">
+                      <p>$2.309</p>
+                    </div>
+                  </li>
+                  <li class="c-modal__list-item">
+                    <div class="c-modal__list-left">
+                      <div><i class="icon-font icon-creditcard-face"></i></div>
+                      <div><span>Available Balance:</span></div>
+                    </div>
+                    <div class="c-modal__list-right">
+                      <p>$11.389</p>
+                    </div>
+                  </li>
+                  <li class="c-modal__list-item">
+                    <div class="c-modal__list-left">
+                      <div><i class="icon-font icon-calendar-delete"></i></div>
+                      <div><span>Guarantee expires on:</span></div>
+                    </div>
+                    <div class="c-modal__list-right">
+                      <p>29/11/2019</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="c-modal__desc-wrapper c-modal__desc-wrapper-2">
+                <p class="c-modal__desc">The locked reward will be automatically encashed to the referrer upon the end of the placement guarantee.</p>
+              </div><a class="c-modal__btn" href="#" title=""><span>Start</span></a>
             </div>
           </div>
     </div>

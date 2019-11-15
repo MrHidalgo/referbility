@@ -1,0 +1,71 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__head
+    p Start Placement Guarantee
+
+  .c-modal__body
+
+    .c-modal__content
+
+      .c-modal__desc-wrapper.c-modal__desc-wrapper-1
+        p.c-modal__desc Our placement guarantee keeps your funds secure for 90 days from the date a candidate accepted your job offer. Throughout the 90 days, you can stop the placement guarantee at any time if the employment relationship is terminated to have the reward credited back to your available balance.
+        p.c-modal__desc To start the placement guarantee, the reward which you have specified for the job will be deducted from your available balance and locked into an escrow.
+
+      .c-modal__info
+        ul.c-modal__list
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-user
+              div
+                span Candidate name:
+
+            .c-modal__list-right
+              p Rosalie Mendoza
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-case
+              div
+                span Job:
+
+            .c-modal__list-right
+              p Chief Financial Officer - Thermal Power Plant
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-cup
+              div
+                span Specified Reward:
+
+            .c-modal__list-right
+              p $2.309
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-creditcard-face
+              div
+                span Available Balance:
+
+            .c-modal__list-right
+              p $11.389
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-calendar-delete
+              div
+                span Guarantee expires on:
+
+            .c-modal__list-right
+              p 29/11/2019
+
+      .c-modal__desc-wrapper.c-modal__desc-wrapper-2
+        p.c-modal__desc The locked reward will be automatically encashed to the referrer upon the end of the placement guarantee.
+
+      a.c-modal__btn(href='#' title='')
+        span Start
+
++modal('startPlacementGuarantee', 'modalContent')
+
+// MODAL request a demo :: END
