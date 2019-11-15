@@ -1,111 +1,135 @@
 // SECTION kanban :: START
 
-mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)
-  a.kanban__box(href='#' title='' class!= (classMod)?'kanban__box--' + classMod:'')
-    if(badge)
-      .kanban__box-badge
-        p recommended
-    .kanban__box-head
-      .kanban__box-indication(class!='kanban__box-indication--' + indicationClassMod)
-      p.kanban__box-name!= name
-      p.kanban__box-position Marketing Manager
+mixin kanbanBoxBadge(badge)
+  if(badge)
+    .kanban__box-badge
+      p recommended
 
-      .kanban__box-cv
-        i.icon-font.icon-cv
+mixin kanbanBoxHead(indicationClassMod, name)
+  .kanban__box-head
+    .kanban__box-indication(class!='kanban__box-indication--' + indicationClassMod)
+    p.kanban__box-name!= name
+    p.kanban__box-position Marketing Manager
 
-      if(guaranteeMod)
-      else if(calendarCheck)
+    .kanban__box-cv
+      i.icon-font.icon-cv
+
+    if(guaranteeMod)
+    else if(calendarCheck)
+    else
+      .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
+        i.icon-font.icon-thumbs-up
+
+mixin kanbanBoxList()
+  ul.kanban__box-list
+    li.kanban__box-list-item
+      div
+        .kanban__box-list-main
+          div
+            i.icon-font.icon-experience
+          div
+            p Experience:
+      div
+        .kanban__box-list-result
+          span 20 years
+    li.kanban__box-list-item
+      div
+        .kanban__box-list-main
+          div
+            i.icon-font.icon-building
+          div
+            p Industry:
+      div
+        .kanban__box-list-result.kanban__box-list-result--bg
+          span Energy and Power
+    li.kanban__box-list-item
+      div
+        .kanban__box-list-main
+          div
+            i.icon-font.icon-wallet
+          div
+            p Salary:
+      div
+        .kanban__box-list-result
+          span QAR 12,000
+
+mixin kanbanBoxGuarantee(guaranteeMod)
+  if(guaranteeMod)
+    .kanban__box-guarantee
+      .kanban__box-guarantee-head
+        span
+          i.icon-font.icon-timer
+        p Placement guarantee:
+      .kanban__box-guarantee-body
+        ul.kanban__box-list
+          li.kanban__box-list-item
+            div
+              .kanban__box-list-main
+                div
+                  i.icon-font.icon-flag
+                div
+                  p Started:
+            div
+              .kanban__box-list-result
+                span 02/10/2019
+          li.kanban__box-list-item
+            div
+              .kanban__box-list-main
+                div
+                  i.icon-font.icon-calendar-check
+                div
+                  p Will end:
+            div
+              .kanban__box-list-result
+                span 04/12/2019
+
+        .kanban__box-guarantee-progress
+          i(style='width: 50%;')
+          p 49 days left
+
+mixin kanbanBoxPrefooter(calendarCheck)
+  .kanban__box-prefooter
+    div
+      .kanban__box-date
+        i.icon-font.icon-date
+        p Referred on 02/10/2019
+      if(calendarCheck)
+        .kanban__box-date.kanban__box-date--hired
+          i.icon-font.icon-calendar-check
+          p Hired on 12/10/2019
+    div
+      span(data-id='1' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore")
+        i.icon-font.icon-more
+
+mixin kanbanBoxFooter(badge)
+  .kanban__box-footer
+    div
+      p
+        i.icon-font.icon-chat
+      if(badge)
+        span Lorem ipsum dolor sitamet persius nominavi te eam
       else
-        .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
-          i.icon-font.icon-thumbs-up
+        span Click to leave a comment
 
-    .kanban__box-body
+mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
+  +kanbanBoxBadge(badge)
+  +kanbanBoxHead(indicationClassMod, name)
 
-      ul.kanban__box-list
-        li.kanban__box-list-item
-          div
-            .kanban__box-list-main
-              div
-                i.icon-font.icon-experience
-              div
-                p Experience:
-          div
-            .kanban__box-list-result
-              span 20 years
-        li.kanban__box-list-item
-          div
-            .kanban__box-list-main
-              div
-                i.icon-font.icon-building
-              div
-                p Industry:
-          div
-            .kanban__box-list-result.kanban__box-list-result--bg
-              span Energy and Power
-        li.kanban__box-list-item
-          div
-            .kanban__box-list-main
-              div
-                i.icon-font.icon-wallet
-              div
-                p Salary:
-          div
-            .kanban__box-list-result
-              span QAR 12,000
+  .kanban__box-body
+    +kanbanBoxList()
+    +kanbanBoxGuarantee(guaranteeMod)
 
-      if(guaranteeMod)
-        .kanban__box-guarantee
-          .kanban__box-guarantee-head
-            span
-              i.icon-font.icon-timer
-            p Placement guarantee:
-          .kanban__box-guarantee-body
-            ul.kanban__box-list
-              li.kanban__box-list-item
-                div
-                  .kanban__box-list-main
-                    div
-                      i.icon-font.icon-flag
-                    div
-                      p Started:
-                div
-                  .kanban__box-list-result
-                    span 02/10/2019
-              li.kanban__box-list-item
-                div
-                  .kanban__box-list-main
-                    div
-                      i.icon-font.icon-calendar-check
-                    div
-                      p Will end:
-                div
-                  .kanban__box-list-result
-                    span 04/12/2019
+  +kanbanBoxPrefooter(calendarCheck)
+  +kanbanBoxFooter(badge)
 
-            .kanban__box-guarantee-progress
-              i(style='width: 50%;')
-              p 49 days left
+mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)
+  if(guaranteeMod && indicationClassMod === 'disturb')
+    a.kanban__box(href!='#managePlacementGuarantee' title='' class!= (classMod)?'kanban__box--' + classMod:'' popup-js data-effect="mfp-zoom-in")
+      +kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
+  else
+    a.kanban__box(href!='#' title='' class!= (classMod)?'kanban__box--' + classMod:'')
+      +kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
 
-    .kanban__box-prefooter
-      div
-        .kanban__box-date
-          i.icon-font.icon-date
-          p Referred on 02/10/2019
-        if(calendarCheck)
-          .kanban__box-date.kanban__box-date--hired
-            i.icon-font.icon-calendar-check
-            p Hired on 12/10/2019
-      div
-        span(data-id='1' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore")
-           i.icon-font.icon-more
-    .kanban__box-footer
-      div
-        p
-          i.icon-font.icon-chat
-        if(badge)
-          span Lorem ipsum dolor sitamet persius nominavi te eam
-        else
-          span Click to leave a comment
 
 .kanban__wrapper-body(kanban-body-js)
 
@@ -152,12 +176,13 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
   .kanban__box-wrapper.kanban__box-wrapper-5
     .kanban__title-wrapper
       p.kanban__title Placement Guarantee
-      .kanban__title-indication 1
+      .kanban__title-indication 2
 
     .kanban__box-cover
       div.kanban--guarantee.kanban__box-row(sortable-box-js)
-        input(type='hidden' id='btnStartPlacementGuarantee' popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
+        input(type='hidden' id='btnStartPlacementGuarantee' name='' popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
         +kanbanBox('guarantee', '', '', true, 'disturb','Gordon Chandler')
+        +kanbanBox('guarantee', '', '', false, '','Harvey Wilkerson')
 
   .kanban__box-wrapper.kanban__box-wrapper-6
     .kanban__title-wrapper

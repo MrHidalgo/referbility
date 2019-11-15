@@ -1,0 +1,59 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__head
+    p Manage Placement Guarantee
+
+  .c-modal__body
+
+    .c-modal__content
+
+      .c-modal__info
+        ul.c-modal__list
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-user
+              div
+                span Candidate name:
+
+            .c-modal__list-right
+              p Rosalie Mendoza
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-calendar-dates
+              div
+                span Reveal date:
+
+            .c-modal__list-right
+              p 01/01/2019
+          li.c-modal__list-item
+            .c-modal__list-left
+              div
+                i.icon-font.icon-wallet
+              div
+                span Escrow amount
+
+            .c-modal__list-right
+              p $2.309
+
+      p.c-modal__subtitle!= "Escrow will be encashed to referrer in"
+      p.c-modal__heading!= '105 Days'
+
+      p.c-modal__date
+        i.icon-font.icon-calendar-dates
+        span 01/07/2019
+
+      .c-modal__desc-wrapper
+        p.c-modal__desc!= "Click <span>Terminate</span> if the candidate's employment was terminated within the guarantee, or click <span>Release</span> to encash the reward to the referrer."
+
+      .c-modal__btn-wrapper
+        a.c-modal__btn.c-modal__btn--terminate(href='#' title='')
+          span Terminate
+        a.c-modal__btn.c-modal__btn--release(href='#' title='')
+          span Release
+
++modal('managePlacementGuarantee', 'modalContent')
+
+// MODAL request a demo :: END
