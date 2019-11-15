@@ -1,0 +1,20 @@
+// MODAL request a demo :: START
+
+mixin modalContent()
+  .c-modal__head
+    p Manage Placement Guarantee
+
+  .c-modal__body
+
+    .c-modal__content
+
+      .c-modal__desc-wrapper
+        p.c-modal__desc By releasing the placement guarantee, you are confirming that the placement guarantee will come to an end and the escrowed reward will immediately be encashed to the successful referrer.
+
+      .c-modal__btn-wrapper
+        a.c-modal__btn(href='#releaseSubmitPlacementGuarantee' title='' popup-js data-effect="mfp-zoom-in")
+          span Release
+
++modal('releasePlacementGuarantee', 'modalContent')
+
+// MODAL request a demo :: END
