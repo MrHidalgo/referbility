@@ -95,7 +95,7 @@ mixin kanbanBoxGuarantee(guaranteeMod, indicationClassMod)
       .kanban__box-guarantee
         +kanbanBoxGuaranteeContent()
 
-mixin kanbanBoxPrefooter(calendarCheck)
+mixin kanbanBoxPrefooter(calendarCheck, name)
   .kanban__box-prefooter
     div
       .kanban__box-date
@@ -105,6 +105,20 @@ mixin kanbanBoxPrefooter(calendarCheck)
         .kanban__box-date.kanban__box-date--hired
           i.icon-font.icon-calendar-check
           p Hired on 12/10/2019
+
+      if(name === 'Emily Welch' || name === 'Tony Duncan')
+        .kanban__box-date.kanban__box-date--shortlisted
+          i.icon-font.icon-date
+          p Shortlisted on 02/10/2019
+      else if(name === 'Kevin Brock')
+        .kanban__box-date.kanban__box-date--assessment
+          i.icon-font.icon-date
+          p In assessment since 02/10/2019
+      else if(name === 'Ellen Weber' || name === 'Harvey Wilkerson' || name === 'Gordon Chandler')
+        .kanban__box-date.kanban__box-date--offered
+          i.icon-font.icon-date
+          p Job offered on 02/10/2019
+
     div
       span(data-id='1' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore")
         i.icon-font.icon-more
@@ -127,7 +141,7 @@ mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name
     +kanbanBoxList()
     +kanbanBoxGuarantee(guaranteeMod, indicationClassMod)
 
-  +kanbanBoxPrefooter(calendarCheck)
+  +kanbanBoxPrefooter(calendarCheck, name)
   +kanbanBoxFooter(badge)
 
 mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)

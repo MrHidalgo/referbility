@@ -104,7 +104,7 @@
     align-items: flex-start;
     justify-content: space-between;
     min-height: 46px;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 20px;
     border-bottom: solid 1px #dfdfff;
 
     span {
@@ -287,8 +287,16 @@
     padding-bottom: 5px;
 
     &.kanban__box-date--hired {
-      .icon-calendar-check {
+      .icon-font {
         color: #36b37e;
+      }
+    }
+
+    &.kanban__box-date--assessment,
+    &.kanban__box-date--offered,
+    &.kanban__box-date--shortlisted {
+      .icon-font {
+        color: #00b8d9;
       }
     }
 
@@ -311,6 +319,7 @@
     }
 
     p {
+      white-space: nowrap;
       font-size: 14px;
       letter-spacing: 0.5px;
       color: rgba(#344563, 0.7);
