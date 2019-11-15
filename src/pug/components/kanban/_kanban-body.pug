@@ -53,39 +53,47 @@ mixin kanbanBoxList()
         .kanban__box-list-result
           span QAR 12,000
 
-mixin kanbanBoxGuarantee(guaranteeMod)
-  if(guaranteeMod)
-    .kanban__box-guarantee
-      .kanban__box-guarantee-head
-        span
-          i.icon-font.icon-timer
-        p Placement guarantee:
-      .kanban__box-guarantee-body
-        ul.kanban__box-list
-          li.kanban__box-list-item
-            div
-              .kanban__box-list-main
-                div
-                  i.icon-font.icon-flag
-                div
-                  p Started:
-            div
-              .kanban__box-list-result
-                span 02/10/2019
-          li.kanban__box-list-item
-            div
-              .kanban__box-list-main
-                div
-                  i.icon-font.icon-calendar-check
-                div
-                  p Will end:
-            div
-              .kanban__box-list-result
-                span 04/12/2019
+mixin kanbanBoxGuarantee(guaranteeMod, indicationClassMod)
+  mixin kanbanBoxGuaranteeContent()
+    .kanban__box-guarantee-head
+      span
+        i.icon-font.icon-timer
+      p Placement guarantee:
+    .kanban__box-guarantee-body
+      ul.kanban__box-list
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-flag
+              div
+                p Started:
+          div
+            .kanban__box-list-result
+              span 02/10/2019
+        li.kanban__box-list-item
+          div
+            .kanban__box-list-main
+              div
+                i.icon-font.icon-calendar-check
+              div
+                p Will end:
+          div
+            .kanban__box-list-result
+              span 04/12/2019
 
-        .kanban__box-guarantee-progress
-          i(style='width: 50%;')
-          p 49 days left
+      .kanban__box-guarantee-progress
+        i(style='width: 50%;')
+        p 49 days left
+
+  if(guaranteeMod)
+
+    if(guaranteeMod && indicationClassMod === 'disturb')
+      .kanban__box-guarantee(popup-js data-effect="mfp-zoom-in" data-mfp-src="#managePlacementGuarantee")
+        +kanbanBoxGuaranteeContent()
+    else
+      .kanban__box-guarantee
+        +kanbanBoxGuaranteeContent()
 
 mixin kanbanBoxPrefooter(calendarCheck)
   .kanban__box-prefooter
@@ -117,18 +125,14 @@ mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name
 
   .kanban__box-body
     +kanbanBoxList()
-    +kanbanBoxGuarantee(guaranteeMod)
+    +kanbanBoxGuarantee(guaranteeMod, indicationClassMod)
 
   +kanbanBoxPrefooter(calendarCheck)
   +kanbanBoxFooter(badge)
 
 mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod, name)
-  if(guaranteeMod && indicationClassMod === 'disturb')
-    a.kanban__box(href!='#managePlacementGuarantee' title='' class!= (classMod)?'kanban__box--' + classMod:'' popup-js data-effect="mfp-zoom-in")
-      +kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
-  else
-    a.kanban__box(href!='#' title='' class!= (classMod)?'kanban__box--' + classMod:'')
-      +kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
+  a.kanban__box(href!='#' title='' class!= (classMod)?'kanban__box--' + classMod:'')
+    +kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
 
 
 .kanban__wrapper-body(kanban-body-js)
@@ -182,7 +186,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       div.kanban--guarantee.kanban__box-row(sortable-box-js)
         input(type='hidden' id='btnStartPlacementGuarantee' name='' popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
         +kanbanBox('guarantee', '', '', true, 'disturb','Gordon Chandler')
-        +kanbanBox('guarantee', '', '', false, '','Harvey Wilkerson')
+        +kanbanBox('guarantee', '', '', true, '','Harvey Wilkerson')
 
   .kanban__box-wrapper.kanban__box-wrapper-6
     .kanban__title-wrapper

@@ -245,14 +245,27 @@
     border: solid 1px #ff8f73;
     @include transition(border, background-color);
 
+    .kanban__action-rejected & {
+      border-color: #57d9a3;
+    }
+
     &:hover {
       border: solid 15px #ff8f73;
       background-color: #ff8f73;
       @include transition(border, background-color);
 
+      .kanban__action-rejected & {
+        border-color: #57d9a3;
+        background-color: #57d9a3;
+      }
+
       .icon-font {
         color: #ffffff;
         @include transition(color);
+
+        .kanban__action-rejected & {
+          color: #fff;
+        }
       }
     }
 
@@ -261,6 +274,7 @@
       @include transition(color);
 
       .kanban__action-rejected & {
+        color: #57d9a3;
         transform: rotate(180deg);
       }
     }

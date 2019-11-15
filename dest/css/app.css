@@ -3451,7 +3451,7 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   top: 35px;
-  right: 10px;
+  right: 30px;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -3459,7 +3459,14 @@ picture {
   font-size: 36px;
 }
 
-/* line 1342, src/scss/_macros/_modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 1327, src/scss/_macros/_modal.scss */
+  .c-modal#startPlacementGuarantee .mfp-close {
+    right: 20px;
+  }
+}
+
+/* line 1345, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3483,7 +3490,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1342, src/scss/_macros/_modal.scss */
+  /* line 1345, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -3493,7 +3500,7 @@ picture {
   }
 }
 
-/* line 1355, src/scss/_macros/_modal.scss */
+/* line 1358, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -3503,27 +3510,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1355, src/scss/_macros/_modal.scss */
+  /* line 1358, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 1368, src/scss/_macros/_modal.scss */
+/* line 1371, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1368, src/scss/_macros/_modal.scss */
+  /* line 1371, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 1376, src/scss/_macros/_modal.scss */
+/* line 1379, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -3531,7 +3538,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 1383, src/scss/_macros/_modal.scss */
+/* line 1386, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc {
   padding-bottom: 30px;
   font-size: 14px;
@@ -3541,22 +3548,22 @@ picture {
   color: #344563;
 }
 
-/* line 1391, src/scss/_macros/_modal.scss */
+/* line 1394, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1395, src/scss/_macros/_modal.scss */
+/* line 1398, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc-wrapper {
   padding-bottom: 20px;
 }
 
-/* line 1398, src/scss/_macros/_modal.scss */
+/* line 1401, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc-wrapper-2 {
   padding-top: 20px;
 }
 
-/* line 1404, src/scss/_macros/_modal.scss */
+/* line 1407, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__info {
   width: 100%;
   min-height: 100px;
@@ -3569,7 +3576,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1414, src/scss/_macros/_modal.scss */
+/* line 1417, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3582,7 +3589,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 1418, src/scss/_macros/_modal.scss */
+/* line 1421, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3600,7 +3607,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1418, src/scss/_macros/_modal.scss */
+  /* line 1421, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__list-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3618,12 +3625,12 @@ picture {
   }
 }
 
-/* line 1429, src/scss/_macros/_modal.scss */
+/* line 1432, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1434, src/scss/_macros/_modal.scss */
+/* line 1437, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3635,32 +3642,32 @@ picture {
           align-items: center;
 }
 
-/* line 1439, src/scss/_macros/_modal.scss */
+/* line 1442, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-left > div:nth-of-type(1) {
   width: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1445, src/scss/_macros/_modal.scss */
+  /* line 1448, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__list-right {
     padding-left: 30px;
   }
 }
 
-/* line 1451, src/scss/_macros/_modal.scss */
+/* line 1454, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list .icon-font {
   font-size: 16px;
   color: #6364e9;
 }
 
-/* line 1456, src/scss/_macros/_modal.scss */
+/* line 1459, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list span {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 1462, src/scss/_macros/_modal.scss */
+/* line 1465, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list p {
   font-size: 14px;
   font-weight: bold;
@@ -3670,13 +3677,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1462, src/scss/_macros/_modal.scss */
+  /* line 1465, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__list p {
     text-align: left;
   }
 }
 
-/* line 1474, src/scss/_macros/_modal.scss */
+/* line 1477, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn {
   overflow: hidden;
   position: relative;
@@ -3712,7 +3719,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1490, src/scss/_macros/_modal.scss */
+/* line 1493, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -3741,7 +3748,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1508, src/scss/_macros/_modal.scss */
+/* line 1511, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -3752,7 +3759,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1512, src/scss/_macros/_modal.scss */
+/* line 1515, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -3767,7 +3774,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1521, src/scss/_macros/_modal.scss */
+/* line 1524, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -3778,7 +3785,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 1534, src/scss/_macros/_modal.scss */
+/* line 1537, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -3789,7 +3796,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1542, src/scss/_macros/_modal.scss */
+/* line 1545, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -3805,7 +3812,7 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   top: 35px;
-  right: 10px;
+  right: 30px;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -3813,7 +3820,14 @@ picture {
   font-size: 36px;
 }
 
-/* line 1557, src/scss/_macros/_modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 1545, src/scss/_macros/_modal.scss */
+  .c-modal#managePlacementGuarantee .mfp-close {
+    right: 20px;
+  }
+}
+
+/* line 1563, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3837,7 +3851,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1557, src/scss/_macros/_modal.scss */
+  /* line 1563, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -3847,7 +3861,7 @@ picture {
   }
 }
 
-/* line 1570, src/scss/_macros/_modal.scss */
+/* line 1576, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -3857,27 +3871,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1570, src/scss/_macros/_modal.scss */
+  /* line 1576, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 1583, src/scss/_macros/_modal.scss */
+/* line 1589, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1583, src/scss/_macros/_modal.scss */
+  /* line 1589, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 1591, src/scss/_macros/_modal.scss */
+/* line 1597, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -3885,7 +3899,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 1598, src/scss/_macros/_modal.scss */
+/* line 1604, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__desc {
   padding-bottom: 50px;
   font-size: 14px;
@@ -3895,12 +3909,12 @@ picture {
   color: #344563;
 }
 
-/* line 1606, src/scss/_macros/_modal.scss */
+/* line 1612, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__desc span {
   font-weight: 700;
 }
 
-/* line 1611, src/scss/_macros/_modal.scss */
+/* line 1617, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__info {
   width: 100%;
   min-height: 100px;
@@ -3914,7 +3928,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1622, src/scss/_macros/_modal.scss */
+/* line 1628, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__subtitle {
   padding-bottom: 15px;
   text-transform: uppercase;
@@ -3925,7 +3939,7 @@ picture {
   color: #344563;
 }
 
-/* line 1632, src/scss/_macros/_modal.scss */
+/* line 1638, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__heading {
   padding-bottom: 20px;
   font-size: 24px;
@@ -3934,7 +3948,7 @@ picture {
   color: #344563;
 }
 
-/* line 1640, src/scss/_macros/_modal.scss */
+/* line 1646, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__date {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3951,19 +3965,21 @@ picture {
   padding-bottom: 40px;
 }
 
-/* line 1646, src/scss/_macros/_modal.scss */
+/* line 1652, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__date .icon-font {
+  margin-right: 10px;
+  font-size: 16px;
   color: #6364e9;
 }
 
-/* line 1650, src/scss/_macros/_modal.scss */
+/* line 1658, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__date span {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 1657, src/scss/_macros/_modal.scss */
+/* line 1665, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3976,7 +3992,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 1661, src/scss/_macros/_modal.scss */
+/* line 1669, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3994,7 +4010,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1661, src/scss/_macros/_modal.scss */
+  /* line 1669, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__list-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4012,12 +4028,12 @@ picture {
   }
 }
 
-/* line 1672, src/scss/_macros/_modal.scss */
+/* line 1680, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1677, src/scss/_macros/_modal.scss */
+/* line 1685, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4029,32 +4045,32 @@ picture {
           align-items: center;
 }
 
-/* line 1682, src/scss/_macros/_modal.scss */
+/* line 1690, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-left > div:nth-of-type(1) {
   width: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1688, src/scss/_macros/_modal.scss */
+  /* line 1696, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__list-right {
     padding-left: 30px;
   }
 }
 
-/* line 1694, src/scss/_macros/_modal.scss */
+/* line 1702, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list .icon-font {
   font-size: 16px;
   color: #6364e9;
 }
 
-/* line 1699, src/scss/_macros/_modal.scss */
+/* line 1707, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list span {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 1705, src/scss/_macros/_modal.scss */
+/* line 1713, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list p {
   font-size: 14px;
   font-weight: bold;
@@ -4064,13 +4080,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1705, src/scss/_macros/_modal.scss */
+  /* line 1713, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__list p {
     text-align: left;
   }
 }
 
-/* line 1717, src/scss/_macros/_modal.scss */
+/* line 1725, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn {
   margin-left: 10px;
   margin-right: 10px;
@@ -4105,7 +4121,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1717, src/scss/_macros/_modal.scss */
+  /* line 1725, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__btn {
     max-width: 260px;
     margin-left: auto;
@@ -4113,7 +4129,7 @@ picture {
   }
 }
 
-/* line 1739, src/scss/_macros/_modal.scss */
+/* line 1747, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--terminate {
   background-image: -webkit-linear-gradient(58deg, #ff5630 17%, #ff8f73 99%);
   background-image: -o-linear-gradient(58deg, #ff5630 17%, #ff8f73 99%);
@@ -4121,30 +4137,30 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1739, src/scss/_macros/_modal.scss */
+  /* line 1747, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__btn--terminate {
     margin-bottom: 10px;
   }
 }
 
-/* line 1745, src/scss/_macros/_modal.scss */
+/* line 1753, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--terminate:after {
   background-color: #ff5630;
 }
 
-/* line 1749, src/scss/_macros/_modal.scss */
+/* line 1758, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--release {
   background-image: -webkit-linear-gradient(58deg, #36b37e 17%, #57d9a3 99%);
   background-image: -o-linear-gradient(58deg, #36b37e 17%, #57d9a3 99%);
   background-image: linear-gradient(32deg, #36b37e 17%, #57d9a3 99%);
 }
 
-/* line 1752, src/scss/_macros/_modal.scss */
+/* line 1761, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--release:after {
   background-color: #36b37e;
 }
 
-/* line 1757, src/scss/_macros/_modal.scss */
+/* line 1766, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -4172,7 +4188,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1774, src/scss/_macros/_modal.scss */
+/* line 1783, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -4183,7 +4199,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1778, src/scss/_macros/_modal.scss */
+/* line 1787, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -4198,7 +4214,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1787, src/scss/_macros/_modal.scss */
+/* line 1796, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4215,7 +4231,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1787, src/scss/_macros/_modal.scss */
+  /* line 1796, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__btn-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4225,7 +4241,7 @@ picture {
   }
 }
 
-/* line 1796, src/scss/_macros/_modal.scss */
+/* line 1805, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -10032,6 +10048,11 @@ picture {
 }
 
 /* line 248, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__action-rejected .kanban__box-like {
+  border-color: #57d9a3;
+}
+
+/* line 252, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like:hover {
   border: solid 15px #ff8f73;
   background-color: #ff8f73;
@@ -10040,7 +10061,13 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 253, src/scss/_components/kanban/_kanban-box.scss */
+/* line 257, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__action-rejected .kanban__box-like:hover {
+  border-color: #57d9a3;
+  background-color: #57d9a3;
+}
+
+/* line 262, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -10048,7 +10075,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 259, src/scss/_components/kanban/_kanban-box.scss */
+/* line 266, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__action-rejected .kanban__box-like:hover .icon-font {
+  color: #fff;
+}
+
+/* line 272, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like .icon-font {
   color: #ff7452;
   -webkit-transition: color 0.3s ease-in-out;
@@ -10056,14 +10088,15 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 263, src/scss/_components/kanban/_kanban-box.scss */
+/* line 276, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like .icon-font {
+  color: #57d9a3;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 269, src/scss/_components/kanban/_kanban-box.scss */
+/* line 283, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10077,41 +10110,41 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 276, src/scss/_components/kanban/_kanban-box.scss */
+/* line 290, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date.kanban__box-date--hired .icon-calendar-check {
   color: #36b37e;
 }
 
-/* line 281, src/scss/_components/kanban/_kanban-box.scss */
+/* line 295, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-font {
   margin-right: 11px;
   font-size: 13px;
 }
 
-/* line 286, src/scss/_components/kanban/_kanban-box.scss */
+/* line 300, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-date {
   color: #6364e9;
 }
 
-/* line 290, src/scss/_components/kanban/_kanban-box.scss */
+/* line 304, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-calendar-check {
   color: #36b37e;
 }
 
-/* line 294, src/scss/_components/kanban/_kanban-box.scss */
+/* line 308, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-comment-delete,
 .kanban__box-date .icon-calendar-check {
   color: #ff7452;
 }
 
-/* line 299, src/scss/_components/kanban/_kanban-box.scss */
+/* line 313, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: rgba(52, 69, 99, 0.7);
 }
 
-/* line 306, src/scss/_components/kanban/_kanban-box.scss */
+/* line 320, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10124,7 +10157,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 310, src/scss/_components/kanban/_kanban-box.scss */
+/* line 324, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10141,19 +10174,19 @@ picture {
   padding-bottom: 11px;
 }
 
-/* line 316, src/scss/_components/kanban/_kanban-box.scss */
+/* line 330, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-item:last-of-type {
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 320, src/scss/_components/kanban/_kanban-box.scss */
+  /* line 334, src/scss/_components/kanban/_kanban-box.scss */
   .kanban__box-list-item > div {
     padding-right: 5px;
   }
 }
 
-/* line 327, src/scss/_components/kanban/_kanban-box.scss */
+/* line 341, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10165,25 +10198,25 @@ picture {
           align-items: center;
 }
 
-/* line 332, src/scss/_components/kanban/_kanban-box.scss */
+/* line 346, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main > div:nth-of-type(1) {
   width: 25px;
 }
 
-/* line 337, src/scss/_components/kanban/_kanban-box.scss */
+/* line 351, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main .icon-font {
   color: #6364e9;
   font-size: 16px;
 }
 
-/* line 342, src/scss/_components/kanban/_kanban-box.scss */
+/* line 356, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 350, src/scss/_components/kanban/_kanban-box.scss */
+/* line 364, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result.kanban__box-list-result--bg {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10209,19 +10242,19 @@ picture {
   background: linear-gradient(45deg, #5153dc 0%, #8181ff 100%);
 }
 
-/* line 361, src/scss/_components/kanban/_kanban-box.scss */
+/* line 375, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result.kanban__box-list-result--bg span {
   color: #ffffff;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 361, src/scss/_components/kanban/_kanban-box.scss */
+  /* line 375, src/scss/_components/kanban/_kanban-box.scss */
   .kanban__box-list-result.kanban__box-list-result--bg span {
     font-size: 12px;
   }
 }
 
-/* line 369, src/scss/_components/kanban/_kanban-box.scss */
+/* line 383, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result span {
   text-align: right;
   font-size: 14px;
@@ -10230,7 +10263,7 @@ picture {
   color: #344563;
 }
 
-/* line 379, src/scss/_components/kanban/_kanban-box.scss */
+/* line 393, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee {
   width: 100%;
   min-height: 123px;
@@ -10247,7 +10280,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 389, src/scss/_components/kanban/_kanban-box.scss */
+/* line 403, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee:hover {
   border-color: #6364e9;
   -webkit-box-shadow: 0 5px 10px rgba(135, 131, 157, 0.55);
@@ -10259,7 +10292,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 395, src/scss/_components/kanban/_kanban-box.scss */
+/* line 409, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10272,30 +10305,30 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 400, src/scss/_components/kanban/_kanban-box.scss */
+/* line 414, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head span {
   width: 25px;
 }
 
-/* line 404, src/scss/_components/kanban/_kanban-box.scss */
+/* line 418, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head .icon-timer {
   color: #6364e9;
   font-size: 16px;
 }
 
-/* line 409, src/scss/_components/kanban/_kanban-box.scss */
+/* line 423, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 416, src/scss/_components/kanban/_kanban-box.scss */
+/* line 430, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-body {
   padding-left: 25px;
 }
 
-/* line 420, src/scss/_components/kanban/_kanban-box.scss */
+/* line 434, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress {
   overflow: hidden;
   position: relative;
@@ -10318,7 +10351,7 @@ picture {
   background-color: #dfe1e6;
 }
 
-/* line 431, src/scss/_components/kanban/_kanban-box.scss */
+/* line 445, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress i {
   position: absolute;
   top: 0;
@@ -10329,7 +10362,7 @@ picture {
   background: linear-gradient(45deg, #6668e0 0%, #9b9bff 100%);
 }
 
-/* line 439, src/scss/_components/kanban/_kanban-box.scss */
+/* line 453, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress p {
   z-index: 2;
   overflow: hidden;

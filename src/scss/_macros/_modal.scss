@@ -1330,12 +1330,15 @@
       align-items: center;
       justify-content: center;
       top: 35px;
-      right: 10px;
+      right: 30px;
       width: 30px;
       height: 30px;
       line-height: 30px;
       color: rgba(#fff, 1);
       font-size: 36px;
+      @include adaptive(767) {
+        right: 20px;
+      }
     }
 
     .c-modal {
@@ -1545,12 +1548,15 @@
       align-items: center;
       justify-content: center;
       top: 35px;
-      right: 10px;
+      right: 30px;
       width: 30px;
       height: 30px;
       line-height: 30px;
       color: rgba(#fff, 1);
       font-size: 36px;
+      @include adaptive(767) {
+        right: 20px;
+      }
     }
 
     .c-modal {
@@ -1644,6 +1650,8 @@
         padding-bottom: 40px;
 
         .icon-font {
+          margin-right: 10px;
+          font-size: 16px;
           color: #6364e9;
         }
 
@@ -1746,6 +1754,7 @@
             background-color: #ff5630;
           }
         }
+
         &--release {
           background-image: linear-gradient(32deg, #36b37e 17%, #57d9a3 99%);
 
