@@ -155,7 +155,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 3
 
     .kanban__box-cover
-      div.kanban__box-row(sortable-box-js)
+      div.kanban__box-row(kanban-received-js sortable-box-js)
         .kanban__box-overlay
         +kanbanBox('draggable','','','','','Jordan McBride')
         +kanbanBox('draggable','','','','away','Rodney Johnson')
@@ -167,7 +167,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 2
 
     .kanban__box-cover
-      div.kanban__box-row(sortable-box-js)
+      div.kanban__box-row(kanban-shortlisted-js sortable-box-js)
         .kanban__box-overlay
         +kanbanBox('badge kanban__box--draggable', true, '','','','Emily Welch')
         +kanbanBox('draggable','','','','away','Tony Duncan')
@@ -178,7 +178,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 1
 
     .kanban__box-cover
-      div.kanban__box-row(sortable-box-js)
+      div.kanban__box-row(kanban-assessment-js sortable-box-js)
         .kanban__box-overlay
         +kanbanBox('draggable','','','','away','Kevin Brock')
 
@@ -188,7 +188,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 2
 
     .kanban__box-cover
-      div.kanban__box-row(sortable-box-js)
+      div.kanban__box-row(kanban-offer-js sortable-box-js)
         .kanban__box-overlay
         +kanbanBox('draggable','','','','away','Ellen Weber')
         +kanbanBox('draggable','','','','away','Harvey Wilkerson')
@@ -199,7 +199,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 2
 
     .kanban__box-cover
-      div.kanban--guarantee.kanban__box-row(sortable-box-js)
+      div.kanban--guarantee.kanban__box-row(kanban-placement-js sortable-box-js)
         .kanban__box-overlay
         input(type='hidden' id='btnStartPlacementGuarantee' name='' popup-guarantee-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
         +kanbanBox('guarantee', '', '', true, 'disturb','Gordon Chandler')

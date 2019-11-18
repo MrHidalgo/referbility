@@ -390,6 +390,27 @@ $(document).ready(function (ev) {
     });
   };
 
+  function _changeKanbanBoxesHeight(self) {
+    var _kanbanBoxes = $(self).find('.kanban__box'),
+        _kanbanBoxesCover = $(self).find('.kanban__box-overlay');
+
+    var _kanbanBoxesSum = 0;
+
+    for (var i = 0; i < _kanbanBoxes.length; i++) {
+      _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
+    }
+
+    _kanbanBoxesCover.css({
+      'height': _kanbanBoxesSum
+    });
+
+    // change title indication
+    if (_kanbanBoxes.length === 0) {
+      $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeOut(300);
+    } else {
+      $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeIn(300).text(_kanbanBoxes.length);
+    }
+  }
   var initSortable = function initSortable() {
     var _sortableAnswer = 0,
         _sortableItem = null,
@@ -400,28 +421,6 @@ $(document).ready(function (ev) {
         _sortableGuaranteeItem = null,
         _sortableGuaranteeToPositive = $('[kanban-hired-js]'),
         _sortableGuaranteeToNegative = $('[kanban-rejected-js]');
-
-    function _changeKanbanBoxesHeight(self) {
-      var _kanbanBoxes = $(self).find('.kanban__box'),
-          _kanbanBoxesCover = $(self).find('.kanban__box-overlay');
-
-      var _kanbanBoxesSum = 0;
-
-      for (var i = 0; i < _kanbanBoxes.length; i++) {
-        _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
-      }
-
-      _kanbanBoxesCover.css({
-        'height': _kanbanBoxesSum
-      });
-
-      // change title indication
-      if (_kanbanBoxes.length === 0) {
-        $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeOut(300);
-      } else {
-        $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeIn(300).text(_kanbanBoxes.length);
-      }
-    }
 
     $('[modal-btn-guarantee-js]').on('click', function (ev) {
       _sortableAnswer = 1;
@@ -507,7 +506,11 @@ $(document).ready(function (ev) {
 
       _changeKanbanBoxesHeight($('.kanban--guarantee'));
 
-      $('.kanban__action-rejected-head p').text($('[kanban-rejected-js] .kanban__box').length);
+      if ($('[kanban-rejected-js] .kanban__box').length === 0) {
+        $('.kanban__action-rejected-head p').fadeOut(250);
+      } else {
+        $('.kanban__action-rejected-head p').fadeIn(250).text($('[kanban-rejected-js] .kanban__box').length);
+      }
     });
 
     var el = document.querySelectorAll('[sortable-box-js]');
@@ -520,10 +523,10 @@ $(document).ready(function (ev) {
         dragoverBubble: true,
         handle: ".kanban__box--draggable",
         onChange: function onChange(evt) {
-          var itemEl = evt.item;
-
-          // _changeKanbanBoxesHeight(evt.to);
-          // _changeKanbanBoxesHeight(evt.from);
+          // const itemEl = evt.item;
+          //
+          // // _changeKanbanBoxesHeight(evt.to);
+          // // _changeKanbanBoxesHeight(evt.from);
         },
         onEnd: function onEnd(evt) {
           var itemEl = evt.item;
@@ -623,6 +626,7 @@ $(document).ready(function (ev) {
   var initThumbs = function initThumbs() {
     $('.kanban__box-like').on('click', function (ev) {
       $('#kanbanThumbs .c-modal__radio').prop('checked', false).change();
+      $('.c-modal__textarea-wrapper').hide();
     });
   };
 
@@ -631,9 +635,30 @@ $(document).ready(function (ev) {
       $('.c-modal__textarea-wrapper').slideUp(250);
     });
     $('.c-modal__radio-textarea').on('change', function (ev) {
-      if ($(ev.currentTarget).is('checked')) {
+      if ($(ev.currentTarget).is(':checked')) {
         $('.c-modal__textarea-wrapper').slideDown(250);
       }
+    });
+  };
+
+  var initRejectedThumbs = function initRejectedThumbs() {
+    $('[kanban-rejected-js] .kanban__box-like').on('click', function (ev) {
+      var _el = $(ev.currentTarget),
+          _parentNode = _el.closest('.kanban__box');
+
+      _parentNode.find('.kanban__box-like').attr('popup-js', '').attr('data-effect', 'mfp-zoom-in').attr('data-mfp-src', '#kanbanThumbs');
+
+      $('[kanban-shortlisted-js]').append(_parentNode);
+
+      _changeKanbanBoxesHeight($('[kanban-shortlisted-js]'));
+
+      if ($('[kanban-rejected-js] .kanban__box').length === 0) {
+        $('.kanban__action-rejected-head p').fadeOut(250);
+      } else {
+        $('.kanban__action-rejected-head p').fadeIn(250).text($('[kanban-rejected-js] .kanban__box').length);
+      }
+
+      initPopups();
     });
   };
   /*
@@ -665,6 +690,7 @@ $(document).ready(function (ev) {
     initModalMoreQuestion();
     initThumbsOtherTextarea();
     initThumbs();
+    initRejectedThumbs();
     // ==========================================
 
     $(window).on('load', function () {
