@@ -101,10 +101,23 @@
       color: #6364e9;
     }
 
+    a {
+      display: inline-flex;
+      align-items: flex-start;
+    }
+
     .icon-pencil-create {
+      position: relative;
+      top: 1px;
       margin-left: 5px;
       font-size: 15px;
       color: #7a869a;
+      @include transition(color);
+
+      &:hover {
+        color: #6364e9;
+        @include transition(color);
+      }
     }
 
     h2 {

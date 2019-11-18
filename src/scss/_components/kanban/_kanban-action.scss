@@ -160,8 +160,12 @@
     }
 
     &-title {
-      padding: 40px 30px 10px;
+      padding: 10px 30px 10px;
       border-bottom: solid 1px #dfdfff;
+
+      &:nth-of-type(1) {
+        padding-top: 40px;
+      }
 
       p {
         text-transform: uppercase;
