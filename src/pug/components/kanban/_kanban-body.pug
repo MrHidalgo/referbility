@@ -5,7 +5,7 @@ mixin kanbanBoxBadge(badge)
     .kanban__box-badge
       p recommended
 
-mixin kanbanBoxHead(indicationClassMod, name)
+mixin kanbanBoxHead(guaranteeMod, calendarCheck, indicationClassMod, name)
   .kanban__box-head
     .kanban__box-indication(class!='kanban__box-indication--' + indicationClassMod)
     p.kanban__box-name!= name
@@ -135,7 +135,7 @@ mixin kanbanBoxFooter(badge)
 
 mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
   +kanbanBoxBadge(badge)
-  +kanbanBoxHead(indicationClassMod, name)
+  +kanbanBoxHead(guaranteeMod, calendarCheck, indicationClassMod, name)
 
   .kanban__box-body
     +kanbanBoxList()

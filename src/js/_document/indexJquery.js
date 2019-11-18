@@ -152,6 +152,15 @@ $(document).ready((ev) => {
       _kanbanBoxesCover.css({
         'height' : _kanbanBoxesSum
       });
+
+      console.log($(self).closest('.kanban__box-wrapper').find('.kanban__title-indication'));
+      console.log(_kanbanBoxes.length);
+
+      if(_kanbanBoxes.length === 0) {
+        $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeOut(300);
+      } else {
+        $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeIn(300).text(_kanbanBoxes.length);
+      }
     }
 
     $('[modal-btn-guarantee-js]').on('click', (ev) => {
