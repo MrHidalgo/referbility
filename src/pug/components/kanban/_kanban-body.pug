@@ -203,7 +203,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
     .kanban__box-cover
       div.kanban--guarantee.kanban__box-row(sortable-box-js)
         .kanban__box-overlay
-        input(type='hidden' id='btnStartPlacementGuarantee' name='' popup-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
+        input(type='hidden' id='btnStartPlacementGuarantee' name='' popup-guarantee-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee")
         +kanbanBox('guarantee', '', '', true, 'disturb','Gordon Chandler')
         +kanbanBox('guarantee', '', '', true, '','Harvey Wilkerson')
 

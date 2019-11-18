@@ -63,7 +63,7 @@ mixin modalContent()
       .c-modal__desc-wrapper.c-modal__desc-wrapper-2
         p.c-modal__desc The locked reward will be automatically encashed to the referrer upon the end of the placement guarantee.
 
-      a.c-modal__btn(href='#' title='')
+      a.c-modal__btn(href='#' title='' modal-btn-guarantee-js data-answer='1')
         span Start
 
 +modal('startPlacementGuarantee', 'modalContent')

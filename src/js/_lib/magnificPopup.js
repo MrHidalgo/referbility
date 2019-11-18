@@ -21,7 +21,7 @@ const initPopups = () => {
       beforeOpen: function() {
         this.st.mainClass = this.st.el.attr('data-effect');
       },
-      close: function() {}
+      beforeClose: function(ev) {}
     }
   });
 

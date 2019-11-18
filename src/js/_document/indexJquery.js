@@ -134,6 +134,11 @@ $(document).ready((ev) => {
 
 
   const initSortable = () => {
+    let _sortableAnswer = 0,
+      _sortableItem = null,
+      _sortableTo = null,
+      _sortableFrom = null;
+
     function _changeKanbanBoxesHeight(self) {
       const _kanbanBoxes = $(self).find('.kanban__box'),
         _kanbanBoxesCover = $(self).find('.kanban__box-overlay');
@@ -148,6 +153,38 @@ $(document).ready((ev) => {
         'height' : _kanbanBoxesSum
       });
     }
+
+    $('[modal-btn-guarantee-js]').on('click', (ev) => {
+      _sortableAnswer = 1;
+
+      $('[popup-guarantee-js]').magnificPopup('close');
+    });
+
+    $('[popup-guarantee-js]').magnificPopup({
+      type: 'inline',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'is-show',
+      callbacks: {
+        beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        },
+        beforeClose: function(ev) {
+          if(_sortableAnswer === 0) {
+            $(_sortableTo).find(_sortableItem).remove();
+            $(_sortableItem).removeClass('kanban__box--guarantee').addClass('kanban__box--draggable');
+            $(_sortableFrom).prepend(_sortableItem);
+
+            _changeKanbanBoxesHeight(_sortableFrom);
+          }
+        }
+      }
+    });
 
     var el = document.querySelectorAll('[sortable-box-js]');
 
@@ -167,9 +204,12 @@ $(document).ready((ev) => {
         onEnd: function (evt) {
           const itemEl = evt.item;
 
+          _sortableItem = itemEl;
+          _sortableTo = evt.to;
+          _sortableFrom = evt.from;
+
           _changeKanbanBoxesHeight(evt.to);
           _changeKanbanBoxesHeight(evt.from);
-
 
           if(itemEl.closest('.kanban--guarantee')) {
             $('#btnStartPlacementGuarantee').click();
