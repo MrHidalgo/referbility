@@ -10982,11 +10982,16 @@ picture {
 }
 
 /* line 262, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-like.is-hide {
+  display: none;
+}
+
+/* line 266, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like {
   border-color: #57d9a3;
 }
 
-/* line 266, src/scss/_components/kanban/_kanban-box.scss */
+/* line 270, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like:hover {
   border: solid 15px #ff8f73;
   background-color: #ff8f73;
@@ -10995,13 +11000,13 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 271, src/scss/_components/kanban/_kanban-box.scss */
+/* line 275, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like:hover {
   border-color: #57d9a3;
   background-color: #57d9a3;
 }
 
-/* line 276, src/scss/_components/kanban/_kanban-box.scss */
+/* line 280, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -11009,12 +11014,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 280, src/scss/_components/kanban/_kanban-box.scss */
+/* line 284, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like:hover .icon-font {
   color: #fff;
 }
 
-/* line 286, src/scss/_components/kanban/_kanban-box.scss */
+/* line 290, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like .icon-font {
   color: #ff7452;
   -webkit-transition: color 0.3s ease-in-out;
@@ -11022,14 +11027,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 290, src/scss/_components/kanban/_kanban-box.scss */
+/* line 294, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like .icon-font {
   color: #57d9a3;
   -webkit-transform: rotate3d(1, 0, 0, 180deg);
           transform: rotate3d(1, 0, 0, 180deg);
 }
 
-/* line 297, src/scss/_components/kanban/_kanban-box.scss */
+/* line 301, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11043,39 +11048,39 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 304, src/scss/_components/kanban/_kanban-box.scss */
+/* line 308, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date.kanban__box-date--hired .icon-font {
   color: #36b37e;
 }
 
-/* line 312, src/scss/_components/kanban/_kanban-box.scss */
+/* line 316, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date.kanban__box-date--assessment .icon-font, .kanban__box-date.kanban__box-date--offered .icon-font, .kanban__box-date.kanban__box-date--shortlisted .icon-font {
   color: #00b8d9;
 }
 
-/* line 317, src/scss/_components/kanban/_kanban-box.scss */
+/* line 321, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-font {
   margin-right: 11px;
   font-size: 13px;
 }
 
-/* line 322, src/scss/_components/kanban/_kanban-box.scss */
+/* line 326, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-date {
   color: #6364e9;
 }
 
-/* line 326, src/scss/_components/kanban/_kanban-box.scss */
+/* line 330, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-calendar-check {
   color: #36b37e;
 }
 
-/* line 330, src/scss/_components/kanban/_kanban-box.scss */
+/* line 334, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-comment-delete,
 .kanban__box-date .icon-calendar-check {
   color: #ff7452;
 }
 
-/* line 335, src/scss/_components/kanban/_kanban-box.scss */
+/* line 339, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date p {
   white-space: nowrap;
   font-size: 14px;
@@ -11083,7 +11088,7 @@ picture {
   color: rgba(52, 69, 99, 0.7);
 }
 
-/* line 343, src/scss/_components/kanban/_kanban-box.scss */
+/* line 347, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11096,7 +11101,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 347, src/scss/_components/kanban/_kanban-box.scss */
+/* line 351, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11113,19 +11118,19 @@ picture {
   padding-bottom: 11px;
 }
 
-/* line 353, src/scss/_components/kanban/_kanban-box.scss */
+/* line 357, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-item:last-of-type {
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 357, src/scss/_components/kanban/_kanban-box.scss */
+  /* line 361, src/scss/_components/kanban/_kanban-box.scss */
   .kanban__box-list-item > div {
     padding-right: 5px;
   }
 }
 
-/* line 364, src/scss/_components/kanban/_kanban-box.scss */
+/* line 368, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11137,25 +11142,25 @@ picture {
           align-items: center;
 }
 
-/* line 369, src/scss/_components/kanban/_kanban-box.scss */
+/* line 373, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main > div:nth-of-type(1) {
   width: 25px;
 }
 
-/* line 374, src/scss/_components/kanban/_kanban-box.scss */
+/* line 378, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main .icon-font {
   color: #6364e9;
   font-size: 16px;
 }
 
-/* line 379, src/scss/_components/kanban/_kanban-box.scss */
+/* line 383, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 387, src/scss/_components/kanban/_kanban-box.scss */
+/* line 391, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result.kanban__box-list-result--bg {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11181,19 +11186,19 @@ picture {
   background: linear-gradient(45deg, #5153dc 0%, #8181ff 100%);
 }
 
-/* line 398, src/scss/_components/kanban/_kanban-box.scss */
+/* line 402, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result.kanban__box-list-result--bg span {
   color: #ffffff;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 398, src/scss/_components/kanban/_kanban-box.scss */
+  /* line 402, src/scss/_components/kanban/_kanban-box.scss */
   .kanban__box-list-result.kanban__box-list-result--bg span {
     font-size: 12px;
   }
 }
 
-/* line 406, src/scss/_components/kanban/_kanban-box.scss */
+/* line 410, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result span {
   text-align: right;
   font-size: 14px;
@@ -11202,8 +11207,9 @@ picture {
   color: #344563;
 }
 
-/* line 416, src/scss/_components/kanban/_kanban-box.scss */
+/* line 420, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee {
+  display: none;
   width: 100%;
   min-height: 123px;
   padding: 10px;
@@ -11219,7 +11225,12 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 426, src/scss/_components/kanban/_kanban-box.scss */
+/* line 431, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-guarantee.is-active {
+  display: block;
+}
+
+/* line 435, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee:hover {
   border-color: #6364e9;
   -webkit-box-shadow: 0 5px 10px rgba(135, 131, 157, 0.55);
@@ -11231,7 +11242,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 432, src/scss/_components/kanban/_kanban-box.scss */
+/* line 441, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11244,30 +11255,30 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 437, src/scss/_components/kanban/_kanban-box.scss */
+/* line 446, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head span {
   width: 25px;
 }
 
-/* line 441, src/scss/_components/kanban/_kanban-box.scss */
+/* line 450, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head .icon-timer {
   color: #6364e9;
   font-size: 16px;
 }
 
-/* line 446, src/scss/_components/kanban/_kanban-box.scss */
+/* line 455, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 453, src/scss/_components/kanban/_kanban-box.scss */
+/* line 462, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-body {
   padding-left: 25px;
 }
 
-/* line 457, src/scss/_components/kanban/_kanban-box.scss */
+/* line 466, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress {
   overflow: hidden;
   position: relative;
@@ -11290,7 +11301,7 @@ picture {
   background-color: #dfe1e6;
 }
 
-/* line 468, src/scss/_components/kanban/_kanban-box.scss */
+/* line 477, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress i {
   position: absolute;
   top: 0;
@@ -11301,7 +11312,7 @@ picture {
   background: linear-gradient(45deg, #6668e0 0%, #9b9bff 100%);
 }
 
-/* line 476, src/scss/_components/kanban/_kanban-box.scss */
+/* line 485, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress p {
   z-index: 2;
   overflow: hidden;

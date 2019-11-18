@@ -259,6 +259,10 @@
     border: solid 1px #ff8f73;
     @include transition(border, background-color);
 
+    &.is-hide {
+      display: none;
+    }
+
     .kanban__action-rejected & {
       border-color: #57d9a3;
     }
@@ -414,6 +418,7 @@
   }
 
   &-guarantee {
+    display: none;
     width: 100%;
     min-height: 123px;
     padding: 10px;
@@ -422,6 +427,10 @@
     border: solid 1px #dfdfff;
     background-color: #ffffff;
     @include transition(border-color, box-shadow);
+
+    &.is-active {
+      display: block;
+    }
 
     &:hover {
       border-color: #6364e9;

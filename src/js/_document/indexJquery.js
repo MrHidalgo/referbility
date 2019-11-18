@@ -139,7 +139,12 @@ $(document).ready((ev) => {
       _sortableTo = null,
       _sortableFrom = null;
 
-    function _changeKanbanBoxesHeight(self) {
+    let _sortableGuaranteeAnswer = 0,
+      _sortableGuaranteeItem = null,
+      _sortableGuaranteeToPositive = $('[kanban-hired-js]'),
+      _sortableGuaranteeToNegative = $('[kanban-rejected-js]');
+
+    function _changeKanbanBoxesHeight(self)  {
       const _kanbanBoxes = $(self).find('.kanban__box'),
         _kanbanBoxesCover = $(self).find('.kanban__box-overlay');
 
@@ -153,9 +158,7 @@ $(document).ready((ev) => {
         'height' : _kanbanBoxesSum
       });
 
-      console.log($(self).closest('.kanban__box-wrapper').find('.kanban__title-indication'));
-      console.log(_kanbanBoxes.length);
-
+      // change title indication
       if(_kanbanBoxes.length === 0) {
         $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeOut(300);
       } else {
@@ -167,6 +170,7 @@ $(document).ready((ev) => {
       _sortableAnswer = 1;
 
       $('[popup-guarantee-js]').magnificPopup('close');
+      $(_sortableItem).find('.kanban__box-guarantee').addClass('is-active');
     });
 
     $('[popup-guarantee-js]').magnificPopup({
@@ -189,10 +193,64 @@ $(document).ready((ev) => {
             $(_sortableItem).removeClass('kanban__box--guarantee').addClass('kanban__box--draggable');
             $(_sortableFrom).prepend(_sortableItem);
 
+            _changeKanbanBoxesHeight(_sortableTo);
             _changeKanbanBoxesHeight(_sortableFrom);
           }
+        },
+        close: function () {
+          _changeKanbanBoxesHeight(_sortableTo);
+          _changeKanbanBoxesHeight(_sortableFrom);
+
+          _sortableAnswer = 0;
+          _sortableItem = null;
+          _sortableTo = null;
+          _sortableFrom = null;
         }
       }
+    });
+
+    $('[popup-placementGuarantee-js]').magnificPopup({
+      type: 'inline',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'is-show',
+      callbacks: {
+        beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+
+          _sortableGuaranteeItem = $(this.st.el).closest('.kanban__box');
+        }
+      }
+    });
+
+    $('[popup-release-js]').on('click', (ev) => {
+      $('[kanban-body-js]').find(_sortableGuaranteeItem).remove();
+
+      _sortableGuaranteeToPositive.append(_sortableGuaranteeItem);
+
+      _sortableGuaranteeItem.find('.kanban__box-guarantee').removeClass('is-active');
+      _sortableGuaranteeItem.find('.kanban__box-like').addClass('is-hide');
+
+      _changeKanbanBoxesHeight($('.kanban--guarantee'));
+      _changeKanbanBoxesHeight(_sortableGuaranteeToPositive);
+    });
+
+    $('[popup-terminate-js]').on('click', (ev) => {
+      $('[kanban-body-js]').find(_sortableGuaranteeItem).remove();
+
+      _sortableGuaranteeToNegative.append(_sortableGuaranteeItem);
+
+      _sortableGuaranteeItem.find('.kanban__box-guarantee').removeClass('is-active');
+      _sortableGuaranteeItem.find('.kanban__box-like').removeClass('is-hide');
+
+      _changeKanbanBoxesHeight($('.kanban--guarantee'));
+
+      $('.kanban__action-rejected-head p').text($('[kanban-rejected-js] .kanban__box').length);
     });
 
     var el = document.querySelectorAll('[sortable-box-js]');
@@ -207,8 +265,8 @@ $(document).ready((ev) => {
         onChange: function(evt) {
           const itemEl = evt.item;
 
-          _changeKanbanBoxesHeight(evt.to);
-          _changeKanbanBoxesHeight(evt.from);
+          // _changeKanbanBoxesHeight(evt.to);
+          // _changeKanbanBoxesHeight(evt.from);
         },
         onEnd: function (evt) {
           const itemEl = evt.item;
@@ -217,9 +275,6 @@ $(document).ready((ev) => {
           _sortableTo = evt.to;
           _sortableFrom = evt.from;
 
-          _changeKanbanBoxesHeight(evt.to);
-          _changeKanbanBoxesHeight(evt.from);
-
           if(itemEl.closest('.kanban--guarantee')) {
             $('#btnStartPlacementGuarantee').click();
 
@@ -227,6 +282,9 @@ $(document).ready((ev) => {
               .removeClass('kanban__box--draggable')
               .addClass('kanban__box--guarantee')
           }
+
+          _changeKanbanBoxesHeight(evt.to);
+          _changeKanbanBoxesHeight(evt.from);
         }
       });
     }

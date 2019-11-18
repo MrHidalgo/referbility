@@ -15,7 +15,11 @@ mixin kanbanBoxHead(guaranteeMod, calendarCheck, indicationClassMod, name)
       i.icon-font.icon-cv
 
     if(guaranteeMod)
+      .kanban__box-like(class!=(guaranteeMod)?'is-hide' : '')
+        i.icon-font.icon-thumbs-up
     else if(calendarCheck)
+      .kanban__box-like(class!=(calendarCheck)?'is-hide':'' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
+        i.icon-font.icon-thumbs-up
     else
       .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
         i.icon-font.icon-thumbs-up
@@ -86,14 +90,8 @@ mixin kanbanBoxGuarantee(guaranteeMod, indicationClassMod)
         i(style='width: 50%;')
         p 49 days left
 
-  if(guaranteeMod)
-
-    if(guaranteeMod && indicationClassMod === 'disturb')
-      .kanban__box-guarantee(popup-js data-effect="mfp-zoom-in" data-mfp-src="#managePlacementGuarantee")
-        +kanbanBoxGuaranteeContent()
-    else
-      .kanban__box-guarantee
-        +kanbanBoxGuaranteeContent()
+  .kanban__box-guarantee(class!= (guaranteeMod)?'is-active':'' popup-placementGuarantee-js data-effect="mfp-zoom-in" data-mfp-src="#managePlacementGuarantee")
+    +kanbanBoxGuaranteeContent()
 
 mixin kanbanBoxPrefooter(calendarCheck, name)
   .kanban__box-prefooter
@@ -139,7 +137,7 @@ mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name
 
   .kanban__box-body
     +kanbanBoxList()
-    +kanbanBoxGuarantee(guaranteeMod, indicationClassMod)
+    +kanbanBoxGuarantee(guaranteeMod)
 
   +kanbanBoxPrefooter(calendarCheck, name)
   +kanbanBoxFooter(badge)
@@ -213,7 +211,7 @@ mixin kanbanBox(classMod, badge, calendarCheck, guaranteeMod, indicationClassMod
       .kanban__title-indication 1
 
     .kanban__box-cover
-      div.kanban__box-row
+      div.kanban__box-row(kanban-hired-js)
         .kanban__box-overlay
         +kanbanBox('', '', true, '','','Tom Fox')
 

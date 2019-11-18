@@ -24,7 +24,4 @@ const initPopups = () => {
       beforeClose: function(ev) {}
     }
   });
-
-  // $('[popup-js]').magnificPopup('open');
-
 };
