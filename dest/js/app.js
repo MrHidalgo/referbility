@@ -411,6 +411,35 @@ $(document).ready(function (ev) {
       $(self).closest('.kanban__box-wrapper').find('.kanban__title-indication').fadeIn(300).text(_kanbanBoxes.length);
     }
   }
+  function _changeKanbanDateInDraggableBoxes(self) {
+    var _boxesDateNode = $(self).find('[kanban-date-js]');
+
+    var _boxContainer = $(self).closest('.kanban__box-row'),
+        _boxContainerName = _boxContainer.attr('data-name');
+
+    var _date = new Date(),
+        _currentDate = _date.getDate() + '/' + _date.getMonth() + '/' + _date.getFullYear();
+
+    var _tmpl = '';
+
+    _boxesDateNode.removeClass('kanban__box-date--shortlisted kanban__box-date--hired kanban__box-date--offered kanban__box-date--assessment');
+
+    if (_boxContainerName === 'received') {
+      // ...
+    } else if (_boxContainerName === 'shortlisted') {
+      _tmpl = "\n        <i class=\"icon-font icon-date\"></i>\n        <p>Shortlisted on <u>" + _currentDate + "</u></p>\n      ";
+      _boxesDateNode.addClass('kanban__box-date--shortlisted').html(_tmpl);
+    } else if (_boxContainerName === 'assessment') {
+      _tmpl = "\n        <i class=\"icon-font icon-date\"></i>\n        <p>In assessment since <u>" + _currentDate + "</u></p>\n      ";
+      _boxesDateNode.addClass('kanban__box-date--assessment').html(_tmpl);
+    } else if (_boxContainerName === 'offer') {
+      _tmpl = "\n        <i class=\"icon-font icon-date\"></i>  \n        <p>Job offered on <u>" + _currentDate + "</u></p>             \n      ";
+      _boxesDateNode.addClass('kanban__box-date--offered').html(_tmpl);
+    } else if (_boxContainerName === 'hired') {
+      _tmpl = "\n        <i class=\"icon-font icon-calendar-check\"></i>\n        <p>Hired on <u>" + _currentDate + "</u></p>\n      ";
+      _boxesDateNode.addClass('kanban__box-date--hired').html(_tmpl);
+    }
+  }
   var initSortable = function initSortable() {
     var _sortableAnswer = 0,
         _sortableItem = null,
@@ -492,6 +521,8 @@ $(document).ready(function (ev) {
       _sortableGuaranteeItem.find('.kanban__box-guarantee').removeClass('is-active');
       _sortableGuaranteeItem.find('.kanban__box-like').addClass('is-hide');
 
+      _changeKanbanDateInDraggableBoxes(_sortableGuaranteeItem);
+
       _changeKanbanBoxesHeight($('.kanban--guarantee'));
       _changeKanbanBoxesHeight(_sortableGuaranteeToPositive);
     });
@@ -504,6 +535,18 @@ $(document).ready(function (ev) {
       _sortableGuaranteeItem.find('.kanban__box-guarantee').removeClass('is-active');
       _sortableGuaranteeItem.find('.kanban__box-like').removeClass('is-hide');
 
+      var _itemDateNode = _sortableGuaranteeItem.find('.kanban__box-prefooter > div:nth-of-type(1)');
+
+      var _date = new Date(),
+          _currentDate = _date.getDate() + '/' + _date.getMonth() + '/' + _date.getFullYear();
+
+      var _rejectedTmpl = "\n        <div class=\"kanban__box-date kanban__box-date--rejected\">\n          <i class=\"icon-font icon-calendar-check\"></i>\n          <p>Rejected on " + _currentDate + "</p>\n        </div>\n      ";
+      var _reasonsTmpl = "\n        <div class=\"kanban__box-date kanban__box-date--relevant\">\n          <i class=\"icon-font icon-comment-delete\"></i>\n          <p>Reason Not relevant</p>\n        </div>\n      ";
+
+      _itemDateNode.find('.kanban__box-date:nth-of-type(2)').remove();
+      _itemDateNode.append(_rejectedTmpl);
+      _itemDateNode.append(_reasonsTmpl);
+
       _changeKanbanBoxesHeight($('.kanban--guarantee'));
 
       if ($('[kanban-rejected-js] .kanban__box').length === 0) {
@@ -511,6 +554,8 @@ $(document).ready(function (ev) {
       } else {
         $('.kanban__action-rejected-head p').fadeIn(250).text($('[kanban-rejected-js] .kanban__box').length);
       }
+
+      initRejectedThumbs();
     });
 
     var el = document.querySelectorAll('[sortable-box-js]');
@@ -522,12 +567,6 @@ $(document).ready(function (ev) {
         easing: "cubic-bezier(1, 0, 0, 1)",
         dragoverBubble: true,
         handle: ".kanban__box--draggable",
-        onChange: function onChange(evt) {
-          // const itemEl = evt.item;
-          //
-          // // _changeKanbanBoxesHeight(evt.to);
-          // // _changeKanbanBoxesHeight(evt.from);
-        },
         onEnd: function onEnd(evt) {
           var itemEl = evt.item;
 
@@ -540,6 +579,8 @@ $(document).ready(function (ev) {
 
             $(itemEl).removeClass('kanban__box--draggable').addClass('kanban__box--guarantee');
           }
+
+          _changeKanbanDateInDraggableBoxes(itemEl);
 
           _changeKanbanBoxesHeight(evt.to);
           _changeKanbanBoxesHeight(evt.from);
@@ -646,6 +687,8 @@ $(document).ready(function (ev) {
       var _el = $(ev.currentTarget),
           _parentNode = _el.closest('.kanban__box');
 
+      _parentNode.removeClass('kanban__box--guarantee').addClass('kanban__box--draggable');
+
       _parentNode.find('.kanban__box-like').attr('popup-js', '').attr('data-effect', 'mfp-zoom-in').attr('data-mfp-src', '#kanbanThumbs');
 
       $('[kanban-shortlisted-js]').append(_parentNode);
@@ -657,6 +700,18 @@ $(document).ready(function (ev) {
       } else {
         $('.kanban__action-rejected-head p').fadeIn(250).text($('[kanban-rejected-js] .kanban__box').length);
       }
+
+      _parentNode.find('.kanban__box-date--rejected, .kanban__box-date--relevant').remove();
+
+      var _itemDateNode = _parentNode.find('.kanban__box-prefooter > div:nth-of-type(1)');
+
+      var _date = new Date(),
+          _currentDate = _date.getDate() + '/' + _date.getMonth() + '/' + _date.getFullYear();
+
+      var _tmpl = "\n        <div class=\"kanban__box-date kanban__box-date--shortlisted\" kanban-date-js>\n          <i class=\"icon-font icon-date\"></i>\n          <p>Shortlisted on <u>" + _currentDate + "</u></p>\n        </div>\n      ";
+
+      _itemDateNode.find('.kanban__box-date:nth-of-type(2)').remove();
+      _itemDateNode.append(_tmpl);
 
       initPopups();
     });

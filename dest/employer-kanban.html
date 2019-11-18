@@ -287,7 +287,7 @@
                 <div class="kanban__title-indication">3</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" kanban-received-js sortable-box-js>
+                <div class="kanban__box-row" kanban-received-js sortable-box-js data-name="received">
                   <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--"></div>
@@ -601,7 +601,7 @@
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" kanban-shortlisted-js sortable-box-js>
+                <div class="kanban__box-row" kanban-shortlisted-js sortable-box-js data-name="shortlisted">
                   <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--badge kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-badge">
                                                     <p>recommended</p>
@@ -699,7 +699,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--shortlisted"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--shortlisted" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>Shortlisted on 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -803,7 +803,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--shortlisted"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--shortlisted" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>Shortlisted on 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -823,7 +823,7 @@
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" kanban-assessment-js sortable-box-js>
+                <div class="kanban__box-row" kanban-assessment-js sortable-box-js data-name="assessment">
                   <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--away"></div>
@@ -918,7 +918,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--assessment"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--assessment" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>In assessment since 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -938,7 +938,7 @@
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" kanban-offer-js sortable-box-js>
+                <div class="kanban__box-row" kanban-offer-js sortable-box-js data-name="offer">
                   <div class="kanban__box-overlay"></div><a class="kanban__box kanban__box--draggable" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--away"></div>
@@ -1033,7 +1033,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--offered"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--offered" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>Job offered on 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -1137,7 +1137,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--offered"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--offered" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>Job offered on 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -1157,7 +1157,7 @@
                 <div class="kanban__title-indication">2</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban--guarantee kanban__box-row" kanban-placement-js sortable-box-js>
+                <div class="kanban--guarantee kanban__box-row" kanban-placement-js sortable-box-js data-name="guarantee">
                   <div class="kanban__box-overlay"></div>
                   <input type="hidden" id="btnStartPlacementGuarantee" name="" popup-guarantee-js data-effect="mfp-zoom-in" data-mfp-src="#startPlacementGuarantee"><a class="kanban__box kanban__box--guarantee" href="#" title="">
                                                   <div class="kanban__box-head">
@@ -1253,7 +1253,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--offered"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--offered" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>Job offered on 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -1357,7 +1357,7 @@
                                                       <div class="kanban__box-date"><i class="icon-font icon-date"></i>
                                                         <p>Referred on 02/10/2019</p>
                                                       </div>
-                                                      <div class="kanban__box-date kanban__box-date--offered"><i class="icon-font icon-date"></i>
+                                                      <div class="kanban__box-date kanban__box-date--offered" kanban-date-js><i class="icon-font icon-date"></i>
                                                         <p>Job offered on 02/10/2019</p>
                                                       </div>
                                                     </div>
@@ -1377,7 +1377,7 @@
                 <div class="kanban__title-indication">1</div>
               </div>
               <div class="kanban__box-cover">
-                <div class="kanban__box-row" kanban-hired-js>
+                <div class="kanban__box-row" kanban-hired-js data-name="hired">
                   <div class="kanban__box-overlay"></div><a class="kanban__box" href="#" title="">
                                                   <div class="kanban__box-head">
                                                     <div class="kanban__box-indication kanban__box-indication--"></div>
