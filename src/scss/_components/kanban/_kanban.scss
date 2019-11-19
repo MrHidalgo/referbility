@@ -59,7 +59,7 @@
         height: calc(100vh - (170px + 80px));
       }
       @include adaptive(767) {
-        height: auto;
+        height: calc(100vh - 80px);
       }
     }
 

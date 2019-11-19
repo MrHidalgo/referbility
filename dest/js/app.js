@@ -520,7 +520,7 @@ $(document).ready(function (ev) {
     $('[popup-release-js]').on('click', function (ev) {
       $('[kanban-body-js]').find(_sortableGuaranteeItem).remove();
 
-      _sortableGuaranteeToPositive.append(_sortableGuaranteeItem);
+      _sortableGuaranteeToPositive.prepend(_sortableGuaranteeItem);
 
       _sortableGuaranteeItem.find('.kanban__box-guarantee').removeClass('is-active');
       _sortableGuaranteeItem.find('.kanban__box-like').addClass('is-hide');
@@ -534,7 +534,7 @@ $(document).ready(function (ev) {
     $('[popup-terminate-js]').on('click', function (ev) {
       $('[kanban-body-js]').find(_sortableGuaranteeItem).remove();
 
-      _sortableGuaranteeToNegative.append(_sortableGuaranteeItem);
+      _sortableGuaranteeToNegative.prepend(_sortableGuaranteeItem);
 
       _sortableGuaranteeItem.find('.kanban__box-guarantee').removeClass('is-active');
       _sortableGuaranteeItem.find('.kanban__box-like').removeClass('is-hide');
@@ -653,7 +653,7 @@ $(document).ready(function (ev) {
       if ($(window).width() > 767) {
         $('[kanban-body-js]').attr('style', 'height:calc(100vh - ' + ($('[kanban-head-js]').outerHeight(true) + $('header').outerHeight(true)) + 'px)');
       } else {
-        $('[kanban-body-js]').attr('style', 'height:auto;');
+        $('[kanban-body-js]').attr('style', 'height:calc(100vh - 95px);');
       }
     });
   };
@@ -672,13 +672,16 @@ $(document).ready(function (ev) {
     $('.kanban__box-like').on('click', function (ev) {
       $('#kanbanThumbs .c-modal__radio').prop('checked', false).change();
       $('.c-modal__textarea-wrapper').hide();
+      $('.c-modal__textarea-wrapper textarea').val('');
     });
   };
 
   var initThumbsOtherTextarea = function initThumbsOtherTextarea() {
     $('.c-modal__radio').on('change', function (ev) {
       $('.c-modal__textarea-wrapper').slideUp(250);
+      $('.c-modal__textarea-wrapper textarea').val('');
     });
+
     $('.c-modal__radio-textarea').on('change', function (ev) {
       if ($(ev.currentTarget).is(':checked')) {
         $('.c-modal__textarea-wrapper').slideDown(250).css({
@@ -697,7 +700,7 @@ $(document).ready(function (ev) {
 
       _parentNode.find('.kanban__box-like').attr('popup-js', '').attr('data-effect', 'mfp-zoom-in').attr('data-mfp-src', '#kanbanThumbs');
 
-      $('[kanban-shortlisted-js]').append(_parentNode);
+      $('[kanban-shortlisted-js]').prepend(_parentNode);
 
       _changeKanbanBoxesHeight($('[kanban-shortlisted-js]'));
 
@@ -717,7 +720,7 @@ $(document).ready(function (ev) {
       var _tmpl = "\n        <div class=\"kanban__box-date kanban__box-date--shortlisted\" kanban-date-js>\n          <i class=\"icon-font icon-date\"></i>\n          <p>Shortlisted on <u>" + _currentDate + "</u></p>\n        </div>\n      ";
 
       _itemDateNode.find('.kanban__box-date:nth-of-type(2)').remove();
-      _itemDateNode.append(_tmpl);
+      _itemDateNode.prepend(_tmpl);
 
       initPopups();
     });
@@ -753,14 +756,19 @@ $(document).ready(function (ev) {
 
     $('.c-modal__radio').on('change', function (ev) {
       if ($(ev.currentTarget).is(':checked')) {
+
         _dislikeAnswer = $(ev.currentTarget).val();
       }
     });
 
     $('[kanban-thumbs-js]').on('click', function (ev) {
+      if (_dislikeAnswer === 'Other') {
+        _dislikeAnswer = $('.c-modal__textarea-wrapper textarea').val();
+      }
+
       $('[kanban-body-js]').find(_dislikeItem).remove();
 
-      _dislikeTo.append(_dislikeItem);
+      _dislikeTo.prepend(_dislikeItem);
 
       _dislikeItem.find('.kanban__box-guarantee').removeClass('is-active');
       _dislikeItem.find('.kanban__box-like').removeClass('is-hide');
