@@ -116,6 +116,10 @@ mixin kanbanBoxPrefooter(calendarCheck, name)
         .kanban__box-date.kanban__box-date--offered(kanban-date-js)
           i.icon-font.icon-date
           p Job offered on 02/10/2019
+      else
+        .kanban__box-date.kanban__box-date--shortlisted(kanban-date-js)
+          i.icon-font.icon-date
+          p Shortlisted on 02/10/2019
 
     div
       span(data-id='1' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanMore")

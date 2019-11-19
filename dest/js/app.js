@@ -425,17 +425,21 @@ $(document).ready(function (ev) {
     _boxesDateNode.removeClass('kanban__box-date--shortlisted kanban__box-date--hired kanban__box-date--offered kanban__box-date--assessment');
 
     if (_boxContainerName === 'received') {
-      // ...
+      $('[kanban-received-js] [kanban-date-js]').hide();
     } else if (_boxContainerName === 'shortlisted') {
+      $('[kanban-shortlisted-js] [kanban-date-js]').show().css({ 'display': 'flex' });
       _tmpl = "\n        <i class=\"icon-font icon-date\"></i>\n        <p>Shortlisted on <u>" + _currentDate + "</u></p>\n      ";
       _boxesDateNode.addClass('kanban__box-date--shortlisted').html(_tmpl);
     } else if (_boxContainerName === 'assessment') {
+      $('[kanban-assessment-js] [kanban-date-js]').show().css({ 'display': 'flex' });
       _tmpl = "\n        <i class=\"icon-font icon-date\"></i>\n        <p>In assessment since <u>" + _currentDate + "</u></p>\n      ";
       _boxesDateNode.addClass('kanban__box-date--assessment').html(_tmpl);
     } else if (_boxContainerName === 'offer') {
+      $('[kanban-offer-js] [kanban-date-js]').show().css({ 'display': 'flex' });
       _tmpl = "\n        <i class=\"icon-font icon-date\"></i>  \n        <p>Job offered on <u>" + _currentDate + "</u></p>             \n      ";
       _boxesDateNode.addClass('kanban__box-date--offered').html(_tmpl);
     } else if (_boxContainerName === 'hired') {
+      $('[kanban-hired-js] [kanban-date-js]').show().css({ 'display': 'flex' });
       _tmpl = "\n        <i class=\"icon-font icon-calendar-check\"></i>\n        <p>Hired on <u>" + _currentDate + "</u></p>\n      ";
       _boxesDateNode.addClass('kanban__box-date--hired').html(_tmpl);
     }
