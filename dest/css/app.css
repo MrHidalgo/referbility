@@ -3422,9 +3422,26 @@ picture {
 /* line 1312, src/scss/_macros/_modal.scss */
 .c-modal#kanbanThumbs .c-modal__textarea-wrapper {
   display: none;
+  padding-bottom: 15px;
 }
 
 /* line 1319, src/scss/_macros/_modal.scss */
+.c-modal#kanbanThumbs .c-modal__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 1328, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -3435,7 +3452,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1327, src/scss/_macros/_modal.scss */
+/* line 1336, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -3460,13 +3477,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1327, src/scss/_macros/_modal.scss */
+  /* line 1336, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .mfp-close {
     right: 20px;
   }
 }
 
-/* line 1345, src/scss/_macros/_modal.scss */
+/* line 1354, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__head {
   overflow: hidden;
   position: relative;
@@ -3492,7 +3509,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1345, src/scss/_macros/_modal.scss */
+  /* line 1354, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -3502,7 +3519,7 @@ picture {
   }
 }
 
-/* line 1360, src/scss/_macros/_modal.scss */
+/* line 1369, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__head:before {
   content: '';
   position: absolute;
@@ -3515,7 +3532,7 @@ picture {
   border: 130px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 1371, src/scss/_macros/_modal.scss */
+/* line 1380, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -3525,27 +3542,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1371, src/scss/_macros/_modal.scss */
+  /* line 1380, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 1384, src/scss/_macros/_modal.scss */
+/* line 1393, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1384, src/scss/_macros/_modal.scss */
+  /* line 1393, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 1392, src/scss/_macros/_modal.scss */
+/* line 1401, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -3553,7 +3570,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 1399, src/scss/_macros/_modal.scss */
+/* line 1408, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc {
   padding-bottom: 30px;
   font-size: 14px;
@@ -3563,22 +3580,22 @@ picture {
   color: #344563;
 }
 
-/* line 1407, src/scss/_macros/_modal.scss */
+/* line 1416, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1411, src/scss/_macros/_modal.scss */
+/* line 1420, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc-wrapper {
   padding-bottom: 20px;
 }
 
-/* line 1414, src/scss/_macros/_modal.scss */
+/* line 1423, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__desc-wrapper-2 {
   padding-top: 20px;
 }
 
-/* line 1420, src/scss/_macros/_modal.scss */
+/* line 1429, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__info {
   width: 100%;
   min-height: 100px;
@@ -3591,7 +3608,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1430, src/scss/_macros/_modal.scss */
+/* line 1439, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3604,7 +3621,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 1434, src/scss/_macros/_modal.scss */
+/* line 1443, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3622,7 +3639,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1434, src/scss/_macros/_modal.scss */
+  /* line 1443, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__list-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3640,12 +3657,12 @@ picture {
   }
 }
 
-/* line 1445, src/scss/_macros/_modal.scss */
+/* line 1454, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1450, src/scss/_macros/_modal.scss */
+/* line 1459, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3657,32 +3674,32 @@ picture {
           align-items: center;
 }
 
-/* line 1455, src/scss/_macros/_modal.scss */
+/* line 1464, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list-left > div:nth-of-type(1) {
   width: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1461, src/scss/_macros/_modal.scss */
+  /* line 1470, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__list-right {
     padding-left: 30px;
   }
 }
 
-/* line 1467, src/scss/_macros/_modal.scss */
+/* line 1476, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list .icon-font {
   font-size: 16px;
   color: #6364e9;
 }
 
-/* line 1472, src/scss/_macros/_modal.scss */
+/* line 1481, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list span {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 1478, src/scss/_macros/_modal.scss */
+/* line 1487, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__list p {
   font-size: 14px;
   font-weight: bold;
@@ -3692,13 +3709,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1478, src/scss/_macros/_modal.scss */
+  /* line 1487, src/scss/_macros/_modal.scss */
   .c-modal#startPlacementGuarantee .c-modal__list p {
     text-align: left;
   }
 }
 
-/* line 1490, src/scss/_macros/_modal.scss */
+/* line 1499, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn {
   overflow: hidden;
   position: relative;
@@ -3734,7 +3751,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1506, src/scss/_macros/_modal.scss */
+/* line 1515, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -3763,7 +3780,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1524, src/scss/_macros/_modal.scss */
+/* line 1533, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -3774,7 +3791,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1528, src/scss/_macros/_modal.scss */
+/* line 1537, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -3789,7 +3806,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1537, src/scss/_macros/_modal.scss */
+/* line 1546, src/scss/_macros/_modal.scss */
 .c-modal#startPlacementGuarantee .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -3800,7 +3817,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 1550, src/scss/_macros/_modal.scss */
+/* line 1559, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -3811,7 +3828,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1558, src/scss/_macros/_modal.scss */
+/* line 1567, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -3836,13 +3853,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1558, src/scss/_macros/_modal.scss */
+  /* line 1567, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .mfp-close {
     right: 20px;
   }
 }
 
-/* line 1576, src/scss/_macros/_modal.scss */
+/* line 1585, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__head {
   overflow: hidden;
   position: relative;
@@ -3868,7 +3885,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1576, src/scss/_macros/_modal.scss */
+  /* line 1585, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -3878,7 +3895,7 @@ picture {
   }
 }
 
-/* line 1591, src/scss/_macros/_modal.scss */
+/* line 1600, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__head:before {
   content: '';
   position: absolute;
@@ -3891,7 +3908,7 @@ picture {
   border: 130px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 1602, src/scss/_macros/_modal.scss */
+/* line 1611, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -3901,27 +3918,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1602, src/scss/_macros/_modal.scss */
+  /* line 1611, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 1615, src/scss/_macros/_modal.scss */
+/* line 1624, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1615, src/scss/_macros/_modal.scss */
+  /* line 1624, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 1623, src/scss/_macros/_modal.scss */
+/* line 1632, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -3929,7 +3946,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 1630, src/scss/_macros/_modal.scss */
+/* line 1639, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__desc {
   padding-bottom: 50px;
   font-size: 14px;
@@ -3939,12 +3956,12 @@ picture {
   color: #344563;
 }
 
-/* line 1638, src/scss/_macros/_modal.scss */
+/* line 1647, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__desc span {
   font-weight: 700;
 }
 
-/* line 1643, src/scss/_macros/_modal.scss */
+/* line 1652, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__info {
   width: 100%;
   min-height: 100px;
@@ -3958,7 +3975,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1654, src/scss/_macros/_modal.scss */
+/* line 1663, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__subtitle {
   padding-bottom: 15px;
   text-transform: uppercase;
@@ -3969,7 +3986,7 @@ picture {
   color: #344563;
 }
 
-/* line 1664, src/scss/_macros/_modal.scss */
+/* line 1673, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__heading {
   padding-bottom: 20px;
   font-size: 24px;
@@ -3978,7 +3995,7 @@ picture {
   color: #344563;
 }
 
-/* line 1672, src/scss/_macros/_modal.scss */
+/* line 1681, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__date {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3995,21 +4012,21 @@ picture {
   padding-bottom: 40px;
 }
 
-/* line 1678, src/scss/_macros/_modal.scss */
+/* line 1687, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__date .icon-font {
   margin-right: 10px;
   font-size: 16px;
   color: #6364e9;
 }
 
-/* line 1684, src/scss/_macros/_modal.scss */
+/* line 1693, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__date span {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 1691, src/scss/_macros/_modal.scss */
+/* line 1700, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4022,7 +4039,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 1695, src/scss/_macros/_modal.scss */
+/* line 1704, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4040,7 +4057,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1695, src/scss/_macros/_modal.scss */
+  /* line 1704, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__list-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4058,12 +4075,12 @@ picture {
   }
 }
 
-/* line 1706, src/scss/_macros/_modal.scss */
+/* line 1715, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 1711, src/scss/_macros/_modal.scss */
+/* line 1720, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4075,32 +4092,32 @@ picture {
           align-items: center;
 }
 
-/* line 1716, src/scss/_macros/_modal.scss */
+/* line 1725, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list-left > div:nth-of-type(1) {
   width: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1722, src/scss/_macros/_modal.scss */
+  /* line 1731, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__list-right {
     padding-left: 30px;
   }
 }
 
-/* line 1728, src/scss/_macros/_modal.scss */
+/* line 1737, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list .icon-font {
   font-size: 16px;
   color: #6364e9;
 }
 
-/* line 1733, src/scss/_macros/_modal.scss */
+/* line 1742, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list span {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 1739, src/scss/_macros/_modal.scss */
+/* line 1748, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__list p {
   font-size: 14px;
   font-weight: bold;
@@ -4110,13 +4127,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1739, src/scss/_macros/_modal.scss */
+  /* line 1748, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__list p {
     text-align: left;
   }
 }
 
-/* line 1751, src/scss/_macros/_modal.scss */
+/* line 1760, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn {
   margin-left: 10px;
   margin-right: 10px;
@@ -4151,7 +4168,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1751, src/scss/_macros/_modal.scss */
+  /* line 1760, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__btn {
     max-width: 260px;
     margin-left: auto;
@@ -4159,7 +4176,7 @@ picture {
   }
 }
 
-/* line 1773, src/scss/_macros/_modal.scss */
+/* line 1782, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--terminate {
   background-image: -webkit-linear-gradient(58deg, #ff5630 17%, #ff8f73 99%);
   background-image: -o-linear-gradient(58deg, #ff5630 17%, #ff8f73 99%);
@@ -4167,30 +4184,30 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1773, src/scss/_macros/_modal.scss */
+  /* line 1782, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__btn--terminate {
     margin-bottom: 10px;
   }
 }
 
-/* line 1779, src/scss/_macros/_modal.scss */
+/* line 1788, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--terminate:after {
   background-color: #ff4117;
 }
 
-/* line 1784, src/scss/_macros/_modal.scss */
+/* line 1793, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--release {
   background-image: -webkit-linear-gradient(58deg, #36b37e 17%, #57d9a3 99%);
   background-image: -o-linear-gradient(58deg, #36b37e 17%, #57d9a3 99%);
   background-image: linear-gradient(32deg, #36b37e 17%, #57d9a3 99%);
 }
 
-/* line 1787, src/scss/_macros/_modal.scss */
+/* line 1796, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn--release:after {
   background-color: #309f70;
 }
 
-/* line 1792, src/scss/_macros/_modal.scss */
+/* line 1801, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -4218,7 +4235,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1809, src/scss/_macros/_modal.scss */
+/* line 1818, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -4229,7 +4246,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1813, src/scss/_macros/_modal.scss */
+/* line 1822, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -4244,7 +4261,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1822, src/scss/_macros/_modal.scss */
+/* line 1831, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4261,7 +4278,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1822, src/scss/_macros/_modal.scss */
+  /* line 1831, src/scss/_macros/_modal.scss */
   .c-modal#managePlacementGuarantee .c-modal__btn-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4271,7 +4288,7 @@ picture {
   }
 }
 
-/* line 1831, src/scss/_macros/_modal.scss */
+/* line 1840, src/scss/_macros/_modal.scss */
 .c-modal#managePlacementGuarantee .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -4283,7 +4300,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 1845, src/scss/_macros/_modal.scss */
+/* line 1854, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -4294,7 +4311,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 1853, src/scss/_macros/_modal.scss */
+/* line 1862, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -4319,13 +4336,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1853, src/scss/_macros/_modal.scss */
+  /* line 1862, src/scss/_macros/_modal.scss */
   .c-modal#terminatePlacementGuarantee .mfp-close {
     right: 20px;
   }
 }
 
-/* line 1871, src/scss/_macros/_modal.scss */
+/* line 1880, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__head {
   overflow: hidden;
   position: relative;
@@ -4351,7 +4368,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1871, src/scss/_macros/_modal.scss */
+  /* line 1880, src/scss/_macros/_modal.scss */
   .c-modal#terminatePlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -4361,7 +4378,7 @@ picture {
   }
 }
 
-/* line 1886, src/scss/_macros/_modal.scss */
+/* line 1895, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__head:before {
   content: '';
   position: absolute;
@@ -4374,7 +4391,7 @@ picture {
   border: 130px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 1897, src/scss/_macros/_modal.scss */
+/* line 1906, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -4384,27 +4401,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1897, src/scss/_macros/_modal.scss */
+  /* line 1906, src/scss/_macros/_modal.scss */
   .c-modal#terminatePlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 1910, src/scss/_macros/_modal.scss */
+/* line 1919, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1910, src/scss/_macros/_modal.scss */
+  /* line 1919, src/scss/_macros/_modal.scss */
   .c-modal#terminatePlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 1918, src/scss/_macros/_modal.scss */
+/* line 1927, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -4412,7 +4429,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 1925, src/scss/_macros/_modal.scss */
+/* line 1934, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__desc {
   padding-bottom: 30px;
   font-size: 14px;
@@ -4422,12 +4439,12 @@ picture {
   color: #344563;
 }
 
-/* line 1933, src/scss/_macros/_modal.scss */
+/* line 1942, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__desc span {
   font-weight: 700;
 }
 
-/* line 1938, src/scss/_macros/_modal.scss */
+/* line 1947, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__textarea {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4451,7 +4468,7 @@ picture {
   color: #091e42;
 }
 
-/* line 1956, src/scss/_macros/_modal.scss */
+/* line 1965, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__btn {
   overflow: hidden;
   position: relative;
@@ -4487,7 +4504,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1956, src/scss/_macros/_modal.scss */
+  /* line 1965, src/scss/_macros/_modal.scss */
   .c-modal#terminatePlacementGuarantee .c-modal__btn {
     max-width: 260px;
     margin-left: auto;
@@ -4495,7 +4512,7 @@ picture {
   }
 }
 
-/* line 1976, src/scss/_macros/_modal.scss */
+/* line 1985, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -4524,7 +4541,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 1994, src/scss/_macros/_modal.scss */
+/* line 2003, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -4535,7 +4552,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 1998, src/scss/_macros/_modal.scss */
+/* line 2007, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -4550,7 +4567,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 2007, src/scss/_macros/_modal.scss */
+/* line 2016, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4567,7 +4584,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2007, src/scss/_macros/_modal.scss */
+  /* line 2016, src/scss/_macros/_modal.scss */
   .c-modal#terminatePlacementGuarantee .c-modal__btn-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4577,7 +4594,7 @@ picture {
   }
 }
 
-/* line 2016, src/scss/_macros/_modal.scss */
+/* line 2025, src/scss/_macros/_modal.scss */
 .c-modal#terminatePlacementGuarantee .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -4589,7 +4606,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 2030, src/scss/_macros/_modal.scss */
+/* line 2039, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -4600,7 +4617,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 2038, src/scss/_macros/_modal.scss */
+/* line 2047, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -4625,13 +4642,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2038, src/scss/_macros/_modal.scss */
+  /* line 2047, src/scss/_macros/_modal.scss */
   .c-modal#releasePlacementGuarantee .mfp-close {
     right: 20px;
   }
 }
 
-/* line 2056, src/scss/_macros/_modal.scss */
+/* line 2065, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__head {
   overflow: hidden;
   position: relative;
@@ -4657,7 +4674,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2056, src/scss/_macros/_modal.scss */
+  /* line 2065, src/scss/_macros/_modal.scss */
   .c-modal#releasePlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -4667,7 +4684,7 @@ picture {
   }
 }
 
-/* line 2071, src/scss/_macros/_modal.scss */
+/* line 2080, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__head:before {
   content: '';
   position: absolute;
@@ -4680,7 +4697,7 @@ picture {
   border: 130px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 2082, src/scss/_macros/_modal.scss */
+/* line 2091, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -4690,27 +4707,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2082, src/scss/_macros/_modal.scss */
+  /* line 2091, src/scss/_macros/_modal.scss */
   .c-modal#releasePlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 2095, src/scss/_macros/_modal.scss */
+/* line 2104, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2095, src/scss/_macros/_modal.scss */
+  /* line 2104, src/scss/_macros/_modal.scss */
   .c-modal#releasePlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 2103, src/scss/_macros/_modal.scss */
+/* line 2112, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -4718,7 +4735,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 2110, src/scss/_macros/_modal.scss */
+/* line 2119, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__desc {
   padding-bottom: 30px;
   font-size: 14px;
@@ -4728,12 +4745,12 @@ picture {
   color: #344563;
 }
 
-/* line 2118, src/scss/_macros/_modal.scss */
+/* line 2127, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__desc span {
   font-weight: 700;
 }
 
-/* line 2123, src/scss/_macros/_modal.scss */
+/* line 2132, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__btn {
   overflow: hidden;
   position: relative;
@@ -4769,7 +4786,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2123, src/scss/_macros/_modal.scss */
+  /* line 2132, src/scss/_macros/_modal.scss */
   .c-modal#releasePlacementGuarantee .c-modal__btn {
     max-width: 260px;
     margin-left: auto;
@@ -4777,7 +4794,7 @@ picture {
   }
 }
 
-/* line 2143, src/scss/_macros/_modal.scss */
+/* line 2152, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__btn:after {
   content: '';
   opacity: 0;
@@ -4806,7 +4823,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 2161, src/scss/_macros/_modal.scss */
+/* line 2170, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -4817,7 +4834,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 2165, src/scss/_macros/_modal.scss */
+/* line 2174, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -4832,7 +4849,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 2174, src/scss/_macros/_modal.scss */
+/* line 2183, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4849,7 +4866,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2174, src/scss/_macros/_modal.scss */
+  /* line 2183, src/scss/_macros/_modal.scss */
   .c-modal#releasePlacementGuarantee .c-modal__btn-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4859,7 +4876,7 @@ picture {
   }
 }
 
-/* line 2183, src/scss/_macros/_modal.scss */
+/* line 2192, src/scss/_macros/_modal.scss */
 .c-modal#releasePlacementGuarantee .c-modal__btn span {
   z-index: 2;
   position: relative;
@@ -4871,7 +4888,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 2197, src/scss/_macros/_modal.scss */
+/* line 2206, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -4882,7 +4899,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 2205, src/scss/_macros/_modal.scss */
+/* line 2214, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -4907,13 +4924,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2205, src/scss/_macros/_modal.scss */
+  /* line 2214, src/scss/_macros/_modal.scss */
   .c-modal#releaseSubmitPlacementGuarantee .mfp-close {
     right: 20px;
   }
 }
 
-/* line 2223, src/scss/_macros/_modal.scss */
+/* line 2232, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__head {
   overflow: hidden;
   position: relative;
@@ -4939,7 +4956,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2223, src/scss/_macros/_modal.scss */
+  /* line 2232, src/scss/_macros/_modal.scss */
   .c-modal#releaseSubmitPlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -4949,7 +4966,7 @@ picture {
   }
 }
 
-/* line 2238, src/scss/_macros/_modal.scss */
+/* line 2247, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__head:before {
   content: '';
   position: absolute;
@@ -4962,7 +4979,7 @@ picture {
   border: 130px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 2249, src/scss/_macros/_modal.scss */
+/* line 2258, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -4972,27 +4989,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2249, src/scss/_macros/_modal.scss */
+  /* line 2258, src/scss/_macros/_modal.scss */
   .c-modal#releaseSubmitPlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 2262, src/scss/_macros/_modal.scss */
+/* line 2271, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2262, src/scss/_macros/_modal.scss */
+  /* line 2271, src/scss/_macros/_modal.scss */
   .c-modal#releaseSubmitPlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 2270, src/scss/_macros/_modal.scss */
+/* line 2279, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -5000,7 +5017,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 2277, src/scss/_macros/_modal.scss */
+/* line 2286, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__title {
   padding-bottom: 10px;
   font-size: 36px;
@@ -5009,7 +5026,7 @@ picture {
   color: #344563;
 }
 
-/* line 2285, src/scss/_macros/_modal.scss */
+/* line 2294, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__desc {
   padding-bottom: 30px;
   font-size: 14px;
@@ -5019,12 +5036,12 @@ picture {
   color: #344563;
 }
 
-/* line 2293, src/scss/_macros/_modal.scss */
+/* line 2302, src/scss/_macros/_modal.scss */
 .c-modal#releaseSubmitPlacementGuarantee .c-modal__desc span {
   font-weight: 700;
 }
 
-/* line 2300, src/scss/_macros/_modal.scss */
+/* line 2309, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee {
   overflow: hidden;
   width: 100%;
@@ -5035,7 +5052,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 2308, src/scss/_macros/_modal.scss */
+/* line 2317, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .mfp-close {
   opacity: 1;
   display: -webkit-box;
@@ -5060,13 +5077,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2308, src/scss/_macros/_modal.scss */
+  /* line 2317, src/scss/_macros/_modal.scss */
   .c-modal#terminateSubmitPlacementGuarantee .mfp-close {
     right: 20px;
   }
 }
 
-/* line 2326, src/scss/_macros/_modal.scss */
+/* line 2335, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__head {
   overflow: hidden;
   position: relative;
@@ -5092,7 +5109,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2326, src/scss/_macros/_modal.scss */
+  /* line 2335, src/scss/_macros/_modal.scss */
   .c-modal#terminateSubmitPlacementGuarantee .c-modal__head {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -5102,7 +5119,7 @@ picture {
   }
 }
 
-/* line 2341, src/scss/_macros/_modal.scss */
+/* line 2350, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__head:before {
   content: '';
   position: absolute;
@@ -5115,7 +5132,7 @@ picture {
   border: 130px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 2352, src/scss/_macros/_modal.scss */
+/* line 2361, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__head p {
   font-size: 25px;
   font-weight: 500;
@@ -5125,27 +5142,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2352, src/scss/_macros/_modal.scss */
+  /* line 2361, src/scss/_macros/_modal.scss */
   .c-modal#terminateSubmitPlacementGuarantee .c-modal__head p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-/* line 2365, src/scss/_macros/_modal.scss */
+/* line 2374, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__body {
   padding: 50px 30px 40px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2365, src/scss/_macros/_modal.scss */
+  /* line 2374, src/scss/_macros/_modal.scss */
   .c-modal#terminateSubmitPlacementGuarantee .c-modal__body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-/* line 2373, src/scss/_macros/_modal.scss */
+/* line 2382, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__content {
   width: 100%;
   max-width: 550px;
@@ -5153,7 +5170,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 2380, src/scss/_macros/_modal.scss */
+/* line 2389, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__desc {
   padding-bottom: 30px;
   font-size: 14px;
@@ -5163,7 +5180,7 @@ picture {
   color: #344563;
 }
 
-/* line 2388, src/scss/_macros/_modal.scss */
+/* line 2397, src/scss/_macros/_modal.scss */
 .c-modal#terminateSubmitPlacementGuarantee .c-modal__desc span {
   font-weight: 700;
 }
@@ -10769,6 +10786,7 @@ picture {
 
 /* line 130, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-prefooter {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10786,8 +10804,11 @@ picture {
   border-bottom: solid 1px #dfdfff;
 }
 
-/* line 138, src/scss/_components/kanban/_kanban-box.scss */
+/* line 139, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-prefooter span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10811,7 +10832,7 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 149, src/scss/_components/kanban/_kanban-box.scss */
+/* line 153, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-prefooter span:hover {
   border: solid 15px rgba(99, 100, 233, 0.5);
   background-color: rgba(99, 100, 233, 0.5);
@@ -10820,7 +10841,7 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 154, src/scss/_components/kanban/_kanban-box.scss */
+/* line 158, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-prefooter span:hover .icon-more {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -10828,7 +10849,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 160, src/scss/_components/kanban/_kanban-box.scss */
+/* line 164, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-prefooter span .icon-more {
   font-size: 16px;
   color: #6364e9;
@@ -10837,7 +10858,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 168, src/scss/_components/kanban/_kanban-box.scss */
+/* line 172, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10851,7 +10872,7 @@ picture {
   background-color: #f8f7ff;
 }
 
-/* line 174, src/scss/_components/kanban/_kanban-box.scss */
+/* line 178, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-footer > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10861,7 +10882,7 @@ picture {
   padding: 15px 20px;
 }
 
-/* line 179, src/scss/_components/kanban/_kanban-box.scss */
+/* line 183, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-footer > div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10875,13 +10896,13 @@ picture {
   padding-top: 3px;
 }
 
-/* line 185, src/scss/_components/kanban/_kanban-box.scss */
+/* line 189, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-footer > div p .icon-font {
   color: #6364e9;
   font-size: 13px;
 }
 
-/* line 191, src/scss/_components/kanban/_kanban-box.scss */
+/* line 195, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-footer > div span {
   white-space: normal;
   -webkit-box-flex: 1;
@@ -10895,7 +10916,7 @@ picture {
   color: #344563;
 }
 
-/* line 203, src/scss/_components/kanban/_kanban-box.scss */
+/* line 207, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-indication {
   width: 30px;
   height: 5px;
@@ -10903,17 +10924,17 @@ picture {
   background-color: #57d9a3;
 }
 
-/* line 210, src/scss/_components/kanban/_kanban-box.scss */
+/* line 214, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-indication--away {
   background-color: #ffc400;
 }
 
-/* line 213, src/scss/_components/kanban/_kanban-box.scss */
+/* line 217, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-indication--disturb {
   background-color: #ff7452;
 }
 
-/* line 218, src/scss/_components/kanban/_kanban-box.scss */
+/* line 222, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-name {
   padding-bottom: 5px;
   font-size: 20px;
@@ -10922,7 +10943,7 @@ picture {
   color: #172b4d;
 }
 
-/* line 226, src/scss/_components/kanban/_kanban-box.scss */
+/* line 230, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-position {
   text-transform: uppercase;
   font-size: 12px;
@@ -10930,7 +10951,7 @@ picture {
   color: rgba(52, 69, 99, 0.7);
 }
 
-/* line 233, src/scss/_components/kanban/_kanban-box.scss */
+/* line 237, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-cv, .kanban__box-like {
   position: absolute;
   right: 10px;
@@ -10953,12 +10974,12 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 245, src/scss/_components/kanban/_kanban-box.scss */
+/* line 249, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-cv .icon-font, .kanban__box-like .icon-font {
   font-size: 16px;
 }
 
-/* line 250, src/scss/_components/kanban/_kanban-box.scss */
+/* line 254, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-cv {
   top: 20px;
   border: solid 1px rgba(99, 100, 233, 0.5);
@@ -10967,7 +10988,7 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 255, src/scss/_components/kanban/_kanban-box.scss */
+/* line 259, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-cv:hover {
   border: solid 15px rgba(99, 100, 233, 0.5);
   background-color: rgba(99, 100, 233, 0.5);
@@ -10976,7 +10997,7 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 260, src/scss/_components/kanban/_kanban-box.scss */
+/* line 264, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-cv:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -10984,12 +11005,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 266, src/scss/_components/kanban/_kanban-box.scss */
+/* line 270, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-cv .icon-font {
   color: #6364e9;
 }
 
-/* line 271, src/scss/_components/kanban/_kanban-box.scss */
+/* line 275, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like {
   top: 60px;
   border: solid 1px #ff8f73;
@@ -10998,17 +11019,17 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 276, src/scss/_components/kanban/_kanban-box.scss */
+/* line 280, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like.is-hide {
   display: none;
 }
 
-/* line 280, src/scss/_components/kanban/_kanban-box.scss */
+/* line 284, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like {
   border-color: #57d9a3;
 }
 
-/* line 284, src/scss/_components/kanban/_kanban-box.scss */
+/* line 288, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like:hover {
   border: solid 15px #ff8f73;
   background-color: #ff8f73;
@@ -11017,13 +11038,13 @@ picture {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 289, src/scss/_components/kanban/_kanban-box.scss */
+/* line 293, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like:hover {
   border-color: #57d9a3;
   background-color: #57d9a3;
 }
 
-/* line 294, src/scss/_components/kanban/_kanban-box.scss */
+/* line 298, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -11031,12 +11052,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 298, src/scss/_components/kanban/_kanban-box.scss */
+/* line 302, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like:hover .icon-font {
   color: #fff;
 }
 
-/* line 304, src/scss/_components/kanban/_kanban-box.scss */
+/* line 308, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-like .icon-font {
   color: #ff7452;
   -webkit-transition: color 0.3s ease-in-out;
@@ -11044,14 +11065,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 308, src/scss/_components/kanban/_kanban-box.scss */
+/* line 312, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__action-rejected .kanban__box-like .icon-font {
   color: #57d9a3;
   -webkit-transform: rotate3d(1, 0, 0, 180deg);
           transform: rotate3d(1, 0, 0, 180deg);
 }
 
-/* line 315, src/scss/_components/kanban/_kanban-box.scss */
+/* line 319, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11065,52 +11086,56 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 322, src/scss/_components/kanban/_kanban-box.scss */
+/* line 326, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date.kanban__box-date--hired .icon-font {
   color: #36b37e;
 }
 
-/* line 330, src/scss/_components/kanban/_kanban-box.scss */
+/* line 334, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date.kanban__box-date--assessment .icon-font, .kanban__box-date.kanban__box-date--offered .icon-font, .kanban__box-date.kanban__box-date--shortlisted .icon-font {
   color: #00b8d9;
 }
 
-/* line 335, src/scss/_components/kanban/_kanban-box.scss */
+/* line 339, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-font {
   margin-right: 11px;
   font-size: 13px;
 }
 
-/* line 340, src/scss/_components/kanban/_kanban-box.scss */
+/* line 344, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-date {
   color: #6364e9;
 }
 
-/* line 344, src/scss/_components/kanban/_kanban-box.scss */
+/* line 348, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-calendar-check {
   color: #36b37e;
 }
 
-/* line 348, src/scss/_components/kanban/_kanban-box.scss */
+/* line 352, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date .icon-comment-delete,
 .kanban__box-date .icon-calendar-check {
   color: #ff7452;
 }
 
-/* line 353, src/scss/_components/kanban/_kanban-box.scss */
+/* line 357, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date p {
   white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-width: 217px;
   font-size: 14px;
   letter-spacing: 0.5px;
   color: rgba(52, 69, 99, 0.7);
 }
 
-/* line 359, src/scss/_components/kanban/_kanban-box.scss */
+/* line 366, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-date p u {
   text-decoration: none;
 }
 
-/* line 365, src/scss/_components/kanban/_kanban-box.scss */
+/* line 372, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11123,7 +11148,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 369, src/scss/_components/kanban/_kanban-box.scss */
+/* line 376, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11140,19 +11165,19 @@ picture {
   padding-bottom: 11px;
 }
 
-/* line 375, src/scss/_components/kanban/_kanban-box.scss */
+/* line 382, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-item:last-of-type {
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 379, src/scss/_components/kanban/_kanban-box.scss */
+  /* line 386, src/scss/_components/kanban/_kanban-box.scss */
   .kanban__box-list-item > div {
     padding-right: 5px;
   }
 }
 
-/* line 386, src/scss/_components/kanban/_kanban-box.scss */
+/* line 393, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11164,25 +11189,25 @@ picture {
           align-items: center;
 }
 
-/* line 391, src/scss/_components/kanban/_kanban-box.scss */
+/* line 398, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main > div:nth-of-type(1) {
   width: 25px;
 }
 
-/* line 396, src/scss/_components/kanban/_kanban-box.scss */
+/* line 403, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main .icon-font {
   color: #6364e9;
   font-size: 16px;
 }
 
-/* line 401, src/scss/_components/kanban/_kanban-box.scss */
+/* line 408, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-main p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 409, src/scss/_components/kanban/_kanban-box.scss */
+/* line 416, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result.kanban__box-list-result--bg {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11208,19 +11233,19 @@ picture {
   background: linear-gradient(45deg, #5153dc 0%, #8181ff 100%);
 }
 
-/* line 420, src/scss/_components/kanban/_kanban-box.scss */
+/* line 427, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result.kanban__box-list-result--bg span {
   color: #ffffff;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 420, src/scss/_components/kanban/_kanban-box.scss */
+  /* line 427, src/scss/_components/kanban/_kanban-box.scss */
   .kanban__box-list-result.kanban__box-list-result--bg span {
     font-size: 12px;
   }
 }
 
-/* line 428, src/scss/_components/kanban/_kanban-box.scss */
+/* line 435, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-list-result span {
   text-align: right;
   font-size: 14px;
@@ -11229,7 +11254,7 @@ picture {
   color: #344563;
 }
 
-/* line 438, src/scss/_components/kanban/_kanban-box.scss */
+/* line 445, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee {
   display: none;
   width: 100%;
@@ -11247,12 +11272,12 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 449, src/scss/_components/kanban/_kanban-box.scss */
+/* line 456, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee.is-active {
   display: block;
 }
 
-/* line 453, src/scss/_components/kanban/_kanban-box.scss */
+/* line 460, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee:hover {
   border-color: #6364e9;
   -webkit-box-shadow: 0 5px 10px rgba(135, 131, 157, 0.55);
@@ -11264,7 +11289,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 459, src/scss/_components/kanban/_kanban-box.scss */
+/* line 466, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11277,30 +11302,30 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 464, src/scss/_components/kanban/_kanban-box.scss */
+/* line 471, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head span {
   width: 25px;
 }
 
-/* line 468, src/scss/_components/kanban/_kanban-box.scss */
+/* line 475, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head .icon-timer {
   color: #6364e9;
   font-size: 16px;
 }
 
-/* line 473, src/scss/_components/kanban/_kanban-box.scss */
+/* line 480, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-head p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 480, src/scss/_components/kanban/_kanban-box.scss */
+/* line 487, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-body {
   padding-left: 25px;
 }
 
-/* line 484, src/scss/_components/kanban/_kanban-box.scss */
+/* line 491, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress {
   overflow: hidden;
   position: relative;
@@ -11323,7 +11348,7 @@ picture {
   background-color: #dfe1e6;
 }
 
-/* line 495, src/scss/_components/kanban/_kanban-box.scss */
+/* line 502, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress i {
   position: absolute;
   top: 0;
@@ -11334,7 +11359,7 @@ picture {
   background: linear-gradient(45deg, #6668e0 0%, #9b9bff 100%);
 }
 
-/* line 503, src/scss/_components/kanban/_kanban-box.scss */
+/* line 510, src/scss/_components/kanban/_kanban-box.scss */
 .kanban__box-guarantee-progress p {
   z-index: 2;
   overflow: hidden;

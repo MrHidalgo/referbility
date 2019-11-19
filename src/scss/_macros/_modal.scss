@@ -1311,6 +1311,15 @@
 
         &-wrapper {
           display: none;
+          padding-bottom: 15px;
+        }
+      }
+
+      &__btn {
+        &-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
     }

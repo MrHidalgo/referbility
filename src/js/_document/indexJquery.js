@@ -449,7 +449,9 @@ $(document).ready((ev) => {
     });
     $('.c-modal__radio-textarea').on('change', (ev) => {
       if($(ev.currentTarget).is(':checked')) {
-        $('.c-modal__textarea-wrapper').slideDown(250);
+        $('.c-modal__textarea-wrapper').slideDown(250).css({
+          'display': 'flex'
+        });
       }
     })
   };
@@ -496,6 +498,83 @@ $(document).ready((ev) => {
       initPopups();
     });
   };
+
+  const initThumbsSend = () => {
+    let _dislikeItem = null,
+    _dislikeTo = $('[kanban-rejected-js]'),
+    _dislikeFrom = null,
+    _dislikeAnswer = null;
+
+    $('[popup-dislike-js]').magnificPopup({
+      type: 'inline',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'is-show',
+      callbacks: {
+        beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      }
+    });
+
+    $('.kanban__box-like').on('click', (ev) => {
+      _dislikeItem = $(ev.currentTarget).closest('.kanban__box');
+      _dislikeFrom = $(ev.currentTarget).closest('.kanban__box-row');
+    });
+
+    $('.c-modal__radio').on('change', (ev) => {
+      if($(ev.currentTarget).is(':checked')) {
+        _dislikeAnswer = $(ev.currentTarget).val();
+      }
+    });
+
+    $('[kanban-thumbs-js]').on('click', (ev) => {
+      $('[kanban-body-js]').find(_dislikeItem).remove();
+
+      _dislikeTo.append(_dislikeItem);
+
+      _dislikeItem.find('.kanban__box-guarantee').removeClass('is-active');
+      _dislikeItem.find('.kanban__box-like').removeClass('is-hide');
+
+      const _itemDateNode = _dislikeItem.find('.kanban__box-prefooter > div:nth-of-type(1)');
+
+      const _date = new Date(),
+        _currentDate = _date.getDate() + '/' +  _date.getMonth() + '/' +  _date.getFullYear();
+
+      const _rejectedTmpl = `
+        <div class="kanban__box-date kanban__box-date--rejected">
+          <i class="icon-font icon-calendar-check"></i>
+          <p>Rejected on ${_currentDate}</p>
+        </div>
+      `;
+      const _reasonsTmpl = `
+        <div class="kanban__box-date kanban__box-date--relevant">
+          <i class="icon-font icon-comment-delete"></i>
+          <p>${_dislikeAnswer}</p>
+        </div>
+      `;
+
+      _itemDateNode.find('.kanban__box-date:nth-of-type(2)').remove();
+      _itemDateNode.append(_rejectedTmpl);
+      _itemDateNode.append(_reasonsTmpl);
+
+      _changeKanbanBoxesHeight(_dislikeFrom);
+
+      if($('[kanban-rejected-js] .kanban__box').length === 0) {
+        $('.kanban__action-rejected-head p').fadeOut(250);
+      } else {
+        $('.kanban__action-rejected-head p').fadeIn(250).text($('[kanban-rejected-js] .kanban__box').length);
+      }
+
+      initRejectedThumbs();
+      $('[ popup-js]').magnificPopup('close');
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -527,6 +606,7 @@ $(document).ready((ev) => {
     initModalMoreQuestion();
     initThumbsOtherTextarea();
     initThumbs();
+    initThumbsSend();
     initRejectedThumbs();
 		// ==========================================
 

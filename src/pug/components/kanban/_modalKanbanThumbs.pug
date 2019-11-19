@@ -7,28 +7,28 @@ mixin modalContent()
   .c-modal__body
 
     .c-modal__radio-wrapper
-      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-1')
+      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-1' value='Already known')
       label(for="modal_thumbs-1")
         span
           i
         p Already known
 
     .c-modal__radio-wrapper
-      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-2')
+      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-2' value='Not relevant')
       label(for="modal_thumbs-2")
         span
           i
         p Not relevant
 
     .c-modal__radio-wrapper
-      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-3')
+      input.c-modal__radio(type='radio' name='modal_thumbs' id='modal_thumbs-3' value='Salary expectations too high')
       label(for="modal_thumbs-3")
         span
           i
         p Salary expectations too high
 
     .c-modal__radio-wrapper
-      input.c-modal__radio.c-modal__radio-textarea(type='radio' name='modal_thumbs' id='modal_thumbs-4')
+      input.c-modal__radio.c-modal__radio-textarea(type='radio' name='modal_thumbs' id='modal_thumbs-4' value='Other')
       label(for="modal_thumbs-4")
         span
           i
@@ -36,6 +36,10 @@ mixin modalContent()
 
     .c-modal__textarea-wrapper
       textarea.c-modal__textarea(placeholder='Rejection Reason')
+
+    .c-modal__btn-wrapper
+      a.c-modal__btn.c-btn.c-btn--bg.c-btn--bg-blue(href='#' title='' kanban-thumbs-js)
+        span Send
 
 +modal('kanbanThumbs', 'modalContent')
 

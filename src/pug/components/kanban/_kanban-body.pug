@@ -18,10 +18,10 @@ mixin kanbanBoxHead(guaranteeMod, calendarCheck, indicationClassMod, name)
       .kanban__box-like(class!=(guaranteeMod)?'is-hide' : '')
         i.icon-font.icon-thumbs-up
     else if(calendarCheck)
-      .kanban__box-like(class!=(calendarCheck)?'is-hide':'' popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
+      .kanban__box-like(class!=(calendarCheck)?'is-hide':'' popup-dislike-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
         i.icon-font.icon-thumbs-up
     else
-      .kanban__box-like(popup-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
+      .kanban__box-like(popup-dislike-js data-effect="mfp-zoom-in" data-mfp-src="#kanbanThumbs")
         i.icon-font.icon-thumbs-up
 
 mixin kanbanBoxList()
