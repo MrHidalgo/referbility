@@ -1,0 +1,20 @@
+---
+title: Referbility | Referrer Kanban
+
+pageClassName: p-referrer-kanban
+---
+extends shared/_layout
+
+block header
+  include components/_header-kanban
+block modal
+  include components/kanban/_modalKanbanMore
+block footer
+
+block menu
+  include components/homepage/_menu
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/referrer-kanban/_kanban

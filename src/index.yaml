@@ -16,3 +16,6 @@ PageList:
 - file: employer-kanban.html
   titleName: Employer Kanban
   ready: 100
+- file: referrer-kanban.html
+  titleName: Referrer Kanban
+  ready: 100

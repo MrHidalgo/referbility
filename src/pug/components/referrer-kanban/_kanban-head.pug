@@ -1,0 +1,65 @@
+// SECTION kanban :: START
+
+.kanban__wrapper-head(kanban-head-js)
+
+  .c-grid
+
+    .kanban__wrapper-block
+      div
+
+        .kanban__heading
+          div
+            i.icon-font.icon-case
+          div
+            h2
+              span Chief Financial Officer - Thermal Power Plan
+              //a(href="#" class="" title="")
+              //  i.icon-font.icon-pencil-create
+            p!= 'Reward <span>$2,000</span>'
+
+      div
+
+        .kanban__action
+          div
+            .kanban__action-search
+              input(type='search' name='' placeholder='Search')
+              button(type='submit')
+                i.icon-font.icon-search
+          div
+            .kanban__action-job(dropdown-js)
+              .kanban__action-job-head(dropdown-btn-js)
+                a(href='#' title='')
+                  p My Jobs
+                  span
+                    i.icon-font.icon-corner
+              .kanban__action-job-drop(dropdown-contnet-js)
+                .kanban__action-job-title
+                  p active
+                .kanban__action-job-content
+
+                  .kanban__radio
+                    input(type='checkbox' checked)
+                    label
+                      span
+                        i
+                      p Sales Manager (Dubai, UEA)
+
+                  .kanban__radio
+                    input(type='checkbox')
+                    label
+                      span
+                        i
+                      p HR Executive (Daha, Qatar)
+
+                .kanban__action-job-title
+                  p Expired
+                .kanban__action-job-content
+
+                  .kanban__radio
+                    input(type='checkbox')
+                    label
+                      span
+                        i
+                      p Manager (Dubai, UEA)
+
+// SECTION kanban :: END
