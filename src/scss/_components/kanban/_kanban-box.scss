@@ -335,11 +335,11 @@
     padding-top: 5px;
     padding-bottom: 5px;
 
-    &:nth-of-type(2) {
-      p {
-        max-width: 240px;
-      }
-    }
+    //&:nth-of-type(2) {
+    //  p {
+    //    max-width: calc(100% - (13px + 41px));
+    //  }
+    //}
 
     &.kanban__box-date--hired {
       .icon-font {
@@ -385,10 +385,15 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 217px;
+      width: 100%;
+      max-width: 100%;
       font-size: 14px;
       letter-spacing: 0.5px;
       color: rgba(#344563, 0.7);
+      @include adaptive(767) {
+        white-space: normal;
+        text-overflow: unset;
+      }
 
       u {
         text-decoration: none;
@@ -424,6 +429,10 @@
       > div {
         @include adaptive(1023) {
           padding-right: 5px;
+        }
+
+        &:nth-of-type(2) {
+          text-align: right;
         }
       }
     }
