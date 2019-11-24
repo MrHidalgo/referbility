@@ -204,6 +204,17 @@
               border: solid 5px #6e6ff1;
               background-color: #c5c6fa;
               @include transition(border, background-color);
+
+              .p-referrer-kanban & {
+                border-width: 1px;
+                border-color: #6e6ff1;
+                background-color: #ecebf6;
+
+                &:after {
+                  transform: scale(1) rotate(45deg);
+                  @include transition(transform);
+                }
+              }
             }
           }
         }
@@ -219,6 +230,7 @@
       width: 35px;
 
       i {
+        position: relative;
         display: block;
         width: 18px;
         height: 18px;
@@ -226,6 +238,23 @@
         border: solid 1px rgba(109, 110, 240, 0.2);
         background-color: #ecebf6;
         @include transition(border, background-color);
+
+        .p-referrer-kanban & {
+          border-radius: 2px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 5px;
+            height: 10px;
+            border: solid #6e6ff1;
+            border-width: 0 2px 2px 0;
+            transform: scale(0) rotate(45deg);
+            @include transition(transform);
+          }
+        }
       }
     }
 
