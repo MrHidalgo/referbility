@@ -138,6 +138,10 @@ $(document).ready((ev) => {
 
     let _kanbanBoxesSum = 0;
 
+    console.log(self);
+    console.log(_kanbanBoxes);
+    console.log(_kanbanBoxesCover);
+
     for(let i = 0; i < _kanbanBoxes.length; i++) {
       _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
     }
@@ -185,8 +189,8 @@ $(document).ready((ev) => {
     } else if(_boxContainerName === 'offer') {
       $('[kanban-offer-js] [kanban-date-js]').show().css({'display':'flex'});
       _tmpl = `
-        <i class="icon-font icon-date"></i>  
-        <p>Job offered on <u>${_currentDate}</u></p>             
+        <i class="icon-font icon-date"></i>
+        <p>Job offered on <u>${_currentDate}</u></p>
       `;
       _boxesDateNode.addClass('kanban__box-date--offered').html(_tmpl);
     } else if(_boxContainerName === 'hired') {
@@ -583,6 +587,20 @@ $(document).ready((ev) => {
       $('[ popup-js]').magnificPopup('close');
     });
   };
+
+  const initKanbanLeaveComment = () => {
+    $('[kanban-comment-js]').on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _parentNode = _el.closest('.kanban__box-row');
+
+      _el.hide();
+      _el.siblings('textarea').slideDown(250);
+
+      setTimeout(() => {
+        _changeKanbanBoxesHeight(_parentNode);
+      }, 250);
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -616,6 +634,7 @@ $(document).ready((ev) => {
     initThumbs();
     initThumbsSend();
     initRejectedThumbs();
+    initKanbanLeaveComment();
 		// ==========================================
 
     $(window).on('load', () => {

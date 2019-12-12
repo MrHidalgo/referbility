@@ -11417,6 +11417,70 @@ picture {
   color: #344563;
 }
 
+/* line 573, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-comment {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 579, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-comment textarea {
+  resize: none;
+  outline: none;
+  display: none;
+  position: relative;
+  left: -25px;
+  width: -webkit-calc(100% + 25px);
+  width: calc(100% + 25px);
+  height: 75px;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border: solid 1px #dfdfff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.kanban__box-comment textarea.placeholder {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #6781af;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.kanban__box-comment textarea:-moz-placeholder {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #6781af;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.kanban__box-comment textarea::-moz-placeholder {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #6781af;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.kanban__box-comment textarea:-ms-input-placeholder {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #6781af;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.kanban__box-comment textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #6781af;
+}
+
 /* line 15, src/scss/_components/kanban/_kanban.scss */
 .kanban__overlay {
   opacity: 0;

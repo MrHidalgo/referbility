@@ -133,7 +133,9 @@ mixin kanbanBoxFooter(badge)
       if(badge)
         span Lorem ipsum dolor sitamet persius nominavi te eam
       else
-        span Click to leave a comment
+        .kanban__box-comment
+          span(kanban-comment-js) Click to leave a comment
+          textarea(placeholder='Type to leave comment...')
 
 mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
   +kanbanBoxBadge(badge)

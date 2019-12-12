@@ -569,4 +569,31 @@
       }
     }
   }
+
+  &-comment {
+    position: relative;
+    flex: 1;
+    min-width: 1px;
+    max-width: 100%;
+
+    textarea {
+      resize: none;
+      outline: none;
+      display: none;
+      position: relative;
+      left: -25px;
+      width: calc(100% + 25px);
+      height: 75px;
+      padding: 10px;
+      border-radius: 10px;
+      border: solid 1px #dfdfff;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      @include inputPlaceholder {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: lighten(#344563, 25%);
+      }
+    }
+  }
 }
