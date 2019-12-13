@@ -396,10 +396,6 @@ $(document).ready(function (ev) {
 
     var _kanbanBoxesSum = 0;
 
-    console.log(self);
-    console.log(_kanbanBoxes);
-    console.log(_kanbanBoxesCover);
-
     for (var i = 0; i < _kanbanBoxes.length; i++) {
       _kanbanBoxesSum += $(_kanbanBoxes[i]).outerHeight(true);
     }
@@ -808,7 +804,19 @@ $(document).ready(function (ev) {
           _parentNode = _el.closest('.kanban__box-row');
 
       _el.hide();
-      _el.siblings('textarea').slideDown(250);
+      _el.siblings('[kanban-commentForm-js]').slideDown(250);
+
+      setTimeout(function () {
+        _changeKanbanBoxesHeight(_parentNode);
+      }, 250);
+    });
+
+    $('[kanban-commentForm-js] button').on('click', function (ev) {
+      var _el = $(ev.currentTarget),
+          _parentNode = _el.closest('.kanban__box-row');
+
+      _el.closest('[kanban-commentForm-js]').hide();
+      _el.closest('.kanban__box-comment').find('[kanban-comment-js]').text(_el.prev('textarea').val()).fadeIn();
 
       setTimeout(function () {
         _changeKanbanBoxesHeight(_parentNode);

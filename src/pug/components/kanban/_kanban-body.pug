@@ -135,7 +135,11 @@ mixin kanbanBoxFooter(badge)
       else
         .kanban__box-comment
           span(kanban-comment-js) Click to leave a comment
-          textarea(placeholder='Type to leave comment...')
+          form.kanban__box-comment-wrapper(action='' autocomplete='off' kanban-commentForm-js)
+            textarea(placeholder='Type to leave comment...')
+            button.c-btn.c-btn--bg.c-btn--bg-blue(type='submit')
+              span Save
+
 
 mixin kanabnContent(badge, calendarCheck, guaranteeMod, indicationClassMod, name)
   +kanbanBoxBadge(badge)

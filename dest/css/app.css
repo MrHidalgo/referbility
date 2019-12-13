@@ -11429,14 +11429,19 @@ picture {
 }
 
 /* line 579, src/scss/_components/kanban/_kanban-box.scss */
-.kanban__box-comment textarea {
-  resize: none;
-  outline: none;
+.kanban__box-comment-wrapper {
   display: none;
   position: relative;
   left: -25px;
   width: -webkit-calc(100% + 25px);
   width: calc(100% + 25px);
+}
+
+/* line 585, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-comment-wrapper textarea {
+  resize: none;
+  outline: none;
+  width: 100%;
   height: 75px;
   padding: 10px;
   -webkit-border-radius: 10px;
@@ -11447,38 +11452,51 @@ picture {
 }
 
 /* line 88, src/scss/_utilities/_mixin.scss */
-.kanban__box-comment textarea.placeholder {
+.kanban__box-comment-wrapper textarea.placeholder {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #6781af;
 }
 
 /* line 89, src/scss/_utilities/_mixin.scss */
-.kanban__box-comment textarea:-moz-placeholder {
+.kanban__box-comment-wrapper textarea:-moz-placeholder {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #6781af;
 }
 
 /* line 90, src/scss/_utilities/_mixin.scss */
-.kanban__box-comment textarea::-moz-placeholder {
+.kanban__box-comment-wrapper textarea::-moz-placeholder {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #6781af;
 }
 
 /* line 91, src/scss/_utilities/_mixin.scss */
-.kanban__box-comment textarea:-ms-input-placeholder {
+.kanban__box-comment-wrapper textarea:-ms-input-placeholder {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #6781af;
 }
 
 /* line 92, src/scss/_utilities/_mixin.scss */
-.kanban__box-comment textarea::-webkit-input-placeholder {
+.kanban__box-comment-wrapper textarea::-webkit-input-placeholder {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #6781af;
+}
+
+/* line 602, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-comment-wrapper button {
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+}
+
+/* line 608, src/scss/_components/kanban/_kanban-box.scss */
+.kanban__box-comment-wrapper button span {
+  color: #ffffff;
 }
 
 /* line 15, src/scss/_components/kanban/_kanban.scss */
