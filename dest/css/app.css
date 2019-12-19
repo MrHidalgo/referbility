@@ -10424,15 +10424,16 @@ picture {
 /* line 186, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-job .kanban__action-rejected-content input {
   width: 100%;
+  background-color: #ffffff;
 }
 
-/* line 192, src/scss/_components/kanban/_kanban-action.scss */
+/* line 193, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected {
   position: relative;
   cursor: pointer;
 }
 
-/* line 196, src/scss/_components/kanban/_kanban-action.scss */
+/* line 197, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-head {
   overflow: hidden;
   display: -webkit-box;
@@ -10456,13 +10457,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 196, src/scss/_components/kanban/_kanban-action.scss */
+  /* line 197, src/scss/_components/kanban/_kanban-action.scss */
   .kanban__action-rejected-head {
     width: 100%;
   }
 }
 
-/* line 210, src/scss/_components/kanban/_kanban-action.scss */
+/* line 211, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-head > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10474,13 +10475,13 @@ picture {
           align-items: center;
 }
 
-/* line 215, src/scss/_components/kanban/_kanban-action.scss */
+/* line 216, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-head > * {
   margin-left: 2px;
   margin-right: 2px;
 }
 
-/* line 220, src/scss/_components/kanban/_kanban-action.scss */
+/* line 221, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-head h3 {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -10488,7 +10489,7 @@ picture {
   margin-right: 2px;
 }
 
-/* line 227, src/scss/_components/kanban/_kanban-action.scss */
+/* line 228, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-head p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10514,7 +10515,7 @@ picture {
   margin-right: 2px;
 }
 
-/* line 242, src/scss/_components/kanban/_kanban-action.scss */
+/* line 243, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-head .icon-corner {
   color: #6364e9;
   font-size: 13px;
@@ -10523,43 +10524,43 @@ picture {
           transform: rotate(90deg);
 }
 
-/* line 249, src/scss/_components/kanban/_kanban-action.scss */
+/* line 250, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-content {
   padding: 20px 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 249, src/scss/_components/kanban/_kanban-action.scss */
+  /* line 250, src/scss/_components/kanban/_kanban-action.scss */
   .kanban__action-rejected-content {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 256, src/scss/_components/kanban/_kanban-action.scss */
+/* line 257, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-content + .kanban__action-rejected-content {
   padding-top: 0;
 }
 
-/* line 260, src/scss/_components/kanban/_kanban-action.scss */
+/* line 261, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-content .kanban__box {
   width: 100%;
   margin: 0;
   margin-bottom: 15px;
 }
 
-/* line 265, src/scss/_components/kanban/_kanban-action.scss */
+/* line 266, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-content .kanban__box:first-of-type {
   margin-top: 0;
 }
 
-/* line 271, src/scss/_components/kanban/_kanban-action.scss */
+/* line 272, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-scroll {
   overflow-y: auto;
   max-height: 380px;
 }
 
-/* line 276, src/scss/_components/kanban/_kanban-action.scss */
+/* line 277, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-more {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10583,7 +10584,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 286, src/scss/_components/kanban/_kanban-action.scss */
+/* line 287, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected-more span {
   text-transform: uppercase;
   font-size: 14px;
@@ -10592,9 +10593,10 @@ picture {
   color: #344563;
 }
 
-/* line 296, src/scss/_components/kanban/_kanban-action.scss */
+/* line 297, src/scss/_components/kanban/_kanban-action.scss */
 .kanban__action-rejected .kanban__action-search input {
   width: 100%;
+  background-color: #ffffff;
 }
 
 /* line 1, src/scss/_components/kanban/_kanban-box.scss */
