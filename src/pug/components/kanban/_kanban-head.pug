@@ -103,34 +103,40 @@ mixin kanbanBox(classMod, indicationClassMod, name)
                   span
                     i.icon-font.icon-corner
               .kanban__action-job-drop(dropdown-contnet-js)
-                .kanban__action-job-title
-                  p active
-                .kanban__action-job-content
+                .kanban__action-rejected-content
+                  .kanban__action-search
+                    input(type='search' name='' placeholder='Search')
+                    button(type='submit')
+                      i.icon-font.icon-search
+                .kanban__action-job-scroll
+                  .kanban__action-job-title
+                    p active
+                  .kanban__action-job-content
 
-                  .kanban__radio
-                    input(type='checkbox' checked)
-                    label
-                      span
-                        i
-                      p Sales Manager (Dubai, UEA)
+                    .kanban__radio
+                      input(type='checkbox' checked)
+                      label
+                        span
+                          i
+                        p Sales Manager (Dubai, UEA)
 
-                  .kanban__radio
-                    input(type='checkbox')
-                    label
-                      span
-                        i
-                      p HR Executive (Daha, Qatar)
+                    .kanban__radio
+                      input(type='checkbox')
+                      label
+                        span
+                          i
+                        p HR Executive (Daha, Qatar)
 
-                .kanban__action-job-title
-                  p Expired
-                .kanban__action-job-content
+                  .kanban__action-job-title
+                    p Expired
+                  .kanban__action-job-content
 
-                  .kanban__radio
-                    input(type='checkbox')
-                    label
-                      span
-                        i
-                      p Manager (Dubai, UEA)
+                    .kanban__radio
+                      input(type='checkbox')
+                      label
+                        span
+                          i
+                        p Manager (Dubai, UEA)
 
           div
             .kanban__action-rejected(dropdown-js)
