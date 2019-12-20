@@ -823,6 +823,31 @@ $(document).ready(function (ev) {
       }, 250);
     });
   };
+
+  var initKanbanDragScroll = function initKanbanDragScroll() {
+    var slider = document.querySelector('[kanban-body-js]');
+    var isDown = false;
+    var startX = void 0;
+    var scrollLeft = void 0;
+
+    slider.addEventListener('mousedown', function (e) {
+      isDown = true;
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', function () {
+      isDown = false;
+    });
+    slider.addEventListener('mouseup', function () {
+      isDown = false;
+    });
+    slider.addEventListener('mousemove', function (e) {
+      if (!isDown) return;
+      var x = e.pageX - slider.offsetLeft;
+      var walk = (x - startX) * 3;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -847,7 +872,7 @@ $(document).ready(function (ev) {
     initModalJobDetail();
     initSortable();
     initKanbanDrop();
-    initCustomScrollbar();
+    // initCustomScrollbar();
     initKanbanHeight();
     initModalMoreQuestion();
     initThumbsOtherTextarea();
@@ -855,6 +880,7 @@ $(document).ready(function (ev) {
     initThumbsSend();
     initRejectedThumbs();
     initKanbanLeaveComment();
+    initKanbanDragScroll();
     // ==========================================
 
     $(window).on('load', function () {
