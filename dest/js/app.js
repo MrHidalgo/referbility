@@ -273,6 +273,8 @@ $(document).ready(function (ev) {
   var _document = $(document),
       _window = $(window);
 
+  var isDown = false;
+
   /*
   * =============================================
   * CALLBACK :: start
@@ -572,6 +574,8 @@ $(document).ready(function (ev) {
         dragoverBubble: true,
         handle: ".kanban__box--draggable",
         onEnd: function onEnd(evt) {
+          isDown = false;
+
           var itemEl = evt.item;
 
           _sortableItem = itemEl;
@@ -826,26 +830,36 @@ $(document).ready(function (ev) {
 
   var initKanbanDragScroll = function initKanbanDragScroll() {
     var slider = document.querySelector('[kanban-body-js]');
-    var isDown = false;
     var startX = void 0;
     var scrollLeft = void 0;
 
+    $('.kanban__box').hover(function (ev) {
+      isDown = false;
+    }, function (ev) {});
     slider.addEventListener('mousedown', function (e) {
-      isDown = true;
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
+      if ($(ev.target).closest('.kanban__box').length === 0) {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      }
     });
     slider.addEventListener('mouseleave', function () {
-      isDown = false;
+      if ($(ev.target).closest('.kanban__box').length === 0) {
+        isDown = false;
+      }
     });
     slider.addEventListener('mouseup', function () {
-      isDown = false;
+      if ($(ev.target).closest('.kanban__box').length === 0) {
+        isDown = false;
+      }
     });
     slider.addEventListener('mousemove', function (e) {
-      if (!isDown) return;
-      var x = e.pageX - slider.offsetLeft;
-      var walk = (x - startX) * 3;
-      slider.scrollLeft = scrollLeft - walk;
+      if ($(ev.target).closest('.kanban__box').length === 0) {
+        if (!isDown) return;
+        var x = e.pageX - slider.offsetLeft;
+        var walk = (x - startX) * 3;
+        slider.scrollLeft = scrollLeft - walk;
+      }
     });
   };
   /*

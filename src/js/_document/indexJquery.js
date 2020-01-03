@@ -12,6 +12,8 @@ $(document).ready((ev) => {
   const _document = $(document),
     _window = $(window);
 
+  let isDown = false;
+
 
 	/*
 	* =============================================
@@ -336,6 +338,8 @@ $(document).ready((ev) => {
         dragoverBubble: true,
         handle: ".kanban__box--draggable",
         onEnd: function (evt) {
+          isDown = false;
+
           const itemEl = evt.item;
 
           _sortableItem = itemEl;
@@ -612,26 +616,36 @@ $(document).ready((ev) => {
 
   const initKanbanDragScroll = () => {
     const slider = document.querySelector('[kanban-body-js]');
-    let isDown = false;
     let startX;
     let scrollLeft;
 
+    $('.kanban__box').hover(
+      (ev) => { isDown = false; }, (ev) => {}
+    );
     slider.addEventListener('mousedown', (e) => {
-      isDown = true;
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
+      if($(ev.target).closest('.kanban__box').length === 0) {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      }
     });
     slider.addEventListener('mouseleave', () => {
-      isDown = false;
+      if($(ev.target).closest('.kanban__box').length === 0) {
+        isDown = false;
+      }
     });
     slider.addEventListener('mouseup', () => {
-      isDown = false;
+      if($(ev.target).closest('.kanban__box').length === 0) {
+        isDown = false;
+      }
     });
     slider.addEventListener('mousemove', (e) => {
-      if(!isDown) return;
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 3;
-      slider.scrollLeft = scrollLeft - walk;
+      if($(ev.target).closest('.kanban__box').length === 0) {
+        if(!isDown) return;
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3;
+        slider.scrollLeft = scrollLeft - walk;
+      }
     });
   };
 	/*
