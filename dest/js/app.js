@@ -446,6 +446,7 @@ $(document).ready(function (ev) {
       _boxesDateNode.addClass('kanban__box-date--hired').html(_tmpl);
     }
   }
+
   var initSortable = function initSortable() {
     var _sortableAnswer = 0,
         _sortableItem = null,
@@ -648,10 +649,6 @@ $(document).ready(function (ev) {
     });
   };
 
-  var initCustomScrollbar = function initCustomScrollbar() {
-    $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({});
-  };
-
   var initKanbanHeight = function initKanbanHeight() {
     $(window).on('resize load', function (ev) {
       if ($(window).width() > 767) {
@@ -833,6 +830,10 @@ $(document).ready(function (ev) {
     var startX = void 0;
     var scrollLeft = void 0;
 
+    if (!slider) {
+      return;
+    }
+
     $('.kanban__box').hover(function (ev) {
       isDown = false;
     }, function (ev) {});
@@ -860,6 +861,29 @@ $(document).ready(function (ev) {
         var walk = (x - startX) * 3;
         slider.scrollLeft = scrollLeft - walk;
       }
+    });
+  };
+
+  var initInnerPageLogic = function initInnerPageLogic() {
+    $('[inner-action-js]').on('click', function (ev) {
+      $('[inner-info-js]').fadeIn(400).addClass('is-show').css({ 'display': 'flex' });
+
+      setTimeout(function (ev) {
+        $('[inner-info-js]').fadeOut(350).removeClass('is-show');
+      }, 5000);
+
+      _document.on('keyup', function (ev) {
+        if (ev.keyCode === 27) {
+          $('[inner-info-js]').fadeOut(350).removeClass('is-show');
+        }
+      });
+      $('[inner-info-js]').on('click', function (ev) {
+        if ($(ev.target).closest('.innerSection__info-block').length) {
+          return;
+        }
+
+        $('[inner-info-js]').fadeOut(350).removeClass('is-show');
+      });
     });
   };
   /*
@@ -895,6 +919,7 @@ $(document).ready(function (ev) {
     initRejectedThumbs();
     initKanbanLeaveComment();
     initKanbanDragScroll();
+    initInnerPageLogic();
     // ==========================================
 
     $(window).on('load', function () {

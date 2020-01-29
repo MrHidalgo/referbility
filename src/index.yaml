@@ -19,3 +19,6 @@ PageList:
 - file: referrer-kanban.html
   titleName: Referrer Kanban
   ready: 100
+- file: rejection.html
+  titleName: Referrer Rejection
+  ready: 1

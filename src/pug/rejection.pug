@@ -1,0 +1,15 @@
+---
+title: Referbility | Referral Rejection
+
+pageClassName: p-rejection
+---
+extends shared/_layout
+
+block header
+block footer
+block modal
+block menu
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/innerPages/_innerSection

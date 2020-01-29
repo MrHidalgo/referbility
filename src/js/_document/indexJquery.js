@@ -200,6 +200,7 @@ $(document).ready((ev) => {
       _boxesDateNode.addClass('kanban__box-date--hired').html(_tmpl);
     }
   }
+
   const initSortable = () => {
     let _sortableAnswer = 0,
       _sortableItem = null,
@@ -382,7 +383,6 @@ $(document).ready((ev) => {
     });
   };
 
-
   const initKanbanDrop = () => {
     $('[dropdown-btn-js]').on('click', (ev) => {
       const _el = $(ev.currentTarget),
@@ -414,10 +414,6 @@ $(document).ready((ev) => {
       }
     });
 
-  };
-
-  const initCustomScrollbar = () => {
-    $('.kanban__wrapper-body, .kanban__box-cover').overlayScrollbars({ });
   };
 
   const initKanbanHeight = () => {
@@ -619,6 +615,10 @@ $(document).ready((ev) => {
     let startX;
     let scrollLeft;
 
+    if(!slider) {
+      return;
+    }
+
     $('.kanban__box').hover(
       (ev) => { isDown = false; }, (ev) => {}
     );
@@ -648,10 +648,32 @@ $(document).ready((ev) => {
       }
     });
   };
+
+  const initInnerPageLogic = () => {
+    $('[inner-action-js]').on('click', (ev) => {
+      $('[inner-info-js]').fadeIn(400).addClass('is-show').css({'display':'flex'});
+
+      setTimeout((ev) => {
+        $('[inner-info-js]').fadeOut(350).removeClass('is-show');
+      }, 5000);
+
+      _document.on('keyup', (ev) => {
+        if (ev.keyCode === 27) {
+          $('[inner-info-js]').fadeOut(350).removeClass('is-show');
+        }
+      });
+      $('[inner-info-js]').on('click', (ev) => {
+        if($(ev.target).closest('.innerSection__info-block').length) {
+          return;
+        }
+
+        $('[inner-info-js]').fadeOut(350).removeClass('is-show');
+      });
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
-
 
 
   /**
@@ -683,6 +705,7 @@ $(document).ready((ev) => {
     initRejectedThumbs();
     initKanbanLeaveComment();
     initKanbanDragScroll();
+    initInnerPageLogic();
 		// ==========================================
 
     $(window).on('load', () => {
