@@ -119,7 +119,6 @@
         justify-content: center;
         width: 28px;
         height: 19px;
-        margin-left: 20px;
 
         .icon-font {
           color: #ffffff;
@@ -131,6 +130,11 @@
           align-items: center;
           justify-content: flex-end;
           padding-right: 50px;
+
+          > div {
+            display: flex;
+            margin-left: 20px;
+          }
         }
       }
     }

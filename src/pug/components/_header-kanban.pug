@@ -16,12 +16,41 @@ header#header.header.header--kanban
       .header__wrapper-right
 
         .header__action-wrapper
-          a.header__action(href='#' title='')
-            i.icon-font.icon-bar-chart
-          a.header__action(href='#' title='')
-            i.icon-font.icon-mail
-          a.header__action(href='#' title='')
-            i.icon-font.icon-bell
+          div
+            a.header__action(href='#' title='')
+              i.icon-font.icon-bar-chart
+          div
+            a.header__action(href='#' title='')
+              i.icon-font.icon-mail
+          div
+            .notify.notify--kanban(dropdown-js)
+              a.notify__btn.header__action(href='#' title='' dropdown-btn-js)
+                i.icon-font.icon-bell
+                .notify__indication 2
+              .notify__drop(dropdown-contnet-js)
+                .notify__drop-head
+                  p NOTIFICATIONS
+                  .notify__indication 2
+                .notify__drop-body
+                  a.notify__action.notify__action--notread(href="#")
+                    div
+                      i.icon-font.icon-bell
+                    div
+                      p Lorem ipsum dolor sit amet
+                      span 1 hour ago
+                  a.notify__action.notify__action--notread(href="#")
+                    div
+                      i.icon-font.icon-bell
+                    div
+                      p Lorem ipsum dolor sit amet
+                      span 1 hour ago
+                  each val, idx in [1,2,3,4,5,6,7]
+                    a.notify__action(href="#")
+                      div
+                        i.icon-font.icon-bell
+                      div
+                        p Lorem ipsum dolor sit amet
+                        span 1 hour ago
 
         +hamburger('kanban')
 
