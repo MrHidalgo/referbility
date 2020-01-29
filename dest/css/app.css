@@ -12151,11 +12151,24 @@ picture {
 }
 
 /* line 123, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__desc {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 136, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block {
   position: relative;
   width: 100%;
   max-width: 890px;
-  min-height: 492px;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 115px 60px;
@@ -12168,13 +12181,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 123, src/scss/_components/innerPages/_innerSection.scss */
+  /* line 136, src/scss/_components/innerPages/_innerSection.scss */
   .innerSection__block {
     padding: 50px 30px;
   }
 }
 
-/* line 139, src/scss/_components/innerPages/_innerSection.scss */
+/* line 151, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-desc {
   padding-bottom: 35px;
   font-size: 14px;
@@ -12184,47 +12197,110 @@ picture {
   color: #344563;
 }
 
-/* line 147, src/scss/_components/innerPages/_innerSection.scss */
+/* line 159, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-desc:last-of-type {
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 147, src/scss/_components/innerPages/_innerSection.scss */
+  /* line 159, src/scss/_components/innerPages/_innerSection.scss */
   .innerSection__block-desc:last-of-type {
     padding-bottom: 20px;
   }
 }
 
-/* line 154, src/scss/_components/innerPages/_innerSection.scss */
-.innerSection__block-desc a {
+/* line 166, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-desc a,
+.innerSection__block-desc strong {
   font-weight: bold;
   color: #344563;
 }
 
-/* line 160, src/scss/_components/innerPages/_innerSection.scss */
+/* line 173, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-line {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(10, 10, 96, 0.2);
+}
+
+/* line 183, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-checkbox {
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+/* line 191, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-checkbox .c-modal__checkbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+/* line 196, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-checkbox .c-modal__checkbox > div:nth-of-type(1) {
+  width: 30px;
+}
+
+/* line 199, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-checkbox .c-modal__checkbox > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 206, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-checkbox .c-modal__checkbox input {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 215, src/scss/_components/innerPages/_innerSection.scss */
+.innerSection__block-checkbox .c-modal__checkbox label {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #344563;
+}
+
+/* line 224, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-select {
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 160, src/scss/_components/innerPages/_innerSection.scss */
+  /* line 224, src/scss/_components/innerPages/_innerSection.scss */
   .innerSection__block-select {
     padding-bottom: 0;
   }
 }
 
-/* line 168, src/scss/_components/innerPages/_innerSection.scss */
+/* line 232, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-select .c-modal__input-1 {
   padding-bottom: 15px;
 }
 
-/* line 172, src/scss/_components/innerPages/_innerSection.scss */
+/* line 236, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-select .c-modal__input-2 {
   padding-bottom: 30px;
 }
 
-/* line 177, src/scss/_components/innerPages/_innerSection.scss */
+/* line 241, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-select .c-modal__input--select select {
   outline: none;
   width: 100%;
@@ -12240,7 +12316,7 @@ picture {
   color: #091e42;
 }
 
-/* line 191, src/scss/_components/innerPages/_innerSection.scss */
+/* line 255, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-select .c-modal__input input {
   outline: none;
   width: 100%;
@@ -12285,7 +12361,7 @@ picture {
   color: #091e42;
 }
 
-/* line 210, src/scss/_components/innerPages/_innerSection.scss */
+/* line 274, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-btn {
   overflow: hidden;
   position: relative;
@@ -12320,7 +12396,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 226, src/scss/_components/innerPages/_innerSection.scss */
+/* line 290, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-btn:after {
   content: '';
   opacity: 0;
@@ -12348,7 +12424,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 244, src/scss/_components/innerPages/_innerSection.scss */
+/* line 308, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-btn:hover {
   -webkit-box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
           box-shadow: 0 5px 15px 0 rgba(153, 141, 217, 0);
@@ -12359,7 +12435,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 248, src/scss/_components/innerPages/_innerSection.scss */
+/* line 312, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-btn:hover:after {
   opacity: 1.0;
   visibility: visible;
@@ -12374,7 +12450,7 @@ picture {
   transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 }
 
-/* line 257, src/scss/_components/innerPages/_innerSection.scss */
+/* line 321, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-btn span {
   z-index: 2;
   position: relative;
@@ -12386,7 +12462,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 268, src/scss/_components/innerPages/_innerSection.scss */
+/* line 332, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__block-btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12404,13 +12480,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 268, src/scss/_components/innerPages/_innerSection.scss */
+  /* line 332, src/scss/_components/innerPages/_innerSection.scss */
   .innerSection__block-btn-wrapper {
     padding-top: 30px;
   }
 }
 
-/* line 280, src/scss/_components/innerPages/_innerSection.scss */
+/* line 344, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__info {
   z-index: 10;
   overflow: hidden;
@@ -12427,7 +12503,7 @@ picture {
   background-color: rgba(2, 13, 96, 0.25);
 }
 
-/* line 293, src/scss/_components/innerPages/_innerSection.scss */
+/* line 357, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__info.is-show .innerSection__info-block {
   opacity: 1;
   visibility: visible;
@@ -12441,7 +12517,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 301, src/scss/_components/innerPages/_innerSection.scss */
+/* line 365, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__info-block {
   opacity: 0;
   visibility: hidden;
@@ -12483,7 +12559,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 320, src/scss/_components/innerPages/_innerSection.scss */
+/* line 384, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__info-block h3 {
   padding-bottom: 10px;
   font-size: 36px;
@@ -12492,7 +12568,7 @@ picture {
   color: #0a0a60;
 }
 
-/* line 328, src/scss/_components/innerPages/_innerSection.scss */
+/* line 392, src/scss/_components/innerPages/_innerSection.scss */
 .innerSection__info-block p {
   width: 100%;
   max-width: 400px;

@@ -22,3 +22,6 @@ PageList:
 - file: rejection.html
   titleName: Referrer Rejection
   ready: 1
+- file: confirmation.html
+  titleName: Referrer Confirmation
+  ready: 1
