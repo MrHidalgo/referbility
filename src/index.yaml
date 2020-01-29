@@ -25,3 +25,6 @@ PageList:
 - file: confirmation.html
   titleName: Referrer Confirmation
   ready: 1
+- file: expired.html
+  titleName: Referrer Expired
+  ready: 1

@@ -221,6 +221,40 @@
       }
     }
 
+    &-input {
+      width: 100%;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .c-modal {
+        &__input {
+          input {
+            outline: none;
+            width: 100%;
+            height: 45px;
+            padding: 0 15px;
+            border: none;
+            box-shadow: none;
+            border-radius: 4px;
+            background-color: #ecebf6;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #091e42;
+            @include inputPlaceholder {
+              font-size: 15px;
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              text-align: center;
+              color: #091e42;
+            }
+          }
+        }
+      }
+    }
+
     &-select {
       padding-bottom: 30px;
       @include adaptive(767) {
@@ -229,13 +263,6 @@
 
       .c-modal {
         &__input {
-          &-1 {
-            padding-bottom: 15px;
-          }
-
-          &-2 {
-            padding-bottom: 30px;
-          }
 
           &--select {
             select {
@@ -247,22 +274,6 @@
               box-shadow: none;
               border-radius: 4px;
               background-color: #ecebf6;
-              letter-spacing: 0.5px;
-              color: #091e42;
-            }
-          }
-
-          input {
-            outline: none;
-            width: 100%;
-            height: 45px;
-            padding: 0 15px;
-            border: none;
-            box-shadow: none;
-            border-radius: 4px;
-            background-color: #ecebf6;
-            letter-spacing: 0.5px;
-            @include inputPlaceholder {
               letter-spacing: 0.5px;
               color: #091e42;
             }

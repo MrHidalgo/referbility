@@ -1,0 +1,30 @@
+// SECTION innerSection :: START
+
+section#innerSection.innerSection
+
+  .innerSection__bg
+    .innerSection__bg-top
+      span(parallax-js data-stellar-ratio="1.2")
+      span(parallax-js data-stellar-ratio="0.9")
+    .innerSection__bg-bottom
+      img(src="img/crowdsourcing-shape-1.svg" parallax-js data-stellar-ratio="1.1")
+      span(parallax-js data-stellar-ratio="0.95")
+
+  .c-grid
+    .innerSection__wrapper
+
+      .innerSection__logo
+        a.innerSection__logo-btn(href="/")
+          img.innerSection__logo-img(src="img/logo--white.png" srcset="img/logo--white@2x.png 2x")
+
+      h1.innerSection__title This referral is expired!
+
+      .innerSection__block
+        p.innerSection__block-desc!= "Each referral is active for 72 hours, and this referral, unfortunately, expired already. This means that your profile will not be shared with the employer, and all the information that have been provided by the referrer about you have been deleted from <a href='#'>referbility.com</a> as per GDPR requirements."
+        p.innerSection__block-desc!= "If you are still interested in this role, <strong>please reach out to your referrer</strong> or contact us directly by emailing:"
+
+        .innerSection__block-input
+          .c-modal__input
+            input(type='text' name='' placeholder='hello@referbility.com')
+
+// SECTION innerSection :: END
