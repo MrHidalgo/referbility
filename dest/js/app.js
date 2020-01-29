@@ -868,10 +868,6 @@ $(document).ready(function (ev) {
     $('[inner-action-js]').on('click', function (ev) {
       $('[inner-info-js]').fadeIn(400).addClass('is-show').css({ 'display': 'flex' });
 
-      setTimeout(function (ev) {
-        $('[inner-info-js]').fadeOut(350).removeClass('is-show');
-      }, 5000);
-
       _document.on('keyup', function (ev) {
         if (ev.keyCode === 27) {
           $('[inner-info-js]').fadeOut(350).removeClass('is-show');

@@ -21,10 +21,13 @@ PageList:
   ready: 100
 - file: rejection.html
   titleName: Referrer Rejection
-  ready: 1
+  ready: 90
 - file: confirmation.html
   titleName: Referrer Confirmation
-  ready: 1
+  ready: 90
 - file: expired.html
   titleName: Referrer Expired
+  ready: 90
+- file: email-confirmation.html
+  titleName: Email Confirmation
   ready: 1

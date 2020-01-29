@@ -1,0 +1,48 @@
+// SECTION innerSection :: START
+
+section#innerSection.innerSection
+
+  .innerSection__bg
+    .innerSection__bg-top
+      span(parallax-js data-stellar-ratio="1.2")
+      span(parallax-js data-stellar-ratio="0.9")
+    .innerSection__bg-bottom
+      img(src="img/crowdsourcing-shape-1.svg" parallax-js data-stellar-ratio="1.1")
+      span(parallax-js data-stellar-ratio="0.95")
+
+  .c-grid
+    .innerSection__wrapper
+
+      .innerSection__logo
+        a.innerSection__logo-btn(href="/")
+          img.innerSection__logo-img(src="img/logo--white.png" srcset="img/logo--white@2x.png 2x")
+
+      h1.innerSection__title Please verify your account!
+
+      .innerSection__block
+        p.innerSection__block-desc!= "<strong>Thank you for registering on <a href='#'>referbility.com!</a></strong>"
+        p.innerSection__block-desc Please verify your email to get started straight away.
+
+        .innerSection__block-line
+
+        .innerSection__block-checkbox
+          .c-modal__checkbox
+            div
+              input(type='checkbox' name='' id='confirmationCheckbox')
+            div
+              label(for='confirmationCheckbox')!= "I have read, understood, and will adhere to <a href='#'>referbility.com's</a> Terms & Conditions"
+
+        a.innerSection__block-btn(href="#" inner-action-js)
+          span VERIFY
+
+  .innerSection__info(inner-info-js)
+    .innerSection__info-block
+      div
+        h3 Thank you!
+        p Your account has been verified.
+
+        a.innerSection__info-btn(href="#")
+          span Login
+
+
+// SECTION innerSection :: END
