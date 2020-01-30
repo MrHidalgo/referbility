@@ -1,0 +1,31 @@
+// SECTION board :: START
+
+.board {
+  padding-bottom: 120px;
+
+  &__wrapper {
+    display: flex;
+    @include adaptive(1023) {
+      flex-wrap: wrap;
+    }
+
+    &-left {
+      width: 465px;
+      padding-right: 45px;
+      @include adaptive(1023) {
+        order: 2;
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    &-right {
+      flex: 1;
+      @include adaptive(1023) {
+        order: 1;
+      }
+    }
+  }
+}
+
+// SECTION board :: END

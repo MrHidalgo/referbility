@@ -19,3 +19,15 @@ block content
 
     include components/board/_main
     include components/board/_filter
+
+    #board.board
+      .c-grid
+        .board__wrapper
+          .board__wrapper-left
+
+            include components/board/_card
+            include components/board/_pagination
+
+          .board__wrapper-right
+
+            include components/board/_how

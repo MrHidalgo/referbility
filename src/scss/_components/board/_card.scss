@@ -1,0 +1,171 @@
+// SECTION card :: START
+
+.board-card {
+  padding-bottom: 15px;
+
+  &__block {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #dfdfff;
+    background-color: #ffffff;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        padding-bottom: 25px;
+      }
+    }
+
+    &-body {
+      padding: 20px 30px;
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+      background-image: linear-gradient(264deg, #8181ff 67%, #5153dc);
+
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 106px;
+      min-height: 28px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      background-image: linear-gradient(316deg, #ff5630 95%, #ff7452 22%);
+
+      &-wrapper {
+        display: flex;
+        @include adaptive(1023) {
+          justify-content: center;
+        }
+      }
+
+      .icon-font {
+        margin-right: 5px;
+        color: #ffffff;
+        font-size: 15px;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      @include adaptive(1023) {
+        flex-direction: column-reverse;
+      }
+
+      > div {
+        &:nth-of-type(1) {
+          flex: 1;
+          padding-right: 30px;
+          @include adaptive(1023) {
+            padding-right: 0;
+          }
+        }
+
+        &:nth-of-type(2) {
+          width: 90px;
+          @include adaptive(1023) {
+            width: 100%;
+            padding-bottom: 10px;
+          }
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: #172b4d;
+        @include adaptive(1023) {
+          padding-top: 10px;
+        }
+      }
+    }
+
+    &-subtitle {
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: #7650b4;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+
+        > div {
+          &:nth-of-type(1) {
+            width: 25px;
+          }
+          &:nth-of-type(2) {
+            flex: 1;
+          }
+
+          .icon-font {
+            color: #6364e9;
+            font-size: 15px;
+          }
+
+          p {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: #344563;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SECTION card :: END

@@ -27,98 +27,104 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == bar-chart {
+	@if $filename == arrow-bottom {
 		$char: "\E001";
 	}
-	@if $filename == bell {
+	@if $filename == bar-chart {
 		$char: "\E002";
 	}
-	@if $filename == building {
+	@if $filename == bell-alert {
 		$char: "\E003";
 	}
-	@if $filename == calendar-check {
+	@if $filename == bell {
 		$char: "\E004";
 	}
-	@if $filename == calendar-dates {
+	@if $filename == building {
 		$char: "\E005";
 	}
-	@if $filename == calendar-delete {
+	@if $filename == calendar-check {
 		$char: "\E006";
 	}
-	@if $filename == call-calling {
+	@if $filename == calendar-dates {
 		$char: "\E007";
 	}
-	@if $filename == case {
+	@if $filename == calendar-delete {
 		$char: "\E008";
 	}
-	@if $filename == chat {
+	@if $filename == call-calling {
 		$char: "\E009";
 	}
-	@if $filename == chevron-bottom {
+	@if $filename == case {
 		$char: "\E00A";
 	}
-	@if $filename == comment-delete {
+	@if $filename == chat {
 		$char: "\E00B";
 	}
-	@if $filename == corner {
+	@if $filename == chevron-bottom {
 		$char: "\E00C";
 	}
-	@if $filename == creditcard-face {
+	@if $filename == comment-delete {
 		$char: "\E00D";
 	}
-	@if $filename == cup {
+	@if $filename == corner {
 		$char: "\E00E";
 	}
-	@if $filename == cv {
+	@if $filename == creditcard-face {
 		$char: "\E00F";
 	}
-	@if $filename == date {
+	@if $filename == cup {
 		$char: "\E010";
 	}
-	@if $filename == experience {
+	@if $filename == cv {
 		$char: "\E011";
 	}
-	@if $filename == facebook {
+	@if $filename == date {
 		$char: "\E012";
 	}
-	@if $filename == file-text {
+	@if $filename == experience {
 		$char: "\E013";
 	}
-	@if $filename == flag {
+	@if $filename == facebook {
 		$char: "\E014";
 	}
-	@if $filename == linkedin {
+	@if $filename == file-text {
 		$char: "\E015";
 	}
-	@if $filename == mail {
+	@if $filename == flag {
 		$char: "\E016";
 	}
-	@if $filename == more {
+	@if $filename == linkedin {
 		$char: "\E017";
 	}
-	@if $filename == pencil-create {
+	@if $filename == mail {
 		$char: "\E018";
 	}
-	@if $filename == pin {
+	@if $filename == more {
 		$char: "\E019";
 	}
-	@if $filename == search {
+	@if $filename == pencil-create {
 		$char: "\E01A";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == pin {
 		$char: "\E01B";
 	}
-	@if $filename == timer {
+	@if $filename == search {
 		$char: "\E01C";
 	}
-	@if $filename == twitter {
+	@if $filename == thumbs-up {
 		$char: "\E01D";
 	}
-	@if $filename == user {
+	@if $filename == timer {
 		$char: "\E01E";
 	}
-	@if $filename == wallet {
+	@if $filename == twitter {
 		$char: "\E01F";
+	}
+	@if $filename == user {
+		$char: "\E020";
+	}
+	@if $filename == wallet {
+		$char: "\E021";
 	}
 
 	@return $char;
@@ -135,8 +141,16 @@
 	}
 }
 
+.icon-arrow-bottom {
+	@include icon(arrow-bottom);
+
+}
 .icon-bar-chart {
 	@include icon(bar-chart);
+
+}
+.icon-bell-alert {
+	@include icon(bell-alert);
 
 }
 .icon-bell {

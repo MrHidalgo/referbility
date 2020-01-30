@@ -1,0 +1,78 @@
+// SECTION board pagination :: START
+
+.board-pagination {
+  &__btn {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+
+      li {
+        padding-left: 5px;
+        padding-right: 5px;
+        @include adaptive(1023) {
+          &:nth-of-type(4) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &--prev,
+    &--next,
+    &--num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      border-radius: 3px;
+      box-shadow: 0 5px 10px 0 rgba(135, 131, 157, 0.1);
+      border: solid 1px #dfdfff;
+      background-color: #ffffff;
+
+      span {
+        font-size: 16px;
+        text-align: center;
+        color: #344563;
+      }
+    }
+
+    &--prev,
+    &--next {
+      width: 45px;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      .icon-font {
+        color: #6364e9;
+        font-size: 12px;
+      }
+    }
+
+    &--prev {
+      .icon-font {
+        transform: scale(-1);
+      }
+    }
+
+    &--num {
+      width: 40px;
+
+      &.is-active {
+        background: linear-gradient(45deg, rgba(#5153dc,1) 0%,rgba(#8181ff,1) 100%);
+
+        span {
+          font-weight: bold;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// SECTION board pagination :: END

@@ -53,7 +53,7 @@
           left: -150px;
           border: solid 130px rgba(255, 255, 255, 0.1);
           @include adaptive(767) {
-            display: none;
+            display: none !important;
           }
         }
       }
