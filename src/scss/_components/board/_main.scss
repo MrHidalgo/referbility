@@ -62,6 +62,12 @@
     &-content {
       z-index: 2;
       position: relative;
+      padding-left: 50px;
+      padding-right: 50px;
+      @include adaptive(767) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
 

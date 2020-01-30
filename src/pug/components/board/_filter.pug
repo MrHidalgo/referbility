@@ -1,0 +1,24 @@
+// SECTION board filter :: START
+
+section#b-filter.b-filter
+  .c-grid
+    form.b-filter__wrapper(action='' method='' autocomplete='off')
+      div
+        .b-filter__input-wrapper
+          label(for='filter_what')
+            i.icon-font.icon-search
+          input.b-filter__input(type='text' name='' id='filter_what' placeholder='What')
+      div
+        .b-filter__input-wrapper
+          label(for='filter_where')
+            i.icon-font.icon-pin
+          input.b-filter__input(type='text' name='' id='filter_where' placeholder='Where')
+      div
+        button.b-filter__btn(type='button')
+          span SEARCH
+
+    .b-filter__message
+      p No jobs matching your requirement were found
+      span Displaying most recent jobs
+
+// SECTION board filter :: END

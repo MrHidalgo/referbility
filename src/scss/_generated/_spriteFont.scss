@@ -99,23 +99,26 @@
 	@if $filename == pencil-create {
 		$char: "\E018";
 	}
-	@if $filename == search {
+	@if $filename == pin {
 		$char: "\E019";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == search {
 		$char: "\E01A";
 	}
-	@if $filename == timer {
+	@if $filename == thumbs-up {
 		$char: "\E01B";
 	}
-	@if $filename == twitter {
+	@if $filename == timer {
 		$char: "\E01C";
 	}
-	@if $filename == user {
+	@if $filename == twitter {
 		$char: "\E01D";
 	}
-	@if $filename == wallet {
+	@if $filename == user {
 		$char: "\E01E";
+	}
+	@if $filename == wallet {
+		$char: "\E01F";
 	}
 
 	@return $char;
@@ -226,6 +229,10 @@
 }
 .icon-pencil-create {
 	@include icon(pencil-create);
+
+}
+.icon-pin {
+	@include icon(pin);
 
 }
 .icon-search {

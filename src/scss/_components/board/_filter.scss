@@ -1,0 +1,160 @@
+// SECTION board filter :: START
+
+.b-filter {
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 20px;
+    }
+
+    > div {
+      padding-left: 5px;
+      padding-right: 5px;
+      @include adaptive(767) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+      }
+
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        width: 100%;
+        max-width: 330px;
+        @include adaptive(767) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &__input {
+    outline: none;
+    width: 100%;
+    height: 53px;
+    padding-left: 65px;
+    padding-right: 10px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    background-color: #ecebf6;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: rgba(#091e42, 1);
+    @include inputPlaceholder {
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      color: rgba(#091e42, 0.7);
+    }
+
+    &-wrapper {
+      position: relative;
+
+      label {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 100%;
+      }
+
+      .icon-font {
+        color: #7650b4;
+        font-size: 19px;
+      }
+    }
+  }
+
+  &__btn {
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 53px;
+    border: none;
+    border-radius: 39px;
+    box-shadow: 0 5px 10px 0 rgba(213, 184, 255, 0.4);
+    background-image: linear-gradient(236deg, #a790dd 296%, #7650b4 -18%);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    @include adaptive(767) {
+      width: 100%;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1.0;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        transform-origin: center center;
+        transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
+      }
+    }
+
+    &:after {
+      content: '';
+      opacity: 0;
+      visibility: hidden;
+      z-index: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: calc(100% + 30px);
+      padding: calc(40% + 30px) 0;
+      border-radius: 50%;
+      background-color: lighten(#7650b4, 5%);
+      will-change: transform;
+      transform: translateX(-50%) translateY(-50%) scale(0.001);
+      transform-origin: center center;
+      transition: visibility 0.25s, opacity 0.25s, cubic-bezier(0, 0.9, 0.5, 1);
+    }
+
+    span {
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #ff7452;
+      @include adaptive(767) {
+        font-size: 18px;
+      }
+    }
+
+    span {
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: rgba(#091e42, 0.7);
+    }
+  }
+}
+
+// SECTION board filter :: END

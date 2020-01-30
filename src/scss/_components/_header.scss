@@ -141,6 +141,15 @@
   }
 
   &.header--grid {
+    &.header--fixed {
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        background-image: linear-gradient(#8181ff 0%, #5153dc 100%);
+        background-color: transparent;
+      }
+    }
+
     .c-grid {
       max-width: 1230px;
       padding-left: 30px;
