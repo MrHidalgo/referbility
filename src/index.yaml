@@ -1,6 +1,21 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: board.html
+  titleName: Job Board
+  ready: 1
+- file: rejection.html
+  titleName: Referrer Rejection
+  ready: 90
+- file: confirmation.html
+  titleName: Referrer Confirmation
+  ready: 90
+- file: expired.html
+  titleName: Referrer Expired
+  ready: 90
+- file: email-confirmation.html
+  titleName: Email Confirmation
+  ready: 90
 - file: index.html
   titleName: Home
   ready: 100
@@ -19,15 +34,3 @@ PageList:
 - file: referrer-kanban.html
   titleName: Referrer Kanban
   ready: 100
-- file: rejection.html
-  titleName: Referrer Rejection
-  ready: 90
-- file: confirmation.html
-  titleName: Referrer Confirmation
-  ready: 90
-- file: expired.html
-  titleName: Referrer Expired
-  ready: 90
-- file: email-confirmation.html
-  titleName: Email Confirmation
-  ready: 90
