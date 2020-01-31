@@ -1,6 +1,9 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: board-just-details.html
+  titleName: Job Board Just Details
+  ready: 90
 - file: board-details-how.html
   titleName: Job Board Details & How
   ready: 90

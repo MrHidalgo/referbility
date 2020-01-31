@@ -1,0 +1,29 @@
+---
+title: Referbility | Job Board Just Details
+
+pageClassName: p-board-just-details
+headerGrid: true
+---
+extends shared/_layout
+
+block menu
+  include components/homepage/_menu
+
+block header
+  include components/_header--mod
+block footer
+  include components/_footer--mod
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/board/_main
+
+    #board.board
+      .c-grid
+        .board__wrapper.board__wrapper--column
+          .board__wrapper-left
+
+          .board__wrapper-right
+
+            include components/board/_details-empty
