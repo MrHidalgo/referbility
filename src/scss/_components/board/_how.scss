@@ -10,6 +10,46 @@
   @include adaptive(767) {
     border: none;
     box-shadow: none;
+    background-color: transparent;
+  }
+
+  &.board-how--row {
+    .board-how {
+      &__wrapper {
+        max-width: 645px;
+      }
+
+      &__list {
+        flex-direction: row;
+        @include adaptive(767) {
+          flex-direction: column;
+        }
+
+        &-item {
+          width: 100%;
+          max-width: calc(100% / 3);
+          flex-direction: column;
+          text-align: center;
+          padding-left: 15px;
+          padding-right: 15px;
+          @include adaptive(767) {
+            max-width: 100%;
+            padding-bottom: 30px;
+          }
+
+          &--arrow {
+            display: none;
+          }
+
+          > div {
+            &:nth-of-type(2) {
+              padding-left: 0;
+              padding-top: 25px;
+            }
+          }
+        }
+      }
+    }
   }
 
   &__wrapper {
@@ -58,7 +98,6 @@
 
       p {
         font-size: 18px;
-        line-height: 1.11;
         letter-spacing: 0.5px;
         color: #344563;
       }
@@ -74,6 +113,20 @@
     border-radius: 50%;
     box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
     background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+
+    .icon-font {
+      color: #ffffff;
+
+      &.icon-profile {
+        font-size: 35px;
+      }
+      &.icon-email-star {
+        font-size: 52px;
+      }
+      &.icon-medal {
+        font-size: 52px;
+      }
+    }
   }
 
   &__btn {

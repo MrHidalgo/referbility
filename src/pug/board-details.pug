@@ -1,0 +1,39 @@
+---
+title: Referbility | Job Board Details
+
+pageClassName: p-board
+headerGrid: true
+---
+extends shared/_layout
+
+block menu
+  include components/homepage/_menu
+
+block header
+  include components/_header--mod
+block footer
+  include components/_footer--mod
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/board/_main
+    include components/board/_filter
+
+    #board.board
+      .c-grid
+        .board__wrapper
+          .board__wrapper-left
+
+            include components/board/_card
+            include components/board/_pagination
+
+          .board__wrapper-right
+
+            include components/board/_details
+
+            .board-details__btn-wrapper
+              a.board-details__btn(href="#")
+                span Refer Someone!
+                div
+                  i.icon-font.icon-corner

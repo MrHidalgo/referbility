@@ -1,6 +1,6 @@
 // SECTION board how it works :: START
 
-section#board-how.board-how
+section#board-how.board-how(class!=(pageClassName === 'p-board-details-how')?'board-how--row':'')
 
   .board-how__wrapper
     p.board-how__title How it works
@@ -9,24 +9,27 @@ section#board-how.board-how
       li.board-how__list-item
         div
           .board-how__circle
+            i.icon-font.icon-profile
         div
           p Submit your friend's details.
-      li.board-how__list-item
+      li.board-how__list-item.board-how__list-item--arrow
         div
           i.icon-font.icon-arrow-bottom
         div
       li.board-how__list-item
         div
           .board-how__circle
+            i.icon-font.icon-email-star
         div
           p Your friend is notified by email and accepts your referral.
-      li.board-how__list-item
+      li.board-how__list-item.board-how__list-item--arrow
         div
           i.icon-font.icon-arrow-bottom
         div
       li.board-how__list-item
         div
           .board-how__circle
+            i.icon-font.icon-medal
         div
           p If the employer hires and retains your friend for 3 months, you get the reward.
 

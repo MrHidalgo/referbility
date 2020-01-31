@@ -2,11 +2,44 @@
 
 .board {
   padding-bottom: 120px;
+  @include adaptive(767) {
+    padding-bottom: 100px;
+  }
+
+  .c-grid {
+    max-width: 1320px;
+  }
 
   &__wrapper {
     display: flex;
     @include adaptive(1023) {
       flex-wrap: wrap;
+    }
+
+    &.board__wrapper--column {
+      flex-direction: column;
+
+      .board__wrapper-left,
+      .board__wrapper-right {
+        width: 100%;
+        max-width: 835px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .board__wrapper-left {
+        padding-right: 0;
+        padding-bottom: 60px;
+        @include adaptive(1023) {
+          order: 1;
+        }
+      }
+
+      .board__wrapper-right {
+        @include adaptive(1023) {
+          order: 2;
+        }
+      }
     }
 
     &-left {
@@ -23,6 +56,7 @@
       flex: 1;
       @include adaptive(1023) {
         order: 1;
+        padding-bottom: 50px;
       }
     }
   }
