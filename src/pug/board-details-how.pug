@@ -3,6 +3,7 @@ title: Referbility | Job Board Details & How It Works
 
 pageClassName: p-board-details-how
 headerGrid: true
+boardMod: true
 ---
 extends shared/_layout
 
@@ -18,7 +19,6 @@ block content
   div.body.body--start(class!= pageClassName)
 
     include components/board/_main
-    include components/board/_filter
 
     #board.board
       .c-grid

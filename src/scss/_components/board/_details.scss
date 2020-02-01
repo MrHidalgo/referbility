@@ -1,17 +1,30 @@
 // SECTION board details :: START
 
 .board-details {
-  overflow: hidden;
   position: relative;
   border-radius: 10px;
   border: solid 1px #dfdfff;
   background-color: #ffffff;
   box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
+  @include adaptive(767) {
+    left: -20px;
+    width: calc(100% + 40px);
+  }
+
+  &__heading {
+    position: sticky;
+    top: 0;
+    @include adaptive(767) {
+      position: relative;
+    }
+  }
 
   &__head {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 30px;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    background-color: #ffffff;
 
     &-left {
       width: 140px;
@@ -61,10 +74,9 @@
     }
 
     &-bottom {
-      flex: 1;
-      min-width: 1px;
+      width: 100%;
       max-width: 100%;
-      padding-top: 25px;
+      padding-top: 20px;
       @include adaptive(767) {
         display: none;
       }
@@ -188,16 +200,21 @@
     border-radius: 39px;
     box-shadow: 0 15px 20px 0 rgba(2, 13, 96, 0.1);
     background: linear-gradient(to bottom, rgba(40,215,204,1) 0%,rgba(0,170,255,1) 100%);
+    @include transition(box-shadow);
     @include adaptive(767) {
       display: none;
       padding-right: 49px;
     }
 
     &:hover {
+      box-shadow: 0 7px 7px 1px rgba(2, 13, 96, 0.2);
+      @include transition(box-shadow);
+
       &:after {
         opacity: 1;
         visibility: visible;
-        @include transition(opacity, visibility);
+        transform: translateX(0);
+        @include transition(opacity, visibility, transform);
       }
 
       div {
@@ -212,13 +229,14 @@
       content: '';
       opacity: 0;
       visibility: hidden;
+      transform: translateX(100%);
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: #00aaff;
-      @include transition(opacity, visibility);
+      @include transition(opacity, visibility, transform);
     }
 
     &-wrapper {
@@ -284,6 +302,7 @@
     align-items: center;
     justify-content: center;
     height: 48px;
+    width: 100%;
     box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
     background-image: linear-gradient(266deg, #8181ff 67%, #5153dc);
 
@@ -300,14 +319,17 @@
     }
 
     a {
+      display: none;
       position: absolute;
       top: 0;
       right: 0;
-      display: flex;
       align-items: center;
       justify-content: center;
       width: 35px;
       height: 100%;
+      @include adaptive(767) {
+        display: flex;
+      }
 
       .icon-font {
         color: #ffffff;
@@ -352,6 +374,7 @@
       }
 
       p {
+        font-weight: bold;
         font-size: 16px;
         letter-spacing: 0.5px;
         color: rgba(#344563, 0.8);
@@ -363,24 +386,6 @@
         letter-spacing: 0.5px;
         color: #344563;
       }
-
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 100px;
-        height: 28px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: 5px;
-        margin-top: 2.5px;
-        margin-bottom: 2.5px;
-        border-radius: 3px;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-        color: rgba(#ffffff, 0.8);
-      }
     }
   }
 
@@ -390,16 +395,34 @@
     align-items: center;
     flex-wrap: wrap;
 
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+      height: 28px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: 5px;
+      margin-top: 2.5px;
+      margin-bottom: 2.5px;
+      border-radius: 3px;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: rgba(#ffffff, 0.8);
+    }
   }
 
   &__industry {
-    a {
+    i {
       background-color: rgba(2, 13, 96, 0.5);
     }
   }
 
   &__skills {
-    a {
+    i {
       box-shadow: 0 5px 10px 0 rgba(213, 184, 255, 0.4);
       background-image: linear-gradient(228deg, #a790dd 322%, #7650b4 -32%);
     }

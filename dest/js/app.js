@@ -882,6 +882,14 @@ $(document).ready(function (ev) {
       });
     });
   };
+
+  var initStickyElements = function initStickyElements() {
+    // stickybits('#stickyReferSomeone', {
+    //   // stickyBitStickyOffset: 100,
+    //   // verticalPosition: 'top',
+    //   // useStickyClasses: true,
+    // });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -916,6 +924,7 @@ $(document).ready(function (ev) {
     initKanbanLeaveComment();
     initKanbanDragScroll();
     initInnerPageLogic();
+    initStickyElements();
     // ==========================================
 
     $(window).on('load', function () {

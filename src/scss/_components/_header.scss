@@ -172,6 +172,46 @@
     }
   }
 
+  &.header--board {
+    opacity: 1;
+    position: absolute;
+
+    &.header--fixed {
+      box-shadow: none;
+      background-color: transparent;
+
+      .header {
+        &__wrapper {
+          height: 100px;
+        }
+
+        &__tabs {
+          &-wrapper {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      .logo__img {
+        &--default {
+          opacity: 1;
+          visibility: visible;
+        }
+        &--action {
+          display: none;
+        }
+      }
+
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        background-image: none;
+        background-color: $c-white;
+      }
+    }
+  }
+
   .is-hideScroll & {
     z-index: 1010;
 

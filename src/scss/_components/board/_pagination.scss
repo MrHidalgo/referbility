@@ -26,6 +26,7 @@
     &--prev,
     &--next,
     &--num {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -35,10 +36,54 @@
       border: solid 1px #dfdfff;
       background-color: #ffffff;
 
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(#5153dc,1) 0%,rgba(#8181ff,1) 100%);
+        @include transition(opacity, visibility);
+      }
+
+      &:hover {
+        &:after {
+          opacity: 1;
+          visibility: visible;
+          @include transition(opacity, visibility);
+        }
+
+        span,
+        .icon-font {
+          color: #ffffff;
+          @include transition(color);
+        }
+      }
+
       span {
+        z-index: 2;
+        position: relative;
         font-size: 16px;
         text-align: center;
         color: #344563;
+        @include transition(color);
+      }
+    }
+
+    &--dots {
+      pointer-events: none;
+
+      &:hover {
+        &:after {
+          display: none;
+        }
+        span {
+          color: #344563;
+        }
       }
     }
 
@@ -49,8 +94,11 @@
       margin-right: 5px;
 
       .icon-font {
+        z-index: 2;
+        position: relative;
         color: #6364e9;
         font-size: 12px;
+        @include transition(color);
       }
     }
 

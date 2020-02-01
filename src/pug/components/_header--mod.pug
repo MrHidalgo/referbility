@@ -1,6 +1,8 @@
 // HEADER :: START
 
-header#header.header.header--mod(class!= (headerGrid)?'header--grid':'')
+header#header.header.header--mod(
+  class!= (headerGrid && boardMod)?'header--grid header--board':(headerGrid)?'header--grid':''
+)
   .c-grid
 
     .header__wrapper

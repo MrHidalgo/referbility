@@ -1,6 +1,8 @@
 // SECTION board :: START
 
 .board {
+  position: relative;
+  padding-top: 40px;
   padding-bottom: 120px;
   @include adaptive(767) {
     padding-bottom: 100px;
@@ -12,6 +14,7 @@
 
   &__wrapper {
     display: flex;
+    align-items: flex-start;
     @include adaptive(1023) {
       flex-wrap: wrap;
     }
