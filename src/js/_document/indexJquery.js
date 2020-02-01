@@ -667,15 +667,6 @@ $(document).ready((ev) => {
       });
     });
   };
-
-
-  const initStickyElements = () => {
-    // stickybits('#stickyReferSomeone', {
-    //   // stickyBitStickyOffset: 100,
-    //   // verticalPosition: 'top',
-    //   // useStickyClasses: true,
-    // });
-  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -701,7 +692,6 @@ $(document).ready((ev) => {
     initModalJobDetail();
     initSortable();
     initKanbanDrop();
-    // initCustomScrollbar();
     initKanbanHeight();
     initModalMoreQuestion();
     initThumbsOtherTextarea();
@@ -711,7 +701,6 @@ $(document).ready((ev) => {
     initKanbanLeaveComment();
     initKanbanDragScroll();
     initInnerPageLogic();
-    initStickyElements();
 		// ==========================================
 
     $(window).on('load', () => {
