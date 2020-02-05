@@ -2,17 +2,15 @@
 
 .b-main {
   .c-grid-fluid {
-    @include adaptive(767) {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &__wrapper {
     overflow: hidden;
     position: relative;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 160px;

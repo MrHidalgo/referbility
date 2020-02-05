@@ -154,16 +154,6 @@
       }
     }
 
-    .c-grid {
-      max-width: 1230px;
-      padding-left: 30px;
-      padding-right: 30px;
-      @include adaptive(767) {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-    }
-
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
