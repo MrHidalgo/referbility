@@ -33,7 +33,6 @@
 
   &__wrapper {
     display: flex;
-    align-items: flex-start;
     @include adaptive(1023) {
       flex-wrap: wrap;
     }
@@ -76,6 +75,11 @@
 
     &-right {
       flex: 1;
+    }
+
+    &-sticky {
+      position: sticky;
+      top: 0;
     }
   }
 }

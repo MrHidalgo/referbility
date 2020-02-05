@@ -667,6 +667,62 @@ $(document).ready((ev) => {
       });
     });
   };
+
+  const initBoardCard = () => {
+    function isAnyPartOfElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+
+      const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+      const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+      const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+      const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+      return (vertInView && horInView);
+    }
+
+    const _pagination = $('#board-pagination');
+
+    $('.board-card__block').on('click', () => {
+      if($('.board-details--hidden').length) {
+        $('.board-details--hidden').fadeOut(450).fadeIn(450);
+        $('#board-how').hide();
+
+        if($(window).width() < 1024) {
+          let _elIDOffsetTop = $('#board-details').offset().top + 2;
+
+          $('body, html').animate({
+            scrollTop: _elIDOffsetTop
+          }, 750);
+        }
+      }
+    });
+
+    $(window).on('load resize scroll', () => {
+      if($('.p-board').length && $(window).width() > 1023) {
+        let spaceBelow = $(window).height() - $('#board-pagination')[0].getBoundingClientRect().bottom;
+
+        $('.board__wrapper-right').css({
+          height: $('.board__wrapper-left').outerHeight(true)
+        });
+
+        $('.board-details').css({
+          height: $(window).outerHeight(true)
+        });
+
+        if (_pagination.length > 0 && isAnyPartOfElementInViewport(_pagination[0])) {
+          if(spaceBelow > 0) {
+            $('.board-details').css({
+              height: $(window).outerHeight(true) - spaceBelow
+            });
+          }
+        }
+      } else {
+        $('.board__wrapper-right, .board-details').css({
+          height: 'auto'
+        });
+      }
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -701,6 +757,7 @@ $(document).ready((ev) => {
     initKanbanLeaveComment();
     initKanbanDragScroll();
     initInnerPageLogic();
+    initBoardCard();
 		// ==========================================
 
     $(window).on('load', () => {

@@ -1,12 +1,12 @@
 // SECTION board details :: START
 
-section#board-details.board-details
+section#board-details.board-details(class!= (pageClassName === 'p-board')?'board-details--hidden':'')
 
   .board-details__heading
     .board-details__badge
-          p!= "Reward <strong>$4,800</strong>"
-          a(href="#")
-            i.icon-font.icon-x
+      p!= "Reward <strong>$4,800</strong>"
+      a(href="#")
+        i.icon-font.icon-x
 
     .board-details__head
       .board-details__head-left
@@ -59,48 +59,49 @@ section#board-details.board-details
             i.icon-font.icon-corner
 
   .board-details__body
-    .board-details__list
-      li
-        div
-          p Industry:
-        div
-          .board-details__industry
-            i Energy and Power
-      li
-        div
-          p Degree:
-        div
-          span Bachelor
-      li
-        div
-          p Job Type:
-        div
-          span Full-time (unlimited)
-      li
-        div
-          p Career Level:
-        div
-          span C Level
-      li
-        div
-          p Languages:
-        div
-          span English
-      li
-        div
-          p Skills Required:
-        div
-          .board-details__skills
-            i Budgetting
-            i Finance
-            i Corporate Finance
+    .board-details__body-scroll
+      .board-details__list
+        li
+          div
+            p Industry:
+          div
+            .board-details__industry
+              i Energy and Power
+        li
+          div
+            p Degree:
+          div
+            span Bachelor
+        li
+          div
+            p Job Type:
+          div
+            span Full-time (unlimited)
+        li
+          div
+            p Career Level:
+          div
+            span C Level
+        li
+          div
+            p Languages:
+          div
+            span English
+        li
+          div
+            p Skills Required:
+          div
+            .board-details__skills
+              i Budgetting
+              i Finance
+              i Corporate Finance
 
-    .board-details__info
-      div
-        p Job Description
-        span Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait
-      div
-        p Additional Requirements / Certifications
-        span Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait
+      .board-details__info
+        div
+          p Job Description
+          span Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait
+        div
+          p Additional Requirements / Certifications
+          span Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait
 
 // SECTION board details :: END

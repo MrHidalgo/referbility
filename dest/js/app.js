@@ -882,6 +882,62 @@ $(document).ready(function (ev) {
       });
     });
   };
+
+  var initBoardCard = function initBoardCard() {
+    function isAnyPartOfElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+
+      var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      var vertInView = rect.top <= windowHeight && rect.top + rect.height >= 0;
+      var horInView = rect.left <= windowWidth && rect.left + rect.width >= 0;
+
+      return vertInView && horInView;
+    }
+
+    var _pagination = $('#board-pagination');
+
+    $('.board-card__block').on('click', function () {
+      if ($('.board-details--hidden').length) {
+        $('.board-details--hidden').fadeOut(450).fadeIn(450);
+        $('#board-how').hide();
+
+        if ($(window).width() < 1024) {
+          var _elIDOffsetTop = $('#board-details').offset().top + 2;
+
+          $('body, html').animate({
+            scrollTop: _elIDOffsetTop
+          }, 750);
+        }
+      }
+    });
+
+    $(window).on('load resize scroll', function () {
+      if ($('.p-board').length && $(window).width() > 1023) {
+        var spaceBelow = $(window).height() - $('#board-pagination')[0].getBoundingClientRect().bottom;
+
+        $('.board__wrapper-right').css({
+          height: $('.board__wrapper-left').outerHeight(true)
+        });
+
+        $('.board-details').css({
+          height: $(window).outerHeight(true)
+        });
+
+        if (_pagination.length > 0 && isAnyPartOfElementInViewport(_pagination[0])) {
+          if (spaceBelow > 0) {
+            $('.board-details').css({
+              height: $(window).outerHeight(true) - spaceBelow
+            });
+          }
+        }
+      } else {
+        $('.board__wrapper-right, .board-details').css({
+          height: 'auto'
+        });
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -915,6 +971,7 @@ $(document).ready(function (ev) {
     initKanbanLeaveComment();
     initKanbanDragScroll();
     initInnerPageLogic();
+    initBoardCard();
     // ==========================================
 
     $(window).on('load', function () {

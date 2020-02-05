@@ -1,19 +1,39 @@
 // SECTION board details :: START
 
 .board-details {
+  //overflow: hidden;
   position: relative;
+  margin-bottom: 45px;
   border-radius: 10px;
   border: solid 1px #dfdfff;
   background-color: #ffffff;
   box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
+  //transition: height 0.01s linear;
   @include adaptive(767) {
     left: -20px;
     width: calc(100% + 40px);
   }
 
+  &--hidden {
+    display: none;
+    margin-bottom: 0;
+
+    .board-details__heading {
+      position: relative;
+      @include adaptive(1023) {
+        position: sticky;
+        top: 0;
+      }
+      @include adaptive(767) {
+        position: relative;
+      }
+    }
+  }
+
   &__heading {
     position: sticky;
     top: 0;
+    //border-bottom: 1px solid #dfdfff;
     @include adaptive(767) {
       position: relative;
     }
@@ -81,22 +101,16 @@
         display: none;
       }
     }
+  }
 
-    .board-card__block {
-      &-list {
-        &-item {
-          > div {
-            .icon-font {
-              color: #6364e9;
-              font-size: 18px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-          }
-        }
-      }
+  &__body {
+    overflow-y: auto;
+    height: calc(100% - 372px);
+    @include adaptive(1279) {
+      height: calc(100% - 576px);
+    }
+    @include adaptive(1023) {
+      height: auto;
     }
   }
 
@@ -324,6 +338,8 @@
     justify-content: center;
     height: 48px;
     width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
     background-image: linear-gradient(266deg, #8181ff 67%, #5153dc);
 

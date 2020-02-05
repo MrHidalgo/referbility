@@ -7,9 +7,6 @@ PageList:
 - file: board-details-how.html
   titleName: Job Board Details & How
   ready: 90
-- file: board-details.html
-  titleName: Job Board Details
-  ready: 90
 - file: board.html
   titleName: Job Board
   ready: 90
