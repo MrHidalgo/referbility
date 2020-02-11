@@ -55,6 +55,16 @@
 
   &__btn {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 19px;
+
+    .icon-font {
+      color: #ffffff;
+      font-size: 20px;
+    }
 
     .notify__indication {
       position: absolute;
@@ -139,6 +149,9 @@
     top: calc(100% + 30px);
     left: -175px;
     width: 350px;
+    box-shadow: 0 2px 8px 0 rgba(#000, 0.15);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     &:before {
       content: '';

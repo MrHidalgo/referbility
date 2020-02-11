@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- TITLE-->
-    <title>Referbility | Job Board Just Details</title>
+    <title>Referbility | Employer Dashboard</title>
     <!-- FAVICON-->
     <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
@@ -39,10 +39,55 @@
           <div class="header__wrapper-left">
             <div class="logo logo--header"><a class="logo__link" href="/" title=""><img class="logo__img logo__img--default" src="img/logo--white.png" srcset="img/logo--white@2x.png 2x"><img class="logo__img logo__img--action" src="img/logo.png" srcset="img/logo@2x.png 2x"><img class="logo__img logo__img--mobile" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x"></a></div>
           </div>
-          <div class="header__wrapper-middle">
-            <div class="header__tabs-wrapper"><a class="header__tabs header__tabs--sign" href="#">Login/Register</a><a class="header__tabs header__tabs--for" href="#">For Employers</a></div>
-          </div>
-          <div class="header__wrapper-right">
+          <div class="header__wrapper-middle"></div>
+          <div class="header__wrapper-right header__wrapper-right--notify">
+            <div class="notify notify--kanban" dropdown-js><a class="notify__btn header__action" href="#" title="" dropdown-btn-js><i class="icon-font icon-bell"></i>
+                <div class="notify__indication">2</div></a>
+              <div class="notify__drop" dropdown-contnet-js>
+                <div class="notify__drop-head">
+                  <p>NOTIFICATIONS</p>
+                  <div class="notify__indication">2</div>
+                </div>
+                <div class="notify__drop-body"><a class="notify__action notify__action--notread" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action notify__action--notread" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a><a class="notify__action" href="#">
+                    <div><i class="icon-font icon-bell"></i></div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet</p><span>1 hour ago</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
             <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
               <div class="hamburger-box">
                 <div class="hamburger-inner"></div>
@@ -53,110 +98,42 @@
       </div>
     </header>
     <!-- HEADER :: END-->
-    <div class="body body--start p-board-just-details">
+    <div class="body body--start p-employer-dashboard">
       <!-- SECTION main :: START-->
-      <section class="b-main" id="b-main">
+      <section class="ref-main" id="ref-main">
         <div class="c-grid-fluid">
-          <div class="b-main__wrapper">
-            <div class="b-main__wrapper-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.85"></span></div>
-            <div class="b-main__wrapper-content">
-              <h1 class="b-main__title">Get paid for referring friends to great jobs.</h1>
+          <div class="ref-main__wrapper">
+            <div class="ref-main__wrapper-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.85"></span></div>
+            <div class="ref-main__wrapper-content">
+              <div>
+                <div class="ref-main__profile">
+                  <div class="ref-main__profile-left">
+                    <div class="ref-main__profile-icon"><img src="https://img.icons8.com/clouds/2x/user.png" alt=""></div>
+                  </div>
+                  <div class="ref-main__profile-right">
+                    <p class="ref-main__profile-name">Hello, Clemens!</p>
+                    <p class="ref-main__profile-info">You last logged in on 01/10/2019</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="ref-main__badge-wrapper">
+                  <div class="ref-main__badge">
+                    <div>
+                      <p>Available Balance <span>$290</span></p>
+                    </div>
+                    <div>
+                      <p>In Escrow <span>$1394</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div><a class="ref-main__btn ref-main__btn--account" href="#"><span>My Account</span><i class="icon-font icon-settings"></i></a><a class="ref-main__btn ref-main__btn--post" href="#"><span>Post free job</span><i class="icon-font icon-plus"></i></a></div>
             </div>
           </div>
         </div>
       </section>
       <!-- SECTION main :: END-->
-      <div class="board" id="board">
-        <div class="c-grid">
-          <div class="board__wrapper board__wrapper--column">
-            <div class="board__wrapper-left"></div>
-            <div class="board__wrapper-right">
-              <!-- SECTION board details :: START-->
-              <section class="board-details" id="board-details">
-                <div class="board-details__heading">
-                  <div class="board-details__head">
-                    <div class="board-details__head-left">
-                      <div class="board-details__logo"><img src="img/engie-logo.png" alt=""></div>
-                    </div>
-                    <div class="board-details__head-middle">
-                      <p class="board-details__title">Chief Financial Officer Thermal Power Plant</p>
-                      <p class="board-details__subtitle">Engie</p>
-                      <ul class="board-card__block-list">
-                        <li class="board-card__block-list-item">
-                          <div><i class="icon-font icon-pin"></i></div>
-                          <div>
-                            <p>Ras Laffan, Qatar</p>
-                          </div>
-                        </li>
-                        <li class="board-card__block-list-item">
-                          <div><i class="icon-font icon-wallet"></i></div>
-                          <div>
-                            <p>QAR 50,000 to QAR 55,000 per month</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="board-details__head-right"></div>
-                  </div>
-                </div>
-                <div class="board-details__body">
-                  <div class="board-details__list">
-                    <li>
-                      <div>
-                        <p>Industry:</p>
-                      </div>
-                      <div>
-                        <div class="board-details__industry"><i>Energy and Power</i></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <p>Degree:</p>
-                      </div>
-                      <div><span>Bachelor</span></div>
-                    </li>
-                    <li>
-                      <div>
-                        <p>Job Type:</p>
-                      </div>
-                      <div><span>Full-time (unlimited)</span></div>
-                    </li>
-                    <li>
-                      <div>
-                        <p>Career Level:</p>
-                      </div>
-                      <div><span>C Level</span></div>
-                    </li>
-                    <li>
-                      <div>
-                        <p>Languages:</p>
-                      </div>
-                      <div><span>English</span></div>
-                    </li>
-                    <li>
-                      <div>
-                        <p>Skills Required:</p>
-                      </div>
-                      <div>
-                        <div class="board-details__skills"><i>Budgetting</i><i>Finance</i><i>Corporate Finance</i></div>
-                      </div>
-                    </li>
-                  </div>
-                  <div class="board-details__info">
-                    <div>
-                      <p>Job Description</p><span>Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait</span>
-                    </div>
-                    <div>
-                      <p>Additional Requirements / Certifications</p><span>Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait</span>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION board details :: END-->
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer footer--mod" id="footer">

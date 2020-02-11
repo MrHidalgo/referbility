@@ -114,29 +114,35 @@
 	@if $filename == pin {
 		$char: "\E01D";
 	}
-	@if $filename == profile {
+	@if $filename == plus {
 		$char: "\E01E";
 	}
-	@if $filename == search {
+	@if $filename == profile {
 		$char: "\E01F";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == search {
 		$char: "\E020";
 	}
-	@if $filename == timer {
+	@if $filename == settings {
 		$char: "\E021";
 	}
-	@if $filename == twitter {
+	@if $filename == thumbs-up {
 		$char: "\E022";
 	}
-	@if $filename == user {
+	@if $filename == timer {
 		$char: "\E023";
 	}
-	@if $filename == wallet {
+	@if $filename == twitter {
 		$char: "\E024";
 	}
-	@if $filename == x {
+	@if $filename == user {
 		$char: "\E025";
+	}
+	@if $filename == wallet {
+		$char: "\E026";
+	}
+	@if $filename == x {
+		$char: "\E027";
 	}
 
 	@return $char;
@@ -269,12 +275,20 @@
 	@include icon(pin);
 
 }
+.icon-plus {
+	@include icon(plus);
+
+}
 .icon-profile {
 	@include icon(profile);
 
 }
 .icon-search {
 	@include icon(search);
+
+}
+.icon-settings {
+	@include icon(settings);
 
 }
 .icon-thumbs-up {

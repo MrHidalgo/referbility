@@ -1,27 +1,33 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: referrer-dashboard.html
+  titleName: Referrer Dashboard
+  ready: 1
+- file: employer-dashboard.html
+  titleName: Employer Dashboard
+  ready: 1
 - file: board-just-details.html
   titleName: Job Board Just Details
-  ready: 90
+  ready: 100
 - file: board-details-how.html
   titleName: Job Board Details & How
-  ready: 90
+  ready: 100
 - file: board.html
   titleName: Job Board
-  ready: 90
+  ready: 100
 - file: rejection.html
   titleName: Referrer Rejection
-  ready: 90
+  ready: 100
 - file: confirmation.html
   titleName: Referrer Confirmation
-  ready: 90
+  ready: 100
 - file: expired.html
   titleName: Referrer Expired
-  ready: 90
+  ready: 100
 - file: email-confirmation.html
   titleName: Email Confirmation
-  ready: 90
+  ready: 100
 - file: index.html
   titleName: Home
   ready: 100

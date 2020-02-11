@@ -1,0 +1,42 @@
+// SECTION main :: START
+
+section#ref-main.ref-main
+  .c-grid-fluid
+
+    .ref-main__wrapper
+
+      .ref-main__wrapper-bg
+        span(parallax-js data-stellar-ratio="1.2")
+        span(parallax-js data-stellar-ratio="0.85")
+
+      .ref-main__wrapper-content
+        div
+
+          .ref-main__profile
+            //.ref-main__profile-left
+              .ref-main__profile-icon
+                img(src="https://img.icons8.com/clouds/2x/user.png" alt="")
+            .ref-main__profile-right
+              p.ref-main__profile-name Hello, Clemens!
+              p.ref-main__profile-info You last logged in on 01/10/2019
+
+        div
+
+          .ref-main__badge-wrapper
+            .ref-main__badge
+              div
+                p!= "Available Balance <span>$290</span>"
+              div
+                p!= "In Escrow <span>$1394</span>"
+
+        div
+          a.ref-main__btn.ref-main__btn--account(href="#")
+            span My Account
+            i.icon-font.icon-settings
+
+          //a.ref-main__btn.ref-main__btn--post(href="#")
+          //  span Post free job
+          //  i.icon-font.icon-plus
+
+
+// SECTION main :: END

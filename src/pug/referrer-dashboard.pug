@@ -1,0 +1,21 @@
+---
+title: Referbility | Referrer Dashboard
+
+pageClassName: p-referrer-dashboard
+headerGrid: true
+boardMod: true
+---
+extends shared/_layout
+
+block menu
+  include components/homepage/_menu
+
+block header
+  include components/_header--dashboard
+block footer
+  include components/_footer--mod
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/dashboard/_ref-main
