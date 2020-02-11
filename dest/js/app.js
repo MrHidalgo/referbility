@@ -184,6 +184,40 @@ var initStellar = function initStellar() {
 };
 
 /**
+ * @name initSwiper
+ *
+ * @description initialize Swiper
+ */
+var initSwiper = function initSwiper() {
+
+  var mySwiperDashboard = new Swiper('.dashboardJob', {
+    loop: false,
+    effect: 'slide',
+    speed: 750,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    },
+    navigation: {
+      nextEl: '.ref-jobs__slider-btn--next',
+      prevEl: '.ref-jobs__slider-btn--prev'
+    }
+  });
+};
+
+/**
  * @name scrollAnimation
  *
  * @param elem
@@ -956,6 +990,7 @@ $(document).ready(function (ev) {
     initPopups();
     initStellar();
     initViewPortChecker();
+    initSwiper();
     // ==========================================
 
     // callback

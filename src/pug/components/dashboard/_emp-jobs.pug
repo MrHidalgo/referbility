@@ -1,0 +1,83 @@
+// SECTION :: START
+
+mixin jobCard(badgeBool, actionBool)
+  a.board-card__block(href="#")
+    .board-card__block-body
+
+      if(badgeBool && actionBool)
+        .board-card__block-option
+          .board-card__block-badge-wrapper
+            .board-card__block-badge
+              i.icon-font.icon-bell-alert
+              p Urgent
+
+          .board-card__block-action-wrapper
+            .board-card__block-action.board-card__block-action--num 23
+            .board-card__block-action.board-card__block-action--edit
+              i.icon-font.icon-pencil-create
+      else
+        .board-card__block-option.board-card__block-option--action
+          div
+          .board-card__block-action-wrapper
+            .board-card__block-action.board-card__block-action--num 23
+            .board-card__block-action.board-card__block-action--edit
+              i.icon-font.icon-pencil-create
+
+      .board-card__block-title(class!= (badgeBool && actionBool)?'':'board-card__block-title--offset')
+        div
+          p Chief Financial Officer Thermal Power Plant
+        div
+          .board-card__block-logo
+            img(src="img/engie-logo.png" alt="")
+
+      p.board-card__block-subtitle Engie
+
+      ul.board-card__block-list
+        li.board-card__block-list-item
+          div
+            i.icon-font.icon-pin
+          div
+            p Ras Laffan, Qatar
+        li.board-card__block-list-item
+          div
+            i.icon-font.icon-wallet
+          div
+            p QAR 50,000 to QAR 55,000 per month
+
+    .board-card__block-footer
+      p!= "Reward <strong>$4,800</strong>"
+
+section#ref-jobs.ref-jobs
+  .c-grid
+
+    h2.ref-jobs__title Your currently active Jobs
+
+    .ref-jobs__wrapper
+
+      .ref-jobs__slider
+
+        mixin swiperContent()
+          .swiper-slide
+            +jobCard(true, true)
+          .swiper-slide
+            +jobCard(false, true)
+          .swiper-slide
+            +jobCard(true, true)
+          .swiper-slide
+            +jobCard(false, true)
+          .swiper-slide
+            +jobCard(false, true)
+          .swiper-slide
+            +jobCard(false, true)
+          .swiper-slide
+            +jobCard(true, true)
+
+        +swiper('dashboardJob', 'swiperContent', false, false, false)
+
+        .ref-jobs__slider-btn-wrapper
+          a.ref-jobs__slider-btn.ref-jobs__slider-btn--prev(href="#")
+            i.icon-font.icon-corner
+          a.ref-jobs__slider-btn.ref-jobs__slider-btn--next(href="#")
+            i.icon-font.icon-corner
+
+// SECTION :: END

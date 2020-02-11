@@ -3,10 +3,10 @@ ProjectTitle: Referbility
 PageList:
 - file: referrer-dashboard.html
   titleName: Referrer Dashboard
-  ready: 1
+  ready: 90
 - file: employer-dashboard.html
   titleName: Employer Dashboard
-  ready: 1
+  ready: 90
 - file: board-just-details.html
   titleName: Job Board Just Details
   ready: 100

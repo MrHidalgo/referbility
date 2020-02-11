@@ -14097,6 +14097,19 @@ picture {
 }
 
 /* line 104, src/scss/_components/board/_card.scss */
+.board-card__block-title--offset .board-card__block-logo {
+  position: relative;
+  top: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 104, src/scss/_components/board/_card.scss */
+  .board-card__block-title--offset .board-card__block-logo {
+    top: 0;
+  }
+}
+
+/* line 114, src/scss/_components/board/_card.scss */
 .board-card__block-title > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -14106,19 +14119,19 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 104, src/scss/_components/board/_card.scss */
+  /* line 114, src/scss/_components/board/_card.scss */
   .board-card__block-title > div:nth-of-type(1) {
     padding-right: 0;
   }
 }
 
-/* line 112, src/scss/_components/board/_card.scss */
+/* line 122, src/scss/_components/board/_card.scss */
 .board-card__block-title > div:nth-of-type(2) {
   width: 90px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 112, src/scss/_components/board/_card.scss */
+  /* line 122, src/scss/_components/board/_card.scss */
   .board-card__block-title > div:nth-of-type(2) {
     width: 100%;
     padding-top: 10px;
@@ -14126,14 +14139,14 @@ picture {
   }
 }
 
-/* line 121, src/scss/_components/board/_card.scss */
+/* line 131, src/scss/_components/board/_card.scss */
 .board-card__block-title > div img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 128, src/scss/_components/board/_card.scss */
+/* line 138, src/scss/_components/board/_card.scss */
 .board-card__block-title p {
   padding-bottom: 5px;
   font-size: 20px;
@@ -14143,13 +14156,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 128, src/scss/_components/board/_card.scss */
+  /* line 138, src/scss/_components/board/_card.scss */
   .board-card__block-title p {
     padding-top: 10px;
   }
 }
 
-/* line 140, src/scss/_components/board/_card.scss */
+/* line 150, src/scss/_components/board/_card.scss */
 .board-card__block-subtitle {
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -14160,7 +14173,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 149, src/scss/_components/board/_card.scss */
+  /* line 159, src/scss/_components/board/_card.scss */
   .board-card__block-logo {
     width: 90px;
     margin-left: auto;
@@ -14168,7 +14181,7 @@ picture {
   }
 }
 
-/* line 157, src/scss/_components/board/_card.scss */
+/* line 167, src/scss/_components/board/_card.scss */
 .board-card__block-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14181,7 +14194,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 161, src/scss/_components/board/_card.scss */
+/* line 171, src/scss/_components/board/_card.scss */
 .board-card__block-list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14194,17 +14207,17 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 166, src/scss/_components/board/_card.scss */
+/* line 176, src/scss/_components/board/_card.scss */
 .board-card__block-list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 171, src/scss/_components/board/_card.scss */
+/* line 181, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div:nth-of-type(1) {
   width: 25px;
 }
 
-/* line 174, src/scss/_components/board/_card.scss */
+/* line 184, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -14212,17 +14225,108 @@ picture {
           flex: 1;
 }
 
-/* line 178, src/scss/_components/board/_card.scss */
+/* line 188, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div .icon-font {
   color: #6364e9;
   font-size: 18px;
 }
 
-/* line 183, src/scss/_components/board/_card.scss */
+/* line 193, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div p {
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #344563;
+}
+
+/* line 202, src/scss/_components/board/_card.scss */
+.board-card__block-option {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+/* line 208, src/scss/_components/board/_card.scss */
+.board-card__block-option--action {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+/* line 215, src/scss/_components/board/_card.scss */
+.board-card__block-action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 225, src/scss/_components/board/_card.scss */
+.board-card__block-action--num {
+  background-image: -webkit-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: -o-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+          box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 235, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
+  background-image: -webkit-linear-gradient(85deg, #00aaff -14%, #28d7cc 260%);
+  background-image: -o-linear-gradient(85deg, #00aaff -14%, #28d7cc 260%);
+  background-image: linear-gradient(5deg, #00aaff -14%, #28d7cc 260%);
+}
+
+/* line 239, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit .icon-font {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* line 245, src/scss/_components/board/_card.scss */
+.board-card__block-action-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /* line 5, src/scss/_components/board/_pagination.scss */
@@ -15778,6 +15882,8 @@ picture {
 
 /* line 263, src/scss/_components/dashboard/_main.scss */
 .ref-main__btn {
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15805,22 +15911,94 @@ picture {
   }
 }
 
-/* line 276, src/scss/_components/dashboard/_main.scss */
+/* line 278, src/scss/_components/dashboard/_main.scss */
 .ref-main__btn--account {
   border: solid 1px rgba(255, 255, 255, 0.7);
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 280, src/scss/_components/dashboard/_main.scss */
+/* line 282, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--account:hover {
+  border-color: #fff;
+  background-color: #ffffff;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 287, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--account:hover span,
+.ref-main__btn--account:hover .icon-font {
+  color: #091e42;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 294, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--account span,
+.ref-main__btn--account .icon-font {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 300, src/scss/_components/dashboard/_main.scss */
 .ref-main__btn--post {
   margin-top: 15px;
   -webkit-box-shadow: 0 5px 20px 0 rgba(0, 170, 255, 0.2);
           box-shadow: 0 5px 20px 0 rgba(0, 170, 255, 0.2);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 305, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--post:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(63deg, #00aaff 12%, #28d7cc 102%);
   background-image: -o-linear-gradient(63deg, #00aaff 12%, #28d7cc 102%);
   background-image: linear-gradient(27deg, #00aaff 12%, #28d7cc 102%);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 286, src/scss/_components/dashboard/_main.scss */
+/* line 317, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--post:hover {
+  background-color: #35af7b;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 322, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--post:hover:after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 329, src/scss/_components/dashboard/_main.scss */
+.ref-main__btn--post span,
+.ref-main__btn--post .icon-font {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 336, src/scss/_components/dashboard/_main.scss */
 .ref-main__btn span {
   font-size: 14px;
   font-weight: 500;
@@ -15830,7 +16008,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 295, src/scss/_components/dashboard/_main.scss */
+/* line 345, src/scss/_components/dashboard/_main.scss */
 .ref-main__btn .icon-font {
   margin-left: 15px;
   color: #ffffff;
@@ -16007,11 +16185,264 @@ picture {
           border-radius: 2em;
   border: solid 1px rgba(45, 28, 64, 0.5);
   background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   font-size: 14px;
   font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   color: #2d1c40;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 113, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-btn:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  border-color: #5153dc;
+  background-color: #5153dc;
+  -webkit-box-shadow: 0 8px 0 0 rgba(81, 83, 220, 0.15);
+          box-shadow: 0 8px 0 0 rgba(81, 83, 220, 0.15);
+  color: #ffffff;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+/* line 7, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs .c-grid {
+  max-width: 1410px;
+}
+
+/* line 11, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__title {
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #091e42;
+}
+
+/* line 20, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider {
+  position: relative;
+}
+
+/* line 23, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: solid 1px #dfdfff;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(135, 131, 157, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(135, 131, 157, 0.1);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 23, src/scss/_components/dashboard/_jobs.scss */
+  .ref-jobs__slider-btn {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin: 0;
+  }
+}
+
+/* line 46, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-image: -webkit-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: -o-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 64, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn:hover {
+  -webkit-box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+          box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 68, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn:hover:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 75, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn:hover .icon-font {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 81, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn.swiper-button-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 87, src/scss/_components/dashboard/_jobs.scss */
+  .ref-jobs__slider-btn--prev {
+    left: -15px;
+  }
+}
+
+/* line 92, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn--prev .icon-font {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 97, src/scss/_components/dashboard/_jobs.scss */
+  .ref-jobs__slider-btn--next {
+    right: -15px;
+  }
+}
+
+/* line 103, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 103, src/scss/_components/dashboard/_jobs.scss */
+  .ref-jobs__slider-btn-wrapper {
+    padding-top: 0;
+  }
+}
+
+/* line 113, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs__slider-btn .icon-font {
+  z-index: 2;
+  position: relative;
+  color: #6364e9;
+  font-size: 12px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 124, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs .swiper-slide {
+  height: auto;
+  min-height: 100%;
+}
+
+/* line 130, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs .board-card__block {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+/* line 134, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs .board-card__block:hover {
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+/* line 140, src/scss/_components/dashboard/_jobs.scss */
+.ref-jobs .board-card__block-title > div:nth-of-type(1) {
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

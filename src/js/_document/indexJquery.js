@@ -742,6 +742,7 @@ $(document).ready((ev) => {
     initPopups();
     initStellar();
     initViewPortChecker();
+    initSwiper();
 		// ==========================================
 
     // callback

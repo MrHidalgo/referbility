@@ -261,6 +261,8 @@
   }
 
   &__btn {
+    overflow: hidden;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,12 +277,60 @@
 
     &--account {
       border: solid 1px rgba(255, 255, 255, 0.7);
+      @include transition(border-color, background-color);
+
+      &:hover {
+        border-color: #fff;
+        background-color: #ffffff;
+        @include transition(border-color, background-color);
+
+        span,
+        .icon-font {
+          color: #091e42;
+          @include transition(color);
+        }
+      }
+
+      span,
+      .icon-font {
+        @include transition(color);
+      }
     }
 
     &--post {
       margin-top: 15px;
       box-shadow: 0 5px 20px 0 rgba(0, 170, 255, 0.2);
-      background-image: linear-gradient(27deg, #00aaff 12%, #28d7cc 102%);
+      @include transition(background-color);
+
+      &:after {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(27deg, #00aaff 12%, #28d7cc 102%);
+        @include transition(opacity, visibility);
+      }
+
+      &:hover {
+        background-color: darken(#36b37e, 1%);
+        box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
+        @include transition(background-color);
+
+        &:after {
+          opacity: 0;
+          visibility: hidden;
+          @include transition(opacity, visibility);
+        }
+      }
+
+      span,
+      .icon-font {
+        z-index: 2;
+        position: relative;
+      }
     }
 
     span {
