@@ -1,0 +1,113 @@
+// SECTION :: START
+
+.ref-benefits {
+  padding-top: 70px;
+  padding-bottom: 15px;
+
+  &__box {
+    position: relative;
+    height: 100%;
+    @include adaptive(767) {
+      width: 100%;
+      max-width: 375px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > div {
+        width: 100%;
+        max-width: calc((100% - 60px) / 3);
+        padding-bottom: 30px;
+        @include adaptive(1279) {
+          max-width: calc((100% - 40px) / 3);
+        }
+        @include adaptive(767) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-bg {
+      z-index: -1;
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      height: calc(100% - 30px);
+      border-radius: 15px;
+      border: solid 1px #dfdfff;
+      background-color: #ffffff;
+      box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+    }
+
+    &-head {
+      padding-bottom: 35px;
+    }
+
+    &-body {
+      padding: 0 10px 40px;
+    }
+
+    &-circle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.2);
+      background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+    }
+
+    &-title {
+      padding-bottom: 5px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #091e42;
+    }
+
+    &-description {
+      padding-bottom: 35px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #091e42;
+      @include adaptive(1279) {
+        min-height: 77px;
+      }
+      @include adaptive(767) {
+        min-height: unset;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 200px;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 2em;
+      border: solid 1px rgba(45, 28, 64, 0.5);
+      background-color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #2d1c40;
+    }
+  }
+}
+
+// SECTION :: END
