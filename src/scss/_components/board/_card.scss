@@ -213,6 +213,9 @@
     }
 
     &-action {
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -234,11 +237,48 @@
 
       &--edit {
         box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
-        background-image: linear-gradient(5deg, #00aaff -14%, #28d7cc 260%);
+        @include transition(background-color, box-shadow);
+
+        &:after {
+          content: '';
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          @include transition(opacity, visibility);
+        }
+
+        &:after {
+          background-image: linear-gradient(5deg, #00aaff -14%, #28d7cc 260%);
+        }
+
+        &:hover {
+          background-color: #5153dc;
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          @include transition(background-color, box-shadow);
+
+          &:after {
+            opacity: 0;
+            visibility: hidden;
+            @include transition(opacity, visibility);
+          }
+
+          .icon-font {
+            transform: scale(0.9);
+            @include transition(transform);
+          }
+        }
 
         .icon-font {
+          z-index: 2;
+          position: relative;
           color: #ffffff;
           font-size: 17px;
+          backface-visibility: hidden;
+          @include transition(transform);
         }
       }
 

@@ -354,7 +354,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-chevron-bottom:before, .icon-comment-delete:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-medal:before, .icon-more:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-search:before, .icon-settings:before, .icon-thumbs-up:before, .icon-timer:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
+.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-chevron-bottom:before, .icon-comment-delete:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-review-1:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-thumbs-up:before, .icon-timer:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -365,199 +365,229 @@
   text-transform: none;
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
+/* line 170, src/scss/_generated/_spriteFont.scss */
 .icon-arrow-bottom:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
+/* line 170, src/scss/_generated/_spriteFont.scss */
 .icon-bar-chart:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
+/* line 170, src/scss/_generated/_spriteFont.scss */
 .icon-bell-alert:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
+/* line 170, src/scss/_generated/_spriteFont.scss */
 .icon-bell:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-building:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-blogging:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-calendar-check:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-building:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-calendar-dates:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-calendar-check:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-calendar-delete:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-calendar-dates:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-call-calling:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-calendar-delete:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-case:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-call-calling:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-chat:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-case:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-chevron-bottom:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-chat:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-comment-delete:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-chevron-bottom:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-corner:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-comment-delete:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-creditcard-face:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-conversion:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-cup:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-corner:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-cv:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-creditcard-face:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-date:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-cup:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-email-star:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-cv:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-experience:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-data:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-date:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-file-text:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-email-star:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-flag:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-experience:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-mail:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-file-text:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-medal:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-flag:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-more:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-pencil-create:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-mail:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-pin:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-market-1:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-plus:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-medal:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-profile:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-more:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-pencil-create:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-settings:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-pin:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-thumbs-up:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-plus:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-timer:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-profile:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-review-1:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-wallet:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-seo:before {
   content: "";
 }
 
-/* line 152, src/scss/_generated/_spriteFont.scss */
-.icon-x:before {
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-settings:before {
   content: "";
+}
+
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-thumbs-up:before {
+  content: "";
+}
+
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-timer:before {
+  content: "";
+}
+
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
+  content: "";
+}
+
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-wallet:before {
+  content: "";
+}
+
+/* line 170, src/scss/_generated/_spriteFont.scss */
+.icon-x:before {
+  content: "";
 }
 
 @font-face {
@@ -14264,6 +14294,9 @@ picture {
 
 /* line 215, src/scss/_components/board/_card.scss */
 .board-card__block-action {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14284,7 +14317,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 225, src/scss/_components/board/_card.scss */
+/* line 228, src/scss/_components/board/_card.scss */
 .board-card__block-action--num {
   background-image: -webkit-linear-gradient(229deg, #8181ff 73%, #5153dc);
   background-image: -o-linear-gradient(229deg, #8181ff 73%, #5153dc);
@@ -14298,22 +14331,89 @@ picture {
   color: #ffffff;
 }
 
-/* line 235, src/scss/_components/board/_card.scss */
+/* line 238, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit {
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
           box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 242, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 254, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit:after {
   background-image: -webkit-linear-gradient(85deg, #00aaff -14%, #28d7cc 260%);
   background-image: -o-linear-gradient(85deg, #00aaff -14%, #28d7cc 260%);
   background-image: linear-gradient(5deg, #00aaff -14%, #28d7cc 260%);
 }
 
-/* line 239, src/scss/_components/board/_card.scss */
-.board-card__block-action--edit .icon-font {
-  color: #ffffff;
-  font-size: 17px;
+/* line 258, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit:hover {
+  background-color: #5153dc;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 245, src/scss/_components/board/_card.scss */
+/* line 263, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit:hover:after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 269, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit:hover .icon-font {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 275, src/scss/_components/board/_card.scss */
+.board-card__block-action--edit .icon-font {
+  z-index: 2;
+  position: relative;
+  color: #ffffff;
+  font-size: 17px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 285, src/scss/_components/board/_card.scss */
 .board-card__block-action-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16129,7 +16229,42 @@ picture {
   background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
 }
 
-/* line 69, src/scss/_components/dashboard/_benefits.scss */
+/* line 68, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font {
+  color: #ffffff;
+}
+
+/* line 71, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font.icon-seo {
+  font-size: 49px;
+}
+
+/* line 74, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font.icon-data {
+  font-size: 62px;
+}
+
+/* line 77, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font.icon-conversion {
+  font-size: 62px;
+}
+
+/* line 80, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font.icon-review-1 {
+  font-size: 62px;
+}
+
+/* line 83, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font.icon-market-1 {
+  font-size: 62px;
+}
+
+/* line 86, src/scss/_components/dashboard/_benefits.scss */
+.ref-benefits__box-circle .icon-font.icon-blogging {
+  font-size: 46px;
+}
+
+/* line 92, src/scss/_components/dashboard/_benefits.scss */
 .ref-benefits__box-title {
   padding-bottom: 5px;
   font-size: 24px;
@@ -16139,7 +16274,7 @@ picture {
   color: #091e42;
 }
 
-/* line 78, src/scss/_components/dashboard/_benefits.scss */
+/* line 101, src/scss/_components/dashboard/_benefits.scss */
 .ref-benefits__box-description {
   padding-bottom: 35px;
   font-size: 15px;
@@ -16149,20 +16284,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 78, src/scss/_components/dashboard/_benefits.scss */
+  /* line 101, src/scss/_components/dashboard/_benefits.scss */
   .ref-benefits__box-description {
     min-height: 77px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 78, src/scss/_components/dashboard/_benefits.scss */
+  /* line 101, src/scss/_components/dashboard/_benefits.scss */
   .ref-benefits__box-description {
     min-height: unset;
   }
 }
 
-/* line 92, src/scss/_components/dashboard/_benefits.scss */
+/* line 115, src/scss/_components/dashboard/_benefits.scss */
 .ref-benefits__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16200,7 +16335,7 @@ picture {
   transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 113, src/scss/_components/dashboard/_benefits.scss */
+/* line 136, src/scss/_components/dashboard/_benefits.scss */
 .ref-benefits__box-btn:hover {
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
