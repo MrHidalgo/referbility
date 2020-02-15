@@ -16935,7 +16935,7 @@ picture {
   }
 }
 
-/* line 6, src/scss/_components/retouch/_retouch.scss */
+/* line 1, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced {
   overflow: hidden;
   position: relative;
@@ -16947,14 +16947,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/retouch/_retouch.scss */
+  /* line 1, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced {
     padding-top: 60px;
     padding-bottom: 0;
   }
 }
 
-/* line 17, src/scss/_components/retouch/_retouch.scss */
+/* line 12, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg {
   z-index: 0;
   position: absolute;
@@ -16964,14 +16964,14 @@ picture {
   height: 100%;
 }
 
-/* line 25, src/scss/_components/retouch/_retouch.scss */
+/* line 20, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg span {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 29, src/scss/_components/retouch/_retouch.scss */
+/* line 24, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg span:nth-of-type(1) {
   top: -30px;
   left: -150px;
@@ -16980,7 +16980,7 @@ picture {
   border: 50px solid rgba(255, 255, 255, 0.15);
 }
 
-/* line 37, src/scss/_components/retouch/_retouch.scss */
+/* line 32, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg span:nth-of-type(2) {
   right: -50px;
   bottom: -150px;
@@ -16989,25 +16989,25 @@ picture {
   border: 150px solid rgba(255, 255, 255, 0.15);
 }
 
-/* line 47, src/scss/_components/retouch/_retouch.scss */
+/* line 42, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 52, src/scss/_components/retouch/_retouch.scss */
+/* line 47, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__title {
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 52, src/scss/_components/retouch/_retouch.scss */
+  /* line 47, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced__title {
     padding-bottom: 20px;
   }
 }
 
-/* line 59, src/scss/_components/retouch/_retouch.scss */
+/* line 54, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__line {
   width: 100%;
   max-width: 60px;
@@ -17019,7 +17019,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 59, src/scss/_components/retouch/_retouch.scss */
+  /* line 54, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced__line {
     max-width: 50px;
     margin-bottom: 40px;
@@ -17027,26 +17027,97 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 73, src/scss/_components/retouch/_retouch.scss */
+  /* line 68, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced .advantages__block {
     padding: 30px 25px 30px 35px;
     margin-bottom: 30px;
   }
 }
 
-/* line 79, src/scss/_components/retouch/_retouch.scss */
+/* line 74, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced .advantages__block-wrapper {
   max-width: 1040px;
 }
 
-/* line 83, src/scss/_components/retouch/_retouch.scss */
+/* line 78, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced .advantages__block-img {
   margin-left: 0;
 }
 
-/* line 87, src/scss/_components/retouch/_retouch.scss */
+/* line 82, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced .advantages__block-title, .retouch-convinced .advantages__block-desc {
   text-align: left;
+}
+
+/* line 7, src/scss/_components/retouch/_retouch.scss */
+.retouch-geography {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 7, src/scss/_components/retouch/_retouch.scss */
+  .retouch-geography {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 15, src/scss/_components/retouch/_retouch.scss */
+.retouch-geography__title {
+  padding-bottom: 20px;
+}
+
+/* line 19, src/scss/_components/retouch/_retouch.scss */
+.retouch-geography__line {
+  width: 100%;
+  max-width: 60px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #29DE9C;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 19, src/scss/_components/retouch/_retouch.scss */
+  .retouch-geography__line {
+    max-width: 50px;
+  }
+}
+
+/* line 32, src/scss/_components/retouch/_retouch.scss */
+.retouch-geography__desc {
+  padding-bottom: 40px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #344563;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 32, src/scss/_components/retouch/_retouch.scss */
+  .retouch-geography__desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 32, src/scss/_components/retouch/_retouch.scss */
+  .retouch-geography__desc {
+    font-size: 16px;
+  }
+}
+
+/* line 48, src/scss/_components/retouch/_retouch.scss */
+.retouch-geography__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
