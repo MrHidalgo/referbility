@@ -1,12 +1,15 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: retouch.html
+  titleName: Landing - Retouch
+  ready: 1
 - file: referrer-dashboard.html
   titleName: Referrer Dashboard
-  ready: 90
+  ready: 100
 - file: employer-dashboard.html
   titleName: Employer Dashboard
-  ready: 90
+  ready: 100
 - file: board-just-details.html
   titleName: Job Board Just Details
   ready: 100

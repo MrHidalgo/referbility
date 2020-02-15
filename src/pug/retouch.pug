@@ -1,0 +1,19 @@
+---
+title: Referbility | Landing - Retouch
+
+pageClassName: p-retouch
+headerGrid: true
+boardMod: true
+---
+extends shared/_layout
+
+block menu
+  include components/homepage/_menu
+
+block header
+  include components/_header--mod
+block footer
+  include components/_footer--landing
+
+block content
+  div.body.body--start(class!= pageClassName)
