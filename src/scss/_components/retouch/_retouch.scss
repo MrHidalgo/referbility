@@ -1,0 +1,131 @@
+// SECTION :: START
+
+.retouch {
+  &-learn {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include adaptive(767) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .c-grid {
+      @include adaptive(767) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__wrapper {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 50px 75px;
+      border-radius: 0 120px 0 120px;
+      box-shadow: 0 40px 90px 0 rgba(135,119,217,0.20);
+      background-image: linear-gradient(189deg, #8181FF 19%, #5153DC 100%);
+      @include adaptive(1279) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      @include adaptive(1023) {
+        border-radius: 0 50px 0 50px;
+      }
+      @include adaptive(767) {
+        flex-direction: column-reverse;
+        padding: 60px 30px;
+        border-radius: 0;
+      }
+
+      &-bg {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        span {
+          position: absolute;
+          width: 360px;
+          height: 360px;
+          border-radius: 50%;
+
+          &:nth-of-type(1) {
+            top: -180px;
+            left: -130px;
+            border: 120px solid rgba(169,171,254,0.20);
+          }
+
+          &:nth-of-type(2) {
+            bottom: -105px;
+            right: -105px;
+            border: 100px solid rgba(169,171,254,0.20);
+          }
+        }
+      }
+
+      &-left,
+      &-right {
+        z-index: 2;
+        position: relative;
+      }
+
+      &-left {
+        flex: 1;
+        min-width: 1px;
+        max-width: 100%;
+        padding-right: 85px;
+        @include adaptive(1279) {
+          padding-right: 50px;
+        }
+        @include adaptive(767) {
+          padding-right: 0;
+        }
+      }
+
+      &-right {
+        width: 400px;
+        @include adaptive(1023) {
+          width: 50%;
+        }
+        @include adaptive(767) {
+          width: 100%;
+          padding-bottom: 40px;
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          @include adaptive(767) {
+            width: 100%;
+            max-width: 320px;
+          }
+        }
+      }
+    }
+
+    &__title {
+      padding-bottom: 40px;
+      color: #FFFFFF;
+      text-align: right;
+      @include adaptive(767) {
+        text-align: center;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: flex-end;
+      @include adaptive(767) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// SECTION :: END

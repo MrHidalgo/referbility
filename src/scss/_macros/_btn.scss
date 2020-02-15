@@ -53,7 +53,8 @@ $btn-color--border: rgba(#000, 1);
   &--bg {
     &-blue,
     &-white,
-    &-green {
+    &-green,
+    &-gradient {
       transition: all 0.5s cubic-bezier(0, 0.9, 0.5, 1);
 
       &:hover {
@@ -135,6 +136,29 @@ $btn-color--border: rgba(#000, 1);
 
       &:after {
         background-color: darken(#36b37e, 5%);
+      }
+
+      &,
+      &:hover,
+      &:active {
+        @include transition(box-shadow);
+      }
+
+      &:hover {
+        box-shadow: 0 5px 10px 0 rgba($bth-background-color, 0.15);
+      }
+
+      &:active {
+        box-shadow: 0 5px 10px 0 rgba($bth-background-color, 0);
+      }
+    }
+
+    &-gradient {
+      background-color: #fff;
+      background-image: linear-gradient(12deg, #00AAFF 0%, #28D7CC 100%);
+
+      &:after {
+        background-color: darken(#00AAFF, 5%);
       }
 
       &,
