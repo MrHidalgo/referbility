@@ -3,8 +3,9 @@
 .retouch {
   @import "retouch--learn";
   @import "retouch--convinced";
+  @import "retouch--geography";
 
-  &-geography {
+  &-with {
     padding-top: 100px;
     padding-bottom: 100px;
     @include adaptive(767) {
@@ -45,12 +46,95 @@
       }
     }
 
-    &__image {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
+    &__slider {
+      position: relative;
+      @include adaptive(767) {
+        overflow: hidden;
+        position: relative;
+        left: -15px;
+        width: calc(100% + 30px);
+      }
+
+      &-wrapper {
+        width: 100%;
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        @include adaptive(1023) {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+        @include adaptive(767) {
+          position: relative;
+          left: -50px;
+          width: calc(100% + 100px);
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      &-btn {
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: #FFFFFF;
+        border: 1px solid rgba(103,104,236,0.60);
+        box-shadow: 0 5px 20px 0 rgba(135,131,157,0.15);
+        @include adaptive(767) {
+          display: none;
+        }
+
+        &--prev {
+          left: 0;
+
+          .icon-font {
+            transform: rotate(-180deg);
+          }
+        }
+
+        &--next {
+          right: 0;
+        }
+
+        .icon-font {
+          color: #6768ec;
+        }
+      }
+    }
+
+    .swiper {
+      &-wrapper {
+        align-items: center;
+      }
+
+      &-slide {
+        @include adaptive(767) {
+          padding-left: 15px;
+          padding-right: 15px;
+          filter: grayscale(1);
+          @include transition(filter);
+
+          &-active {
+            filter: grayscale(0);
+            @include transition(filter);
+          }
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
     }
   }
 }

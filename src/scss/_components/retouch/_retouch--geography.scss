@@ -1,0 +1,49 @@
+&-geography {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include adaptive(767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__line {
+    width: 100%;
+    max-width: 60px;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #29DE9C;
+    @include adaptive(767) {
+      max-width: 50px;
+    }
+  }
+
+  &__desc {
+    padding-bottom: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #344563;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 30px;
+    @include adaptive(1279) {
+      font-size: 18px;
+    }
+    @include adaptive(767) {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -215,6 +215,38 @@ var initSwiper = function initSwiper() {
       prevEl: '.ref-jobs__slider-btn--prev'
     }
   });
+
+  var mySwiperRetouch = new Swiper('.retouchWithSlider', {
+    loop: true,
+    effect: 'slide',
+    speed: 750,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        centeredSlides: true
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: false
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    },
+    navigation: {
+      nextEl: '.retouch-with__slider-btn--next',
+      prevEl: '.retouch-with__slider-btn--prev'
+    }
+  });
 };
 
 /**

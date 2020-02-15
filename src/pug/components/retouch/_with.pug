@@ -1,0 +1,33 @@
+// SECTION :: START
+
+section#retouch-with.retouch-with
+  .c-grid
+
+    p.retouch-with__title.c-title Whom we worked with
+    .retouch-with__line
+    p.retouch-with__desc Our clients are as diverse as the roles that we fill.
+
+    .retouch-with__slider
+
+      .retouch-with__slider-btn-wrapper
+        a.retouch-with__slider-btn.retouch-with__slider-btn--prev(href="#")
+          i.icon-font.icon-corner
+        a.retouch-with__slider-btn.retouch-with__slider-btn--next(href="#")
+          i.icon-font.icon-corner
+
+      .retouch-with__slider-wrapper
+
+        mixin swiperContent()
+          .swiper-slide
+            img(src="img/img-retouch-with-1.jpg" alt="")
+          .swiper-slide
+            img(src="img/img-retouch-with-2.jpg" alt="")
+          .swiper-slide
+            img(src="img/img-retouch-with-3.jpg" alt="")
+          .swiper-slide
+            img(src="img/img-retouch-with-4.jpg" alt="")
+
+        +swiper('retouchWithSlider', 'swiperContent', false, false, false)
+
+
+// SECTION :: END
