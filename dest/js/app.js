@@ -1004,6 +1004,214 @@ $(document).ready(function (ev) {
       }
     });
   };
+
+  var initRetouchPricing = function initRetouchPricing() {
+    var obj = {
+      1: {
+        'input': '2,000',
+        'recommended': '1,000',
+        'agencyLow': '2,000',
+        'agencyHigh': '4,800',
+        'costFrom': '1,000',
+        'costTo': '3,800'
+      },
+      2: {
+        'input': '3,000',
+        'recommended': '1,000',
+        'agencyLow': '3,000',
+        'agencyHigh': '7,200',
+        'costFrom': '2,000',
+        'costTo': '6,200'
+      },
+      3: {
+        'input': '4,000',
+        'recommended': '1,000',
+        'agencyLow': '4,000',
+        'agencyHigh': '9,600',
+        'costFrom': '3,000',
+        'costTo': '8,600'
+      },
+      4: {
+        'input': '5,000',
+        'recommended': '2,000',
+        'agencyLow': '5,000',
+        'agencyHigh': '12,000',
+        'costFrom': '3,000',
+        'costTo': '10,000'
+      },
+      5: {
+        'input': '6,000',
+        'recommended': '2,000',
+        'agencyLow': '6,000',
+        'agencyHigh': '14,400',
+        'costFrom': '4,000',
+        'costTo': '12,400'
+      },
+      6: {
+        'input': '7,000',
+        'recommended': '2,000',
+        'agencyLow': '7,000',
+        'agencyHigh': '16,800',
+        'costFrom': '5,000',
+        'costTo': '14,800'
+      },
+      7: {
+        'input': '8,000',
+        'recommended': '2,000',
+        'agencyLow': '8,000',
+        'agencyHigh': '19,200',
+        'costFrom': '6,000',
+        'costTo': '17,200'
+      },
+      8: {
+        'input': '9,000',
+        'recommended': '4,000',
+        'agencyLow': '9,000',
+        'agencyHigh': '21,600',
+        'costFrom': '5,000',
+        'costTo': '17,600'
+      },
+      9: {
+        'input': '10,000',
+        'recommended': '4,000',
+        'agencyLow': '10,000',
+        'agencyHigh': '24,000',
+        'costFrom': '6,000',
+        'costTo': '20,000'
+      },
+      10: {
+        'input': '11,000',
+        'recommended': '4,000',
+        'agencyLow': '11,000',
+        'agencyHigh': '26,400',
+        'costFrom': '7,000',
+        'costTo': '22,400'
+      },
+      11: {
+        'input': '12,000',
+        'recommended': '4,000',
+        'agencyLow': '12,000',
+        'agencyHigh': '28,800',
+        'costFrom': '8,000',
+        'costTo': '24,800'
+      },
+      12: {
+        'input': '13,000',
+        'recommended': '4,000',
+        'agencyLow': '12,900',
+        'agencyHigh': '31,200',
+        'costFrom': '8,900',
+        'costTo': '27,200'
+      },
+      13: {
+        'input': '14,000',
+        'recommended': '6,000',
+        'agencyLow': '13,900',
+        'agencyHigh': '33,600',
+        'costFrom': '7,900',
+        'costTo': '27,600'
+      },
+      14: {
+        'input': '15,000',
+        'recommended': '6,000',
+        'agencyLow': '14,900',
+        'agencyHigh': '36,000',
+        'costFrom': '8,900',
+        'costTo': '30,000'
+      },
+      15: {
+        'input': '16,000',
+        'recommended': '6,000',
+        'agencyLow': '15,900',
+        'agencyHigh': '38,400',
+        'costFrom': '9,900',
+        'costTo': '32,400'
+      },
+      16: {
+        'input': '17,000',
+        'recommended': '6,000',
+        'agencyLow': '16,900',
+        'agencyHigh': '40,800',
+        'costFrom': '10,900',
+        'costTo': '34,800'
+      },
+      17: {
+        'input': '18,000',
+        'recommended': '6,000',
+        'agencyLow': '17,900',
+        'agencyHigh': '43,200',
+        'costFrom': '11,900',
+        'costTo': '37,200'
+      },
+      18: {
+        'input': '19,000',
+        'recommended': '6,000',
+        'agencyLow': '18,900',
+        'agencyHigh': '45,600',
+        'costFrom': '12,900',
+        'costTo': '39,600'
+      },
+      19: {
+        'input': '20,000',
+        'recommended': '6,000',
+        'agencyLow': '19,900',
+        'agencyHigh': '48,000',
+        'costFrom': '13,900',
+        'costTo': '42,000'
+      }
+    },
+        minCountNum = 1,
+        maxCountNum = 19;
+
+    var _count = 1;
+
+    var _elInput = $('[pricing-input-js]'),
+        _elRecommended = $('[pricing-ref-js]'),
+        _elAgencyLow = $('[pricing-agen-from-js]'),
+        _elAgencyHigh = $('[pricing-agen-to-js]'),
+        _elCostFrom = $('[pricing-from-js]'),
+        _elCostTo = $('[pricing-to-js]');
+
+    var _helperPrintText = function _helperPrintText(_num) {
+      _elInput.html(obj[_num].input);
+      _elRecommended.html(obj[_num].recommended);
+      _elAgencyLow.html(obj[_num].agencyLow);
+      _elAgencyHigh.html(obj[_num].agencyHigh);
+      _elCostFrom.html(obj[_num].costFrom);
+      _elCostTo.html(obj[_num].costTo);
+    };
+
+    $('[pricing-btn-down-js]').on('click', function (ev) {
+      _count--;
+
+      if (_count <= minCountNum) {
+        $(ev.currentTarget).attr('disabled', 'true');
+
+        _helperPrintText(_count);
+
+        return;
+      } else {
+        $('[pricing-btn-up-js]').removeAttr('disabled');
+
+        _helperPrintText(_count);
+      }
+    });
+    $('[pricing-btn-up-js]').on('click', function (ev) {
+      _count++;
+
+      if (_count >= maxCountNum) {
+        $(ev.currentTarget).attr('disabled', 'true');
+
+        _helperPrintText(_count);
+
+        return;
+      } else {
+        $('[pricing-btn-down-js]').removeAttr('disabled');
+
+        _helperPrintText(_count);
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -1039,9 +1247,18 @@ $(document).ready(function (ev) {
     initKanbanDragScroll();
     initInnerPageLogic();
     initBoardCard();
+    initRetouchPricing();
     // ==========================================
 
     $(window).on('load', function () {
+      if ($('.p-retouch').length) {
+        $('.header').animate({
+          'opacity': '1'
+        }, 0);
+
+        return;
+      }
+
       setTimeout(function () {
         $('.header').animate({
           'opacity': '1'

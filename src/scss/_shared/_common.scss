@@ -297,6 +297,22 @@
     transform: translateY(0);
   }
 }
+@keyframes c-slideInLeft {
+  from {
+    transform: translateX(-75px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes c-slideInRight {
+  from {
+    transform: translateX(75px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
 .animated {
   animation-fill-mode: both;

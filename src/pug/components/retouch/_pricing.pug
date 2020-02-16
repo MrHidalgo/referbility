@@ -24,12 +24,17 @@ section#retouch-pricing.retouch-pricing
 
                 .retouch-pricing__box-info
                   p Recommended Reward
-                  u(pricing-ref-js)!= "$1,000"
+                  u!= "$<span pricing-ref-js>1,000</span>"
                   span We don't charge percentages. Select how much you are willing to invest for hiring, post your job with a 25% down payment of the reward, and pay the remainder only when you hire. We also offer 3-month placement guarantees for every candidate!
 
             .retouch-pricing__box-content--middle
               div
-                input.retouch-pricing__box-input(type='text' placeholder="$2,000" name='')
+                .retouch-pricing__box-input
+                  span!= "$<span pricing-input-js>2,000</span>"
+                  a(href="#" disabled pricing-btn-down-js)
+                    i.icon-font.icon-corner
+                  a(href="#" pricing-btn-up-js)
+                    i.icon-font.icon-corner
                 img(src="img/img-retouch-pricing.svg" alt="")
 
             .retouch-pricing__box-content--right
