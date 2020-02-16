@@ -1,0 +1,48 @@
+// SECTION :: START
+
+section#retouch-pricing.retouch-pricing
+
+  .retouch-pricing__bg
+    span(parallax-js data-stellar-ratio="1.1")
+    span(parallax-js data-stellar-ratio="0.9")
+
+  .c-grid
+    .retouch-pricing__wrapper
+
+      p.retouch-pricing__title.c-title.viewport-hide-js(data-animation-delay='0.2s') Pricing
+      .retouch-pricing__line.viewport-hide-js(data-animation-delay='0.25s')
+      p.retouch-pricing__desc.viewport-hide-js(data-animation-delay='0.3s') With us, it’s all about cutting costs without neglecting time & quality.
+
+      .retouch-pricing__box.viewport-hide-js(data-animation-delay='0.4s')
+        .retouch-pricing__box-body
+          p.retouch-pricing__box-title Your candidate’s monthly salary:
+
+          .retouch-pricing__box-content
+            .retouch-pricing__box-content--left
+              div
+                img.retouch-pricing__box-logo(src="img/img-retouch-pricing-logo.png" srcset="img/img-retouch-pricing-logo.png" alt="")
+
+                .retouch-pricing__box-info
+                  p Recommended Reward
+                  u(pricing-ref-js)!= "$1,000"
+                  span We don't charge percentages. Select how much you are willing to invest for hiring, post your job with a 25% down payment of the reward, and pay the remainder only when you hire. We also offer 3-month placement guarantees for every candidate!
+
+            .retouch-pricing__box-content--middle
+              div
+                input.retouch-pricing__box-input(type='text' placeholder="$2,000" name='')
+                img(src="img/img-retouch-pricing.svg" alt="")
+
+            .retouch-pricing__box-content--right
+              div
+                p.retouch-pricing__box-subtitle Conventional Recruitment Agencies
+
+                .retouch-pricing__box-info
+                  p Average fees range from
+                  u!= "$<span pricing-agen-from-js>2,000</span> to $<span pricing-agen-to-js>4,800</span>"
+                  span Paying fees based on percentages of a candidate’s annual salary is not only obsolete but uneconomical. Save yourself stress, hassle, and money!
+
+        .retouch-pricing__box-footer
+          p.retouch-pricing__box-save You save between
+          p.retouch-pricing__box-result!= "$<span pricing-from-js>1,000</span> to $<span pricing-to-js>3,800</span>"
+
+// SECTION :: END
