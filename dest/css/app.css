@@ -1374,8 +1374,8 @@ picture {
 .animated {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 
 /* line 1, src/scss/_shared/_viewPortChecker.scss */
@@ -17795,33 +17795,41 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 70, src/scss/_components/retouch/_retouch--with.scss */
   .retouch-with__slider-btn {
-    display: none;
+    width: 40px;
+    height: 40px;
   }
 }
 
-/* line 88, src/scss/_components/retouch/_retouch--with.scss */
+/* line 89, src/scss/_components/retouch/_retouch--with.scss */
 .retouch-with__slider-btn--prev {
   left: 0;
 }
 
-/* line 91, src/scss/_components/retouch/_retouch--with.scss */
+/* line 92, src/scss/_components/retouch/_retouch--with.scss */
 .retouch-with__slider-btn--prev .icon-font {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 
-/* line 96, src/scss/_components/retouch/_retouch--with.scss */
+/* line 97, src/scss/_components/retouch/_retouch--with.scss */
 .retouch-with__slider-btn--next {
   right: 0;
 }
 
-/* line 100, src/scss/_components/retouch/_retouch--with.scss */
+/* line 101, src/scss/_components/retouch/_retouch--with.scss */
 .retouch-with__slider-btn .icon-font {
   color: #6768ec;
 }
 
-/* line 107, src/scss/_components/retouch/_retouch--with.scss */
+@media screen and (max-width: 767px) {
+  /* line 101, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__slider-btn .icon-font {
+    font-size: 12px;
+  }
+}
+
+/* line 111, src/scss/_components/retouch/_retouch--with.scss */
 .retouch-with .swiper-wrapper {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -17830,7 +17838,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 111, src/scss/_components/retouch/_retouch--with.scss */
+  /* line 115, src/scss/_components/retouch/_retouch--with.scss */
   .retouch-with .swiper-slide {
     padding-left: 15px;
     padding-right: 15px;
@@ -17842,7 +17850,7 @@ picture {
     transition: filter 0.3s ease-in-out;
     transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
   }
-  /* line 118, src/scss/_components/retouch/_retouch--with.scss */
+  /* line 122, src/scss/_components/retouch/_retouch--with.scss */
   .retouch-with .swiper-slide-active {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
@@ -17854,7 +17862,7 @@ picture {
   }
 }
 
-/* line 124, src/scss/_components/retouch/_retouch--with.scss */
+/* line 128, src/scss/_components/retouch/_retouch--with.scss */
 .retouch-with .swiper-slide img {
   display: block;
   max-width: 100%;
@@ -18598,22 +18606,21 @@ picture {
   height: 50px;
   padding-left: 30px;
   padding-right: 30px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
   background-color: #ECEBF6;
 }
 
 @media screen and (max-width: 767px) {
   /* line 210, src/scss/_components/retouch/_retouch--pricing.scss */
   .retouch-pricing__box-input {
-    display: block;
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 228, src/scss/_components/retouch/_retouch--pricing.scss */
+/* line 227, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-input span {
   overflow: hidden;
   white-space: nowrap;
@@ -18625,10 +18632,11 @@ picture {
   text-align: center;
 }
 
-/* line 238, src/scss/_components/retouch/_retouch--pricing.scss */
+/* line 237, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-input a {
+  z-index: 10;
   position: absolute;
-  right: 0;
+  right: -30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18661,9 +18669,9 @@ picture {
 /* line 255, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-input a:nth-of-type(1) {
   top: 0;
-  -webkit-border-radius: 0 4px 0 4px;
-          border-radius: 0 4px 0 4px;
-  border-bottom: 1px solid #fff;
+  -webkit-border-radius: 0 4px 0 0;
+          border-radius: 0 4px 0 0;
+  border-bottom: 1px solid #ECEBF6;
 }
 
 /* line 260, src/scss/_components/retouch/_retouch--pricing.scss */
@@ -18676,9 +18684,9 @@ picture {
 /* line 264, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-input a:nth-of-type(2) {
   bottom: 0;
-  -webkit-border-radius: 4px 0 4px 0;
-          border-radius: 4px 0 4px 0;
-  border-top: 1px solid #fff;
+  -webkit-border-radius: 0 0 4px 0;
+          border-radius: 0 0 4px 0;
+  border-top: 1px solid #ECEBF6;
 }
 
 /* line 269, src/scss/_components/retouch/_retouch--pricing.scss */
