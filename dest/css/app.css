@@ -16724,92 +16724,72 @@ picture {
   padding-right: 15px;
 }
 
-/* line 1, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn {
-  padding-top: 100px;
+/* line 1, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main {
+  position: relative;
+  padding-top: 220px;
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 1335px) {
+  /* line 1, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main {
+    padding-top: 180px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 1, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main {
+    padding-bottom: 75px;
+  }
+}
+
 @media screen and (max-width: 767px) {
-  /* line 1, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn {
-    padding-top: 0;
+  /* line 1, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main {
+    padding-top: 150px;
     padding-bottom: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 9, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn .c-grid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* line 16, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper {
-  overflow: hidden;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 75px;
-  -webkit-border-radius: 0 120px 0 120px;
-          border-radius: 0 120px 0 120px;
-  -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
-          box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
-  background-image: -webkit-linear-gradient(261deg, #8181FF 19%, #5153DC 100%);
-  background-image: -o-linear-gradient(261deg, #8181FF 19%, #5153DC 100%);
-  background-image: linear-gradient(189deg, #8181FF 19%, #5153DC 100%);
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper {
-    -webkit-border-radius: 0 50px 0 50px;
-            border-radius: 0 50px 0 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding: 60px 30px;
-    -webkit-border-radius: 0;
-            border-radius: 0;
-  }
-}
-
-/* line 38, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-bg {
+/* line 16, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__bg {
   z-index: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: -200px;
+  width: -webkit-calc(100% + 400px);
+  width: calc(100% + 400px);
+  height: -webkit-calc(100% - 50px);
+  height: calc(100% - 50px);
+  -webkit-border-top-left-radius: 50% 0;
+          border-top-left-radius: 50% 0;
+  -webkit-border-top-right-radius: 50% 0;
+          border-top-right-radius: 50% 0;
+  -webkit-border-bottom-right-radius: 50% 300px;
+          border-bottom-right-radius: 50% 300px;
+  -webkit-border-bottom-left-radius: 50% 300px;
+          border-bottom-left-radius: 50% 300px;
 }
 
-/* line 46, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-bg span {
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__bg {
+    left: -100px;
+    width: -webkit-calc(100% + 200px);
+    width: calc(100% + 200px);
+    height: 70%;
+    -webkit-border-bottom-right-radius: 50% 100px;
+            border-bottom-right-radius: 50% 100px;
+    -webkit-border-bottom-left-radius: 50% 100px;
+            border-bottom-left-radius: 50% 100px;
+  }
+}
+
+/* line 36, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__bg span {
   position: absolute;
   width: 360px;
   height: 360px;
@@ -16817,424 +16797,298 @@ picture {
           border-radius: 50%;
 }
 
-/* line 52, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-bg span:nth-of-type(1) {
-  top: -180px;
-  left: -130px;
-  border: 120px solid rgba(169, 171, 254, 0.2);
-}
-
-/* line 58, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-bg span:nth-of-type(2) {
-  bottom: -105px;
-  right: -105px;
-  border: 100px solid rgba(169, 171, 254, 0.2);
-}
-
-/* line 66, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-left, .retouch-learn__wrapper-right {
-  z-index: 2;
-  position: relative;
-}
-
-/* line 72, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-left {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-width: 100%;
-  padding-right: 85px;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 72, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper-left {
-    padding-right: 50px;
-  }
+/* line 42, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__bg span:nth-of-type(1) {
+  left: 125px;
+  bottom: -100px;
+  border: 115px solid rgba(169, 171, 254, 0.2);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 72, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper-left {
-    padding-right: 0;
+  /* line 42, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__bg span:nth-of-type(1) {
+    left: -75px;
   }
 }
 
-/* line 85, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-right {
-  width: 400px;
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 85, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper-right {
-    width: 50%;
-  }
+/* line 50, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__bg span:nth-of-type(2) {
+  top: -100px;
+  right: 125px;
+  border: 130px solid rgba(169, 171, 254, 0.3);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 85, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper-right {
-    width: 100%;
-    padding-bottom: 40px;
+  /* line 50, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__bg span:nth-of-type(2) {
+    display: none !important;
   }
 }
 
-/* line 95, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__wrapper-right img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+/* line 60, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__bg-inner {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(230deg, #8181FF 18%, #5153DC 100%);
+  background-image: -o-linear-gradient(230deg, #8181FF 18%, #5153DC 100%);
+  background-image: linear-gradient(220deg, #8181FF 18%, #5153DC 100%);
 }
 
-@media screen and (max-width: 767px) {
-  /* line 95, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__wrapper-right img {
-    width: 100%;
-    max-width: 320px;
-  }
-}
-
-/* line 109, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__title {
-  padding-bottom: 40px;
-  color: #FFFFFF;
-  text-align: right;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 109, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__title {
-    text-align: center;
-  }
-}
-
-/* line 118, src/scss/_components/retouch/_retouch--learn.scss */
-.retouch-learn__btn {
+/* line 67, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__content {
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: -webkit-calc(100% + 75px);
+  height: calc(100% + 75px);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 67, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content {
+    position: static;
+  }
+}
+
+/* line 80, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__content-left, .retouch-main__content-right {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 80, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-left, .retouch-main__content-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 89, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-left {
+    display: none;
+  }
+}
+
+/* line 95, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__content-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 118, src/scss/_components/retouch/_retouch--learn.scss */
-  .retouch-learn__btn {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-/* line 1, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced {
-  overflow: hidden;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-image: -webkit-linear-gradient(256deg, #6768EC 0%, #C5C5FF 99%);
-  background-image: -o-linear-gradient(256deg, #6768EC 0%, #C5C5FF 99%);
-  background-image: linear-gradient(194deg, #6768EC 0%, #C5C5FF 99%);
-}
-
-@media screen and (max-width: 767px) {
-  /* line 1, src/scss/_components/retouch/_retouch--convinced.scss */
-  .retouch-convinced {
-    padding-top: 60px;
-    padding-bottom: 0;
-  }
-}
-
-/* line 12, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__bg {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 20, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__bg span {
-  position: absolute;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-}
-
-/* line 24, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__bg span:nth-of-type(1) {
-  top: -30px;
-  left: -150px;
-  width: 500px;
-  height: 500px;
-  border: 50px solid rgba(255, 255, 255, 0.15);
-}
-
-/* line 32, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__bg span:nth-of-type(2) {
-  right: -50px;
-  bottom: -150px;
-  width: 450px;
-  height: 450px;
-  border: 150px solid rgba(255, 255, 255, 0.15);
-}
-
-/* line 42, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__wrapper {
-  z-index: 2;
-  position: relative;
-}
-
-/* line 47, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__title {
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 47, src/scss/_components/retouch/_retouch--convinced.scss */
-  .retouch-convinced__title {
-    padding-bottom: 20px;
-  }
-}
-
-/* line 54, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced__line {
-  width: 100%;
-  max-width: 60px;
-  height: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  background-color: #29DE9C;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 54, src/scss/_components/retouch/_retouch--convinced.scss */
-  .retouch-convinced__line {
-    max-width: 50px;
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 68, src/scss/_components/retouch/_retouch--convinced.scss */
-  .retouch-convinced .advantages__block {
-    padding: 30px 25px 30px 35px;
-    margin-bottom: 30px;
-  }
-}
-
-/* line 74, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced .advantages__block-wrapper {
-  max-width: 1040px;
-}
-
-/* line 78, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced .advantages__block-img {
-  margin-left: 0;
-}
-
-/* line 82, src/scss/_components/retouch/_retouch--convinced.scss */
-.retouch-convinced .advantages__block-title, .retouch-convinced .advantages__block-desc {
-  text-align: left;
-}
-
-/* line 1, src/scss/_components/retouch/_retouch--geography.scss */
-.retouch-geography {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 1, src/scss/_components/retouch/_retouch--geography.scss */
-  .retouch-geography {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-/* line 9, src/scss/_components/retouch/_retouch--geography.scss */
-.retouch-geography__title {
-  padding-bottom: 20px;
-}
-
-/* line 13, src/scss/_components/retouch/_retouch--geography.scss */
-.retouch-geography__line {
-  width: 100%;
-  max-width: 60px;
-  height: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  background-color: #29DE9C;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 13, src/scss/_components/retouch/_retouch--geography.scss */
-  .retouch-geography__line {
-    max-width: 50px;
-  }
-}
-
-/* line 26, src/scss/_components/retouch/_retouch--geography.scss */
-.retouch-geography__desc {
-  padding-bottom: 40px;
-  font-weight: normal;
-  font-size: 20px;
-  color: #344563;
-  letter-spacing: 0.5px;
-  text-align: center;
-  line-height: 30px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 26, src/scss/_components/retouch/_retouch--geography.scss */
-  .retouch-geography__desc {
-    font-size: 18px;
+  /* line 95, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-right {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 26, src/scss/_components/retouch/_retouch--geography.scss */
-  .retouch-geography__desc {
-    font-size: 16px;
-  }
-}
-
-/* line 42, src/scss/_components/retouch/_retouch--geography.scss */
-.retouch-geography__image {
+/* line 104, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__content-right img {
+  position: relative;
   display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
 }
 
-/* line 1, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 1, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with {
-    padding-top: 50px;
-    padding-bottom: 50px;
+@media screen and (max-width: 1535px) {
+  /* line 104, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-right img {
+    right: -100px;
   }
 }
 
-/* line 9, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__title {
-  padding-bottom: 20px;
-}
-
-/* line 13, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__line {
-  width: 100%;
-  max-width: 60px;
-  height: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  background-color: #29DE9C;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 13, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__line {
-    max-width: 50px;
+@media screen and (max-width: 1023px) {
+  /* line 104, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-right img {
+    right: 0;
   }
 }
 
-/* line 26, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__desc {
-  padding-bottom: 40px;
-  font-weight: normal;
-  font-size: 20px;
-  color: #344563;
-  letter-spacing: 0.5px;
-  text-align: center;
-  line-height: 30px;
+@media screen and (max-width: 767px) {
+  /* line 117, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-right img:nth-of-type(1) {
+    display: none;
+  }
+}
+
+/* line 122, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__content-right img:nth-of-type(2) {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 122, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__content-right img:nth-of-type(2) {
+    display: block;
+  }
+}
+
+/* line 132, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 137, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__wrapper-left, .retouch-main__wrapper-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 137, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__wrapper-left, .retouch-main__wrapper-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 145, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__wrapper-right {
+    display: none;
+  }
+}
+
+/* line 152, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__title {
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 1.25px;
+  line-height: 1.2;
+  text-align: left;
+  color: #fff;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 152, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__title {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 26, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__desc {
+  /* line 152, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 152, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 152, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__title {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+/* line 175, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__subtitle {
+  width: 100%;
+  max-width: 510px;
+  padding-bottom: 50px;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  line-height: 35px;
+  text-align: left;
+  color: #fff;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 175, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__subtitle {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 26, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__desc {
+  /* line 175, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__subtitle {
+    padding-bottom: 30px;
+    text-align: center;
     font-size: 16px;
+    line-height: normal;
   }
 }
 
-/* line 42, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider {
-  position: relative;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 42, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__slider {
-    overflow: hidden;
-    position: relative;
-    left: -15px;
-    width: -webkit-calc(100% + 30px);
-    width: calc(100% + 30px);
-  }
-}
-
-/* line 51, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider-wrapper {
-  width: 100%;
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 51, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__slider-wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 51, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__slider-wrapper {
-    position: relative;
-    left: -50px;
-    width: -webkit-calc(100% + 100px);
-    width: calc(100% + 100px);
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* line 69, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider-btn {
-  z-index: 5;
-  position: absolute;
-  top: 50%;
+/* line 196, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 140px;
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 196, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__btn {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 196, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__btn {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 15px;
+  }
+}
+
+/* line 209, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__link {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -17243,88 +17097,261 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #FFFFFF;
-  border: 1px solid rgba(103, 104, 236, 0.6);
-  -webkit-box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
-          box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with__slider-btn {
+  /* line 209, src/scss/_components/retouch/_retouch--main.scss */
+  .retouch-main__link {
     display: none;
   }
 }
 
-/* line 87, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider-btn--prev {
-  left: 0;
+/* line 220, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__link span {
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
-/* line 90, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider-btn--prev .icon-font {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+/* line 228, src/scss/_components/retouch/_retouch--main.scss */
+.retouch-main__link .icon-font {
+  color: #fff;
+  font-size: 20px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1.75s;
+          animation-duration: 1.75s;
+  -webkit-animation-name: animateLinkCorner;
+          animation-name: animateLinkCorner;
 }
 
-/* line 95, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider-btn--next {
-  right: 0;
-}
-
-/* line 99, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with__slider-btn .icon-font {
-  color: #6768ec;
-}
-
-/* line 106, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with .swiper-wrapper {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* line 1, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 110, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with .swiper-slide {
-    padding-left: 15px;
-    padding-right: 15px;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: -webkit-filter 0.3s ease-in-out;
-    transition: -webkit-filter 0.3s ease-in-out;
-    -o-transition: filter 0.3s ease-in-out;
-    transition: filter 0.3s ease-in-out;
-    transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
-  }
-  /* line 117, src/scss/_components/retouch/_retouch--with.scss */
-  .retouch-with .swiper-slide-active {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
-    -webkit-transition: -webkit-filter 0.3s ease-in-out;
-    transition: -webkit-filter 0.3s ease-in-out;
-    -o-transition: filter 0.3s ease-in-out;
-    transition: filter 0.3s ease-in-out;
-    transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  /* line 1, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
-/* line 123, src/scss/_components/retouch/_retouch--with.scss */
-.retouch-with .swiper-slide img {
+/* line 10, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 10, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__bg {
+    display: none;
+  }
+}
+
+/* line 21, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__bg img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   max-width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (max-width: 1599px) {
+  /* line 21, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__bg img {
+    max-width: 125px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 21, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__bg img {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 21, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__bg img {
+    max-width: 75px;
+  }
+}
+
+/* line 41, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block {
+  width: 100%;
+  max-width: 325px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 41, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block {
+    max-width: 100%;
+  }
+}
+
+/* line 48, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 55, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 50px) / 3);
+  max-width: calc((100% - 50px) / 3);
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 55, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block-wrapper > div {
+    max-width: 100%;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 66, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-body, .retouch-benefits__block-footer {
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 66, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block-body, .retouch-benefits__block-footer {
+    padding-right: 0;
+  }
+}
+
+/* line 74, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 230px;
+}
+
+/* line 80, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-body {
+  padding-top: 30px;
+}
+
+/* line 87, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 94, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-title {
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #091E42;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 94, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block-title {
+    font-size: 18px;
+  }
+}
+
+/* line 105, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-subtitle {
+  font-weight: 500;
+  font-size: 19px;
+  color: #5153DC;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 105, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block-subtitle {
+    font-size: 17px;
+  }
+}
+
+/* line 117, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-line {
+  width: 100%;
+  max-width: 60px;
+  height: 5px;
+  margin-bottom: 25px;
+  background-color: #29DE9C;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 117, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block-line {
+    max-width: 50px;
+  }
+}
+
+/* line 128, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-desc {
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #344563;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 128, src/scss/_components/retouch/_retouch--benefits.scss */
+  .retouch-benefits__block-desc {
+    font-size: 15px;
+  }
+}
+
+/* line 139, src/scss/_components/retouch/_retouch--benefits.scss */
+.retouch-benefits__block-info {
+  font-size: 14px;
+  color: #00AAFF;
+  letter-spacing: 0.5px;
+  line-height: 25px;
 }
 
 /* line 1, src/scss/_components/retouch/_retouch--works.scss */
@@ -17584,22 +17611,306 @@ picture {
   }
 }
 
-/* line 10, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits {
-  position: relative;
-  padding-top: 45px;
-  padding-bottom: 50px;
+/* line 1, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 10, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits {
+  /* line 1, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 10, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__title {
+  padding-bottom: 20px;
+}
+
+/* line 14, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__line {
+  width: 100%;
+  max-width: 60px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #29DE9C;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 14, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__line {
+    max-width: 50px;
+  }
+}
+
+/* line 27, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__desc {
+  padding-bottom: 40px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #344563;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 27, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 27, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__desc {
+    font-size: 16px;
+  }
+}
+
+/* line 43, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__slider {
+    overflow: hidden;
+    position: relative;
+    left: -15px;
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+  }
+}
+
+/* line 52, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider-wrapper {
+  width: 100%;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 52, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__slider-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 52, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__slider-wrapper {
+    position: relative;
+    left: -50px;
+    width: -webkit-calc(100% + 100px);
+    width: calc(100% + 100px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 70, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider-btn {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #FFFFFF;
+  border: 1px solid rgba(103, 104, 236, 0.6);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
+          box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 70, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with__slider-btn {
+    display: none;
+  }
+}
+
+/* line 88, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider-btn--prev {
+  left: 0;
+}
+
+/* line 91, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider-btn--prev .icon-font {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+/* line 96, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider-btn--next {
+  right: 0;
+}
+
+/* line 100, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with__slider-btn .icon-font {
+  color: #6768ec;
+}
+
+/* line 107, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with .swiper-wrapper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 111, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with .swiper-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: -webkit-filter 0.3s ease-in-out;
+    transition: -webkit-filter 0.3s ease-in-out;
+    -o-transition: filter 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  }
+  /* line 118, src/scss/_components/retouch/_retouch--with.scss */
+  .retouch-with .swiper-slide-active {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    -webkit-transition: -webkit-filter 0.3s ease-in-out;
+    transition: -webkit-filter 0.3s ease-in-out;
+    -o-transition: filter 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  }
+}
+
+/* line 124, src/scss/_components/retouch/_retouch--with.scss */
+.retouch-with .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1, src/scss/_components/retouch/_retouch--geography.scss */
+.retouch-geography {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1, src/scss/_components/retouch/_retouch--geography.scss */
+  .retouch-geography {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 9, src/scss/_components/retouch/_retouch--geography.scss */
+.retouch-geography__title {
+  padding-bottom: 20px;
+}
+
+/* line 13, src/scss/_components/retouch/_retouch--geography.scss */
+.retouch-geography__line {
+  width: 100%;
+  max-width: 60px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #29DE9C;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 13, src/scss/_components/retouch/_retouch--geography.scss */
+  .retouch-geography__line {
+    max-width: 50px;
+  }
+}
+
+/* line 26, src/scss/_components/retouch/_retouch--geography.scss */
+.retouch-geography__desc {
+  padding-bottom: 40px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #344563;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 26, src/scss/_components/retouch/_retouch--geography.scss */
+  .retouch-geography__desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 26, src/scss/_components/retouch/_retouch--geography.scss */
+  .retouch-geography__desc {
+    font-size: 16px;
+  }
+}
+
+/* line 42, src/scss/_components/retouch/_retouch--geography.scss */
+.retouch-geography__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: -webkit-linear-gradient(256deg, #6768EC 0%, #C5C5FF 99%);
+  background-image: -o-linear-gradient(256deg, #6768EC 0%, #C5C5FF 99%);
+  background-image: linear-gradient(194deg, #6768EC 0%, #C5C5FF 99%);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced {
+    padding-top: 60px;
     padding-bottom: 0;
   }
 }
 
-/* line 18, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__bg {
+/* line 12, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__bg {
   z-index: 0;
   position: absolute;
   top: 0;
@@ -17608,199 +17919,330 @@ picture {
   height: 100%;
 }
 
-@media screen and (max-width: 1279px) {
-  /* line 18, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__bg {
-    display: none;
-  }
-}
-
-/* line 29, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__bg img {
-  z-index: 0;
+/* line 20, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__bg span {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  max-width: 100%;
-  height: auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
-@media screen and (max-width: 1599px) {
-  /* line 29, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__bg img {
-    max-width: 125px;
-  }
+/* line 24, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__bg span:nth-of-type(1) {
+  top: -30px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  border: 50px solid rgba(255, 255, 255, 0.15);
 }
 
-@media screen and (max-width: 1439px) {
-  /* line 29, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__bg img {
-    max-width: 100px;
-  }
+/* line 32, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__bg span:nth-of-type(2) {
+  right: -50px;
+  bottom: -150px;
+  width: 450px;
+  height: 450px;
+  border: 150px solid rgba(255, 255, 255, 0.15);
 }
 
-@media screen and (max-width: 1439px) {
-  /* line 29, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__bg img {
-    max-width: 75px;
-  }
+/* line 42, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__wrapper {
+  z-index: 2;
+  position: relative;
 }
 
-/* line 49, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block {
-  width: 100%;
-  max-width: 325px;
+/* line 47, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__title {
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 49, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block {
-    max-width: 100%;
+  /* line 47, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced__title {
+    padding-bottom: 20px;
   }
 }
 
-/* line 56, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-wrapper {
-  z-index: 2;
+/* line 54, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__line {
+  width: 100%;
+  max-width: 60px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  background-color: #29DE9C;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced__line {
+    max-width: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 68, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced .advantages__block {
+    padding: 30px 25px 30px 35px;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 74, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced .advantages__block-wrapper {
+  max-width: 1040px;
+}
+
+/* line 78, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced .advantages__block-img {
+  margin-left: 0;
+}
+
+/* line 82, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced .advantages__block-title, .retouch-convinced .advantages__block-desc {
+  text-align: left;
+}
+
+/* line 1, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 9, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn .c-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 16, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper {
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 75px;
+  -webkit-border-radius: 0 120px 0 120px;
+          border-radius: 0 120px 0 120px;
+  -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
+          box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
+  background-image: -webkit-linear-gradient(261deg, #8181FF 19%, #5153DC 100%);
+  background-image: -o-linear-gradient(261deg, #8181FF 19%, #5153DC 100%);
+  background-image: linear-gradient(189deg, #8181FF 19%, #5153DC 100%);
 }
 
-/* line 63, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-wrapper > div {
-  width: 100%;
-  max-width: -webkit-calc((100% - 50px) / 3);
-  max-width: calc((100% - 50px) / 3);
-  padding-bottom: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 63, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block-wrapper > div {
-    max-width: 100%;
-    padding-bottom: 75px;
+@media screen and (max-width: 1279px) {
+  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
-/* line 74, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-body, .retouch-benefits__block-footer {
-  padding-right: 30px;
+@media screen and (max-width: 1023px) {
+  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper {
+    -webkit-border-radius: 0 50px 0 50px;
+            border-radius: 0 50px 0 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 74, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block-body, .retouch-benefits__block-footer {
+  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 60px 30px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+  }
+}
+
+/* line 38, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 46, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-bg span {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 52, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-bg span:nth-of-type(1) {
+  top: -180px;
+  left: -130px;
+  border: 120px solid rgba(169, 171, 254, 0.2);
+}
+
+/* line 58, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-bg span:nth-of-type(2) {
+  bottom: -105px;
+  right: -105px;
+  border: 100px solid rgba(169, 171, 254, 0.2);
+}
+
+/* line 66, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-left, .retouch-learn__wrapper-right {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 72, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 85px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 72, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper-left {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 72, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper-left {
     padding-right: 0;
   }
 }
 
-/* line 82, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-head {
+/* line 85, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-right {
+  width: 400px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 85, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper-right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 85, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper-right {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 95, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__wrapper-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 95, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__wrapper-right img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* line 109, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__title {
+  padding-bottom: 40px;
+  color: #FFFFFF;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 109, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__title {
+    text-align: center;
+  }
+}
+
+/* line 118, src/scss/_components/retouch/_retouch--learn.scss */
+.retouch-learn__btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  min-height: 230px;
-}
-
-/* line 88, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-body {
-  padding-top: 30px;
-}
-
-/* line 95, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 102, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-title {
-  padding-bottom: 15px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #091E42;
-  line-height: 30px;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 102, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block-title {
-    font-size: 18px;
-  }
-}
-
-/* line 113, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-subtitle {
-  font-weight: 500;
-  font-size: 19px;
-  color: #5153DC;
-  letter-spacing: 0.5px;
-  text-align: center;
-  line-height: 28px;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 113, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block-subtitle {
-    font-size: 17px;
-  }
-}
-
-/* line 125, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-line {
-  width: 100%;
-  max-width: 60px;
-  height: 5px;
-  margin-bottom: 25px;
-  background-color: #29DE9C;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block-line {
-    max-width: 50px;
+  /* line 118, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn__btn {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-/* line 136, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-desc {
-  padding-bottom: 30px;
-  font-size: 16px;
-  color: #344563;
-  letter-spacing: 0.5px;
-  line-height: 28px;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 136, src/scss/_components/retouch/_retouch.scss */
-  .retouch-benefits__block-desc {
-    font-size: 15px;
+@-webkit-keyframes animateLinkCorner {
+  0% {
+    -webkit-transform: rotate(90deg) translateX(10px);
+            transform: rotate(90deg) translateX(10px);
+  }
+  50% {
+    -webkit-transform: rotate(90deg) translateX(0px);
+            transform: rotate(90deg) translateX(0px);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translateX(10px);
+            transform: rotate(90deg) translateX(10px);
   }
 }
 
-/* line 147, src/scss/_components/retouch/_retouch.scss */
-.retouch-benefits__block-info {
-  font-size: 14px;
-  color: #00AAFF;
-  letter-spacing: 0.5px;
-  line-height: 25px;
+@keyframes animateLinkCorner {
+  0% {
+    -webkit-transform: rotate(90deg) translateX(10px);
+            transform: rotate(90deg) translateX(10px);
+  }
+  50% {
+    -webkit-transform: rotate(90deg) translateX(0px);
+            transform: rotate(90deg) translateX(0px);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translateX(10px);
+            transform: rotate(90deg) translateX(10px);
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */

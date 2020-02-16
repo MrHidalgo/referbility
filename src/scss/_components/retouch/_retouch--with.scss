@@ -1,6 +1,7 @@
 &-with {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #ffffff;
   @include adaptive(767) {
     padding-top: 50px;
     padding-bottom: 50px;
