@@ -1,0 +1,393 @@
+// SECTION :: START
+
+.register-form {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 111px;
+    @include adaptive(767) {
+      flex-direction: column-reverse;
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    &-left {
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      padding-right: 100px;
+      @include adaptive(1279) {
+        padding-right: 30px;
+      }
+      @include adaptive(767) {
+        padding-right: 0;
+      }
+
+      &.register-form__wrapper-left--half {
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+      }
+    }
+
+    &-right {
+      width: 470px;
+      @include adaptive(1023) {
+        width: 350px;
+      }
+      @include adaptive(767) {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+
+      &.register-form__wrapper-right--hide {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 40px 50px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: solid 1px #dfdfff;
+    box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+    @include adaptive(1023) {
+      padding: 30px 20px;
+    }
+
+    &--referrer {
+      box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+      border: solid 1px #dfdfff;
+
+      .register-form__info {
+        &-title {
+          color: #7650b4;
+        }
+
+        &-circle {
+          box-shadow: 0 20px 40px 0 rgba(213, 184, 255, 0.3);
+          background-image: linear-gradient(202deg, #a790dd 192%, #7650b4 24%, #7650b4 24%);
+        }
+      }
+    }
+
+    &-title {
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #5153dc;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 1px solid #dfe1e6;
+
+      &--center {
+        align-items: center;
+      }
+
+      &:last-of-type {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      > div {
+        &:nth-of-type(1) {
+          width: 80px;
+        }
+        &:nth-of-type(2) {
+          flex: 1;
+          min-width: 1px;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-circle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.2);
+      background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+
+      .icon-font {
+        font-size: 24px;
+        color: $c-white;
+      }
+    }
+
+    &-desc {
+      font-size: 15px;
+      line-height: 1.67;
+      letter-spacing: 0.5px;
+      color: #344563;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+      padding-bottom: 20px;
+
+      &-0 {
+        padding-bottom: 30px;
+
+        &:not(:first-of-type) {
+          padding-top: 30px;
+        }
+
+        p {
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          color: #091e42;
+          @include adaptive(767) {
+            font-size: 26px;
+          }
+        }
+      }
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    &-input {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #091e42;
+      }
+
+      input {
+        outline: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 53px;
+        padding: 0 25px;
+        border-radius: 4px;
+        box-shadow: none;
+        border: none;
+        background-color: #ecebf6;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #091e42;
+        @include inputPlaceholder {
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          color: rgba(#091e42, 0.6);
+        }
+      }
+    }
+
+    &-select {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #091e42;
+      }
+
+      select {
+        outline: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 53px;
+        padding: 0 25px;
+        border-radius: 4px;
+        box-shadow: none;
+        border: none;
+        background-color: #ecebf6;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #091e42;
+      }
+    }
+
+    &-file {
+      > p {
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #091e42;
+      }
+
+      .c-modal {
+        &__browse {
+          position: relative;
+
+          input {
+            opacity: 0;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          label {
+            cursor: pointer;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            padding: 6px 6px 6px 0;
+            height: 53px;
+            border-radius: 4px;
+            color: #ffffff;
+            will-change: background-color;
+            @include transition(background-color);
+            @include adaptive(767) {
+              width: 60px;
+            }
+
+            a {
+              z-index: 2;
+              position: relative;
+              width: 100%;
+              height: 100%;
+              border-radius: 4px;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 1;
+              letter-spacing: 1px;
+              text-align: center;
+              text-transform: uppercase;
+              @include adaptive(767) {
+                display: none;
+              }
+            }
+          }
+
+          p {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            height: 53px;
+            line-height: 53px;
+            border-radius: 4px;
+            background-color: #ecebf6;
+            letter-spacing: 0.5px;
+            color: #091e42;
+
+            span {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: block;
+              padding: 0 165px 0 25px;
+              @include adaptive(767) {
+                padding-right: 75px;
+              }
+            }
+          }
+
+          &-info {
+            padding-top: 15px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #091e42;
+          }
+        }
+      }
+    }
+
+    &-checkbox {
+      label {
+        display: flex;
+        cursor: pointer;
+
+        p {
+          &:nth-of-type(1) {
+            width: 35px;
+          }
+
+          &:nth-of-type(2) {
+            flex: 1;
+            min-width: 1px;
+            max-width: 100%;
+          }
+        }
+
+        span {
+          font-size: 14px;
+          line-height: 1.43;
+          letter-spacing: 0.5px;
+          color: #344563;
+
+          a {
+            color: #344563;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+
+      .c-btn {
+        width: 100%;
+        max-width: 300px;
+
+        &--bg-blue {
+          background-image: linear-gradient(165deg, #7650b4 -116%, #2d1c40 232%);
+
+          &:after {
+            background-color: lighten(#2d1c40, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// SECTION :: END

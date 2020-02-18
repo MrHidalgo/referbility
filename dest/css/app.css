@@ -360,7 +360,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-chevron-bottom:before, .icon-comment-delete:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-review-1:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-thumbs-up:before, .icon-timer:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
+.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-check-mark:before, .icon-chevron-bottom:before, .icon-comment-delete:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-review-1:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-thumbs-up:before, .icon-timer:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -371,229 +371,234 @@
   text-transform: none;
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-arrow-bottom:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-bar-chart:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-bell-alert:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-bell:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-blogging:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-building:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-check:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-dates:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-delete:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-call-calling:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-case:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
+/* line 173, src/scss/_generated/_spriteFont.scss */
 .icon-chat:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-chevron-bottom:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-check-mark:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-comment-delete:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-chevron-bottom:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-conversion:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-comment-delete:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-corner:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-conversion:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-creditcard-face:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-corner:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-cup:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-creditcard-face:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-cv:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-cup:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-data:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-cv:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-date:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-data:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-email-star:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-date:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-experience:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-email-star:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-experience:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-file-text:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-flag:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-file-text:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-flag:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-mail:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-market-1:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-mail:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-medal:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-market-1:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-more:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-medal:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-pencil-create:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-more:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-pin:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-pencil-create:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-plus:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-pin:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-profile:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-plus:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-review-1:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-profile:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-review-1:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-seo:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-settings:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-seo:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-thumbs-up:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-settings:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-timer:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-thumbs-up:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-timer:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-wallet:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
 }
 
-/* line 170, src/scss/_generated/_spriteFont.scss */
-.icon-x:before {
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-wallet:before {
   content: "";
+}
+
+/* line 173, src/scss/_generated/_spriteFont.scss */
+.icon-x:before {
+  content: "";
 }
 
 @font-face {
@@ -19017,6 +19022,619 @@ picture {
 .register-main__desc a {
   font-weight: 700;
   color: #ffffff;
+}
+
+/* line 4, src/scss/_components/sign/_form.scss */
+.register-form__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 111px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/sign/_form.scss */
+  .register-form__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+/* line 15, src/scss/_components/sign/_form.scss */
+.register-form__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 15, src/scss/_components/sign/_form.scss */
+  .register-form__wrapper-left {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 15, src/scss/_components/sign/_form.scss */
+  .register-form__wrapper-left {
+    padding-right: 0;
+  }
+}
+
+/* line 27, src/scss/_components/sign/_form.scss */
+.register-form__wrapper-left.register-form__wrapper-left--half {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0;
+}
+
+/* line 36, src/scss/_components/sign/_form.scss */
+.register-form__wrapper-right {
+  width: 470px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 36, src/scss/_components/sign/_form.scss */
+  .register-form__wrapper-right {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 36, src/scss/_components/sign/_form.scss */
+  .register-form__wrapper-right {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 46, src/scss/_components/sign/_form.scss */
+.register-form__wrapper-right.register-form__wrapper-right--hide {
+  display: none;
+}
+
+/* line 52, src/scss/_components/sign/_form.scss */
+.register-form__info {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 40px 40px 50px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background-color: #ffffff;
+  border: solid 1px #dfdfff;
+  -webkit-box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+          box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 52, src/scss/_components/sign/_form.scss */
+  .register-form__info {
+    padding: 30px 20px;
+  }
+}
+
+/* line 66, src/scss/_components/sign/_form.scss */
+.register-form__info--referrer {
+  -webkit-box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+          box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+  border: solid 1px #dfdfff;
+}
+
+/* line 71, src/scss/_components/sign/_form.scss */
+.register-form__info--referrer .register-form__info-title {
+  color: #7650b4;
+}
+
+/* line 75, src/scss/_components/sign/_form.scss */
+.register-form__info--referrer .register-form__info-circle {
+  -webkit-box-shadow: 0 20px 40px 0 rgba(213, 184, 255, 0.3);
+          box-shadow: 0 20px 40px 0 rgba(213, 184, 255, 0.3);
+  background-image: -webkit-linear-gradient(248deg, #a790dd 192%, #7650b4 24%, #7650b4 24%);
+  background-image: -o-linear-gradient(248deg, #a790dd 192%, #7650b4 24%, #7650b4 24%);
+  background-image: linear-gradient(202deg, #a790dd 192%, #7650b4 24%, #7650b4 24%);
+}
+
+/* line 82, src/scss/_components/sign/_form.scss */
+.register-form__info-title {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #5153dc;
+}
+
+/* line 92, src/scss/_components/sign/_form.scss */
+.register-form__info-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 97, src/scss/_components/sign/_form.scss */
+.register-form__info-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+/* line 103, src/scss/_components/sign/_form.scss */
+.register-form__info-item--center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 107, src/scss/_components/sign/_form.scss */
+.register-form__info-item:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* line 113, src/scss/_components/sign/_form.scss */
+.register-form__info-item > div:nth-of-type(1) {
+  width: 80px;
+}
+
+/* line 116, src/scss/_components/sign/_form.scss */
+.register-form__info-item > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 124, src/scss/_components/sign/_form.scss */
+.register-form__info-circle {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.2);
+          box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.2);
+  background-image: -webkit-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: -o-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+}
+
+/* line 135, src/scss/_components/sign/_form.scss */
+.register-form__info-circle .icon-font {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* line 141, src/scss/_components/sign/_form.scss */
+.register-form__info-desc {
+  font-size: 15px;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #344563;
+}
+
+/* line 147, src/scss/_components/sign/_form.scss */
+.register-form__info-desc strong {
+  font-weight: 500;
+}
+
+/* line 153, src/scss/_components/sign/_form.scss */
+.register-form__field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 157, src/scss/_components/sign/_form.scss */
+.register-form__field-row {
+  padding-bottom: 20px;
+}
+
+/* line 160, src/scss/_components/sign/_form.scss */
+.register-form__field-row-0 {
+  padding-bottom: 30px;
+}
+
+/* line 163, src/scss/_components/sign/_form.scss */
+.register-form__field-row-0:not(:first-of-type) {
+  padding-top: 30px;
+}
+
+/* line 167, src/scss/_components/sign/_form.scss */
+.register-form__field-row-0 p {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 167, src/scss/_components/sign/_form.scss */
+  .register-form__field-row-0 p {
+    font-size: 26px;
+  }
+}
+
+/* line 178, src/scss/_components/sign/_form.scss */
+.register-form__field-row:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 183, src/scss/_components/sign/_form.scss */
+.register-form__field-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 187, src/scss/_components/sign/_form.scss */
+.register-form__field-input label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 195, src/scss/_components/sign/_form.scss */
+.register-form__field-input input {
+  outline: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 53px;
+  padding: 0 25px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background-color: #ecebf6;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.register-form__field-input input.placeholder {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: rgba(9, 30, 66, 0.6);
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.register-form__field-input input:-moz-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: rgba(9, 30, 66, 0.6);
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.register-form__field-input input::-moz-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: rgba(9, 30, 66, 0.6);
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.register-form__field-input input:-ms-input-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: rgba(9, 30, 66, 0.6);
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.register-form__field-input input::-webkit-input-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: rgba(9, 30, 66, 0.6);
+}
+
+/* line 217, src/scss/_components/sign/_form.scss */
+.register-form__field-select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 221, src/scss/_components/sign/_form.scss */
+.register-form__field-select label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 229, src/scss/_components/sign/_form.scss */
+.register-form__field-select select {
+  outline: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 53px;
+  padding: 0 25px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background-color: #ecebf6;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 247, src/scss/_components/sign/_form.scss */
+.register-form__field-file > p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 256, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse {
+  position: relative;
+}
+
+/* line 259, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 269, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse label {
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  padding: 6px 6px 6px 0;
+  height: 53px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  color: #ffffff;
+  will-change: background-color;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 269, src/scss/_components/sign/_form.scss */
+  .register-form__field-file .c-modal__browse label {
+    width: 60px;
+  }
+}
+
+/* line 289, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse label a {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 289, src/scss/_components/sign/_form.scss */
+  .register-form__field-file .c-modal__browse label a {
+    display: none;
+  }
+}
+
+/* line 307, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse p {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 53px;
+  line-height: 53px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #ecebf6;
+  letter-spacing: 0.5px;
+  color: #091e42;
+}
+
+/* line 318, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse p span {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: block;
+  padding: 0 165px 0 25px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 318, src/scss/_components/sign/_form.scss */
+  .register-form__field-file .c-modal__browse p span {
+    padding-right: 75px;
+  }
+}
+
+/* line 330, src/scss/_components/sign/_form.scss */
+.register-form__field-file .c-modal__browse-info {
+  padding-top: 15px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #091e42;
+}
+
+/* line 342, src/scss/_components/sign/_form.scss */
+.register-form__field-checkbox label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+/* line 347, src/scss/_components/sign/_form.scss */
+.register-form__field-checkbox label p:nth-of-type(1) {
+  width: 35px;
+}
+
+/* line 351, src/scss/_components/sign/_form.scss */
+.register-form__field-checkbox label p:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 358, src/scss/_components/sign/_form.scss */
+.register-form__field-checkbox label span {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.5px;
+  color: #344563;
+}
+
+/* line 364, src/scss/_components/sign/_form.scss */
+.register-form__field-checkbox label span a {
+  color: #344563;
+  font-weight: 700;
+}
+
+/* line 372, src/scss/_components/sign/_form.scss */
+.register-form__field-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+/* line 377, src/scss/_components/sign/_form.scss */
+.register-form__field-btn .c-btn {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* line 381, src/scss/_components/sign/_form.scss */
+.register-form__field-btn .c-btn--bg-blue {
+  background-image: -webkit-linear-gradient(285deg, #7650b4 -116%, #2d1c40 232%);
+  background-image: -o-linear-gradient(285deg, #7650b4 -116%, #2d1c40 232%);
+  background-image: linear-gradient(165deg, #7650b4 -116%, #2d1c40 232%);
+}
+
+/* line 384, src/scss/_components/sign/_form.scss */
+.register-form__field-btn .c-btn--bg-blue:after {
+  background-color: #392452;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

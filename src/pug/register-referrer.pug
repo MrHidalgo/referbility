@@ -5,6 +5,7 @@ pageClassName: p-register
 pageSubClassName: p-register-referrer
 headerGrid: true
 boardMod: true
+referrerMod: true
 ---
 extends shared/_layout
 
@@ -17,6 +18,7 @@ block footer
   include components/_footer--referrer
 
 block content
-  div.body.body--start(class!= pageClassName)
+  div.body.body--start(class!= pageClassName + ' ' + pageSubClassName)
 
     include components/sign/_main-referrer
+    include components/sign/_form

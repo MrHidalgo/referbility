@@ -1,0 +1,20 @@
+// SECTION :: START
+
+section#register-form.register-form
+  .c-grid
+    .register-form__wrapper
+      .register-form__wrapper-left(class!= (referrerMod === true)?'':'register-form__wrapper-left--half')
+
+        if(referrerMod === true)
+          include _form-field--referrer
+        else
+          include _form-field--employer
+
+      .register-form__wrapper-right(class!= (referrerMod === true)?'':'register-form__wrapper-right--hide')
+
+        if(referrerMod === true)
+          include _form-info--referrer
+        else
+          //include _form-info--employer
+
+// SECTION :: END

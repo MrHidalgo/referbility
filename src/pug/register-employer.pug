@@ -17,6 +17,7 @@ block footer
   include components/_footer--mod
 
 block content
-  div.body.body--start(class!= pageClassName)
+  div.body.body--start(class!= pageClassName + ' ' + pageSubClassName)
 
     include components/sign/_main-employer
+    include components/sign/_form

@@ -51,7 +51,7 @@
       </div>
     </header>
     <!-- HEADER :: END-->
-    <div class="body body--start p-register">
+    <div class="body body--start p-register p-register-employer">
       <!-- SECTION main :: START-->
       <section class="register-main" id="register-main">
         <div class="c-grid-fluid">
@@ -60,12 +60,103 @@
             <div class="register-main__wrapper-content">
               <p class="register-main__badge">Employer</p>
               <h1 class="register-main__title">Create an Account</h1>
-              <p class="register-main__desc">Are you referring or applying directly for job? <a href='#'>Click Here</a></p>
+              <p class="register-main__desc">Are you referring candidates to jobs? <a href='#'>Click Here</a></p>
             </div>
           </div>
         </div>
       </section>
       <!-- SECTION main :: END-->
+      <!-- SECTION :: START-->
+      <section class="register-form" id="register-form">
+        <div class="c-grid">
+          <div class="register-form__wrapper">
+            <div class="register-form__wrapper-left register-form__wrapper-left--half">
+              <div class="register-form__field">
+                <div class="register-form__field-row register-form__field-row-0">
+                  <p>Contact Information</p>
+                </div>
+                <div class="register-form__field-row register-form__field-row-1">
+                  <div class="register-form__field-input">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="Type your full name">
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-2">
+                  <div class="register-form__field-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Type your email address">
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-3">
+                  <div class="register-form__field-input">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" id="phone_number" name="phone_number" placeholder="Type your phone number">
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-4">
+                  <div class="register-form__field-input">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Type your city">
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-5">
+                  <div class="register-form__field-select">
+                    <label for="company_name">Company Name</label>
+                    <select id="company_name" name="company_name" placeholder="Type your city">
+                      <option value="">Company Name 1</option>
+                      <option value="">Company Name 2</option>
+                      <option value="">Company Name 3</option>
+                      <option value="">Company Name 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-6">
+                  <div class="register-form__field-file">
+                    <p>Company Logo</p>
+                    <div class="c-modal__browse">
+                      <input id="file" type="file" name="" inputfile-js>
+                      <label for="file"><a class="c-btn c-btn--bg c-btn--bg-gradient"><span>Browse</span></a></label>
+                      <p><span>Browse your logo</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-0">
+                  <p>Account Details</p>
+                </div>
+                <div class="register-form__field-row register-form__field-row-7">
+                  <div class="register-form__field-input">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" placeholder="Type your password">
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-8">
+                  <div class="register-form__field-input">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="text" id="confirm_password" name="confirm_password" placeholder="Re-type your password">
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-9">
+                  <div class="register-form__field-checkbox">
+                    <label for="i_have_read">
+                      <p>
+                        <input type="checkbox" id="i_have_read" name="i_have_read">
+                      </p>
+                      <p><span>I have read, understood, and will adhere to <a href='#'>referbility.com's</a> Terms & Conditions and Privacy Policy</span></p>
+                    </label>
+                  </div>
+                </div>
+                <div class="register-form__field-row register-form__field-row-10">
+                  <div class="register-form__field-btn"><a class="c-btn c-btn--bg c-btn--bg-gradient" href="#"><span>Create My Account</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="register-form__wrapper-right register-form__wrapper-right--hide">
+              <!--include _form-info--employer-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer footer--mod" id="footer">

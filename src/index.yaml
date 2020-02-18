@@ -3,10 +3,10 @@ ProjectTitle: Referbility
 PageList:
 - file: register-referrer.html
   titleName: Register - Referrer
-  ready: 1
+  ready: 90
 - file: register-employer.html
   titleName: Register - Employer
-  ready: 1
+  ready: 90
 - file: retouch.html
   titleName: Landing - Retouch
   ready: 100
