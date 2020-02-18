@@ -14,5 +14,5 @@
 
 //- ========================
 mixin modal(idMod, contentModal)
-  .c-modal.mfp-hide.mfp-with-anim(id!= idMod)
+  .c-modal.mfp-hide.mfp-with-anim(id!= idMod class!= idMod)
     +#{contentModal}

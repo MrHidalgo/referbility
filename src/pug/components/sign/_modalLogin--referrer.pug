@@ -1,0 +1,41 @@
+// MODAL :: START
+
+mixin modalContent()
+  .c-modal__head
+    .c-modal__head-bg
+      span
+      span
+
+    .c-modal__head-content
+      p.c-modal__badge Referrer
+      p.c-modal__title Login
+
+  .c-modal__body
+
+    .register-form__field
+      .register-form__field-row.register-form__field-row-1
+        .register-form__field-input
+          label(for='email') Email
+          input(type='text' id='email' name='email' placeholder='Type your email / Username')
+
+      .register-form__field-row.register-form__field-row-2
+        .register-form__field-input
+          label(for='passsword') Password
+          input(type='passsword' id='passsword' name='passsword' placeholder='Type your password')
+
+      .register-form__field-row.register-form__field-row-3
+        .register-form__field-btn
+          a.c-btn.c-btn--bg.c-btn--bg-blue(href="#")
+            span Login
+
+      .register-form__field-row.register-form__field-row-4
+        .register-form__field-additional
+          a(href="#") Forgot Password?
+          span
+          p!= "Not registered yet? <a href='#'>Create an Account</a>"
+
+  .c-modal__footer
+
++modal('loginReferrer', 'modalContent')
+
+// MODAL :: END

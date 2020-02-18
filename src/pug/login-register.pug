@@ -1,0 +1,33 @@
+---
+title: Referbility | Job Detail
+
+pageClassName: p-jobDetail
+---
+extends shared/_layout
+
+block header
+block footer
+block modal
+  include components/sign/_modalLogin--referrer
+  include components/sign/_modalLogin--employer
+
+block menu
+block content
+  div.body.body--start(class!= pageClassName)
+
+    br
+    a(href='#loginReferrer' title='' data-effect='mfp-zoom-in' popup-js) Login Referrer
+    br
+    a(href='#loginEmployer' title='' data-effect='mfp-zoom-in' popup-js) Login Employer
+    br
+    hr
+    br
+    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Referrer
+    br
+    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Employer
+    br
+    hr
+    br
+    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Alt Referrer
+    br
+    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Alt Employer

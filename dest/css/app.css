@@ -19607,6 +19607,88 @@ picture {
 }
 
 /* line 372, src/scss/_components/sign/_form.scss */
+.register-form__field-additional {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 377, src/scss/_components/sign/_form.scss */
+.register-form__field-additional p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #344563;
+}
+
+/* line 383, src/scss/_components/sign/_form.scss */
+.register-form__field-additional span {
+  width: 2px;
+  height: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #dfe1e6;
+}
+
+/* line 391, src/scss/_components/sign/_form.scss */
+.register-form__field-additional a {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #5153dc;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 391, src/scss/_components/sign/_form.scss */
+  .register-form__field-additional a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 401, src/scss/_components/sign/_form.scss */
+.register-form__field-additional a:before, .register-form__field-additional a:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #5153dc;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 412, src/scss/_components/sign/_form.scss */
+.register-form__field-additional a:before {
+  left: 50%;
+}
+
+/* line 415, src/scss/_components/sign/_form.scss */
+.register-form__field-additional a:after {
+  right: 50%;
+}
+
+/* line 420, src/scss/_components/sign/_form.scss */
+.register-form__field-additional a:hover:before, .register-form__field-additional a:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 429, src/scss/_components/sign/_form.scss */
 .register-form__field-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -19619,22 +19701,193 @@ picture {
   padding-top: 20px;
 }
 
-/* line 377, src/scss/_components/sign/_form.scss */
+/* line 434, src/scss/_components/sign/_form.scss */
 .register-form__field-btn .c-btn {
   width: 100%;
   max-width: 300px;
+  height: 50px;
+  font-size: 16px;
 }
 
-/* line 381, src/scss/_components/sign/_form.scss */
+/* line 440, src/scss/_components/sign/_form.scss */
 .register-form__field-btn .c-btn--bg-blue {
   background-image: -webkit-linear-gradient(285deg, #7650b4 -116%, #2d1c40 232%);
   background-image: -o-linear-gradient(285deg, #7650b4 -116%, #2d1c40 232%);
   background-image: linear-gradient(165deg, #7650b4 -116%, #2d1c40 232%);
 }
 
-/* line 384, src/scss/_components/sign/_form.scss */
+/* line 443, src/scss/_components/sign/_form.scss */
 .register-form__field-btn .c-btn--bg-blue:after {
   background-color: #392452;
+}
+
+/* line 4, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer, .c-modal.loginEmployer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-box-shadow: 0 30px 100px 0 rgba(9, 30, 66, 0.08);
+          box-shadow: 0 30px 100px 0 rgba(9, 30, 66, 0.08);
+}
+
+/* line 13, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .mfp-close, .c-modal.loginEmployer .mfp-close {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 13, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .mfp-close, .c-modal.loginEmployer .mfp-close {
+    right: 20px;
+  }
+}
+
+/* line 31, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head, .c-modal.loginEmployer .c-modal__head {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 35, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg, .c-modal.loginEmployer .c-modal__head-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 43, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg span, .c-modal.loginEmployer .c-modal__head-bg span {
+  opacity: 0.7;
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: solid 130px rgba(255, 255, 255, 0.1);
+}
+
+/* line 51, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(1), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(1) {
+  left: 0;
+  bottom: -180px;
+}
+
+/* line 55, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(2), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(2) {
+  top: -150px;
+  right: -150px;
+}
+
+/* line 62, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-content, .c-modal.loginEmployer .c-modal__head-content {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 190px;
+}
+
+/* line 73, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__body, .c-modal.loginEmployer .c-modal__body {
+  padding: 40px 60px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 73, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__body, .c-modal.loginEmployer .c-modal__body {
+    padding: 30px 20px;
+  }
+}
+
+/* line 80, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__badge, .c-modal.loginEmployer .c-modal__badge {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 80, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__badge, .c-modal.loginEmployer .c-modal__badge {
+    font-size: 14px;
+  }
+}
+
+/* line 92, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__title, .c-modal.loginEmployer .c-modal__title {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 92, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__title, .c-modal.loginEmployer .c-modal__title {
+    font-size: 45px;
+  }
+}
+
+/* line 109, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head {
+  -webkit-box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
+          box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
+  background: -webkit-linear-gradient(233deg, #a790dd 0%, #7650b4 100%);
+  background: -o-linear-gradient(233deg, #a790dd 0%, #7650b4 100%);
+  background: linear-gradient(217deg, #a790dd 0%, #7650b4 100%);
+}
+
+/* line 118, src/scss/_components/sign/_modal.scss */
+.c-modal.loginEmployer .c-modal__head {
+  -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
+          box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
+  background-image: -webkit-linear-gradient(199deg, #8181ff 68%, #5153dc);
+  background-image: -o-linear-gradient(199deg, #8181ff 68%, #5153dc);
+  background-image: linear-gradient(251deg, #8181ff 68%, #5153dc);
 }
 
 /*# sourceMappingURL=maps/app.css.map */
