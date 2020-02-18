@@ -10,6 +10,9 @@ block footer
 block modal
   include components/sign/_modalLogin--referrer
   include components/sign/_modalLogin--employer
+  include components/sign/_modalRegister--referrer
+  include components/sign/_modalRegister--employer
+  include components/sign/_modalAltRegister--referrer
 
 block menu
 block content
@@ -22,12 +25,12 @@ block content
     br
     hr
     br
-    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Referrer
+    a(href='#registerReferrer' title='' data-effect='mfp-zoom-in' popup-js) Register Referrer
     br
-    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Employer
+    a(href='#registerEmployer' title='' data-effect='mfp-zoom-in' popup-js) Register Employer
     br
     hr
     br
-    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Alt Referrer
+    a(href='#registerAltReferrer' title='' data-effect='mfp-zoom-in' popup-js) Register Alt Referrer
     br
-    a(href='#' title='' data-effect='mfp-zoom-in' popup-js) Register Alt Employer
+    a(href='#registerEmployer' title='' data-effect='mfp-zoom-in' popup-js) Register Alt Employer

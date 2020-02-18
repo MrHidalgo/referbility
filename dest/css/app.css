@@ -19722,7 +19722,7 @@ picture {
 }
 
 /* line 4, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer, .c-modal.loginEmployer {
+.c-modal.loginReferrer, .c-modal.loginEmployer, .c-modal.registerReferrer, .c-modal.registerEmployer, .c-modal.registerAltReferrer {
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -19733,8 +19733,8 @@ picture {
           box-shadow: 0 30px 100px 0 rgba(9, 30, 66, 0.08);
 }
 
-/* line 13, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .mfp-close, .c-modal.loginEmployer .mfp-close {
+/* line 16, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .mfp-close, .c-modal.loginEmployer .mfp-close, .c-modal.registerReferrer .mfp-close, .c-modal.registerEmployer .mfp-close, .c-modal.registerAltReferrer .mfp-close {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -19758,20 +19758,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 13, src/scss/_components/sign/_modal.scss */
-  .c-modal.loginReferrer .mfp-close, .c-modal.loginEmployer .mfp-close {
+  /* line 16, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .mfp-close, .c-modal.loginEmployer .mfp-close, .c-modal.registerReferrer .mfp-close, .c-modal.registerEmployer .mfp-close, .c-modal.registerAltReferrer .mfp-close {
     right: 20px;
   }
 }
 
-/* line 31, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head, .c-modal.loginEmployer .c-modal__head {
+/* line 34, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head, .c-modal.loginEmployer .c-modal__head, .c-modal.registerReferrer .c-modal__head, .c-modal.registerEmployer .c-modal__head, .c-modal.registerAltReferrer .c-modal__head {
   overflow: hidden;
   position: relative;
 }
 
-/* line 35, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head-bg, .c-modal.loginEmployer .c-modal__head-bg {
+/* line 38, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg, .c-modal.loginEmployer .c-modal__head-bg, .c-modal.registerReferrer .c-modal__head-bg, .c-modal.registerEmployer .c-modal__head-bg, .c-modal.registerAltReferrer .c-modal__head-bg {
   z-index: 0;
   position: absolute;
   top: 0;
@@ -19780,8 +19780,8 @@ picture {
   height: 100%;
 }
 
-/* line 43, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head-bg span, .c-modal.loginEmployer .c-modal__head-bg span {
+/* line 46, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg span, .c-modal.loginEmployer .c-modal__head-bg span, .c-modal.registerReferrer .c-modal__head-bg span, .c-modal.registerEmployer .c-modal__head-bg span, .c-modal.registerAltReferrer .c-modal__head-bg span {
   opacity: 0.7;
   position: absolute;
   width: 360px;
@@ -19791,20 +19791,34 @@ picture {
   border: solid 130px rgba(255, 255, 255, 0.1);
 }
 
-/* line 51, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(1), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(1) {
+/* line 54, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(1), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(1), .c-modal.registerReferrer .c-modal__head-bg span:nth-of-type(1), .c-modal.registerEmployer .c-modal__head-bg span:nth-of-type(1), .c-modal.registerAltReferrer .c-modal__head-bg span:nth-of-type(1) {
   left: 0;
   bottom: -180px;
 }
 
-/* line 55, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(2), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(2) {
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(1), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(1), .c-modal.registerReferrer .c-modal__head-bg span:nth-of-type(1), .c-modal.registerEmployer .c-modal__head-bg span:nth-of-type(1), .c-modal.registerAltReferrer .c-modal__head-bg span:nth-of-type(1) {
+    left: -75px;
+  }
+}
+
+/* line 61, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(2), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(2), .c-modal.registerReferrer .c-modal__head-bg span:nth-of-type(2), .c-modal.registerEmployer .c-modal__head-bg span:nth-of-type(2), .c-modal.registerAltReferrer .c-modal__head-bg span:nth-of-type(2) {
   top: -150px;
   right: -150px;
 }
 
-/* line 62, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head-content, .c-modal.loginEmployer .c-modal__head-content {
+@media screen and (max-width: 767px) {
+  /* line 61, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__head-bg span:nth-of-type(2), .c-modal.loginEmployer .c-modal__head-bg span:nth-of-type(2), .c-modal.registerReferrer .c-modal__head-bg span:nth-of-type(2), .c-modal.registerEmployer .c-modal__head-bg span:nth-of-type(2), .c-modal.registerAltReferrer .c-modal__head-bg span:nth-of-type(2) {
+    display: none !important;
+  }
+}
+
+/* line 71, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head-content, .c-modal.loginEmployer .c-modal__head-content, .c-modal.registerReferrer .c-modal__head-content, .c-modal.registerEmployer .c-modal__head-content, .c-modal.registerAltReferrer .c-modal__head-content {
   z-index: 2;
   position: relative;
   display: -webkit-box;
@@ -19827,20 +19841,20 @@ picture {
   min-height: 190px;
 }
 
-/* line 73, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__body, .c-modal.loginEmployer .c-modal__body {
+/* line 82, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__body, .c-modal.loginEmployer .c-modal__body, .c-modal.registerReferrer .c-modal__body, .c-modal.registerEmployer .c-modal__body, .c-modal.registerAltReferrer .c-modal__body {
   padding: 40px 60px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 73, src/scss/_components/sign/_modal.scss */
-  .c-modal.loginReferrer .c-modal__body, .c-modal.loginEmployer .c-modal__body {
+  /* line 82, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__body, .c-modal.loginEmployer .c-modal__body, .c-modal.registerReferrer .c-modal__body, .c-modal.registerEmployer .c-modal__body, .c-modal.registerAltReferrer .c-modal__body {
     padding: 30px 20px;
   }
 }
 
-/* line 80, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__badge, .c-modal.loginEmployer .c-modal__badge {
+/* line 89, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__badge, .c-modal.loginEmployer .c-modal__badge, .c-modal.registerReferrer .c-modal__badge, .c-modal.registerEmployer .c-modal__badge, .c-modal.registerAltReferrer .c-modal__badge {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 4px;
@@ -19850,15 +19864,15 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 80, src/scss/_components/sign/_modal.scss */
-  .c-modal.loginReferrer .c-modal__badge, .c-modal.loginEmployer .c-modal__badge {
+  /* line 89, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__badge, .c-modal.loginEmployer .c-modal__badge, .c-modal.registerReferrer .c-modal__badge, .c-modal.registerEmployer .c-modal__badge, .c-modal.registerAltReferrer .c-modal__badge {
     font-size: 14px;
   }
 }
 
-/* line 92, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__title, .c-modal.loginEmployer .c-modal__title {
-  font-size: 50px;
+/* line 101, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__title, .c-modal.loginEmployer .c-modal__title, .c-modal.registerReferrer .c-modal__title, .c-modal.registerEmployer .c-modal__title, .c-modal.registerAltReferrer .c-modal__title {
+  font-size: 45px;
   font-weight: 800;
   letter-spacing: 0.5px;
   text-align: center;
@@ -19866,14 +19880,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 92, src/scss/_components/sign/_modal.scss */
-  .c-modal.loginReferrer .c-modal__title, .c-modal.loginEmployer .c-modal__title {
-    font-size: 45px;
+  /* line 101, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__title, .c-modal.loginEmployer .c-modal__title, .c-modal.registerReferrer .c-modal__title, .c-modal.registerEmployer .c-modal__title, .c-modal.registerAltReferrer .c-modal__title {
+    font-size: 40px;
   }
 }
 
-/* line 109, src/scss/_components/sign/_modal.scss */
-.c-modal.loginReferrer .c-modal__head {
+/* line 112, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__desc, .c-modal.loginEmployer .c-modal__desc, .c-modal.registerReferrer .c-modal__desc, .c-modal.registerEmployer .c-modal__desc, .c-modal.registerAltReferrer .c-modal__desc {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* line 117, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__desc a, .c-modal.loginEmployer .c-modal__desc a, .c-modal.registerReferrer .c-modal__desc a, .c-modal.registerEmployer .c-modal__desc a, .c-modal.registerAltReferrer .c-modal__desc a {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* line 129, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__head, .c-modal.registerReferrer .c-modal__head, .c-modal.registerAltReferrer .c-modal__head {
   -webkit-box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
           box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
   background: -webkit-linear-gradient(233deg, #a790dd 0%, #7650b4 100%);
@@ -19881,8 +19908,20 @@ picture {
   background: linear-gradient(217deg, #a790dd 0%, #7650b4 100%);
 }
 
-/* line 118, src/scss/_components/sign/_modal.scss */
-.c-modal.loginEmployer .c-modal__head {
+/* line 135, src/scss/_components/sign/_modal.scss */
+.c-modal.loginReferrer .c-modal__body .register-form__info, .c-modal.registerReferrer .c-modal__body .register-form__info, .c-modal.registerAltReferrer .c-modal__body .register-form__info {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 135, src/scss/_components/sign/_modal.scss */
+  .c-modal.loginReferrer .c-modal__body .register-form__info, .c-modal.registerReferrer .c-modal__body .register-form__info, .c-modal.registerAltReferrer .c-modal__body .register-form__info {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 148, src/scss/_components/sign/_modal.scss */
+.c-modal.loginEmployer .c-modal__head, .c-modal.registerEmployer .c-modal__head {
   -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
           box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
   background-image: -webkit-linear-gradient(199deg, #8181ff 68%, #5153dc);

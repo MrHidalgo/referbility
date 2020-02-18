@@ -33,13 +33,13 @@
   </head>
   <body>
     <div class="body body--start p-jobDetail"><br><a href="#loginReferrer" title="" data-effect="mfp-zoom-in" popup-js>Login Referrer</a><br><a href="#loginEmployer" title="" data-effect="mfp-zoom-in" popup-js>Login Employer</a><br>
-      <hr><br><a href="#" title="" data-effect="mfp-zoom-in" popup-js>Register Referrer</a><br><a href="#" title="" data-effect="mfp-zoom-in" popup-js>Register Employer</a><br>
-      <hr><br><a href="#" title="" data-effect="mfp-zoom-in" popup-js>Register Alt Referrer</a><br><a href="#" title="" data-effect="mfp-zoom-in" popup-js>Register Alt Employer</a>
+      <hr><br><a href="#registerReferrer" title="" data-effect="mfp-zoom-in" popup-js>Register Referrer</a><br><a href="#registerEmployer" title="" data-effect="mfp-zoom-in" popup-js>Register Employer</a><br>
+      <hr><br><a href="#registerAltReferrer" title="" data-effect="mfp-zoom-in" popup-js>Register Alt Referrer</a><br><a href="#registerEmployer" title="" data-effect="mfp-zoom-in" popup-js>Register Alt Employer</a>
     </div>
     <!-- MODAL :: START-->
     <div class="c-modal mfp-hide mfp-with-anim loginReferrer" id="loginReferrer">
           <div class="c-modal__head">
-            <div class="c-modal__head-bg"><span></span><span></span></div>
+            <div class="c-modal__head-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.8"></span></div>
             <div class="c-modal__head-content">
               <p class="c-modal__badge">Referrer</p>
               <p class="c-modal__title">Login</p>
@@ -75,7 +75,7 @@
     <!-- MODAL :: START-->
     <div class="c-modal mfp-hide mfp-with-anim loginEmployer" id="loginEmployer">
           <div class="c-modal__head">
-            <div class="c-modal__head-bg"><span></span><span></span></div>
+            <div class="c-modal__head-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.8"></span></div>
             <div class="c-modal__head-content">
               <p class="c-modal__badge">Employer</p>
               <p class="c-modal__title">Login</p>
@@ -102,6 +102,270 @@
                 <div class="register-form__field-additional"><a href="#">Forgot Password?</a><span></span>
                   <p>Not registered yet? <a href='#'>Create an Account</a></p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-modal__footer"></div>
+    </div>
+    <!-- MODAL :: END-->
+    <!-- MODAL :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim registerReferrer" id="registerReferrer">
+          <div class="c-modal__head">
+            <div class="c-modal__head-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.8"></span></div>
+            <div class="c-modal__head-content">
+              <p class="c-modal__badge">Referrer</p>
+              <p class="c-modal__title">Create an Account</p>
+              <p class="c-modal__desc">Are you an employer? <a href='#'>Click Here</a></p>
+            </div>
+          </div>
+          <div class="c-modal__body">
+            <div class="register-form__field">
+              <div class="register-form__field-row register-form__field-row-1">
+                <div class="register-form__field-input">
+                  <label for="first_name">First Name</label>
+                  <input type="text" id="first_name" name="first_name" placeholder="Type your first name">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-2">
+                <div class="register-form__field-input">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name" placeholder="Type your last name">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-3">
+                <div class="register-form__field-input">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Type your email address">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-4">
+                <div class="register-form__field-input">
+                  <label for="password">Password</label>
+                  <input type="text" id="password" name="password" placeholder="Type your password">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-5">
+                <div class="register-form__field-input">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input type="text" id="confirm_password" name="confirm_password" placeholder="Re-type your password">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-6">
+                <div class="register-form__field-checkbox">
+                  <label for="i_have_read">
+                    <p>
+                      <input type="checkbox" id="i_have_read" name="i_have_read">
+                    </p>
+                    <p><span>I have read, understood, and will adhere to <a href='#'>referbility.com's</a> Terms & Conditions and Privacy Policy</span></p>
+                  </label>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-7">
+                <div class="register-form__field-checkbox">
+                  <label for="i_would_like">
+                    <p>
+                      <input type="checkbox" id="i_would_like" name="i_would_like">
+                    </p>
+                    <p><span>I would like to periodically be notified about jobs to refer to by email</span></p>
+                  </label>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-8">
+                <div class="register-form__field-btn"><a class="c-btn c-btn--bg c-btn--bg-blue" href="#"><span>Continue</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="c-modal__footer"></div>
+    </div>
+    <!-- MODAL :: END-->
+    <!-- MODAL :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim registerEmployer" id="registerEmployer">
+          <div class="c-modal__head">
+            <div class="c-modal__head-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.8"></span></div>
+            <div class="c-modal__head-content">
+              <p class="c-modal__badge">Employer</p>
+              <p class="c-modal__title">Create an Account</p>
+              <p class="c-modal__desc">Are you referring or applying directly for job? <a href='#'>Click Here</a></p>
+            </div>
+          </div>
+          <div class="c-modal__body">
+            <div class="register-form__field">
+              <div class="register-form__field-row register-form__field-row-0">
+                <p>Contact Information</p>
+              </div>
+              <div class="register-form__field-row register-form__field-row-1">
+                <div class="register-form__field-input">
+                  <label for="full_name">Full Name</label>
+                  <input type="text" id="full_name" name="full_name" placeholder="Type your full name">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-2">
+                <div class="register-form__field-input">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Type your email address">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-3">
+                <div class="register-form__field-input">
+                  <label for="phone_number">Phone Number</label>
+                  <input type="text" id="phone_number" name="phone_number" placeholder="Type your phone number">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-4">
+                <div class="register-form__field-input">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" placeholder="Type your city">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-5">
+                <div class="register-form__field-select">
+                  <label for="company_name">Company Name</label>
+                  <select id="company_name" name="company_name" placeholder="Type your city">
+                    <option value="">Company Name 1</option>
+                    <option value="">Company Name 2</option>
+                    <option value="">Company Name 3</option>
+                    <option value="">Company Name 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-6">
+                <div class="register-form__field-file">
+                  <p>Company Logo</p>
+                  <div class="c-modal__browse">
+                    <input id="file" type="file" name="" inputfile-js>
+                    <label for="file"><a class="c-btn c-btn--bg c-btn--bg-gradient"><span>Browse</span></a></label>
+                    <p><span>Browse your logo</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-0">
+                <p>Account Details</p>
+              </div>
+              <div class="register-form__field-row register-form__field-row-7">
+                <div class="register-form__field-input">
+                  <label for="password">Password</label>
+                  <input type="text" id="password" name="password" placeholder="Type your password">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-8">
+                <div class="register-form__field-input">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input type="text" id="confirm_password" name="confirm_password" placeholder="Re-type your password">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-9">
+                <div class="register-form__field-checkbox">
+                  <label for="i_have_read">
+                    <p>
+                      <input type="checkbox" id="i_have_read" name="i_have_read">
+                    </p>
+                    <p><span>I have read, understood, and will adhere to <a href='#'>referbility.com's</a> Terms & Conditions and Privacy Policy</span></p>
+                  </label>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-10">
+                <div class="register-form__field-btn"><a class="c-btn c-btn--bg c-btn--bg-gradient" href="#"><span>Create My Account</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="c-modal__footer"></div>
+    </div>
+    <!-- MODAL :: END-->
+    <!-- MODAL :: START-->
+    <div class="c-modal mfp-hide mfp-with-anim registerAltReferrer" id="registerAltReferrer">
+          <div class="c-modal__head">
+            <div class="c-modal__head-bg"><span parallax-js data-stellar-ratio="1.2"></span><span parallax-js data-stellar-ratio="0.8"></span></div>
+            <div class="c-modal__head-content">
+              <p class="c-modal__badge">Referrer</p>
+              <p class="c-modal__title">Create an Account</p>
+              <p class="c-modal__desc">Are you an employer? <a href='#'>Click Here</a></p>
+            </div>
+          </div>
+          <div class="c-modal__body">
+            <div class="register-form__info register-form__info--referrer">
+              <p class="register-form__info-title">With a referrer account you can:</p>
+              <div class="register-form__info-body">
+                <ul class="register-form__info-list">
+                  <li class="register-form__info-item">
+                    <div>
+                      <div class="register-form__info-circle"><i class="icon-font icon-check-mark"></i></div>
+                    </div>
+                    <div>
+                      <p class="register-form__info-desc"><strong>Refer family, friends, colleagues</strong> and <strong>peers</strong> to <strong>great jobs</strong> and <strong>get paid</strong> for each <strong>successful referral!</strong></p>
+                    </div>
+                  </li>
+                  <li class="register-form__info-item">
+                    <div>
+                      <div class="register-form__info-circle"><i class="icon-font icon-check-mark"></i></div>
+                    </div>
+                    <div>
+                      <p class="register-form__info-desc">If the employers <strong>hires & retains your referral for 3 months</strong>, you are entitled to the <strong>position's reward!</strong></p>
+                    </div>
+                  </li>
+                  <li class="register-form__info-item">
+                    <div>
+                      <div class="register-form__info-circle"><i class="icon-font icon-check-mark"></i></div>
+                    </div>
+                    <div>
+                      <p class="register-form__info-desc"><strong>Subscribe</strong> to industry-specific <strong>job alerts</strong> and get <strong>new jobs to refer & apply</strong> to directly delivered to your <strong>inbox!</strong></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="register-form__field">
+              <div class="register-form__field-row register-form__field-row-1">
+                <div class="register-form__field-input">
+                  <label for="first_name">First Name</label>
+                  <input type="text" id="first_name" name="first_name" placeholder="Type your first name">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-2">
+                <div class="register-form__field-input">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name" placeholder="Type your last name">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-3">
+                <div class="register-form__field-input">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Type your email address">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-4">
+                <div class="register-form__field-input">
+                  <label for="password">Password</label>
+                  <input type="text" id="password" name="password" placeholder="Type your password">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-5">
+                <div class="register-form__field-input">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input type="text" id="confirm_password" name="confirm_password" placeholder="Re-type your password">
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-6">
+                <div class="register-form__field-checkbox">
+                  <label for="i_have_read">
+                    <p>
+                      <input type="checkbox" id="i_have_read" name="i_have_read">
+                    </p>
+                    <p><span>I have read, understood, and will adhere to <a href='#'>referbility.com's</a> Terms & Conditions and Privacy Policy</span></p>
+                  </label>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-7">
+                <div class="register-form__field-checkbox">
+                  <label for="i_would_like">
+                    <p>
+                      <input type="checkbox" id="i_would_like" name="i_would_like">
+                    </p>
+                    <p><span>I would like to periodically be notified about jobs to refer to by email</span></p>
+                  </label>
+                </div>
+              </div>
+              <div class="register-form__field-row register-form__field-row-8">
+                <div class="register-form__field-btn"><a class="c-btn c-btn--bg c-btn--bg-blue" href="#"><span>Continue</span></a></div>
               </div>
             </div>
           </div>

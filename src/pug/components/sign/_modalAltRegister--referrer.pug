@@ -1,0 +1,70 @@
+// MODAL :: START
+
+mixin modalContent()
+  .c-modal__head
+    .c-modal__head-bg
+      span(parallax-js data-stellar-ratio="1.2")
+      span(parallax-js data-stellar-ratio="0.8")
+
+    .c-modal__head-content
+      p.c-modal__badge Referrer
+      p.c-modal__title Create an Account
+      p.c-modal__desc!= "Are you an employer? <a href='#'>Click Here</a>"
+
+  .c-modal__body
+
+    include _form-info--referrer
+
+    .register-form__field
+      .register-form__field-row.register-form__field-row-1
+        .register-form__field-input
+          label(for='first_name') First Name
+          input(type='text' id='first_name' name='first_name' placeholder='Type your first name')
+
+      .register-form__field-row.register-form__field-row-2
+        .register-form__field-input
+          label(for='last_name') Last Name
+          input(type='text' id='last_name' name='last_name' placeholder='Type your last name')
+
+      .register-form__field-row.register-form__field-row-3
+        .register-form__field-input
+          label(for='email') Email
+          input(type='email' id='email' name='email' placeholder='Type your email address')
+
+      .register-form__field-row.register-form__field-row-4
+        .register-form__field-input
+          label(for='password') Password
+          input(type='text' id='password' name='password' placeholder='Type your password')
+
+      .register-form__field-row.register-form__field-row-5
+        .register-form__field-input
+          label(for='confirm_password') Confirm Password
+          input(type='text' id='confirm_password' name='confirm_password' placeholder='Re-type your password')
+
+      .register-form__field-row.register-form__field-row-6
+        .register-form__field-checkbox
+          label(for='i_have_read')
+            p
+              input(type='checkbox' id='i_have_read' name='i_have_read')
+            p
+              span!= "I have read, understood, and will adhere to <a href='#'>referbility.com's</a> Terms & Conditions and Privacy Policy"
+
+      .register-form__field-row.register-form__field-row-7
+        .register-form__field-checkbox
+          label(for='i_would_like')
+            p
+              input(type='checkbox' id='i_would_like' name='i_would_like')
+            p
+              span!= "I would like to periodically be notified about jobs to refer to by email"
+
+      .register-form__field-row.register-form__field-row-8
+        .register-form__field-btn
+          a.c-btn.c-btn--bg.c-btn--bg-blue(href="#")
+            span Continue
+
+
+  .c-modal__footer
+
++modal('registerAltReferrer', 'modalContent')
+
+// MODAL :: END

@@ -2,7 +2,10 @@
 
 .c-modal {
   &.loginReferrer,
-  &.loginEmployer {
+  &.loginEmployer,
+  &.registerReferrer,
+  &.registerEmployer,
+  &.registerAltReferrer {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -51,10 +54,16 @@
             &:nth-of-type(1) {
               left: 0;
               bottom: -180px;
+              @include adaptive(767) {
+                left: -75px;
+              }
             }
             &:nth-of-type(2) {
               top: -150px;
               right: -150px;
+              @include adaptive(767) {
+                display: none !important;
+              }
             }
           }
         }
@@ -90,30 +99,51 @@
       }
 
       &__title {
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 800;
         letter-spacing: 0.5px;
         text-align: center;
         color: #ffffff;
         @include adaptive(767) {
-          font-size: 45px;
+          font-size: 40px;
         }
       }
 
-      &__desc {}
+      &__desc {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+
+        a {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
     }
   }
 
-  &.loginReferrer {
+  &.loginReferrer,
+  &.registerReferrer,
+  &.registerAltReferrer {
     .c-modal {
       &__head {
         box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
         background: linear-gradient(217deg, #a790dd 0%, #7650b4 100%);
       }
+
+      &__body {
+        .register-form__info {
+          margin-bottom: 50px;
+          @include adaptive(767) {
+            margin-bottom: 30px;
+          }
+        }
+      }
     }
   }
 
-  &.loginEmployer {
+  &.loginEmployer,
+  &.registerEmployer {
     .c-modal {
       &__head {
         box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.2);
