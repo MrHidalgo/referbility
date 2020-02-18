@@ -329,6 +329,11 @@
         color: #5153DC;
         letter-spacing: 0.5px;
         text-align: center;
+
+        i {
+          color: #091E42;
+          font-style: normal;
+        }
       }
 
       > span {
@@ -355,6 +360,11 @@
       color: #00875A;
       letter-spacing: 0.5px;
       text-align: center;
+
+      i {
+        color: #091E42;
+        font-style: normal;
+      }
     }
   }
 }

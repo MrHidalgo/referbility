@@ -1,0 +1,24 @@
+// HEADER :: START
+
+header#header.header.header--mod(
+  class!= (headerGrid && boardMod)?'header--grid header--board':(headerGrid)?'header--grid':''
+)
+  .c-grid
+
+    .header__wrapper
+
+      .header__wrapper-left
+
+        .logo.logo--header
+          a.logo__link(href='/' title='')
+            img.logo__img.logo__img--default(src="img/logo--white.png" srcset="img/logo--white@2x.png 2x")
+            img.logo__img.logo__img--action(src="img/logo.png" srcset="img/logo@2x.png 2x")
+            img.logo__img.logo__img--mobile(src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x")
+
+      .header__wrapper-middle
+
+      .header__wrapper-right
+
+        +hamburger()
+
+// HEADER :: END

@@ -18779,7 +18779,13 @@ picture {
   text-align: center;
 }
 
-/* line 334, src/scss/_components/retouch/_retouch--pricing.scss */
+/* line 333, src/scss/_components/retouch/_retouch--pricing.scss */
+.retouch-pricing__box-info > u i {
+  color: #091E42;
+  font-style: normal;
+}
+
+/* line 339, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-info > span {
   font-size: 14px;
   color: #344563;
@@ -18788,7 +18794,7 @@ picture {
   line-height: 20px;
 }
 
-/* line 343, src/scss/_components/retouch/_retouch--pricing.scss */
+/* line 348, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-save {
   padding-bottom: 5px;
   font-weight: 500;
@@ -18798,13 +18804,19 @@ picture {
   text-align: center;
 }
 
-/* line 352, src/scss/_components/retouch/_retouch--pricing.scss */
+/* line 357, src/scss/_components/retouch/_retouch--pricing.scss */
 .retouch-pricing__box-result {
   font-weight: 800;
   font-size: 19px;
   color: #00875A;
   letter-spacing: 0.5px;
   text-align: center;
+}
+
+/* line 364, src/scss/_components/retouch/_retouch--pricing.scss */
+.retouch-pricing__box-result i {
+  color: #091E42;
+  font-style: normal;
 }
 
 @-webkit-keyframes animateLinkCorner {
@@ -18835,6 +18847,176 @@ picture {
     -webkit-transform: rotate(90deg) translateX(10px);
             transform: rotate(90deg) translateX(10px);
   }
+}
+
+/* line 5, src/scss/_components/sign/_main.scss */
+.register-main--referrer .register-main__wrapper {
+  -webkit-box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
+          box-shadow: 0 40px 90px 0 rgba(213, 184, 255, 0.3);
+  background: -webkit-linear-gradient(233deg, #a790dd 0%, #7650b4 100%);
+  background: -o-linear-gradient(233deg, #a790dd 0%, #7650b4 100%);
+  background: linear-gradient(217deg, #a790dd 0%, #7650b4 100%);
+}
+
+/* line 11, src/scss/_components/sign/_main.scss */
+.register-main .c-grid-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 16, src/scss/_components/sign/_main.scss */
+.register-main__wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+  padding-bottom: 88px;
+  -webkit-border-radius: 0 0 100px 100px;
+          border-radius: 0 0 100px 100px;
+  -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.1);
+          box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.1);
+  background-image: -webkit-linear-gradient(191deg, #8181ff 67%, #5153dc);
+  background-image: -o-linear-gradient(191deg, #8181ff 67%, #5153dc);
+  background-image: linear-gradient(259deg, #8181ff 67%, #5153dc);
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 16, src/scss/_components/sign/_main.scss */
+  .register-main__wrapper {
+    padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/sign/_main.scss */
+  .register-main__wrapper {
+    padding-top: 130px;
+    padding-bottom: 55px;
+    -webkit-border-radius: 0 0 30px 30px;
+            border-radius: 0 0 30px 30px;
+  }
+}
+
+/* line 37, src/scss/_components/sign/_main.scss */
+.register-main__wrapper-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 45, src/scss/_components/sign/_main.scss */
+.register-main__wrapper-bg span {
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 51, src/scss/_components/sign/_main.scss */
+.register-main__wrapper-bg span:nth-of-type(1) {
+  top: -80px;
+  right: -230px;
+  border: solid 130px rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/sign/_main.scss */
+  .register-main__wrapper-bg span:nth-of-type(1) {
+    right: 0;
+  }
+}
+
+/* line 59, src/scss/_components/sign/_main.scss */
+.register-main__wrapper-bg span:nth-of-type(2) {
+  bottom: -250px;
+  left: -150px;
+  border: solid 130px rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 59, src/scss/_components/sign/_main.scss */
+  .register-main__wrapper-bg span:nth-of-type(2) {
+    display: none !important;
+  }
+}
+
+/* line 70, src/scss/_components/sign/_main.scss */
+.register-main__wrapper-content {
+  z-index: 2;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 70, src/scss/_components/sign/_main.scss */
+  .register-main__wrapper-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 82, src/scss/_components/sign/_main.scss */
+.register-main__badge {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 82, src/scss/_components/sign/_main.scss */
+  .register-main__badge {
+    font-size: 16px;
+  }
+}
+
+/* line 95, src/scss/_components/sign/_main.scss */
+.register-main__title {
+  padding-bottom: 15px;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 95, src/scss/_components/sign/_main.scss */
+  .register-main__title {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 95, src/scss/_components/sign/_main.scss */
+  .register-main__title {
+    font-size: 42px;
+  }
+}
+
+/* line 110, src/scss/_components/sign/_main.scss */
+.register-main__desc {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 116, src/scss/_components/sign/_main.scss */
+.register-main__desc a {
+  font-weight: 700;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
