@@ -18877,8 +18877,8 @@ picture {
   max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 180px;
-  padding-bottom: 88px;
+  padding-top: 150px;
+  padding-bottom: 35px;
   -webkit-border-radius: 0 0 100px 100px;
           border-radius: 0 0 100px 100px;
   -webkit-box-shadow: 0 40px 90px 0 rgba(135, 119, 217, 0.1);
@@ -18888,18 +18888,18 @@ picture {
   background-image: linear-gradient(259deg, #8181ff 67%, #5153dc);
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1279px) {
   /* line 16, src/scss/_components/sign/_main.scss */
   .register-main__wrapper {
-    padding-top: 160px;
+    padding-top: 130px;
   }
 }
 
 @media screen and (max-width: 767px) {
   /* line 16, src/scss/_components/sign/_main.scss */
   .register-main__wrapper {
-    padding-top: 130px;
-    padding-bottom: 55px;
+    padding-top: 90px;
+    padding-bottom: 47px;
     -webkit-border-radius: 0 0 30px 30px;
             border-radius: 0 0 30px 30px;
   }

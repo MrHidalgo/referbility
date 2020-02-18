@@ -3,13 +3,13 @@ ProjectTitle: Referbility
 PageList:
 - file: login-register.html
   titleName: Sign pop-ups
-  ready: 1
+  ready: 100
 - file: register-referrer.html
   titleName: Register - Referrer
-  ready: 90
+  ready: 100
 - file: register-employer.html
   titleName: Register - Employer
-  ready: 90
+  ready: 100
 - file: retouch.html
   titleName: Landing - Retouch
   ready: 100

@@ -19,32 +19,23 @@ mixin modalContent()
 
       .register-form__field-row.register-form__field-row-1
         .register-form__field-input
-          label(for='full_name') Full Name
-          input(type='text' id='full_name' name='full_name' placeholder='Type your full name')
+          label(for='full_name') Your name
+          input(type='text' id='full_name' name='full_name' placeholder='Type your name')
 
-      .register-form__field-row.register-form__field-row-2
-        .register-form__field-input
-          label(for='email') Email
-          input(type='email' id='email' name='email' placeholder='Type your email address')
+      //.register-form__field-row.register-form__field-row-3
+      //  .register-form__field-input
+      //    label(for='phone_number') Phone Number
+      //    input(type='text' id='phone_number' name='phone_number' placeholder='Type your phone number')
 
-      .register-form__field-row.register-form__field-row-3
-        .register-form__field-input
-          label(for='phone_number') Phone Number
-          input(type='text' id='phone_number' name='phone_number' placeholder='Type your phone number')
-
-      .register-form__field-row.register-form__field-row-4
-        .register-form__field-input
-          label(for='city') City
-          input(type='text' id='city' name='city' placeholder='Type your city')
+      //.register-form__field-row.register-form__field-row-4
+      //  .register-form__field-input
+      //    label(for='city') City
+      //    input(type='text' id='city' name='city' placeholder='Type your city')
 
       .register-form__field-row.register-form__field-row-5
-        .register-form__field-select
+        .register-form__field-input
           label(for='company_name') Company Name
-          select(id='company_name' name='company_name' placeholder='Type your city')
-            option(value='') Company Name 1
-            option(value='') Company Name 2
-            option(value='') Company Name 3
-            option(value='') Company Name 4
+          input(type='text' id='company_name' name='company_name' placeholder='Type your company name')
 
       .register-form__field-row.register-form__field-row-6
         .register-form__field-file
@@ -59,6 +50,11 @@ mixin modalContent()
 
       .register-form__field-row.register-form__field-row-0
         p Account Details
+
+      .register-form__field-row.register-form__field-row-2
+        .register-form__field-input
+          label(for='email') Email
+          input(type='email' id='email' name='email' placeholder='Type your email address')
 
       .register-form__field-row.register-form__field-row-7
         .register-form__field-input
@@ -82,7 +78,6 @@ mixin modalContent()
         .register-form__field-btn
           a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
             span Create My Account
-
 
   .c-modal__footer
 
