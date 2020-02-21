@@ -26,6 +26,38 @@
       @include transition(transform, background-color, border-color, box-shadow);
     }
 
+    &.board-card__block--find {
+      .board-card__block {
+        &-body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100%;
+          padding-bottom: 30px;
+        }
+
+        &-title {
+          justify-content: center;
+          padding-bottom: 15px;
+
+           p {
+             text-transform: uppercase;
+             font-size: 22px;
+           }
+        }
+      }
+
+      .ref-benefits__box-circle {
+        width: 100px;
+        height: 100px;
+
+        .icon-font {
+          font-size: 38px;
+        }
+      }
+    }
+
     &-wrapper {
       display: flex;
       flex-direction: column;

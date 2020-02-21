@@ -14175,7 +14175,56 @@ picture {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 29, src/scss/_components/board/_card.scss */
+/* line 31, src/scss/_components/board/_card.scss */
+.board-card__block.board-card__block--find .board-card__block-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+
+/* line 40, src/scss/_components/board/_card.scss */
+.board-card__block.board-card__block--find .board-card__block-title {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+
+/* line 44, src/scss/_components/board/_card.scss */
+.board-card__block.board-card__block--find .board-card__block-title p {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+/* line 51, src/scss/_components/board/_card.scss */
+.board-card__block.board-card__block--find .ref-benefits__box-circle {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 55, src/scss/_components/board/_card.scss */
+.board-card__block.board-card__block--find .ref-benefits__box-circle .icon-font {
+  font-size: 38px;
+}
+
+/* line 61, src/scss/_components/board/_card.scss */
 .board-card__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14188,17 +14237,17 @@ picture {
           flex-direction: column;
 }
 
-/* line 33, src/scss/_components/board/_card.scss */
+/* line 65, src/scss/_components/board/_card.scss */
 .board-card__block-wrapper > div {
   padding-bottom: 25px;
 }
 
-/* line 38, src/scss/_components/board/_card.scss */
+/* line 70, src/scss/_components/board/_card.scss */
 .board-card__block-body {
   padding: 20px 30px;
 }
 
-/* line 42, src/scss/_components/board/_card.scss */
+/* line 74, src/scss/_components/board/_card.scss */
 .board-card__block-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14220,7 +14269,7 @@ picture {
   background-image: linear-gradient(264deg, #8181ff 67%, #5153dc);
 }
 
-/* line 50, src/scss/_components/board/_card.scss */
+/* line 82, src/scss/_components/board/_card.scss */
 .board-card__block-footer p {
   font-size: 18px;
   font-weight: 500;
@@ -14229,12 +14278,12 @@ picture {
   color: #ffffff;
 }
 
-/* line 57, src/scss/_components/board/_card.scss */
+/* line 89, src/scss/_components/board/_card.scss */
 .board-card__block-footer p strong {
   font-weight: bold;
 }
 
-/* line 63, src/scss/_components/board/_card.scss */
+/* line 95, src/scss/_components/board/_card.scss */
 .board-card__block-badge {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14258,7 +14307,7 @@ picture {
   background-image: linear-gradient(316deg, #ff5630 95%, #ff7452 22%);
 }
 
-/* line 73, src/scss/_components/board/_card.scss */
+/* line 105, src/scss/_components/board/_card.scss */
 .board-card__block-badge-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14267,7 +14316,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 73, src/scss/_components/board/_card.scss */
+  /* line 105, src/scss/_components/board/_card.scss */
   .board-card__block-badge-wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -14276,14 +14325,14 @@ picture {
   }
 }
 
-/* line 80, src/scss/_components/board/_card.scss */
+/* line 112, src/scss/_components/board/_card.scss */
 .board-card__block-badge .icon-font {
   margin-right: 5px;
   color: #ffffff;
   font-size: 15px;
 }
 
-/* line 86, src/scss/_components/board/_card.scss */
+/* line 118, src/scss/_components/board/_card.scss */
 .board-card__block-badge p {
   text-transform: uppercase;
   font-size: 14px;
@@ -14292,7 +14341,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 95, src/scss/_components/board/_card.scss */
+/* line 127, src/scss/_components/board/_card.scss */
 .board-card__block-title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14305,7 +14354,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 95, src/scss/_components/board/_card.scss */
+  /* line 127, src/scss/_components/board/_card.scss */
   .board-card__block-title {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -14319,20 +14368,20 @@ picture {
   }
 }
 
-/* line 104, src/scss/_components/board/_card.scss */
+/* line 136, src/scss/_components/board/_card.scss */
 .board-card__block-title--offset .board-card__block-logo {
   position: relative;
   top: 40px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 104, src/scss/_components/board/_card.scss */
+  /* line 136, src/scss/_components/board/_card.scss */
   .board-card__block-title--offset .board-card__block-logo {
     top: 0;
   }
 }
 
-/* line 114, src/scss/_components/board/_card.scss */
+/* line 146, src/scss/_components/board/_card.scss */
 .board-card__block-title > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -14342,19 +14391,19 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 114, src/scss/_components/board/_card.scss */
+  /* line 146, src/scss/_components/board/_card.scss */
   .board-card__block-title > div:nth-of-type(1) {
     padding-right: 0;
   }
 }
 
-/* line 122, src/scss/_components/board/_card.scss */
+/* line 154, src/scss/_components/board/_card.scss */
 .board-card__block-title > div:nth-of-type(2) {
   width: 90px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 122, src/scss/_components/board/_card.scss */
+  /* line 154, src/scss/_components/board/_card.scss */
   .board-card__block-title > div:nth-of-type(2) {
     width: 100%;
     padding-top: 10px;
@@ -14362,14 +14411,14 @@ picture {
   }
 }
 
-/* line 131, src/scss/_components/board/_card.scss */
+/* line 163, src/scss/_components/board/_card.scss */
 .board-card__block-title > div img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 138, src/scss/_components/board/_card.scss */
+/* line 170, src/scss/_components/board/_card.scss */
 .board-card__block-title p {
   padding-bottom: 5px;
   font-size: 20px;
@@ -14379,13 +14428,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 138, src/scss/_components/board/_card.scss */
+  /* line 170, src/scss/_components/board/_card.scss */
   .board-card__block-title p {
     padding-top: 10px;
   }
 }
 
-/* line 150, src/scss/_components/board/_card.scss */
+/* line 182, src/scss/_components/board/_card.scss */
 .board-card__block-subtitle {
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -14396,7 +14445,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 159, src/scss/_components/board/_card.scss */
+  /* line 191, src/scss/_components/board/_card.scss */
   .board-card__block-logo {
     width: 90px;
     margin-left: auto;
@@ -14404,7 +14453,7 @@ picture {
   }
 }
 
-/* line 167, src/scss/_components/board/_card.scss */
+/* line 199, src/scss/_components/board/_card.scss */
 .board-card__block-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14417,7 +14466,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 171, src/scss/_components/board/_card.scss */
+/* line 203, src/scss/_components/board/_card.scss */
 .board-card__block-list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14430,17 +14479,17 @@ picture {
   padding-bottom: 10px;
 }
 
-/* line 176, src/scss/_components/board/_card.scss */
+/* line 208, src/scss/_components/board/_card.scss */
 .board-card__block-list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 181, src/scss/_components/board/_card.scss */
+/* line 213, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div:nth-of-type(1) {
   width: 25px;
 }
 
-/* line 184, src/scss/_components/board/_card.scss */
+/* line 216, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -14448,20 +14497,20 @@ picture {
           flex: 1;
 }
 
-/* line 188, src/scss/_components/board/_card.scss */
+/* line 220, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div .icon-font {
   color: #6364e9;
   font-size: 18px;
 }
 
-/* line 193, src/scss/_components/board/_card.scss */
+/* line 225, src/scss/_components/board/_card.scss */
 .board-card__block-list-item > div p {
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 202, src/scss/_components/board/_card.scss */
+/* line 234, src/scss/_components/board/_card.scss */
 .board-card__block-option {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14478,14 +14527,14 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 208, src/scss/_components/board/_card.scss */
+/* line 240, src/scss/_components/board/_card.scss */
 .board-card__block-option--action {
   position: absolute;
   top: 20px;
   right: 30px;
 }
 
-/* line 215, src/scss/_components/board/_card.scss */
+/* line 247, src/scss/_components/board/_card.scss */
 .board-card__block-action {
   cursor: pointer;
   overflow: hidden;
@@ -14510,7 +14559,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 228, src/scss/_components/board/_card.scss */
+/* line 260, src/scss/_components/board/_card.scss */
 .board-card__block-action--num {
   background-image: -webkit-linear-gradient(229deg, #8181ff 73%, #5153dc);
   background-image: -o-linear-gradient(229deg, #8181ff 73%, #5153dc);
@@ -14524,7 +14573,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 238, src/scss/_components/board/_card.scss */
+/* line 270, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit {
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
           box-shadow: 0 5px 10px 0 rgba(0, 170, 255, 0.2);
@@ -14535,7 +14584,7 @@ picture {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 242, src/scss/_components/board/_card.scss */
+/* line 274, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit:after {
   content: '';
   z-index: 0;
@@ -14551,14 +14600,14 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 254, src/scss/_components/board/_card.scss */
+/* line 286, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit:after {
   background-image: -webkit-linear-gradient(85deg, #00aaff -14%, #28d7cc 260%);
   background-image: -o-linear-gradient(85deg, #00aaff -14%, #28d7cc 260%);
   background-image: linear-gradient(5deg, #00aaff -14%, #28d7cc 260%);
 }
 
-/* line 258, src/scss/_components/board/_card.scss */
+/* line 290, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit:hover {
   background-color: #5153dc;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
@@ -14570,7 +14619,7 @@ picture {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 263, src/scss/_components/board/_card.scss */
+/* line 295, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit:hover:after {
   opacity: 0;
   visibility: hidden;
@@ -14579,7 +14628,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 269, src/scss/_components/board/_card.scss */
+/* line 301, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit:hover .icon-font {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -14591,7 +14640,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 275, src/scss/_components/board/_card.scss */
+/* line 307, src/scss/_components/board/_card.scss */
 .board-card__block-action--edit .icon-font {
   z-index: 2;
   position: relative;
@@ -14606,7 +14655,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 285, src/scss/_components/board/_card.scss */
+/* line 317, src/scss/_components/board/_card.scss */
 .board-card__block-action-wrapper {
   display: -webkit-box;
   display: -webkit-flex;

@@ -58,6 +58,14 @@ section#ref-jobs.ref-jobs
             +jobCard(false)
           .swiper-slide
             +jobCard(true)
+          .swiper-slide
+            a.board-card__block.board-card__block--find(href="#")
+              .board-card__block-body
+                .board-card__block-title
+                  p Find more jobs
+
+                .ref-benefits__box-circle
+                  i.icon-font.icon-seo
 
         +swiper('dashboardJob', 'swiperContent', false, false, false)
 
