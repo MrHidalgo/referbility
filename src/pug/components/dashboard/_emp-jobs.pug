@@ -1,7 +1,7 @@
 // SECTION :: START
 
 mixin jobCard(badgeBool, actionBool)
-  a.board-card__block(href="#")
+  .board-card__block
     .board-card__block-body
 
       if(badgeBool && actionBool)
@@ -12,15 +12,15 @@ mixin jobCard(badgeBool, actionBool)
               p Urgent
 
           .board-card__block-action-wrapper
-            .board-card__block-action.board-card__block-action--num 23
-            .board-card__block-action.board-card__block-action--edit
+            a.board-card__block-action.board-card__block-action--num(href="#")  23
+            a.board-card__block-action.board-card__block-action--edit(href="#")
               i.icon-font.icon-pencil-create
       else
         .board-card__block-option.board-card__block-option--action
           div
           .board-card__block-action-wrapper
-            .board-card__block-action.board-card__block-action--num 23
-            .board-card__block-action.board-card__block-action--edit
+            a.board-card__block-action.board-card__block-action--num(href="#")  23
+            a.board-card__block-action.board-card__block-action--edit(href="#")
               i.icon-font.icon-pencil-create
 
       .board-card__block-title(class!= (badgeBool && actionBool)?'':'board-card__block-title--offset')
