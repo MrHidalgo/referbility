@@ -1,6 +1,9 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: posting-job.html
+  titleName: Posting Job
+  ready: 1
 - file: login-register.html
   titleName: Sign pop-ups
   ready: 100

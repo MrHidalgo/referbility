@@ -1,14 +1,12 @@
 // SECTION board details :: START
 
 .board-details {
-  //overflow: hidden;
   position: relative;
   margin-bottom: 45px;
   border-radius: 10px;
   border: solid 1px #dfdfff;
   background-color: #ffffff;
   box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
-  //transition: height 0.01s linear;
   @include adaptive(767) {
     left: -20px;
     width: calc(100% + 40px);
@@ -33,8 +31,11 @@
   &__heading {
     position: sticky;
     top: 0;
-    //border-bottom: 1px solid #dfdfff;
     @include adaptive(767) {
+      position: relative;
+    }
+
+    &.board-details__heading--relative {
       position: relative;
     }
   }

@@ -1,0 +1,20 @@
+---
+title: Referbility | Posing Job
+
+pageClassName: p-posting-job
+---
+extends shared/_layout
+
+block header
+  include components/_header-kanban
+block footer
+  include components/_footer--landing
+block menu
+  include components/homepage/_menu
+block modal
+  include components/posting/_modalPost
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include components/posting/_posting

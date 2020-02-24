@@ -1,0 +1,19 @@
+// MODAL :: START
+
+mixin modalContent()
+  .c-modal__body
+    .c-modal__body-bg
+      span
+      span
+
+    .c-modal__body-content
+
+      p.c-modal__title Thank you for submitting your job.
+      p.c-modal__text Your job is currently in review & we will reach out to you shortly to discuss your requirements.
+
+      a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
+        span Ok
+
++modal('postingPost', 'modalContent')
+
+// MODAL :: END

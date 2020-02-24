@@ -123,47 +123,53 @@
 	@if $filename == more {
 		$char: "\E020";
 	}
-	@if $filename == pencil-create {
+	@if $filename == newspaper {
 		$char: "\E021";
 	}
-	@if $filename == pin {
+	@if $filename == pencil-create {
 		$char: "\E022";
 	}
-	@if $filename == plus {
+	@if $filename == pin {
 		$char: "\E023";
 	}
-	@if $filename == profile {
+	@if $filename == plus {
 		$char: "\E024";
 	}
-	@if $filename == review-1 {
+	@if $filename == profile {
 		$char: "\E025";
 	}
-	@if $filename == search {
+	@if $filename == question-circle {
 		$char: "\E026";
 	}
-	@if $filename == seo {
+	@if $filename == review-1 {
 		$char: "\E027";
 	}
-	@if $filename == settings {
+	@if $filename == search {
 		$char: "\E028";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == seo {
 		$char: "\E029";
 	}
-	@if $filename == timer {
+	@if $filename == settings {
 		$char: "\E02A";
 	}
-	@if $filename == twitter {
+	@if $filename == thumbs-up {
 		$char: "\E02B";
 	}
-	@if $filename == user {
+	@if $filename == timer {
 		$char: "\E02C";
 	}
-	@if $filename == wallet {
+	@if $filename == twitter {
 		$char: "\E02D";
 	}
-	@if $filename == x {
+	@if $filename == user {
 		$char: "\E02E";
+	}
+	@if $filename == wallet {
+		$char: "\E02F";
+	}
+	@if $filename == x {
+		$char: "\E030";
 	}
 
 	@return $char;
@@ -308,6 +314,10 @@
 	@include icon(more);
 
 }
+.icon-newspaper {
+	@include icon(newspaper);
+
+}
 .icon-pencil-create {
 	@include icon(pencil-create);
 
@@ -322,6 +332,10 @@
 }
 .icon-profile {
 	@include icon(profile);
+
+}
+.icon-question-circle {
+	@include icon(question-circle);
 
 }
 .icon-review-1 {
