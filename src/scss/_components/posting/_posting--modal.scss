@@ -1,0 +1,98 @@
+.c-modal {
+  &.postingPost {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
+    background-image: linear-gradient(232deg, #8181ff 71%, #5153dc);
+
+    .mfp-close {
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: rgba(#fff, 1);
+      font-size: 36px;
+      @include adaptive(767) {
+        right: 20px;
+      }
+    }
+
+    .c-modal {
+      &__body {
+        position: relative;
+        padding: 60px 50px 60px;
+
+        &-bg {
+           z-index: 0;
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+
+           span {
+             opacity: 0.7;
+             position: absolute;
+             width: 360px;
+             height: 360px;
+             border-radius: 50%;
+             border: solid 130px rgba(255, 255, 255, 0.1);
+
+             &:nth-of-type(1) {
+               left: -100px;
+               bottom: -180px;
+               @include adaptive(767) {
+                 left: -75px;
+               }
+             }
+             &:nth-of-type(2) {
+               top: -175px;
+               right: -150px;
+               @include adaptive(767) {
+                 display: none !important;
+               }
+             }
+           }
+         }
+
+        &-content {
+          z-index: 2;
+          position: relative;
+        }
+      }
+
+      &__title,
+      &__text {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      &__title {
+        padding-bottom: 20px;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0.76px;
+
+      }
+
+      &__text {
+        padding-bottom: 40px;
+        font-size: 18px;
+        line-height: 1.39;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}

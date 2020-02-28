@@ -1,0 +1,23 @@
+// MODAL :: START
+
+mixin modalContent()
+  .c-modal__header
+    .c-modal__header-bg
+      span
+
+    p Add Skill
+
+  .c-modal__body
+
+    .c-modal__body-content
+
+      .posting__form-field
+        .posting__form-input
+          input(type='text' name='' id='posting_1_languages' placeholder='Enter new skill')
+
+      a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
+        span Add
+
++modal('postingAdd', 'modalContent')
+
+// MODAL :: END

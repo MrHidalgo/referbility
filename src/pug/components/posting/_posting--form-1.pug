@@ -1,3 +1,85 @@
 form.posting__form.posting__form-1(action='' method='' name='' posting-form-1-js)
 
   p.posting__title Tell us about the job you're sourcing for!
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_job_title') Job Title
+    .posting__form-input
+      input(type='text' name='' id='posting_1_job_title' placeholder='Type Job Title')
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_job_function') Job Function
+    .posting__form-select
+      select(name='' id='posting_1_job_function')
+        option(value='' selected disabled hidden) Choose Job Function
+        option(value='') Action
+        option(value='') More action
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_job_description') Job Description
+    .posting__form-textarea
+      textarea(name='' id='posting_1_job_description' placeholder='Type Description')
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_career_level') Career Level
+    .posting__form-select
+      select(name='' id='posting_1_career_level')
+        option(value='' selected disabled hidden) Choose Career Level
+        option(value='') Action
+        option(value='') More action
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_employment_type') Employment Type
+    .posting__form-select
+      select(name='' id='posting_1_employment_type')
+        option(value='' selected disabled hidden) Choose Employment Type
+        option(value='') Action
+        option(value='') More action
+
+  .posting__form-group.posting__form-group--7030
+    .posting__form-col.posting__form-col-1
+    .posting__form-col.posting__form-col-2
+      .posting__form-field
+        label.posting__form-label.posting__form-label--hidden(for='posting_1_employment_type') Select Currency
+        .posting__form-select
+          select(name='' id='posting_1_select_currency')
+            option(value='' selected disabled hidden) Select Currency
+            option(value='') Action
+            option(value='') More action
+
+  .posting__form-field
+    label.posting__form-checkbox(for='posting_1_hide_salary')
+      input(type='checkbox' name='' id='posting_1_hide_salary')
+      div
+        span
+          i
+      div
+         p Hide salary information
+
+  .posting__form-field
+    label.posting__form-checkbox(for='posting_1_post_job')
+      input(type='checkbox' name='' id='posting_1_post_job')
+      div
+        span
+          i
+      div
+        p!= "Post job as <strong>Confidential Company</strong> (your company's name and logo will be hidden to referrers and candidates)"
+
+  .posting__form-field
+    .posting__form-info
+      p Hiding your company name or the position's salary will reduce the number of referrals received, as candidates are less likely to accept referrals without this information.
+
+  p.posting__title In which location will the candidate work?
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_country') Country
+    .posting__form-select
+      select(name='' id='posting_1_country')
+        option(value='' selected disabled hidden) Choose Country
+        option(value='') Action
+        option(value='') More action
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_city') City
+    .posting__form-input
+      input(type='text' name='' id='posting_1_city' placeholder='Type City')

@@ -1,3 +1,51 @@
 form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js)
 
   p.posting__title Tell us about the perfect candidate!
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_industry_experience') Industry Experience
+    .posting__form-input
+      input(type='text' name='' id='posting_1_industry_experience' placeholder='Industries')
+
+  .posting__form-field
+    label.posting__form-label Skills
+    .posting__form-tags
+      select.multipleSelect(multiple='', name='language' placeholder='Skills')
+        option(value='Action') Action
+        option(value='One more action') One more action
+        option(value='Again action') Again action
+    .posting__form-add
+      a(href="#postingAdd" data-effect='mfp-zoom-in' popup-js)
+        span Add More
+        i.icon-font.icon-plus
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_highest_degree') Highest Degree
+    .posting__form-select
+      select(name='' id='posting_1_highest_degree')
+        option(value='' selected disabled hidden) Choose Degree
+        option(value='') Action
+        option(value='') More action
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_languages') Languages
+    .posting__form-input
+      input(type='text' name='' id='posting_1_languages' placeholder='Languages')
+
+  .posting__form-field
+    label.posting__form-label(for='posting_1_industry_additional_requirements') Additional requirements/certifications
+    .posting__form-input
+      input(type='text' name='' id='posting_1_industry_additional_requirements' placeholder='Industries')
+
+  p.posting__title Candidates with these designations are the most relevant to you:
+
+  .posting__form-field
+    .posting__form-tags
+      select.multipleSelect(multiple='', name='language' placeholder='Designations')
+        option(value='Action') Action
+        option(value='One more action') One more action
+        option(value='Again action') Again action
+    .posting__form-add
+      a(href="#postingAdd" data-effect='mfp-zoom-in' popup-js)
+        span Add More
+        i.icon-font.icon-plus
