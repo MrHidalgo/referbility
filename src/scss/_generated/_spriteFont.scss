@@ -159,17 +159,20 @@
 	@if $filename == timer {
 		$char: "\E02C";
 	}
-	@if $filename == twitter {
+	@if $filename == trash {
 		$char: "\E02D";
 	}
-	@if $filename == user {
+	@if $filename == twitter {
 		$char: "\E02E";
 	}
-	@if $filename == wallet {
+	@if $filename == user {
 		$char: "\E02F";
 	}
-	@if $filename == x {
+	@if $filename == wallet {
 		$char: "\E030";
+	}
+	@if $filename == x {
+		$char: "\E031";
 	}
 
 	@return $char;
@@ -360,6 +363,10 @@
 }
 .icon-timer {
 	@include icon(timer);
+
+}
+.icon-trash {
+	@include icon(trash);
 
 }
 .icon-twitter {

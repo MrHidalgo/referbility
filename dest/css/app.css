@@ -360,7 +360,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-check-mark:before, .icon-chevron-bottom:before, .icon-comment-delete:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-newspaper:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-question-circle:before, .icon-review-1:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-thumbs-up:before, .icon-timer:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
+.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-check-mark:before, .icon-chevron-bottom:before, .icon-comment-delete:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-newspaper:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-question-circle:before, .icon-review-1:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-thumbs-up:before, .icon-timer:before, .icon-trash:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -371,244 +371,249 @@
   text-transform: none;
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-arrow-bottom:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-bar-chart:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-bell-alert:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-bell:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-blogging:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-building:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-check:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-dates:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-delete:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-call-calling:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-case:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-chat:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-check-mark:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-chevron-bottom:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-comment-delete:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-conversion:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-corner:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-creditcard-face:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-cup:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-cv:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-data:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-date:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-email-star:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-experience:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-facebook:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-file-text:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-flag:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-linkedin:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-mail:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-market-1:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-medal:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-more:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-newspaper:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-pencil-create:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-pin:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-plus:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-profile:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-question-circle:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-review-1:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-search:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-seo:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-settings:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-thumbs-up:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
+/* line 182, src/scss/_generated/_spriteFont.scss */
 .icon-timer:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 182, src/scss/_generated/_spriteFont.scss */
+.icon-trash:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 182, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
-.icon-wallet:before {
+/* line 182, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
 }
 
-/* line 179, src/scss/_generated/_spriteFont.scss */
-.icon-x:before {
+/* line 182, src/scss/_generated/_spriteFont.scss */
+.icon-wallet:before {
   content: "";
+}
+
+/* line 182, src/scss/_generated/_spriteFont.scss */
+.icon-x:before {
+  content: "";
 }
 
 @font-face {
@@ -20259,21 +20264,16 @@ picture {
 }
 
 /* line 60, src/scss/_components/posting/_posting.scss */
-.posting__form-1 {
+.posting__form-1, .posting__form-2, .posting__form-3 {
   max-width: 600px;
 }
 
-/* line 63, src/scss/_components/posting/_posting.scss */
-.posting__form-2 {
-  max-width: 600px;
-}
-
-/* line 68, src/scss/_components/posting/_posting.scss */
+/* line 66, src/scss/_components/posting/_posting.scss */
 .posting__form-5 {
   max-width: 830px;
 }
 
-/* line 72, src/scss/_components/posting/_posting.scss */
+/* line 70, src/scss/_components/posting/_posting.scss */
 .posting__form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20285,31 +20285,31 @@ picture {
           justify-content: space-between;
 }
 
-/* line 78, src/scss/_components/posting/_posting.scss */
+/* line 76, src/scss/_components/posting/_posting.scss */
 .posting__form-group.posting__form-group--7030 .posting__form-col-1 {
   width: -webkit-calc(70% - 10px);
   width: calc(70% - 10px);
 }
 
-/* line 81, src/scss/_components/posting/_posting.scss */
+/* line 79, src/scss/_components/posting/_posting.scss */
 .posting__form-group.posting__form-group--7030 .posting__form-col-2 {
   width: -webkit-calc(30% - 10px);
   width: calc(30% - 10px);
 }
 
-/* line 87, src/scss/_components/posting/_posting.scss */
+/* line 85, src/scss/_components/posting/_posting.scss */
 .posting__form-group .posting__form-col {
   width: -webkit-calc(50% - 20px);
   width: calc(50% - 20px);
 }
 
-/* line 92, src/scss/_components/posting/_posting.scss */
+/* line 90, src/scss/_components/posting/_posting.scss */
 .posting__form-field {
   position: relative;
   padding-bottom: 25px;
 }
 
-/* line 97, src/scss/_components/posting/_posting.scss */
+/* line 95, src/scss/_components/posting/_posting.scss */
 .posting__form-label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20321,12 +20321,12 @@ picture {
   color: #091e42;
 }
 
-/* line 104, src/scss/_components/posting/_posting.scss */
+/* line 102, src/scss/_components/posting/_posting.scss */
 .posting__form-label--hidden {
   opacity: 0;
 }
 
-/* line 109, src/scss/_components/posting/_posting.scss */
+/* line 107, src/scss/_components/posting/_posting.scss */
 .posting__form-info {
   height: 90px;
   padding: 15px 25px;
@@ -20339,7 +20339,7 @@ picture {
   background: linear-gradient(45deg, #5153dc 0%, #8181ff 100%);
 }
 
-/* line 116, src/scss/_components/posting/_posting.scss */
+/* line 114, src/scss/_components/posting/_posting.scss */
 .posting__form-info p {
   font-size: 15px;
   line-height: 1.33;
@@ -20347,7 +20347,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 124, src/scss/_components/posting/_posting.scss */
+/* line 122, src/scss/_components/posting/_posting.scss */
 .posting__form-input, .posting__form-select, .posting__form-textarea {
   position: relative;
   height: 53px;
@@ -20356,7 +20356,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 132, src/scss/_components/posting/_posting.scss */
+/* line 130, src/scss/_components/posting/_posting.scss */
 .posting__form-input input,
 .posting__form-input select,
 .posting__form-input textarea, .posting__form-select input,
@@ -20447,18 +20447,18 @@ picture {
   color: rgba(9, 30, 66, 0.6);
 }
 
-/* line 157, src/scss/_components/posting/_posting.scss */
+/* line 155, src/scss/_components/posting/_posting.scss */
 .posting__form-textarea {
   height: 200px;
 }
 
-/* line 160, src/scss/_components/posting/_posting.scss */
+/* line 158, src/scss/_components/posting/_posting.scss */
 .posting__form-textarea textarea {
   resize: none;
   padding: 15px 25px;
 }
 
-/* line 166, src/scss/_components/posting/_posting.scss */
+/* line 164, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox {
   position: relative;
   display: -webkit-box;
@@ -20471,7 +20471,7 @@ picture {
           align-items: center;
 }
 
-/* line 171, src/scss/_components/posting/_posting.scss */
+/* line 169, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox input {
   opacity: 0;
   z-index: 10;
@@ -20482,7 +20482,7 @@ picture {
   height: 0;
 }
 
-/* line 183, src/scss/_components/posting/_posting.scss */
+/* line 181, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox input:checked + div span:after {
   opacity: 1;
   visibility: visible;
@@ -20491,7 +20491,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 189, src/scss/_components/posting/_posting.scss */
+/* line 187, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox input:checked + div span i {
   -webkit-transform: rotate(45deg) scale(1);
       -ms-transform: rotate(45deg) scale(1);
@@ -20503,12 +20503,12 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 199, src/scss/_components/posting/_posting.scss */
+/* line 197, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div:nth-of-type(1) {
   width: 45px;
 }
 
-/* line 202, src/scss/_components/posting/_posting.scss */
+/* line 200, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -20518,7 +20518,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 208, src/scss/_components/posting/_posting.scss */
+/* line 206, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div span {
   overflow: hidden;
   position: relative;
@@ -20543,7 +20543,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 220, src/scss/_components/posting/_posting.scss */
+/* line 218, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div span:after {
   content: '';
   opacity: 0;
@@ -20561,7 +20561,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 233, src/scss/_components/posting/_posting.scss */
+/* line 231, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div span i {
   z-index: 2;
   position: relative;
@@ -20584,24 +20584,24 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 247, src/scss/_components/posting/_posting.scss */
+/* line 245, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 252, src/scss/_components/posting/_posting.scss */
+/* line 250, src/scss/_components/posting/_posting.scss */
 .posting__form-checkbox > div p strong {
   font-weight: bold;
 }
 
-/* line 260, src/scss/_components/posting/_posting.scss */
+/* line 258, src/scss/_components/posting/_posting.scss */
 .posting__form-tags select {
   opacity: 0;
 }
 
-/* line 264, src/scss/_components/posting/_posting.scss */
+/* line 262, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstQueryInput {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -20644,7 +20644,7 @@ picture {
   color: #091e42;
 }
 
-/* line 276, src/scss/_components/posting/_posting.scss */
+/* line 274, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstElement {
   width: 100%;
   min-height: 53px;
@@ -20654,19 +20654,19 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 284, src/scss/_components/posting/_posting.scss */
+/* line 282, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstControls {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 290, src/scss/_components/posting/_posting.scss */
+/* line 288, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstMultipleMode .fstControls {
   padding-top: 0.6em;
 }
 
-/* line 294, src/scss/_components/posting/_posting.scss */
+/* line 292, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstChoiceItem {
   padding: 0.25em 1.75em 0.25em 0.75em;
   -webkit-border-radius: 4px;
@@ -20679,7 +20679,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 294, src/scss/_components/posting/_posting.scss */
+  /* line 292, src/scss/_components/posting/_posting.scss */
   .posting__form-tags .fstChoiceItem {
     display: -webkit-box;
     display: -webkit-flex;
@@ -20692,14 +20692,14 @@ picture {
   }
 }
 
-/* line 307, src/scss/_components/posting/_posting.scss */
+/* line 305, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstChoiceItem .fstChoiceRemove {
   font-size: 20px;
   left: auto;
   right: 5px;
 }
 
-/* line 314, src/scss/_components/posting/_posting.scss */
+/* line 312, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstResults {
   border: none;
   -webkit-border-bottom-left-radius: 4px;
@@ -20709,7 +20709,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 321, src/scss/_components/posting/_posting.scss */
+/* line 319, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstResultItem {
   font-size: 14px;
   line-height: 2.5;
@@ -20718,7 +20718,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 328, src/scss/_components/posting/_posting.scss */
+/* line 326, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstResultItem.fstSelected {
   display: none;
   border-color: #020d60;
@@ -20726,7 +20726,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 336, src/scss/_components/posting/_posting.scss */
+/* line 334, src/scss/_components/posting/_posting.scss */
 .posting__form-tags .fstNoResults {
   font-size: 14px;
   line-height: 2.5;
@@ -20735,7 +20735,51 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 345, src/scss/_components/posting/_posting.scss */
+/* line 343, src/scss/_components/posting/_posting.scss */
+.posting__form-remove {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 5px;
+}
+
+/* line 348, src/scss/_components/posting/_posting.scss */
+.posting__form-remove a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 170, 255, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 170, 255, 0.2);
+  background-image: -webkit-linear-gradient(48deg, #00aaff 25%, #28d7cc 88%);
+  background-image: -o-linear-gradient(48deg, #00aaff 25%, #28d7cc 88%);
+  background-image: linear-gradient(42deg, #00aaff 25%, #28d7cc 88%);
+}
+
+/* line 358, src/scss/_components/posting/_posting.scss */
+.posting__form-remove a .icon-font {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* line 365, src/scss/_components/posting/_posting.scss */
 .posting__form-add {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20748,7 +20792,15 @@ picture {
   padding-top: 5px;
 }
 
-/* line 350, src/scss/_components/posting/_posting.scss */
+/* line 370, src/scss/_components/posting/_posting.scss */
+.posting__form-add--center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 374, src/scss/_components/posting/_posting.scss */
 .posting__form-add a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20773,7 +20825,7 @@ picture {
   background-image: linear-gradient(42deg, #00aaff 25%, #28d7cc 88%);
 }
 
-/* line 360, src/scss/_components/posting/_posting.scss */
+/* line 384, src/scss/_components/posting/_posting.scss */
 .posting__form-add a span {
   font-size: 13px;
   font-weight: 500;
@@ -20783,20 +20835,20 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 369, src/scss/_components/posting/_posting.scss */
+/* line 393, src/scss/_components/posting/_posting.scss */
 .posting__form-add a .icon-font {
   margin-left: 3px;
   font-size: 13px;
   color: #ffffff;
 }
 
-/* line 378, src/scss/_components/posting/_posting.scss */
+/* line 402, src/scss/_components/posting/_posting.scss */
 .posting__btn {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 382, src/scss/_components/posting/_posting.scss */
+/* line 406, src/scss/_components/posting/_posting.scss */
 .posting__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20816,7 +20868,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 398, src/scss/_components/posting/_posting.scss */
+/* line 422, src/scss/_components/posting/_posting.scss */
 .posting .board-details {
   margin-bottom: 0;
 }
