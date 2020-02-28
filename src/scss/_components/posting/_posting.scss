@@ -59,10 +59,10 @@
 
     &-1,
     &-2,
-    &-3 {
+    &-3,
+    &-4 {
       max-width: 600px;
     }
-    &-4 {}
     &-5 {
       max-width: 830px;
     }
@@ -74,10 +74,10 @@
       &.posting__form-group--7030 {
         .posting__form-col {
           &-1 {
-            width: calc(70% - 10px);
+            width: calc(100% - 205px);
           }
           &-2 {
-            width: calc(30% - 10px);
+            width: 185px;
           }
         }
       }
@@ -116,6 +116,52 @@
         line-height: 1.33;
         letter-spacing: 0.5px;
         color: #ffffff;
+      }
+    }
+
+    &-desc {
+      font-size: 14px;
+      line-height: 1.43;
+      letter-spacing: 0.5px;
+      color: #344563;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-details {
+      padding: 20px 5px;
+      border-radius: 6px;
+      border: solid 1px #dfdfff;
+      background-color: #ffffff;
+      box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
+
+      &-title {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: #091e42;
+      }
+
+      &-res {
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: #5153dc;
+      }
+
+      &-desc {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: #344563;
       }
     }
 
@@ -178,6 +224,9 @@
         &:checked {
           & + div {
             span {
+              box-shadow: 0 2px 5px 0 rgba(135, 119, 217, 0.2);
+              @include transition(box-shadow);
+
               &:after {
                 opacity: 1;
                 visibility: visible;
@@ -212,8 +261,8 @@
           width: 30px;
           height: 30px;
           border-radius: 3px;
-          box-shadow: 0 2px 5px 0 rgba(135, 119, 217, 0.2);
           background-color: #ecebf6;
+          @include transition(box-shadow);
 
           &:after {
             content: '';
