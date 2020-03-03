@@ -931,6 +931,196 @@ $(document).ready((ev) => {
       }
     });
   };
+
+
+  const initRangeSlider = () => {
+    (function($) {
+      $.fn.inputFilter = function(inputFilter) {
+        return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+          if (inputFilter(this.value)) {
+            this.oldValue = this.value;
+            this.oldSelectionStart = this.selectionStart;
+            this.oldSelectionEnd = this.selectionEnd;
+          } else if (this.hasOwnProperty("oldValue")) {
+            this.value = this.oldValue;
+            this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+          } else {
+            this.value = "";
+          }
+        });
+      };
+    }(jQuery));
+    $("[intIntegerOnlyBox-js]").inputFilter(function(value) { return /^-?\d*$/.test(value);});
+
+    function _helperSalaryValid (val) {
+      if(val < 500) {
+        val = 500;
+      } else if (val > 100000) {
+        val = 100000;
+      } else {
+        val = Math.round(val / 500) * 500;
+      }
+
+      return val;
+    }
+    function _helperExperienceValid (val) {
+      if(val < 1) {
+        val = 1;
+      } else if (val > 30) {
+        val = 30;
+      }
+
+      return val;
+    }
+    function _helperRangeMethod (inputMin, inputMax, data) {
+      $(inputMin).prop('value', data.from);
+      $(inputMax).prop('value', data.to);
+    }
+    function _helperCallbackClick (inputName, helperCallback, rangeData, directionRange) {
+      $(inputName).on('change', (ev) => {
+        const _val = helperCallback($(ev.currentTarget).val());
+
+        rangeData.update({
+          [directionRange]: _val
+        });
+
+        $(ev.currentTarget).prop("value", _val);
+      });
+    }
+
+    const _rangeSalary = $("[range-salary-js]");
+
+    _rangeSalary.ionRangeSlider({
+      type: 'double',
+      skin: "big",
+      min: 500,
+      max: 100000,
+      step: 500,
+      from: 500,
+      to: 100000,
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function(data) {
+        _helperRangeMethod('[salary-min-input-js]', '[salary-max-input-js]', data);
+      },
+      onFinish: function(data) {
+        _helperRangeMethod('[salary-min-input-js]', '[salary-max-input-js]', data);
+      }
+    });
+    const _rangeSalaryData = _rangeSalary.data("ionRangeSlider");
+
+    _helperCallbackClick('[salary-min-input-js]', _helperSalaryValid, _rangeSalaryData, 'from');
+    _helperCallbackClick('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
+
+    const _rangeExperience = $("[range-experience-js]");
+    $("[range-experience-js]").ionRangeSlider({
+      type: 'double',
+      skin: "big",
+      min: 1,
+      max: 30,
+      from: 1,
+      to: 30,
+      step: 1,
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function(data) {
+        _helperRangeMethod('[experience-min-input-js]', '[experience-max-input-js]', data);
+      },
+      onFinish: function(data) {
+        _helperRangeMethod('[experience-min-input-js]', '[experience-max-input-js]', data);
+      }
+    });
+    const _rangeExperienceData = _rangeExperience.data("ionRangeSlider");
+
+    _helperCallbackClick('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
+    _helperCallbackClick('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
+  };
+
+
+  const initAddMoreSkills = (val) => {
+    $(".skillsInput").select2({
+      placeholder: 'Skills',
+      width: 'resolve',
+      tags: true
+    });
+
+    const _skillsForm = $('#skillsForm'),
+      _input = $('[skills-input-js]');
+
+    const _helperSelectSkillsTMPL = (val) => {
+      return `
+        <option value="${val}">${val}</option>
+      `;
+    };
+    const _helperAddNewValidationField = (selectName) => {
+      _skillsForm.validate({
+        errorPlacement: function (error, element) {
+          error.appendTo(element.closest('.posting__form-field'));
+        },
+        highlight: function (element) {
+          $(element).closest('.posting__form-field').addClass('is-error');
+        },
+        unhighlight: function (element) {
+          $(element).closest('.posting__form-field').removeClass('is-error');
+        },
+        onkeyup: function(element) {
+          $(element).valid();
+        },
+        rules: {
+          add_skills: {
+            required: true,
+            minlength: 2
+          }
+        },
+        messages: {
+          add_skills:  {
+            required: "Please specify your Skills",
+            name: "Must be min 2 characters"
+          }
+        }
+      });
+
+      if(_skillsForm.valid()) {
+        $(selectName).append(_helperSelectSkillsTMPL(_input.val()));
+        _input.val('');
+      }
+    };
+
+    $('[posting-popup-js]').on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _dataID = _el.data('id');
+
+      $('#skillsForm .c-btn').hide();
+      $('[' + _dataID + '-add-js]').show().css({'display':'flex'});
+    });
+
+    $('[skills-add-js]').on('click', (ev) => {
+      _helperAddNewValidationField('[skills-select-js]');
+    });
+
+    $('[designations-add-js]').on('click', (ev) => {
+      _helperAddNewValidationField('[designations-select-js]');
+    });
+  };
+
+
+  const initPostingAction = () => {
+    const _btnNext = $('[posting-next-js]'),
+      _btnBack = $('[posting-back-js]');
+
+    _btnNext.on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _elID = _el.data('id');
+
+    });
+
+    _btnBack.on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _elID = _el.data('id');
+
+
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -968,6 +1158,9 @@ $(document).ready((ev) => {
     initInnerPageLogic();
     initBoardCard();
     initRetouchPricing();
+    initRangeSlider();
+    initPostingAction();
+    initAddMoreSkills();
 		// ==========================================
 
     $(window).on('load', () => {

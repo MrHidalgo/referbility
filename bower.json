@@ -35,6 +35,7 @@
     "magnific-popup": "^1.1.0",
     "jQuery-viewport-checker": "^1.8.8",
     "jquery.stellar": "^0.6.2",
-    "Sortable": "sortablejs#^1.10.1"
+    "Sortable": "sortablejs#^1.10.1",
+    "jquery-validation": "^1.19.1"
   }
 }

@@ -1,5 +1,7 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 /*
 *
 * ============================
@@ -1212,6 +1214,189 @@ $(document).ready(function (ev) {
       }
     });
   };
+
+  var initRangeSlider = function initRangeSlider() {
+    (function ($) {
+      $.fn.inputFilter = function (inputFilter) {
+        return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function () {
+          if (inputFilter(this.value)) {
+            this.oldValue = this.value;
+            this.oldSelectionStart = this.selectionStart;
+            this.oldSelectionEnd = this.selectionEnd;
+          } else if (this.hasOwnProperty("oldValue")) {
+            this.value = this.oldValue;
+            this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+          } else {
+            this.value = "";
+          }
+        });
+      };
+    })(jQuery);
+    $("[intIntegerOnlyBox-js]").inputFilter(function (value) {
+      return (/^-?\d*$/.test(value)
+      );
+    });
+
+    function _helperSalaryValid(val) {
+      if (val < 500) {
+        val = 500;
+      } else if (val > 100000) {
+        val = 100000;
+      } else {
+        val = Math.round(val / 500) * 500;
+      }
+
+      return val;
+    }
+    function _helperExperienceValid(val) {
+      if (val < 1) {
+        val = 1;
+      } else if (val > 30) {
+        val = 30;
+      }
+
+      return val;
+    }
+    function _helperRangeMethod(inputMin, inputMax, data) {
+      $(inputMin).prop('value', data.from);
+      $(inputMax).prop('value', data.to);
+    }
+    function _helperCallbackClick(inputName, helperCallback, rangeData, directionRange) {
+      $(inputName).on('change', function (ev) {
+        var _val = helperCallback($(ev.currentTarget).val());
+
+        rangeData.update(_defineProperty({}, directionRange, _val));
+
+        $(ev.currentTarget).prop("value", _val);
+      });
+    }
+
+    var _rangeSalary = $("[range-salary-js]");
+
+    _rangeSalary.ionRangeSlider({
+      type: 'double',
+      skin: "big",
+      min: 500,
+      max: 100000,
+      step: 500,
+      from: 500,
+      to: 100000,
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function onChange(data) {
+        _helperRangeMethod('[salary-min-input-js]', '[salary-max-input-js]', data);
+      },
+      onFinish: function onFinish(data) {
+        _helperRangeMethod('[salary-min-input-js]', '[salary-max-input-js]', data);
+      }
+    });
+    var _rangeSalaryData = _rangeSalary.data("ionRangeSlider");
+
+    _helperCallbackClick('[salary-min-input-js]', _helperSalaryValid, _rangeSalaryData, 'from');
+    _helperCallbackClick('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
+
+    var _rangeExperience = $("[range-experience-js]");
+    $("[range-experience-js]").ionRangeSlider({
+      type: 'double',
+      skin: "big",
+      min: 1,
+      max: 30,
+      from: 1,
+      to: 30,
+      step: 1,
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function onChange(data) {
+        _helperRangeMethod('[experience-min-input-js]', '[experience-max-input-js]', data);
+      },
+      onFinish: function onFinish(data) {
+        _helperRangeMethod('[experience-min-input-js]', '[experience-max-input-js]', data);
+      }
+    });
+    var _rangeExperienceData = _rangeExperience.data("ionRangeSlider");
+
+    _helperCallbackClick('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
+    _helperCallbackClick('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
+  };
+
+  var initAddMoreSkills = function initAddMoreSkills(val) {
+    $(".skillsInput").select2({
+      placeholder: 'Skills',
+      width: 'resolve',
+      tags: true
+    });
+
+    var _skillsForm = $('#skillsForm'),
+        _input = $('[skills-input-js]');
+
+    var _helperSelectSkillsTMPL = function _helperSelectSkillsTMPL(val) {
+      return "\n        <option value=\"" + val + "\">" + val + "</option>\n      ";
+    };
+    var _helperAddNewValidationField = function _helperAddNewValidationField(selectName) {
+      _skillsForm.validate({
+        errorPlacement: function errorPlacement(error, element) {
+          error.appendTo(element.closest('.posting__form-field'));
+        },
+        highlight: function highlight(element) {
+          $(element).closest('.posting__form-field').addClass('is-error');
+        },
+        unhighlight: function unhighlight(element) {
+          $(element).closest('.posting__form-field').removeClass('is-error');
+        },
+        onkeyup: function onkeyup(element) {
+          $(element).valid();
+        },
+        rules: {
+          add_skills: {
+            required: true,
+            minlength: 2
+          }
+        },
+        messages: {
+          add_skills: {
+            required: "Please specify your Skills",
+            name: "Must be min 2 characters"
+          }
+        }
+      });
+
+      if (_skillsForm.valid()) {
+        $(selectName).append(_helperSelectSkillsTMPL(_input.val()));
+        _input.val('');
+      }
+    };
+
+    $('[posting-popup-js]').on('click', function (ev) {
+      var _el = $(ev.currentTarget),
+          _dataID = _el.data('id');
+
+      $('#skillsForm .c-btn').hide();
+      $('[' + _dataID + '-add-js]').show().css({ 'display': 'flex' });
+    });
+
+    $('[skills-add-js]').on('click', function (ev) {
+      _helperAddNewValidationField('[skills-select-js]');
+    });
+
+    $('[designations-add-js]').on('click', function (ev) {
+      _helperAddNewValidationField('[designations-select-js]');
+    });
+  };
+
+  var initPostingAction = function initPostingAction() {
+    var _btnNext = $('[posting-next-js]'),
+        _btnBack = $('[posting-back-js]');
+
+    _btnNext.on('click', function (ev) {
+      var _el = $(ev.currentTarget),
+          _elID = _el.data('id');
+    });
+
+    _btnBack.on('click', function (ev) {
+      var _el = $(ev.currentTarget),
+          _elID = _el.data('id');
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -1248,6 +1433,9 @@ $(document).ready(function (ev) {
     initInnerPageLogic();
     initBoardCard();
     initRetouchPricing();
+    initRangeSlider();
+    initPostingAction();
+    initAddMoreSkills();
     // ==========================================
 
     $(window).on('load', function () {

@@ -69,110 +69,116 @@
 	@if $filename == chevron-bottom {
 		$char: "\E00E";
 	}
-	@if $filename == comment-delete {
+	@if $filename == circle-checked {
 		$char: "\E00F";
 	}
-	@if $filename == conversion {
+	@if $filename == circle-x {
 		$char: "\E010";
 	}
-	@if $filename == corner {
+	@if $filename == comment-delete {
 		$char: "\E011";
 	}
-	@if $filename == creditcard-face {
+	@if $filename == conversion {
 		$char: "\E012";
 	}
-	@if $filename == cup {
+	@if $filename == corner {
 		$char: "\E013";
 	}
-	@if $filename == cv {
+	@if $filename == creditcard-face {
 		$char: "\E014";
 	}
-	@if $filename == data {
+	@if $filename == cup {
 		$char: "\E015";
 	}
-	@if $filename == date {
+	@if $filename == cv {
 		$char: "\E016";
 	}
-	@if $filename == email-star {
+	@if $filename == data {
 		$char: "\E017";
 	}
-	@if $filename == experience {
+	@if $filename == date {
 		$char: "\E018";
 	}
-	@if $filename == facebook {
+	@if $filename == email-star {
 		$char: "\E019";
 	}
-	@if $filename == file-text {
+	@if $filename == experience {
 		$char: "\E01A";
 	}
-	@if $filename == flag {
+	@if $filename == facebook {
 		$char: "\E01B";
 	}
-	@if $filename == linkedin {
+	@if $filename == file-text {
 		$char: "\E01C";
 	}
-	@if $filename == mail {
+	@if $filename == flag {
 		$char: "\E01D";
 	}
-	@if $filename == market-1 {
+	@if $filename == linkedin {
 		$char: "\E01E";
 	}
-	@if $filename == medal {
+	@if $filename == mail {
 		$char: "\E01F";
 	}
-	@if $filename == more {
+	@if $filename == market-1 {
 		$char: "\E020";
 	}
-	@if $filename == newspaper {
+	@if $filename == medal {
 		$char: "\E021";
 	}
-	@if $filename == pencil-create {
+	@if $filename == more {
 		$char: "\E022";
 	}
-	@if $filename == pin {
+	@if $filename == newspaper {
 		$char: "\E023";
 	}
-	@if $filename == plus {
+	@if $filename == pencil-create {
 		$char: "\E024";
 	}
-	@if $filename == profile {
+	@if $filename == pin {
 		$char: "\E025";
 	}
-	@if $filename == question-circle {
+	@if $filename == plus {
 		$char: "\E026";
 	}
-	@if $filename == review-1 {
+	@if $filename == profile {
 		$char: "\E027";
 	}
-	@if $filename == search {
+	@if $filename == question-circle {
 		$char: "\E028";
 	}
-	@if $filename == seo {
+	@if $filename == review-1 {
 		$char: "\E029";
 	}
-	@if $filename == settings {
+	@if $filename == search {
 		$char: "\E02A";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == seo {
 		$char: "\E02B";
 	}
-	@if $filename == timer {
+	@if $filename == settings {
 		$char: "\E02C";
 	}
-	@if $filename == trash {
+	@if $filename == thumbs-up {
 		$char: "\E02D";
 	}
-	@if $filename == twitter {
+	@if $filename == timer {
 		$char: "\E02E";
 	}
-	@if $filename == user {
+	@if $filename == trash {
 		$char: "\E02F";
 	}
-	@if $filename == wallet {
+	@if $filename == twitter {
 		$char: "\E030";
 	}
-	@if $filename == x {
+	@if $filename == user {
 		$char: "\E031";
+	}
+	@if $filename == wallet {
+		$char: "\E032";
+	}
+	@if $filename == x {
+		$char: "\E033";
 	}
 
 	@return $char;
@@ -243,6 +249,14 @@
 }
 .icon-chevron-bottom {
 	@include icon(chevron-bottom);
+
+}
+.icon-circle-checked {
+	@include icon(circle-checked);
+
+}
+.icon-circle-x {
+	@include icon(circle-x);
 
 }
 .icon-comment-delete {

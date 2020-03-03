@@ -12,5 +12,8 @@
 * - sortable.js;
 * - smooth-scrollbar;
 * - swiper.min.js;
+* - ion.rangeSlider.min.js;
+* - jquery-validation;
+* - select2.full.min.js;
 *
 * */

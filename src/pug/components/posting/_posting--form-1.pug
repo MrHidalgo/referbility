@@ -11,7 +11,7 @@ form.posting__form.posting__form-1(action='' method='' name='' posting-form-1-js
     label.posting__form-label(for='posting_1_job_function') Job Function
     .posting__form-select
       select(name='' id='posting_1_job_function')
-        option(value='' selected disabled hidden) Choose Job Function
+        option(value='' selected disabled) Choose Job Function
         option(value='') Action
         option(value='') More action
 
@@ -24,28 +24,43 @@ form.posting__form.posting__form-1(action='' method='' name='' posting-form-1-js
     label.posting__form-label(for='posting_1_career_level') Career Level
     .posting__form-select
       select(name='' id='posting_1_career_level')
-        option(value='' selected disabled hidden) Choose Career Level
-        option(value='') Action
-        option(value='') More action
+        option(value='' selected disabled) Choose Career Level
+        option(value='junior') Junior
+        option(value='executive') Executive
+        option(value='managerial') Managerial
+        option(value='c-level') C-Level
 
   .posting__form-field
     label.posting__form-label(for='posting_1_employment_type') Employment Type
     .posting__form-select
       select(name='' id='posting_1_employment_type')
-        option(value='' selected disabled hidden) Choose Employment Type
+        option(value='' selected disabled) Choose Employment Type
         option(value='') Action
         option(value='') More action
 
   .posting__form-group.posting__form-group--7030
     .posting__form-col.posting__form-col-1
+      .posting__form-field
+        label.posting__form-label!= "Salary Range <span>(per month)</span>"
+        .posting__form-range
+          div
+            .posting__form-input
+              input(type='text' name='' placeholder='500' value="" salary-min-input-js intIntegerOnlyBox-js)
+          div
+            input(input type="text" class="" name="" value="" range-salary-js)
+          div
+            .posting__form-input
+              input(type='text' name='' placeholder='100000' value="" salary-max-input-js intIntegerOnlyBox-js)
+
     .posting__form-col.posting__form-col-2
       .posting__form-field
         label.posting__form-label.posting__form-label--hidden(for='posting_1_employment_type') Select Currency
         .posting__form-select
           select(name='' id='posting_1_select_currency')
-            option(value='' selected disabled hidden) Select Currency
-            option(value='') Action
-            option(value='') More action
+            option(value='' selected disabled) Select Currency
+            option(value='usd') ($) USD
+            option(value='eur') (€) EUR
+            option(value='gbp') (£) GBP
 
   .posting__form-field
     label.posting__form-checkbox(for='posting_1_hide_salary')
@@ -75,7 +90,7 @@ form.posting__form.posting__form-1(action='' method='' name='' posting-form-1-js
     label.posting__form-label(for='posting_1_country') Country
     .posting__form-select
       select(name='' id='posting_1_country')
-        option(value='' selected disabled hidden) Choose Country
+        option(value='' selected disabled) Choose Country
         option(value='') Action
         option(value='') More action
 

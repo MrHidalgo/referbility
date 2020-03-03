@@ -10,13 +10,15 @@ mixin modalContent()
   .c-modal__body
 
     .c-modal__body-content
+      form#skillsForm(action='' name='' autocomplete='off')
+        .posting__form-field
+          .posting__form-input
+            input(type='text' name='add_skills' id='posting_new_skill' placeholder='Enter new skill' skills-input-js require)
 
-      .posting__form-field
-        .posting__form-input
-          input(type='text' name='' id='posting_1_languages' placeholder='Enter new skill')
-
-      a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
-        span Add
+        a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#" skills-add-js)
+          span Add
+        a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#" designations-add-js)
+          span Add
 
 +modal('postingAdd', 'modalContent')
 

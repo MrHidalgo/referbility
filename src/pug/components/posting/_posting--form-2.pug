@@ -3,6 +3,18 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
   p.posting__title Tell us about the perfect candidate!
 
   .posting__form-field
+    label.posting__form-label!= "Years of Experience"
+    .posting__form-range
+      div
+        .posting__form-input
+          input(type='text' name='' placeholder='1' experience-min-input-js intIntegerOnlyBox-js)
+      div
+        input(input type="text" class="" name="" value="" range-experience-js)
+      div
+        .posting__form-input
+          input(type='text' name='' placeholder='30' experience-max-input-js intIntegerOnlyBox-js)
+
+  .posting__form-field
     label.posting__form-label(for='posting_1_industry_experience') Industry Experience
     .posting__form-input
       input(type='text' name='' id='posting_1_industry_experience' placeholder='Industries')
@@ -10,12 +22,13 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
   .posting__form-field
     label.posting__form-label Skills
     .posting__form-tags
-      select.multipleSelect(multiple='', name='language' placeholder='Skills')
+      select.skillsInput(multiple='multiple' name='skills' style="width: 100%" skills-select-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
+
     .posting__form-add
-      a(href="#postingAdd" data-effect='mfp-zoom-in' popup-js)
+      a(href="#postingAdd" data-effect='mfp-zoom-in' data-id='skills' popup-js posting-popup-js)
         span Add More
         i.icon-font.icon-plus
 
@@ -41,11 +54,12 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
 
   .posting__form-field
     .posting__form-tags
-      select.multipleSelect(multiple='', name='language' placeholder='Designations')
+      select.skillsInput(multiple='multiple' name='designations' style="width: 100%" designations-select-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
+
     .posting__form-add
-      a(href="#postingAdd" data-effect='mfp-zoom-in' popup-js)
+      a(href="#postingAdd" data-effect='mfp-zoom-in' data-id='designations' popup-js posting-popup-js)
         span Add More
         i.icon-font.icon-plus
