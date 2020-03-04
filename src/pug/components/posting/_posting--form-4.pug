@@ -8,16 +8,19 @@ form.posting__form.posting__form-4(action='' method='' name='' posting-form-4-js
       .posting__form-field
         .posting__form-range.posting__form-range--right
           div
-            input(input type="text" class="" name="" value="" range-experience-js)
+            input(type="text" class="" name="" value="" range-willing-js)
+            input(type="text" class="" name="" value="" range-willing-hidden-js)
+            .posting__form-indicator(posting-indicator-js)
+              span
           div
             .posting__form-input
-              input(type='text' name='' placeholder='30')
+              input(type='text' name='' placeholder='30' willing-data-input-js)
 
-      p.posting__form-desc!= "Higher rewards incentivize people to refer candidates and allows us to advertise your position. We recommend a reward of <span>$1,000</span> for this job."
+      p.posting__form-desc!= "Higher rewards incentivize people to refer candidates and allows us to advertise your position. We recommend a reward of <span posting-rec-js>$2,000</span> for this job."
 
     .posting__form-col.posting__form-col-2
 
       .posting__form-details
         p.posting__form-details-title Job post like yours
-        p.posting__form-details-res!= "$1,000 to $10,000"
+        p.posting__form-details-res!= "$<span posting-sim-min-js>2,000</span> to $<span posting-sim-max-js>3,000</span>"
         p.posting__form-details-desc is the typical budget set by similar jobs

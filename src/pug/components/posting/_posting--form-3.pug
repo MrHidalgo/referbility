@@ -1,16 +1,20 @@
-form.posting__form.posting__form-3(action='' method='' name='' posting-form-3-js)
+form#formQuestion.posting__form.posting__form-3(action='' method='' name='' posting-form-3-js)
 
   p.posting__title Do you have any questions that you'd like the candidate to answer while accepting the referral?
 
-  .posting__form-field
-    .posting__form-remove
-      a(href="#")
-        i.icon-font.icon-trash
-    .posting__form-input
-      input(type='text' name='' id='posting_1_add_question' placeholder='Add question')
+  .posting__form-content(posting-content-question-js)
+    .posting__form-field(posting-parent-question-js)
+      .posting__form-remove
+        a(href="#")
+          i.icon-font.icon-trash
+      .posting__form-input
+        input(type='text' name='posting_question' placeholder='Add question' posting-input-question-js required)
 
   .posting__form-field
     .posting__form-add.posting__form-add--center
-      a(href="#")
+      a(href="#" posting-add-question-js)
         span Add More
         i.icon-font.icon-plus
+
+  .posting__form-warning(posting-warning-question-js)
+    p Please delete all empty question boxes before proceeding.

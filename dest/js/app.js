@@ -1296,7 +1296,7 @@ $(document).ready(function (ev) {
     _helperCallbackClick('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
 
     var _rangeExperience = $("[range-experience-js]");
-    $("[range-experience-js]").ionRangeSlider({
+    _rangeExperience.ionRangeSlider({
       type: 'double',
       skin: "big",
       min: 1,
@@ -1383,6 +1383,182 @@ $(document).ready(function (ev) {
     });
   };
 
+  var initPostingAddQuestion = function initPostingAddQuestion() {
+    var _questionTMPL = function _questionTMPL() {
+      return "\n        <div class=\"posting__form-field\" posting-parent-question-js>\n          <div class=\"posting__form-remove\">\n            <a href=\"#\"><i class=\"icon-font icon-trash\"></i></a>\n          </div>\n          <div class=\"posting__form-input\">\n            <input type=\"text\" name=\"posting_question\" placeholder=\"Add question\" posting-input-question-js required>\n          </div>\n        </div>\n      ";
+    };
+
+    $('[posting-content-question-js]').on('click', 'a', function (ev) {
+      $(ev.currentTarget).closest('[posting-parent-question-js]').remove();
+    });
+
+    $('[posting-add-question-js]').on('click', function (ev) {
+      $('[posting-content-question-js]').append(_questionTMPL);
+    });
+
+    $('[posting-question-js]').on('click', function (ev) {
+      var _questionName = $('#formQuestion'),
+          _questionInputFields = $('[posting-input-question-js]'),
+          _questionWarning = $('[posting-warning-question-js]');
+
+      var _formInputBool = true;
+
+      $.each(_questionInputFields, function (idx, el) {
+        if ($(el).val().length === 0) {
+          _formInputBool = false;
+          _questionWarning.show();
+          return;
+        } else {
+          _questionWarning.hide();
+        }
+      }, false);
+
+      if (_formInputBool) {
+        console.log("valid");
+      }
+    });
+  };
+
+  var initWillingRange = function initWillingRange() {
+    var _rangeWilling = $("[range-willing-js]"),
+        _rangeWillingHidden = $('[range-willing-hidden-js]'),
+        _willingInput = $('[willing-data-input-js]');
+
+    var _min = 1000,
+        _max = 4000,
+        _rec = 2000;
+
+    var _from = _max - 1500;
+
+    function _helperSalaryValid(val) {
+      if (val < _min) {
+        val = _min;
+      } else if (val > _max) {
+        val = _max;
+      } else {
+        val = Math.round(val / 500) * 500;
+      }
+
+      return val;
+    }
+
+    _rangeWilling.ionRangeSlider({
+      type: 'single',
+      skin: "big",
+      min: _min,
+      max: _max,
+      from: _from,
+      step: 500,
+      hide_min_max: true,
+      hide_from_to: true,
+      onStart: function onStart(data) {
+        _willingInput.prop('value', data.from);
+      },
+      onChange: function onChange(data) {
+        _willingInput.prop('value', data.from);
+      },
+      onFinish: function onFinish(data) {
+        _willingInput.prop('value', data.from);
+      }
+    });
+    _rangeWillingHidden.ionRangeSlider({
+      type: 'single',
+      skin: "big",
+      min: _min,
+      max: _max,
+      from: _rec,
+      step: 500,
+      hide_min_max: true,
+      hide_from_to: true,
+      onStart: function onStart(data) {
+        _willingInput.prop('value', data.from);
+      }
+    });
+    var _rangeWillingData = _rangeWilling.data("ionRangeSlider"),
+        _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
+
+    $('[posting-indicator-js]').css({
+      width: $('.js-irs-1 .irs-bar.irs-bar--single').width() - 15
+    });
+
+    $('#posting_1_career_level').on('change', function (ev) {
+      var _el = $(ev.currentTarget),
+          _elVal = $(_el).find('option:selected').val();
+
+      var _postingRecNode = $('[posting-rec-js]'),
+          _postingSimMin = $('[posting-sim-min-js]'),
+          _postingSimMax = $('[posting-sim-max-js]');
+
+      var _obj = {
+        'junior': {
+          min: '1000',
+          max: '4000',
+          rec: '2000',
+          sim_rec: '2,000',
+          sim_min: '2,000',
+          sim_max: '3,000'
+        },
+        'executive': {
+          min: '2000',
+          max: '5500',
+          rec: '3000',
+          sim_rec: '3,000',
+          sim_min: '3,000',
+          sim_max: '4,500'
+        },
+        'managerial': {
+          min: '4000',
+          max: '8000',
+          rec: '5000',
+          sim_rec: '5,000',
+          sim_min: '4,000',
+          sim_max: '7,000'
+        },
+        'c-level': {
+          min: '6000',
+          max: '11000',
+          rec: '8000',
+          sim_rec: '8,000',
+          sim_min: '8,000',
+          sim_max: '10,000'
+        }
+      };
+
+      if (_obj[_elVal]) {
+        _postingRecNode.text('$' + _obj[_elVal].sim_rec);
+        _postingSimMin.text(_obj[_elVal].sim_min);
+        _postingSimMax.text(_obj[_elVal].sim_max);
+
+        _rangeWillingData.update({
+          min: _obj[_elVal].min,
+          max: _obj[_elVal].max,
+          from: _obj[_elVal].max - 1500
+        });
+        _rangeWillingHiddenData.update({
+          min: _obj[_elVal].min,
+          max: _obj[_elVal].max,
+          from: _obj[_elVal].rec
+        });
+
+        _willingInput.prop("value", _obj[_elVal].max - 1500);
+
+        $('[posting-indicator-js]').css({
+          width: $('.js-irs-1 .irs-bar.irs-bar--single').width() - 15
+        });
+      }
+    });
+
+    _willingInput.on('change', function (ev) {
+      var _val = _helperSalaryValid($(ev.currentTarget).val());
+
+      _rangeWillingData.update({
+        from: _val
+      });
+
+      $(ev.currentTarget).prop("value", _val);
+    });
+  };
+
   var initPostingAction = function initPostingAction() {
     var _btnNext = $('[posting-next-js]'),
         _btnBack = $('[posting-back-js]');
@@ -1436,6 +1612,8 @@ $(document).ready(function (ev) {
     initRangeSlider();
     initPostingAction();
     initAddMoreSkills();
+    initPostingAddQuestion();
+    initWillingRange();
     // ==========================================
 
     $(window).on('load', function () {

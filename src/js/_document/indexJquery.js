@@ -1013,7 +1013,7 @@ $(document).ready((ev) => {
     _helperCallbackClick('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
 
     const _rangeExperience = $("[range-experience-js]");
-    $("[range-experience-js]").ionRangeSlider({
+    _rangeExperience.ionRangeSlider({
       type: 'double',
       skin: "big",
       min: 1,
@@ -1035,7 +1035,6 @@ $(document).ready((ev) => {
     _helperCallbackClick('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
     _helperCallbackClick('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
   };
-
 
   const initAddMoreSkills = (val) => {
     $(".skillsInput").select2({
@@ -1103,6 +1102,191 @@ $(document).ready((ev) => {
     });
   };
 
+  const initPostingAddQuestion = () => {
+    const _questionTMPL = () => {
+      return `
+        <div class="posting__form-field" posting-parent-question-js>
+          <div class="posting__form-remove">
+            <a href="#"><i class="icon-font icon-trash"></i></a>
+          </div>
+          <div class="posting__form-input">
+            <input type="text" name="posting_question" placeholder="Add question" posting-input-question-js required>
+          </div>
+        </div>
+      `;
+    };
+
+    $('[posting-content-question-js]').on('click', 'a', (ev) => {
+      $(ev.currentTarget).closest('[posting-parent-question-js]').remove();
+    });
+
+    $('[posting-add-question-js]').on('click', (ev) => {
+      $('[posting-content-question-js]').append(_questionTMPL);
+    });
+
+    $('[posting-question-js]').on('click', (ev) => {
+      const _questionName = $('#formQuestion'),
+        _questionInputFields = $('[posting-input-question-js]'),
+        _questionWarning = $('[posting-warning-question-js]');
+
+      let _formInputBool = true;
+
+      $.each(_questionInputFields, (idx, el) => {
+        if($(el).val().length === 0) {
+          _formInputBool = false;
+          _questionWarning.show();
+          return;
+        } else {
+          _questionWarning.hide();
+        }
+      }, false);
+
+      if(_formInputBool) {
+        console.log(`valid`);
+      }
+    });
+  };
+
+  const initWillingRange = () => {
+    const _rangeWilling = $("[range-willing-js]"),
+      _rangeWillingHidden = $('[range-willing-hidden-js]'),
+      _willingInput = $('[willing-data-input-js]');
+
+    let _min = 1000,
+      _max = 4000,
+      _rec = 2000;
+
+    let _from = (_max - 1500);
+
+    function _helperSalaryValid (val) {
+      if(val < _min) {
+        val = _min;
+      } else if (val > _max) {
+        val = _max;
+      } else {
+        val = Math.round(val / 500) * 500;
+      }
+
+      return val;
+    }
+
+    _rangeWilling.ionRangeSlider({
+      type: 'single',
+      skin: "big",
+      min: _min,
+      max: _max,
+      from: _from,
+      step: 500,
+      hide_min_max: true,
+      hide_from_to: true,
+      onStart: function(data) {
+        _willingInput.prop('value', data.from);
+      },
+      onChange: function(data) {
+        _willingInput.prop('value', data.from);
+      },
+      onFinish: function(data) {
+        _willingInput.prop('value', data.from);
+      }
+    });
+    _rangeWillingHidden.ionRangeSlider({
+      type: 'single',
+      skin: "big",
+      min: _min,
+      max: _max,
+      from: _rec,
+      step: 500,
+      hide_min_max: true,
+      hide_from_to: true,
+      onStart: function(data) {
+        _willingInput.prop('value', data.from);
+      }
+    });
+    const _rangeWillingData = _rangeWilling.data("ionRangeSlider"),
+      _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
+
+    $('[posting-indicator-js]').css({
+      width: $('.js-irs-1 .irs-bar.irs-bar--single').width() - 15
+    });
+
+    $('#posting_1_career_level').on('change', (ev) => {
+      const _el = $(ev.currentTarget),
+        _elVal = $(_el).find('option:selected').val();
+
+      const _postingRecNode = $('[posting-rec-js]'),
+        _postingSimMin = $('[posting-sim-min-js]'),
+        _postingSimMax = $('[posting-sim-max-js]');
+
+      const _obj = {
+        'junior' : {
+          min: '1000',
+          max: '4000',
+          rec: '2000',
+          sim_rec: '2,000',
+          sim_min: '2,000',
+          sim_max: '3,000',
+        },
+        'executive' : {
+          min: '2000',
+          max: '5500',
+          rec: '3000',
+          sim_rec: '3,000',
+          sim_min: '3,000',
+          sim_max: '4,500',
+        },
+        'managerial' : {
+          min: '4000',
+          max: '8000',
+          rec: '5000',
+          sim_rec: '5,000',
+          sim_min: '4,000',
+          sim_max: '7,000',
+        },
+        'c-level' : {
+          min: '6000',
+          max: '11000',
+          rec: '8000',
+          sim_rec: '8,000',
+          sim_min: '8,000',
+          sim_max: '10,000',
+        },
+      };
+
+      if(_obj[_elVal]) {
+        _postingRecNode.text('$' + _obj[_elVal].sim_rec);
+        _postingSimMin.text(_obj[_elVal].sim_min);
+        _postingSimMax.text(_obj[_elVal].sim_max);
+
+        _rangeWillingData.update({
+          min: _obj[_elVal].min,
+          max: _obj[_elVal].max,
+          from: (_obj[_elVal].max - 1500)
+        });
+        _rangeWillingHiddenData.update({
+          min: _obj[_elVal].min,
+          max: _obj[_elVal].max,
+          from: _obj[_elVal].rec
+        });
+
+        _willingInput.prop("value", (_obj[_elVal].max - 1500));
+
+        $('[posting-indicator-js]').css({
+          width: $('.js-irs-1 .irs-bar.irs-bar--single').width() - 15
+        });
+      }
+    });
+
+    _willingInput.on('change', (ev) => {
+      const _val = _helperSalaryValid($(ev.currentTarget).val());
+
+      _rangeWillingData.update({
+        from: _val
+      });
+
+      $(ev.currentTarget).prop("value", _val);
+    });
+  };
+
 
   const initPostingAction = () => {
     const _btnNext = $('[posting-next-js]'),
@@ -1161,6 +1345,8 @@ $(document).ready((ev) => {
     initRangeSlider();
     initPostingAction();
     initAddMoreSkills();
+    initPostingAddQuestion();
+    initWillingRange();
 		// ==========================================
 
     $(window).on('load', () => {
