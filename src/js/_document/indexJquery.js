@@ -1142,7 +1142,8 @@ $(document).ready((ev) => {
       }, false);
 
       if(_formInputBool) {
-        console.log(`valid`);
+        $('.posting__btn-wrapper').hide();
+        $('.posting__btn-wrapper[data-wrapper-id="' + $(ev.currentTarget).data('id') + '"]').show().css({display:'flex'});
       }
     });
   };
@@ -1287,22 +1288,34 @@ $(document).ready((ev) => {
     });
   };
 
+  const initChoosePlan = () => {
+    $('.c-modal__box-btn a').on('click', (ev) => {
+      $('.c-modal__box').removeClass('is-active');
+      $(ev.currentTarget).closest('.c-modal__box').addClass('is-active');
+
+      $('[posting-review-js]').hide();
+      $(".posting__btn-wrapper[data-wrapper-id='4'] a[posting-question-js]").show().css({display:'flex'});
+    });
+  };
 
   const initPostingAction = () => {
     const _btnNext = $('[posting-next-js]'),
       _btnBack = $('[posting-back-js]');
 
-    _btnNext.on('click', (ev) => {
-      const _el = $(ev.currentTarget),
-        _elID = _el.data('id');
-
-    });
-
     _btnBack.on('click', (ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.data('id');
 
+      $('.posting__btn-wrapper').hide();
+      $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
+    });
 
+    _btnNext.on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _elID = _el.data('id');
+
+      $('.posting__btn-wrapper').hide();
+      $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
     });
   };
 	/*
@@ -1347,6 +1360,7 @@ $(document).ready((ev) => {
     initAddMoreSkills();
     initPostingAddQuestion();
     initWillingRange();
+    initChoosePlan();
 		// ==========================================
 
     $(window).on('load', () => {

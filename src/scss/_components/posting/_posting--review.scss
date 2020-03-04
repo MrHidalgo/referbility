@@ -105,6 +105,43 @@
         padding-right: 20px;
         padding-bottom: 20px;
 
+        &.is-active {
+          .c-modal__box {
+            &-bg {
+              border: solid 1px #8181ff;
+              @include transition(border);
+            }
+            &-circle {
+              border-color: transparent;
+              @include transition(border-color);
+
+              &:after {
+                opacity: 1;
+                visibility: visible;
+                @include transition(opacity, visibility);
+              }
+            }
+            &-btn {
+              a {
+                border-color: transparent;
+                box-shadow: 0 5px 20px 0 rgba(135, 119, 217, 0.2);
+                @include transition(border-color, box-shadow);
+
+                &:after {
+                  opacity: 1;
+                  visibility: visible;
+                  @include transition(opacity, visibility);
+                }
+
+                span {
+                  color: #ffffff;
+                  @include transition(color);
+                }
+              }
+            }
+          }
+        }
+
         &-wrapper {
           display: flex;
           justify-content: space-between;
@@ -126,6 +163,7 @@
           box-shadow: 0 30px 50px 0 rgba(135, 131, 157, 0.1);
           border: solid 1px #dfdfff;
           background-color: #ffffff;
+          @include transition(border);
         }
 
         &-content {
@@ -134,6 +172,7 @@
         }
 
         &-circle {
+          overflow: hidden;
           position: relative;
           display: flex;
           align-items: center;
@@ -145,6 +184,20 @@
           border-radius: 50%;
           border: solid 1px #dfdfff;
           background-image: linear-gradient(122deg, rgba(129, 129, 255, 0.2) 16%, rgba(81, 83, 220, 0.05) 112%), linear-gradient(to bottom, #ffffff, #ffffff);
+          @include transition(border-color);
+
+          &:after {
+            content: '';
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(46deg, #00aaff 28%, #28d7cc 84%);
+            @include transition(opacity, visibility);
+          }
         }
 
         &-title {
@@ -480,6 +533,7 @@
           }
 
           button {
+            outline: none;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -502,6 +556,8 @@
           justify-content: center;
 
           a {
+            overflow: hidden;
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -512,12 +568,49 @@
             border-radius: 39px;
             border: solid 1px rgba(45, 28, 64, 0.5);
             background-color: #ffffff;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-align: center;
-            color: #2d1c40;
+            @include transition(border-color, box-shadow);
+
+            &:hover {
+              border-color: transparent;
+              box-shadow: 0 5px 20px 0 rgba(135, 119, 217, 0.2);
+              @include transition(border-color, box-shadow);
+
+              &:after {
+                opacity: 1;
+                visibility: visible;
+                @include transition(opacity, visibility);
+              }
+
+              span {
+                color: #ffffff;
+                @include transition(color);
+              }
+            }
+
+            &:after {
+              content: '';
+              opacity: 0;
+              visibility: hidden;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-image: linear-gradient(46deg, #00aaff 28%, #28d7cc 84%);
+              @include transition(opacity, visibility);
+            }
+
+            span {
+              z-index: 2;
+              position: relative;
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 1px;
+              text-align: center;
+              color: #2d1c40;
+              @include transition(color);
+            }
           }
         }
       }
