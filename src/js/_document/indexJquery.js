@@ -1129,6 +1129,8 @@ $(document).ready((ev) => {
         _questionInputFields = $('[posting-input-question-js]'),
         _questionWarning = $('[posting-warning-question-js]');
 
+      const _ID = $(ev.currentTarget).data('id');
+
       let _formInputBool = true;
 
       $.each(_questionInputFields, (idx, el) => {
@@ -1143,7 +1145,20 @@ $(document).ready((ev) => {
 
       if(_formInputBool) {
         $('.posting__btn-wrapper').hide();
-        $('.posting__btn-wrapper[data-wrapper-id="' + $(ev.currentTarget).data('id') + '"]').show().css({display:'flex'});
+        $('.posting__btn-wrapper[data-wrapper-id="' + _ID + '"]').show().css({display:'flex'});
+
+        $('.posting__step[posting-step-' + _ID + '-js]').addClass('is-active');
+
+        $('.posting__form[posting-form-' + (_ID - 1) + '-js]').removeClass('is-active');
+        $('.posting__form[posting-form-' + _ID + '-js]').addClass('is-active');
+
+        if($(ev.currentTarget).data('init') === 'range') {
+          setTimeout(() => {
+            $('[posting-indicator-js]').css({
+              width: $('.irs-bar-hidden .irs-bar').width() - 15
+            });
+          }, 300);
+        }
       }
     });
   };
@@ -1199,6 +1214,7 @@ $(document).ready((ev) => {
       step: 500,
       hide_min_max: true,
       hide_from_to: true,
+      extra_classes: 'irs-bar-hidden',
       onStart: function(data) {
         _willingInput.prop('value', data.from);
       }
@@ -1206,9 +1222,11 @@ $(document).ready((ev) => {
     const _rangeWillingData = _rangeWilling.data("ionRangeSlider"),
       _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
 
-    $('[posting-indicator-js]').css({
-      width: $('.js-irs-1 .irs-bar.irs-bar--single').width() - 15
-    });
+    setTimeout(() => {
+      $('[posting-indicator-js]').css({
+        width: $('.irs-bar-hidden .irs-bar').width() - 15
+      });
+    }, 100);
 
     $('#posting_1_career_level').on('change', (ev) => {
       const _el = $(ev.currentTarget),
@@ -1270,10 +1288,6 @@ $(document).ready((ev) => {
         });
 
         _willingInput.prop("value", (_obj[_elVal].max - 1500));
-
-        $('[posting-indicator-js]').css({
-          width: $('.js-irs-1 .irs-bar.irs-bar--single').width() - 15
-        });
       }
     });
 
@@ -1308,6 +1322,11 @@ $(document).ready((ev) => {
 
       $('.posting__btn-wrapper').hide();
       $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
+
+      $('.posting__step[posting-step-' + (_elID + 1) + '-js]').removeClass('is-active');
+
+      $('.posting__form[posting-form-' + (_elID + 1) + '-js]').removeClass('is-active');
+      $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
     });
 
     _btnNext.on('click', (ev) => {
@@ -1316,6 +1335,11 @@ $(document).ready((ev) => {
 
       $('.posting__btn-wrapper').hide();
       $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
+
+      $('.posting__step[posting-step-' + _elID + '-js]').addClass('is-active');
+
+      $('.posting__form[posting-form-' + (_elID - 1) + '-js]').removeClass('is-active');
+      $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
     });
   };
 	/*

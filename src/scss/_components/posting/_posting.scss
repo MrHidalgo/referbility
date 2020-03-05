@@ -53,9 +53,14 @@
   }
 
   &__form {
+    display: none;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    &.is-active {
+      display: block;
+    }
 
     &-1,
     &-2,
@@ -500,6 +505,7 @@
         transform: translateY(-50%);
         height: 10px;
         border-radius: 7px;
+        @include transition(width);
 
         span {
           position: absolute;
@@ -536,7 +542,7 @@
               margin-left: 9px;
             }
 
-            .js-irs-1 {
+            .irs-bar-hidden {
               z-index: 0;
               opacity: 0;
               visibility: hidden;
