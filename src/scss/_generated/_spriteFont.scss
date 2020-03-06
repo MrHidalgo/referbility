@@ -150,35 +150,41 @@
 	@if $filename == review-1 {
 		$char: "\E029";
 	}
-	@if $filename == search {
+	@if $filename == rocket {
 		$char: "\E02A";
 	}
-	@if $filename == seo {
+	@if $filename == search {
 		$char: "\E02B";
 	}
-	@if $filename == settings {
+	@if $filename == seo {
 		$char: "\E02C";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == settings {
 		$char: "\E02D";
 	}
-	@if $filename == timer {
+	@if $filename == shout {
 		$char: "\E02E";
 	}
-	@if $filename == trash {
+	@if $filename == thumbs-up {
 		$char: "\E02F";
 	}
-	@if $filename == twitter {
+	@if $filename == timer {
 		$char: "\E030";
 	}
-	@if $filename == user {
+	@if $filename == trash {
 		$char: "\E031";
 	}
-	@if $filename == wallet {
+	@if $filename == twitter {
 		$char: "\E032";
 	}
-	@if $filename == x {
+	@if $filename == user {
 		$char: "\E033";
+	}
+	@if $filename == wallet {
+		$char: "\E034";
+	}
+	@if $filename == x {
+		$char: "\E035";
 	}
 
 	@return $char;
@@ -359,6 +365,10 @@
 	@include icon(review-1);
 
 }
+.icon-rocket {
+	@include icon(rocket);
+
+}
 .icon-search {
 	@include icon(search);
 
@@ -369,6 +379,10 @@
 }
 .icon-settings {
 	@include icon(settings);
+
+}
+.icon-shout {
+	@include icon(shout);
 
 }
 .icon-thumbs-up {

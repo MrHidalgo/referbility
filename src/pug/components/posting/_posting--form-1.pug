@@ -50,7 +50,7 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
             input(input type="text" class="" name="" value="" range-salary-js)
           div
             .posting__form-input
-              input(type='text' name='' placeholder='100000' value="" salary-max-input-js intIntegerOnlyBox-js)
+              input(type='text' name='' placeholder='100,000' value="" salary-max-input-js intIntegerOnlyBox-js)
 
     .posting__form-col.posting__form-col-2
       .posting__form-field
@@ -64,7 +64,7 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
 
   .posting__form-field
     label.posting__form-checkbox(for='posting_1_hide_salary')
-      input(type='checkbox' name='' id='posting_1_hide_salary')
+      input(type='checkbox' name='' id='posting_1_hide_salary' posting-checkbox-info-js)
       div
         span
           i
@@ -73,7 +73,7 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
 
   .posting__form-field
     label.posting__form-checkbox(for='posting_1_post_job')
-      input(type='checkbox' name='' id='posting_1_post_job')
+      input(type='checkbox' name='' id='posting_1_post_job' posting-checkbox-info-js)
       div
         span
           i
@@ -81,7 +81,7 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
         p!= "Post job as <strong>Confidential Company</strong> (your company's name and logo will be hidden to referrers and candidates)"
 
   .posting__form-field
-    .posting__form-info
+    .posting__form-info(posting-info-js)
       p Hiding your company name or the position's salary will reduce the number of referrals received, as candidates are less likely to accept referrals without this information.
 
   p.posting__title In which location will the candidate work?

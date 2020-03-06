@@ -1215,6 +1215,13 @@ $(document).ready(function (ev) {
     });
   };
 
+  var initTags = function initTags() {
+    $(".selectTags").select2({
+      width: 'resolve',
+      tags: true
+    });
+  };
+
   var initRangeSlider = function initRangeSlider() {
     (function ($) {
       $.fn.inputFilter = function (inputFilter) {
@@ -1233,9 +1240,13 @@ $(document).ready(function (ev) {
       };
     })(jQuery);
     $("[intIntegerOnlyBox-js]").inputFilter(function (value) {
-      return (/^-?\d*$/.test(value)
+      return (/^\d*[,]?\d*$/.test(value)
       );
     });
+
+    var numberWithCommas = function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
 
     function _helperSalaryValid(val) {
       if (val < 500) {
@@ -1258,16 +1269,16 @@ $(document).ready(function (ev) {
       return val;
     }
     function _helperRangeMethod(inputMin, inputMax, data) {
-      $(inputMin).prop('value', data.from);
-      $(inputMax).prop('value', data.to);
+      $(inputMin).prop('value', numberWithCommas(data.from));
+      $(inputMax).prop('value', numberWithCommas(data.from));
     }
-    function _helperCallbackClick(inputName, helperCallback, rangeData, directionRange) {
+    function _helperCallbackChange(inputName, helperCallback, rangeData, directionRange) {
       $(inputName).on('change', function (ev) {
         var _val = helperCallback($(ev.currentTarget).val());
 
         rangeData.update(_defineProperty({}, directionRange, _val));
 
-        $(ev.currentTarget).prop("value", _val);
+        $(ev.currentTarget).prop("value", numberWithCommas(_val));
       });
     }
 
@@ -1292,8 +1303,8 @@ $(document).ready(function (ev) {
     });
     var _rangeSalaryData = _rangeSalary.data("ionRangeSlider");
 
-    _helperCallbackClick('[salary-min-input-js]', _helperSalaryValid, _rangeSalaryData, 'from');
-    _helperCallbackClick('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
+    _helperCallbackChange('[salary-min-input-js]', _helperSalaryValid, _rangeSalaryData, 'from');
+    _helperCallbackChange('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
 
     var _rangeExperience = $("[range-experience-js]");
     _rangeExperience.ionRangeSlider({
@@ -1315,17 +1326,11 @@ $(document).ready(function (ev) {
     });
     var _rangeExperienceData = _rangeExperience.data("ionRangeSlider");
 
-    _helperCallbackClick('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
-    _helperCallbackClick('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
+    _helperCallbackChange('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
+    _helperCallbackChange('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
   };
 
   var initAddMoreSkills = function initAddMoreSkills(val) {
-    $(".skillsInput").select2({
-      placeholder: 'Skills',
-      width: 'resolve',
-      tags: true
-    });
-
     var _skillsForm = $('#skillsForm'),
         _input = $('[skills-input-js]');
 
@@ -1436,6 +1441,10 @@ $(document).ready(function (ev) {
   };
 
   var initWillingRange = function initWillingRange() {
+    var numberWithCommas = function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
     var _rangeWilling = $("[range-willing-js]"),
         _rangeWillingHidden = $('[range-willing-hidden-js]'),
         _willingInput = $('[willing-data-input-js]');
@@ -1444,7 +1453,7 @@ $(document).ready(function (ev) {
         _max = 4000,
         _rec = 2000;
 
-    var _from = _max - 1500;
+    var _from = _rec;
 
     function _helperSalaryValid(val) {
       if (val < _min) {
@@ -1468,13 +1477,13 @@ $(document).ready(function (ev) {
       hide_min_max: true,
       hide_from_to: true,
       onStart: function onStart(data) {
-        _willingInput.prop('value', data.from);
+        _willingInput.prop('value', '$' + numberWithCommas(data.from));
       },
       onChange: function onChange(data) {
-        _willingInput.prop('value', data.from);
+        _willingInput.prop('value', '$' + numberWithCommas(data.from));
       },
       onFinish: function onFinish(data) {
-        _willingInput.prop('value', data.from);
+        _willingInput.prop('value', '$' + numberWithCommas(data.from));
       }
     });
     _rangeWillingHidden.ionRangeSlider({
@@ -1486,10 +1495,7 @@ $(document).ready(function (ev) {
       step: 500,
       hide_min_max: true,
       hide_from_to: true,
-      extra_classes: 'irs-bar-hidden',
-      onStart: function onStart(data) {
-        _willingInput.prop('value', data.from);
-      }
+      extra_classes: 'irs-bar-hidden'
     });
     var _rangeWillingData = _rangeWilling.data("ionRangeSlider"),
         _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
@@ -1551,7 +1557,7 @@ $(document).ready(function (ev) {
         _rangeWillingData.update({
           min: _obj[_elVal].min,
           max: _obj[_elVal].max,
-          from: _obj[_elVal].max - 1500
+          from: _obj[_elVal].rec
         });
         _rangeWillingHiddenData.update({
           min: _obj[_elVal].min,
@@ -1559,7 +1565,13 @@ $(document).ready(function (ev) {
           from: _obj[_elVal].rec
         });
 
-        _willingInput.prop("value", _obj[_elVal].max - 1500);
+        setTimeout(function () {
+          $('[posting-indicator-js]').css({
+            width: $('.irs-bar-hidden .irs-bar').width() - 15
+          });
+        }, 100);
+
+        _willingInput.prop("value", '$' + numberWithCommas(_obj[_elVal].max - 1500));
       }
     });
 
@@ -1570,7 +1582,7 @@ $(document).ready(function (ev) {
         from: _val
       });
 
-      $(ev.currentTarget).prop("value", _val);
+      $(ev.currentTarget).prop("value", '$' + numberWithCommas(_val));
     });
   };
 
@@ -1614,6 +1626,24 @@ $(document).ready(function (ev) {
       $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
     });
   };
+
+  var initPostingBlockInfoToggle = function initPostingBlockInfoToggle() {
+    $('[posting-checkbox-info-js]').on('change', function (ev) {
+      var _count = 0;
+
+      $.each($('[posting-checkbox-info-js]'), function (idx, val) {
+        if ($(val).is(':checked')) {
+          _count++;
+        }
+      });
+
+      if (_count > 0) {
+        $('[posting-info-js]').slideDown(400);
+      } else {
+        $('[posting-info-js]').slideUp(400);
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -1650,12 +1680,15 @@ $(document).ready(function (ev) {
     initInnerPageLogic();
     initBoardCard();
     initRetouchPricing();
+
     initRangeSlider();
     initPostingAction();
+    initTags();
     initAddMoreSkills();
     initPostingAddQuestion();
     initWillingRange();
     initChoosePlan();
+    initPostingBlockInfoToggle();
     // ==========================================
 
     $(window).on('load', function () {

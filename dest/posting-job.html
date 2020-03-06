@@ -207,7 +207,7 @@
                       </div>
                       <div>
                         <div class="posting__form-input">
-                          <input type="text" name="" placeholder="100000" value="" salary-max-input-js intIntegerOnlyBox-js>
+                          <input type="text" name="" placeholder="100,000" value="" salary-max-input-js intIntegerOnlyBox-js>
                         </div>
                       </div>
                     </div>
@@ -229,7 +229,7 @@
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-checkbox" for="posting_1_hide_salary">
-                  <input type="checkbox" name="" id="posting_1_hide_salary">
+                  <input type="checkbox" name="" id="posting_1_hide_salary" posting-checkbox-info-js>
                   <div><span><i></i></span></div>
                   <div>
                     <p>Hide salary information</p>
@@ -238,7 +238,7 @@
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-checkbox" for="posting_1_post_job">
-                  <input type="checkbox" name="" id="posting_1_post_job">
+                  <input type="checkbox" name="" id="posting_1_post_job" posting-checkbox-info-js>
                   <div><span><i></i></span></div>
                   <div>
                     <p>Post job as <strong>Confidential Company</strong> (your company's name and logo will be hidden to referrers and candidates)</p>
@@ -246,7 +246,7 @@
                 </label>
               </div>
               <div class="posting__form-field">
-                <div class="posting__form-info">
+                <div class="posting__form-info" posting-info-js>
                   <p>Hiding your company name or the position's salary will reduce the number of referrals received, as candidates are less likely to accept referrals without this information.</p>
                 </div>
               </div>
@@ -289,15 +289,19 @@
                 </div>
               </div>
               <div class="posting__form-field">
-                <label class="posting__form-label" for="posting_1_industry_experience">Industry Experience</label>
-                <div class="posting__form-input">
-                  <input type="text" name="" id="posting_1_industry_experience" placeholder="Industries">
+                <label class="posting__form-label">Industry Experience</label>
+                <div class="posting__form-tags">
+                  <select class="selectTags" multiple="multiple" name="" style="width: 100%">
+                    <option value="Action">Action</option>
+                    <option value="One more action">One more action</option>
+                    <option value="Again action">Again action</option>
+                  </select>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label">Skills</label>
                 <div class="posting__form-tags">
-                  <select class="skillsInput" multiple="multiple" name="skills" style="width: 100%" skills-select-js>
+                  <select class="skillsInput selectTags" multiple="multiple" name="skills" style="width: 100%" skills-select-js>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -316,21 +320,25 @@
                 </div>
               </div>
               <div class="posting__form-field">
-                <label class="posting__form-label" for="posting_1_languages">Languages</label>
-                <div class="posting__form-input">
-                  <input type="text" name="" id="posting_1_languages" placeholder="Languages">
+                <label class="posting__form-label">Languages</label>
+                <div class="posting__form-tags">
+                  <select class="selectTags" multiple="multiple" name="" style="width: 100%">
+                    <option value="Action">Action</option>
+                    <option value="One more action">One more action</option>
+                    <option value="Again action">Again action</option>
+                  </select>
                 </div>
               </div>
               <div class="posting__form-field">
-                <label class="posting__form-label" for="posting_1_industry_additional_requirements">Additional requirements/certifications</label>
-                <div class="posting__form-input">
-                  <input type="text" name="" id="posting_1_industry_additional_requirements" placeholder="Industries">
+                <label class="posting__form-label" for="posting_1_industry_additional_requirements">Mention any additional requirements or certifications that the ideal candidate would have</label>
+                <div class="posting__form-textarea">
+                  <textarea name="" id="posting_1_industry_additional_requirements" placeholder="Additional requirements"></textarea>
                 </div>
               </div>
               <p class="posting__title">Candidates with these designations are the most relevant to you:</p>
               <div class="posting__form-field">
                 <div class="posting__form-tags">
-                  <select class="skillsInput" multiple="multiple" name="designations" style="width: 100%" designations-select-js>
+                  <select class="skillsInput selectTags" multiple="multiple" name="designations" style="width: 100%" designations-select-js>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -369,7 +377,7 @@
                       </div>
                       <div>
                         <div class="posting__form-input">
-                          <input type="text" name="" placeholder="30" willing-data-input-js>
+                          <input type="text" name="" placeholder="30" willing-data-input-js disabled>
                         </div>
                       </div>
                     </div>
@@ -557,7 +565,7 @@
                 <div class="c-modal__box c-modal__box-1">
                   <div class="c-modal__box-bg"></div>
                   <div class="c-modal__box-content">
-                    <div class="c-modal__box-circle"></div>
+                    <div class="c-modal__box-circle"><i class="icon-font icon-shout"></i></div>
                     <p class="c-modal__box-title">Regular</p>
                     <p class="c-modal__box-subtitle">Job post active for 3 months</p>
                     <div class="c-modal__box-relevant">
@@ -626,7 +634,7 @@
                     </div>
                     <div class="c-modal__box-voucher">
                       <input type="text" name="" placeholder="Do you have a voucher code?">
-                      <button type="button">Apply</button>
+                      <button class="c-btn c-btn--bg c-btn--bg-blue" type="button"><span>Apply</span></button>
                     </div>
                     <div class="posting__form-field">
                       <label class="posting__form-checkbox" for="posting_1_regular">
@@ -642,10 +650,10 @@
                 </div>
               </div>
               <div>
-                <div class="c-modal__box c-modal__box-2">
+                <div class="c-modal__box c-modal__box-2 is-active">
                   <div class="c-modal__box-bg"></div>
                   <div class="c-modal__box-content">
-                    <div class="c-modal__box-circle"></div>
+                    <div class="c-modal__box-circle"><i class="icon-font icon-rocket"></i></div>
                     <p class="c-modal__box-title">Premium</p>
                     <p class="c-modal__box-subtitle">Job post active for 3 months</p>
                     <div class="c-modal__box-relevant">
@@ -714,7 +722,7 @@
                     </div>
                     <div class="c-modal__box-voucher">
                       <input type="text" name="" placeholder="Do you have a voucher code?">
-                      <button type="button">Apply</button>
+                      <button class="c-btn c-btn--bg c-btn--bg-blue" type="button"><span>Apply</span></button>
                     </div>
                     <div class="posting__form-field">
                       <label class="posting__form-checkbox" for="posting_1_premium">

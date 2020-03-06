@@ -932,6 +932,12 @@ $(document).ready((ev) => {
     });
   };
 
+  const initTags = () => {
+    $(".selectTags").select2({
+      width: 'resolve',
+      tags: true
+    });
+  };
 
   const initRangeSlider = () => {
     (function($) {
@@ -950,7 +956,11 @@ $(document).ready((ev) => {
         });
       };
     }(jQuery));
-    $("[intIntegerOnlyBox-js]").inputFilter(function(value) { return /^-?\d*$/.test(value);});
+    $("[intIntegerOnlyBox-js]").inputFilter(function(value) { return /^\d*[,]?\d*$/.test(value);});
+
+    const numberWithCommas = (x) => {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
 
     function _helperSalaryValid (val) {
       if(val < 500) {
@@ -973,10 +983,10 @@ $(document).ready((ev) => {
       return val;
     }
     function _helperRangeMethod (inputMin, inputMax, data) {
-      $(inputMin).prop('value', data.from);
-      $(inputMax).prop('value', data.to);
+      $(inputMin).prop('value', numberWithCommas(data.from));
+      $(inputMax).prop('value', numberWithCommas(data.from));
     }
-    function _helperCallbackClick (inputName, helperCallback, rangeData, directionRange) {
+    function _helperCallbackChange (inputName, helperCallback, rangeData, directionRange) {
       $(inputName).on('change', (ev) => {
         const _val = helperCallback($(ev.currentTarget).val());
 
@@ -984,7 +994,7 @@ $(document).ready((ev) => {
           [directionRange]: _val
         });
 
-        $(ev.currentTarget).prop("value", _val);
+        $(ev.currentTarget).prop("value", numberWithCommas(_val));
       });
     }
 
@@ -1009,8 +1019,8 @@ $(document).ready((ev) => {
     });
     const _rangeSalaryData = _rangeSalary.data("ionRangeSlider");
 
-    _helperCallbackClick('[salary-min-input-js]', _helperSalaryValid, _rangeSalaryData, 'from');
-    _helperCallbackClick('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
+    _helperCallbackChange('[salary-min-input-js]', _helperSalaryValid, _rangeSalaryData, 'from');
+    _helperCallbackChange('[salary-max-input-js]', _helperSalaryValid, _rangeSalaryData, 'to');
 
     const _rangeExperience = $("[range-experience-js]");
     _rangeExperience.ionRangeSlider({
@@ -1032,17 +1042,11 @@ $(document).ready((ev) => {
     });
     const _rangeExperienceData = _rangeExperience.data("ionRangeSlider");
 
-    _helperCallbackClick('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
-    _helperCallbackClick('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
+    _helperCallbackChange('[experience-min-input-js]', _helperExperienceValid, _rangeExperienceData, 'from');
+    _helperCallbackChange('[experience-max-input-js]', _helperExperienceValid, _rangeExperienceData, 'to');
   };
 
   const initAddMoreSkills = (val) => {
-    $(".skillsInput").select2({
-      placeholder: 'Skills',
-      width: 'resolve',
-      tags: true
-    });
-
     const _skillsForm = $('#skillsForm'),
       _input = $('[skills-input-js]');
 
@@ -1164,6 +1168,10 @@ $(document).ready((ev) => {
   };
 
   const initWillingRange = () => {
+    const numberWithCommas = (x) => {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
     const _rangeWilling = $("[range-willing-js]"),
       _rangeWillingHidden = $('[range-willing-hidden-js]'),
       _willingInput = $('[willing-data-input-js]');
@@ -1172,7 +1180,7 @@ $(document).ready((ev) => {
       _max = 4000,
       _rec = 2000;
 
-    let _from = (_max - 1500);
+    let _from = _rec;
 
     function _helperSalaryValid (val) {
       if(val < _min) {
@@ -1196,13 +1204,13 @@ $(document).ready((ev) => {
       hide_min_max: true,
       hide_from_to: true,
       onStart: function(data) {
-        _willingInput.prop('value', data.from);
+        _willingInput.prop('value', '$' + numberWithCommas(data.from));
       },
       onChange: function(data) {
-        _willingInput.prop('value', data.from);
+        _willingInput.prop('value', '$' + numberWithCommas(data.from));
       },
       onFinish: function(data) {
-        _willingInput.prop('value', data.from);
+        _willingInput.prop('value', '$' + numberWithCommas(data.from));
       }
     });
     _rangeWillingHidden.ionRangeSlider({
@@ -1214,10 +1222,7 @@ $(document).ready((ev) => {
       step: 500,
       hide_min_max: true,
       hide_from_to: true,
-      extra_classes: 'irs-bar-hidden',
-      onStart: function(data) {
-        _willingInput.prop('value', data.from);
-      }
+      extra_classes: 'irs-bar-hidden'
     });
     const _rangeWillingData = _rangeWilling.data("ionRangeSlider"),
       _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
@@ -1279,7 +1284,7 @@ $(document).ready((ev) => {
         _rangeWillingData.update({
           min: _obj[_elVal].min,
           max: _obj[_elVal].max,
-          from: (_obj[_elVal].max - 1500)
+          from: _obj[_elVal].rec
         });
         _rangeWillingHiddenData.update({
           min: _obj[_elVal].min,
@@ -1287,7 +1292,13 @@ $(document).ready((ev) => {
           from: _obj[_elVal].rec
         });
 
-        _willingInput.prop("value", (_obj[_elVal].max - 1500));
+        setTimeout(() => {
+          $('[posting-indicator-js]').css({
+            width: $('.irs-bar-hidden .irs-bar').width() - 15
+          });
+        }, 100);
+
+        _willingInput.prop("value", '$' + numberWithCommas(_obj[_elVal].max - 1500));
       }
     });
 
@@ -1298,7 +1309,7 @@ $(document).ready((ev) => {
         from: _val
       });
 
-      $(ev.currentTarget).prop("value", _val);
+      $(ev.currentTarget).prop("value", '$' + numberWithCommas(_val));
     });
   };
 
@@ -1342,6 +1353,24 @@ $(document).ready((ev) => {
       $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
     });
   };
+
+  const initPostingBlockInfoToggle = () => {
+    $('[posting-checkbox-info-js]').on('change', (ev) => {
+      let _count = 0;
+
+      $.each($('[posting-checkbox-info-js]'), (idx, val) => {
+        if($(val).is(':checked')) {
+          _count++;
+        }
+      });
+
+      if(_count > 0) {
+        $('[posting-info-js]').slideDown(400);
+      } else {
+        $('[posting-info-js]').slideUp(400);
+      }
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -1379,12 +1408,15 @@ $(document).ready((ev) => {
     initInnerPageLogic();
     initBoardCard();
     initRetouchPricing();
+
     initRangeSlider();
     initPostingAction();
+    initTags();
     initAddMoreSkills();
     initPostingAddQuestion();
     initWillingRange();
     initChoosePlan();
+    initPostingBlockInfoToggle();
 		// ==========================================
 
     $(window).on('load', () => {

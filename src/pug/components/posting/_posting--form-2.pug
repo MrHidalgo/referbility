@@ -15,14 +15,17 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
           input(type='text' name='' placeholder='30' experience-max-input-js intIntegerOnlyBox-js)
 
   .posting__form-field
-    label.posting__form-label(for='posting_1_industry_experience') Industry Experience
-    .posting__form-input
-      input(type='text' name='' id='posting_1_industry_experience' placeholder='Industries')
+    label.posting__form-label Industry Experience
+    .posting__form-tags
+      select.selectTags(multiple='multiple' name='' style="width: 100%")
+        option(value='Action') Action
+        option(value='One more action') One more action
+        option(value='Again action') Again action
 
   .posting__form-field
     label.posting__form-label Skills
     .posting__form-tags
-      select.skillsInput(multiple='multiple' name='skills' style="width: 100%" skills-select-js)
+      select.skillsInput.selectTags(multiple='multiple' name='skills' style="width: 100%" skills-select-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -41,20 +44,23 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
         option(value='') More action
 
   .posting__form-field
-    label.posting__form-label(for='posting_1_languages') Languages
-    .posting__form-input
-      input(type='text' name='' id='posting_1_languages' placeholder='Languages')
+    label.posting__form-label Languages
+    .posting__form-tags
+      select.selectTags(multiple='multiple' name='' style="width: 100%")
+        option(value='Action') Action
+        option(value='One more action') One more action
+        option(value='Again action') Again action
 
   .posting__form-field
-    label.posting__form-label(for='posting_1_industry_additional_requirements') Additional requirements/certifications
-    .posting__form-input
-      input(type='text' name='' id='posting_1_industry_additional_requirements' placeholder='Industries')
+    label.posting__form-label(for='posting_1_industry_additional_requirements') Mention any additional requirements or certifications that the ideal candidate would have
+    .posting__form-textarea
+      textarea(name='' id='posting_1_industry_additional_requirements' placeholder='Additional requirements')
 
   p.posting__title Candidates with these designations are the most relevant to you:
 
   .posting__form-field
     .posting__form-tags
-      select.skillsInput(multiple='multiple' name='designations' style="width: 100%" designations-select-js)
+      select.skillsInput.selectTags(multiple='multiple' name='designations' style="width: 100%" designations-select-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
