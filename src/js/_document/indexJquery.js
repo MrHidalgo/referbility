@@ -1204,13 +1204,33 @@ $(document).ready((ev) => {
       hide_min_max: true,
       hide_from_to: true,
       onStart: function(data) {
+        let _perc25 = (data.from * 25) / 100,
+          _perc75 = (data.from * 75) / 100;
+
         _willingInput.prop('value', '$' + numberWithCommas(data.from));
+
+        $('[posting-regular-js]').text('$' + numberWithCommas(data.from));
+        $('[posting-regular-sum-js]').text('$' + numberWithCommas(data.from + 150));
+
+        $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
+        $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
+        $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
       },
       onChange: function(data) {
         _willingInput.prop('value', '$' + numberWithCommas(data.from));
       },
       onFinish: function(data) {
+        let _perc25 = (data.from * 25) / 100,
+          _perc75 = (data.from * 75) / 100;
+
         _willingInput.prop('value', '$' + numberWithCommas(data.from));
+
+        $('[posting-regular-js]').text('$' + numberWithCommas(data.from));
+        $('[posting-regular-sum-js]').text('$' + numberWithCommas(data.from + 150));
+
+        $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
+        $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
+        $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
       }
     });
     _rangeWillingHidden.ionRangeSlider({

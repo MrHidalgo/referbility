@@ -15,6 +15,7 @@ mixin modalContent()
           .c-modal__box-bg
           .c-modal__box-content
             .c-modal__box-circle
+              i.icon-font.icon-shout
             p.c-modal__box-title Regular
             p.c-modal__box-subtitle Job post active for 3 months
             .c-modal__box-relevant
@@ -61,12 +62,12 @@ mixin modalContent()
                 div
                   p Upon a referred candidate accepting your job offer: 100% of your chosen reward**
                 div
-                  span $1,500
+                  span(posting-regular-js) $1,500
               .c-modal__box-terms-footer
                 div
                   p Total
                 div
-                  span $1,650
+                  span(posting-regular-sum-js) $1,650
               .c-modal__box-terms-info
                 div
                   p Down payment of 25% of your chosen reward**
@@ -75,7 +76,8 @@ mixin modalContent()
 
             .c-modal__box-voucher
               input(type='text' name='' placeholder='Do you have a voucher code?')
-              button(type='button') Apply
+              button.c-btn.c-btn--bg.c-btn--bg-blue(type='button')
+                span Apply
 
             .posting__form-field
               label.posting__form-checkbox(for='posting_1_regular')
@@ -91,10 +93,11 @@ mixin modalContent()
                 span Choose
 
       div
-        .c-modal__box.c-modal__box-2
+        .c-modal__box.c-modal__box-2.is-active
           .c-modal__box-bg
           .c-modal__box-content
             .c-modal__box-circle
+              i.icon-font.icon-rocket
             p.c-modal__box-title Premium
             p.c-modal__box-subtitle Job post active for 3 months
             .c-modal__box-relevant
@@ -140,23 +143,24 @@ mixin modalContent()
                 div
                   p Down payment of 25% of your chosen reward**
                 div
-                  span $375
+                  span(posting-premium-25-js) $375
               .c-modal__box-terms-body
                 div
                   span Pay Later
                 div
                   p Upon a referred candidate accepting your job offer: 75% of your chosen reward**
                 div
-                  span $1,125
+                  span(posting-premium-75-js) $1,125
               .c-modal__box-terms-footer
                 div
                   p Total
                 div
-                  span $1,700
+                  span(posting-premium-sum-js) $1,700
 
             .c-modal__box-voucher
               input(type='text' name='' placeholder='Do you have a voucher code?')
-              button(type='button') Apply
+              button.c-btn.c-btn--bg.c-btn--bg-blue(type='button')
+                span Apply
 
             .posting__form-field
               label.posting__form-checkbox(for='posting_1_premium')
