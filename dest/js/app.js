@@ -970,6 +970,23 @@ $(document).ready(function (ev) {
         $('.board-details--hidden').fadeOut(450).fadeIn(450);
         $('#board-how').hide();
 
+        var spaceBelowTop = $(window).height() - $('.board-details--hidden')[0].getBoundingClientRect().top,
+            spaceBelowBottom = $(window).height() - ($(window).height() - _pagination[0].getBoundingClientRect().top);
+
+        if ($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_pagination[0])) {
+          $('.board-details').css({
+            height: $(window).height()
+          });
+        } else if ($('.board-details--hidden')[0].getBoundingClientRect().top > 0) {
+          $('.board-details').css({
+            height: spaceBelowTop
+          });
+        } else if (isAnyPartOfElementInViewport(_pagination[0])) {
+          $('.board-details').css({
+            height: spaceBelowBottom + _pagination.height()
+          });
+        }
+
         if ($(window).width() < 1024) {
           var _elIDOffsetTop = $('#board-details').offset().top + 2;
 
@@ -980,24 +997,23 @@ $(document).ready(function (ev) {
       }
     });
 
-    $(window).on('load resize scroll', function () {
+    $(window).on('scroll resize', function () {
       if ($('.p-board').length && $(window).width() > 1023) {
-        var spaceBelow = $(window).height() - $('#board-pagination')[0].getBoundingClientRect().bottom;
+        var spaceBelowTop = $(window).height() - $('.board-details--hidden')[0].getBoundingClientRect().top,
+            spaceBelowBottom = $(window).height() - ($(window).height() - _pagination[0].getBoundingClientRect().top);
 
-        $('.board__wrapper-right').css({
-          height: $('.board__wrapper-left').outerHeight(true)
-        });
-
-        $('.board-details').css({
-          height: $(window).outerHeight(true)
-        });
-
-        if (_pagination.length > 0 && isAnyPartOfElementInViewport(_pagination[0])) {
-          if (spaceBelow > 0) {
-            $('.board-details').css({
-              height: $(window).outerHeight(true) - spaceBelow
-            });
-          }
+        if ($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_pagination[0])) {
+          $('.board-details').css({
+            height: $(window).height()
+          });
+        } else if ($('.board-details--hidden')[0].getBoundingClientRect().top > 0) {
+          $('.board-details').css({
+            height: spaceBelowTop
+          });
+        } else if (isAnyPartOfElementInViewport(_pagination[0])) {
+          $('.board-details').css({
+            height: spaceBelowBottom + _pagination.height()
+          });
         }
       } else {
         $('.board__wrapper-right, .board-details').css({
