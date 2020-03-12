@@ -109,35 +109,35 @@
         <div class="posting__wrapper">
           <div class="posting__wrapper-head">
             <div class="posting__step-wrapper">
-              <div class="posting__step posting__step--info is-active" posting-step-1-js>
+              <div class="posting__step posting__step--info is-active" data-id="1" posting-step-1-js posting-step-js>
                 <div class="posting__step-circle"><i class="icon-font icon-case"></i></div>
                 <div class="posting__step-desc">
                   <p>The Job</p>
                 </div>
               </div>
               <div class="posting__step posting__step--arrow"><i class="icon-font icon-corner"></i></div>
-              <div class="posting__step posting__step--info" posting-step-2-js>
+              <div class="posting__step posting__step--info" data-id="2" posting-step-2-js posting-step-js>
                 <div class="posting__step-circle"><i class="icon-font icon-user"></i></div>
                 <div class="posting__step-desc">
                   <p>The Candidate</p>
                 </div>
               </div>
               <div class="posting__step posting__step--arrow"><i class="icon-font icon-corner"></i></div>
-              <div class="posting__step posting__step--info" posting-step-3-js>
+              <div class="posting__step posting__step--info" data-id="3" posting-step-3-js posting-step-js>
                 <div class="posting__step-circle"><i class="icon-font icon-question-circle"></i></div>
                 <div class="posting__step-desc">
                   <p>Screening Questions</p>
                 </div>
               </div>
               <div class="posting__step posting__step--arrow"><i class="icon-font icon-corner"></i></div>
-              <div class="posting__step posting__step--info" posting-step-4-js>
+              <div class="posting__step posting__step--info" data-id="4" posting-step-4-js posting-step-js>
                 <div class="posting__step-circle"><i class="icon-font icon-cup"></i></div>
                 <div class="posting__step-desc">
                   <p>Reward</p>
                 </div>
               </div>
               <div class="posting__step posting__step--arrow"><i class="icon-font icon-corner"></i></div>
-              <div class="posting__step posting__step--info" posting-step-5-js>
+              <div class="posting__step posting__step--info" data-id="5" posting-step-5-js posting-step-js>
                 <div class="posting__step-circle"><i class="icon-font icon-newspaper"></i></div>
                 <div class="posting__step-desc">
                   <p>Review</p>
@@ -146,35 +146,35 @@
             </div>
           </div>
           <div class="posting__wrapper-body">
-            <form class="posting__form posting__form-1 is-active" action="" method="" name="" posting-form-1-js>
+            <form class="posting__form posting__form-1 is-active" action="" method="" name="" autocomplete="off" posting-form-1-js>
               <p class="posting__title">Tell us about the job you're sourcing for!</p>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_job_title">Job Title</label>
                 <div class="posting__form-input">
-                  <input type="text" name="" id="posting_1_job_title" placeholder="Type Job Title">
+                  <input type="text" name="job_title" id="posting_1_job_title" placeholder="Type Job Title" required>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_job_function">Job Function</label>
                 <div class="posting__form-select">
-                  <select name="" id="posting_1_job_function">
-                    <option value="" selected disabled>Choose Job Function</option>
-                    <option value="">Action</option>
-                    <option value="">More action</option>
+                  <select name="job_function" id="posting_1_job_function" required>
+                    <option value="">Choose Job Function</option>
+                    <option value="Action">Action</option>
+                    <option value="More action">More action</option>
                   </select>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_job_description">Job Description</label>
                 <div class="posting__form-textarea">
-                  <textarea name="" id="posting_1_job_description" placeholder="Type Description"></textarea>
+                  <textarea name="job_description" id="posting_1_job_description" placeholder="Type Description" required></textarea>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_career_level">Career Level</label>
                 <div class="posting__form-select">
-                  <select name="" id="posting_1_career_level">
-                    <option value="" selected disabled>Choose Career Level</option>
+                  <select name="career_level" id="posting_1_career_level" required>
+                    <option value="">Choose Career Level</option>
                     <option value="junior">Junior</option>
                     <option value="executive">Executive</option>
                     <option value="managerial">Managerial</option>
@@ -185,10 +185,10 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_employment_type">Employment Type</label>
                 <div class="posting__form-select">
-                  <select name="" id="posting_1_employment_type">
-                    <option value="" selected disabled>Choose Employment Type</option>
-                    <option value="">Action</option>
-                    <option value="">More action</option>
+                  <select name="employment_type" id="posting_1_employment_type" required>
+                    <option value="">Choose Employment Type</option>
+                    <option value="Action">Action</option>
+                    <option value="More action">More action</option>
                   </select>
                 </div>
               </div>
@@ -199,7 +199,7 @@
                     <div class="posting__form-range">
                       <div>
                         <div class="posting__form-input">
-                          <input type="text" name="" placeholder="500" value="" salary-min-input-js intIntegerOnlyBox-js>
+                          <input type="text" name="salary_range_min" placeholder="500" value="500" salary-min-input-js intIntegerOnlyBox-js>
                         </div>
                       </div>
                       <div>
@@ -207,7 +207,7 @@
                       </div>
                       <div>
                         <div class="posting__form-input">
-                          <input type="text" name="" placeholder="100,000" value="" salary-max-input-js intIntegerOnlyBox-js>
+                          <input type="text" name="salary_range_max" placeholder="100,000" value="100,000" salary-max-input-js intIntegerOnlyBox-js>
                         </div>
                       </div>
                     </div>
@@ -217,8 +217,8 @@
                   <div class="posting__form-field">
                     <label class="posting__form-label posting__form-label--hidden" for="posting_1_select_currency">Select Currency</label>
                     <div class="posting__form-select">
-                      <select name="" id="posting_1_select_currency">
-                        <option value="" selected disabled>Select Currency</option>
+                      <select name="select_currency" id="posting_1_select_currency" required>
+                        <option value="">Select Currency</option>
                         <option value="usd">($) USD</option>
                         <option value="eur">(€) EUR</option>
                         <option value="gbp">(£) GBP</option>
@@ -229,7 +229,7 @@
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-checkbox" for="posting_1_hide_salary">
-                  <input type="checkbox" name="" id="posting_1_hide_salary" posting-checkbox-info-js>
+                  <input type="checkbox" name="hide_salary" id="posting_1_hide_salary" posting-checkbox-info-js>
                   <div><span><i></i></span></div>
                   <div>
                     <p>Hide salary information</p>
@@ -238,7 +238,7 @@
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-checkbox" for="posting_1_post_job">
-                  <input type="checkbox" name="" id="posting_1_post_job" posting-checkbox-info-js>
+                  <input type="checkbox" name="post_job" id="posting_1_post_job" posting-checkbox-info-js>
                   <div><span><i></i></span></div>
                   <div>
                     <p>Post job as <strong>Confidential Company</strong> (your company's name and logo will be hidden to referrers and candidates)</p>
@@ -254,28 +254,28 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_country">Country</label>
                 <div class="posting__form-select">
-                  <select name="" id="posting_1_country">
-                    <option value="" selected disabled>Choose Country</option>
-                    <option value="">Action</option>
-                    <option value="">More action</option>
+                  <select name="country_select" id="posting_1_country" required>
+                    <option value="">Choose Country</option>
+                    <option value="Action">Action</option>
+                    <option value="More action">More action</option>
                   </select>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_city">City</label>
                 <div class="posting__form-input">
-                  <input type="text" name="" id="posting_1_city" placeholder="Type City">
+                  <input type="text" name="city" id="posting_1_city" placeholder="Type City" required>
                 </div>
               </div>
             </form>
-            <form class="posting__form posting__form-2" action="" method="" name="" posting-form-2-js>
+            <form class="posting__form posting__form-2" action="" method="" name="" autocomplete="off" posting-form-2-js>
               <p class="posting__title">Tell us about the perfect candidate!</p>
               <div class="posting__form-field">
                 <label class="posting__form-label">Years of Experience</label>
                 <div class="posting__form-range">
                   <div>
                     <div class="posting__form-input">
-                      <input type="text" name="" placeholder="1" experience-min-input-js intIntegerOnlyBox-js>
+                      <input type="text" name="" placeholder="1" value="1" experience-min-input-js intIntegerOnlyBox-js>
                     </div>
                   </div>
                   <div>
@@ -283,7 +283,7 @@
                   </div>
                   <div>
                     <div class="posting__form-input">
-                      <input type="text" name="" placeholder="30" experience-max-input-js intIntegerOnlyBox-js>
+                      <input type="text" name="" placeholder="30" value="30" experience-max-input-js intIntegerOnlyBox-js>
                     </div>
                   </div>
                 </div>
@@ -291,7 +291,7 @@
               <div class="posting__form-field">
                 <label class="posting__form-label">Industry Experience</label>
                 <div class="posting__form-tags">
-                  <select class="selectTags" multiple="multiple" name="" style="width: 100%">
+                  <select class="selectTags" multiple="multiple" name="industry_experience" style="width: 100%" required>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -301,7 +301,7 @@
               <div class="posting__form-field">
                 <label class="posting__form-label">Skills</label>
                 <div class="posting__form-tags">
-                  <select class="skillsInput selectTags" multiple="multiple" name="skills" style="width: 100%" skills-select-js>
+                  <select class="skillsInput selectTags" multiple="multiple" name="skills" style="width: 100%" skills-select-js required>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -312,17 +312,17 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_highest_degree">Highest Degree</label>
                 <div class="posting__form-select">
-                  <select name="" id="posting_1_highest_degree">
-                    <option value="" selected disabled hidden>Choose Degree</option>
-                    <option value="">Action</option>
-                    <option value="">More action</option>
+                  <select name="highest_degree" id="posting_1_highest_degree" required>
+                    <option value="">Choose Degree</option>
+                    <option value="Action">Action</option>
+                    <option value="More action">More action</option>
                   </select>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label">Languages</label>
                 <div class="posting__form-tags">
-                  <select class="selectTags" multiple="multiple" name="" style="width: 100%">
+                  <select class="selectTags" multiple="multiple" name="languages" style="width: 100%" required>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -338,7 +338,7 @@
               <p class="posting__title">Candidates with these designations are the most relevant to you:</p>
               <div class="posting__form-field">
                 <div class="posting__form-tags">
-                  <select class="skillsInput selectTags" multiple="multiple" name="designations" style="width: 100%" designations-select-js>
+                  <select class="skillsInput selectTags" multiple="multiple" required name="designations" style="width: 100%" designations-select-js>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -347,7 +347,7 @@
                 <div class="posting__form-add"><a href="#postingAdd" data-effect="mfp-zoom-in" data-id="designations" popup-js posting-popup-js><span>Add More</span><i class="icon-font icon-plus"></i></a></div>
               </div>
             </form>
-            <form class="posting__form posting__form-3" id="formQuestion" action="" method="" name="" posting-form-3-js>
+            <form class="posting__form posting__form-3" id="formQuestion" action="" method="" name="" autocomplete="off" posting-form-3-js>
               <p class="posting__title">Do you have any questions that you'd like the candidate to answer while accepting the referral?</p>
               <div class="posting__form-content" posting-content-question-js>
                 <div class="posting__form-field" posting-parent-question-js>
@@ -364,7 +364,7 @@
                 <p>Please delete all empty question boxes before proceeding.</p>
               </div>
             </form>
-            <form class="posting__form posting__form-4" action="" method="" name="" posting-form-4-js>
+            <form class="posting__form posting__form-4" action="" method="" name="" autocomplete="off" posting-form-4-js>
               <p class="posting__title">Tell us how much you're willing to reward someone when you hire and retain a referral!</p>
               <div class="posting__form-group posting__form-group--7030">
                 <div class="posting__form-col posting__form-col-1">
@@ -393,7 +393,7 @@
                 </div>
               </div>
             </form>
-            <form class="posting__form posting__form-5" action="" method="" name="" posting-form-5-js>
+            <form class="posting__form posting__form-5" action="" method="" name="" autocomplete="off" posting-form-5-js>
               <p class="posting__title">All fine? Please double-check before submitting your job for review!</p>
               <!-- SECTION board details :: START-->
               <section class="board-details" id="board-details">

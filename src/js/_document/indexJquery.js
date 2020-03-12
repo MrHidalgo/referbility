@@ -687,20 +687,28 @@ $(document).ready((ev) => {
         $('.board-details--hidden').fadeOut(450).fadeIn(450);
         $('#board-how').hide();
 
-        let spaceBelowTop = $(window).height() - $('.board-details--hidden')[0].getBoundingClientRect().top,
-          spaceBelowBottom = $(window).height() - ($(window).height() - _pagination[0].getBoundingClientRect().top);
+        let _bottomElem = null;
 
-        if($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_pagination[0])) {
+        if(_pagination) {
+          _bottomElem = _pagination;
+        } else {
+          _bottomElem = $('');
+        }
+
+        let spaceBelowTop = window.innerHeight - $('.board-details--hidden')[0].getBoundingClientRect().top,
+          spaceBelowBottom = window.innerHeight - (window.innerHeight - _bottomElem[0].getBoundingClientRect().top);
+
+        if($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_bottomElem[0])) {
           $('.board-details').css({
-            height: $(window).height()
+            height: window.innerHeight
           });
         } else if($('.board-details--hidden')[0].getBoundingClientRect().top > 0) {
           $('.board-details').css({
             height: spaceBelowTop
           });
-        } else if (isAnyPartOfElementInViewport(_pagination[0])) {
+        } else if (isAnyPartOfElementInViewport(_bottomElem[0])) {
           $('.board-details').css({
-            height: spaceBelowBottom + _pagination.height()
+            height: spaceBelowBottom + _bottomElem.outerHeight(true)
           });
         }
 
@@ -716,20 +724,28 @@ $(document).ready((ev) => {
 
     $(window).on('scroll resize', () => {
       if($('.p-board').length && $(window).width() > 1023) {
-        let spaceBelowTop = $(window).height() - $('.board-details--hidden')[0].getBoundingClientRect().top,
-          spaceBelowBottom = $(window).height() - ($(window).height() - _pagination[0].getBoundingClientRect().top);
+        let _bottomElem = null;
 
-        if($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_pagination[0])) {
+        if(_pagination) {
+          _bottomElem = _pagination;
+        } else {
+          _bottomElem = $('');
+        }
+
+        let spaceBelowTop = window.innerHeight - $('.board-details--hidden')[0].getBoundingClientRect().top,
+          spaceBelowBottom = window.innerHeight - (window.innerHeight - _bottomElem[0].getBoundingClientRect().top);
+
+        if($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_bottomElem[0])) {
           $('.board-details').css({
-            height: $(window).height()
+            height: window.innerHeight
           });
         } else if($('.board-details--hidden')[0].getBoundingClientRect().top > 0) {
           $('.board-details').css({
             height: spaceBelowTop
           });
-        } else if (isAnyPartOfElementInViewport(_pagination[0])) {
+        } else if (isAnyPartOfElementInViewport(_bottomElem[0])) {
           $('.board-details').css({
-            height: spaceBelowBottom + _pagination.height()
+            height: spaceBelowBottom + _bottomElem.outerHeight(true)
           });
         }
 
@@ -1123,6 +1139,7 @@ $(document).ready((ev) => {
     });
   };
 
+  let _rewardBook = false;
   const initPostingAddQuestion = () => {
     const _questionTMPL = () => {
       return `
@@ -1149,6 +1166,10 @@ $(document).ready((ev) => {
       const _questionName = $('#formQuestion'),
         _questionInputFields = $('[posting-input-question-js]'),
         _questionWarning = $('[posting-warning-question-js]');
+
+      if($(ev.currentTarget).data('init') === 'range') {
+        _rewardBook = true;
+      }
 
       const _ID = $(ev.currentTarget).data('id');
 
@@ -1357,15 +1378,27 @@ $(document).ready((ev) => {
     $('.c-modal__box-btn a').on('click', (ev) => {
       $('.c-modal__box').removeClass('is-active');
       $(ev.currentTarget).closest('.c-modal__box').addClass('is-active');
-
-      $('[posting-review-js]').hide();
-      $(".posting__btn-wrapper[data-wrapper-id='4'] a[posting-question-js]").show().css({display:'flex'});
     });
   };
 
   const initPostingAction = () => {
     const _btnNext = $('[posting-next-js]'),
       _btnBack = $('[posting-back-js]');
+
+    function _helperNext(id) {
+      $('.posting__btn-wrapper').hide();
+      $('.posting__btn-wrapper[data-wrapper-id="' + id + '"]').show().css({display:'flex'});
+
+      $('.posting__step[posting-step-' + id + '-js]').addClass('is-active');
+
+      $('.posting__form[posting-form-' + (id - 1) + '-js]').removeClass('is-active');
+      $('.posting__form[posting-form-' + id + '-js]').addClass('is-active');
+    }
+
+    $('[posting-review-js]').on('click', (ev) => {
+      $(".posting__btn-wrapper[data-wrapper-id='4']").addClass('is-three');
+      $(".posting__btn-wrapper[data-wrapper-id='4'] a").show().css({'display': 'flex'});
+    });
 
     _btnBack.on('click', (ev) => {
       const _el = $(ev.currentTarget),
@@ -1384,13 +1417,141 @@ $(document).ready((ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.data('id');
 
-      $('.posting__btn-wrapper').hide();
-      $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
+      if(_el.closest('[data-wrapper-id="' + (_elID - 1) + '"]')) {
+        const _formName = $('.posting__form-' + (_elID - 1));
 
-      $('.posting__step[posting-step-' + _elID + '-js]').addClass('is-active');
+        _formName.validate({
+          errorPlacement: function (error, element) {
+            error.appendTo(element.closest('.posting__form-field'));
+          },
+          highlight: function (element) {
+            $(element).closest('.posting__form-field').addClass('is-error');
+          },
+          unhighlight: function (element) {
+            $(element).closest('.posting__form-field').removeClass('is-error');
+          },
+          onkeyup: function(element) {
+            $(element).valid();
+          },
+          rules: {
+            job_title: {
+              required: true,
+              minlength: 2
+            },
+            job_description: {
+              required: true,
+              minlength: 2
+            },
+            job_function: {
+              required: true
+            },
+            career_level: {
+              required: true
+            },
+            employment_type: {
+              required: true
+            },
+            select_currency: {
+              required: true
+            },
+            country_select: {
+              required: true
+            },
+            industry_experience: {
+              required: true
+            },
+            skills: {
+              required: true
+            },
+            highest_degree: {
+              required: true
+            },
+            languages: {
+              required: true
+            },
+            designations: {
+              required: true
+            },
+            additional_requirements: {
+              required: true,
+              minlength: 2
+            },
+            city: {
+              required: true,
+              minlength: 2
+            },
+          },
+          messages: {
+            job_title:  {
+              required: "Please specify your Job Title",
+              name: "Must be min 2 characters"
+            },
+            job_description:  {
+              required: "Please specify your Job Description",
+              name: "Must be min 2 characters"
+            },
+            job_function: {
+              required: 'Please select your Carer Level'
+            },
+            career_level: {
+              required: 'Please select your Carer Level'
+            },
+            employment_type: {
+              required: 'Please select your Employment Type'
+            },
+            select_currency: {
+              required: 'Please select your Currency'
+            },
+            country_select: {
+              required: 'Please select your Country'
+            },
+            industry_experience: {
+              required: 'Please select your Industry Experience'
+            },
+            skills: {
+              required: 'Please select your Skills'
+            },
+            highest_degree: {
+              required: 'Please select your Highest Degree'
+            },
+            languages: {
+              required: 'Please select your Languages'
+            },
+            designations: {
+              required: 'Please select your Designations'
+            },
+            additional_requirements: {
+              required: "Please specify your additional requirements",
+              name: "Must be min 2 characters"
+            },
+            city: {
+              required: "Please specify your City",
+              name: "Must be min 2 characters"
+            },
+          }
+        });
 
-      $('.posting__form[posting-form-' + (_elID - 1) + '-js]').removeClass('is-active');
-      $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
+        if (_formName.valid() === true) {
+          _helperNext(_elID);
+
+          $('body, html').animate({
+            scrollTop: 0
+          }, 800);
+        }
+      }
+    });
+
+    $('[posting-step-js]').on('click', (ev) => {
+      const _el = $(ev.currentTarget),
+        _elID = _el.data('id');
+
+      if(_rewardBook) {
+        $('.posting__btn-wrapper').hide();
+        $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
+
+        $('.posting__form').removeClass('is-active');
+        $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
+      }
     });
   };
 

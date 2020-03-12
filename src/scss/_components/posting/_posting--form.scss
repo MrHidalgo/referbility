@@ -42,6 +42,17 @@
     position: relative;
     padding-bottom: 25px;
 
+    &.is-error {
+      .posting__form-input,
+      .posting__form-textarea {
+        border-color: #ee0000;
+      }
+
+      .select2-container.select2-container--default .select2-selection--multiple {
+        border-color: #ee0000;
+      }
+    }
+
     label.error {
       position: absolute;
       bottom: 8px;

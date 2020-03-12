@@ -1,4 +1,4 @@
-form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js)
+form.posting__form.posting__form-2(action='' method='' name='' autocomplete='off' posting-form-2-js)
 
   p.posting__title Tell us about the perfect candidate!
 
@@ -7,17 +7,17 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
     .posting__form-range
       div
         .posting__form-input
-          input(type='text' name='' placeholder='1' experience-min-input-js intIntegerOnlyBox-js)
+          input(type='text' name='' placeholder='1' value='1' experience-min-input-js intIntegerOnlyBox-js)
       div
         input(input type="text" class="" name="" value="" range-experience-js)
       div
         .posting__form-input
-          input(type='text' name='' placeholder='30' experience-max-input-js intIntegerOnlyBox-js)
+          input(type='text' name='' placeholder='30' value='30' experience-max-input-js intIntegerOnlyBox-js)
 
   .posting__form-field
     label.posting__form-label Industry Experience
     .posting__form-tags
-      select.selectTags(multiple='multiple' name='' style="width: 100%")
+      select.selectTags(multiple='multiple' name='industry_experience' style="width: 100%" required)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -25,7 +25,7 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
   .posting__form-field
     label.posting__form-label Skills
     .posting__form-tags
-      select.skillsInput.selectTags(multiple='multiple' name='skills' style="width: 100%" skills-select-js)
+      select.skillsInput.selectTags(multiple='multiple' name='skills' style="width: 100%" skills-select-js required)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -38,15 +38,15 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
   .posting__form-field
     label.posting__form-label(for='posting_1_highest_degree') Highest Degree
     .posting__form-select
-      select(name='' id='posting_1_highest_degree')
-        option(value='' selected disabled hidden) Choose Degree
-        option(value='') Action
-        option(value='') More action
+      select(name='highest_degree' id='posting_1_highest_degree' required)
+        option(value='') Choose Degree
+        option(value='Action') Action
+        option(value='More action') More action
 
   .posting__form-field
     label.posting__form-label Languages
     .posting__form-tags
-      select.selectTags(multiple='multiple' name='' style="width: 100%")
+      select.selectTags(multiple='multiple' name='languages' style="width: 100%" required)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -60,7 +60,7 @@ form.posting__form.posting__form-2(action='' method='' name='' posting-form-2-js
 
   .posting__form-field
     .posting__form-tags
-      select.skillsInput.selectTags(multiple='multiple' name='designations' style="width: 100%" designations-select-js)
+      select.skillsInput.selectTags(multiple='multiple' required name='designations' style="width: 100%" designations-select-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action

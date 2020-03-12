@@ -1,30 +1,30 @@
-form.posting__form.posting__form-1.is-active(action='' method='' name='' posting-form-1-js)
+form.posting__form.posting__form-1.is-active(action='' method='' name='' autocomplete='off' posting-form-1-js)
 
   p.posting__title Tell us about the job you're sourcing for!
 
   .posting__form-field
     label.posting__form-label(for='posting_1_job_title') Job Title
     .posting__form-input
-      input(type='text' name='' id='posting_1_job_title' placeholder='Type Job Title')
+      input(type='text' name='job_title' id='posting_1_job_title' placeholder='Type Job Title' required)
 
   .posting__form-field
     label.posting__form-label(for='posting_1_job_function') Job Function
     .posting__form-select
-      select(name='' id='posting_1_job_function')
-        option(value='' selected disabled) Choose Job Function
-        option(value='') Action
-        option(value='') More action
+      select(name='job_function' id='posting_1_job_function' required)
+        option(value='') Choose Job Function
+        option(value='Action') Action
+        option(value='More action') More action
 
   .posting__form-field
     label.posting__form-label(for='posting_1_job_description') Job Description
     .posting__form-textarea
-      textarea(name='' id='posting_1_job_description' placeholder='Type Description')
+      textarea(name='job_description' id='posting_1_job_description' placeholder='Type Description' required)
 
   .posting__form-field
     label.posting__form-label(for='posting_1_career_level') Career Level
     .posting__form-select
-      select(name='' id='posting_1_career_level')
-        option(value='' selected disabled) Choose Career Level
+      select(name='career_level' id='posting_1_career_level' required)
+        option(value='') Choose Career Level
         option(value='junior') Junior
         option(value='executive') Executive
         option(value='managerial') Managerial
@@ -33,10 +33,10 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
   .posting__form-field
     label.posting__form-label(for='posting_1_employment_type') Employment Type
     .posting__form-select
-      select(name='' id='posting_1_employment_type')
-        option(value='' selected disabled) Choose Employment Type
-        option(value='') Action
-        option(value='') More action
+      select(name='employment_type' id='posting_1_employment_type' required)
+        option(value='') Choose Employment Type
+        option(value='Action') Action
+        option(value='More action') More action
 
   .posting__form-group.posting__form-group--7030
     .posting__form-col.posting__form-col-1
@@ -45,26 +45,26 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
         .posting__form-range
           div
             .posting__form-input
-              input(type='text' name='' placeholder='500' value="" salary-min-input-js intIntegerOnlyBox-js)
+              input(type='text' name='salary_range_min' placeholder='500' value="500" salary-min-input-js intIntegerOnlyBox-js)
           div
             input(input type="text" class="" name="" value="" range-salary-js)
           div
             .posting__form-input
-              input(type='text' name='' placeholder='100,000' value="" salary-max-input-js intIntegerOnlyBox-js)
+              input(type='text' name='salary_range_max' placeholder='100,000' value="100,000" salary-max-input-js intIntegerOnlyBox-js)
 
     .posting__form-col.posting__form-col-2
       .posting__form-field
         label.posting__form-label.posting__form-label--hidden(for='posting_1_select_currency') Select Currency
         .posting__form-select
-          select(name='' id='posting_1_select_currency')
-            option(value='' selected disabled) Select Currency
+          select(name='select_currency' id='posting_1_select_currency' required)
+            option(value='') Select Currency
             option(value='usd') ($) USD
             option(value='eur') (€) EUR
             option(value='gbp') (£) GBP
 
   .posting__form-field
     label.posting__form-checkbox(for='posting_1_hide_salary')
-      input(type='checkbox' name='' id='posting_1_hide_salary' posting-checkbox-info-js)
+      input(type='checkbox' name='hide_salary' id='posting_1_hide_salary' posting-checkbox-info-js)
       div
         span
           i
@@ -73,7 +73,7 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
 
   .posting__form-field
     label.posting__form-checkbox(for='posting_1_post_job')
-      input(type='checkbox' name='' id='posting_1_post_job' posting-checkbox-info-js)
+      input(type='checkbox' name='post_job' id='posting_1_post_job' posting-checkbox-info-js)
       div
         span
           i
@@ -89,12 +89,12 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' posting
   .posting__form-field
     label.posting__form-label(for='posting_1_country') Country
     .posting__form-select
-      select(name='' id='posting_1_country')
-        option(value='' selected disabled) Choose Country
-        option(value='') Action
-        option(value='') More action
+      select(name='country_select' id='posting_1_country' required)
+        option(value='') Choose Country
+        option(value='Action') Action
+        option(value='More action') More action
 
   .posting__form-field
     label.posting__form-label(for='posting_1_city') City
     .posting__form-input
-      input(type='text' name='' id='posting_1_city' placeholder='Type City')
+      input(type='text' name='city' id='posting_1_city' placeholder='Type City' required)

@@ -64,6 +64,10 @@
 
       > div {
         padding-bottom: 25px;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
       }
     }
 
