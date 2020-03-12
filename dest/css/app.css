@@ -20971,10 +20971,10 @@ picture {
 .posting__form-range .posting__form-indicator span:after {
   content: '';
   position: absolute;
-  top: -5px;
+  top: -6px;
   right: -2px;
-  width: 3px;
-  height: 20px;
+  width: 2px;
+  height: 22px;
   background-color: #36b37e;
 }
 
@@ -21166,8 +21166,8 @@ picture {
 .posting__form-range .irs.irs--big .irs-handle:after {
   content: '';
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #36b37e;
@@ -21843,7 +21843,30 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 135, src/scss/_components/posting/_posting--review.scss */
+/* line 136, src/scss/_components/posting/_posting--review.scss */
+.c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a:hover:before {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 143, src/scss/_components/posting/_posting--review.scss */
+.c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a:hover:after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 150, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a:after {
   opacity: 1;
   visibility: visible;
@@ -21852,7 +21875,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 141, src/scss/_components/posting/_posting--review.scss */
+/* line 156, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -21860,7 +21883,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 150, src/scss/_components/posting/_posting--review.scss */
+/* line 165, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21872,14 +21895,14 @@ picture {
           justify-content: space-between;
 }
 
-/* line 154, src/scss/_components/posting/_posting--review.scss */
+/* line 169, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 40px) / 2);
   max-width: calc((100% - 40px) / 2);
 }
 
-/* line 160, src/scss/_components/posting/_posting--review.scss */
+/* line 175, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-bg {
   z-index: 0;
   position: absolute;
@@ -21899,13 +21922,13 @@ picture {
   transition: border 0.3s ease-in-out;
 }
 
-/* line 174, src/scss/_components/posting/_posting--review.scss */
+/* line 189, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-content {
   z-index: 2;
   position: relative;
 }
 
-/* line 179, src/scss/_components/posting/_posting--review.scss */
+/* line 194, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle {
   overflow: hidden;
   position: relative;
@@ -21936,7 +21959,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 194, src/scss/_components/posting/_posting--review.scss */
+/* line 209, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle:after {
   content: '';
   opacity: 0;
@@ -21955,7 +21978,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 208, src/scss/_components/posting/_posting--review.scss */
+/* line 223, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle .icon-font {
   z-index: 2;
   position: relative;
@@ -21965,17 +21988,17 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 214, src/scss/_components/posting/_posting--review.scss */
+/* line 229, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle .icon-font.icon-shout {
   font-size: 53px;
 }
 
-/* line 217, src/scss/_components/posting/_posting--review.scss */
+/* line 232, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle .icon-font.icon-rocket {
   font-size: 63px;
 }
 
-/* line 223, src/scss/_components/posting/_posting--review.scss */
+/* line 238, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-title {
   padding-top: 10px;
   font-size: 21px;
@@ -21986,7 +22009,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 233, src/scss/_components/posting/_posting--review.scss */
+/* line 248, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-subtitle {
   padding-bottom: 20px;
   font-size: 15px;
@@ -21996,7 +22019,7 @@ picture {
   color: #42526e;
 }
 
-/* line 242, src/scss/_components/posting/_posting--review.scss */
+/* line 257, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22012,7 +22035,7 @@ picture {
   border: solid 1px #dfdfff;
 }
 
-/* line 248, src/scss/_components/posting/_posting--review.scss */
+/* line 263, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22033,7 +22056,7 @@ picture {
   background-image: linear-gradient(94deg, rgba(129, 129, 255, 0.2) 22%, rgba(81, 83, 220, 0.05) 133%), linear-gradient(to bottom, #ffffff, #ffffff);
 }
 
-/* line 257, src/scss/_components/posting/_posting--review.scss */
+/* line 272, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -22043,13 +22066,13 @@ picture {
   max-width: 100%;
 }
 
-/* line 262, src/scss/_components/posting/_posting--review.scss */
+/* line 277, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head > div:nth-of-type(2) {
   width: 80px;
   text-align: center;
 }
 
-/* line 268, src/scss/_components/posting/_posting--review.scss */
+/* line 283, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head p {
   font-size: 15px;
   line-height: 1.33;
@@ -22057,7 +22080,7 @@ picture {
   color: #42526e;
 }
 
-/* line 275, src/scss/_components/posting/_posting--review.scss */
+/* line 290, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head span {
   font-size: 15px;
   font-weight: bold;
@@ -22067,14 +22090,14 @@ picture {
   color: #5153dc;
 }
 
-/* line 283, src/scss/_components/posting/_posting--review.scss */
+/* line 298, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head span i {
   font-weight: normal;
   font-style: normal;
   color: #42526e;
 }
 
-/* line 292, src/scss/_components/posting/_posting--review.scss */
+/* line 307, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22087,7 +22110,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 296, src/scss/_components/posting/_posting--review.scss */
+/* line 311, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22102,12 +22125,12 @@ picture {
   border-bottom: solid 1px #dfdfff;
 }
 
-/* line 303, src/scss/_components/posting/_posting--review.scss */
+/* line 318, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li:last-of-type {
   border: none;
 }
 
-/* line 308, src/scss/_components/posting/_posting--review.scss */
+/* line 323, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22128,7 +22151,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 316, src/scss/_components/posting/_posting--review.scss */
+/* line 331, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22141,7 +22164,7 @@ picture {
   width: 80px;
 }
 
-/* line 324, src/scss/_components/posting/_posting--review.scss */
+/* line 339, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22165,14 +22188,14 @@ picture {
   background-image: linear-gradient(318deg, #ff5630 97%, #ff7452 21%);
 }
 
-/* line 334, src/scss/_components/posting/_posting--review.scss */
+/* line 349, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul a i {
   margin-right: 7px;
   color: #fff;
   font-size: 16px;
 }
 
-/* line 340, src/scss/_components/posting/_posting--review.scss */
+/* line 355, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul a span {
   text-transform: uppercase;
   font-size: 12px;
@@ -22181,7 +22204,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 349, src/scss/_components/posting/_posting--review.scss */
+/* line 364, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul p {
   font-size: 15px;
   line-height: 1.33;
@@ -22189,32 +22212,32 @@ picture {
   color: #42526e;
 }
 
-/* line 356, src/scss/_components/posting/_posting--review.scss */
+/* line 371, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul .icon-font {
   font-size: 20px;
 }
 
-/* line 359, src/scss/_components/posting/_posting--review.scss */
+/* line 374, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul .icon-font.icon-circle-x {
   color: #ff5630;
 }
 
-/* line 362, src/scss/_components/posting/_posting--review.scss */
+/* line 377, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul .icon-font.icon-circle-checked {
   color: #36b37e;
 }
 
-/* line 370, src/scss/_components/posting/_posting--review.scss */
+/* line 385, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms {
   padding-top: 15px;
 }
 
-/* line 374, src/scss/_components/posting/_posting--review.scss */
+/* line 389, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms.c-modal__box-terms--regular .c-modal__box-terms-info {
   opacity: 0;
 }
 
-/* line 379, src/scss/_components/posting/_posting--review.scss */
+/* line 394, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-title {
   padding-bottom: 10px;
   font-size: 16px;
@@ -22224,7 +22247,7 @@ picture {
   color: #091e42;
 }
 
-/* line 388, src/scss/_components/posting/_posting--review.scss */
+/* line 403, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head, .c-modal.postingReview .c-modal__box-terms-info, .c-modal.postingReview .c-modal__box-terms-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22238,7 +22261,7 @@ picture {
   padding: 3px 15px 3px 20px;
 }
 
-/* line 397, src/scss/_components/posting/_posting--review.scss */
+/* line 412, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head > div:nth-of-type(1), .c-modal.postingReview .c-modal__box-terms-info > div:nth-of-type(1), .c-modal.postingReview .c-modal__box-terms-footer > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -22248,20 +22271,20 @@ picture {
   max-width: 100%;
 }
 
-/* line 402, src/scss/_components/posting/_posting--review.scss */
+/* line 417, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head > div:nth-of-type(2), .c-modal.postingReview .c-modal__box-terms-info > div:nth-of-type(2), .c-modal.postingReview .c-modal__box-terms-footer > div:nth-of-type(2) {
   width: 80px;
   text-align: center;
 }
 
-/* line 409, src/scss/_components/posting/_posting--review.scss */
+/* line 424, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head, .c-modal.postingReview .c-modal__box-terms-info {
   -webkit-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
   border: solid 1px #dfdfff;
 }
 
-/* line 414, src/scss/_components/posting/_posting--review.scss */
+/* line 429, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head p, .c-modal.postingReview .c-modal__box-terms-info p {
   font-size: 15px;
   line-height: 1.33;
@@ -22269,7 +22292,7 @@ picture {
   color: #42526e;
 }
 
-/* line 421, src/scss/_components/posting/_posting--review.scss */
+/* line 436, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head span, .c-modal.postingReview .c-modal__box-terms-info span {
   font-size: 15px;
   font-weight: 500;
@@ -22279,7 +22302,7 @@ picture {
   color: #42526e;
 }
 
-/* line 431, src/scss/_components/posting/_posting--review.scss */
+/* line 446, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-info {
   min-height: 60px;
   padding-top: 10px;
@@ -22289,7 +22312,7 @@ picture {
   border-top: none;
 }
 
-/* line 439, src/scss/_components/posting/_posting--review.scss */
+/* line 454, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22300,12 +22323,12 @@ picture {
   border-right: solid 1px #dfdfff;
 }
 
-/* line 445, src/scss/_components/posting/_posting--review.scss */
+/* line 460, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div {
   min-height: 100%;
 }
 
-/* line 448, src/scss/_components/posting/_posting--review.scss */
+/* line 463, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22323,7 +22346,7 @@ picture {
   background-color: #ff8f73;
 }
 
-/* line 455, src/scss/_components/posting/_posting--review.scss */
+/* line 470, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(1) span {
   white-space: nowrap;
   text-transform: uppercase;
@@ -22337,7 +22360,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 466, src/scss/_components/posting/_posting--review.scss */
+/* line 481, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22356,7 +22379,7 @@ picture {
   padding: 10px 5px 10px 10px;
 }
 
-/* line 474, src/scss/_components/posting/_posting--review.scss */
+/* line 489, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(2) p {
   font-size: 15px;
   line-height: 1.33;
@@ -22364,14 +22387,14 @@ picture {
   color: #42526e;
 }
 
-/* line 481, src/scss/_components/posting/_posting--review.scss */
+/* line 496, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(3) {
   width: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 486, src/scss/_components/posting/_posting--review.scss */
+/* line 501, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(3) span {
   font-size: 15px;
   font-weight: 500;
@@ -22381,14 +22404,14 @@ picture {
   color: #42526e;
 }
 
-/* line 498, src/scss/_components/posting/_posting--review.scss */
+/* line 513, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-footer {
   -webkit-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
   border: solid 1px #dfdfff;
 }
 
-/* line 502, src/scss/_components/posting/_posting--review.scss */
+/* line 517, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-footer p {
   padding-right: 15px;
   font-size: 15px;
@@ -22398,7 +22421,7 @@ picture {
   color: #42526e;
 }
 
-/* line 511, src/scss/_components/posting/_posting--review.scss */
+/* line 526, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-footer span {
   font-size: 15px;
   font-weight: 800;
@@ -22408,7 +22431,7 @@ picture {
   color: #42526e;
 }
 
-/* line 522, src/scss/_components/posting/_posting--review.scss */
+/* line 537, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-voucher {
   overflow: hidden;
   position: relative;
@@ -22428,7 +22451,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 533, src/scss/_components/posting/_posting--review.scss */
+/* line 548, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-voucher input {
   outline: none;
   position: absolute;
@@ -22484,7 +22507,7 @@ picture {
   color: rgba(9, 30, 66, 0.6);
 }
 
-/* line 555, src/scss/_components/posting/_posting--review.scss */
+/* line 570, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-voucher button {
   -webkit-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
@@ -22500,7 +22523,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 567, src/scss/_components/posting/_posting--review.scss */
+/* line 582, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22516,7 +22539,7 @@ picture {
           justify-content: center;
 }
 
-/* line 572, src/scss/_components/posting/_posting--review.scss */
+/* line 587, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a {
   overflow: hidden;
   position: relative;
@@ -22547,7 +22570,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 587, src/scss/_components/posting/_posting--review.scss */
+/* line 602, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover {
   border-color: transparent;
   -webkit-box-shadow: 0 5px 20px 0 rgba(135, 119, 217, 0.2);
@@ -22559,7 +22582,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 592, src/scss/_components/posting/_posting--review.scss */
+/* line 607, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover:after {
   opacity: 1;
   visibility: visible;
@@ -22568,7 +22591,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 598, src/scss/_components/posting/_posting--review.scss */
+/* line 613, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -22576,7 +22599,35 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 604, src/scss/_components/posting/_posting--review.scss */
+/* line 619, src/scss/_components/posting/_posting--review.scss */
+.c-modal.postingReview .c-modal__box-btn a:before {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 39px;
+          border-radius: 39px;
+  background-color: #020d60;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 636, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:after {
   content: '';
   opacity: 0;
@@ -22594,7 +22645,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 617, src/scss/_components/posting/_posting--review.scss */
+/* line 649, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a span {
   z-index: 2;
   position: relative;

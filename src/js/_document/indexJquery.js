@@ -1001,7 +1001,7 @@ $(document).ready((ev) => {
     }
     function _helperRangeMethod (inputMin, inputMax, data) {
       $(inputMin).prop('value', numberWithCommas(data.from));
-      $(inputMax).prop('value', numberWithCommas(data.from));
+      $(inputMax).prop('value', numberWithCommas(data.to));
     }
     function _helperCallbackChange (inputName, helperCallback, rangeData, directionRange) {
       $(inputName).on('change', (ev) => {
@@ -1205,10 +1205,21 @@ $(document).ready((ev) => {
       } else if (val > _max) {
         val = _max;
       } else {
-        val = Math.round(val / 500) * 500;
+        val = Math.round(val / 100) * 100;
       }
 
       return val;
+    }
+    function _helperPostingReview(data) {
+      let _perc25 = (data.from * 25) / 100,
+        _perc75 = (data.from * 75) / 100;
+
+      $('[posting-regular-js]').text('$' + numberWithCommas(data.from));
+      $('[posting-regular-sum-js]').text('$' + numberWithCommas(data.from + 100));
+
+      $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
+      $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
+      $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
     }
 
     _rangeWilling.ionRangeSlider({
@@ -1217,37 +1228,19 @@ $(document).ready((ev) => {
       min: _min,
       max: _max,
       from: _from,
-      step: 500,
+      step: 100,
       hide_min_max: true,
       hide_from_to: true,
       onStart: function(data) {
-        let _perc25 = (data.from * 25) / 100,
-          _perc75 = (data.from * 75) / 100;
-
+        _helperPostingReview(data);
         _willingInput.prop('value', '$' + numberWithCommas(data.from));
-
-        $('[posting-regular-js]').text('$' + numberWithCommas(data.from));
-        $('[posting-regular-sum-js]').text('$' + numberWithCommas(data.from + 150));
-
-        $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
-        $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
-        $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
       },
       onChange: function(data) {
         _willingInput.prop('value', '$' + numberWithCommas(data.from));
       },
       onFinish: function(data) {
-        let _perc25 = (data.from * 25) / 100,
-          _perc75 = (data.from * 75) / 100;
-
+        _helperPostingReview(data);
         _willingInput.prop('value', '$' + numberWithCommas(data.from));
-
-        $('[posting-regular-js]').text('$' + numberWithCommas(data.from));
-        $('[posting-regular-sum-js]').text('$' + numberWithCommas(data.from + 150));
-
-        $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
-        $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
-        $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
       }
     });
     _rangeWillingHidden.ionRangeSlider({
@@ -1256,7 +1249,7 @@ $(document).ready((ev) => {
       min: _min,
       max: _max,
       from: _rec,
-      step: 500,
+      step: 100,
       hide_min_max: true,
       hide_from_to: true,
       extra_classes: 'irs-bar-hidden'
@@ -1335,7 +1328,17 @@ $(document).ready((ev) => {
           });
         }, 100);
 
-        _willingInput.prop("value", '$' + numberWithCommas(_obj[_elVal].max - 1500));
+        _willingInput.prop("value", '$' + numberWithCommas(_obj[_elVal].rec));
+
+        let _perc25 = (_obj[_elVal].rec * 25) / 100,
+          _perc75 = (_obj[_elVal].rec * 75) / 100;
+
+        $('[posting-regular-js]').text('$' + numberWithCommas(_obj[_elVal].rec));
+        $('[posting-regular-sum-js]').text('$' + numberWithCommas(parseInt(_obj[_elVal].rec) + 100));
+
+        $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
+        $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
+        $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
       }
     });
 
