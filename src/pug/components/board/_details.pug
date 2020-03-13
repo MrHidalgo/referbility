@@ -1,6 +1,6 @@
 // SECTION board details :: START
 
-section#board-details.board-details(class!= (pageClassName === 'p-board')?'board-details--hidden':'')
+section#board-details.board-details(board-details-js class!= (pageClassName === 'p-board')?'board-details--hidden':'')
 
   .board-details__heading
     .board-details__badge
@@ -58,8 +58,8 @@ section#board-details.board-details(class!= (pageClassName === 'p-board')?'board
           div
             i.icon-font.icon-corner
 
-  .board-details__body
-    .board-details__body-scroll
+  .board-details__body(board-scroll-parent-js)
+    .board-details__body-scroll(board-scroll-js)
       .board-details__list
         li
           div

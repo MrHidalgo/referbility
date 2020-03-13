@@ -962,25 +962,31 @@ $(document).ready(function (ev) {
 
       return vertInView && horInView;
     }
+    function scrollToTop() {
+      document.querySelector('[board-scroll-parent-js]').scrollTop = 0;
+    }
+    function stickyDetailsBlock() {
+      var _bottomElem = null;
 
-    var _pagination = $('#board-pagination');
+      if (_pagination.length) {
+        _bottomElem = _pagination;
+      } else {
+        _bottomElem = $('.board-card__block-wrapper > div:last-of-type');
+      }
 
-    $('.board-card__block').on('click', function () {
-      if ($('.board-details--hidden').length) {
-        $('.board-details--hidden').fadeOut(450).fadeIn(450);
-        $('#board-how').hide();
+      var _boardDetailsHeight = $('[board-details-js]').height(),
+          _boardCardParentHeight = $('[board-card-parent-js]').height();
 
-        var _bottomElem = null;
+      var spaceBelowTop = window.innerHeight - $('.board-details--hidden')[0].getBoundingClientRect().top,
+          spaceBelowBottom = window.innerHeight - (window.innerHeight - _bottomElem[0].getBoundingClientRect().top);
 
-        if (_pagination) {
-          _bottomElem = _pagination;
-        } else {
-          _bottomElem = $('');
+      if (_boardDetailsHeight > _boardCardParentHeight) {
+        if ($('.board-details--hidden')[0].getBoundingClientRect().top > 0) {
+          $('.board-details').css({
+            height: spaceBelowTop
+          });
         }
-
-        var spaceBelowTop = window.innerHeight - $('.board-details--hidden')[0].getBoundingClientRect().top,
-            spaceBelowBottom = window.innerHeight - (window.innerHeight - _bottomElem[0].getBoundingClientRect().top);
-
+      } else {
         if ($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_bottomElem[0])) {
           $('.board-details').css({
             height: window.innerHeight
@@ -994,6 +1000,18 @@ $(document).ready(function (ev) {
             height: spaceBelowBottom + _bottomElem.outerHeight(true)
           });
         }
+      }
+    }
+
+    var _pagination = $('#board-pagination');
+
+    $('.board-card__block').on('click', function () {
+      if ($('.board-details--hidden').length) {
+        $('.board-details--hidden').fadeOut(450).fadeIn(450);
+        $('#board-how').hide();
+
+        scrollToTop();
+        stickyDetailsBlock();
 
         if ($(window).width() < 1024) {
           var _elIDOffsetTop = $('#board-details').offset().top + 2;
@@ -1007,30 +1025,8 @@ $(document).ready(function (ev) {
 
     $(window).on('scroll resize', function () {
       if ($('.p-board').length && $(window).width() > 1023) {
-        var _bottomElem = null;
 
-        if (_pagination) {
-          _bottomElem = _pagination;
-        } else {
-          _bottomElem = $('');
-        }
-
-        var spaceBelowTop = window.innerHeight - $('.board-details--hidden')[0].getBoundingClientRect().top,
-            spaceBelowBottom = window.innerHeight - (window.innerHeight - _bottomElem[0].getBoundingClientRect().top);
-
-        if ($('.board-details--hidden')[0].getBoundingClientRect().top === 0 && !isAnyPartOfElementInViewport(_bottomElem[0])) {
-          $('.board-details').css({
-            height: window.innerHeight
-          });
-        } else if ($('.board-details--hidden')[0].getBoundingClientRect().top > 0) {
-          $('.board-details').css({
-            height: spaceBelowTop
-          });
-        } else if (isAnyPartOfElementInViewport(_bottomElem[0])) {
-          $('.board-details').css({
-            height: spaceBelowBottom + _bottomElem.outerHeight(true)
-          });
-        }
+        stickyDetailsBlock();
       } else {
         $('.board__wrapper-right, .board-details').css({
           height: 'auto'
