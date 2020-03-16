@@ -20143,7 +20143,33 @@ picture {
   font-size: 17px;
 }
 
-/* line 53, src/scss/_components/posting/_posting--step.scss */
+@media screen and (max-width: 767px) {
+  /* line 53, src/scss/_components/posting/_posting--step.scss */
+  .posting__step--info, .posting__step--arrow {
+    display: none;
+  }
+  /* line 58, src/scss/_components/posting/_posting--step.scss */
+  .posting__step--info.is-active, .posting__step--arrow.is-active {
+    display: block;
+  }
+  /* line 61, src/scss/_components/posting/_posting--step.scss */
+  .posting__step--info.is-active + .posting__step--arrow, .posting__step--arrow.is-active + .posting__step--arrow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 64, src/scss/_components/posting/_posting--step.scss */
+  .posting__step--info.is-active + .posting__step--arrow + .posting__step--info, .posting__step--arrow.is-active + .posting__step--arrow + .posting__step--info {
+    display: block;
+  }
+  /* line 70, src/scss/_components/posting/_posting--step.scss */
+  .posting__step--info.is-done, .posting__step--arrow.is-done {
+    display: none;
+  }
+}
+
+/* line 76, src/scss/_components/posting/_posting--step.scss */
 .posting__step-circle {
   overflow: hidden;
   position: relative;
@@ -20174,7 +20200,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 69, src/scss/_components/posting/_posting--step.scss */
+/* line 92, src/scss/_components/posting/_posting--step.scss */
 .posting__step-circle:after {
   content: '';
   opacity: 0;
@@ -20194,7 +20220,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 83, src/scss/_components/posting/_posting--step.scss */
+/* line 106, src/scss/_components/posting/_posting--step.scss */
 .posting__step-circle .icon-font {
   z-index: 2;
   position: relative;
@@ -20205,7 +20231,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/posting/_posting--step.scss */
+/* line 115, src/scss/_components/posting/_posting--step.scss */
 .posting__step-desc {
   white-space: nowrap;
   padding-top: 5px;
@@ -20224,22 +20250,30 @@ picture {
   margin-right: auto;
 }
 
-/* line 7, src/scss/_components/posting/_posting--form.scss */
+@media screen and (max-width: 767px) {
+  /* line 1, src/scss/_components/posting/_posting--form.scss */
+  .posting__form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 11, src/scss/_components/posting/_posting--form.scss */
 .posting__form.is-active {
   display: block;
 }
 
-/* line 11, src/scss/_components/posting/_posting--form.scss */
+/* line 15, src/scss/_components/posting/_posting--form.scss */
 .posting__form-1, .posting__form-2, .posting__form-3, .posting__form-4 {
   max-width: 600px;
 }
 
-/* line 17, src/scss/_components/posting/_posting--form.scss */
+/* line 21, src/scss/_components/posting/_posting--form.scss */
 .posting__form-5 {
   max-width: 830px;
 }
 
-/* line 21, src/scss/_components/posting/_posting--form.scss */
+/* line 25, src/scss/_components/posting/_posting--form.scss */
 .posting__form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20251,41 +20285,64 @@ picture {
           justify-content: space-between;
 }
 
-/* line 27, src/scss/_components/posting/_posting--form.scss */
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/_components/posting/_posting--form.scss */
+  .posting__form-group {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 34, src/scss/_components/posting/_posting--form.scss */
 .posting__form-group.posting__form-group--7030 .posting__form-col-1 {
   width: -webkit-calc(100% - 205px);
   width: calc(100% - 205px);
 }
 
-/* line 30, src/scss/_components/posting/_posting--form.scss */
+@media screen and (max-width: 767px) {
+  /* line 34, src/scss/_components/posting/_posting--form.scss */
+  .posting__form-group.posting__form-group--7030 .posting__form-col-1 {
+    width: 100%;
+  }
+}
+
+/* line 40, src/scss/_components/posting/_posting--form.scss */
 .posting__form-group.posting__form-group--7030 .posting__form-col-2 {
   width: 185px;
 }
 
-/* line 36, src/scss/_components/posting/_posting--form.scss */
+@media screen and (max-width: 767px) {
+  /* line 40, src/scss/_components/posting/_posting--form.scss */
+  .posting__form-group.posting__form-group--7030 .posting__form-col-2 {
+    width: 100%;
+  }
+}
+
+/* line 49, src/scss/_components/posting/_posting--form.scss */
 .posting__form-group .posting__form-col {
   width: -webkit-calc(50% - 20px);
   width: calc(50% - 20px);
 }
 
-/* line 41, src/scss/_components/posting/_posting--form.scss */
+/* line 54, src/scss/_components/posting/_posting--form.scss */
 .posting__form-field {
   position: relative;
   padding-bottom: 25px;
 }
 
-/* line 46, src/scss/_components/posting/_posting--form.scss */
+/* line 59, src/scss/_components/posting/_posting--form.scss */
 .posting__form-field.is-error .posting__form-input,
 .posting__form-field.is-error .posting__form-textarea {
   border-color: #ee0000;
 }
 
-/* line 51, src/scss/_components/posting/_posting--form.scss */
+/* line 64, src/scss/_components/posting/_posting--form.scss */
 .posting__form-field.is-error .select2-container.select2-container--default .select2-selection--multiple {
   border-color: #ee0000;
 }
 
-/* line 56, src/scss/_components/posting/_posting--form.scss */
+/* line 69, src/scss/_components/posting/_posting--form.scss */
 .posting__form-field label.error {
   position: absolute;
   bottom: 8px;
@@ -20295,7 +20352,7 @@ picture {
   color: #ee0000;
 }
 
-/* line 66, src/scss/_components/posting/_posting--form.scss */
+/* line 79, src/scss/_components/posting/_posting--form.scss */
 .posting__form-label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20307,20 +20364,20 @@ picture {
   color: #091e42;
 }
 
-/* line 73, src/scss/_components/posting/_posting--form.scss */
+/* line 86, src/scss/_components/posting/_posting--form.scss */
 .posting__form-label--hidden {
   opacity: 0;
 }
 
-/* line 77, src/scss/_components/posting/_posting--form.scss */
+/* line 90, src/scss/_components/posting/_posting--form.scss */
 .posting__form-label span {
   color: #505f79;
 }
 
-/* line 82, src/scss/_components/posting/_posting--form.scss */
+/* line 95, src/scss/_components/posting/_posting--form.scss */
 .posting__form-info {
   display: none;
-  height: 90px;
+  min-height: 90px;
   padding: 15px 25px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -20331,7 +20388,7 @@ picture {
   background: linear-gradient(45deg, #5153dc 0%, #8181ff 100%);
 }
 
-/* line 90, src/scss/_components/posting/_posting--form.scss */
+/* line 103, src/scss/_components/posting/_posting--form.scss */
 .posting__form-info p {
   font-size: 15px;
   line-height: 1.33;
@@ -20339,7 +20396,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 98, src/scss/_components/posting/_posting--form.scss */
+/* line 111, src/scss/_components/posting/_posting--form.scss */
 .posting__form-desc {
   font-size: 14px;
   line-height: 1.43;
@@ -20347,12 +20404,12 @@ picture {
   color: #344563;
 }
 
-/* line 104, src/scss/_components/posting/_posting--form.scss */
+/* line 117, src/scss/_components/posting/_posting--form.scss */
 .posting__form-desc span {
   font-weight: bold;
 }
 
-/* line 109, src/scss/_components/posting/_posting--form.scss */
+/* line 122, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details {
   padding: 20px 5px;
   -webkit-border-radius: 6px;
@@ -20363,7 +20420,7 @@ picture {
           box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
 }
 
-/* line 116, src/scss/_components/posting/_posting--form.scss */
+/* line 129, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details-title {
   font-size: 16px;
   font-weight: bold;
@@ -20372,7 +20429,7 @@ picture {
   color: #091e42;
 }
 
-/* line 124, src/scss/_components/posting/_posting--form.scss */
+/* line 137, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details-res {
   padding-bottom: 10px;
   font-size: 14px;
@@ -20382,7 +20439,7 @@ picture {
   color: #5153dc;
 }
 
-/* line 133, src/scss/_components/posting/_posting--form.scss */
+/* line 146, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details-desc {
   padding-left: 15px;
   padding-right: 15px;
@@ -20393,12 +20450,12 @@ picture {
   color: #344563;
 }
 
-/* line 144, src/scss/_components/posting/_posting--form.scss */
+/* line 157, src/scss/_components/posting/_posting--form.scss */
 .posting__form-warning {
   display: none;
 }
 
-/* line 147, src/scss/_components/posting/_posting--form.scss */
+/* line 160, src/scss/_components/posting/_posting--form.scss */
 .posting__form-warning p {
   font-weight: 500;
   font-size: 14px;
@@ -20406,7 +20463,7 @@ picture {
   text-align: center;
 }
 
-/* line 155, src/scss/_components/posting/_posting--form.scss */
+/* line 168, src/scss/_components/posting/_posting--form.scss */
 .posting__form-input, .posting__form-select, .posting__form-textarea {
   position: relative;
   height: 53px;
@@ -20419,7 +20476,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 165, src/scss/_components/posting/_posting--form.scss */
+/* line 178, src/scss/_components/posting/_posting--form.scss */
 .is-error .posting__form-input, .is-error .posting__form-select, .is-error .posting__form-textarea {
   border-color: #ee0000;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -20427,7 +20484,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 170, src/scss/_components/posting/_posting--form.scss */
+/* line 183, src/scss/_components/posting/_posting--form.scss */
 .posting__form-input input,
 .posting__form-input select,
 .posting__form-input textarea, .posting__form-select input,
@@ -20521,7 +20578,7 @@ picture {
   color: rgba(9, 30, 66, 0.6);
 }
 
-/* line 194, src/scss/_components/posting/_posting--form.scss */
+/* line 207, src/scss/_components/posting/_posting--form.scss */
 .is-error .posting__form-input input, .is-error
 .posting__form-input select, .is-error
 .posting__form-input textarea, .is-error .posting__form-select input, .is-error
@@ -20535,18 +20592,18 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 201, src/scss/_components/posting/_posting--form.scss */
+/* line 214, src/scss/_components/posting/_posting--form.scss */
 .posting__form-textarea {
   height: 200px;
 }
 
-/* line 204, src/scss/_components/posting/_posting--form.scss */
+/* line 217, src/scss/_components/posting/_posting--form.scss */
 .posting__form-textarea textarea {
   resize: none;
   padding: 15px 25px;
 }
 
-/* line 210, src/scss/_components/posting/_posting--form.scss */
+/* line 223, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox {
   position: relative;
   display: -webkit-box;
@@ -20559,7 +20616,7 @@ picture {
           align-items: center;
 }
 
-/* line 215, src/scss/_components/posting/_posting--form.scss */
+/* line 228, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input {
   opacity: 0;
   z-index: 10;
@@ -20570,7 +20627,7 @@ picture {
   height: 0;
 }
 
-/* line 226, src/scss/_components/posting/_posting--form.scss */
+/* line 239, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input:checked + div span {
   -webkit-box-shadow: 0 2px 5px 0 rgba(135, 119, 217, 0.2);
           box-shadow: 0 2px 5px 0 rgba(135, 119, 217, 0.2);
@@ -20581,7 +20638,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 230, src/scss/_components/posting/_posting--form.scss */
+/* line 243, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input:checked + div span:after {
   opacity: 1;
   visibility: visible;
@@ -20590,7 +20647,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 236, src/scss/_components/posting/_posting--form.scss */
+/* line 249, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input:checked + div span i {
   -webkit-transform: rotate(45deg) scale(1);
       -ms-transform: rotate(45deg) scale(1);
@@ -20602,12 +20659,12 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 246, src/scss/_components/posting/_posting--form.scss */
+/* line 259, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div:nth-of-type(1) {
   width: 45px;
 }
 
-/* line 249, src/scss/_components/posting/_posting--form.scss */
+/* line 262, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -20617,7 +20674,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 255, src/scss/_components/posting/_posting--form.scss */
+/* line 268, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div span {
   overflow: hidden;
   position: relative;
@@ -20645,7 +20702,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 267, src/scss/_components/posting/_posting--form.scss */
+/* line 280, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div span:after {
   content: '';
   opacity: 0;
@@ -20663,7 +20720,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 280, src/scss/_components/posting/_posting--form.scss */
+/* line 293, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div span i {
   z-index: 2;
   position: relative;
@@ -20686,30 +20743,30 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 294, src/scss/_components/posting/_posting--form.scss */
+/* line 307, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 299, src/scss/_components/posting/_posting--form.scss */
+/* line 312, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div p strong {
   font-weight: bold;
 }
 
-/* line 303, src/scss/_components/posting/_posting--form.scss */
+/* line 316, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div p a {
   font-weight: bold;
   color: #5153dc;
 }
 
-/* line 312, src/scss/_components/posting/_posting--form.scss */
+/* line 325, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags select {
   opacity: 0;
 }
 
-/* line 316, src/scss/_components/posting/_posting--form.scss */
+/* line 329, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstQueryInput {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -20752,7 +20809,7 @@ picture {
   color: #091e42;
 }
 
-/* line 328, src/scss/_components/posting/_posting--form.scss */
+/* line 341, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstElement {
   width: 100%;
   min-height: 53px;
@@ -20762,19 +20819,19 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 336, src/scss/_components/posting/_posting--form.scss */
+/* line 349, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstControls {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 342, src/scss/_components/posting/_posting--form.scss */
+/* line 355, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstMultipleMode .fstControls {
   padding-top: 0.6em;
 }
 
-/* line 346, src/scss/_components/posting/_posting--form.scss */
+/* line 359, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstChoiceItem {
   padding: 0.25em 1.75em 0.25em 0.75em;
   -webkit-border-radius: 4px;
@@ -20787,7 +20844,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 346, src/scss/_components/posting/_posting--form.scss */
+  /* line 359, src/scss/_components/posting/_posting--form.scss */
   .posting__form-tags .fstChoiceItem {
     display: -webkit-box;
     display: -webkit-flex;
@@ -20800,14 +20857,14 @@ picture {
   }
 }
 
-/* line 359, src/scss/_components/posting/_posting--form.scss */
+/* line 372, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstChoiceItem .fstChoiceRemove {
   font-size: 20px;
   left: auto;
   right: 5px;
 }
 
-/* line 366, src/scss/_components/posting/_posting--form.scss */
+/* line 379, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstResults {
   border: none;
   -webkit-border-bottom-left-radius: 4px;
@@ -20817,7 +20874,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 373, src/scss/_components/posting/_posting--form.scss */
+/* line 386, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstResultItem {
   font-size: 14px;
   line-height: 2.5;
@@ -20826,7 +20883,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 380, src/scss/_components/posting/_posting--form.scss */
+/* line 393, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstResultItem.fstSelected {
   display: none;
   border-color: #020d60;
@@ -20834,7 +20891,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 388, src/scss/_components/posting/_posting--form.scss */
+/* line 401, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstNoResults {
   font-size: 14px;
   line-height: 2.5;
@@ -20843,7 +20900,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 397, src/scss/_components/posting/_posting--form.scss */
+/* line 410, src/scss/_components/posting/_posting--form.scss */
 .posting__form-remove {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20856,7 +20913,7 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 402, src/scss/_components/posting/_posting--form.scss */
+/* line 415, src/scss/_components/posting/_posting--form.scss */
 .posting__form-remove a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20881,13 +20938,13 @@ picture {
   background-image: linear-gradient(42deg, #00aaff 25%, #28d7cc 88%);
 }
 
-/* line 412, src/scss/_components/posting/_posting--form.scss */
+/* line 425, src/scss/_components/posting/_posting--form.scss */
 .posting__form-remove a .icon-font {
   font-size: 15px;
   color: #ffffff;
 }
 
-/* line 419, src/scss/_components/posting/_posting--form.scss */
+/* line 432, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20900,7 +20957,7 @@ picture {
   padding-top: 5px;
 }
 
-/* line 424, src/scss/_components/posting/_posting--form.scss */
+/* line 437, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add--center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -20908,7 +20965,7 @@ picture {
           justify-content: center;
 }
 
-/* line 428, src/scss/_components/posting/_posting--form.scss */
+/* line 441, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20933,7 +20990,7 @@ picture {
   background-image: linear-gradient(42deg, #00aaff 25%, #28d7cc 88%);
 }
 
-/* line 438, src/scss/_components/posting/_posting--form.scss */
+/* line 451, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add a span {
   font-size: 13px;
   font-weight: 500;
@@ -20943,14 +21000,14 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 447, src/scss/_components/posting/_posting--form.scss */
+/* line 460, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add a .icon-font {
   margin-left: 3px;
   font-size: 13px;
   color: #ffffff;
 }
 
-/* line 455, src/scss/_components/posting/_posting--form.scss */
+/* line 468, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20958,7 +21015,7 @@ picture {
   display: flex;
 }
 
-/* line 458, src/scss/_components/posting/_posting--form.scss */
+/* line 471, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .posting__form-indicator {
   z-index: 0;
   position: absolute;
@@ -20976,7 +21033,7 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 468, src/scss/_components/posting/_posting--form.scss */
+/* line 481, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .posting__form-indicator span {
   position: absolute;
   top: 0;
@@ -20988,7 +21045,7 @@ picture {
   background-color: #ff8f73;
 }
 
-/* line 477, src/scss/_components/posting/_posting--form.scss */
+/* line 490, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .posting__form-indicator span:after {
   content: '';
   position: absolute;
@@ -20999,12 +21056,12 @@ picture {
   background-color: #36b37e;
 }
 
-/* line 490, src/scss/_components/posting/_posting--form.scss */
+/* line 503, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div {
   position: relative;
 }
 
-/* line 493, src/scss/_components/posting/_posting--form.scss */
+/* line 506, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -21015,12 +21072,12 @@ picture {
   padding-right: 15px;
 }
 
-/* line 499, src/scss/_components/posting/_posting--form.scss */
+/* line 512, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(1) .irs.irs--big .irs-bar {
   margin-left: 9px;
 }
 
-/* line 503, src/scss/_components/posting/_posting--form.scss */
+/* line 516, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(1) .irs-bar-hidden {
   z-index: 0;
   opacity: 0;
@@ -21032,7 +21089,7 @@ picture {
   height: 100%;
 }
 
-/* line 514, src/scss/_components/posting/_posting--form.scss */
+/* line 527, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(2) {
   -webkit-box-flex: unset;
   -webkit-flex: unset;
@@ -21044,7 +21101,7 @@ picture {
   padding: 0;
 }
 
-/* line 521, src/scss/_components/posting/_posting--form.scss */
+/* line 534, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(2) input {
   padding-left: 5px;
   padding-right: 5px;
@@ -21076,12 +21133,12 @@ picture {
   text-align: center;
 }
 
-/* line 534, src/scss/_components/posting/_posting--form.scss */
+/* line 547, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range > div:nth-of-type(1), .posting__form-range > div:nth-of-type(3) {
   width: 80px;
 }
 
-/* line 538, src/scss/_components/posting/_posting--form.scss */
+/* line 551, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range > div:nth-of-type(1) input, .posting__form-range > div:nth-of-type(3) input {
   padding-left: 5px;
   padding-right: 5px;
@@ -21113,7 +21170,7 @@ picture {
   text-align: center;
 }
 
-/* line 547, src/scss/_components/posting/_posting--form.scss */
+/* line 560, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -21125,12 +21182,20 @@ picture {
   padding-right: 15px;
 }
 
-/* line 556, src/scss/_components/posting/_posting--form.scss */
+@media screen and (max-width: 767px) {
+  /* line 560, src/scss/_components/posting/_posting--form.scss */
+  .posting__form-range > div:nth-of-type(2) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* line 573, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big {
   height: auto;
 }
 
-/* line 559, src/scss/_components/posting/_posting--form.scss */
+/* line 576, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-line {
   left: 10px;
   top: 23px;
@@ -21144,7 +21209,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 569, src/scss/_components/posting/_posting--form.scss */
+/* line 586, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-bar {
   top: 23px;
   height: 10px;
@@ -21157,7 +21222,7 @@ picture {
   background-color: #79f2c0;
 }
 
-/* line 578, src/scss/_components/posting/_posting--form.scss */
+/* line 595, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-handle {
   top: 10px;
   display: -webkit-box;
@@ -21183,7 +21248,7 @@ picture {
   background-color: rgba(41, 222, 156, 0.3);
 }
 
-/* line 591, src/scss/_components/posting/_posting--form.scss */
+/* line 608, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-handle:after {
   content: '';
   position: absolute;
@@ -21206,7 +21271,8 @@ picture {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   -webkit-border-radius: 15px;
@@ -21217,7 +21283,7 @@ picture {
           box-shadow: 0 50px 90px 0 rgba(135, 131, 157, 0.15);
 }
 
-/* line 22, src/scss/_components/posting/_posting.scss */
+/* line 23, src/scss/_components/posting/_posting.scss */
 .posting__wrapper-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21240,18 +21306,18 @@ picture {
           box-shadow: 0 30px 50px 0 rgba(135, 131, 157, 0.05);
 }
 
-/* line 33, src/scss/_components/posting/_posting.scss */
+/* line 34, src/scss/_components/posting/_posting.scss */
 .posting__wrapper-body {
   padding-top: 55px;
   padding-bottom: 35px;
 }
 
-/* line 38, src/scss/_components/posting/_posting.scss */
+/* line 39, src/scss/_components/posting/_posting.scss */
 .posting__wrapper-footer {
   padding-bottom: 35px;
 }
 
-/* line 43, src/scss/_components/posting/_posting.scss */
+/* line 44, src/scss/_components/posting/_posting.scss */
 .posting__title {
   padding-bottom: 20px;
   font-size: 21px;
@@ -21260,18 +21326,29 @@ picture {
   color: #091e42;
 }
 
-/* line 50, src/scss/_components/posting/_posting.scss */
+/* line 51, src/scss/_components/posting/_posting.scss */
 .posting__title:not(:first-of-type) {
   padding-top: 35px;
 }
 
-/* line 55, src/scss/_components/posting/_posting.scss */
+/* line 56, src/scss/_components/posting/_posting.scss */
 .posting__btn {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 59, src/scss/_components/posting/_posting.scss */
+@media screen and (max-width: 767px) {
+  /* line 56, src/scss/_components/posting/_posting.scss */
+  .posting__btn {
+    margin-bottom: 10px;
+  }
+  /* line 62, src/scss/_components/posting/_posting.scss */
+  .posting__btn:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+/* line 67, src/scss/_components/posting/_posting.scss */
 .posting__btn-wrapper {
   display: none;
   -webkit-box-align: center;
@@ -21288,7 +21365,20 @@ picture {
   margin-right: auto;
 }
 
-/* line 69, src/scss/_components/posting/_posting.scss */
+@media screen and (max-width: 767px) {
+  /* line 67, src/scss/_components/posting/_posting.scss */
+  .posting__btn-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 81, src/scss/_components/posting/_posting.scss */
 .posting__btn-wrapper.is-three {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -21296,19 +21386,36 @@ picture {
           justify-content: space-between;
 }
 
-/* line 72, src/scss/_components/posting/_posting.scss */
+@media screen and (max-width: 767px) {
+  /* line 81, src/scss/_components/posting/_posting.scss */
+  .posting__btn-wrapper.is-three {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 87, src/scss/_components/posting/_posting.scss */
 .posting__btn-wrapper.is-three a {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 3);
   max-width: calc((100% - 20px) / 3);
 }
 
-/* line 79, src/scss/_components/posting/_posting.scss */
+@media screen and (max-width: 767px) {
+  /* line 87, src/scss/_components/posting/_posting.scss */
+  .posting__btn-wrapper.is-three a {
+    max-width: 250px;
+  }
+}
+
+/* line 97, src/scss/_components/posting/_posting.scss */
 .posting__btn-wrapper[data-wrapper-id='4'] [posting-question-js] {
   display: none;
 }
 
-/* line 84, src/scss/_components/posting/_posting.scss */
+/* line 102, src/scss/_components/posting/_posting.scss */
 .posting__btn-wrapper.is-active {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21316,12 +21423,12 @@ picture {
   display: flex;
 }
 
-/* line 90, src/scss/_components/posting/_posting.scss */
+/* line 108, src/scss/_components/posting/_posting.scss */
 .posting .board-details {
   margin-bottom: 0;
 }
 
-/* line 98, src/scss/_components/posting/_posting.scss */
+/* line 116, src/scss/_components/posting/_posting.scss */
 .select2-container.select2-container--default .select2-selection--multiple {
   position: relative;
   width: 100%;
@@ -21335,7 +21442,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 107, src/scss/_components/posting/_posting.scss */
+/* line 125, src/scss/_components/posting/_posting.scss */
 .select2-container.select2-container--default .select2-selection--multiple .select2-selection__rendered {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21353,7 +21460,7 @@ picture {
   padding-right: 25px;
 }
 
-/* line 115, src/scss/_components/posting/_posting.scss */
+/* line 133, src/scss/_components/posting/_posting.scss */
 .select2-container.select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-search__field {
   margin: 0;
 }
@@ -21393,7 +21500,7 @@ picture {
   color: rgba(9, 30, 66, 0.6);
 }
 
-/* line 125, src/scss/_components/posting/_posting.scss */
+/* line 143, src/scss/_components/posting/_posting.scss */
 .select2-container.select2-container--default .select2-selection--multiple .select2-selection__choice {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21425,7 +21532,7 @@ picture {
   text-transform: capitalize;
 }
 
-/* line 141, src/scss/_components/posting/_posting.scss */
+/* line 159, src/scss/_components/posting/_posting.scss */
 .select2-container.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   color: #ffffff;
   font-size: 16px;
@@ -21485,7 +21592,14 @@ picture {
   padding: 60px 50px 60px;
 }
 
-/* line 33, src/scss/_components/posting/_posting--modal.scss */
+@media screen and (max-width: 767px) {
+  /* line 29, src/scss/_components/posting/_posting--modal.scss */
+  .c-modal.postingPost .c-modal__body {
+    padding: 40px 30px;
+  }
+}
+
+/* line 36, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__body-bg {
   z-index: 0;
   position: absolute;
@@ -21495,7 +21609,7 @@ picture {
   height: 100%;
 }
 
-/* line 41, src/scss/_components/posting/_posting--modal.scss */
+/* line 44, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__body-bg span {
   opacity: 0.7;
   position: absolute;
@@ -21506,39 +21620,39 @@ picture {
   border: solid 130px rgba(255, 255, 255, 0.1);
 }
 
-/* line 49, src/scss/_components/posting/_posting--modal.scss */
+/* line 52, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__body-bg span:nth-of-type(1) {
   left: -100px;
   bottom: -180px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 49, src/scss/_components/posting/_posting--modal.scss */
+  /* line 52, src/scss/_components/posting/_posting--modal.scss */
   .c-modal.postingPost .c-modal__body-bg span:nth-of-type(1) {
     left: -75px;
   }
 }
 
-/* line 56, src/scss/_components/posting/_posting--modal.scss */
+/* line 59, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__body-bg span:nth-of-type(2) {
   top: -175px;
   right: -150px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/_components/posting/_posting--modal.scss */
+  /* line 59, src/scss/_components/posting/_posting--modal.scss */
   .c-modal.postingPost .c-modal__body-bg span:nth-of-type(2) {
     display: none !important;
   }
 }
 
-/* line 66, src/scss/_components/posting/_posting--modal.scss */
+/* line 69, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__body-content {
   z-index: 2;
   position: relative;
 }
 
-/* line 72, src/scss/_components/posting/_posting--modal.scss */
+/* line 75, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__title, .c-modal.postingPost .c-modal__text {
   width: 100%;
   max-width: 400px;
@@ -21548,7 +21662,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 82, src/scss/_components/posting/_posting--modal.scss */
+/* line 85, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__title {
   padding-bottom: 20px;
   font-size: 32px;
@@ -21556,7 +21670,7 @@ picture {
   letter-spacing: 0.76px;
 }
 
-/* line 90, src/scss/_components/posting/_posting--modal.scss */
+/* line 93, src/scss/_components/posting/_posting--modal.scss */
 .c-modal.postingPost .c-modal__text {
   padding-bottom: 40px;
   font-size: 18px;
@@ -21668,13 +21782,20 @@ picture {
   padding: 60px 50px 60px;
 }
 
-/* line 74, src/scss/_components/posting/_posting--add.scss */
+@media screen and (max-width: 767px) {
+  /* line 70, src/scss/_components/posting/_posting--add.scss */
+  .c-modal.postingAdd .c-modal__body {
+    padding: 40px 30px;
+  }
+}
+
+/* line 77, src/scss/_components/posting/_posting--add.scss */
 .c-modal.postingAdd .c-modal__body-content {
   z-index: 2;
   position: relative;
 }
 
-/* line 78, src/scss/_components/posting/_posting--add.scss */
+/* line 81, src/scss/_components/posting/_posting--add.scss */
 .c-modal.postingAdd .c-modal__body-content label.error {
   position: absolute;
   bottom: 8px;
@@ -21684,7 +21805,7 @@ picture {
   color: #ee0000;
 }
 
-/* line 87, src/scss/_components/posting/_posting--add.scss */
+/* line 90, src/scss/_components/posting/_posting--add.scss */
 .c-modal.postingAdd .c-modal__body-content .c-btn {
   display: none;
 }
@@ -21802,7 +21923,15 @@ picture {
   padding-right: 60px;
 }
 
-/* line 81, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 74, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 85, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__footer {
   width: 100%;
   max-width: 720px;
@@ -21812,7 +21941,15 @@ picture {
   padding-bottom: 25px;
 }
 
-/* line 89, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 85, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 97, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__footer p {
   font-size: 12px;
   line-height: 1.42;
@@ -21821,20 +21958,39 @@ picture {
   color: #42526e;
 }
 
-/* line 96, src/scss/_components/posting/_posting--review.scss */
+/* line 104, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__footer p:not(:last-of-type) {
   padding-bottom: 20px;
 }
 
-/* line 102, src/scss/_components/posting/_posting--review.scss */
+/* line 110, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box {
+  overflow: hidden;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
-/* line 110, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 110, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__box {
+    height: 175px;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+}
+
+/* line 121, src/scss/_components/posting/_posting--review.scss */
+.c-modal.postingReview .c-modal__box.is-show {
+  height: auto;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+/* line 128, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-bg {
   border: solid 1px #8181ff;
   -webkit-transition: border 0.3s ease-in-out;
@@ -21842,7 +21998,7 @@ picture {
   transition: border 0.3s ease-in-out;
 }
 
-/* line 114, src/scss/_components/posting/_posting--review.scss */
+/* line 132, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-circle {
   border-color: transparent;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -21850,7 +22006,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 118, src/scss/_components/posting/_posting--review.scss */
+/* line 136, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-circle:after {
   opacity: 1;
   visibility: visible;
@@ -21859,7 +22015,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 124, src/scss/_components/posting/_posting--review.scss */
+/* line 142, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-circle .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -21867,7 +22023,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 130, src/scss/_components/posting/_posting--review.scss */
+/* line 148, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a {
   border-color: transparent;
   -webkit-box-shadow: 0 5px 20px 0 rgba(135, 119, 217, 0.2);
@@ -21879,7 +22035,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 136, src/scss/_components/posting/_posting--review.scss */
+/* line 154, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a:hover:before {
   opacity: 1;
   visibility: visible;
@@ -21893,7 +22049,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 143, src/scss/_components/posting/_posting--review.scss */
+/* line 161, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a:hover:after {
   opacity: 0;
   visibility: hidden;
@@ -21902,7 +22058,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 150, src/scss/_components/posting/_posting--review.scss */
+/* line 168, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a:after {
   opacity: 1;
   visibility: visible;
@@ -21911,7 +22067,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 156, src/scss/_components/posting/_posting--review.scss */
+/* line 174, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box.is-active .c-modal__box-btn a span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -21919,7 +22075,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 165, src/scss/_components/posting/_posting--review.scss */
+/* line 183, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21931,14 +22087,33 @@ picture {
           justify-content: space-between;
 }
 
-/* line 169, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 183, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__box-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+/* line 190, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 40px) / 2);
   max-width: calc((100% - 40px) / 2);
 }
 
-/* line 175, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 190, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__box-wrapper > div {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 200, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-bg {
   z-index: 0;
   position: absolute;
@@ -21958,13 +22133,13 @@ picture {
   transition: border 0.3s ease-in-out;
 }
 
-/* line 189, src/scss/_components/posting/_posting--review.scss */
+/* line 214, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-content {
   z-index: 2;
   position: relative;
 }
 
-/* line 194, src/scss/_components/posting/_posting--review.scss */
+/* line 219, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle {
   overflow: hidden;
   position: relative;
@@ -21995,7 +22170,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 209, src/scss/_components/posting/_posting--review.scss */
+/* line 234, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle:after {
   content: '';
   opacity: 0;
@@ -22014,7 +22189,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 223, src/scss/_components/posting/_posting--review.scss */
+/* line 248, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle .icon-font {
   z-index: 2;
   position: relative;
@@ -22024,17 +22199,17 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 229, src/scss/_components/posting/_posting--review.scss */
+/* line 254, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle .icon-font.icon-shout {
   font-size: 53px;
 }
 
-/* line 232, src/scss/_components/posting/_posting--review.scss */
+/* line 257, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-circle .icon-font.icon-rocket {
   font-size: 63px;
 }
 
-/* line 238, src/scss/_components/posting/_posting--review.scss */
+/* line 263, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-title {
   padding-top: 10px;
   font-size: 21px;
@@ -22045,7 +22220,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 248, src/scss/_components/posting/_posting--review.scss */
+/* line 273, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-subtitle {
   padding-bottom: 20px;
   font-size: 15px;
@@ -22055,7 +22230,7 @@ picture {
   color: #42526e;
 }
 
-/* line 257, src/scss/_components/posting/_posting--review.scss */
+/* line 282, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22071,7 +22246,7 @@ picture {
   border: solid 1px #dfdfff;
 }
 
-/* line 263, src/scss/_components/posting/_posting--review.scss */
+/* line 288, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22085,14 +22260,14 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 36px;
-  padding: 3px 15px 3px 20px;
+  min-height: 36px;
+  padding: 8px 15px 8px 20px;
   background-image: -webkit-linear-gradient(356deg, rgba(129, 129, 255, 0.2) 22%, rgba(81, 83, 220, 0.05) 133%), -webkit-linear-gradient(top, #ffffff, #ffffff);
   background-image: -o-linear-gradient(356deg, rgba(129, 129, 255, 0.2) 22%, rgba(81, 83, 220, 0.05) 133%), -o-linear-gradient(top, #ffffff, #ffffff);
   background-image: linear-gradient(94deg, rgba(129, 129, 255, 0.2) 22%, rgba(81, 83, 220, 0.05) 133%), linear-gradient(to bottom, #ffffff, #ffffff);
 }
 
-/* line 272, src/scss/_components/posting/_posting--review.scss */
+/* line 297, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -22102,13 +22277,13 @@ picture {
   max-width: 100%;
 }
 
-/* line 277, src/scss/_components/posting/_posting--review.scss */
+/* line 302, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head > div:nth-of-type(2) {
   width: 80px;
   text-align: center;
 }
 
-/* line 283, src/scss/_components/posting/_posting--review.scss */
+/* line 308, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head p {
   font-size: 15px;
   line-height: 1.33;
@@ -22116,7 +22291,7 @@ picture {
   color: #42526e;
 }
 
-/* line 290, src/scss/_components/posting/_posting--review.scss */
+/* line 315, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head span {
   font-size: 15px;
   font-weight: bold;
@@ -22126,14 +22301,14 @@ picture {
   color: #5153dc;
 }
 
-/* line 298, src/scss/_components/posting/_posting--review.scss */
+/* line 323, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-head span i {
   font-weight: normal;
   font-style: normal;
   color: #42526e;
 }
 
-/* line 307, src/scss/_components/posting/_posting--review.scss */
+/* line 332, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22146,7 +22321,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 311, src/scss/_components/posting/_posting--review.scss */
+/* line 336, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22157,16 +22332,16 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   min-height: 35px;
-  padding: 3px 15px 3px 20px;
+  padding: 8px 15px 8px 20px;
   border-bottom: solid 1px #dfdfff;
 }
 
-/* line 318, src/scss/_components/posting/_posting--review.scss */
+/* line 343, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li:last-of-type {
   border: none;
 }
 
-/* line 323, src/scss/_components/posting/_posting--review.scss */
+/* line 348, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22187,7 +22362,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 331, src/scss/_components/posting/_posting--review.scss */
+/* line 356, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul li > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22200,7 +22375,7 @@ picture {
   width: 80px;
 }
 
-/* line 339, src/scss/_components/posting/_posting--review.scss */
+/* line 364, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22224,14 +22399,14 @@ picture {
   background-image: linear-gradient(318deg, #ff5630 97%, #ff7452 21%);
 }
 
-/* line 349, src/scss/_components/posting/_posting--review.scss */
+/* line 374, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul a i {
   margin-right: 7px;
   color: #fff;
   font-size: 16px;
 }
 
-/* line 355, src/scss/_components/posting/_posting--review.scss */
+/* line 380, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul a span {
   text-transform: uppercase;
   font-size: 12px;
@@ -22240,7 +22415,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 364, src/scss/_components/posting/_posting--review.scss */
+/* line 389, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul p {
   font-size: 15px;
   line-height: 1.33;
@@ -22248,32 +22423,32 @@ picture {
   color: #42526e;
 }
 
-/* line 371, src/scss/_components/posting/_posting--review.scss */
+/* line 396, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul .icon-font {
   font-size: 20px;
 }
 
-/* line 374, src/scss/_components/posting/_posting--review.scss */
+/* line 399, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul .icon-font.icon-circle-x {
   color: #ff5630;
 }
 
-/* line 377, src/scss/_components/posting/_posting--review.scss */
+/* line 402, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-relevant-body ul .icon-font.icon-circle-checked {
   color: #36b37e;
 }
 
-/* line 385, src/scss/_components/posting/_posting--review.scss */
+/* line 410, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms {
   padding-top: 15px;
 }
 
-/* line 389, src/scss/_components/posting/_posting--review.scss */
+/* line 414, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms.c-modal__box-terms--regular .c-modal__box-terms-info {
   opacity: 0;
 }
 
-/* line 394, src/scss/_components/posting/_posting--review.scss */
+/* line 419, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-title {
   padding-bottom: 10px;
   font-size: 16px;
@@ -22283,7 +22458,7 @@ picture {
   color: #091e42;
 }
 
-/* line 403, src/scss/_components/posting/_posting--review.scss */
+/* line 428, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head, .c-modal.postingReview .c-modal__box-terms-info, .c-modal.postingReview .c-modal__box-terms-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22297,7 +22472,7 @@ picture {
   padding: 3px 15px 3px 20px;
 }
 
-/* line 412, src/scss/_components/posting/_posting--review.scss */
+/* line 437, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head > div:nth-of-type(1), .c-modal.postingReview .c-modal__box-terms-info > div:nth-of-type(1), .c-modal.postingReview .c-modal__box-terms-footer > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -22307,20 +22482,20 @@ picture {
   max-width: 100%;
 }
 
-/* line 417, src/scss/_components/posting/_posting--review.scss */
+/* line 442, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head > div:nth-of-type(2), .c-modal.postingReview .c-modal__box-terms-info > div:nth-of-type(2), .c-modal.postingReview .c-modal__box-terms-footer > div:nth-of-type(2) {
   width: 80px;
   text-align: center;
 }
 
-/* line 424, src/scss/_components/posting/_posting--review.scss */
+/* line 449, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head, .c-modal.postingReview .c-modal__box-terms-info {
   -webkit-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
   border: solid 1px #dfdfff;
 }
 
-/* line 429, src/scss/_components/posting/_posting--review.scss */
+/* line 454, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head p, .c-modal.postingReview .c-modal__box-terms-info p {
   font-size: 15px;
   line-height: 1.33;
@@ -22328,7 +22503,7 @@ picture {
   color: #42526e;
 }
 
-/* line 436, src/scss/_components/posting/_posting--review.scss */
+/* line 461, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-head span, .c-modal.postingReview .c-modal__box-terms-info span {
   font-size: 15px;
   font-weight: 500;
@@ -22338,7 +22513,7 @@ picture {
   color: #42526e;
 }
 
-/* line 446, src/scss/_components/posting/_posting--review.scss */
+/* line 471, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-info {
   min-height: 60px;
   padding-top: 10px;
@@ -22348,7 +22523,7 @@ picture {
   border-top: none;
 }
 
-/* line 454, src/scss/_components/posting/_posting--review.scss */
+/* line 479, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22359,12 +22534,12 @@ picture {
   border-right: solid 1px #dfdfff;
 }
 
-/* line 460, src/scss/_components/posting/_posting--review.scss */
+/* line 485, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div {
   min-height: 100%;
 }
 
-/* line 463, src/scss/_components/posting/_posting--review.scss */
+/* line 488, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22382,7 +22557,7 @@ picture {
   background-color: #ff8f73;
 }
 
-/* line 470, src/scss/_components/posting/_posting--review.scss */
+/* line 495, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(1) span {
   white-space: nowrap;
   text-transform: uppercase;
@@ -22396,7 +22571,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 481, src/scss/_components/posting/_posting--review.scss */
+/* line 506, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22415,7 +22590,7 @@ picture {
   padding: 10px 5px 10px 10px;
 }
 
-/* line 489, src/scss/_components/posting/_posting--review.scss */
+/* line 514, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(2) p {
   font-size: 15px;
   line-height: 1.33;
@@ -22423,14 +22598,14 @@ picture {
   color: #42526e;
 }
 
-/* line 496, src/scss/_components/posting/_posting--review.scss */
+/* line 521, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(3) {
   width: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 501, src/scss/_components/posting/_posting--review.scss */
+/* line 526, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-body > div:nth-of-type(3) span {
   font-size: 15px;
   font-weight: 500;
@@ -22440,14 +22615,14 @@ picture {
   color: #42526e;
 }
 
-/* line 513, src/scss/_components/posting/_posting--review.scss */
+/* line 538, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-footer {
   -webkit-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
   border: solid 1px #dfdfff;
 }
 
-/* line 517, src/scss/_components/posting/_posting--review.scss */
+/* line 542, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-footer p {
   padding-right: 15px;
   font-size: 15px;
@@ -22457,7 +22632,7 @@ picture {
   color: #42526e;
 }
 
-/* line 526, src/scss/_components/posting/_posting--review.scss */
+/* line 551, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-terms-footer span {
   font-size: 15px;
   font-weight: 800;
@@ -22467,7 +22642,7 @@ picture {
   color: #42526e;
 }
 
-/* line 537, src/scss/_components/posting/_posting--review.scss */
+/* line 562, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-voucher {
   overflow: hidden;
   position: relative;
@@ -22487,7 +22662,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 548, src/scss/_components/posting/_posting--review.scss */
+/* line 573, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-voucher input {
   outline: none;
   position: absolute;
@@ -22543,7 +22718,15 @@ picture {
   color: rgba(9, 30, 66, 0.6);
 }
 
-/* line 570, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 573, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__box-voucher input {
+    width: -webkit-calc(100% - 75px);
+    width: calc(100% - 75px);
+  }
+}
+
+/* line 598, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-voucher button {
   -webkit-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
@@ -22559,7 +22742,16 @@ picture {
   color: #ffffff;
 }
 
-/* line 582, src/scss/_components/posting/_posting--review.scss */
+@media screen and (max-width: 767px) {
+  /* line 598, src/scss/_components/posting/_posting--review.scss */
+  .c-modal.postingReview .c-modal__box-voucher button {
+    width: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* line 615, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22575,9 +22767,10 @@ picture {
           justify-content: center;
 }
 
-/* line 587, src/scss/_components/posting/_posting--review.scss */
+/* line 620, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a {
   overflow: hidden;
+  z-index: 10;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22606,7 +22799,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 602, src/scss/_components/posting/_posting--review.scss */
+/* line 636, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover {
   border-color: transparent;
   -webkit-box-shadow: 0 5px 20px 0 rgba(135, 119, 217, 0.2);
@@ -22618,7 +22811,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 607, src/scss/_components/posting/_posting--review.scss */
+/* line 641, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover:after {
   opacity: 1;
   visibility: visible;
@@ -22627,7 +22820,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 613, src/scss/_components/posting/_posting--review.scss */
+/* line 647, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -22635,7 +22828,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 619, src/scss/_components/posting/_posting--review.scss */
+/* line 653, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:before {
   content: '';
   opacity: 0;
@@ -22663,7 +22856,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 636, src/scss/_components/posting/_posting--review.scss */
+/* line 670, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:after {
   content: '';
   opacity: 0;
@@ -22681,7 +22874,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 649, src/scss/_components/posting/_posting--review.scss */
+/* line 683, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a span {
   z-index: 2;
   position: relative;

@@ -76,6 +76,10 @@
         padding-top: 10px;
         padding-left: 60px;
         padding-right: 60px;
+        @include adaptive(767) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
       }
 
       &__footer {
@@ -85,6 +89,10 @@
         margin-right: auto;
         padding-top: 25px;
         padding-bottom: 25px;
+        @include adaptive(767) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
 
         p {
           font-size: 12px;
@@ -100,10 +108,20 @@
       }
 
       &__box {
+        overflow: hidden;
         position: relative;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+        @include adaptive(767) {
+          height: 175px;
+          @include transition(height);
+        }
+
+        &.is-show {
+          height: auto;
+          @include transition(height);
+        }
 
         &.is-active {
           .c-modal__box {
@@ -165,10 +183,17 @@
         &-wrapper {
           display: flex;
           justify-content: space-between;
+          @include adaptive(767) {
+            flex-direction: column-reverse;
+          }
 
           > div {
             width: 100%;
             max-width: calc((100% - 40px) / 2);
+            @include adaptive(767) {
+              max-width: 100%;
+              margin-bottom: 15px;
+            }
           }
         }
 
@@ -264,8 +289,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 36px;
-            padding: 3px 15px 3px 20px;
+            min-height: 36px;
+            padding: 8px 15px 8px 20px;
             background-image: linear-gradient(94deg, rgba(129, 129, 255, 0.2) 22%, rgba(81, 83, 220, 0.05) 133%), linear-gradient(to bottom, #ffffff, #ffffff);
 
             > div {
@@ -312,7 +337,7 @@
                 display: flex;
                 align-items: center;
                 min-height: 35px;
-                padding: 3px 15px 3px 20px;
+                padding: 8px 15px 8px 20px;
                 border-bottom: solid 1px #dfdfff;
 
                 &:last-of-type {
@@ -565,6 +590,9 @@
               letter-spacing: 0.5px;
               color: rgba(#091e42, 0.6);
             }
+            @include adaptive(767) {
+              width: calc(100% - 75px);
+            }
           }
 
           button {
@@ -576,6 +604,11 @@
             letter-spacing: 0.5px;
             text-align: center;
             color: #ffffff;
+            @include adaptive(767) {
+              width: 75px;
+              padding-left: 5px;
+              padding-right: 5px;
+            }
           }
         }
 
@@ -586,6 +619,7 @@
 
           a {
             overflow: hidden;
+            z-index: 10;
             position: relative;
             display: flex;
             align-items: center;

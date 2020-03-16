@@ -50,6 +50,29 @@
     }
   }
 
+  &--info,
+  &--arrow {
+    @include adaptive(767) {
+      display: none;
+
+      &.is-active {
+        display: block;
+
+        & + .posting__step--arrow {
+          display: flex;
+
+          & + .posting__step--info {
+            display: block;
+          }
+        }
+      }
+
+      &.is-done {
+        display: none;
+      }
+    }
+  }
+
   &-circle {
     overflow: hidden;
     position: relative;

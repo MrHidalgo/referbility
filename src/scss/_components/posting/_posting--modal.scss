@@ -29,6 +29,9 @@
       &__body {
         position: relative;
         padding: 60px 50px 60px;
+        @include adaptive(767) {
+          padding: 40px 30px;
+        }
 
         &-bg {
            z-index: 0;

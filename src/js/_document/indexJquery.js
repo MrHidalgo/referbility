@@ -1186,6 +1186,7 @@ $(document).ready((ev) => {
         $('.posting__btn-wrapper[data-wrapper-id="' + _ID + '"]').show().css({display:'flex'});
 
         $('.posting__step[posting-step-' + _ID + '-js]').addClass('is-active');
+        $('.posting__step[posting-step-' + (_ID - 1) + '-js]').removeClass('is-active').addClass('is-done');
 
         $('.posting__form[posting-form-' + (_ID - 1) + '-js]').removeClass('is-active');
         $('.posting__form[posting-form-' + _ID + '-js]').addClass('is-active');
@@ -1374,6 +1375,20 @@ $(document).ready((ev) => {
     $('.c-modal__box-btn a').on('click', (ev) => {
       $('.c-modal__box').removeClass('is-active');
       $(ev.currentTarget).closest('.c-modal__box').addClass('is-active');
+
+      ev.preventDefault();
+      return false;
+    });
+
+    $('.postingReview .c-modal__box').on('click', (ev) => {
+      if($(window).width() < 768) {
+        if($(ev.currentTarget).hasClass('is-show')) {
+          $(ev.currentTarget).removeClass('is-show');
+        } else {
+          $('.c-modal__box').removeClass('is-show');
+          $(ev.currentTarget).addClass('is-show');
+        }
+      }
     });
   };
 
@@ -1386,6 +1401,7 @@ $(document).ready((ev) => {
       $('.posting__btn-wrapper[data-wrapper-id="' + id + '"]').show().css({display:'flex'});
 
       $('.posting__step[posting-step-' + id + '-js]').addClass('is-active');
+      $('.posting__step[posting-step-' + (id - 1) + '-js]').removeClass('is-active').addClass('is-done');
 
       $('.posting__form[posting-form-' + (id - 1) + '-js]').removeClass('is-active');
       $('.posting__form[posting-form-' + id + '-js]').addClass('is-active');
@@ -1403,7 +1419,7 @@ $(document).ready((ev) => {
       $('.posting__btn-wrapper').hide();
       $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
 
-      $('.posting__step[posting-step-' + (_elID + 1) + '-js]').removeClass('is-active');
+      // $('.posting__step[posting-step-' + (_elID + 1) + '-js]').removeClass('is-active');
 
       $('.posting__form[posting-form-' + (_elID + 1) + '-js]').removeClass('is-active');
       $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
@@ -1526,6 +1542,12 @@ $(document).ready((ev) => {
             },
           }
         });
+
+        _helperNext(_elID);
+
+        $('body, html').animate({
+          scrollTop: 0
+        }, 800);
 
         if (_formName.valid() === true) {
           _helperNext(_elID);
