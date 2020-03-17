@@ -1347,9 +1347,15 @@ $(document).ready(function (ev) {
       hide_from_to: true,
       onChange: function onChange(data) {
         _helperRangeMethod('[experience-min-input-js]', '[experience-max-input-js]', data);
+
+        $('[posting-review-experience-from-js]').text(data.from);
+        $('[posting-review-experience-to-js]').text(data.to);
       },
       onFinish: function onFinish(data) {
         _helperRangeMethod('[experience-min-input-js]', '[experience-max-input-js]', data);
+
+        $('[posting-review-experience-from-js]').text(data.from);
+        $('[posting-review-experience-to-js]').text(data.to);
       }
     });
     var _rangeExperienceData = _rangeExperience.data("ionRangeSlider");
@@ -1815,11 +1821,11 @@ $(document).ready(function (ev) {
           }
         });
 
-        _helperNext(_elID);
-
-        $('body, html').animate({
-          scrollTop: 0
-        }, 800);
+        // _helperNext(_elID);
+        //
+        // $('body, html').animate({
+        //   scrollTop: 0
+        // }, 800);
 
         if (_formName.valid() === true) {
           _helperNext(_elID);
@@ -1857,8 +1863,14 @@ $(document).ready(function (ev) {
 
       if (_count > 0) {
         $('[posting-info-js]').slideDown(400);
+        $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('logo'));
+        $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('confidential'));
+        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('negotiable'));
       } else {
         $('[posting-info-js]').slideUp(400);
+        $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('name'));
+        $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('name'));
+        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('name'));
       }
     });
   };

@@ -7,12 +7,12 @@ section#board-details.board-details
       .board-details__head-left
 
         .board-details__logo
-          img(src="img/engie-logo.png" alt="")
+          img(posting-confidential-logo-js data-logo='img/nocompanylogo.png' data-name='img/engie-logo.png' src="img/engie-logo.png" alt="")
 
       .board-details__head-middle
 
         p.board-details__title Chief Financial Officer Thermal Power Plant
-        p.board-details__subtitle Engie
+        p.board-details__subtitle(posting-confidential-company-js data-confidential='CONFIDENTIAL COMPANY' data-name='Engie') Engie
         ul.board-card__block-list
           li.board-card__block-list-item
             div
@@ -23,7 +23,7 @@ section#board-details.board-details
             div
               i.icon-font.icon-wallet
             div
-              p SAR 50,000 to SAR 55,000 per month
+              p(posting-negotiable-wallet-js data-negotiable='Negotiable' data-name='SAR 50,000 to SAR 55,000 per month') SAR 50,000 to SAR 55,000 per month
 
       .board-details__head-right
 
@@ -35,6 +35,14 @@ section#board-details.board-details
         div
           .board-details__industry
             i Energy and Power
+      li
+        div
+          p Years of Experience:
+        div
+          span
+            i(posting-review-experience-from-js) 1
+            i!= " - "
+            i(posting-review-experience-to-js) 30
       li
         div
           p Degree:
@@ -63,10 +71,6 @@ section#board-details.board-details
             i Budgetting
             i Finance
             i Corporate Finance
-      li
-        div
-          p Change to Regular:
-        div
 
 
     .board-details__info
