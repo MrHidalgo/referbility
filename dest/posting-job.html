@@ -229,7 +229,7 @@
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-checkbox" for="posting_1_hide_salary">
-                  <input type="checkbox" name="hide_salary" id="posting_1_hide_salary" posting-checkbox-info-js>
+                  <input type="checkbox" name="hide_salary" id="posting_1_hide_salary" posting-checkbox-salary-js posting-checkbox-info-js>
                   <div><span><i></i></span></div>
                   <div>
                     <p>Hide salary information</p>
@@ -238,7 +238,7 @@
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-checkbox" for="posting_1_post_job">
-                  <input type="checkbox" name="post_job" id="posting_1_post_job" posting-checkbox-info-js>
+                  <input type="checkbox" name="post_job" id="posting_1_post_job" posting-checkbox-confidential-js posting-checkbox-info-js>
                   <div><span><i></i></span></div>
                   <div>
                     <p>Post job as <strong>Confidential Company</strong> (your company's name and logo will be hidden to referrers and candidates)</p>
@@ -427,17 +427,17 @@
                   <div class="board-details__list">
                     <li>
                       <div>
+                        <p>Years of Experience:</p>
+                      </div>
+                      <div><span><i posting-review-experience-from-js>1</i><i> - </i><i posting-review-experience-to-js>30</i></span></div>
+                    </li>
+                    <li>
+                      <div>
                         <p>Industry:</p>
                       </div>
                       <div>
                         <div class="board-details__industry"><i>Energy and Power</i></div>
                       </div>
-                    </li>
-                    <li>
-                      <div>
-                        <p>Years of Experience:</p>
-                      </div>
-                      <div><span><i posting-review-experience-from-js>1</i><i> - </i><i posting-review-experience-to-js>30</i></span></div>
                     </li>
                     <li>
                       <div>
@@ -491,7 +491,7 @@
             </div>
             <div class="posting__btn-wrapper" posting-action-js data-wrapper-id="2"><a class="posting__btn c-btn c-btn--bg c-btn--bg-gray" href="#" data-id="1" posting-back-js><span>Back</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-gradient" href="#" data-id="3" posting-next-js><span>Next</span></a></div>
             <div class="posting__btn-wrapper" posting-action-js data-wrapper-id="3"><a class="posting__btn c-btn c-btn--bg c-btn--bg-gray" href="#" data-id="2" posting-back-js><span>Back</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-gradient" href="#" data-id="4" data-init="range" posting-question-js><span>Next</span></a></div>
-            <div class="posting__btn-wrapper" posting-action-js data-wrapper-id="4"><a class="posting__btn c-btn c-btn--bg c-btn--bg-gray" href="#" data-id="3" posting-back-js><span>Back</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-green" href="#postingReview" data-effect="mfp-zoom-in" posting-review-js popup-js><span>Change Plan</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-gradient" href="#" data-id="5" posting-question-js><span>Review</span></a></div>
+            <div class="posting__btn-wrapper" posting-action-js data-wrapper-id="4"><a class="posting__btn c-btn c-btn--bg c-btn--bg-gray" href="#" data-id="3" posting-back-js><span>Back</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-green" href="#postingReview" data-effect="mfp-zoom-in" posting-review-js><span>Change Plan</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-gradient" href="#" data-id="5" posting-question-js><span>Review</span></a></div>
             <div class="posting__btn-wrapper" posting-action-js data-wrapper-id="5"><a class="posting__btn c-btn c-btn--bg c-btn--bg-gray" href="#" data-id="4" posting-back-js><span>Back</span></a><a class="posting__btn c-btn c-btn--bg c-btn--bg-gradient" href="#postingPost" data-effect="mfp-zoom-in" popup-js><span>Post</span></a></div>
           </div>
         </div>

@@ -1107,13 +1107,11 @@ $(document).ready((ev) => {
         rules: {
           add_skills: {
             required: true,
-            minlength: 2
           }
         },
         messages: {
           add_skills:  {
-            required: "Please specify your Skills",
-            name: "Must be min 2 characters"
+            required: "Please specify the Skills",
           }
         }
       });
@@ -1454,11 +1452,9 @@ $(document).ready((ev) => {
           rules: {
             job_title: {
               required: true,
-              minlength: 2
             },
             job_description: {
               required: true,
-              minlength: 2
             },
             job_function: {
               required: true
@@ -1492,59 +1488,53 @@ $(document).ready((ev) => {
             },
             additional_requirements: {
               required: true,
-              minlength: 2
             },
             city: {
               required: true,
-              minlength: 2
             },
           },
           messages: {
             job_title:  {
-              required: "Please specify your Job Title",
-              name: "Must be min 2 characters"
+              required: "Please specify the Job Title",
             },
             job_description:  {
-              required: "Please specify your Job Description",
-              name: "Must be min 2 characters"
+              required: "Please specify the Job Description",
             },
             job_function: {
-              required: 'Please select your Carer Level'
+              required: 'Please select the Carer Level'
             },
             career_level: {
-              required: 'Please select your Carer Level'
+              required: 'Please select the Carer Level'
             },
             employment_type: {
-              required: 'Please select your Employment Type'
+              required: 'Please select the Employment Type'
             },
             select_currency: {
-              required: 'Please select your Currency'
+              required: 'Please select the Currency'
             },
             country_select: {
-              required: 'Please select your Country'
+              required: 'Please select the Country'
             },
             industry_experience: {
-              required: 'Please select your Industry Experience'
+              required: 'Please select the Industry Experience'
             },
             skills: {
-              required: 'Please select your Skills'
+              required: 'Please select the Skills'
             },
             highest_degree: {
-              required: 'Please select your Highest Degree'
+              required: 'Please select the Highest Degree'
             },
             languages: {
-              required: 'Please select your Languages'
+              required: 'Please select the Languages'
             },
             designations: {
-              required: 'Please select your Designations'
+              required: 'Please select the Designations'
             },
             additional_requirements: {
-              required: "Please specify your additional requirements",
-              name: "Must be min 2 characters"
+              required: "Please specify the additional requirements",
             },
             city: {
-              required: "Please specify your City",
-              name: "Must be min 2 characters"
+              required: "Please specify the City",
             },
           }
         });
@@ -1570,6 +1560,7 @@ $(document).ready((ev) => {
         _elID = _el.data('id');
 
       if(_rewardBook) {
+      // if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
 
@@ -1591,14 +1582,29 @@ $(document).ready((ev) => {
 
       if(_count > 0) {
         $('[posting-info-js]').slideDown(400);
-        $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('logo'));
-        $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('confidential'));
-        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('negotiable'));
       } else {
         $('[posting-info-js]').slideUp(400);
+      }
+    });
+
+    $('[posting-checkbox-salary-js]').on('change', (ev) => {
+      const _el = $(ev.currentTarget);
+
+      if(_el.is(':checked')) {
+        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('negotiable'));
+      } else {
+        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('name'));
+      }
+    });
+    $('[posting-checkbox-confidential-js]').on('change', (ev) => {
+      const _el = $(ev.currentTarget);
+
+      if(_el.is(':checked')) {
+        $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('logo'));
+        $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('confidential'));
+      } else {
         $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('name'));
         $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('name'));
-        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('name'));
       }
     });
   };

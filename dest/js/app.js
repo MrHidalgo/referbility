@@ -88,6 +88,35 @@ var initPopups = function initPopups() {
       beforeClose: function beforeClose(ev) {}
     }
   });
+
+  $('[posting-review-js]').magnificPopup({
+    type: 'inline',
+    fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'is-show',
+    callbacks: {
+      beforeOpen: function beforeOpen() {
+        this.st.mainClass = this.st.el.attr('data-effect');
+      },
+      beforeClose: function beforeClose(ev) {
+        var id = 5;
+
+        $('.posting__btn-wrapper').hide();
+        $('.posting__btn-wrapper[data-wrapper-id="' + id + '"]').show().css({ display: 'flex' });
+
+        $('.posting__step[posting-step-' + id + '-js]').addClass('is-active');
+        $('.posting__step[posting-step-' + (id - 1) + '-js]').removeClass('is-active').addClass('is-done');
+
+        $('.posting__form[posting-form-' + (id - 1) + '-js]').removeClass('is-active');
+        $('.posting__form[posting-form-' + id + '-js]').addClass('is-active');
+      }
+    }
+  });
 };
 
 /**
@@ -1387,14 +1416,12 @@ $(document).ready(function (ev) {
         },
         rules: {
           add_skills: {
-            required: true,
-            minlength: 2
+            required: true
           }
         },
         messages: {
           add_skills: {
-            required: "Please specify your Skills",
-            name: "Must be min 2 characters"
+            required: "Please specify the Skills"
           }
         }
       });
@@ -1725,12 +1752,10 @@ $(document).ready(function (ev) {
           },
           rules: {
             job_title: {
-              required: true,
-              minlength: 2
+              required: true
             },
             job_description: {
-              required: true,
-              minlength: 2
+              required: true
             },
             job_function: {
               required: true
@@ -1763,60 +1788,54 @@ $(document).ready(function (ev) {
               required: true
             },
             additional_requirements: {
-              required: true,
-              minlength: 2
+              required: true
             },
             city: {
-              required: true,
-              minlength: 2
+              required: true
             }
           },
           messages: {
             job_title: {
-              required: "Please specify your Job Title",
-              name: "Must be min 2 characters"
+              required: "Please specify the Job Title"
             },
             job_description: {
-              required: "Please specify your Job Description",
-              name: "Must be min 2 characters"
+              required: "Please specify the Job Description"
             },
             job_function: {
-              required: 'Please select your Carer Level'
+              required: 'Please select the Carer Level'
             },
             career_level: {
-              required: 'Please select your Carer Level'
+              required: 'Please select the Carer Level'
             },
             employment_type: {
-              required: 'Please select your Employment Type'
+              required: 'Please select the Employment Type'
             },
             select_currency: {
-              required: 'Please select your Currency'
+              required: 'Please select the Currency'
             },
             country_select: {
-              required: 'Please select your Country'
+              required: 'Please select the Country'
             },
             industry_experience: {
-              required: 'Please select your Industry Experience'
+              required: 'Please select the Industry Experience'
             },
             skills: {
-              required: 'Please select your Skills'
+              required: 'Please select the Skills'
             },
             highest_degree: {
-              required: 'Please select your Highest Degree'
+              required: 'Please select the Highest Degree'
             },
             languages: {
-              required: 'Please select your Languages'
+              required: 'Please select the Languages'
             },
             designations: {
-              required: 'Please select your Designations'
+              required: 'Please select the Designations'
             },
             additional_requirements: {
-              required: "Please specify your additional requirements",
-              name: "Must be min 2 characters"
+              required: "Please specify the additional requirements"
             },
             city: {
-              required: "Please specify your City",
-              name: "Must be min 2 characters"
+              required: "Please specify the City"
             }
           }
         });
@@ -1842,6 +1861,7 @@ $(document).ready(function (ev) {
           _elID = _el.data('id');
 
       if (_rewardBook) {
+        // if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({ display: 'flex' });
 
@@ -1863,14 +1883,29 @@ $(document).ready(function (ev) {
 
       if (_count > 0) {
         $('[posting-info-js]').slideDown(400);
-        $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('logo'));
-        $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('confidential'));
-        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('negotiable'));
       } else {
         $('[posting-info-js]').slideUp(400);
+      }
+    });
+
+    $('[posting-checkbox-salary-js]').on('change', function (ev) {
+      var _el = $(ev.currentTarget);
+
+      if (_el.is(':checked')) {
+        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('negotiable'));
+      } else {
+        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('name'));
+      }
+    });
+    $('[posting-checkbox-confidential-js]').on('change', function (ev) {
+      var _el = $(ev.currentTarget);
+
+      if (_el.is(':checked')) {
+        $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('logo'));
+        $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('confidential'));
+      } else {
         $('[posting-confidential-logo-js]').attr('src', $('[posting-confidential-logo-js]').data('name'));
         $('[posting-confidential-company-js]').text($('[posting-confidential-company-js]').data('name'));
-        $('[posting-negotiable-wallet-js]').text($('[posting-negotiable-wallet-js]').data('name'));
       }
     });
   };
