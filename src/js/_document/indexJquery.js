@@ -1413,6 +1413,12 @@ $(document).ready((ev) => {
 
     $('[posting-review-js]').on('click', (ev) => {
       $(".posting__btn-wrapper[data-wrapper-id='4']").addClass('is-three');
+
+      $(".posting__btn-wrapper [posting-review-js]")
+        .text($(".posting__btn-wrapper [posting-review-js]").data('name'))
+        .removeClass('c-btn--bg-gradient')
+        .addClass('c-btn--bg-green');
+
       $(".posting__btn-wrapper[data-wrapper-id='4'] a").show().css({'display': 'flex'});
     });
 
@@ -1539,11 +1545,11 @@ $(document).ready((ev) => {
           }
         });
 
-        // _helperNext(_elID);
-        //
-        // $('body, html').animate({
-        //   scrollTop: 0
-        // }, 800);
+        _helperNext(_elID);
+
+        $('body, html').animate({
+          scrollTop: 0
+        }, 800);
 
         if (_formName.valid() === true) {
           _helperNext(_elID);
@@ -1559,8 +1565,8 @@ $(document).ready((ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.data('id');
 
-      if(_rewardBook) {
-      // if(1) {
+      // if(_rewardBook) {
+      if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
 
