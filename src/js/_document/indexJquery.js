@@ -1545,11 +1545,10 @@ $(document).ready((ev) => {
           }
         });
 
-        _helperNext(_elID);
-
-        $('body, html').animate({
-          scrollTop: 0
-        }, 800);
+        // _helperNext(_elID);
+        // $('body, html').animate({
+        //   scrollTop: 0
+        // }, 800);
 
         if (_formName.valid() === true) {
           _helperNext(_elID);
@@ -1565,8 +1564,8 @@ $(document).ready((ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.data('id');
 
-      // if(_rewardBook) {
-      if(1) {
+      if(_rewardBook) {
+      // if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
 
