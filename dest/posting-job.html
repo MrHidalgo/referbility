@@ -151,14 +151,14 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_job_title">Job Title</label>
                 <div class="posting__form-input">
-                  <input type="text" name="job_title" id="posting_1_job_title" placeholder="Type Job Title" required>
+                  <input type="text" name="job_title" id="posting_1_job_title" placeholder="Type Job Title" posting-job-title-js required>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_job_function">Job Function</label>
                 <div class="posting__form-select">
                   <select name="job_function" id="posting_1_job_function" required>
-                    <option value="">Choose Job Function</option>
+                    <option value="" disabled selected>Choose Job Function</option>
                     <option value="Action">Action</option>
                     <option value="More action">More action</option>
                   </select>
@@ -167,14 +167,14 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_job_description">Job Description</label>
                 <div class="posting__form-textarea">
-                  <textarea name="job_description" id="posting_1_job_description" placeholder="Type Description" required></textarea>
+                  <textarea name="job_description" id="posting_1_job_description" placeholder="Type Description" required posting-job-description-js></textarea>
                 </div>
               </div>
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_career_level">Career Level</label>
                 <div class="posting__form-select">
-                  <select name="career_level" id="posting_1_career_level" required>
-                    <option value="">Choose Career Level</option>
+                  <select name="career_level" id="posting_1_career_level" required posting-career-level-js>
+                    <option value="" disabled selected>Choose Career Level</option>
                     <option value="junior">Junior</option>
                     <option value="executive">Executive</option>
                     <option value="managerial">Managerial</option>
@@ -185,8 +185,8 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_employment_type">Employment Type</label>
                 <div class="posting__form-select">
-                  <select name="employment_type" id="posting_1_employment_type" required>
-                    <option value="">Choose Employment Type</option>
+                  <select name="employment_type" id="posting_1_employment_type" required posting-job-type-js>
+                    <option value="" disabled selected>Choose Employment Type</option>
                     <option value="Action">Action</option>
                     <option value="More action">More action</option>
                   </select>
@@ -217,11 +217,11 @@
                   <div class="posting__form-field">
                     <label class="posting__form-label posting__form-label--hidden" for="posting_1_select_currency">Select Currency</label>
                     <div class="posting__form-select">
-                      <select name="select_currency" id="posting_1_select_currency" required>
-                        <option value="">Select Currency</option>
-                        <option value="usd">($) USD</option>
-                        <option value="eur">(€) EUR</option>
-                        <option value="gbp">(£) GBP</option>
+                      <select name="select_currency" id="posting_1_select_currency" required posting-currency-js>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                        <option value="sar">SAR</option>
                       </select>
                     </div>
                   </div>
@@ -254,8 +254,8 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_country">Country</label>
                 <div class="posting__form-select">
-                  <select name="country_select" id="posting_1_country" required>
-                    <option value="">Choose Country</option>
+                  <select name="country_select" id="posting_1_country" required posting-country-js>
+                    <option value="" disabled selected>Choose Country</option>
                     <option value="Action">Action</option>
                     <option value="More action">More action</option>
                   </select>
@@ -264,7 +264,7 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_city">City</label>
                 <div class="posting__form-input">
-                  <input type="text" name="city" id="posting_1_city" placeholder="Type City" required>
+                  <input type="text" name="city" id="posting_1_city" placeholder="Type City" required posting-city-js>
                 </div>
               </div>
             </form>
@@ -291,7 +291,7 @@
               <div class="posting__form-field">
                 <label class="posting__form-label">Industry Experience</label>
                 <div class="posting__form-tags">
-                  <select class="selectTags" multiple="multiple" name="industry_experience" style="width: 100%" required>
+                  <select class="selectTags" multiple="multiple" name="industry_experience" style="width: 100%" required posting-industry-experience-js>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -301,7 +301,7 @@
               <div class="posting__form-field">
                 <label class="posting__form-label">Skills</label>
                 <div class="posting__form-tags">
-                  <select class="skillsInput selectTags" multiple="multiple" name="skills" style="width: 100%" skills-select-js required>
+                  <select class="skillsInput selectTags" multiple="multiple" name="skills" style="width: 100%" skills-select-js required posting-skills-js>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -312,8 +312,8 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_highest_degree">Highest Degree</label>
                 <div class="posting__form-select">
-                  <select name="highest_degree" id="posting_1_highest_degree" required>
-                    <option value="">Choose Degree</option>
+                  <select name="highest_degree" id="posting_1_highest_degree" required posting-highest-degree-js>
+                    <option value="" disabled selected>Choose Highest Degree</option>
                     <option value="Action">Action</option>
                     <option value="More action">More action</option>
                   </select>
@@ -322,7 +322,8 @@
               <div class="posting__form-field">
                 <label class="posting__form-label">Languages</label>
                 <div class="posting__form-tags">
-                  <select class="selectTags" multiple="multiple" name="languages" style="width: 100%" required>
+                  <select class="selectTags" multiple="multiple" name="languages" style="width: 100%" required posting-languages-js>
+                    <option value="" disabled selected>Choose Languages</option>
                     <option value="Action">Action</option>
                     <option value="One more action">One more action</option>
                     <option value="Again action">Again action</option>
@@ -332,7 +333,7 @@
               <div class="posting__form-field">
                 <label class="posting__form-label" for="posting_1_industry_additional_requirements">Mention any additional requirements or certifications that the ideal candidate would have</label>
                 <div class="posting__form-textarea">
-                  <textarea name="" id="posting_1_industry_additional_requirements" placeholder="Additional requirements"></textarea>
+                  <textarea name="" id="posting_1_industry_additional_requirements" placeholder="Additional requirements" posting-additional-requirements-js></textarea>
                 </div>
               </div>
               <p class="posting__title">Candidates with these designations are the most relevant to you:</p>
@@ -403,19 +404,25 @@
                       <div class="board-details__logo"><img posting-confidential-logo-js data-logo="img/nocompanylogo.png" data-name="img/engie-logo.png" src="img/engie-logo.png" alt=""></div>
                     </div>
                     <div class="board-details__head-middle">
-                      <p class="board-details__title">Chief Financial Officer Thermal Power Plant</p>
+                      <div class="board-card__block-badge-wrapper" review-badge-js>
+                        <div class="board-card__block-badge"><i class="icon-font icon-bell-alert"></i>
+                          <p>Urgent</p>
+                        </div>
+                      </div>
+                      <p class="board-details__title" review-job-title-js>Chief Financial Officer Thermal Power Plant</p>
                       <p class="board-details__subtitle" posting-confidential-company-js data-confidential="CONFIDENTIAL COMPANY" data-name="Engie">Engie</p>
                       <ul class="board-card__block-list">
                         <li class="board-card__block-list-item">
                           <div><i class="icon-font icon-pin"></i></div>
                           <div>
-                            <p>Riyadh, Saudi Arabia</p>
+                            <p><span review-country-js>Riyadh</span>, <span review-city-js>Saudi Arabia</span></p>
                           </div>
                         </li>
                         <li class="board-card__block-list-item">
                           <div><i class="icon-font icon-wallet"></i></div>
                           <div>
-                            <p posting-negotiable-wallet-js data-negotiable="Negotiable" data-name="SAR 50,000 to SAR 55,000 per month">SAR 50,000 to SAR 55,000 per month</p>
+                            <p posting-negotiable-wallet-js data-negotiable="Negotiable" data-name="SAR 50,000 to SAR 55,000 per month"><span review-currency-js>SAR</span> <span review-currency-from-js>50,000</span> to <span review-currency-js>SAR</span> <span review-currency-to-js>55,000</span> per month
+                            </p>
                           </div>
                         </li>
                       </ul>
@@ -427,7 +434,7 @@
                   <div class="board-details__list">
                     <li>
                       <div>
-                        <p>Years of Experience:</p>
+                        <p>Experience:</p>
                       </div>
                       <div><span><i posting-review-experience-from-js>1</i><i> - </i><i posting-review-experience-to-js>30</i></span></div>
                     </li>
@@ -436,48 +443,48 @@
                         <p>Industry:</p>
                       </div>
                       <div>
-                        <div class="board-details__industry"><i>Energy and Power</i></div>
+                        <div class="board-details__industry" review-industry-js><i>Energy and Power</i></div>
                       </div>
                     </li>
                     <li>
                       <div>
                         <p>Degree:</p>
                       </div>
-                      <div><span>Bachelor</span></div>
+                      <div><span review-degree-js>Bachelor</span></div>
                     </li>
                     <li>
                       <div>
-                        <p>Job Type:</p>
+                        <p>Job type:</p>
                       </div>
-                      <div><span>Full-time (unlimited)</span></div>
+                      <div><span review-job-type-js>Full-time (unlimited)</span></div>
                     </li>
                     <li>
                       <div>
-                        <p>Career Level:</p>
+                        <p>Career level:</p>
                       </div>
-                      <div><span>C Level</span></div>
+                      <div><span review-career-level-js>C Level</span></div>
                     </li>
                     <li>
                       <div>
                         <p>Languages:</p>
                       </div>
-                      <div><span>English</span></div>
+                      <div><span review-languages-js>English</span></div>
                     </li>
                     <li>
                       <div>
-                        <p>Skills Required:</p>
+                        <p>Skills required:</p>
                       </div>
                       <div>
-                        <div class="board-details__skills"><i>Budgetting</i><i>Finance</i><i>Corporate Finance</i></div>
+                        <div class="board-details__skills" review-skills-js><i>Budgetting</i><i>Finance</i><i>Corporate Finance</i></div>
                       </div>
                     </li>
                   </div>
                   <div class="board-details__info">
                     <div>
-                      <p>Job Description</p><span>Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait</span>
+                      <p>Job Description</p><span review-job-description-js>Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait</span>
                     </div>
                     <div>
-                      <p>Additional Requirements / Certifications</p><span>Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait</span>
+                      <p>Additional Requirements / Certifications</p><span review-additional-requirements-js>Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait</span>
                     </div>
                   </div>
                 </div>
@@ -638,14 +645,14 @@
                     </div>
                     <div class="posting__form-field">
                       <label class="posting__form-checkbox" for="posting_1_regular">
-                        <input type="checkbox" name="" id="posting_1_regular">
+                        <input type="checkbox" name="" id="posting_1_regular" checked>
                         <div><span><i></i></span></div>
                         <div>
                           <p>I have read & agree to the <a href='#'>Terms & Conditions.</a></p>
                         </div>
                       </label>
                     </div>
-                    <div class="c-modal__box-btn"><a href="#"><span>Choose</span></a></div>
+                    <div class="c-modal__box-btn"><a href="#" data-id="regular-plan"><span>Choose</span></a></div>
                   </div>
                 </div>
               </div>
@@ -726,14 +733,14 @@
                     </div>
                     <div class="posting__form-field">
                       <label class="posting__form-checkbox" for="posting_1_premium">
-                        <input type="checkbox" name="" id="posting_1_premium">
+                        <input type="checkbox" name="" id="posting_1_premium" checked>
                         <div><span><i></i></span></div>
                         <div>
                           <p>I have read & agree to the <a href='#'>Terms & Conditions.</a></p>
                         </div>
                       </label>
                     </div>
-                    <div class="c-modal__box-btn"><a href="#"><span>Choose</span></a></div>
+                    <div class="c-modal__box-btn"><a href="#" data-id="premium-plan"><span>Choose</span></a></div>
                   </div>
                 </div>
               </div>

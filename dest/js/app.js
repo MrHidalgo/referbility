@@ -1329,6 +1329,7 @@ $(document).ready(function (ev) {
       $(inputMin).prop('value', numberWithCommas(data.from));
       $(inputMax).prop('value', numberWithCommas(data.to));
     }
+
     function _helperCallbackChange(inputName, helperCallback, rangeData, directionRange) {
       $(inputName).on('change', function (ev) {
         var _val = helperCallback($(ev.currentTarget).val());
@@ -1353,9 +1354,19 @@ $(document).ready(function (ev) {
       hide_from_to: true,
       onChange: function onChange(data) {
         _helperRangeMethod('[salary-min-input-js]', '[salary-max-input-js]', data);
+
+        $('[review-currency-from-js]').text(numberWithCommas(data.from));
+        $('[review-currency-to-js]').text(numberWithCommas(data.to));
+
+        $('[review-currency-js]').parent().attr('data-name', $('[review-currency-js]').parent().text());
       },
       onFinish: function onFinish(data) {
         _helperRangeMethod('[salary-min-input-js]', '[salary-max-input-js]', data);
+
+        $('[review-currency-from-js]').text(numberWithCommas(data.from));
+        $('[review-currency-to-js]').text(numberWithCommas(data.to));
+
+        $('[review-currency-js]').parent().attr('data-name', $('[review-currency-js]').parent().text());
       }
     });
     var _rangeSalaryData = _rangeSalary.data("ionRangeSlider");
@@ -1678,11 +1689,21 @@ $(document).ready(function (ev) {
 
   var initChoosePlan = function initChoosePlan() {
     $('.c-modal__box-btn a').on('click', function (ev) {
+      var _elID = $(ev.currentTarget).data('id');
+
       $('.c-modal__box').removeClass('is-active');
       $(ev.currentTarget).closest('.c-modal__box').addClass('is-active');
 
-      ev.preventDefault();
-      return false;
+      $('[posting-review-js]').magnificPopup('close');
+
+      if (_elID === 'regular-plan') {
+        $('[review-badge-js]').hide();
+      } else {
+        $('[review-badge-js]').show();
+      }
+
+      // ev.preventDefault();
+      // return false;
     });
 
     $('.postingReview .c-modal__box').on('click', function (ev) {
@@ -1843,11 +1864,10 @@ $(document).ready(function (ev) {
           }
         });
 
-        _helperNext(_elID);
-
-        $('body, html').animate({
-          scrollTop: 0
-        }, 800);
+        // _helperNext(_elID);
+        // $('body, html').animate({
+        //   scrollTop: 0
+        // }, 800);
 
         if (_formName.valid() === true) {
           _helperNext(_elID);
@@ -1912,6 +1932,88 @@ $(document).ready(function (ev) {
       }
     });
   };
+
+  var initPostingReviewFill = function initPostingReviewFill() {
+    $('[posting-job-title-js]').on('blur', function (ev) {
+      $('[review-job-title-js]').text($(ev.currentTarget).val());
+    });
+
+    $('[posting-job-description-js]').on('blur', function (ev) {
+      $('[review-job-description-js]').text($(ev.currentTarget).val());
+    });
+
+    $('[posting-career-level-js]').on('change', function (ev) {
+      $('[review-career-level-js]').text($(ev.currentTarget).find('option:selected').val()).css({
+        'text-transform': 'capitalize'
+      });
+    });
+
+    $('[posting-job-type-js]').on('change', function (ev) {
+      $('[review-job-type-js]').text($(ev.currentTarget).find('option:selected').val()).css({
+        'text-transform': 'capitalize'
+      });
+    });
+
+    $('[posting-country-js]').on('change', function (ev) {
+      $('[review-country-js]').text($(ev.currentTarget).find('option:selected').val());
+    });
+
+    $('[posting-city-js]').on('blur', function (ev) {
+      $('[review-city-js]').text($(ev.currentTarget).val()).css({
+        'text-transform': 'capitalize'
+      });
+    });
+
+    $('[posting-industry-experience-js]').on('change', function (ev) {
+      function _tmplIndustry(txt) {
+        return "\n          <i>" + txt + "</i>\n        ";
+      }
+
+      var _selectedVal = $(ev.currentTarget).find('option:selected');
+
+      $('[review-industry-js]').empty();
+      $.each(_selectedVal, function (idx, val) {
+        $('[review-industry-js]').append(_tmplIndustry($(val).val()));
+      });
+    });
+
+    $('[posting-highest-degree-js]').on('change', function (ev) {
+      $('[review-degree-js]').text($(ev.currentTarget).find('option:selected').val()).css({
+        'text-transform': 'capitalize'
+      });
+    });
+
+    $('[posting-skills-js]').on('change', function (ev) {
+      function _tmplIndustry(txt) {
+        return "\n          <i>" + txt + "</i>\n        ";
+      }
+
+      var _selectedVal = $(ev.currentTarget).find('option:selected');
+
+      $('[review-skills-js]').empty();
+      $.each(_selectedVal, function (idx, val) {
+        $('[review-skills-js]').append(_tmplIndustry($(val).val()));
+      });
+    });
+
+    $('[posting-languages-js]').on('change', function (ev) {
+      $('[review-languages-js]').text($(ev.currentTarget).find('option:selected').val()).css({
+        'text-transform': 'capitalize'
+      });
+    });
+
+    $('[posting-additional-requirements-js]').on('blur', function (ev) {
+      $('[review-additional-requirements-js]').text($(ev.currentTarget).val());
+    });
+
+    $('[posting-currency-js]').on('change', function (ev) {
+      $('[review-currency-js]').text($(ev.currentTarget).find('option:selected').val().toUpperCase());
+
+      $('[review-currency-js]').parent().attr('data-name', $('[review-currency-js]').parent().text());
+    });
+
+    //
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -1957,6 +2059,7 @@ $(document).ready(function (ev) {
     initWillingRange();
     initChoosePlan();
     initPostingBlockInfoToggle();
+    initPostingReviewFill();
     // ==========================================
 
     $(window).on('load', function () {

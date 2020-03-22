@@ -5,26 +5,26 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' autocom
   .posting__form-field
     label.posting__form-label(for='posting_1_job_title') Job Title
     .posting__form-input
-      input(type='text' name='job_title' id='posting_1_job_title' placeholder='Type Job Title' required)
+      input(type='text' name='job_title' id='posting_1_job_title' placeholder='Type Job Title' posting-job-title-js required)
 
   .posting__form-field
     label.posting__form-label(for='posting_1_job_function') Job Function
     .posting__form-select
       select(name='job_function' id='posting_1_job_function' required)
-        option(value='') Choose Job Function
+        option(value='' disabled selected) Choose Job Function
         option(value='Action') Action
         option(value='More action') More action
 
   .posting__form-field
     label.posting__form-label(for='posting_1_job_description') Job Description
     .posting__form-textarea
-      textarea(name='job_description' id='posting_1_job_description' placeholder='Type Description' required)
+      textarea(name='job_description' id='posting_1_job_description' placeholder='Type Description' required posting-job-description-js)
 
   .posting__form-field
     label.posting__form-label(for='posting_1_career_level') Career Level
     .posting__form-select
-      select(name='career_level' id='posting_1_career_level' required)
-        option(value='') Choose Career Level
+      select(name='career_level' id='posting_1_career_level' required posting-career-level-js)
+        option(value='' disabled selected) Choose Career Level
         option(value='junior') Junior
         option(value='executive') Executive
         option(value='managerial') Managerial
@@ -33,8 +33,8 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' autocom
   .posting__form-field
     label.posting__form-label(for='posting_1_employment_type') Employment Type
     .posting__form-select
-      select(name='employment_type' id='posting_1_employment_type' required)
-        option(value='') Choose Employment Type
+      select(name='employment_type' id='posting_1_employment_type' required posting-job-type-js)
+        option(value='' disabled selected) Choose Employment Type
         option(value='Action') Action
         option(value='More action') More action
 
@@ -56,11 +56,11 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' autocom
       .posting__form-field
         label.posting__form-label.posting__form-label--hidden(for='posting_1_select_currency') Select Currency
         .posting__form-select
-          select(name='select_currency' id='posting_1_select_currency' required)
-            option(value='') Select Currency
-            option(value='usd') ($) USD
-            option(value='eur') (€) EUR
-            option(value='gbp') (£) GBP
+          select(name='select_currency' id='posting_1_select_currency' required posting-currency-js)
+            option(value='usd') USD
+            option(value='eur') EUR
+            option(value='gbp') GBP
+            option(value='sar') SAR
 
   .posting__form-field
     label.posting__form-checkbox(for='posting_1_hide_salary')
@@ -89,12 +89,12 @@ form.posting__form.posting__form-1.is-active(action='' method='' name='' autocom
   .posting__form-field
     label.posting__form-label(for='posting_1_country') Country
     .posting__form-select
-      select(name='country_select' id='posting_1_country' required)
-        option(value='') Choose Country
+      select(name='country_select' id='posting_1_country' required posting-country-js)
+        option(value='' disabled selected) Choose Country
         option(value='Action') Action
         option(value='More action') More action
 
   .posting__form-field
     label.posting__form-label(for='posting_1_city') City
     .posting__form-input
-      input(type='text' name='city' id='posting_1_city' placeholder='Type City' required)
+      input(type='text' name='city' id='posting_1_city' placeholder='Type City' required posting-city-js)

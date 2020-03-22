@@ -17,7 +17,7 @@ form.posting__form.posting__form-2(action='' method='' name='' autocomplete='off
   .posting__form-field
     label.posting__form-label Industry Experience
     .posting__form-tags
-      select.selectTags(multiple='multiple' name='industry_experience' style="width: 100%" required)
+      select.selectTags(multiple='multiple' name='industry_experience' style="width: 100%" required posting-industry-experience-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -25,7 +25,7 @@ form.posting__form.posting__form-2(action='' method='' name='' autocomplete='off
   .posting__form-field
     label.posting__form-label Skills
     .posting__form-tags
-      select.skillsInput.selectTags(multiple='multiple' name='skills' style="width: 100%" skills-select-js required)
+      select.skillsInput.selectTags(multiple='multiple' name='skills' style="width: 100%" skills-select-js required posting-skills-js)
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -38,15 +38,16 @@ form.posting__form.posting__form-2(action='' method='' name='' autocomplete='off
   .posting__form-field
     label.posting__form-label(for='posting_1_highest_degree') Highest Degree
     .posting__form-select
-      select(name='highest_degree' id='posting_1_highest_degree' required)
-        option(value='') Choose Degree
+      select(name='highest_degree' id='posting_1_highest_degree' required posting-highest-degree-js)
+        option(value='' disabled selected) Choose Highest Degree
         option(value='Action') Action
         option(value='More action') More action
 
   .posting__form-field
     label.posting__form-label Languages
     .posting__form-tags
-      select.selectTags(multiple='multiple' name='languages' style="width: 100%" required)
+      select.selectTags(multiple='multiple' name='languages' style="width: 100%" required posting-languages-js)
+        option(value='' disabled selected) Choose Languages
         option(value='Action') Action
         option(value='One more action') One more action
         option(value='Again action') Again action
@@ -54,7 +55,7 @@ form.posting__form.posting__form-2(action='' method='' name='' autocomplete='off
   .posting__form-field
     label.posting__form-label(for='posting_1_industry_additional_requirements') Mention any additional requirements or certifications that the ideal candidate would have
     .posting__form-textarea
-      textarea(name='' id='posting_1_industry_additional_requirements' placeholder='Additional requirements')
+      textarea(name='' id='posting_1_industry_additional_requirements' placeholder='Additional requirements' posting-additional-requirements-js)
 
   p.posting__title Candidates with these designations are the most relevant to you:
 
