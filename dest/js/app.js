@@ -1702,8 +1702,8 @@ $(document).ready(function (ev) {
         $('[review-badge-js]').show();
       }
 
-      // ev.preventDefault();
-      // return false;
+      ev.preventDefault();
+      return false;
     });
 
     $('.postingReview .c-modal__box').on('click', function (ev) {
@@ -1883,8 +1883,8 @@ $(document).ready(function (ev) {
       var _el = $(ev.currentTarget),
           _elID = _el.data('id');
 
-      // if(_rewardBook) {
-      if (1) {
+      if (_rewardBook) {
+        // if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({ display: 'flex' });
 
