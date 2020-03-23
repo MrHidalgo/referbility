@@ -22,7 +22,7 @@ section#board-details.board-details
             div
               i.icon-font.icon-pin
             div
-              p!= "<span review-country-js>Riyadh</span>, <span review-city-js>Saudi Arabia</span>"
+              p!= "<span review-city-js>Saudi Arabia</span>, <span review-country-js>Riyadh</span>"
           li.board-card__block-list-item
             div
               i.icon-font.icon-wallet
@@ -81,9 +81,9 @@ section#board-details.board-details
     .board-details__info
       div
         p Job Description
-        span(review-job-description-js) Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait
-      div
+        span(review-job-description-js)
+      div(style='display: none;' review-additional-requirements-wrap-js)
         p Additional Requirements / Certifications
-        span(review-additional-requirements-js) Lorem ipsum dolor sit amet, his ex falli virtute. Stet posse convenire mea cu, minimum apeirian consequuntur ad his, rebum delenit molestiae et eum. Ridens deserunt ea cum. Odio malis his ea, feugait
+        span(review-additional-requirements-js)
 
 // SECTION board details :: END

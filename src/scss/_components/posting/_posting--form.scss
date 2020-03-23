@@ -205,7 +205,7 @@
       }
 
       .is-error & {
-        color: #ee0000;
+        //color: #ee0000;
         @include transition(border-color);
       }
     }
@@ -434,6 +434,15 @@
     display: flex;
     justify-content: flex-end;
     padding-top: 5px;
+
+    & + label.error {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      bottom: 25px;
+      width: calc(100% - 130px);
+      height: 29px;
+    }
 
     &--center {
       justify-content: center;

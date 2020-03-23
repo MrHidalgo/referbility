@@ -1741,6 +1741,14 @@ $(document).ready(function (ev) {
       $(".posting__btn-wrapper[data-wrapper-id='4'] a").show().css({ 'display': 'flex' });
     });
 
+    $('.posting__form select').on('change', function (ev) {
+      var _el = $(ev.currentTarget);
+
+      if (_el.find('option:selected')) {
+        $('.posting__form').valid();
+      }
+    });
+
     _btnBack.on('click', function (ev) {
       var _el = $(ev.currentTarget),
           _elID = _el.data('id');
@@ -1826,10 +1834,10 @@ $(document).ready(function (ev) {
               required: "Please specify the Job Description"
             },
             job_function: {
-              required: 'Please select the Carer Level'
+              required: 'Please select the Job Function'
             },
             career_level: {
-              required: 'Please select the Carer Level'
+              required: 'Please select the Career Level'
             },
             employment_type: {
               required: 'Please select the Employment Type'
@@ -1863,11 +1871,6 @@ $(document).ready(function (ev) {
             }
           }
         });
-
-        // _helperNext(_elID);
-        // $('body, html').animate({
-        //   scrollTop: 0
-        // }, 800);
 
         if (_formName.valid() === true) {
           _helperNext(_elID);
@@ -1939,7 +1942,7 @@ $(document).ready(function (ev) {
     });
 
     $('[posting-job-description-js]').on('blur', function (ev) {
-      $('[review-job-description-js]').text($(ev.currentTarget).val());
+      $('[review-job-description-js]').html($(ev.currentTarget).val().replace(/\n\r?/g, '<br />'));
     });
 
     $('[posting-career-level-js]').on('change', function (ev) {
@@ -2003,7 +2006,13 @@ $(document).ready(function (ev) {
     });
 
     $('[posting-additional-requirements-js]').on('blur', function (ev) {
-      $('[review-additional-requirements-js]').text($(ev.currentTarget).val());
+      if ($(ev.currentTarget).val().length === 0) {
+        $('[review-additional-requirements-wrap-js]').hide();
+      } else {
+        $('[review-additional-requirements-wrap-js]').show();
+      }
+
+      $('[review-additional-requirements-js]').html($(ev.currentTarget).val().replace(/\n\r?/g, '<br />'));
     });
 
     $('[posting-currency-js]').on('change', function (ev) {
@@ -2011,8 +2020,6 @@ $(document).ready(function (ev) {
 
       $('[review-currency-js]').parent().attr('data-name', $('[review-currency-js]').parent().text());
     });
-
-    //
   };
   /*
   * CALLBACK :: end
