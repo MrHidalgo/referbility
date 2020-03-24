@@ -1447,7 +1447,19 @@ $(document).ready((ev) => {
       const _el = $(ev.currentTarget);
 
       if(_el.find('option:selected')) {
-        $('.posting__form').valid();
+        _el.closest('.posting__form-field').removeClass('is-error');
+      }
+    });
+
+    $('[plan-checkbox-js]').on('change', (ev) => {
+      const _el = $(ev.currentTarget),
+        _parentNode = _el.closest('[plan-parent-js]'),
+        _btn = _parentNode.find('[plan-choose-js]');
+
+      if($(_el).is(':checked')) {
+        _btn.removeAttr('disabled');
+      } else {
+        _btn.attr('disabled', 'true');
       }
     });
 
@@ -1588,8 +1600,8 @@ $(document).ready((ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.data('id');
 
-      if(_rewardBook) {
-      // if(1) {
+      // if(_rewardBook) {
+      if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
 

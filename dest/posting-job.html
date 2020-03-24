@@ -218,10 +218,10 @@
                     <label class="posting__form-label posting__form-label--hidden" for="posting_1_select_currency">Select Currency</label>
                     <div class="posting__form-select">
                       <select name="select_currency" id="posting_1_select_currency" required posting-currency-js>
-                        <option value="usd">USD</option>
+                        <option value="sar">SAR</option>
                         <option value="eur">EUR</option>
                         <option value="gbp">GBP</option>
-                        <option value="sar">SAR</option>
+                        <option value="usd">USD</option>
                       </select>
                     </div>
                   </div>
@@ -420,7 +420,7 @@
                         <li class="board-card__block-list-item">
                           <div><i class="icon-font icon-wallet"></i></div>
                           <div>
-                            <p posting-negotiable-wallet-js data-negotiable="Negotiable" data-name="SAR 50,000 to SAR 55,000 per month"><span review-currency-js>SAR</span> <span review-currency-from-js>50,000</span> to <span review-currency-js>SAR</span> <span review-currency-to-js>55,000</span> per month
+                            <p posting-negotiable-wallet-js data-negotiable="Negotiable" data-name="SAR 50,000 to SAR 55,000 per month"><span review-currency-js>SAR</span> <span review-currency-from-js>500</span> to <span review-currency-js>SAR</span> <span review-currency-to-js>100,000</span> per month
                             </p>
                           </div>
                         </li>
@@ -568,7 +568,7 @@
           <div class="c-modal__body">
             <div class="c-modal__box-wrapper">
               <div>
-                <div class="c-modal__box c-modal__box-1">
+                <div class="c-modal__box c-modal__box-1" plan-parent-js>
                   <div class="c-modal__box-bg"></div>
                   <div class="c-modal__box-content">
                     <div class="c-modal__box-circle"><i class="icon-font icon-shout"></i></div>
@@ -644,19 +644,19 @@
                     </div>
                     <div class="posting__form-field">
                       <label class="posting__form-checkbox" for="posting_1_regular">
-                        <input type="checkbox" name="" id="posting_1_regular">
+                        <input type="checkbox" name="" id="posting_1_regular" plan-checkbox-js>
                         <div><span><i></i></span></div>
                         <div>
                           <p>I have read & agree to the <a href='#'>Terms & Conditions.</a></p>
                         </div>
                       </label>
                     </div>
-                    <div class="c-modal__box-btn"><a href="#" data-id="regular-plan"><span>Choose</span></a></div>
+                    <div class="c-modal__box-btn"><a href="#" data-id="regular-plan" plan-choose-js disabled><span>Choose</span></a></div>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="c-modal__box c-modal__box-2 is-active">
+                <div class="c-modal__box c-modal__box-2 is-active" plan-parent-js>
                   <div class="c-modal__box-bg"></div>
                   <div class="c-modal__box-content">
                     <div class="c-modal__box-circle"><i class="icon-font icon-rocket"></i></div>
@@ -732,14 +732,14 @@
                     </div>
                     <div class="posting__form-field">
                       <label class="posting__form-checkbox" for="posting_1_premium">
-                        <input type="checkbox" name="" id="posting_1_premium">
+                        <input type="checkbox" name="" id="posting_1_premium" plan-checkbox-js>
                         <div><span><i></i></span></div>
                         <div>
                           <p>I have read & agree to the <a href='#'>Terms & Conditions.</a></p>
                         </div>
                       </label>
                     </div>
-                    <div class="c-modal__box-btn"><a href="#" data-id="premium-plan"><span>Choose</span></a></div>
+                    <div class="c-modal__box-btn"><a href="#" data-id="premium-plan" plan-choose-js disabled><span>Choose</span></a></div>
                   </div>
                 </div>
               </div>

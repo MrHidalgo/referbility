@@ -20342,17 +20342,31 @@ picture {
   border-color: #ee0000;
 }
 
-/* line 69, src/scss/_components/posting/_posting--form.scss */
+/* line 68, src/scss/_components/posting/_posting--form.scss */
+.posting__form-field.is-error label.error {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 75, src/scss/_components/posting/_posting--form.scss */
 .posting__form-field label.error {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   bottom: 8px;
   left: 0;
   font-weight: 500;
   font-size: 11px;
   color: #ee0000;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 79, src/scss/_components/posting/_posting--form.scss */
+/* line 88, src/scss/_components/posting/_posting--form.scss */
 .posting__form-label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20364,17 +20378,17 @@ picture {
   color: #091e42;
 }
 
-/* line 86, src/scss/_components/posting/_posting--form.scss */
+/* line 95, src/scss/_components/posting/_posting--form.scss */
 .posting__form-label--hidden {
   opacity: 0;
 }
 
-/* line 90, src/scss/_components/posting/_posting--form.scss */
+/* line 99, src/scss/_components/posting/_posting--form.scss */
 .posting__form-label span {
   color: #505f79;
 }
 
-/* line 95, src/scss/_components/posting/_posting--form.scss */
+/* line 104, src/scss/_components/posting/_posting--form.scss */
 .posting__form-info {
   display: none;
   min-height: 90px;
@@ -20388,7 +20402,7 @@ picture {
   background: linear-gradient(45deg, #5153dc 0%, #8181ff 100%);
 }
 
-/* line 103, src/scss/_components/posting/_posting--form.scss */
+/* line 112, src/scss/_components/posting/_posting--form.scss */
 .posting__form-info p {
   font-size: 15px;
   line-height: 1.33;
@@ -20396,7 +20410,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 111, src/scss/_components/posting/_posting--form.scss */
+/* line 120, src/scss/_components/posting/_posting--form.scss */
 .posting__form-desc {
   font-size: 14px;
   line-height: 1.43;
@@ -20404,12 +20418,12 @@ picture {
   color: #344563;
 }
 
-/* line 117, src/scss/_components/posting/_posting--form.scss */
+/* line 126, src/scss/_components/posting/_posting--form.scss */
 .posting__form-desc span {
   font-weight: bold;
 }
 
-/* line 122, src/scss/_components/posting/_posting--form.scss */
+/* line 131, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details {
   padding: 20px 5px;
   -webkit-border-radius: 6px;
@@ -20420,7 +20434,7 @@ picture {
           box-shadow: 0 5px 20px 0 rgba(135, 131, 157, 0.15);
 }
 
-/* line 129, src/scss/_components/posting/_posting--form.scss */
+/* line 138, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details-title {
   font-size: 16px;
   font-weight: bold;
@@ -20429,7 +20443,7 @@ picture {
   color: #091e42;
 }
 
-/* line 137, src/scss/_components/posting/_posting--form.scss */
+/* line 146, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details-res {
   padding-bottom: 10px;
   font-size: 14px;
@@ -20439,7 +20453,7 @@ picture {
   color: #5153dc;
 }
 
-/* line 146, src/scss/_components/posting/_posting--form.scss */
+/* line 155, src/scss/_components/posting/_posting--form.scss */
 .posting__form-details-desc {
   padding-left: 15px;
   padding-right: 15px;
@@ -20450,12 +20464,12 @@ picture {
   color: #344563;
 }
 
-/* line 157, src/scss/_components/posting/_posting--form.scss */
+/* line 166, src/scss/_components/posting/_posting--form.scss */
 .posting__form-warning {
   display: none;
 }
 
-/* line 160, src/scss/_components/posting/_posting--form.scss */
+/* line 169, src/scss/_components/posting/_posting--form.scss */
 .posting__form-warning p {
   font-weight: 500;
   font-size: 14px;
@@ -20463,7 +20477,7 @@ picture {
   text-align: center;
 }
 
-/* line 168, src/scss/_components/posting/_posting--form.scss */
+/* line 177, src/scss/_components/posting/_posting--form.scss */
 .posting__form-input, .posting__form-select, .posting__form-textarea {
   position: relative;
   height: 53px;
@@ -20476,7 +20490,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 178, src/scss/_components/posting/_posting--form.scss */
+/* line 187, src/scss/_components/posting/_posting--form.scss */
 .is-error .posting__form-input, .is-error .posting__form-select, .is-error .posting__form-textarea {
   border-color: #ee0000;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -20484,7 +20498,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 183, src/scss/_components/posting/_posting--form.scss */
+/* line 192, src/scss/_components/posting/_posting--form.scss */
 .posting__form-input input,
 .posting__form-input select,
 .posting__form-input textarea, .posting__form-select input,
@@ -20578,7 +20592,7 @@ picture {
   color: rgba(9, 30, 66, 0.6);
 }
 
-/* line 207, src/scss/_components/posting/_posting--form.scss */
+/* line 216, src/scss/_components/posting/_posting--form.scss */
 .is-error .posting__form-input input, .is-error
 .posting__form-input select, .is-error
 .posting__form-input textarea, .is-error .posting__form-select input, .is-error
@@ -20591,19 +20605,19 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 214, src/scss/_components/posting/_posting--form.scss */
+/* line 223, src/scss/_components/posting/_posting--form.scss */
 .posting__form-textarea {
   height: 200px;
 }
 
-/* line 217, src/scss/_components/posting/_posting--form.scss */
+/* line 226, src/scss/_components/posting/_posting--form.scss */
 .posting__form-textarea textarea {
   resize: none;
   padding: 15px 25px;
   line-height: 1.8;
 }
 
-/* line 224, src/scss/_components/posting/_posting--form.scss */
+/* line 233, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox {
   position: relative;
   display: -webkit-box;
@@ -20616,7 +20630,7 @@ picture {
           align-items: center;
 }
 
-/* line 229, src/scss/_components/posting/_posting--form.scss */
+/* line 238, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input {
   opacity: 0;
   z-index: 10;
@@ -20627,7 +20641,7 @@ picture {
   height: 0;
 }
 
-/* line 240, src/scss/_components/posting/_posting--form.scss */
+/* line 249, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input:checked + div span {
   -webkit-box-shadow: 0 2px 5px 0 rgba(135, 119, 217, 0.2);
           box-shadow: 0 2px 5px 0 rgba(135, 119, 217, 0.2);
@@ -20638,7 +20652,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 244, src/scss/_components/posting/_posting--form.scss */
+/* line 253, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input:checked + div span:after {
   opacity: 1;
   visibility: visible;
@@ -20647,7 +20661,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 250, src/scss/_components/posting/_posting--form.scss */
+/* line 259, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox input:checked + div span i {
   -webkit-transform: rotate(45deg) scale(1);
       -ms-transform: rotate(45deg) scale(1);
@@ -20659,12 +20673,12 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 260, src/scss/_components/posting/_posting--form.scss */
+/* line 269, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div:nth-of-type(1) {
   width: 45px;
 }
 
-/* line 263, src/scss/_components/posting/_posting--form.scss */
+/* line 272, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -20674,7 +20688,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 269, src/scss/_components/posting/_posting--form.scss */
+/* line 278, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div span {
   overflow: hidden;
   position: relative;
@@ -20702,7 +20716,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 281, src/scss/_components/posting/_posting--form.scss */
+/* line 290, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div span:after {
   content: '';
   opacity: 0;
@@ -20720,7 +20734,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 294, src/scss/_components/posting/_posting--form.scss */
+/* line 303, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div span i {
   z-index: 2;
   position: relative;
@@ -20743,30 +20757,30 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 308, src/scss/_components/posting/_posting--form.scss */
+/* line 317, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div p {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #344563;
 }
 
-/* line 313, src/scss/_components/posting/_posting--form.scss */
+/* line 322, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div p strong {
   font-weight: bold;
 }
 
-/* line 317, src/scss/_components/posting/_posting--form.scss */
+/* line 326, src/scss/_components/posting/_posting--form.scss */
 .posting__form-checkbox > div p a {
   font-weight: bold;
   color: #5153dc;
 }
 
-/* line 326, src/scss/_components/posting/_posting--form.scss */
+/* line 335, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags select {
   opacity: 0;
 }
 
-/* line 330, src/scss/_components/posting/_posting--form.scss */
+/* line 339, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstQueryInput {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -20809,7 +20823,7 @@ picture {
   color: #091e42;
 }
 
-/* line 342, src/scss/_components/posting/_posting--form.scss */
+/* line 351, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstElement {
   width: 100%;
   min-height: 53px;
@@ -20819,19 +20833,19 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 350, src/scss/_components/posting/_posting--form.scss */
+/* line 359, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstControls {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 356, src/scss/_components/posting/_posting--form.scss */
+/* line 365, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstMultipleMode .fstControls {
   padding-top: 0.6em;
 }
 
-/* line 360, src/scss/_components/posting/_posting--form.scss */
+/* line 369, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstChoiceItem {
   padding: 0.25em 1.75em 0.25em 0.75em;
   -webkit-border-radius: 4px;
@@ -20844,7 +20858,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 360, src/scss/_components/posting/_posting--form.scss */
+  /* line 369, src/scss/_components/posting/_posting--form.scss */
   .posting__form-tags .fstChoiceItem {
     display: -webkit-box;
     display: -webkit-flex;
@@ -20857,14 +20871,14 @@ picture {
   }
 }
 
-/* line 373, src/scss/_components/posting/_posting--form.scss */
+/* line 382, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstChoiceItem .fstChoiceRemove {
   font-size: 20px;
   left: auto;
   right: 5px;
 }
 
-/* line 380, src/scss/_components/posting/_posting--form.scss */
+/* line 389, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstResults {
   border: none;
   -webkit-border-bottom-left-radius: 4px;
@@ -20874,7 +20888,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 387, src/scss/_components/posting/_posting--form.scss */
+/* line 396, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstResultItem {
   font-size: 14px;
   line-height: 2.5;
@@ -20883,7 +20897,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 394, src/scss/_components/posting/_posting--form.scss */
+/* line 403, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstResultItem.fstSelected {
   display: none;
   border-color: #020d60;
@@ -20891,7 +20905,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 402, src/scss/_components/posting/_posting--form.scss */
+/* line 411, src/scss/_components/posting/_posting--form.scss */
 .posting__form-tags .fstNoResults {
   font-size: 14px;
   line-height: 2.5;
@@ -20900,7 +20914,7 @@ picture {
   padding: 0 1.5em;
 }
 
-/* line 411, src/scss/_components/posting/_posting--form.scss */
+/* line 420, src/scss/_components/posting/_posting--form.scss */
 .posting__form-remove {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20913,7 +20927,7 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 416, src/scss/_components/posting/_posting--form.scss */
+/* line 425, src/scss/_components/posting/_posting--form.scss */
 .posting__form-remove a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20938,13 +20952,13 @@ picture {
   background-image: linear-gradient(42deg, #00aaff 25%, #28d7cc 88%);
 }
 
-/* line 426, src/scss/_components/posting/_posting--form.scss */
+/* line 435, src/scss/_components/posting/_posting--form.scss */
 .posting__form-remove a .icon-font {
   font-size: 15px;
   color: #ffffff;
 }
 
-/* line 433, src/scss/_components/posting/_posting--form.scss */
+/* line 442, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20957,7 +20971,7 @@ picture {
   padding-top: 5px;
 }
 
-/* line 438, src/scss/_components/posting/_posting--form.scss */
+/* line 447, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add + label.error {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20976,7 +20990,7 @@ picture {
   height: 29px;
 }
 
-/* line 447, src/scss/_components/posting/_posting--form.scss */
+/* line 456, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add--center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -20984,7 +20998,7 @@ picture {
           justify-content: center;
 }
 
-/* line 451, src/scss/_components/posting/_posting--form.scss */
+/* line 460, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21009,7 +21023,7 @@ picture {
   background-image: linear-gradient(42deg, #00aaff 25%, #28d7cc 88%);
 }
 
-/* line 461, src/scss/_components/posting/_posting--form.scss */
+/* line 470, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add a span {
   font-size: 13px;
   font-weight: 500;
@@ -21019,14 +21033,14 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 470, src/scss/_components/posting/_posting--form.scss */
+/* line 479, src/scss/_components/posting/_posting--form.scss */
 .posting__form-add a .icon-font {
   margin-left: 3px;
   font-size: 13px;
   color: #ffffff;
 }
 
-/* line 478, src/scss/_components/posting/_posting--form.scss */
+/* line 487, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21034,7 +21048,7 @@ picture {
   display: flex;
 }
 
-/* line 481, src/scss/_components/posting/_posting--form.scss */
+/* line 490, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .posting__form-indicator {
   z-index: 0;
   position: absolute;
@@ -21052,7 +21066,7 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 491, src/scss/_components/posting/_posting--form.scss */
+/* line 500, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .posting__form-indicator span {
   position: absolute;
   top: 0;
@@ -21064,7 +21078,7 @@ picture {
   background-color: #ff8f73;
 }
 
-/* line 500, src/scss/_components/posting/_posting--form.scss */
+/* line 509, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .posting__form-indicator span:after {
   content: '';
   position: absolute;
@@ -21075,12 +21089,12 @@ picture {
   background-color: #36b37e;
 }
 
-/* line 513, src/scss/_components/posting/_posting--form.scss */
+/* line 522, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div {
   position: relative;
 }
 
-/* line 516, src/scss/_components/posting/_posting--form.scss */
+/* line 525, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -21091,12 +21105,12 @@ picture {
   padding-right: 15px;
 }
 
-/* line 522, src/scss/_components/posting/_posting--form.scss */
+/* line 531, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(1) .irs.irs--big .irs-bar {
   margin-left: 9px;
 }
 
-/* line 526, src/scss/_components/posting/_posting--form.scss */
+/* line 535, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(1) .irs-bar-hidden {
   z-index: 0;
   opacity: 0;
@@ -21108,7 +21122,7 @@ picture {
   height: 100%;
 }
 
-/* line 537, src/scss/_components/posting/_posting--form.scss */
+/* line 546, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(2) {
   -webkit-box-flex: unset;
   -webkit-flex: unset;
@@ -21120,7 +21134,7 @@ picture {
   padding: 0;
 }
 
-/* line 544, src/scss/_components/posting/_posting--form.scss */
+/* line 553, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range.posting__form-range--right > div:nth-of-type(2) input {
   padding-left: 5px;
   padding-right: 5px;
@@ -21152,12 +21166,12 @@ picture {
   text-align: center;
 }
 
-/* line 557, src/scss/_components/posting/_posting--form.scss */
+/* line 566, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range > div:nth-of-type(1), .posting__form-range > div:nth-of-type(3) {
   width: 80px;
 }
 
-/* line 561, src/scss/_components/posting/_posting--form.scss */
+/* line 570, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range > div:nth-of-type(1) input, .posting__form-range > div:nth-of-type(3) input {
   padding-left: 5px;
   padding-right: 5px;
@@ -21189,7 +21203,7 @@ picture {
   text-align: center;
 }
 
-/* line 570, src/scss/_components/posting/_posting--form.scss */
+/* line 579, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -21202,19 +21216,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 570, src/scss/_components/posting/_posting--form.scss */
+  /* line 579, src/scss/_components/posting/_posting--form.scss */
   .posting__form-range > div:nth-of-type(2) {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
-/* line 583, src/scss/_components/posting/_posting--form.scss */
+/* line 592, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big {
   height: auto;
 }
 
-/* line 586, src/scss/_components/posting/_posting--form.scss */
+/* line 595, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-line {
   left: 10px;
   top: 23px;
@@ -21228,7 +21242,7 @@ picture {
   background-color: #ecebf6;
 }
 
-/* line 596, src/scss/_components/posting/_posting--form.scss */
+/* line 605, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-bar {
   top: 23px;
   height: 10px;
@@ -21241,7 +21255,7 @@ picture {
   background-color: #79f2c0;
 }
 
-/* line 605, src/scss/_components/posting/_posting--form.scss */
+/* line 614, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-handle {
   top: 10px;
   display: -webkit-box;
@@ -21267,7 +21281,7 @@ picture {
   background-color: rgba(41, 222, 156, 0.3);
 }
 
-/* line 618, src/scss/_components/posting/_posting--form.scss */
+/* line 627, src/scss/_components/posting/_posting--form.scss */
 .posting__form-range .irs.irs--big .irs-handle:after {
   content: '';
   position: absolute;
@@ -22811,14 +22825,24 @@ picture {
           border-radius: 39px;
   border: solid 1px rgba(45, 28, 64, 0.5);
   background-color: #ffffff;
-  -webkit-transition: border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 /* line 636, src/scss/_components/posting/_posting--review.scss */
+.c-modal.postingReview .c-modal__box-btn a[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 643, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover {
   border-color: transparent;
   -webkit-box-shadow: 0 5px 20px 0 rgba(135, 119, 217, 0.2);
@@ -22830,7 +22854,7 @@ picture {
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 641, src/scss/_components/posting/_posting--review.scss */
+/* line 648, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover:after {
   opacity: 1;
   visibility: visible;
@@ -22839,7 +22863,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 647, src/scss/_components/posting/_posting--review.scss */
+/* line 654, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:hover span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -22847,7 +22871,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 653, src/scss/_components/posting/_posting--review.scss */
+/* line 660, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:before {
   content: '';
   opacity: 0;
@@ -22875,7 +22899,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 670, src/scss/_components/posting/_posting--review.scss */
+/* line 677, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a:after {
   content: '';
   opacity: 0;
@@ -22893,7 +22917,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 683, src/scss/_components/posting/_posting--review.scss */
+/* line 690, src/scss/_components/posting/_posting--review.scss */
 .c-modal.postingReview .c-modal__box-btn a span {
   z-index: 2;
   position: relative;

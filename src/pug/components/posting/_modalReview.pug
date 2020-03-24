@@ -11,7 +11,7 @@ mixin modalContent()
 
     .c-modal__box-wrapper
       div
-        .c-modal__box.c-modal__box-1
+        .c-modal__box.c-modal__box-1(plan-parent-js)
           .c-modal__box-bg
           .c-modal__box-content
             .c-modal__box-circle
@@ -81,7 +81,7 @@ mixin modalContent()
 
             .posting__form-field
               label.posting__form-checkbox(for='posting_1_regular')
-                input(type='checkbox' name='' id='posting_1_regular')
+                input(type='checkbox' name='' id='posting_1_regular' plan-checkbox-js)
                 div
                   span
                     i
@@ -89,11 +89,11 @@ mixin modalContent()
                   p!= "I have read & agree to the <a href='#'>Terms & Conditions.</a>"
 
             .c-modal__box-btn
-              a(href="#" data-id='regular-plan')
+              a(href="#" data-id='regular-plan' plan-choose-js disabled)
                 span Choose
 
       div
-        .c-modal__box.c-modal__box-2.is-active
+        .c-modal__box.c-modal__box-2.is-active(plan-parent-js)
           .c-modal__box-bg
           .c-modal__box-content
             .c-modal__box-circle
@@ -164,7 +164,7 @@ mixin modalContent()
 
             .posting__form-field
               label.posting__form-checkbox(for='posting_1_premium')
-                input(type='checkbox' name='' id='posting_1_premium')
+                input(type='checkbox' name='' id='posting_1_premium' plan-checkbox-js)
                 div
                   span
                     i
@@ -172,7 +172,7 @@ mixin modalContent()
                   p!= "I have read & agree to the <a href='#'>Terms & Conditions.</a>"
 
             .c-modal__box-btn
-              a(href="#" data-id='premium-plan')
+              a(href="#" data-id='premium-plan' plan-choose-js disabled)
                 span Choose
 
   .c-modal__footer
