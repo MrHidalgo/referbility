@@ -1436,9 +1436,9 @@ $(document).ready((ev) => {
       $(".posting__btn-wrapper[data-wrapper-id='4']").addClass('is-three');
 
       $(".posting__btn-wrapper [posting-review-js]")
-        .text($(".posting__btn-wrapper [posting-review-js]").data('name'))
         .removeClass('c-btn--bg-gradient')
-        .addClass('c-btn--bg-green');
+        .addClass('c-btn--bg-green')
+        .find('span').text($(".posting__btn-wrapper [posting-review-js]").data('name'));
 
       $(".posting__btn-wrapper[data-wrapper-id='4'] a").show().css({'display': 'flex'});
     });
