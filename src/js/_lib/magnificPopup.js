@@ -40,18 +40,18 @@ const initPopups = () => {
         this.st.mainClass = this.st.el.attr('data-effect');
       },
       beforeClose: function(ev) {
-        if($('[plan-checkbox-js]').is(':checked')) {
-          const id = 5;
-
-          $('.posting__btn-wrapper').hide();
-          $('.posting__btn-wrapper[data-wrapper-id="' + id + '"]').show().css({display:'flex'});
-
-          $('.posting__step[posting-step-' + id + '-js]').addClass('is-active');
-          $('.posting__step[posting-step-' + (id - 1) + '-js]').removeClass('is-active').addClass('is-done');
-
-          $('.posting__form[posting-form-' + (id - 1) + '-js]').removeClass('is-active');
-          $('.posting__form[posting-form-' + id + '-js]').addClass('is-active');
-        }
+        // if($('[plan-checkbox-js]').is(':checked')) {
+        //   const id = 5;
+        //
+        //   $('.posting__btn-wrapper').hide();
+        //   $('.posting__btn-wrapper[data-wrapper-id="' + id + '"]').show().css({display:'flex'});
+        //
+        //   $('.posting__step[posting-step-' + id + '-js]').addClass('is-active');
+        //   $('.posting__step[posting-step-' + (id - 1) + '-js]').removeClass('is-active').addClass('is-done');
+        //
+        //   $('.posting__form[posting-form-' + (id - 1) + '-js]').removeClass('is-active');
+        //   $('.posting__form[posting-form-' + id + '-js]').addClass('is-active');
+        // }
       }
     }
   });

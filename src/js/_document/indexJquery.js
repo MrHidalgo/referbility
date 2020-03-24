@@ -1600,8 +1600,8 @@ $(document).ready((ev) => {
       const _el = $(ev.currentTarget),
         _elID = _el.data('id');
 
-      if(_rewardBook) {
-      // if(1) {
+      // if(_rewardBook) {
+      if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({display:'flex'});
 
