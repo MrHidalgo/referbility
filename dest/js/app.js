@@ -1769,9 +1769,7 @@ $(document).ready(function (ev) {
 
       $('.posting__btn-wrapper').hide();
       $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({ display: 'flex' });
-
       // $('.posting__step[posting-step-' + (_elID + 1) + '-js]').removeClass('is-active');
-
       $('.posting__form[posting-form-' + (_elID + 1) + '-js]').removeClass('is-active');
       $('.posting__form[posting-form-' + _elID + '-js]').addClass('is-active');
     });
@@ -1900,8 +1898,8 @@ $(document).ready(function (ev) {
       var _el = $(ev.currentTarget),
           _elID = _el.data('id');
 
-      // if(_rewardBook) {
-      if (1) {
+      if (_rewardBook) {
+        // if(1) {
         $('.posting__btn-wrapper').hide();
         $('.posting__btn-wrapper[data-wrapper-id="' + _elID + '"]').show().css({ display: 'flex' });
 
