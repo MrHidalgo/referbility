@@ -3,39 +3,44 @@
 section#board-card.board-card
 
   .board-card__block-wrapper(board-card-parent-js)
-    each val, idx in [1,2,3,4,5,6,7,8,9,0]
+    each val, idx in [1,2,3,4,5,6,7,8,9,10,11]
       div
-        a.board-card__block(href="#")
-          .board-card__block-body
+        if(idx === 2)
+          a.board-subscribe__box(href='#boardSubscribe' data-effect='mfp-zoom-in' popup-js)
+            i.icon-font.icon-bell-checked
+            span Subscribe to job alerts!
+        else
+          a.board-card__block(href="#")
+            .board-card__block-body
 
-            if(idx === 1)
-              .board-card__block-badge-wrapper
-                .board-card__block-badge
-                  i.icon-font.icon-bell-alert
-                  p Urgent
+              if(idx === 1)
+                .board-card__block-badge-wrapper
+                  .board-card__block-badge
+                    i.icon-font.icon-bell-alert
+                    p Urgent
 
-            .board-card__block-title
-              div
-                p Chief Financial Officer Thermal Power Plant
-              div
-                .board-card__block-logo
-                  img(src="img/engie-logo.png" alt="")
-
-            p.board-card__block-subtitle Engie
-
-            ul.board-card__block-list
-              li.board-card__block-list-item
+              .board-card__block-title
                 div
-                  i.icon-font.icon-pin
+                  p Chief Financial Officer Thermal Power Plant
                 div
-                  p Riyadh, Saudi Arabia
-              li.board-card__block-list-item
-                div
-                  i.icon-font.icon-wallet
-                div
-                  p SAR 50,000 to SAR 55,000 per month
+                  .board-card__block-logo
+                    img(src="img/engie-logo.png" alt="")
 
-          .board-card__block-footer
-            p!= "Reward <strong>$4,800</strong>"
+              p.board-card__block-subtitle Engie
+
+              ul.board-card__block-list
+                li.board-card__block-list-item
+                  div
+                    i.icon-font.icon-pin
+                  div
+                    p Riyadh, Saudi Arabia
+                li.board-card__block-list-item
+                  div
+                    i.icon-font.icon-wallet
+                  div
+                    p SAR 50,000 to SAR 55,000 per month
+
+            .board-card__block-footer
+              p!= "Reward <strong>$4,800</strong>"
 
 // SECTION board card :: END

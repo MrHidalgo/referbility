@@ -36,155 +36,158 @@
 	@if $filename == bell-alert {
 		$char: "\E003";
 	}
-	@if $filename == bell {
+	@if $filename == bell-checked {
 		$char: "\E004";
 	}
-	@if $filename == blogging {
+	@if $filename == bell {
 		$char: "\E005";
 	}
-	@if $filename == building {
+	@if $filename == blogging {
 		$char: "\E006";
 	}
-	@if $filename == calendar-check {
+	@if $filename == building {
 		$char: "\E007";
 	}
-	@if $filename == calendar-dates {
+	@if $filename == calendar-check {
 		$char: "\E008";
 	}
-	@if $filename == calendar-delete {
+	@if $filename == calendar-dates {
 		$char: "\E009";
 	}
-	@if $filename == call-calling {
+	@if $filename == calendar-delete {
 		$char: "\E00A";
 	}
-	@if $filename == case {
+	@if $filename == call-calling {
 		$char: "\E00B";
 	}
-	@if $filename == chat {
+	@if $filename == case {
 		$char: "\E00C";
 	}
-	@if $filename == check-mark {
+	@if $filename == chat {
 		$char: "\E00D";
 	}
-	@if $filename == chevron-bottom {
+	@if $filename == check-mark {
 		$char: "\E00E";
 	}
-	@if $filename == circle-checked {
+	@if $filename == chevron-bottom {
 		$char: "\E00F";
 	}
-	@if $filename == circle-x {
+	@if $filename == circle-checked {
 		$char: "\E010";
 	}
-	@if $filename == comment-delete {
+	@if $filename == circle-x {
 		$char: "\E011";
 	}
-	@if $filename == conversion {
+	@if $filename == comment-delete {
 		$char: "\E012";
 	}
-	@if $filename == corner {
+	@if $filename == conversion {
 		$char: "\E013";
 	}
-	@if $filename == creditcard-face {
+	@if $filename == corner {
 		$char: "\E014";
 	}
-	@if $filename == cup {
+	@if $filename == creditcard-face {
 		$char: "\E015";
 	}
-	@if $filename == cv {
+	@if $filename == cup {
 		$char: "\E016";
 	}
-	@if $filename == data {
+	@if $filename == cv {
 		$char: "\E017";
 	}
-	@if $filename == date {
+	@if $filename == data {
 		$char: "\E018";
 	}
-	@if $filename == email-star {
+	@if $filename == date {
 		$char: "\E019";
 	}
-	@if $filename == experience {
+	@if $filename == email-star {
 		$char: "\E01A";
 	}
-	@if $filename == facebook {
+	@if $filename == experience {
 		$char: "\E01B";
 	}
-	@if $filename == file-text {
+	@if $filename == facebook {
 		$char: "\E01C";
 	}
-	@if $filename == flag {
+	@if $filename == file-text {
 		$char: "\E01D";
 	}
-	@if $filename == linkedin {
+	@if $filename == flag {
 		$char: "\E01E";
 	}
-	@if $filename == mail {
+	@if $filename == linkedin {
 		$char: "\E01F";
 	}
-	@if $filename == market-1 {
+	@if $filename == mail {
 		$char: "\E020";
 	}
-	@if $filename == medal {
+	@if $filename == market-1 {
 		$char: "\E021";
 	}
-	@if $filename == more {
+	@if $filename == medal {
 		$char: "\E022";
 	}
-	@if $filename == newspaper {
+	@if $filename == more {
 		$char: "\E023";
 	}
-	@if $filename == pencil-create {
+	@if $filename == newspaper {
 		$char: "\E024";
 	}
-	@if $filename == pin {
+	@if $filename == pencil-create {
 		$char: "\E025";
 	}
-	@if $filename == plus {
+	@if $filename == pin {
 		$char: "\E026";
 	}
-	@if $filename == profile {
+	@if $filename == plus {
 		$char: "\E027";
 	}
-	@if $filename == question-circle {
+	@if $filename == profile {
 		$char: "\E028";
 	}
-	@if $filename == review-1 {
+	@if $filename == question-circle {
 		$char: "\E029";
 	}
-	@if $filename == rocket {
+	@if $filename == review-1 {
 		$char: "\E02A";
 	}
-	@if $filename == search {
+	@if $filename == rocket {
 		$char: "\E02B";
 	}
-	@if $filename == seo {
+	@if $filename == search {
 		$char: "\E02C";
 	}
-	@if $filename == settings {
+	@if $filename == seo {
 		$char: "\E02D";
 	}
-	@if $filename == shout {
+	@if $filename == settings {
 		$char: "\E02E";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == shout {
 		$char: "\E02F";
 	}
-	@if $filename == timer {
+	@if $filename == thumbs-up {
 		$char: "\E030";
 	}
-	@if $filename == trash {
+	@if $filename == timer {
 		$char: "\E031";
 	}
-	@if $filename == twitter {
+	@if $filename == trash {
 		$char: "\E032";
 	}
-	@if $filename == user {
+	@if $filename == twitter {
 		$char: "\E033";
 	}
-	@if $filename == wallet {
+	@if $filename == user {
 		$char: "\E034";
 	}
-	@if $filename == x {
+	@if $filename == wallet {
 		$char: "\E035";
+	}
+	@if $filename == x {
+		$char: "\E036";
 	}
 
 	@return $char;
@@ -211,6 +214,10 @@
 }
 .icon-bell-alert {
 	@include icon(bell-alert);
+
+}
+.icon-bell-checked {
+	@include icon(bell-checked);
 
 }
 .icon-bell {

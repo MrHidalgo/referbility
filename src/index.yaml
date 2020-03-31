@@ -1,9 +1,12 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: board-subscribe.html
+  titleName: Subscribe Job Board
+  ready: 1
 - file: posting-job.html
   titleName: Posting Job
-  ready: 90
+  ready: 100
 - file: login-register.html
   titleName: Sign pop-ups
   ready: 100

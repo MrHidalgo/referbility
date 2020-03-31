@@ -1,0 +1,19 @@
+// SECTION :: START
+
+mixin modalContent()
+  .c-modal__header
+    p.c-modal__header-title Thank you!
+  .c-modal__body
+    div
+      .c-modal__body-circle
+        i.icon-font.icon-check-mark
+
+      p.c-modal__body-title You have been subscribed to your job alerts.
+
+      .c-modal__body-btn
+        a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
+          span See All Jobs
+
++modal('boardSubscribeThx', 'modalContent')
+
+// SECTION :: END
