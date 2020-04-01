@@ -4,6 +4,39 @@
   padding-top: 45px;
   padding-bottom: 40px;
 
+  &.ref-jobs--subscribe {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .ref-jobs {
+      &__title {
+        padding-bottom: 20px;
+      }
+
+      &__line {
+        width: 50px;
+        height: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        background-color: #29de9c;
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+
+        .c-btn {
+          width: 100%;
+          max-width: 250px;
+          box-shadow: 0 10px 20px 0 rgba(157, 157, 191, 0.1);
+        }
+      }
+    }
+  }
+
   .c-grid {
     max-width: 1410px;
   }

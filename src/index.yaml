@@ -1,6 +1,9 @@
 ProjectTitle: Referbility
 
 PageList:
+- file: subscribe.html
+  titleName: Job Alert Subscription
+  ready: 1
 - file: board-subscribe.html
   titleName: Subscribe Job Board
   ready: 1

@@ -8,6 +8,14 @@
     padding-top: 50px;
   }
 
+  &.retouch-works--subscribe {
+    .retouch-works {
+      &__desc {
+        max-width: 980px;
+      }
+    }
+  }
+
   &__bg {
     z-index: 0;
     position: absolute;
