@@ -1,18 +1,18 @@
 ProjectTitle: Referbility
 
 PageList:
-#- file: contacts.html
-#  titleName: Contact Us
-#  ready: 0
+- file: contacts.html
+  titleName: Contact Us
+  ready: 1
 - file: revamp.html
   titleName: Revamp
-  ready: 1
+  ready: 75
 - file: subscribe.html
   titleName: Job Alert Subscription
-  ready: 1
+  ready: 75
 - file: board-subscribe.html
   titleName: Subscribe Job Board
-  ready: 1
+  ready: 90
 - file: posting-job.html
   titleName: Posting Job
   ready: 100

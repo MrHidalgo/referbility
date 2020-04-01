@@ -1,0 +1,38 @@
+// SECTION :: START
+
+section#contacts-form.contacts-form
+
+  .contacts-form__bg
+    span
+
+  .c-grid
+    .contacts-form__wrapper
+
+      p.contacts-form__title Say Hello!
+      .contacts-form__line
+
+      form.contacts-form__box(action='' method='' autocomplete='off')
+
+        p.contacts-form__subtitle
+          i.icon-font.icon-comment-text
+          span Contact Us
+
+        .contacts-form__box-group
+          div
+            .contacts-form__box-field
+              label.contacts-form__box-label(for='form_full_name') Your Name
+              input.contacts-form__box-input(type='text' id='form_full_name' name='form_full_name' placeholder='Type your full name')
+          div
+            .contacts-form__box-field
+              label.contacts-form__box-label(for='form_email') Your Email
+              input.contacts-form__box-input(type='text' id='form_email' name='form_email' placeholder='Type your email')
+
+        .contacts-form__box-field
+          label.contacts-form__box-label(for='form_message') Message
+          textarea.contacts-form__box-textarea(id='form_message' name='form_message' placeholder='Type your message')
+
+        .contacts-form__box-field.contacts-form__box-field--btn
+          button.c-btn.c-btn--bg.c-btn--bg-gradient(type='submit')
+            span Submit
+
+// SECTION :: END
