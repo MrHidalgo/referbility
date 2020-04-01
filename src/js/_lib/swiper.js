@@ -64,4 +64,68 @@ const initSwiper = () => {
       prevEl: '.retouch-with__slider-btn--prev',
     }
   });
+
+  const _revampTestimonialsOpt = {
+    effect: 'cube',
+    cubeEffect: {
+      slideShadows: true,
+      shadow: false,
+      shadowOffset: 10,
+      shadowScale: 1
+    },
+    speed: 750,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.revamp-testimonials__btn-next',
+      prevEl: '.revamp-testimonials__btn-prev',
+    }
+  };
+  let _revampTestimonialsSwiper = undefined;
+
+  const _revampBlogOpt = {
+    effect: 'cube',
+    cubeEffect: {
+      slideShadows: true,
+      shadow: false,
+      shadowOffset: 10,
+      shadowScale: 1
+    },
+    speed: 750,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.revamp-blog__btn-next',
+      prevEl: '.revamp-blog__btn-prev',
+    }
+  };
+  let _revampBlogSwiper = undefined;
+
+  $(window).on('load resize orientationchange', () => {
+    if ($('.revampTestimonials').length > 0) {
+      if ($(window).width() < 768) {
+        _revampTestimonialsSwiper = new Swiper('.revampTestimonials', _revampTestimonialsOpt)
+      } else {
+        if (_revampTestimonialsSwiper !== undefined) {
+          _revampTestimonialsSwiper.destroy(true, true);
+          _revampTestimonialsSwiper = undefined;
+        }
+
+        $('.revampTestimonials').find('.swiper-wrapper').attr('style', '');
+      }
+    }
+
+    if ($('.revampBlog').length > 0) {
+      if ($(window).width() < 768) {
+        _revampBlogSwiper = new Swiper('.revampBlog', _revampBlogOpt)
+      } else {
+        if (_revampBlogSwiper !== undefined) {
+          _revampBlogSwiper.destroy(true, true);
+          _revampBlogSwiper = undefined;
+        }
+
+        $('.revampBlog').find('.swiper-wrapper').attr('style', '');
+      }
+    }
+  });
 };

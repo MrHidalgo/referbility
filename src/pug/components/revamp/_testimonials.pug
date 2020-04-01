@@ -1,0 +1,44 @@
+// SECTION :: START
+
+section#revamp-testimonials.revamp-testimonials
+  .c-grid
+    .revamp-testimonials__wrapper
+
+      p.revamp-testimonials__title Testimonials
+      .revamp-testimonials__line
+      p.revamp-testimonials__text Have a look at what some of our referrers have to say about referring through us!
+
+      mixin swiperContent()
+        .swiper-slide
+          a.revamp-testimonials__box.revamp-testimonials__box-1(href="#")
+            i.icon-font.icon-quote
+            .revamp-testimonials__box-head
+              p.revamp-testimonials__box-title Earned $2,475
+            .revamp-testimonials__box-body
+              p.revamp-testimonials__box-desc referbility is a great way to earn an extra income by referring friends and colleagues. I'm always aware of where my candidate is in the recruitment process through the dashboard, and encashment is handled really fast.
+
+        .swiper-slide
+          a.revamp-testimonials__box.revamp-testimonials__box-2(href="#")
+            i.icon-font.icon-quote
+            .revamp-testimonials__box-head
+              p.revamp-testimonials__box-title Earned $5,790
+            .revamp-testimonials__box-body
+              p.revamp-testimonials__box-desc I learned about referbility by chance and have since then referred candidates for a variety of positions. It's an easy, straight-forward process that allows me to earn considerable amounts of money.
+
+        .swiper-slide
+          a.revamp-testimonials__box.revamp-testimonials__box-3(href="#")
+            i.icon-font.icon-quote
+            .revamp-testimonials__box-head
+              p.revamp-testimonials__box-title Earned $940
+            .revamp-testimonials__box-body
+              p.revamp-testimonials__box-desc I’m glad I decided to refer with referbility. It’s really great how easy it is to refer the candidates to different active jobs nationwide and keeping track on my every referral at the same time. Also i appreciate the transparent process as well.
+
+      +swiper('revampTestimonials', 'swiperContent', false, false, false)
+
+      .revamp-testimonials__btn-wrapper
+        a.revamp-testimonials__btn.revamp-testimonials__btn-prev(href="#")
+          i.icon-font.icon-corner
+        a.revamp-testimonials__btn.revamp-testimonials__btn-next(href="#")
+          i.icon-font.icon-corner
+
+// SECTION :: END

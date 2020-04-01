@@ -6,6 +6,17 @@
     padding-bottom: 0;
   }
 
+  &.retouch-learn--revamp {
+    .retouch-learn {
+      &__title {
+        width: 100%;
+        max-width: 460px;
+        margin-left: auto;
+        text-align: right;
+      }
+    }
+  }
+
   .c-grid {
     @include adaptive(767) {
       padding-left: 0;
@@ -120,6 +131,11 @@
     justify-content: flex-end;
     @include adaptive(767) {
       justify-content: center;
+    }
+
+    .c-btn {
+      width: 100%;
+      max-width: 200px;
     }
   }
 }
