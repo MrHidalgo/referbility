@@ -100,6 +100,7 @@
       }
       @include adaptive(767) {
         width: 100%;
+        padding-left: 0;
       }
 
       img {

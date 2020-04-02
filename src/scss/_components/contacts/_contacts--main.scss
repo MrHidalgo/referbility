@@ -1,9 +1,9 @@
 &-main {
   position: relative;
-  padding-top: 220px;
-  padding-bottom: 100px;
+  padding-top: 310px;
+  padding-bottom: 125px;
   @include adaptive(1335) {
-    padding-top: 180px;
+    padding-top: 250px;
   }
   @include adaptive(1279) {
     padding-bottom: 75px;
@@ -28,7 +28,7 @@
     @include adaptive(767) {
       left: -100px;
       width: calc(100% + 200px);
-      height: 70%;
+      height: 80%;
       border-bottom-right-radius: 50% 100px;
       border-bottom-left-radius: 50% 100px;
     }
@@ -92,13 +92,15 @@
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      width: 45%;
+      width: 55%;
+      margin-left: auto;
       padding-left: 30px;
       @include adaptive(1279) {
         align-items: center;
       }
       @include adaptive(767) {
         width: 100%;
+        padding-left: 0;
       }
 
       img {
@@ -114,17 +116,17 @@
           right: 0;
         }
 
-        &:nth-of-type(1) {
-          @include adaptive(767) {
-            display: none;
-          }
-        }
-        &:nth-of-type(2) {
-          display: none;
-          @include adaptive(767) {
-            display: block;
-          }
-        }
+        //&:nth-of-type(1) {
+        //  @include adaptive(767) {
+        //    display: none;
+        //  }
+        //}
+        //&:nth-of-type(2) {
+        //  display: none;
+        //  @include adaptive(767) {
+        //    display: block;
+        //  }
+        //}
       }
     }
   }
@@ -135,14 +137,14 @@
     display: flex;
 
     &-left {
-      width: 55%;
+      width: 45%;
       @include adaptive(767) {
         width: 100%;
       }
     }
 
     &-right {
-      width: 45%;
+      width: 55%;
       @include adaptive(767) {
         display: none;
       }
@@ -186,7 +188,7 @@
       font-size: 18px;
     }
     @include adaptive(767) {
-      //padding-bottom: 30px;
+      padding-bottom: 30px;
       text-align: center;
       font-size: 16px;
       line-height: normal;
