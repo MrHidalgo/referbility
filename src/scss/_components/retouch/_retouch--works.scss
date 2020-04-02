@@ -13,6 +13,33 @@
       &__desc {
         max-width: 980px;
       }
+
+      &__wrapper {
+        align-items: flex-start;
+
+        > div {
+          &:nth-of-type(1),
+          &:nth-of-type(2) {
+            padding-bottom: 80px;
+          }
+        }
+      }
+
+      &__block {
+        &-image {
+          display: flex;
+          align-items: flex-end;
+          min-height: 366px;
+          @include adaptive(767) {
+            min-height: unset;
+          }
+        }
+
+        &-content {
+          top: 0;
+          padding-top: 30px;
+        }
+      }
     }
   }
 

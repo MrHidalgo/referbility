@@ -3,13 +3,13 @@ ProjectTitle: Referbility
 PageList:
 - file: contacts.html
   titleName: Contact Us
-  ready: 1
+  ready: 55
 - file: revamp.html
   titleName: Revamp
   ready: 75
 - file: subscribe.html
   titleName: Job Alert Subscription
-  ready: 75
+  ready: 90
 - file: board-subscribe.html
   titleName: Subscribe Job Board
   ready: 90
