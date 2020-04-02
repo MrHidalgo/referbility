@@ -156,44 +156,47 @@
 	@if $filename == question-circle {
 		$char: "\E02B";
 	}
-	@if $filename == review-1 {
+	@if $filename == quote {
 		$char: "\E02C";
 	}
-	@if $filename == rocket {
+	@if $filename == review-1 {
 		$char: "\E02D";
 	}
-	@if $filename == search {
+	@if $filename == rocket {
 		$char: "\E02E";
 	}
-	@if $filename == seo {
+	@if $filename == search {
 		$char: "\E02F";
 	}
-	@if $filename == settings {
+	@if $filename == seo {
 		$char: "\E030";
 	}
-	@if $filename == shout {
+	@if $filename == settings {
 		$char: "\E031";
 	}
-	@if $filename == thumbs-up {
+	@if $filename == shout {
 		$char: "\E032";
 	}
-	@if $filename == timer {
+	@if $filename == thumbs-up {
 		$char: "\E033";
 	}
-	@if $filename == trash {
+	@if $filename == timer {
 		$char: "\E034";
 	}
-	@if $filename == twitter {
+	@if $filename == trash {
 		$char: "\E035";
 	}
-	@if $filename == user {
+	@if $filename == twitter {
 		$char: "\E036";
 	}
-	@if $filename == wallet {
+	@if $filename == user {
 		$char: "\E037";
 	}
-	@if $filename == x {
+	@if $filename == wallet {
 		$char: "\E038";
+	}
+	@if $filename == x {
+		$char: "\E039";
 	}
 
 	@return $char;
@@ -380,6 +383,10 @@
 }
 .icon-question-circle {
 	@include icon(question-circle);
+
+}
+.icon-quote {
+	@include icon(quote);
 
 }
 .icon-review-1 {

@@ -6,7 +6,7 @@ PageList:
   ready: 55
 - file: revamp.html
   titleName: Revamp
-  ready: 75
+  ready: 90
 - file: subscribe.html
   titleName: Job Alert Subscription
   ready: 90

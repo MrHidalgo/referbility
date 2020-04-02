@@ -28,7 +28,7 @@
     @include adaptive(767) {
       left: -100px;
       width: calc(100% + 200px);
-      height: 70%;
+      height: 80%;
       border-bottom-right-radius: 50% 100px;
       border-bottom-left-radius: 50% 100px;
     }
@@ -92,7 +92,8 @@
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      width: 45%;
+      width: 55%;
+      margin-left: auto;
       padding-left: 30px;
       @include adaptive(1279) {
         align-items: center;
@@ -115,15 +116,15 @@
         }
 
         &:nth-of-type(1) {
-          @include adaptive(767) {
-            display: none;
-          }
+          //@include adaptive(767) {
+          //  display: none;
+          //}
         }
         &:nth-of-type(2) {
-          display: none;
-          @include adaptive(767) {
-            display: block;
-          }
+          //display: none;
+          //@include adaptive(767) {
+          //  display: block;
+          //}
         }
       }
     }

@@ -360,7 +360,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell-checked:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-check-mark:before, .icon-chevron-bottom:before, .icon-circle-checked:before, .icon-circle-x:before, .icon-comment-delete:before, .icon-comment-text:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook-sq:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-newspaper:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-question-circle:before, .icon-review-1:before, .icon-rocket:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-shout:before, .icon-thumbs-up:before, .icon-timer:before, .icon-trash:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
+.icon-arrow-bottom:before, .icon-bar-chart:before, .icon-bell-alert:before, .icon-bell-checked:before, .icon-bell:before, .icon-blogging:before, .icon-building:before, .icon-calendar-check:before, .icon-calendar-dates:before, .icon-calendar-delete:before, .icon-call-calling:before, .icon-case:before, .icon-chat:before, .icon-check-mark:before, .icon-chevron-bottom:before, .icon-circle-checked:before, .icon-circle-x:before, .icon-comment-delete:before, .icon-comment-text:before, .icon-conversion:before, .icon-corner:before, .icon-creditcard-face:before, .icon-cup:before, .icon-cv:before, .icon-data:before, .icon-date:before, .icon-email-star:before, .icon-experience:before, .icon-facebook-sq:before, .icon-facebook:before, .icon-file-text:before, .icon-flag:before, .icon-linkedin:before, .icon-mail:before, .icon-market-1:before, .icon-medal:before, .icon-more:before, .icon-newspaper:before, .icon-pencil-create:before, .icon-pin:before, .icon-plus:before, .icon-profile:before, .icon-question-circle:before, .icon-quote:before, .icon-review-1:before, .icon-rocket:before, .icon-search:before, .icon-seo:before, .icon-settings:before, .icon-shout:before, .icon-thumbs-up:before, .icon-timer:before, .icon-trash:before, .icon-twitter:before, .icon-user:before, .icon-wallet:before, .icon-x:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -371,284 +371,289 @@
   text-transform: none;
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-arrow-bottom:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-bar-chart:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-bell-alert:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-bell-checked:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-bell:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-blogging:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-building:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-check:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-dates:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-delete:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-call-calling:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-case:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-chat:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-check-mark:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-chevron-bottom:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-circle-checked:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-circle-x:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-comment-delete:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-comment-text:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-conversion:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-corner:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-creditcard-face:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-cup:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-cv:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-data:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-date:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-email-star:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-experience:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-facebook-sq:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-facebook:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-file-text:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-flag:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-linkedin:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-mail:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-market-1:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-medal:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-more:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-newspaper:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-pencil-create:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-pin:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-plus:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-profile:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
+/* line 206, src/scss/_generated/_spriteFont.scss */
 .icon-question-circle:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-review-1:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-quote:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-rocket:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-review-1:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-rocket:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-seo:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-settings:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-seo:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-shout:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-settings:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-thumbs-up:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-shout:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-timer:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-thumbs-up:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-trash:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-timer:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-trash:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-wallet:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
 }
 
-/* line 203, src/scss/_generated/_spriteFont.scss */
-.icon-x:before {
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-wallet:before {
   content: "";
+}
+
+/* line 206, src/scss/_generated/_spriteFont.scss */
+.icon-x:before {
+  content: "";
 }
 
 @font-face {
@@ -24014,7 +24019,7 @@ picture {
     left: -100px;
     width: -webkit-calc(100% + 200px);
     width: calc(100% + 200px);
-    height: 70%;
+    height: 80%;
     -webkit-border-bottom-right-radius: 50% 100px;
             border-bottom-right-radius: 50% 100px;
     -webkit-border-bottom-left-radius: 50% 100px;
@@ -24117,7 +24122,8 @@ picture {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 45%;
+  width: 55%;
+  margin-left: auto;
   padding-left: 30px;
 }
 
@@ -24138,7 +24144,7 @@ picture {
   }
 }
 
-/* line 104, src/scss/_components/revamp/_revamp--main.scss */
+/* line 105, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__content-right img {
   position: relative;
   display: block;
@@ -24148,39 +24154,20 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 104, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 105, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__content-right img {
     right: -100px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 104, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 105, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__content-right img {
     right: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 117, src/scss/_components/revamp/_revamp--main.scss */
-  .revamp-main__content-right img:nth-of-type(1) {
-    display: none;
-  }
-}
-
-/* line 122, src/scss/_components/revamp/_revamp--main.scss */
-.revamp-main__content-right img:nth-of-type(2) {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 122, src/scss/_components/revamp/_revamp--main.scss */
-  .revamp-main__content-right img:nth-of-type(2) {
-    display: block;
-  }
-}
-
-/* line 132, src/scss/_components/revamp/_revamp--main.scss */
+/* line 133, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__wrapper {
   z-index: 2;
   position: relative;
@@ -24190,31 +24177,31 @@ picture {
   display: flex;
 }
 
-/* line 137, src/scss/_components/revamp/_revamp--main.scss */
+/* line 138, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__wrapper-left {
   width: 55%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 137, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 138, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__wrapper-left {
     width: 100%;
   }
 }
 
-/* line 144, src/scss/_components/revamp/_revamp--main.scss */
+/* line 145, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__wrapper-right {
   width: 45%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 144, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 145, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__wrapper-right {
     display: none;
   }
 }
 
-/* line 152, src/scss/_components/revamp/_revamp--main.scss */
+/* line 153, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -24226,35 +24213,35 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 152, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 153, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__title {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 152, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 153, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__title {
     font-size: 45px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 152, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 153, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__title {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 152, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 153, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__title {
     text-align: center;
     font-size: 36px;
   }
 }
 
-/* line 175, src/scss/_components/revamp/_revamp--main.scss */
+/* line 176, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__subtitle {
   width: 100%;
   max-width: 510px;
@@ -24268,14 +24255,14 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 175, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 176, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__subtitle {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 175, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 176, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__subtitle {
     padding-bottom: 30px;
     text-align: center;
@@ -24284,7 +24271,7 @@ picture {
   }
 }
 
-/* line 196, src/scss/_components/revamp/_revamp--main.scss */
+/* line 197, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -24298,14 +24285,14 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 196, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 197, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__btn {
     padding-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 196, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 197, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__btn {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -24315,7 +24302,7 @@ picture {
   }
 }
 
-/* line 208, src/scss/_components/revamp/_revamp--main.scss */
+/* line 209, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__btn .icon-font {
   z-index: 2;
   position: relative;
@@ -24323,7 +24310,7 @@ picture {
   font-size: 19px;
 }
 
-/* line 216, src/scss/_components/revamp/_revamp--main.scss */
+/* line 217, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__link {
   z-index: 2;
   position: relative;
@@ -24347,13 +24334,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 216, src/scss/_components/revamp/_revamp--main.scss */
+  /* line 217, src/scss/_components/revamp/_revamp--main.scss */
   .revamp-main__link {
     display: none;
   }
 }
 
-/* line 227, src/scss/_components/revamp/_revamp--main.scss */
+/* line 228, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__link span {
   padding-bottom: 10px;
   font-size: 16px;
@@ -24362,7 +24349,7 @@ picture {
   text-align: center;
 }
 
-/* line 235, src/scss/_components/revamp/_revamp--main.scss */
+/* line 236, src/scss/_components/revamp/_revamp--main.scss */
 .revamp-main__link .icon-font {
   color: #fff;
   font-size: 20px;
@@ -24606,17 +24593,33 @@ picture {
 }
 
 /* line 134, src/scss/_components/revamp/_revamp.scss */
+.revamp-testimonials__box .icon-quote {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgba(81, 83, 220, 0.2);
+  font-size: 62px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 134, src/scss/_components/revamp/_revamp.scss */
+  .revamp-testimonials__box .icon-quote {
+    font-size: 55px;
+  }
+}
+
+/* line 145, src/scss/_components/revamp/_revamp.scss */
 .revamp-testimonials__box-head {
   padding-bottom: 20px;
   border-bottom: solid 1px rgba(64, 50, 148, 0.2);
 }
 
-/* line 139, src/scss/_components/revamp/_revamp.scss */
+/* line 150, src/scss/_components/revamp/_revamp.scss */
 .revamp-testimonials__box-body {
   padding-top: 20px;
 }
 
-/* line 143, src/scss/_components/revamp/_revamp.scss */
+/* line 154, src/scss/_components/revamp/_revamp.scss */
 .revamp-testimonials__box-title {
   font-size: 22px;
   font-weight: bold;
@@ -24626,13 +24629,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 143, src/scss/_components/revamp/_revamp.scss */
+  /* line 154, src/scss/_components/revamp/_revamp.scss */
   .revamp-testimonials__box-title {
     font-size: 20px;
   }
 }
 
-/* line 154, src/scss/_components/revamp/_revamp.scss */
+/* line 165, src/scss/_components/revamp/_revamp.scss */
 .revamp-testimonials__box-desc {
   font-size: 17px;
   line-height: 1.75;
@@ -24641,13 +24644,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 154, src/scss/_components/revamp/_revamp.scss */
+  /* line 165, src/scss/_components/revamp/_revamp.scss */
   .revamp-testimonials__box-desc {
     font-size: 15px;
   }
 }
 
-/* line 166, src/scss/_components/revamp/_revamp.scss */
+/* line 177, src/scss/_components/revamp/_revamp.scss */
 .revamp-testimonials .swiper-wrapper {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
@@ -24660,7 +24663,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 166, src/scss/_components/revamp/_revamp.scss */
+  /* line 177, src/scss/_components/revamp/_revamp.scss */
   .revamp-testimonials .swiper-wrapper {
     -webkit-box-align: unset;
     -webkit-align-items: unset;
@@ -24673,7 +24676,7 @@ picture {
   }
 }
 
-/* line 175, src/scss/_components/revamp/_revamp.scss */
+/* line 186, src/scss/_components/revamp/_revamp.scss */
 .revamp-testimonials .swiper-slide {
   width: 100%;
   max-width: -webkit-calc((100% - 60px) / 3);
@@ -24682,7 +24685,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 175, src/scss/_components/revamp/_revamp.scss */
+  /* line 186, src/scss/_components/revamp/_revamp.scss */
   .revamp-testimonials .swiper-slide {
     max-width: -webkit-calc((100% - 30px) / 3);
     max-width: calc((100% - 30px) / 3);
@@ -24690,20 +24693,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 175, src/scss/_components/revamp/_revamp.scss */
+  /* line 186, src/scss/_components/revamp/_revamp.scss */
   .revamp-testimonials .swiper-slide {
     max-width: unset;
   }
 }
 
-/* line 189, src/scss/_components/revamp/_revamp.scss */
+/* line 200, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog {
   padding-top: 75px;
   padding-bottom: 150px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 189, src/scss/_components/revamp/_revamp.scss */
+  /* line 200, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -24711,14 +24714,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 189, src/scss/_components/revamp/_revamp.scss */
+  /* line 200, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog {
     padding-top: 25px;
     padding-bottom: 50px;
   }
 }
 
-/* line 201, src/scss/_components/revamp/_revamp.scss */
+/* line 212, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__title {
   padding-bottom: 20px;
   font-size: 30px;
@@ -24727,7 +24730,7 @@ picture {
   color: #091e42;
 }
 
-/* line 209, src/scss/_components/revamp/_revamp.scss */
+/* line 220, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__line {
   width: 50px;
   height: 5px;
@@ -24736,13 +24739,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 209, src/scss/_components/revamp/_revamp.scss */
+  /* line 220, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog__line {
     margin-bottom: 40px;
   }
 }
 
-/* line 219, src/scss/_components/revamp/_revamp.scss */
+/* line 230, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__more {
   display: -webkit-box;
   display: -webkit-flex;
@@ -24760,19 +24763,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 219, src/scss/_components/revamp/_revamp.scss */
+  /* line 230, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog__more {
     padding-top: 30px;
   }
 }
 
-/* line 228, src/scss/_components/revamp/_revamp.scss */
+/* line 239, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__more .c-btn {
   width: 100%;
   max-width: 220px;
 }
 
-/* line 234, src/scss/_components/revamp/_revamp.scss */
+/* line 245, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn {
   overflow: hidden;
   position: relative;
@@ -24805,7 +24808,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 250, src/scss/_components/revamp/_revamp.scss */
+/* line 261, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn:after {
   content: '';
   opacity: 0;
@@ -24836,7 +24839,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 268, src/scss/_components/revamp/_revamp.scss */
+/* line 279, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn:hover {
   -webkit-box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
           box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
@@ -24847,7 +24850,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 272, src/scss/_components/revamp/_revamp.scss */
+/* line 283, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn:hover:after {
   opacity: 1;
   visibility: visible;
@@ -24861,7 +24864,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 279, src/scss/_components/revamp/_revamp.scss */
+/* line 290, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -24869,7 +24872,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 285, src/scss/_components/revamp/_revamp.scss */
+/* line 296, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn .icon-font {
   z-index: 2;
   position: relative;
@@ -24880,14 +24883,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 294, src/scss/_components/revamp/_revamp.scss */
+/* line 305, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn-prev .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 299, src/scss/_components/revamp/_revamp.scss */
+/* line 310, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__btn-wrapper {
   display: none;
   -webkit-box-align: center;
@@ -24902,7 +24905,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 299, src/scss/_components/revamp/_revamp.scss */
+  /* line 310, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog__btn-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -24911,7 +24914,7 @@ picture {
   }
 }
 
-/* line 310, src/scss/_components/revamp/_revamp.scss */
+/* line 321, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box {
   overflow: hidden;
   position: relative;
@@ -24932,7 +24935,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 323, src/scss/_components/revamp/_revamp.scss */
+/* line 334, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box:hover .revamp-blog__box-head img {
   -webkit-transform: scale(1.1) rotate(3deg);
       -ms-transform: scale(1.1) rotate(3deg);
@@ -24944,14 +24947,14 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 330, src/scss/_components/revamp/_revamp.scss */
+/* line 341, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box-head {
   overflow: hidden;
   position: relative;
   height: 220px;
 }
 
-/* line 335, src/scss/_components/revamp/_revamp.scss */
+/* line 346, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box-head img {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
@@ -24960,19 +24963,19 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 341, src/scss/_components/revamp/_revamp.scss */
+/* line 352, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box-body {
   padding: 20px 40px 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 341, src/scss/_components/revamp/_revamp.scss */
+  /* line 352, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog__box-body {
     padding: 20px 30px 20px;
   }
 }
 
-/* line 348, src/scss/_components/revamp/_revamp.scss */
+/* line 359, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box-title {
   padding-bottom: 15px;
   font-weight: 700;
@@ -24982,7 +24985,7 @@ picture {
   color: rgba(9, 30, 66, 0.8);
 }
 
-/* line 357, src/scss/_components/revamp/_revamp.scss */
+/* line 368, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog__box-desc {
   font-size: 17px;
   line-height: 1.43;
@@ -24991,13 +24994,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 357, src/scss/_components/revamp/_revamp.scss */
+  /* line 368, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog__box-desc {
     font-size: 15px;
   }
 }
 
-/* line 369, src/scss/_components/revamp/_revamp.scss */
+/* line 380, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog .swiper-wrapper {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
@@ -25010,7 +25013,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 369, src/scss/_components/revamp/_revamp.scss */
+  /* line 380, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog .swiper-wrapper {
     -webkit-box-align: unset;
     -webkit-align-items: unset;
@@ -25023,7 +25026,7 @@ picture {
   }
 }
 
-/* line 378, src/scss/_components/revamp/_revamp.scss */
+/* line 389, src/scss/_components/revamp/_revamp.scss */
 .revamp-blog .swiper-slide {
   width: 100%;
   max-width: -webkit-calc((100% - 60px) / 3);
@@ -25032,7 +25035,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 378, src/scss/_components/revamp/_revamp.scss */
+  /* line 389, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog .swiper-slide {
     max-width: -webkit-calc((100% - 30px) / 3);
     max-width: calc((100% - 30px) / 3);
@@ -25040,7 +25043,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 378, src/scss/_components/revamp/_revamp.scss */
+  /* line 389, src/scss/_components/revamp/_revamp.scss */
   .revamp-blog .swiper-slide {
     max-width: unset;
   }

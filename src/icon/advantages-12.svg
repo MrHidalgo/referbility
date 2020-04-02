@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="50" cy="50" r="50" fill="#D5B8FF"/>
+        <g fill-rule="nonzero" transform="translate(14 19)">
+            <rect width="66.4" height="51.52" x=".16" y="5.48" fill="#FCFCFC" rx="2.507"/>
+            <path fill="#7140A2" d="M3.013.36h60.694c1.576 0 2.853 1.277 2.853 2.853V9.16H.16V3.213C.16 1.637 1.437.36 3.013.36z"/>
+            <circle cx="5.28" cy="4.68" r="1.6" fill="#FCFCFC"/>
+            <path fill="#7140A2" d="M32.96 36.52H66.56V57H32.96z" opacity=".12"/>
+            <circle cx="10.213" cy="4.68" r="1.6" fill="#FCFCFC" opacity=".53"/>
+            <circle cx="15.28" cy="4.68" r="1.6" fill="#FCFCFC" opacity=".17"/>
+            <path fill="#FCFCFC" d="M36.96 40.36H72.80000000000001V62.28H36.96z"/>
+            <path fill="#7140A2" d="M36.96 40.36L54.88 57.48 72.8 40.36zM6.88 19.24H60.32V25.32H6.88z"/>
+            <path fill="#7140A2" d="M6.88 13.32H24.64V15.56H6.88z" opacity=".37"/>
+            <path fill="#7140A2" d="M6.88 29H60.32V32.36H6.88z" opacity=".12"/>
+            <path fill="#7140A2" d="M6.88 36.52H27.2V39.88H6.88zM6.88 43.4H27.2V46.76H6.88z" opacity=".06"/>
+        </g>
+    </g>
+</svg>
