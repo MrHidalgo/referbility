@@ -13,30 +13,61 @@ section#contacts-team.contacts-team
       .contacts-team__line
 
       .contacts-team__user-wrapper
-        .contacts-team__user.contacts-team__user-1
-          .contacts-team__user-ava
-            img(src="img/profile-2.png" srcset="img/profile-2@2x.png 2x, img/profile-2@3x.png 3x" alt="")
-          p.contacts-team__user-title Clemens Mielke
-          p.contacts-team__user-position Founder
-          .contacts-team__user-social
-            a(href="#")
-              i.icon-font.icon-linkedin
-            a(href="#")
-              i.icon-font.icon-mail
+        mixin swiperContent()
+          .swiper-slide
+            .contacts-team__user.contacts-team__user-1
+              .contacts-team__user-ava
+                img(src="img/profile-2.png" srcset="img/profile-2@2x.png 2x, img/profile-2@3x.png 3x" alt="")
+              p.contacts-team__user-title Clemens Mielke
+              p.contacts-team__user-position Founder
+              .contacts-team__user-social
+                a(href="#")
+                  i.icon-font.icon-linkedin
+                a(href="#")
+                  i.icon-font.icon-mail
 
-        .contacts-team__user.contacts-team__user-2
-          .contacts-team__user-ava
-            img(src="img/profile-1.png" srcset="img/profile-1@2x.png 2x, img/profile-1@3x.png 3x" alt="")
-          p.contacts-team__user-title Khadija Al Jabri
-          p.contacts-team__user-position Co-Founder
-          .contacts-team__user-social
-            a(href="#")
-              i.icon-font.icon-linkedin
-            a(href="#")
-              i.icon-font.icon-mail
+          .swiper-slide
+            .contacts-team__user.contacts-team__user-2
+              .contacts-team__user-ava
+                img(src="img/profile-1.png" srcset="img/profile-1@2x.png 2x, img/profile-1@3x.png 3x" alt="")
+              p.contacts-team__user-title Khadija Al Jabri
+              p.contacts-team__user-position Co-Founder
+              .contacts-team__user-social
+                a(href="#")
+                  i.icon-font.icon-linkedin
+                a(href="#")
+                  i.icon-font.icon-mail
+
+        +swiper('contactsUser', 'swiperContent', false, false, false)
+
+        .contacts-team__user-btn-wrapper
+          a.contacts-team__user-btn.contacts-team__user-btn-prev(href="#")
+            i.icon-font.icon-corner
+          a.contacts-team__user-btn.contacts-team__user-btn-next(href="#")
+            i.icon-font.icon-corner
 
       p.contacts-team__subtitle As seen on
+
       .contacts-team__visual
-        img(src="img/as-seen-on.png" srcset="img/as-seen-on@2x.png 2x, img/as-seen-on@3x.png 3x" alt="")
+
+        mixin swiperContent()
+          .swiper-slide
+            img(src="img/img-seen-1.png" srcset="img/img-seen-1@2x.png 2x, img/img-seen-1@3x.png 3x" alt="")
+          .swiper-slide
+            img(src="img/img-seen-2.png" srcset="img/img-seen-2@2x.png 2x, img/img-seen-2@3x.png 3x" alt="")
+          .swiper-slide
+            img(src="img/img-seen-3.png" srcset="img/img-seen-3@2x.png 2x, img/img-seen-3@3x.png 3x" alt="")
+          .swiper-slide
+            img(src="img/img-seen-4.png" srcset="img/img-seen-4@2x.png 2x, img/img-seen-4@3x.png 3x" alt="")
+          .swiper-slide
+            img(src="img/img-seen-5.png" srcset="img/img-seen-5@2x.png 2x, img/img-seen-5@3x.png 3x" alt="")
+
+        +swiper('contactsSeen', 'swiperContent', false, false, false)
+
+        .contacts-team__btn-wrapper
+          a.contacts-team__btn.contacts-team__btn-prev(href="#")
+            i.icon-font.icon-corner
+          a.contacts-team__btn.contacts-team__btn-next(href="#")
+            i.icon-font.icon-corner
 
 // SECTION :: END
