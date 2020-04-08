@@ -37,12 +37,12 @@ mixin jobCard(badgeBool)
 section#ref-jobs.ref-jobs.ref-jobs--subscribe
   .c-grid
 
-    h2.ref-jobs__title Latest jobs
-    .ref-jobs__line
+    h2.ref-jobs__title.viewport-hide-js(data-animation-delay='0.1s' data-animation-name='c-slideInUp') Latest jobs
+    .ref-jobs__line.viewport-hide-js(data-animation-delay='0.15s' data-animation-name='c-slideInUp')
 
     .ref-jobs__wrapper
 
-      .ref-jobs__slider
+      .ref-jobs__slider.viewport-hide-js(data-animation-delay='0.2s' data-animation-name='c-slideInUp')
 
         mixin swiperContent()
           .swiper-slide
@@ -70,13 +70,13 @@ section#ref-jobs.ref-jobs.ref-jobs--subscribe
 
         +swiper('dashboardJob', 'swiperContent', false, false, false)
 
-        .ref-jobs__slider-btn-wrapper
+        .ref-jobs__slider-btn-wrapper.viewport-hide-js(data-animation-delay='0.25s' data-animation-name='c-slideInUp')
           a.ref-jobs__slider-btn.ref-jobs__slider-btn--prev(href="#")
             i.icon-font.icon-corner
           a.ref-jobs__slider-btn.ref-jobs__slider-btn--next(href="#")
             i.icon-font.icon-corner
 
-      .ref-jobs__btn
+      .ref-jobs__btn.viewport-hide-js(data-animation-delay='0.3s' data-animation-name='c-slideInUp')
         a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
           span SEE ALL JOBS
 

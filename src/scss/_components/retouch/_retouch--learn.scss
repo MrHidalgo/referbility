@@ -7,7 +7,18 @@
   }
 
   &.retouch-learn--revamp {
+    @include adaptive(767) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
     .retouch-learn {
+      &__wrapper {
+        @include adaptive(767) {
+          border-radius: 0 60px 0 60px;
+        }
+      }
+
       &__title {
         width: 100%;
         max-width: 460px;

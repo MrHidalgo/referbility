@@ -8,13 +8,76 @@ section#retouch-convinced.retouch-convinced.retouch-convinced--revamp
 
   .c-grid
 
-    p.retouch-convinced__title.c-title.c-title--white(data-animation-delay='0.2s') Advantages
-    .retouch-convinced__line(data-animation-delay='0.25s')
+    p.retouch-convinced__title.c-title.c-title--white.viewport-hide-js(data-animation-delay='0.2s') Advantages
+    .retouch-convinced__line.viewport-hide-js(data-animation-delay='0.25s')
+
+    .retouch-convinced__slider.viewport-hide-js(data-animation-delay='0.3s')
+
+      mixin swiperContent()
+        .swiper-slide
+          .advantages__block
+            .advantages__block-head
+              .advantages__block-img
+                +iconSVG('advantages-6', '')
+            .advantages__block-body
+              p.advantages__block-title You’re your own boss
+              p.advantages__block-desc No commitments - you decide which jobs you want to refer candidates to. We don't tie you down with contracts or engagements!
+        .swiper-slide
+          .advantages__block
+            .advantages__block-head
+              .advantages__block-img
+                +iconSVG('advantages-7', '')
+
+            .advantages__block-body
+              p.advantages__block-title A second income
+              p.advantages__block-desc With a minimum reward of $600, you can make several thousands of dollars each months.
+        .swiper-slide
+          .advantages__block
+            .advantages__block-head
+              .advantages__block-img
+                +iconSVG('advantages-8', '')
+
+            .advantages__block-body
+              p.advantages__block-title Secure escrows
+              p.advantages__block-desc We utilize holding accounts to ensure you get paid once the employer hires.
+        .swiper-slide
+          .advantages__block
+            .advantages__block-head
+              .advantages__block-img
+                +iconSVG('advantages-9', '')
+            .advantages__block-body
+              p.advantages__block-title State-of-the-art
+              p.advantages__block-desc Our dashboards make it easy for you to 'refer and forget' - just log back in, and with a quick glance, you will see which stages your candidates are at!
+        .swiper-slide
+          .advantages__block
+            .advantages__block-head
+              .advantages__block-img
+                +iconSVG('advantages-10', '')
+            .advantages__block-body
+              p.advantages__block-title Easy encashment
+              p.advantages__block-desc We encash your rewards conveniently and swiftly directly on your bank account.
+        .swiper-slide
+          .advantages__block
+            .advantages__block-head
+              .advantages__block-img
+                +iconSVG('advantages-12', '')
+
+            .advantages__block-body
+              p.advantages__block-title Super simple referrals
+              p.advantages__block-desc Refer by just dropping your candidate's name and email. It's as easy as that!
+
+      +swiper('advantageRevampSwiper', 'swiperContent', false, false, false)
+
+      .retouch-convinced__slider-btn-wrapper
+        a.retouch-convinced__slider-btn.retouch-convinced__slider-btn-prev(href="#")
+          i.icon-font.icon-corner
+        a.retouch-convinced__slider-btn.retouch-convinced__slider-btn-next(href="#")
+          i.icon-font.icon-corner
 
     .retouch-convinced__wrapper
 
       .advantages__block-wrapper
-        .advantages__block-col.advantages__block-col-1(data-animation-delay='0.2s')
+        .advantages__block-col.advantages__block-col-1.viewport-hide-js(data-animation-delay='0.2s')
           .advantages__block
             .advantages__block-head
               .advantages__block-img
@@ -23,7 +86,7 @@ section#retouch-convinced.retouch-convinced.retouch-convinced--revamp
               p.advantages__block-title You’re your own boss
               p.advantages__block-desc No commitments - you decide which jobs you want to refer candidates to. We don't tie you down with contracts or engagements!
 
-        .advantages__block-col.advantages__block-col-2(data-animation-delay='0.3s')
+        .advantages__block-col.advantages__block-col-2.viewport-hide-js(data-animation-delay='0.3s')
           .advantages__block
             .advantages__block-head
               .advantages__block-img
@@ -42,7 +105,7 @@ section#retouch-convinced.retouch-convinced.retouch-convinced--revamp
               p.advantages__block-title Secure escrows
               p.advantages__block-desc We utilize holding accounts to ensure you get paid once the employer hires.
 
-        .advantages__block-col.advantages__block-col-3(data-animation-delay='0.4s')
+        .advantages__block-col.advantages__block-col-3.viewport-hide-js(data-animation-delay='0.4s')
           .advantages__block
             .advantages__block-head
               .advantages__block-img
@@ -51,7 +114,7 @@ section#retouch-convinced.retouch-convinced.retouch-convinced--revamp
               p.advantages__block-title State-of-the-art
               p.advantages__block-desc Our dashboards make it easy for you to 'refer and forget' - just log back in, and with a quick glance, you will see which stages your candidates are at!
 
-        .advantages__block-col.advantages__block-col-4(data-animation-delay='0.5s')
+        .advantages__block-col.advantages__block-col-4.viewport-hide-js(data-animation-delay='0.5s')
           .advantages__block
             .advantages__block-head
               .advantages__block-img

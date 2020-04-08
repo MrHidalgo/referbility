@@ -18618,13 +18618,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 15, src/scss/_components/retouch/_retouch--convinced.scss */
+  /* line 12, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced.retouch-convinced--revamp {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 19, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced.retouch-convinced--revamp .retouch-convinced__wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 26, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced.retouch-convinced--revamp .advantages__block {
     padding: 30px 25px;
   }
 }
 
-/* line 20, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 31, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced.retouch-convinced--revamp .advantages__block-wrapper {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -18632,23 +18646,23 @@ picture {
           align-items: center;
 }
 
-/* line 24, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 35, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced.retouch-convinced--revamp .advantages__block-col {
   padding-top: 0;
 }
 
-/* line 28, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 39, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced.retouch-convinced--revamp .advantages__block-img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 33, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 44, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced.retouch-convinced--revamp .advantages__block-title, .retouch-convinced.retouch-convinced--revamp .advantages__block-desc {
   text-align: center;
 }
 
-/* line 40, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 51, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg {
   z-index: 0;
   position: absolute;
@@ -18658,14 +18672,14 @@ picture {
   height: 100%;
 }
 
-/* line 48, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 59, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg span {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 52, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 63, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg span:nth-of-type(1) {
   top: -30px;
   left: -150px;
@@ -18674,7 +18688,7 @@ picture {
   border: 50px solid rgba(255, 255, 255, 0.15);
 }
 
-/* line 60, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 71, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__bg span:nth-of-type(2) {
   right: -50px;
   bottom: -150px;
@@ -18683,25 +18697,25 @@ picture {
   border: 150px solid rgba(255, 255, 255, 0.15);
 }
 
-/* line 70, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 81, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 75, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 86, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__title {
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 75, src/scss/_components/retouch/_retouch--convinced.scss */
+  /* line 86, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced__title {
     padding-bottom: 20px;
   }
 }
 
-/* line 82, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 93, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced__line {
   width: 100%;
   max-width: 60px;
@@ -18713,7 +18727,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 82, src/scss/_components/retouch/_retouch--convinced.scss */
+  /* line 93, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced__line {
     max-width: 50px;
     margin-bottom: 40px;
@@ -18721,26 +18735,183 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 96, src/scss/_components/retouch/_retouch--convinced.scss */
+  /* line 107, src/scss/_components/retouch/_retouch--convinced.scss */
   .retouch-convinced .advantages__block {
     padding: 30px 25px 30px 35px;
     margin-bottom: 30px;
   }
 }
 
-/* line 102, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 113, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced .advantages__block-wrapper {
   max-width: 1040px;
 }
 
-/* line 106, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 117, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced .advantages__block-img {
   margin-left: 0;
 }
 
-/* line 110, src/scss/_components/retouch/_retouch--convinced.scss */
+/* line 121, src/scss/_components/retouch/_retouch--convinced.scss */
 .retouch-convinced .advantages__block-title, .retouch-convinced .advantages__block-desc {
   text-align: left;
+}
+
+/* line 127, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 127, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced__slider {
+    display: block;
+  }
+}
+
+/* line 133, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid 1px #dfdfff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(135, 131, 157, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(135, 131, 157, 0.1);
+  background-color: #ffffff;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 149, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-image: -webkit-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: -o-linear-gradient(229deg, #8181ff 73%, #5153dc);
+  background-image: linear-gradient(221deg, #8181ff 73%, #5153dc);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 167, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn:hover {
+  -webkit-box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+          box-shadow: 0 20px 40px 0 rgba(135, 119, 217, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 171, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn:hover:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 178, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn:hover .icon-font {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 184, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn .icon-font {
+  z-index: 2;
+  position: relative;
+  color: #6364e9;
+  font-size: 12px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 193, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn-prev .icon-font {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* line 198, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced__slider-btn-wrapper {
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 198, src/scss/_components/retouch/_retouch--convinced.scss */
+  .retouch-convinced__slider-btn-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 212, src/scss/_components/retouch/_retouch--convinced.scss */
+.retouch-convinced .swiper-slide .advantages__block:hover {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /* line 1, src/scss/_components/retouch/_retouch--learn.scss */
@@ -18757,7 +18928,23 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/retouch/_retouch--learn.scss */
+@media screen and (max-width: 767px) {
+  /* line 9, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn.retouch-learn--revamp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/retouch/_retouch--learn.scss */
+  .retouch-learn.retouch-learn--revamp .retouch-learn__wrapper {
+    -webkit-border-radius: 0 60px 0 60px;
+            border-radius: 0 60px 0 60px;
+  }
+}
+
+/* line 22, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn.retouch-learn--revamp .retouch-learn__title {
   width: 100%;
   max-width: 460px;
@@ -18766,14 +18953,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 20, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 31, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn .c-grid {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 27, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 38, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper {
   overflow: hidden;
   position: relative;
@@ -18796,7 +18983,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 27, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 38, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper {
     padding-left: 50px;
     padding-right: 50px;
@@ -18804,7 +18991,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 27, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 38, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper {
     -webkit-border-radius: 0 50px 0 50px;
             border-radius: 0 50px 0 50px;
@@ -18812,7 +18999,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 27, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 38, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -18825,7 +19012,7 @@ picture {
   }
 }
 
-/* line 49, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 60, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-bg {
   z-index: 0;
   position: absolute;
@@ -18835,7 +19022,7 @@ picture {
   height: 100%;
 }
 
-/* line 57, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 68, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-bg span {
   position: absolute;
   width: 360px;
@@ -18844,27 +19031,27 @@ picture {
           border-radius: 50%;
 }
 
-/* line 63, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 74, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-bg span:nth-of-type(1) {
   top: -180px;
   left: -130px;
   border: 120px solid rgba(169, 171, 254, 0.2);
 }
 
-/* line 69, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 80, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-bg span:nth-of-type(2) {
   bottom: -105px;
   right: -105px;
   border: 100px solid rgba(169, 171, 254, 0.2);
 }
 
-/* line 77, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 88, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-left, .retouch-learn__wrapper-right {
   z-index: 2;
   position: relative;
 }
 
-/* line 83, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 94, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -18876,40 +19063,40 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 83, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 94, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper-left {
     padding-right: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 83, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 94, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper-left {
     padding-right: 0;
   }
 }
 
-/* line 96, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 107, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-right {
   width: 400px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 96, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 107, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper-right {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 96, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 107, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper-right {
     width: 100%;
     padding-bottom: 40px;
   }
 }
 
-/* line 106, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 117, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__wrapper-right img {
   display: block;
   max-width: 100%;
@@ -18919,14 +19106,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 106, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 117, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__wrapper-right img {
     width: 100%;
     max-width: 320px;
   }
 }
 
-/* line 120, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 131, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__title {
   padding-bottom: 40px;
   color: #FFFFFF;
@@ -18934,13 +19121,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 120, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 131, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__title {
     text-align: center;
   }
 }
 
-/* line 129, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 140, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18953,7 +19140,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 129, src/scss/_components/retouch/_retouch--learn.scss */
+  /* line 140, src/scss/_components/retouch/_retouch--learn.scss */
   .retouch-learn__btn {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -18962,7 +19149,7 @@ picture {
   }
 }
 
-/* line 136, src/scss/_components/retouch/_retouch--learn.scss */
+/* line 147, src/scss/_components/retouch/_retouch--learn.scss */
 .retouch-learn__btn .c-btn {
   width: 100%;
   max-width: 200px;

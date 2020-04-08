@@ -125,6 +125,18 @@ const initSwiper = () => {
   };
   let _contactsUserSwiper = undefined;
 
+  const _advantagesRevampOpt = {
+    effect: 'slide',
+    speed: 750,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.retouch-convinced__slider-btn-next',
+      prevEl: '.retouch-convinced__slider-btn-prev',
+    }
+  };
+  let _advantagesRevampSwiper = undefined;
+
   $(window).on('load resize orientationchange', () => {
     if ($('.revampTestimonials').length > 0) {
       if ($(window).width() < 768) {
@@ -175,6 +187,19 @@ const initSwiper = () => {
         }
 
         $('.contactsUser').find('.swiper-wrapper').attr('style', '');
+      }
+    }
+
+    if ($('.advantageRevampSwiper').length > 0) {
+      if ($(window).width() < 768) {
+        _advantagesRevampSwiper = new Swiper('.advantageRevampSwiper', _advantagesRevampOpt)
+      } else {
+        if (_advantagesRevampSwiper !== undefined) {
+          _advantagesRevampSwiper.destroy(true, true);
+          _advantagesRevampSwiper = undefined;
+        }
+
+        $('.advantageRevampSwiper').find('.swiper-wrapper').attr('style', '');
       }
     }
   });

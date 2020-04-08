@@ -4,11 +4,11 @@ section#revamp-blog.revamp-blog
   .c-grid
     .revamp-blog__wrapper
 
-      p.revamp-blog__title Blog
-      .revamp-blog__line
+      p.revamp-blog__title.viewport-hide-js(data-animation-delay='0.1s') Blog
+      .revamp-blog__line.viewport-hide-js(data-animation-delay='0.15s')
 
       mixin swiperContent()
-        .swiper-slide
+        .swiper-slide.viewport-hide-js(data-animation-delay='0.2s')
           a.revamp-blog__box.revamp-blog__box-1(href="#")
             .revamp-blog__box-head
               img(src="https://c4.wallpaperflare.com/wallpaper/422/716/987/silhouette-photo-of-man-on-kayak-with-padded-wallpaper-preview.jpg" alt="")
@@ -16,7 +16,7 @@ section#revamp-blog.revamp-blog
               p.revamp-blog__box-title Lorem ipsum dolor sit amet
               p.revamp-blog__box-desc Debitis volumus insolens at. Ne stet iusto tantas eum, nam ei natum argumentum constituam.
 
-        .swiper-slide
+        .swiper-slide.viewport-hide-js(data-animation-delay='0.25s')
           a.revamp-blog__box.revamp-blog__box-2(href="#")
             .revamp-blog__box-head
               img(src="https://c4.wallpaperflare.com/wallpaper/422/716/987/silhouette-photo-of-man-on-kayak-with-padded-wallpaper-preview.jpg" alt="")
@@ -24,7 +24,7 @@ section#revamp-blog.revamp-blog
               p.revamp-blog__box-title Lorem ipsum dolor sit amet
               p.revamp-blog__box-desc Debitis volumus insolens at. Ne stet iusto tantas eum, nam ei natum argumentum constituam.
 
-        .swiper-slide
+        .swiper-slide.viewport-hide-js(data-animation-delay='0.3s')
           a.revamp-blog__box.revamp-blog__box-3(href="#")
             .revamp-blog__box-head
               img(src="https://c4.wallpaperflare.com/wallpaper/422/716/987/silhouette-photo-of-man-on-kayak-with-padded-wallpaper-preview.jpg" alt="")
@@ -40,7 +40,7 @@ section#revamp-blog.revamp-blog
         a.revamp-blog__btn.revamp-blog__btn-next(href="#")
           i.icon-font.icon-corner
 
-      .revamp-blog__more
+      .revamp-blog__more.viewport-hide-js(data-animation-delay='0.35s')
         a.c-btn.c-btn--bg.c-btn--bg-gradient(href="#")
           span See all articles
 
