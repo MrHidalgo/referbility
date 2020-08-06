@@ -499,9 +499,6 @@ window.addEventListener('scroll', function (ev) {
   initHeaderFixed();
 });
 
-/**
- * @description Document DOM ready.
- */
 $(document).ready(function (ev) {
   /**
    *
@@ -1649,11 +1646,12 @@ $(document).ready(function (ev) {
         $('.posting__form[posting-form-' + _ID + '-js]').addClass('is-active');
 
         if ($(ev.currentTarget).data('init') === 'range') {
+          console.log($(ev.currentTarget).data('init') === 'range');
           setTimeout(function () {
             $('[posting-indicator-js]').css({
-              width: $('.irs-bar-hidden .irs-bar').width() - 15
+              width: $('.js-irs-2 .irs-bar').width() - 8
             });
-          }, 300);
+          }, 400);
         }
       }
     });
@@ -1733,8 +1731,9 @@ $(document).ready(function (ev) {
         _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
 
     setTimeout(function () {
+      console.log("init");
       $('[posting-indicator-js]').css({
-        width: $('.irs-bar-hidden .irs-bar').width() - 15
+        width: $('.js-irs-2 .irs-bar').width() - 8
       });
     }, 100);
 
@@ -1749,30 +1748,30 @@ $(document).ready(function (ev) {
       var _obj = {
         'junior': {
           min: '1000',
-          max: '4000',
+          max: '11000',
           rec: '2000',
           sim_rec: '2,000',
           sim_min: '2,000',
           sim_max: '3,000'
         },
         'executive': {
-          min: '2000',
-          max: '5500',
+          min: '1000',
+          max: '11000',
           rec: '3000',
           sim_rec: '3,000',
           sim_min: '3,000',
           sim_max: '4,500'
         },
         'managerial': {
-          min: '4000',
-          max: '8000',
+          min: '1000',
+          max: '11000',
           rec: '5000',
           sim_rec: '5,000',
           sim_min: '4,000',
           sim_max: '7,000'
         },
         'c-level': {
-          min: '6000',
+          min: '1000',
           max: '11000',
           rec: '8000',
           sim_rec: '8,000',
@@ -1797,12 +1796,6 @@ $(document).ready(function (ev) {
           from: _obj[_elVal].rec
         });
 
-        setTimeout(function () {
-          $('[posting-indicator-js]').css({
-            width: $('.irs-bar-hidden .irs-bar').width() - 15
-          });
-        }, 100);
-
         _willingInput.prop("value", '$' + numberWithCommas(_obj[_elVal].rec));
 
         var _perc25 = _obj[_elVal].rec * 25 / 100,
@@ -1814,6 +1807,13 @@ $(document).ready(function (ev) {
         $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
         $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
         $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
+
+        setTimeout(function () {
+          console.log("change");
+          $('[posting-indicator-js]').css({
+            width: $('.js-irs-2 .irs-bar').width() - 8
+          });
+        }, 100);
       }
     });
 

@@ -12,6 +12,12 @@
     display: block;
   }
 
+  &-2,
+  &-3,
+  &-5 {
+    //display: none;
+  }
+
   &-1,
   &-2,
   &-3,
@@ -490,12 +496,19 @@
     .posting__form-indicator {
       z-index: 0;
       position: absolute;
-      top: calc(50% + 1px);
-      left: 9px;
-      transform: translateY(-50%);
+      top: 0;
+      left: 0;
       height: 10px;
       border-radius: 7px;
       @include transition(width);
+
+      &-wrapper {
+        position: absolute;
+        top: calc(50% - 4px);
+        transform: translateY(-50%);
+        left: 9px;
+        width: calc(100% - 34px);
+      }
 
       span {
         position: absolute;
@@ -510,7 +523,7 @@
           content: '';
           position: absolute;
           top: -6px;
-          right: -2px;
+          right: 0;
           width: 2px;
           height: 22px;
           background-color: #36b37e;

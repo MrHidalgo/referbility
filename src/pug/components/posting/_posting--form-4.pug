@@ -10,8 +10,9 @@ form.posting__form.posting__form-4(action='' method='' name='' autocomplete='off
           div
             input(type="text" class="" name="" value="" range-willing-js)
             input(type="text" class="" name="" value="" range-willing-hidden-js)
-            .posting__form-indicator(posting-indicator-js)
-              span
+            .posting__form-indicator-wrapper
+              .posting__form-indicator(posting-indicator-js)
+                span
           div
             .posting__form-input
               input(type='text' name='' placeholder='30' willing-data-input-js disabled)

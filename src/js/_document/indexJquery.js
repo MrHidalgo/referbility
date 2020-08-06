@@ -1,8 +1,3 @@
-
-
-/**
- * @description Document DOM ready.
- */
 $(document).ready((ev) => {
   /**
    *
@@ -1209,9 +1204,9 @@ $(document).ready((ev) => {
         if($(ev.currentTarget).data('init') === 'range') {
           setTimeout(() => {
             $('[posting-indicator-js]').css({
-              width: $('.irs-bar-hidden .irs-bar').width() - 15
+              width: $('.js-irs-2 .irs-bar').width() - 8
             });
-          }, 300);
+          }, 400);
         }
       }
     });
@@ -1291,8 +1286,9 @@ $(document).ready((ev) => {
       _rangeWillingHiddenData = _rangeWillingHidden.data("ionRangeSlider");
 
     setTimeout(() => {
+      console.log(`init`);
       $('[posting-indicator-js]').css({
-        width: $('.irs-bar-hidden .irs-bar').width() - 15
+        width: $('.js-irs-2 .irs-bar').width() - 8
       });
     }, 100);
 
@@ -1307,30 +1303,30 @@ $(document).ready((ev) => {
       const _obj = {
         'junior' : {
           min: '1000',
-          max: '4000',
+          max: '11000',
           rec: '2000',
           sim_rec: '2,000',
           sim_min: '2,000',
           sim_max: '3,000',
         },
         'executive' : {
-          min: '2000',
-          max: '5500',
+          min: '1000',
+          max: '11000',
           rec: '3000',
           sim_rec: '3,000',
           sim_min: '3,000',
           sim_max: '4,500',
         },
         'managerial' : {
-          min: '4000',
-          max: '8000',
+          min: '1000',
+          max: '11000',
           rec: '5000',
           sim_rec: '5,000',
           sim_min: '4,000',
           sim_max: '7,000',
         },
         'c-level' : {
-          min: '6000',
+          min: '1000',
           max: '11000',
           rec: '8000',
           sim_rec: '8,000',
@@ -1355,12 +1351,6 @@ $(document).ready((ev) => {
           from: _obj[_elVal].rec
         });
 
-        setTimeout(() => {
-          $('[posting-indicator-js]').css({
-            width: $('.irs-bar-hidden .irs-bar').width() - 15
-          });
-        }, 100);
-
         _willingInput.prop("value", '$' + numberWithCommas(_obj[_elVal].rec));
 
         let _perc25 = (_obj[_elVal].rec * 25) / 100,
@@ -1372,6 +1362,13 @@ $(document).ready((ev) => {
         $('[posting-premium-25-js]').text('$' + numberWithCommas(_perc25));
         $('[posting-premium-75-js]').text('$' + numberWithCommas(_perc75));
         $('[posting-premium-sum-js]').text('$' + numberWithCommas(_perc25 + _perc75 + 200));
+
+        setTimeout(() => {
+          console.log(`change`);
+          $('[posting-indicator-js]').css({
+            width: $('.js-irs-2 .irs-bar').width() - 8
+          });
+        }, 100);
       }
     });
 
